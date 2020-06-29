@@ -1,0 +1,54 @@
+### YamlMime:Hub
+title: Microsoft Surface
+summary: Informazioni su come pianificare, distribuire e gestire i dispositivi Microsoft Surface e Surface Hub.
+brand: windows
+metadata:
+  title: Microsoft Surface
+  description: Informazioni su come pianificare, distribuire e gestire i dispositivi Microsoft Surface e Surface Hub.
+  ms.prod: surface
+  ms.topic: hub-page
+  audience: ITPro
+  author: samanro
+  ms.author: samanro
+  ms.date: 07/03/2019
+  localization_priority: Priority
+  ms.openlocfilehash: 7c723733836ee00e43571714c7df2ca11d3a8a49
+  ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+  ms.translationtype: HT
+  ms.contentlocale: it-IT
+  ms.lasthandoff: 06/27/2020
+  ms.locfileid: "10837149"
+additionalContent:
+  sections:
+  - title: Per professionisti IT
+    items:
+    - title: Documentazione per i dispositivi Surface
+      summary: Sfrutta la potenza di Surface, Windows e Office collegati tra loro attraverso il cloud. Trova gli strumenti, le guide dettagliate e altre risorse per la pianificazione, la distribuzione e la gestione dei dispositivi Surface nell'organizzazione.
+      url: https://docs.microsoft.com/en-us/surface/get-started
+    - title: Documentazione di Surface Hub
+      summary: Scopri come distribuire e gestire Surface Hub 2S, la lavagna interattiva digitale all-in-one, la piattaforma per riunioni e il dispositivo di elaborazione collaborativa.
+      url: https://docs.microsoft.com/surface-hub/index
+  - title: Altre risorse
+    items:
+    - title: Community
+      links:
+      - text: Blog Surface IT Pro
+        url: https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro
+      - text: Community tecnica dei dispositivi Surface
+        url: https://techcommunity.microsoft.com/t5/Surface-Devices/ct-p/SurfaceDevices
+    - title: Scopri
+      links:
+      - text: Formazione relativa a Surface in Microsoft Learn
+        url: https://docs.microsoft.com/learn/browse/?term=Surface
+      - text: Guida all'adozione di Surface Hub 2S
+        url: https://docs.microsoft.com/surface-hub/surface-hub-2s-adoption-kit
+      - text: Video su Surface, Microsoft Mechanics
+        url: https://www.youtube.com/watch?v=Uk2kJ5FUZxY&list=PLXtHYVsvn_b__1Baibdu4elN4SoF3JTBZ
+    - title: Hai bisogno di assistenza?
+      links:
+      - text: Dispositivi Surface
+        url: https://support.microsoft.com/products/surface-devices
+      - text: Surface Hub
+        url: https://support.microsoft.com/hub/4343507/surface-hub-help
+      - text: Contatta il supporto di Surface Hub
+        url: https://support.microsoft.com/supportforbusiness/productselection?sapId=bb7066fb-e329-c1c0-9c13-8e9949c6a64e
