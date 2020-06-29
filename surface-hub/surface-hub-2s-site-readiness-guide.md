@@ -1,0 +1,30 @@
+---
+title: Guida alla preparazione del sito di Surface Hub 2S
+description: Acquisire familiarità con i requisiti di conformità dei siti e le raccomandazioni per Surface Hub 2S.
+keywords: separare i valori con virgole
+ms.prod: surface-hub
+ms.sitesec: library
+author: greg-lindsay
+ms.author: greglin
+manager: laurawi
+audience: Admin
+ms.topic: article
+ms.date: 06/20/2019
+ms.localizationpriority: Medium
+ms.openlocfilehash: f31d33a96b64be95a4fe2f95c63dd6a4a3afa720
+ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "10832942"
+---
+# Guida alla preparazione del sito di Surface Hub 2S
+
+|**Argomento**|**Descrizione**|
+|:-------|:-------|
+| [Pianificazione del sito per Surface Hub 2S](surface-hub-2s-site-planning.md) | Esaminare le considerazioni sulle camere e la pianificazione per le periferiche. |
+| [Guida introduttiva di Surface Hub 2S](surface-hub-2s-quick-start.md) | Ottenere una panoramica dei passaggi necessari per decomprimere e avviare Surface Hub 2S. |
+| [Installare e montare Surface Hub 2S](surface-hub-2s-install-mount.md) | Informazioni sugli accessori concessi in licenza per installare e montare Surface Hub 2S. |
+| [Personalizzazione dell'installazione di Surface Hub 2S](surface-hub-2s-custom-install.md) | Informazioni su come installare Custom senza accessori di montaggio con licenza.|
+| [Panoramica delle porte e della tastiera di Surface Hub 2S](surface-hub-2s-port-keypad-overview.md) | Ottenere i dettagli per le porte I/O e I controlli di potenza e selezione della tastiera. |
+| [Connettersi a Surface Hub 2S](surface-hub-2s-connect.md) | Informazioni sui metodi Wired e wireless per la connessione a Surface Hub.|
