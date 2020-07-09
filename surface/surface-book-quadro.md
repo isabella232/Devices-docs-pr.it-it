@@ -8,15 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 7/02/2020
+ms.date: 7/07/2020
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 52de90847d85698cba25cc511a4c6eda327c810d
-ms.sourcegitcommit: 1b673d9d3240d6217b36fcc5fea53c23ab8cf367
+ms.openlocfilehash: 35794e36f37041754ee722c286554437c6dd7be2
+ms.sourcegitcommit: 36bac9da2f7b0815fbceb008f869b497380c55db
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857583"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "10860646"
 ---
 # Panoramica tecnica su Surface Book 3 Quadro RTX 3000
 
@@ -106,7 +107,7 @@ Come illustrato nella tabella 3, Surface Book 3 con quadro RTX 3000 è testato e
 | **Progettazione sostanze di Adobe**                        | -Autore di materiali procedurali con RTX Accelerated Bakers.<br><br>-Usa il rendering di NVIDIA iray, incluse le trame/sostanze e l'esportazione di trame bitmap per il rendering in qualsiasi iray compatibile con MDL.<br><br>-DXR-Accelerated Light e la cottura di occlusione ambientale.                                                                                                                                                                                                              |
 | **ANSYS**<br>**Individuazione Live**                     | -ANSYS in tempo reale strumento di simulazione di ingegneria (ANSYS Discovery Live) costruito su CUDA.                                                                                                                                                                                                                                                                                                                                                                                                      |
 | **Autodesk**<br>**Revit**                           | **Autodesk-testato e approvato per Surface Book 3 con quadro RTX 3000**<br><br>-Viewport con accelerazione GPU per un'esperienza di progettazione più fluida e interattiva.<br><br>-Supporta i renderer 3D con accelerazione GPU di terze parti, ad esempio V-Ray e Scape.                                                                                                                                                                                                                                        |
-| **Autodesk**<br>**3ds Max**                         | **Autodesk-testato e approvato per Surface Book 3 con quadro RTX 3000**<br><br>-Grafica di viewport con accelerazione GPU per una modellazione e progettazione 3D interattiva e veloce.<br><br>-RTX-Ray Tracing accelerato e AI denoising con il renderer Arnold predefinito.<br><br>-Più di 70 per cento più veloce rispetto a Surface Book 2 15 ".                                                                                                                                                        |
+| **Autodesk**<br>**AutoCad**                         | **Autodesk-testato e approvato per Surface Book 3 con quadro RTX 3000**<br><br>-Grafica di viewport con accelerazione GPU per una modellazione e progettazione 3D interattiva e veloce.<br><br>-RTX-Ray Tracing accelerato e AI denoising con il renderer Arnold predefinito.<br><br>-Più di 70 per cento più veloce rispetto a Surface Book 2 15 ".                                                                                                                                                        |
 | **Autodesk**<br>**Maya**                            | **Autodesk-testato e approvato per Surface Book 3 con quadro RTX 3000**<br><br>-RTX-Ray Tracing accelerato e AI denoising con il renderer Arnold predefinito.<br><br>-Accelerazione viewport OpenGL.                                                                                                                                                                                                                                                                                  |
 | **Bentley MicroStation**                            | **Bentley-testato e approvato per Surface Book 3 con quadro RTX 3000**                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | **Dassault Systemes**<br>**Piattaforma Experience 3D** | -CATIA Interactive Ray Tracer (Live rendering) accelerato da Core RT.<br><br>-CATIA viene eseguito più di 100% più velocemente rispetto a Surface Book 2 15 ".                                                                                                                                                                                                                                                                                                                                     |
