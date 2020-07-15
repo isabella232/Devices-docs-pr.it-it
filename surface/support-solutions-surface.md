@@ -15,19 +15,19 @@ ms.topic: article
 ms.date: 09/26/2019
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 98de32213861aa53ac00a565d4f81f0199995077
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 88c7029c99d69818e9f0b8fddef5fc193581963a
+ms.sourcegitcommit: 608226b64ef92743b1a3361877d4c49228e3ea5d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10832223"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "10868750"
 ---
 # Principali soluzioni di supporto per i dispositivi Surface
 
 > [!Note]
-> **Utenti privati**: questo articolo è destinato solo ai professionisti IT e agli agenti del supporto tecnico e si applica solo ai dispositivi Surface. Per informazioni sull'assistenza per un problema con il dispositivo Home, vedere Guida per i [dispositivi Surface](https://support.microsoft.com/products/surface-devices).
+> **Utenti privati**: questo articolo è destinato solo ai professionisti IT e agli agenti del supporto tecnico e si applica solo ai dispositivi Surface. Per ottenere assistenza per un problema con il dispositivo Home, vedere [supporto per Surface](contact-surface-support.md?tabs=online).
 
-Queste sono le soluzioni di supporto Microsoft per problemi comuni che possono verificarsi con i dispositivi Surface in un'organizzazione. Se il problema non è elencato, [contattare il supporto tecnico Microsoft](https://support.microsoft.com/supportforbusiness/productselection).
+Queste sono le soluzioni di supporto Microsoft per problemi comuni che possono verificarsi con i dispositivi Surface in un'organizzazione. Se il problema non è elencato, [contattare il supporto Surface](contact-surface-support.md?tabs=online).
 
 ## Driver della superficie e firmware
 
@@ -54,7 +54,7 @@ Microsoft rilascia regolarmente gli aggiornamenti e le soluzioni per i dispositi
 
 ## Problemi di schermo incrinato o graffiato
 
-- [Contatta il Supporto tecnico Microsoft](https://support.microsoft.com/supportforbusiness/productselection)
+- [Contattare il supporto di Surface](contact-surface-support.md?tabs=online)
 
 ## Problemi di alimentazione superficiale o batteria
 
