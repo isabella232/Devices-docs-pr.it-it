@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 02/28/2020
+ms.date: 07/23/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 1d1b836c18a41982497bb28c57f379408c04f8a5
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 05279a54b51113ca96c4c939e8d64e51c4eca543
+ms.sourcegitcommit: 8738f44f2f4c86e3a45e9fbcbe6469388fc15924
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833993"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "10893111"
 ---
 # Gestire Surface Hub 2S con Intune
 
@@ -35,17 +35,27 @@ Surface Hub 2S consente agli amministratori IT di gestire le impostazioni e i cr
 
 Durante il processo di configurazione iniziale, quando si affilia un Surface Hub a un tenant di Azure AD con la registrazione automatica di Intune abilitata, il dispositivo verrà registrato automaticamente con Intune. Per ulteriori informazioni, vedere [Metodi di registrazione di Intune per dispositivi Windows](https://docs.microsoft.com/intune/enrollment/windows-enrollment-methods). L'affiliazione di Azure AD e la registrazione automatica di Intune sono necessarie affinché Surface Hub risulti come "dispositivo conforme" in Intune. 
 
-## Impostazioni dell'edizione di Windows 10 Team
+## Gestione delle impostazioni di Windows 10 Team Edition con Intune
 
-Selezionare Windows 10 Team per le impostazioni predefinite di restrizione del dispositivo per Surface Hub e Surface Hub 2S.
+1. Accedere a **Microsoft Endpoint Manager**, selezionare i profili di configurazione dei **dispositivi**per  >  **Configuration profiles**  >  **creare il profilo**. 
+2. In **piattaforma**selezionare **Windows 10 e le**  >  **restrizioni di dispositivo successive (team Windows 10)** e quindi selezionare **Crea**. 
+3. Ora è possibile esplorare e selezionare le impostazioni di restrizione del dispositivo predefinite per hub Surface e Surface Hub 2S.
 
  ![Impostare le restrizioni del dispositivo per Surface Hub 2S.](images/sh2-set-intune3.png) <br>
 
-Queste impostazioni includono l'esperienza utente e il comportamento dell'app, la registrazione di Azure Log Analytics, la configurazione delle finestre di manutenzione, le impostazioni della sessione e di Miracast. Per un elenco completo delle impostazioni di Windows 10 Team disponibili, vedere [CSP SurfaceHub](https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp).
+Queste impostazioni si estendono alle seguenti categorie: app ed esperienze, approfondimenti operativi di Azure, manutenzione, sessione e proiezione wireless.  
 
-## Provider dei servizi di configurazione (CSP) aggiuntivi supportati
+## Provider di servizi di configurazione supportati (CSP)
 
-Per i CSP aggiuntivi supportati, vedere [CSP Surface Hub in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#surfacehubcspsupport).
+Oltre ai criteri disponibili direttamente tramite la console Intune, sono presenti numerosi provider di servizi di configurazione (CSP) che mappano le chiavi del registro di sistema o i file. 
+
+Microsoft fornisce in genere nuovi CSP con ogni nuova versione del sistema operativo Windows 10. L' [aggiornamento di Windows 10 Team 2020](surface-hub-install-2020preview.md), disponibile in anteprima tramite il programma Windows Insider, include più di 20 criteri di gestione dei dispositivi nuovi e aggiornati per i mozzi Surface Hub e Surface Hub 2S. Questi criteri MDM conferiscono agli amministratori IT un maggiore controllo sugli aggiornamenti delle app da Microsoft Store, impostazioni di proiezione wireless come Miracast su infrastruttura, impostazioni di rete, ad esempio qualità del servizio e autenticazione cablata 802.1 x, e nuove impostazioni relative alla privacy/PILR.
+
+Per altre informazioni, vedi le risorse seguenti: 
+
+- [Riferimento del provider di servizi di configurazione](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) 
+- [CSP SurfaceHub](https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp)
+- [Criteri CSP supportati da Microsoft Surface Hub](https://docs.microsoft.com/windows/client-management/mdm/policy-csps-supported-by-surface-hub)
 
 ## Impostazioni Quality of Service (QoS)
 
@@ -55,13 +65,13 @@ Per garantire una qualità audio e video ottimale su Surface Hub 2S, aggiungere 
 
 |**Nome**|**Descrizione**|**URI OMA**|**Tipo**|**Value**|
 |:------ |:------------- |:--------- |:------ |:------- |
-|**Porte audio**| Intervallo porte audio | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsAudio/DestinationPortMatchCondition | String  | 3478-3479 |
-|**DSCP audio**| Contrassegno porte audio | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsAudio/DSCPAction | Integer | 46 |
-|**Porta video**| Intervallo porte video | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsVideo/DestinationPortMatchCondition | String  | 3480 |
+|**Porte audio**| Intervallo porte audio | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsAudio/DestinationPortMatchCondition | Stringa  | 3478-3479 |
+|**DSCP audio**| Contrassegno porte audio | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsAudio/DSCPAction | Numero intero | 46 |
+|**Porta video**| Intervallo porte video | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsVideo/DestinationPortMatchCondition | Stringa  | 3480 |
 |**DSCP video**| Contrassegno porte video | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsVideo/DSCPAction | Integer | 34 |
-|**Porte audio P2P**| Intervallo porte audio | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PAudio/DestinationPortMatchCondition | String  | 50000-50019 |
-|**DSCP audio P2P**| Contrassegno porte audio | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PAudio/DSCPAction | Integer | 46 |
-|**Porte video P2P**| Intervallo porte video | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PVideo/DestinationPortMatchCondition | String  | 50020-50039 |
+|**Porte audio P2P**| Intervallo porte audio | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PAudio/DestinationPortMatchCondition | Stringa  | 50000-50019 |
+|**DSCP audio P2P**| Contrassegno porte audio | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PAudio/DSCPAction | Numero intero | 46 |
+|**Porte video P2P**| Intervallo porte video | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PVideo/DestinationPortMatchCondition | Stringa  | 50020-50039 |
 |**DSCP video P2P**| Contrassegno porte video | ./Device/Vendor/MSFT/NetworkQoSPolicy/TeamsP2PVideo/DSCPAction | Integer | 34 |
 
 
@@ -69,10 +79,10 @@ Per garantire una qualità audio e video ottimale su Surface Hub 2S, aggiungere 
 
 | Nome               | Descrizione         | URI OMA                                                                  | Tipo    | Value                          |
 | ------------------ | ------------------- | ------------------------------------------------------------------------ | ------- | ------------------------------ |
-| Porte audio        | Intervallo porte audio    | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBAudio/SourcePortMatchCondition  | String  | 50000-50019                    |
-| DSCP audio         | Contrassegno porte audio | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBAudio/DSCPAction                | Integer | 46                             |
+| Porte audio        | Intervallo porte audio    | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBAudio/SourcePortMatchCondition  | Stringa  | 50000-50019                    |
+| DSCP audio         | Contrassegno porte audio | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBAudio/DSCPAction                | Numero intero | 46                             |
 | Origine supporti audio | Nome app Skype      | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBAudio/AppPathNameMatchCondition | String  | Microsoft.PPISkype.Windows.exe |
-| Porte video        | Intervallo porte video    | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBVideo/SourcePortMatchCondition  | String  | 50020-50039                    |
+| Porte video        | Intervallo porte video    | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBVideo/SourcePortMatchCondition  | Stringa  | 50020-50039                    |
 | DSCP video         | Contrassegno porte video | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBVideo/DSCPAction                | Integer | 34                             |
 | Origine supporti video | Nome app Skype      | ./Device/Vendor/MSFT/NetworkQoSPolicy/SfBVideo/AppPathNameMatchCondition | String  | Microsoft.PPISkype.Windows.exe |
 

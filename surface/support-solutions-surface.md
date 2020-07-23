@@ -15,17 +15,17 @@ ms.topic: article
 ms.date: 09/26/2019
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 88c7029c99d69818e9f0b8fddef5fc193581963a
-ms.sourcegitcommit: 608226b64ef92743b1a3361877d4c49228e3ea5d
+ms.openlocfilehash: 661d84adbff40ff6cd89fb0c71c60fa795f4236c
+ms.sourcegitcommit: 8738f44f2f4c86e3a45e9fbcbe6469388fc15924
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "10868750"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "10893078"
 ---
 # Principali soluzioni di supporto per i dispositivi Surface
 
 > [!Note]
-> **Utenti privati**: questo articolo è destinato solo ai professionisti IT e agli agenti del supporto tecnico e si applica solo ai dispositivi Surface. Per ottenere assistenza per un problema con il dispositivo Home, vedere [supporto per Surface](contact-surface-support.md?tabs=online).
+> **Utenti privati**: questo articolo è destinato solo ai professionisti IT e agli agenti del supporto tecnico e si applica solo ai dispositivi Surface. Per informazioni sull'assistenza per un problema con il dispositivo Home, vedere Guida per i [dispositivi Surface](https://support.microsoft.com/products/surface-devices).
 
 Queste sono le soluzioni di supporto Microsoft per problemi comuni che possono verificarsi con i dispositivi Surface in un'organizzazione. Se il problema non è elencato, [contattare il supporto Surface](contact-surface-support.md?tabs=online).
 
@@ -43,9 +43,7 @@ Microsoft rilascia regolarmente gli aggiornamenti e le soluzioni per i dispositi
 ## Problemi relativi al dock di Surface
 
 - [Risolvere i problemi relativi a Surface Dock e agli alloggiamenti di espansione](https://support.microsoft.com/help/4023468/surface-troubleshoot-surface-dock-and-docking-stations)
-
 - [Risoluzione dei problemi di connessione della superficie a una seconda schermata](https://support.microsoft.com/help/4023496)
-
 - [Aggiornamento del firmware Microsoft Surface Dock](https://docs.microsoft.com/surface/surface-dock-updater)
 
 ## Problemi di tastiera o cover del dispositivo
@@ -59,25 +57,19 @@ Microsoft rilascia regolarmente gli aggiornamenti e le soluzioni per i dispositi
 ## Problemi di alimentazione superficiale o batteria
 
 - [Come caricare Surface (informazioni di Surface PSU)](https://support.microsoft.com/help/4023496)
-
 - [La batteria superficiale non viene caricata o la superficie non viene eseguita sulla batteria](https://support.microsoft.com/help/4023536)
-
 - [Surface non si accende o non si riattiva dalla modalità di sospensione](https://support.microsoft.com/help/4023537)
-
 - [Massimizzare la durata della batteria di Surface](https://support.microsoft.com/help/4483194)
 
 ## Reimposta dispositivo
 
 - [Creazione e utilizzo di un'unità di ripristino USB per Surface](https://support.microsoft.com/help/4023512)
-
 - [Domande frequenti: proteggere i dati se si invia una superficie in per il servizio](https://support.microsoft.com/help/4023508)
-
 - [Microsoft Surface Data Eraser](https://docs.microsoft.com/surface/microsoft-surface-data-eraser)
 
 ## Problemi di distribuzione
 
 - [DISK0 non è stato trovato quando si distribuisce Windows su Surface Pro modello 1796 o Surface laptop](https://support.microsoft.com/help/4046108)
-
 - [Surface Pro modello 1796 e Surface laptop 1TB Visualizza due unità](https://support.microsoft.com/help/4046105)
-
 - [Riferimento SKU di sistema](https://docs.microsoft.com/surface/surface-system-sku-reference)
+

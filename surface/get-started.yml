@@ -11,30 +11,30 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: High
-  ms.openlocfilehash: 90908a9ff95875cf0c3337bf0b8e93f7bfc42e53
-  ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+  ms.openlocfilehash: 79bd1f8bb8368efe391def8dafef22c687d08b4c
+  ms.sourcegitcommit: 8738f44f2f4c86e3a45e9fbcbe6469388fc15924
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 06/27/2020
-  ms.locfileid: "10836852"
+  ms.lasthandoff: 07/22/2020
+  ms.locfileid: "10893068"
 landingContent:
 - title: Dispositivi Surface
   linkLists:
   - linkListType: overview
     links:
-    - text: Surface Go 2 for business
+    - text: Surface Go 2 per le aziende
       url: https://www.microsoft.com/surface/business/surface-go-2
-    - text: Surface Book 3 for business
+    - text: Surface Book 3 per le aziende
       url: https://www.microsoft.com/surface/business/surface-book-3
-    - text: Esplorare tutti i prodotti della famiglia Surface
+    - text: Esplorare tutta la famiglia di prodotti Surface
       url: https://www.microsoft.com/surface/business
 - title: Informazioni di base
   linkLists:
   - linkListType: get-started
     links:
-    - text: Panoramica tecnica della GPU di Surface Book 3
+    - text: Panoramica tecnica su Surface Book 3 GPU
       url: surface-book-gpu-overview.md
-    - text: Panoramica tecnica di Surface Book 3 quadro RTX 3000
+    - text: Panoramica tecnica su Surface Book 3 Quadro RTX 3000
       url: surface-book-quadro.md
     - text: Novità di Surface Dock 2
       url: surface-dock-whats-new.md
@@ -46,19 +46,19 @@ landingContent:
       url: microsoft-surface-deployment-accelerator.md
     - text: Autopilot e dispositivi Surface
       url: windows-autopilot-and-surface-devices.md
-    - text: Desktop virtuale di Windows su Surface
+    - text: Desktop virtuale Windows su Surface
       url: windows-virtual-desktop-surface.md
 - title: Gestire i dispositivi Surface
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Gestire e distribuire gli aggiornamenti di driver e firmware Surface
+    - text: Gestire e installare gli aggiornamenti di driver e firmware per il Surface
       url: manage-surface-driver-and-firmware-updates.md
     - text: Procedure consigliate per le impostazioni di risparmio energia per i dispositivi Surface
       url: maintain-optimal-power-settings-on-Surface-devices.md
     - text: Ottimizzare la connettività Wi-Fi per i dispositivi Surface
       url: surface-wireless-connect.md
-- title: Esplorare le indicazioni per la sicurezza
+- title: Esplora le indicazioni di sicurezza
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -78,7 +78,7 @@ landingContent:
       url: surface-enterprise-management-mode.md
     - text: Impostazione del limite della batteria
       url: battery-limit.md
-- title: Esplorare le soluzioni di supporto
+- title: Risoluzione dei problemi
   linkLists:
   - linkListType: learn
     links:
@@ -98,3 +98,9 @@ landingContent:
       url: https://techcommunity.microsoft.com/t5/Surface-Devices/ct-p/SurfaceDevices
     - text: Video su Surface, Microsoft Mechanics
       url: https://www.youtube.com/watch?v=Uk2kJ5FUZxY&list=PLXtHYVsvn_b__1Baibdu4elN4SoF3JTBZ
+- title: Hai bisogno di assistenza?
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: Contattare il supporto di Surface
+      url: contact-surface-support.md
