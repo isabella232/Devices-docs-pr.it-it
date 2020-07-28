@@ -1,5 +1,5 @@
 ---
-title: Gestire gli aggiornamenti di Surface driver in Configuration Manager
+title: Gestire gli aggiornamenti dei driver di Surface in Configuration Manager
 description: Questo articolo descrive le opzioni disponibili per gestire e distribuire gli aggiornamenti del firmware e del driver per i dispositivi Surface.
 ms.assetid: b64879c4-37eb-4fcf-a000-e05cbb3d26ea
 ms.reviewer: ''
@@ -14,14 +14,14 @@ ms.sitesec: library
 ms.author: daclark
 ms.topic: article
 audience: itpro
-ms.openlocfilehash: 1a9c8c64bd524de58696c73a28795b69cc70a7b2
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: be32309b26ff6a873c36927cc39595022c4dbb90
+ms.sourcegitcommit: ed4478dd3c6116a25b1e01a3a0f5ff6c1f940013
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833417"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "10897074"
 ---
-# Gestire gli aggiornamenti di Surface driver in Configuration Manager
+# Gestire gli aggiornamenti dei driver di Surface in Configuration Manager
 
 ## Riepilogo
 
@@ -119,7 +119,7 @@ Per verificare che il SUP sia configurato correttamente, eseguire le operazioni 
 
    Se non si trovano i prodotti selezionati nel passaggio 6 nella sezione precedente, verificare che le impostazioni SUP siano salvate.
 
-   È anche possibile attendere il completamento della sincronizzazione successiva, quindi verificare se il driver della superficie e gli aggiornamenti del firmware sono elencati in aggiornamenti software nella console di Configuration Manager. Ad esempio, la console può visualizzare le informazioni seguenti:
+   È anche possibile attendere il completamento della sincronizzazione successiva, quindi verificare se il driver della superficie e gli aggiornamenti del firmware sono elencati in aggiornamenti software nella console di Configuration Manager. Ad esempio, la console può visualizzare le informazioni seguenti.
 
    ![Tutti i risultati della ricerca degli aggiornamenti software](images/manage-surface-driver-updates-4.png)
 
@@ -162,24 +162,23 @@ Per altre informazioni sulla distribuzione, vedere [System Center 2012 Configura
 
 Se si effettua la sincronizzazione da un server Windows Server Update Services (WSUS) upstream, invece di Microsoft Update, verificare che il server WSUS upstream sia configurato per supportare e sincronizzare gli aggiornamenti dei driver di superficie. Tutti i server downstream sono limitati agli aggiornamenti presenti nel database del server WSUS upstream.
 
-Sono disponibili più di 68.000 aggiornamenti classificati come driver in WSUS. Per evitare che i driver correlati a una superficie vengano sincronizzati con Configuration Manager, Microsoft filtra la sincronizzazione del driver rispetto a un elenco di Consenti. Dopo che il nuovo elenco Consenti viene pubblicato e incorporato in Gestione configurazione, i nuovi driver vengono aggiunti alla console dopo la sincronizzazione successiva. Microsoft mira a ottenere i driver Surface aggiunti all'elenco Consenti ogni mese in linea con la patch martedì per renderli disponibili per la sincronizzazione con Configuration Manager.
+Sono disponibili più di 68.000 aggiornamenti classificati come driver in WSUS. Per evitare che i driver correlati a una superficie vengano sincronizzati con Configuration Manager, Microsoft filtra la sincronizzazione del driver rispetto a un elenco di Consenti. Dopo che il nuovo elenco Consenti viene pubblicato e incorporato in Gestione configurazione, i nuovi driver vengono aggiunti alla console dopo la sincronizzazione successiva. Microsoft mira a ottenere i driver Surface aggiunti all'elenco Consenti ogni mese in allineamento con le versioni di aggiornamento mensili per renderle disponibili per la sincronizzazione con Configuration Manager.
 
-Se l'ambiente di gestione configurazione è offline, viene importato un nuovo elenco di Consenti ogni volta che si importano [gli aggiornamenti di manutenzione](https://docs.microsoft.com/mem/configmgr/core/servers/manage/use-the-service-connection-tool) in Configuration Manager. Sarà inoltre necessario importare un [nuovo catalogo WSUS](https://docs.microsoft.com/mem/configmgr/sum/get-started/synchronize-software-updates-disconnected) che contiene i driver prima che gli aggiornamenti vengano visualizzati nella console di Configuration Manager. Poiché un ambiente WSUS autonomo contiene più driver di un SUP di Configuration Manager, è consigliabile stabilire un ambiente di gestione configurazione con funzionalità online e configurarlo per sincronizzare i driver di Surface. In questo articolo viene fornita un'esportazione più piccola di WSUS che assomiglia molto all'ambiente offline.
+Se l'ambiente di gestione configurazione è offline, viene importato un nuovo elenco di Consenti ogni volta che si importano [gli aggiornamenti della manutenzione](https://docs.microsoft.com/mem/configmgr/core/servers/manage/use-the-service-connection-tool) in Configuration Manager. Sarà inoltre necessario importare un [nuovo catalogo WSUS](https://docs.microsoft.com/mem/configmgr/sum/get-started/synchronize-software-updates-disconnected) che contiene i driver prima che gli aggiornamenti vengano visualizzati nella console di Configuration Manager. Poiché un ambiente WSUS autonomo contiene più driver di un SUP di Configuration Manager, è consigliabile stabilire un ambiente di gestione configurazione con funzionalità online e configurarlo per sincronizzare i driver di Surface. In questo articolo viene fornita un'esportazione più piccola di WSUS che assomiglia molto all'ambiente offline.
 
-Se l'ambiente di Configuration Manager è online ed è in grado di rilevare nuovi aggiornamenti, si riceveranno automaticamente gli aggiornamenti all'elenco. Se i driver previsti non sono visualizzati, vedere il WCM. log e WsyncMgr. log per eventuali errori di sincronizzazione.
+Se l'ambiente di Configuration Manager è online ed è in grado di rilevare nuovi aggiornamenti, si riceveranno automaticamente gli aggiornamenti all'elenco. Se i driver previsti non sono visualizzati, vedere i file WCM. log e WsyncMgr. log per eventuali errori di sincronizzazione.
 
-**L'ambiente di gestione configurazione è offline, è possibile importare manualmente i driver di Surface in WSUS?**
+**L'ambiente di gestione configurazione non è in linea. È possibile importare manualmente i driver di Surface in WSUS?**
 
 No. Anche se l'aggiornamento viene importato in WSUS, l'aggiornamento non verrà importato nella console di Configuration Manager per la distribuzione se non è elencato nell'elenco Consenti. È necessario usare lo [strumento di connessione del servizio](https://docs.microsoft.com/mem/configmgr/core/servers/manage/use-the-service-connection-tool) per importare gli aggiornamenti di manutenzione in Gestione configurazione per aggiornare l'elenco Consenti.
 
 **Quali metodi alternativi è necessario distribuire per il driver di superficie e gli aggiornamenti del firmware?**
 
-Per informazioni su come distribuire gli aggiornamenti del driver di superficie e del firmware tramite canali alternativi, vedere [gestire gli aggiornamenti del driver di superficie e del firmware](https://docs.microsoft.com/surface/manage-surface-driver-and-firmware-updates). Se si vuole scaricare il file con estensione msi o exe e quindi distribuire i canali tradizionali di distribuzione del software, vedere [mantenere aggiornato il firmware della superficie con Configuration Manager](https://docs.microsoft.com/archive/blogs/thejoncallahan/keeping-surface-firmware-updated-with-configuration-manager).
+Per informazioni su come distribuire gli aggiornamenti del driver di superficie e del firmware tramite canali alternativi, vedere [gestire gli aggiornamenti del driver di superficie e del firmware](manage-surface-driver-and-firmware-updates.md). Se si vuole scaricare il file con estensione msi o exe e quindi distribuire i canali tradizionali di distribuzione del software, vedere [mantenere aggiornato il firmware della superficie con Configuration Manager](https://docs.microsoft.com/archive/blogs/thejoncallahan/keeping-surface-firmware-updated-with-configuration-manager).
 
 ## Altre informazioni
 
 Per altre informazioni sul driver di superficie e gli aggiornamenti del firmware, vedere gli articoli seguenti:
 
-- [Scaricare le versioni più recenti di firmware e driver per i dispositivi Surface](https://docs.microsoft.com/surface/deploy-the-latest-firmware-and-drivers-for-surface-devices)
-- [Gestire gli aggiornamenti di driver e firmware di Surface](https://docs.microsoft.com/surface/manage-surface-pro-3-firmware-updates)
-- [Considerazioni per Surface e System Center Configuration Manager](https://docs.microsoft.com/surface/considerations-for-surface-and-system-center-configuration-manager)
+- [Gestire gli aggiornamenti dei driver e del firmware di Surface](manage-surface-driver-and-firmware-updates.md)
+- [Considerazioni per Surface e System Center Configuration Manager](considerations-for-surface-and-system-center-configuration-manager.md)
