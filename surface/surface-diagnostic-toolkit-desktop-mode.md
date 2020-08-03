@@ -1,6 +1,6 @@
 ---
 title: Usare Toolkit di diagnostica per Surface per le aziende in modalità desktop
-description: Come usare SDT per aiutare gli utenti dell'organizzazione a eseguire lo strumento per identificare e diagnosticare i problemi relativi al dispositivo Surface.
+description: Come usare SDT per aiutare gli utenti dell'organizzazione a eseguire lo strumento per identificare e diagnosticare i problemi con il dispositivo Surface e inviare richieste di supporto direttamente dallo strumento.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,16 +11,19 @@ ms.reviewer: hachidan
 manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 9e6b34a8d34081fc12cab4851104f0b67c3dfea4
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.date: 7/31/2020
+ms.openlocfilehash: ec4a90d0d72956eaa4f98e928d128dca70d49c59
+ms.sourcegitcommit: f875a45961ff5f3c04006afc8690b5e5965e4d80
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10832217"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "10902957"
 ---
 # Usare Toolkit di diagnostica per Surface per le aziende in modalità desktop
 
-Questo argomento spiega come usare Surface Diagnostic Toolkit (SDT) per aiutare gli utenti dell'organizzazione a eseguire lo strumento per identificare e diagnosticare i problemi relativi al dispositivo Surface. L'uso di SDT può determinare rapidamente se un problema segnalato è causato da un errore hardware o utente non riuscito. Per un elenco dei dispositivi Surface supportati in SDT, vedere [distribuire Toolkit di diagnostica superficie per le aziende](surface-diagnostic-toolkit-business.md).
+Questo argomento spiega come usare Surface Diagnostic Toolkit (SDT) per aiutare gli utenti dell'organizzazione a eseguire lo strumento per identificare e diagnosticare i problemi relativi al dispositivo Surface, nonché inviare richieste di supporto direttamente dallo strumento. 
+
+L'uso di SDT può determinare rapidamente se un problema segnalato è causato da un errore hardware o utente non riuscito. Per un elenco dei dispositivi Surface supportati in SDT, vedere [distribuire Toolkit di diagnostica superficie per le aziende](surface-diagnostic-toolkit-business.md).
 
 
 1. Indirizzare l'utente a installare [il pacchetto SDT](surface-diagnostic-toolkit-business.md#create-custom-sdt) da un punto di distribuzione del software o da una condivisione di rete. Dopo l'installazione, sei pronto per guidare l'utente tramite una serie di test. 
@@ -32,12 +35,12 @@ Questo argomento spiega come usare Surface Diagnostic Toolkit (SDT) per aiutare 
 
 3. Quando SDT indica che il dispositivo contiene gli aggiornamenti più recenti, fare clic su **continua** per passare al catalogo dei test disponibili, come illustrato nella figura 2.
 
-    ![Selezionare le opzioni di SDT ](images/sdt-desk-2.png)
+    ![Selezionare le opzioni di SDT ](images/sdt1.png)
  *nella figura 2. Selezionare le opzioni di SDT*
 
 4. Puoi scegliere di eseguire tutti i test diagnostici. In alternativa, se si sospetta già di avere un problema specifico, ad esempio un errore di visualizzazione o un problema di alimentazione, fare clic su **Seleziona** per scegliere tra i test disponibili e fare clic su **Esegui selezionato**, come illustrato nella figura 3. Per informazioni dettagliate su ogni test, vedere la tabella seguente. 
 
-    ![Selezionare test hardware ](images/sdt-desk-3.png)
+    ![Selezionare test hardware ](images/sdt2.png)
  *nella figura 3. Selezionare test hardware*
 
     Test hardware | Descrizione
@@ -52,9 +55,15 @@ Questo argomento spiega come usare Surface Diagnostic Toolkit (SDT) per aiutare 
     Sensori | Verifica il funzionamento di sensori diversi nel dispositivo
     Hardware |  Verifica i problemi relativi a componenti hardware diversi, ad esempio la scheda grafica e la fotocamera
 
+5. Al termine di tutti i test, lo strumento chiede di verificare se il problema è stato risolto. 
 
+ ![Il problema è stato risolto? ](images/sdt3.png)
+ *Figura 3A. Il problema è stato risolto?*
 
-
+6. Se il problema non è stato risolto o non si sa, è possibile inviare un ticket di supporto selezionando **Contattaci** per **ottenere assistenza ora.**
+ 
+ ![Inviare un ticket di supporto ](images/sdt4.png)
+ *nella figura 3b. Inviare un ticket di supporto*
 
 <span id="multiple" />
 
