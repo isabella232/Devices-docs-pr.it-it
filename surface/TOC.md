@@ -52,8 +52,9 @@
 ### [Impostazione del limite della batteria](battery-limit.md)
 ### [Controllo della luminosità Surface](microsoft-surface-brightness-control.md)
 ### [Tag degli asset di Surface](assettag.md)
+### [Riattivazione alimentazione per i dispositivi Surface](wake-on-power-for-surface.md)
 
-## Protezione
+## Proteggere
 
 ### [Gestione di Intune delle impostazioni UEFI di Surface](surface-manage-dfci-guide.md)
 ### [Gestire le impostazioni UEFI di Surface](manage-surface-uefi-settings.md)
