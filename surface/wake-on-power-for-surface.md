@@ -25,18 +25,18 @@ ms.localizationpriority: medium
 ms.topic: article
 manager: laurawi
 ms.audience: itpro
-ms.openlocfilehash: 271831651280299a40c4e7a7480fa86e29bd1cf5
-ms.sourcegitcommit: f875a45961ff5f3c04006afc8690b5e5965e4d80
+ms.openlocfilehash: 272c19baedb295abac08e90012246e453b88f42f
+ms.sourcegitcommit: 6fd7008992503db9ae1f56654aa80110348924d3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "10903019"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "10903395"
 ---
-# Riattivazione in Power per i dispositivi Surface
+# Riattivazione alimentazione per i dispositivi Surface
 
-I dispositivi Surface possono essere spenti mentre si è lontani dalla scrivania o impostati in modalità di sospensione per salvare la batteria. Per migliorare la gestibilità di questi dispositivi, Wake on Power consente ai dispositivi Surface compatibili di iniziare automaticamente la riconnessione a Power. La configurazione di Wake on Power richiede l'uso della modalità di gestione di Surface Enterprise (SEMM) tramite Surface UEFI Configurator o UEFI Manager.
+I dispositivi Surface possono essere spenti quando si è lontani dalla propria scrivania o impostati come modalità di sospensione per risparmiare la durata della batteria. Per migliorare la gestibilità di questi dispositivi, Wake on Power consente ai dispositivi Surface compatibili di iniziare automaticamente quando si riconnetteno a Power. Per configurare la riattivazione in Power, è possibile usare la modalità di gestione di Surface Enterprise (SEMM) tramite Surface UEFI Configurator o UEFI Manager.
 
-Wake on Power è una funzionalità disponibile nei dispositivi seguenti:
+La funzionalità riattiva in Power è disponibile nei dispositivi seguenti:
 
 - Surface Book 3
 - Surface Pro 7
@@ -45,10 +45,10 @@ Wake on Power è una funzionalità disponibile nei dispositivi seguenti:
 
 ## Panoramica e prerequisiti
 
-Puoi usare Surface UEFI Configurator per configurare singole impostazioni UEFI salvate in un pacchetto di Windows Installer. msi per la distribuzione in dispositivi di destinazione. 
+Surface UEFI Configurator consente di salvare singole impostazioni UEFI in un pacchetto di Windows Installer. msi per la distribuzione in dispositivi di destinazione. 
 
 > [!NOTE]
-> Questo articolo presuppone che si abbia familiarità con l'uso di SEMM. Per altre informazioni, vedere la documentazione sulla [modalità di gestione di Surface Enterprise (SEMM)](surface-enterprise-management-mode.md) .
+> Questo articolo presuppone che tu sappia usare SEMM. Per altre informazioni, vedere la documentazione sulla [modalità di gestione di Surface Enterprise (SEMM)](surface-enterprise-management-mode.md) .
 
 ## Per abilitare la riattivazione in Power
 
@@ -56,28 +56,32 @@ Puoi usare Surface UEFI Configurator per configurare singole impostazioni UEFI s
 2.  Accedere al dispositivo Surface come amministratore, aprire il **Configuratore di Surface UEFI**, selezionare **dispositivi Surface**e quindi fare clic su **Avanti**.
 
     :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-1.png" alt-text="Selezionare dispositivi Surface e selezionare Avanti.":::
-3.  Selezionare **Avvia** e quindi in **pacchetto di configurazione** Selezionare **Crea**.
+3.  Selezionare **Start**, quindi selezionare **Crea** in **pacchetto di configurazione**.
 
     :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-2.png" alt-text="Selezionare Crea pacchetto di configurazione.":::
-4.  Selezionare **protezione certificato** e aggiungere il file con estensione pfx certificato. Dopo aver immesso la password, selezionare **Avanti**. Aggiungere la **protezione con password**, in base alle esigenze e quindi selezionare **Avanti**.
-5.  Nella pagina **scegliere il tipo di superficie da cui si vuole assegnare la destinazione** selezionare i dispositivi di destinazione in base alle esigenze. Ad esempio, **Surface Pro 7**.
-6.  Nella pagina **funzionalità avanzate** selezionare **riattiva in Power** e imposta **su**attivato. Seleziona **Avanti**.
+4.  Selezionare **protezione certificato**e aggiungere il file con estensione pfx certificato. 
+5. Immettere la password, scegliere **Avanti**, aggiungere la **protezione tramite password**, in base alle esigenze e quindi selezionare **Avanti**.
+6.  Nella pagina **scegliere il tipo di superficie da cui si vuole assegnare la destinazione** selezionare i dispositivi di destinazione in base alle esigenze. Ad esempio, selezionare **Surface Pro 7**.
+7.  Nella pagina **funzionalità avanzate** selezionare **riattiva in Power**, impostare la caratteristica **su**attivato e quindi selezionare **Avanti**.
 
     :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-3.png" alt-text="Selezionare Riattiva in Power e imposta su attivato."::: 
-7.  Nella pagina **completata** selezionare **fine**. Se è la prima volta che fornisci le impostazioni al dispositivo, verrà richiesto di specificare gli ultimi due caratteri dell'identificazione personale del certificato. 
-8.  Salvare il pacchetto MSI. 
+8.  Nella pagina **completata** selezionare **fine**.
+
+    > [!NOTE]
+    > Se è la prima volta che si forniscono impostazioni al dispositivo, verrà richiesto di specificare anche gli ultimi due caratteri dell'identificazione personale del certificato. 
+9.  Salvare il pacchetto MSI. 
 
 ## Applicare il pacchetto MSI 
 
 Puoi applicare il pacchetto MSI ai dispositivi della rete usando strumenti di distribuzione del software come Microsoft endpoint Configuration Manager. Questa procedura include i passaggi per installare il pacchetto nel computer locale. 
 
-1.  Aprire un prompt dei comandi con privilegi elevati e immettere il percorso completo del file MSI per eseguire il pacchetto MSI. 
+1.  In un prompt dei comandi con privilegi elevati, immettere il percorso completo del file MSI per eseguire il pacchetto MSI. 
 
     ```
     C:\SEMM\wake-on-power.msi 
     ```
 
-2.  Nella finestra di dialogo **avviso** selezionare **OK** o disabilitare BitLocker in base alle esigenze.
+2.  Nella finestra di dialogo **avviso** selezionare **OK** o disabilitare BitLocker, in base alle esigenze.
 
     :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-4.png" alt-text="Selezionare OK o disabilitare BitLocker in base alle esigenze.":::
 3.  Nella pagina di benvenuto selezionare **Avanti** per eseguire il pacchetto e applicare l'impostazione UEFI appena configurata.
@@ -85,9 +89,9 @@ Puoi applicare il pacchetto MSI ai dispositivi della rete usando strumenti di di
     :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-5.png" alt-text="Una pagina iniziale, selezionare Avanti.":::
 4.  Riavviare il dispositivo. 
 
-La riattivazione dell'alimentazione è ora configurata. Per testare l'impostazione, disattivare il dispositivo, scollegare l'alimentazione e quindi riconnettere l'alimentazione. Il dispositivo verrà avviato automaticamente. 
+La riattivazione dell'alimentazione è ora configurata. Per verificare le impostazioni, disattivare il dispositivo, scollegare l'alimentazione e quindi riconnettere l'alimentazione. Il dispositivo dovrebbe iniziare automaticamente. 
 
-## Altre informazioni
+## Riferimenti
 
 Per altre informazioni, vedere gli articoli seguenti. 
 
