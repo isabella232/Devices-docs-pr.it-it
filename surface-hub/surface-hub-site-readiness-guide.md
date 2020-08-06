@@ -9,12 +9,12 @@ author: greg-lindsay
 ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: f523fcfb29a2a7141dcc13183d7b0bc2801fc796
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 74b48d6fb7501d8c17d17604b5b2dbc9eff308c9
+ms.sourcegitcommit: 603bcb41dc1b7dd92d3bab1601fa6336480e1218
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10832894"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "10916017"
 ---
 # Guida alla preparazione del sito Surface Hub 
 
@@ -115,6 +115,7 @@ Connect consente agli utenti di proiettare il portatile, il tablet o il telefono
 Dato che la connessione wireless si basa su Miracast, non è necessario usare cavi o pianificare altre configurazioni per usarlo. Gli utenti possono caricare Miracast nella maggior parte dei dispositivi Windows 8,1 e Windows 10 abilitati per Miracast. Possono quindi proiettare la loro visualizzazione dal computer o dal telefono alla schermata Hub Surface.
 
 <span id="wired" />
+
 #### Connessione cablata
 
 Con la connessione cablata, un cavo trasmette informazioni da computer, tablet o telefoni a hub Surface. Sono disponibili tre opzioni per il cavo video, che usano tutti lo stesso cavo USB 2,0. Il bundle di cavi può includere una o tutte le opzioni di connessione.
@@ -137,6 +138,6 @@ Per informazioni dettagliate su Touchback e Inkback, vedere la guida per l'utent
 
 
 
-## Vedi anche
+## Vedere anche
 
 [Guarda il video (si apre in un lettore multimediale a comparsa)](https://compass.xbox.com/assets/27/aa/27aa7dd7-7cb7-40ea-9bd6-c7de0795f68c.mov?n=04.07.16_installation_video_01_site_readiness.mov)  
