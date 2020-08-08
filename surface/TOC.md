@@ -70,6 +70,8 @@
 ## Risoluzione dei problemi
 ### [Contattare il supporto di Surface](contact-surface-support.md)
 ### [Principali soluzioni di supporto per i dispositivi Surface](support-solutions-surface.md)
+### [Procedure consigliate per la rimozione di unità SSD nei dispositivi Surface compatibili](surface-ssd-removal-guide.md)
+### [Blog di Surface per professionisti IT](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/bg-p/SurfaceITPro)
 ### [Risolvere i problemi di Surface comuni con Toolkit di diagnostica per Surface per le aziende](surface-diagnostic-toolkit-for-business-intro.md)
 #### [Implementare Toolkit di diagnostica per Surface per le aziende](surface-diagnostic-toolkit-business.md)
 #### [Usare Toolkit di diagnostica per Surface per le aziende in modalità desktop](surface-diagnostic-toolkit-desktop-mode.md)
