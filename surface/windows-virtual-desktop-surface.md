@@ -1,5 +1,5 @@
 ---
-title: Desktop virtuale di Windows su Surface
+title: Desktop virtuale Windows su Surface
 description: Questo articolo spiega come i dispositivi Surface forniscono un nodo finale ideale per le soluzioni desktop virtuali di Windows, offrendo ai clienti fattori di forma flessibili, la sicurezza e la gestibilità dei dispositivi moderni di Windows 10 e il supporto per scenari di lavoro permanenti e su richiesta & just-in-time.
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -8,22 +8,22 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 5/20/2020
+ms.date: 8/12/2020
 ms.reviewer: rohenr
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 7db54b7bf8d08a10707753738e40c358a8723cf4
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: a3dfb5e4b2e5dc87dd4ae1dbced943e6be0772df
+ms.sourcegitcommit: 16845b3289a035b4e6ab5e7536307ef66651db28
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10832828"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926308"
 ---
-# Desktop virtuale di Windows su Surface
+# Desktop virtuale Windows su Surface
 
 ## Introduzione
 
-Windows Virtual Desktop su Surface consente di eseguire l'infrastruttura VDI (Virtual Desktop Infrastructure) in un dispositivo Surface che offusca le linee tra l'esperienza desktop locale e il desktop virtuale in cui l'autenticazione con tocco, penna, input penna e biometrica si estende sia in ambienti fisici che virtuali. Rappresentando un'altra pietra miliare nell'evoluzione dell'informatica, Windows Virtual Desktop in Surface <a href="#1"><sup> 1 </sup></a> combina Microsoft 365-virtualizzato in Azure cloud-con le protezioni di sicurezza avanzate, la gestibilità a livello aziendale e gli strumenti di produttività avanzati di Windows 10 su Surface.  Questa combinazione di fattore di forma Premium e infrastruttura desktop virtuale in Azure offre un ottimo rapporto qualità-prezzo per le esperienze degli utenti, la portabilità, la sicurezza, la continuità aziendale e la gestione moderna.
+Windows Virtual Desktop su Surface consente di eseguire l'infrastruttura VDI (Virtual Desktop Infrastructure) in un dispositivo Surface che offusca le linee tra l'esperienza desktop locale e il desktop virtuale in cui l'autenticazione con tocco, penna, input penna e biometrica si estende sia in ambienti fisici che virtuali. Rappresentando un'altra pietra miliare nell'evoluzione dell'informatica, Windows Virtual Desktop in Surface <a href="#1"><sup> 1 </sup></a> combina Microsoft 365-virtualizzato in Azure cloud-con le protezioni di sicurezza avanzate, la gestibilità a livello aziendale e gli strumenti di produttività avanzati di Windows 10 su Surface.  Questa combinazione di fattori di forma Premium e di infrastruttura desktop virtuale in Azure offre un valore eccezionale per il cliente in tutte le esperienze degli utenti, la portabilità, la sicurezza, la continuità aziendale e la gestione moderna.
 
 ### Desktop virtuale Windows
 
@@ -37,7 +37,7 @@ Per un elenco dei provider di partner approvati e per i fornitori di software in
 
 Surface Engineering offre una lunga serie di nuovi standard per l'innovazione superando la tastiera e il mouse per immaginare modi più naturali per interagire con i dispositivi, sia tramite tocco, voce, input penna o Surface dial. E con l'integrazione da chip a cloud di Microsoft 365 e la sicurezza e la gestibilità di Windows 10 Pro, Surface offre hardware, software, app e servizi connessi come previsto. Anche se è possibile eseguire WVD da dispositivi Windows risalenti a Windows 7, Microsoft Surface Devices offre vantaggi esclusivi, incluso il supporto per:
 
-- **Fattori di forma flessibili** -come i dispositivi 2-in-1 come Surface Go 2, Surface Pro 7 e Surface Pro X con la penna, il tocco e la tastiera rimovibile.
+- **Fattori di forma flessibili** -come i dispositivi 2-in-1 come Surface Go 2, Surface Pro 7 e Surface Pro X con la penna, il tocco e la tastiera rimovibile. È anche possibile usare la nuova superficie Duo per connettersi a WVD.
 - **Scenari di lavoro permanenti, su richiesta e just-in-time,** con accesso offline e su dispositivo per esperienze più produttive.
 - La **sicurezza e la gestibilità dei dispositivi moderni di Windows 10** garantiscono la flessibilità di essere produttivi ovunque.
 
