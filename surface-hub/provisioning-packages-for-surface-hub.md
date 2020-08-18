@@ -12,12 +12,12 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 03/16/2019
 ms.localizationpriority: medium
-ms.openlocfilehash: 0ce77122aecfc9a30ac9dc52dfea7e0b0ccf7e1f
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 9158bec3d2285e5e8d4f9f56e582ff2320a34024
+ms.sourcegitcommit: ac34f0ec1a9df74ea688bf0da2a51fadf5139a41
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833897"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "10934876"
 ---
 # Creare pacchetti di provisioning (Surface Hub)
 
@@ -76,7 +76,7 @@ Dopo aver [installato Progettazione configurazione di Windows](https://technet.m
 
 ### Creare il pacchetto di provisioning 
 
-1. Apri Progettazione configurazione di Windows:
+1. Aprire Progettazione configurazione di Windows:
    - Dal campo di ricerca della schermata Start o del menu Start digita "Progettazione configurazione di Windows" e fai clic sul collegamento corrispondente 
     
      oppure
@@ -107,7 +107,7 @@ Un file di configurazione di Surface Hub contiene un elenco degli account del di
 
 Utilizzare Microsoft Excel o altri editor CSV per creare un file CSV denominato `SurfaceHubConfiguration.csv`. Nel file, immettere un elenco di account del dispositivo e i nomi descrittivi in questo formato:
 
-```
+```console
 <DeviceAccountName>,<DeviceAccountPassword>,<FriendlyName>
 ```
 >[!IMPORTANT]
@@ -116,7 +116,7 @@ Utilizzare Microsoft Excel o altri editor CSV per creare un file CSV denominato 
 
 Di seguito viene riportato un esempio di `SurfaceHubConfiguration.csv`. 
 
-```
+```console
 Rainier@contoso.com,password,Rainier Surface Hub
 Adams@contoso.com,password,Adams Surface Hub
 Baker@contoso.com,password,Baker Surface Hub
@@ -156,11 +156,11 @@ Dopo aver [installato Progettazione configurazione di Windows](https://technet.m
    
 3. Assegna un nome al progetto e fai clic su **Avanti**.
 
-4. Seleziona **Edizione Windows10 Team**, fai clic su **Avanti** e quindi fai clic su **Fine**.
+4. Selezionare il **Team comune per Windows 10**, fare clic su **Avanti**e quindi su **fine**.
 
     ![Progettazione immagine e configurazione - Nuovo progetto](images/icd-new-project.png)
 
-5. Nel progetto, in **Personalizzazioni disponibili** seleziona **Impostazioni comuni Team Edition**.
+5. Nel progetto, in **personalizzazioni disponibili**, selezionare **impostazioni comuni del team**.
 
     ![Progettazione immagine e configurazione - Impostazioni comuni](images/icd-common-settings.png)
 

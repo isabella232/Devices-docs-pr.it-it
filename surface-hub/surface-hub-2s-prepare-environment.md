@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 11/21/2019
 ms.localizationpriority: Medium
-ms.openlocfilehash: 38f02b885a0ac2789ffc82f1ab38dc57fea5e841
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: dddab2adce1bec9ff722a3324b9c4b1be609ae89
+ms.sourcegitcommit: ac34f0ec1a9df74ea688bf0da2a51fadf5139a41
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833026"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "10934846"
 ---
 # Prepara l'ambiente per Surface Hub 2S
 
@@ -31,7 +31,7 @@ Microsoft aggiorna regolarmente il servizio Office 365 con nuove funzionalità e
 ## Affiliazione dispositivi
 
 USA affiliazione dispositivo per gestire l'accesso degli utenti all'app impostazioni in Surface Hub 2S.
-Con il sistema operativo Windows 10 Team Edition (che viene eseguito su Surface Hub 2S), solo gli utenti autorizzati possono modificare le impostazioni usando l'app Impostazioni. Poiché la scelta dell'affiliazione può avere un impatto sulla disponibilità delle caratteristiche, pianificare in modo appropriato che gli utenti possano accedere alle funzionalità come previsto.
+Con il sistema operativo Windows 10 team (che viene eseguito su Surface Hub 2S), solo gli utenti autorizzati possono modificare le impostazioni usando l'app Impostazioni. Poiché la scelta dell'affiliazione può avere un impatto sulla disponibilità delle caratteristiche, pianificare in modo appropriato che gli utenti possano accedere alle funzionalità come previsto.
 
 > [!NOTE]
 > È possibile impostare l'affiliazione del dispositivo solo durante la configurazione dell'esperienza fuori sede (OOBE) iniziale. Se è necessario reimpostare l'affiliazione del dispositivo, è necessario ripetere la configurazione di OOBE.
