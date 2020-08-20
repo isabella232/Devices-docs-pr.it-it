@@ -8,16 +8,21 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 11/13/2019
+ms.date: 08/19/2020
 ms.reviewer: jesko
 manager: laurawi
 ms.audience: itpro
-ms.openlocfilehash: 0aa69bb229f0d76972620bc58f236e43e03075b2
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+appliesto:
+- Surface Pro 7
+- Surface Pro X
+- Surface Laptop 3
+- Surface Book 3
+ms.openlocfilehash: 9d83fe9b7febf996d2cb314399505ed050a69a92
+ms.sourcegitcommit: b94832cba98e01014f7d184c85d79f8339e046c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833206"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "10941667"
 ---
 # Gestione di Intune delle impostazioni UEFI di Surface
 
@@ -43,11 +48,12 @@ In modo cruciale, DFCI Abilita la gestione del tocco zero, eliminando l'esigenza
 
 ## Dispositivi supportati
 
-In questo momento, DFCI è supportato nei dispositivi seguenti:
+DFCI è supportato nei dispositivi seguenti:
 
 - Surface Pro 7
 - Surface Pro X
 - Laptop Surface 3
+- Surface Book 3
 
 > [!NOTE]
 > Surface Pro X non supporta la gestione delle impostazioni di DFCI per la fotocamera incorporata, l'audio e la rete Wi-Fi/Bluetooth.
@@ -56,7 +62,7 @@ In questo momento, DFCI è supportato nei dispositivi seguenti:
 
 - I dispositivi devono essere registrati con il pilota automatico Windows da un [partner di Microsoft Cloud Solution Provider (CSP)](https://partner.microsoft.com/membership/cloud-solution-provider) o un distributore OEM.
 
-- Prima di configurare DFCI per Surface, è necessario avere familiarità con i requisiti di configurazione del pilota automatico in [Microsoft Intune](https://docs.microsoft.com/intune/) e [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) (Azure ad).
+- Prima di configurare DFCI per Surface, è necessario avere familiarità con i requisiti di configurazione del pilota automatico in  [Microsoft Intune](https://docs.microsoft.com/intune/) e [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/) (Azure ad).
 
 ## Prima di iniziare
 
