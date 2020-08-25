@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 12/05/2019
 ms.localizationpriority: Medium
-ms.openlocfilehash: fb7e1a39d96c2da6d27d5558ebefcff52bd6e159
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 7d79fab22b62e6ef29832be6241c484e9caf72e0
+ms.sourcegitcommit: 537fa38bdd21fcd679af0764e734f4b8efb6a03f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833003"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "10959948"
 ---
 # Reset e ripristino per Surface Hub 2S
 
@@ -27,16 +27,19 @@ Per iniziare, accedi a Surface Hub 2S con le credenziali di amministratore, Apri
 ## Reimpostare il dispositivo
 
 1. Per reimpostare il dispositivo, selezionare **inizia**.
+
 2. Quando viene visualizzata la finestra **pronto per reimpostare il dispositivo** , selezionare **Reimposta**. 
   
-  >[!NOTE]
-  >Surface Hub 2S reinstalla il sistema operativo dalla partizione di ripristino. Il completamento può richiedere fino a un'ora.
+   > [!NOTE]
+   > Surface Hub 2S reinstalla il sistema operativo dalla partizione di ripristino. Il completamento può richiedere fino a un'ora.
   
 3. Per riconfigurare il dispositivo, eseguire il programma di installazione per la prima volta.
+
 4. Se si gestisce il dispositivo con Microsoft Intune o un'altra soluzione di gestione di dispositivi mobili, ritirare ed eliminare il record precedente e quindi ripetere la registrazione del nuovo dispositivo. Per altre informazioni, vedere [rimuovere i dispositivi tramite wipe, ritirarsi o annullare la registrazione manuale del dispositivo](https://docs.microsoft.com/intune/devices-wipe).
 
-![* Reset e ripristino per Surface Hub 2S *](images/sh2-reset.png)<br>
-*Figura 1. Reset e ripristino per Surface Hub 2S* 
+> [!div class="mx-imgBorder"]
+> ![* Reset e ripristino per Surface Hub 2S *](images/sh2-reset.png)
+<br/>*Figura 1. Reset e ripristino per Surface Hub 2S* 
 
 ## Recuperare Surface Hub 2S usando un'unità di ripristino USB
 
@@ -50,17 +53,22 @@ Con Surface Hub 2S puoi reinstallare il dispositivo usando un'immagine di ripris
 >Usare un'unità USB 3,0 con 8 GB o 16 GB di spazio di archiviazione, formattati come FAT32.
 
 1. Da un PC separato scaricare l'immagine di ripristino del file zip dal [sito Web Surface Recovery](https://support.microsoft.com/surfacerecoveryimage?devicetype=surfacehub2s) e quindi tornare a queste istruzioni. 
-1. Decomprimere il file scaricato nella radice dell'unità USB.  
-1. Connettere l'unità USB a qualsiasi porta USB-C o USB-A su Surface Hub 2S.
-1. Disattivare il dispositivo:
-   1. Tenendo premuto il pulsante volume giù, premere il pulsante di accensione.
-   1. Tenere premuto entrambi i pulsanti finché non viene visualizzato il logo Windows.
-   1. Rilasciare il pulsante di alimentazione, ma continuare a tenere premuto il volume fino a quando non inizia l'interfaccia utente di installazione.
 
-    ![* Usare i pulsanti volume giù e Power per avviare il ripristino *](images/sh2-keypad.png) <br>
+1. Decomprimere il file scaricato nella radice dell'unità USB.  
+
+1. Connettere l'unità USB a qualsiasi porta USB-C o USB-A su Surface Hub 2S.
+
+1. Disattivare il dispositivo:
+
+   1. Mentre si preme il pulsante volume su, premere il pulsante di alimentazione.
+   1. Continua a premere entrambi i pulsanti finché non viene visualizzato il logo Windows.
+   1. Rilasciare il pulsante di alimentazione, ma continuare a tenere premuto il pulsante del volume fino all'inizio dell'interfaccia utente di installazione.
+
+   ![* Usare i pulsanti volume giù e Power per avviare il ripristino *](images/sh2-keypad.png) <br>
    **Figura 2. Pulsanti di alimentazione e di volume**
 
 1. Nella schermata Selezione lingua selezionare la lingua di visualizzazione per il mozzo della superficie 2S.
+
 1. Selezionare **Recupera da un'unità** e **pulire completamente l'unità**e quindi selezionare **Recupera**. Se viene richiesta una chiave BitLocker, selezionare **Ignora l'unità**. Surface Hub 2S viene riavviato più volte e impiega circa 30 minuti per completare il processo di ripristino.
 
 Quando viene visualizzata la schermata di configurazione per la prima volta, rimuovere l'unità USB.
