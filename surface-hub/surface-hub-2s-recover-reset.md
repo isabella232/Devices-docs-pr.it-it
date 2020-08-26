@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 12/05/2019
 ms.localizationpriority: Medium
-ms.openlocfilehash: 7d79fab22b62e6ef29832be6241c484e9caf72e0
-ms.sourcegitcommit: 537fa38bdd21fcd679af0764e734f4b8efb6a03f
+ms.openlocfilehash: e3b1e380f9776fc56e99b8d4e35f708aa952759c
+ms.sourcegitcommit: e075b46f14b730464d66246b0280ef2cfa16b3fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "10959948"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "10963577"
 ---
 # Reset e ripristino per Surface Hub 2S
 
@@ -60,9 +60,9 @@ Con Surface Hub 2S puoi reinstallare il dispositivo usando un'immagine di ripris
 
 1. Disattivare il dispositivo:
 
-   1. Mentre si preme il pulsante volume su, premere il pulsante di alimentazione.
+   1. Mentre si preme il pulsante volume giù, premere il pulsante di alimentazione.
    1. Continua a premere entrambi i pulsanti finché non viene visualizzato il logo Windows.
-   1. Rilasciare il pulsante di alimentazione, ma continuare a tenere premuto il pulsante del volume fino all'inizio dell'interfaccia utente di installazione.
+   1. Rilasciare il pulsante di alimentazione, ma continuare a tenere premuto il pulsante volume giù fino a quando non inizia l'interfaccia utente di installazione.
 
    ![* Usare i pulsanti volume giù e Power per avviare il ripristino *](images/sh2-keypad.png) <br>
    **Figura 2. Pulsanti di alimentazione e di volume**
