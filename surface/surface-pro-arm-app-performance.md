@@ -8,20 +8,34 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 10/03/2019
+ms.date: 09/02/2020
 ms.reviewer: jessko
 manager: laurawi
 ms.audience: itpro
-ms.openlocfilehash: c236bf066d22cae80f4c0df39cc04450ad57a419
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 155f77a50e0ca529669bac98e70f57c8c8a20081
+ms.sourcegitcommit: c74835239cf4e304af59465fb6fc785de4a0c5cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833194"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "10994577"
 ---
 # Compatibilità delle app Surface Pro X
 
-Le applicazioni vengono eseguite in modo diverso nei PC Windows 10 basati su ARM, ad esempio Surface Pro X. le limitazioni includono le seguenti:
+
+
+ ![Immagine dell'utente del PC](images/4527790_en_4.png)<br><br>
+
+
+
+I PC basati su Windows 10 ARM ti aiutano a continuare a lavorare ovunque tu vada. Ecco alcuni dei vantaggi principali:
+
+- **Essere sempre connessi a Internet.** Con una connessione dati cellulare, è possibile essere online ovunque si trovi un segnale cellulare, proprio come con il telefono cellulare. Quando si è al lavoro, a casa o da un'altra rete Wi-Fi considerata attendibile, è possibile connettersi a Wi-Fi per salvare i dati del cellulare e continuare a lavorare.
+
+- **Durata della batteria che supera tutto il giorno.**  Si utilizzerà meno energia rispetto a quella di altri PC, in modo da poter passare a un normale giorno lavorativo o scolastico senza esaurire la batteria o preoccuparsi di trovare una presa da collegare. Se si vuole usare il PC per un po' più di divertimento, è possibile riprodurre i video archiviati nel PC per molte ore senza caricare la batteria in mezzo.
+
+- **Attivare istantaneamente.** Quando non si usa il PC, è sufficiente premere il pulsante di alimentazione, come nel telefono cellulare, per disattivare lo schermo. Quando si estrae il PC e lo si riattiva, viene attivato immediatamente. Ogni volta che si hanno pochi minuti tra le classi, le riunioni o altre attività, è possibile eseguire le operazioni senza aspettare che il PC inizi.
+
+Tieni presente che le applicazioni vengono eseguite in modo diverso nei PC Windows 10 basati su ARM, ad esempio Surface Pro X. le limitazioni includono le seguenti:
 
 - **I driver per l'hardware, i giochi e le app funzionano solo se progettati per un PC con Windows 10 ARM**. Per altre info, consulta il produttore dell'hardware o l'organizzazione che ha sviluppato il driver. I driver sono programmi software che comunicano con dispositivi hardware, che vengono comunemente usati per software antivirus e antimalware, software per la stampa o PDF, strumenti di Assistive Technology, utilità per CD e DVD e software di virtualizzazione. Se un driver non funziona, l'app o l'hardware che si basa su di essa non funzionerà (almeno non completamente). Le periferiche e i dispositivi funzionano solo se i driver da cui dipendono sono incorporati in Windows 10 o se lo sviluppatore di hardware ha rilasciato i driver di ARM64 per il dispositivo.
 - le **app di 64 bit (x64) non funzionano**. È necessario 64 bit (ARM64) Apps, 32 bit (ARM32) Apps o 32 bit (x86) app. In genere puoi trovare versioni di app a 32 bit (x86), ma alcuni sviluppatori di app offrono solo app a 64 bit (x64).
@@ -30,4 +44,4 @@ Le applicazioni vengono eseguite in modo diverso nei PC Windows 10 basati su ARM
 - **Non è possibile installare alcuni software antivirus di terze parti**. Non sarà possibile installare software antivirus di terze parti in un PC con Windows 10 ARM. La sicurezza di Windows consentirà tuttavia di proteggerti per la durata supportata del tuo dispositivo Windows 10.
 - **Fax e scanner Windows non sono disponibili**. Questa caratteristica non è disponibile in un PC con Windows 10 ARM.
 
-Per altre informazioni sulla compatibilità delle app, vedere [domande frequenti su PC basati su ARM Windows 10](https://support.microsoft.com/en-us/help/4521606)
+Per altre informazioni sulla compatibilità delle app, vedere [domande frequenti su PC basati su Windows 10 ARM](https://support.microsoft.com/en-us/help/4521606).

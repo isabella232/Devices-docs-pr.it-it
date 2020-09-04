@@ -1,6 +1,6 @@
 ---
-title: Configurazione di post-installazione di Windows 10 per Surface Hub 2
-description: Configurazione di post-installazione di Windows 10 per Surface Hub 2
+title: Configurare Windows 10 Pro o Enterprise in Surface Hub 2
+description: Questo articolo include suggerimenti per garantire un'esperienza ottimale quando si usa un tocco di grande schermo personalizzato e un computer penna.
 keywords: Surface Hub, Windows 10, desktop, installa, configurazione
 ms.prod: surface-hub
 ms.mktglfcycl: deploy
@@ -13,14 +13,14 @@ ms.audience: itpro
 author: greg-lindsay
 ms.collection: M365-modern-desktop
 ms.topic: article
-ms.openlocfilehash: d6a1cdb2cac01b48c80e0fa4b7ccb6d3bcdb76ac
-ms.sourcegitcommit: 6618e8fe05628aa8b17654584657eff0f784dbfd
+ms.openlocfilehash: 47852284c35d213b81dd7b87ca875b400d8c713f
+ms.sourcegitcommit: c74835239cf4e304af59465fb6fc785de4a0c5cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10986549"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "10994592"
 ---
-# Configurazione di post-installazione di Windows 10 per Surface Hub 2
+# Configurare Windows 10 Pro o Enterprise in Surface Hub 2
 
 **Si applica a: Surface Hub 2S** 
 
@@ -135,14 +135,20 @@ Usare un dispositivo certificato Windows Hello per il riconoscimento delle facce
 Per aggiungere un'icona alla barra delle applicazioni che consente il blocco dello schermo con un tocco simile alla scelta rapida da tastiera Windows-L: 
 
 1.  Toccare e tenere premuto o fare clic con il pulsante destro del mouse sul desktop, scegliere **nuovo**  >  **collegamento**  >  **Sfoglia**  >  **Desktop**  >  **OK**  >  **Avanti**.
-2.  Specificare un nome per il collegamento, ad esempio **Blocca PC**e quindi selezionare **fine**.
-3.  Fare clic con il pulsante destro del mouse o toccare e tenere premuto il collegamento appena creato sul desktop e scegliere **Proprietà**. Nella scheda **collegamento** immettere quanto segue nel campo di **destinazione** : **Rundll32.exe User32.dll, LockWorkStation**
-4.  Selezionare il pulsante **Cambia icona** e passare a **C:\Windows\System32\imageres.dll** e selezionare un'icona da usare. 
-5. Vedi l'esempio seguente:
+
+1.  Specificare un nome per il collegamento, ad esempio **Blocca PC**e quindi selezionare **fine**.
+
+1.  Fare clic con il pulsante destro del mouse o toccare e tenere premuto il collegamento appena creato sul desktop e scegliere **Proprietà**. Nella scheda **collegamento** immettere quanto segue nel campo di **destinazione** : **Rundll32.exe User32.dll, LockWorkStation**
+
+1.  Selezionare il pulsante **Cambia icona** e passare a **C:\Windows\System32\imageres.dll** e selezionare un'icona da usare. 
+
+    Vedi l'esempio seguente:
 
     ![Scegliere un'icona](images/lock.png)
-6.  Selezionare **OK** per salvare il collegamento.
-7.  Fare clic con il pulsante destro del mouse o toccare e tenere premuto il collegamento e selezionare **Aggiungi alla barra delle applicazioni**.
+    
+1.  Selezionare **OK** per salvare il collegamento.
+
+1.  Fare clic con il pulsante destro del mouse o toccare e tenere premuto il collegamento e selezionare **Aggiungi alla barra delle applicazioni**.
 
 ## Applicazioni
 
@@ -158,7 +164,9 @@ Per aggiornare tutte le app dello Store installate:
 
 Per installare la lavagna Microsoft:
 
-1. Selezionare l'area di lavoro input penna dell'icona **area di lavoro di Windows Ink** nell' ![ ](images/ink.png) angolo inferiore destro della barra delle applicazioni e scaricare **lavagna**.
+ - Selezionare l'icona dell' **area di lavoro Windows Ink** nell'angolo inferiore destro della barra delle applicazioni e scaricare **lavagna**.
+ 
+   ![Area di lavoro input penna](images/ink.png) 
 
 In alternativa, è possibile installare lavagna da Microsoft Store:
 
@@ -275,9 +283,9 @@ Attivare la modalità tablet, se necessario per esigenze di accessibilità.
 
 1. Cercare **Centro software** e aprirlo.
 2. Selezionare le **Opzioni** nel riquadro di spostamento.
-3. Espandere la sezione **Power Management** e selezionare la casella **di controllo non applicare le impostazioni di alimentazione dal reparto IT al computer in**uso.
+3. Espandere la sezione **Power Management** e selezionare non **applicare le impostazioni di alimentazione dal reparto IT al computer in**uso.
 
-  ![Impostazioni software](images/soft-cntr.png)
+   ![Impostazioni software](images/soft-cntr.png)
 
 ### Impostazioni audio
 
