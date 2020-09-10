@@ -11,14 +11,15 @@ audience: admin
 manager: laurawi
 ms.audience: itpro
 author: greg-lindsay
+ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
-ms.openlocfilehash: 47852284c35d213b81dd7b87ca875b400d8c713f
-ms.sourcegitcommit: c74835239cf4e304af59465fb6fc785de4a0c5cc
+ms.openlocfilehash: f6ea6324799981e57c36a11b33cf2e22ea80039e
+ms.sourcegitcommit: d24759da42dfe0b913fd9ebf716407a673c2b818
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "10994592"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "11004478"
 ---
 # Configurare Windows 10 Pro o Enterprise in Surface Hub 2
 
@@ -157,7 +158,7 @@ Per aggiungere un'icona alla barra delle applicazioni che consente il blocco del
 Per aggiornare tutte le app dello Store installate:
 
 1. Aprire l'app Microsoft Store e selezionare la **visualizzazione altri** puntini di sospensione nell'angolo in alto a destra.
-2. Selezionare **download e aggiornamenti**.
+2. Selezionare **Download e aggiornamenti**.
 2. Selezionare **Ottieni aggiornamenti**.
 
 ### Microsoft Whiteboard

@@ -1,5 +1,5 @@
 ---
-title: Autenticazione moderna su Surface Hub
+title: Autenticazione moderna di Surface Hub
 description: Questa pagina descrive l'uso dell'autenticazione moderna su Surface Hub in contrasto con l'autenticazione di base legacy.
 keywords: separare i valori con virgole
 ms.prod: surface-hub
@@ -9,18 +9,18 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 07/21/2020
+ms.date: 09/08/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 387d799e15ae25bb1043e9ee3417aa3c31676825
-ms.sourcegitcommit: 8738f44f2f4c86e3a45e9fbcbe6469388fc15924
+ms.openlocfilehash: 14be433923ca564123952c2d1d7b1c158e725af3
+ms.sourcegitcommit: d24759da42dfe0b913fd9ebf716407a673c2b818
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "10893153"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "11004468"
 ---
-# Autenticazione moderna su Surface Hub
+# Autenticazione moderna di Surface Hub
 
-Il supporto per l'autenticazione moderna degli account basati sul cloud è completamente integrato nell'aggiornamento di Windows 10 team 2020, che consente di eseguire la migrazione dall'autenticazione di base legacy e di usare i miglioramenti più recenti di sicurezza di Microsoft Azure ed Exchange Online. Con l'aggiornamento di 2020, Surface Hub supporta i protocolli di Exchange Web Services (EWS) e l'autenticazione basata su ADAL (Active Directory Authentication Library) che Abilita Exchange Online per la sincronizzazione dell'account del dispositivo.
+Il supporto per l'autenticazione moderna degli account basati sul cloud è completamente integrato nel prossimo aggiornamento di Windows 10 team 2020, con le build di anteprima disponibili nel [programma Windows Insider](https://insider.windows.com/). Dopo aver [installato la build di anteprima](surface-hub-install-2020preview.md), è possibile eseguire la migrazione dall'autenticazione di base legacy e usare i miglioramenti di sicurezza più recenti di Microsoft Azure ed Exchange Online. Con l'aggiornamento di 2020, Surface Hub supporta i protocolli di Exchange Web Services (EWS) e l'autenticazione basata su ADAL (Active Directory Authentication Library) che Abilita Exchange Online per la sincronizzazione dell'account del dispositivo.
 
 Per i nuovi account basati sul cloud, Surface Hub USA automaticamente l'autenticazione moderna per connettersi a Exchange Online senza richiedere ulteriore configurazione oltre a creare semplicemente account di dispositivo usando il formato [alias@contoso.com](mailto:alias@contoso.com). Non usare il formato legacy-Contoso\alias, che non è supportato per l'autenticazione moderna. Per altre informazioni, Vedi [creare l'account del dispositivo Surface Hub 2S](https://docs.microsoft.com/surface-hub/surface-hub-2s-account).
 
