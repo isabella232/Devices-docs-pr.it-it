@@ -12,12 +12,12 @@ metadata:
   ms.author: samanro
   ms.date: 07/03/2019
   localization_priority: Priority
-  ms.openlocfilehash: cbc2644d37f77b583d73ef7aeab5a96b1db4b11c
-  ms.sourcegitcommit: 16845b3289a035b4e6ab5e7536307ef66651db28
+  ms.openlocfilehash: 6c4f039194bd9425ad00bb7cf2b4ac32ccdad6b5
+  ms.sourcegitcommit: 75940bb1ab4e08c96736923859c7dd673dcf8d79
   ms.translationtype: HT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 08/12/2020
-  ms.locfileid: "10926288"
+  ms.lasthandoff: 09/10/2020
+  ms.locfileid: "11009594"
 highlightedContent:
   items:
   - title: Documentazione per i dispositivi Surface
@@ -29,45 +29,79 @@ highlightedContent:
   - title: Documentazione di Surface Duo
     itemType: learn
     url: https://docs.microsoft.com/surface-duo/index
-additionalContent:
-  sections:
-  - title: Risorse Surface
-    summary: Trovare le risorse per i dispositivi Microsoft Surface.
-    items:
-    - title: Panoramica di Surface
-      links:
-      - text: Surface Go 2 per le aziende
-        url: https://www.microsoft.com/surface/business/surface-go-2
-      - text: Surface Book 3 per le aziende
-        url: https://www.microsoft.com/surface/business/surface-book-3
-      - text: Esplorare tutta la famiglia di prodotti Surface
-        url: https://www.microsoft.com/surface/business
-    - title: Community Surface
-      links:
-      - text: Blog Surface IT Pro
-        url: https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro
-      - text: Community tecnica dei dispositivi Surface
-        url: https://techcommunity.microsoft.com/t5/Surface-Devices/ct-p/SurfaceDevices
-    - title: Guida di Surface
-      links:
-      - text: Contattare il supporto di Surface
-        url: contact-surface-support.md
-  - title: Risorse Surface Hub
-    summary: Trovare le risorse per Microsoft Surface Hub.
-    items:
-    - title: Panoramica di Surface Hub
-      links:
-      - text: Novità di Surface Hub 2S
-        url: https://docs.microsoft.com/surface-hub/surface-hub-2s-whats-new
-      - text: Specifiche tecniche di Surface Hub 2S
-        url: https://docs.microsoft.com/surface-hub/surface-hub-2s-techspecs
-      - text: Nozioni fondamentali del sistema operativo
-        url: https://docs.microsoft.com/surface-hub/differences-between-surface-hub-and-windows-10-enterprise
-    - title: Community di Surface Hub
-      links:
-      - text: Community tecnica di Surface Hub
-        url: https://techcommunity.microsoft.com/t5/surface-hub/bd-p/SurfaceHub
-    - title: Guida di Surface Hub
-      links:
-      - text: Contatta il supporto di Surface Hub
-        url: https://support.microsoft.com/supportforbusiness/productselection?sapId=bb7066fb-e329-c1c0-9c13-8e9949c6a64e
+conceptualContent:
+  title: Dispositivi Surface
+  summary: Trovare le risorse per i dispositivi Microsoft Surface.
+  items:
+  - title: Panoramica di Surface
+    links:
+    - url: https://www.microsoft.com/surface/business/surface-go-2
+      itemType: concept
+      text: Surface Go 2 per le aziende
+    - url: https://www.microsoft.com/surface/business/surface-book-3
+      itemType: concept
+      text: Surface Book 3 per le aziende
+    - url: https://www.microsoft.com/surface/business
+      itemType: concept
+      text: Esplorare tutta la famiglia di prodotti Surface
+  - title: Panoramica di Surface Hub
+    links:
+    - url: https://docs.microsoft.com/surface-hub/surface-hub-2s-whats-new
+      itemType: concept
+      text: Novità di Surface Hub 2S
+    - url: https://docs.microsoft.com/surface-hub/surface-hub-2s-techspecs
+      itemType: concept
+      text: Specifiche tecniche di Surface Hub 2S
+    - url: https://docs.microsoft.com/surface-hub/differences-between-surface-hub-and-windows-10-enterprise
+      itemType: concept
+      text: Nozioni fondamentali del sistema operativo
+  - title: Panoramica di Surface Duo
+    links:
+    - url: https://docs.microsoft.com/en-us/surface-duo/surface-duo-manage
+      itemType: concept
+      text: Panoramica di gestione di Surface Duo
+    - url: https://docs.microsoft.com/en-us/surface-duo/surface-duo-secure
+      itemType: concept
+      text: Panoramica della sicurezza di Surface Duo
+    - url: https://www.microsoft.com/surface/business/surface-duo
+      itemType: concept
+      text: Specifiche tecniche di Surface Duo
+  - title: Community Surface
+    links:
+    - url: https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro
+      itemType: reference
+      text: Blog Surface IT Pro
+    - url: https://techcommunity.microsoft.com/t5/Surface-Devices/ct-p/SurfaceDevices
+      itemType: reference
+      text: Community tecnica dei dispositivi Surface
+  - title: Community di Surface Hub
+    links:
+    - url: https://techcommunity.microsoft.com/t5/surface-hub/bd-p/SurfaceHub
+      itemType: reference
+      text: Community tecnica di Surface Hub
+  - title: Community di Surface Duo
+    links:
+    - url: https://aka.ms/SurfaceDuoITBlog
+      itemType: reference
+      text: 'Blog di Surface Duo per professionisti IT '
+  - title: Guida di Surface
+    links:
+    - url: contact-surface-support.md
+      itemType: learn
+      text: Contattare il supporto di Surface
+  - title: Guida di Surface Hub
+    links:
+    - url: https://support.microsoft.com/supportforbusiness/productselection?sapId=bb7066fb-e329-c1c0-9c13-8e9949c6a64e
+      itemType: learn
+      text: Contatta il supporto di Surface Hub
+  - title: Guida di Surface Duo
+    links:
+    - url: https://docs.microsoft.com/en-us/surface/contact-surface-support
+      itemType: learn
+      text: Contatta il supporto di Surface Duo
+    - url: https://docs.microsoft.com/en-us/dual-screen/android/get-duo-sdk?tabs=windows
+      itemType: learn
+      text: Ottenere l'SDK di Surface Duo
+    - url: https://www.microsoft.com/download/details.aspx?id=100847
+      itemType: learn
+      text: Scarica l’emulatore Surface Duo
