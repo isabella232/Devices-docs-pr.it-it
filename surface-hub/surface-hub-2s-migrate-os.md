@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 09/11/2020
+ms.date: 09/15/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 44e7ca08ca4b8c077d430cba2a8cb4b674b68631
-ms.sourcegitcommit: ae0dae16e0b7bb9c906de78095634c3070a58c61
+ms.openlocfilehash: d36f42485107dd84be08c20291b36540662503da
+ms.sourcegitcommit: c2df79cab0e59e9d7ea6640e5899531b57cd383f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "11013436"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "11016455"
 ---
 # Eseguire la migrazione a Windows 10 Pro o Enterprise in Surface Hub 2
 
@@ -26,6 +26,11 @@ Surface Hub 2S viene preinstallato con Windows 10 team, un'edizione personalizza
 
 > [!IMPORTANT]
 >A differenza di un tipico aggiornamento o migrazione, questo processo richiede di seguire una procedura prescrittiva, come descritto in questa pagina. Esaminare i [componenti della soluzione](#solution-components) e il [flusso di lavoro di migrazione e installazione](#migration-and-installation-workflow-summary) prima di procedere.
+
+
+> [!NOTE]
+> Quando si installa Windows 10 Pro o Enterprise, è necessario disporre di una nuova licenza separata dalla licenza del team di Windows 10 esistente. 
+
 
 Si avvia la migrazione da team Windows 10 usando un PC separato e uno strumento scaricabile-- **Surface UEFI Configurator** --per creare un pacchetto contenente una nuova impostazione UEFI applicata a Surface Hub 2S.  Surface UEFI Configurator funge da interfaccia in modalità di gestione di Surface Enterprise (SEMM), progettato per facilitare la gestione centralizzata delle impostazioni del firmware nei dispositivi Surface in un ambiente aziendale. Per altre informazioni su SEMM, vedere la [documentazione relativa alla modalità di gestione Microsoft Surface Enterprise](https://docs.microsoft.com/surface/surface-enterprise-management-mode).
  
@@ -93,7 +98,7 @@ Se è la prima volta che si usa Surface UEFI Configurator, è necessario prepara
 
 - Le medie imprese e altre persone possono scegliere di ottenere un certificato da provider di terze parti. Questa è l'opzione consigliata per le organizzazioni senza sufficienti competenze IT o un team di sicurezza IT dedicato.
 
-- In alternativa, è possibile generare un certificato autofirmato con uno script di PowerShell per la documentazione seguente: [requisiti di certificato in modalità di gestione di Surface Enterprise](https://docs.microsoft.com/surface/surface-enterprise-management-mode#surface-enterprise-management-mode-certificate-requirements). In alternativa, usare PowerShell per creare un certificato personalizzato per la documentazione seguente: [New-SelfSignedCertificate](https://docs.microsoft.com/powershell/module/pkiclient/new-selfsignedcertificate?view=win10-ps).
+- In alternativa, è possibile generare un certificato autofirmato con uno script di PowerShell per la documentazione seguente: [requisiti di certificato in modalità di gestione di Surface Enterprise](https://docs.microsoft.com/surface/surface-enterprise-management-mode#surface-enterprise-management-mode-certificate-requirements). In alternativa, usare PowerShell per creare un certificato personalizzato per la documentazione seguente: [New-SelfSignedCertificate](https://docs.microsoft.com/powershell/module/pkiclient/new-selfsignedcertificate).
 
 Il pacchetto SEMM deve essere protetto con un certificato per verificare la firma dei file di configurazione prima che le impostazioni di UEFI possano essere applicate. Per altre informazioni, vedere la documentazione relativa alla [modalità di gestione di Surface Enterprise](https://docs.microsoft.com/surface/surface-enterprise-management-mode) .
  
@@ -274,3 +279,9 @@ Per configurare completamente Surface Hub 2S come dispositivo di produttività p
 
 Per ripristinare il dispositivo al team di Windows 10, vedere [reimpostazione e ripristino per Surface Hub 2S](surface-hub-2s-recover-reset.md)
 
+## Cronologia versioni
+
+| Versione | Data               | Descrizione                                                                                           |
+| ------- | ------------------ | ----------------------------------------------------------------------------------------------------- |
+| v. 1,1  | 15 settembre 2020 | Aggiunta di una nota aggiuntiva nell'introduzione che chiarisce i requisiti di licenza per l'installazione di un nuovo sistema operativo. |
+| v. 1.0  | 1 settembre 2020  | Nuovo articolo                                                                                           |
