@@ -15,12 +15,12 @@ ms.author: greglin
 ms.topic: article
 ms.audience: itpro
 ms.date: 5/08/2020
-ms.openlocfilehash: 0e136bd0a69db7a4c4e5cea7d2c065727dcc8fcc
-ms.sourcegitcommit: c2df79cab0e59e9d7ea6640e5899531b57cd383f
+ms.openlocfilehash: 3ede7311289dc4bc720735c0142ff3a46fbb69e7
+ms.sourcegitcommit: 582c5a79881c58c4f1aa66cfcab46db966ca9f24
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/16/2020
-ms.locfileid: "11016440"
+ms.locfileid: "11016557"
 ---
 # Microsoft Surface Deployment Accelerator
 
@@ -36,8 +36,11 @@ L'immagine risultante corrisponde strettamente alla configurazione delle immagin
 
 1. Un'unità thumb USB di dimensioni almeno 16 GB. L'unità USB verrà formattata.
 2. Un file con estensione ISO con Windows 10 Pro o Windows 10 Enterprise. Lo strumento per la creazione di elementi multimediali può essere usato per scaricare Windows 10 e creare un file ISO. Per altre informazioni, vedere [scaricare Windows 10](https://www.microsoft.com/software-download/windows10).
+3. Dispositivo che utilizza Windows 10, versione 2004 o successiva con accesso a Internet.
 
-## Come eseguire SDA
+Vedere la sezione [prerequisiti](https://github.com/microsoft/SurfaceDeploymentAccelerator/blob/master/README.md#prerequisites) del documento README per un elenco dettagliato dei requisiti.
+
+## Come eseguire l'SDA
 
 **Per eseguire SDA:**
 
@@ -52,17 +55,20 @@ L'immagine risultante corrisponde strettamente alla configurazione delle immagin
     ```powershell
     Set-ExecutionPolicy -Scope Process -ExecutionPolicy Unrestricted -Force
     ```
-8. Eseguire lo script SDA specificando i parametri per l'ambiente. Ad esempio, il comando seguente creerà un'unità USB avviabile che può essere usata per installare Windows 10 su un hub Surface 2:
+8. Eseguire lo script SDA specificando i parametri per l'ambiente. Lo script può essere usato per creare immagini per l'installazione di Windows 10 su un'ampia gamma di dispositivi Surface. Per un elenco completo dei dispositivi supportati, vedere la [Descrizione del parametro di dispositivo](https://github.com/microsoft/SurfaceDeploymentAccelerator/blob/master/README.md#full-parameter-documentation) nell'articolo Leggimi di SDA. 
+
+    Ad esempio, il comando seguente crea un'unità USB avviabile che può essere usata per [installare Windows 10 in Surface Hub 2](https://docs.microsoft.com/surface-hub/surface-hub-2s-migrate-os):
 
     ```powershell
     .\CreateSurfaceWindowsImage.ps1 -ISO C:\SDA\enterprise_client.iso -OSSKU Enterprise -DestinationFolder C:\Output -Device SurfaceHub2 -CreateUSB $True
     ```
+    L'output degli script di esempio è inferiore.
 
    ![Strumento di accelerazione della distribuzione della superficie in uso](images/sda1.png)
 
     Lo script richiederà circa 45 minuti per l'esecuzione, ma potrebbe richiedere più tempo a seconda delle risorse disponibili per la CPU e il disco. 
 
-    Dopo aver creato un'immagine Windows, lo script ti chiederà di confermare la lettera dell'unità USB. L'unità USB verrà quindi formattata, configurata come avviabile e file copiati per consentire l'installazione dell'immagine personalizzata di Windows 10 per i dispositivi Surface.
+    Dopo aver creato un'immagine di Windows, lo script ti chiederà di inserire e confermare la lettera dell'unità USB. L'unità USB verrà quindi formattata, configurata come avviabile e file copiati per consentire l'installazione dell'immagine personalizzata di Windows 10 per i dispositivi Surface.
 
 9. Inserire l'unità USB nel dispositivo in cui si vuole installare Windows 10 e riavviare per iniziare l'installazione di Windows 10. L'avvio USB deve essere abilitato nel BIOS, che può richiedere di disabilitare temporaneamente l'avvio sicuro.
 
@@ -72,5 +78,4 @@ L'immagine risultante corrisponde strettamente alla configurazione delle immagin
 ## Collegamenti correlati
 
  - [Strumento di distribuzione delle immagini open source rilasciato su GitHub](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/open-source-image-deployment-tool-released-on-github/ba-p/1314115)
-
  - [Scaricare e installare Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install)
