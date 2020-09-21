@@ -12,15 +12,15 @@ manager: laurawi
 ms.audience: itpro
 author: greg-lindsay
 ms.author: greglin
-ms.date: 09/16/2020
+ms.date: 09/18/2020
 ms.collection: M365-modern-desktop
 ms.topic: article
-ms.openlocfilehash: d908c937c331e36f6b82f4c3c5ee213abf8a0176
-ms.sourcegitcommit: 2ac88d30b7d104d86b3bec657941457c916a116c
+ms.openlocfilehash: 24998848f16803585bc414d50e2099745943dcc7
+ms.sourcegitcommit: 13015036a3e5cb5909924d7e4289473a1572cf9d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11027004"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "11030423"
 ---
 # Componenti aggiuntivi essenziali per Windows 10 Pro e Enterprise in Surface Hub 2
 
@@ -54,6 +54,7 @@ Per altre informazioni sulla configurazione del lettore di impronte digitali per
 | **Requisiti di sistema**          | Windows 10 Pro, Windows 10 Enterprise.                                                                                               |
 | **Certificazione Windows**       | Windows10                                                                                                                           |
 | **Tasso di accettazione falso (FAR)** | 1/1,5 milioni. LONTANO Mostra la probabilità che un sistema di sicurezza biometrico accetti erroneamente i tentativi di accesso da parte di utenti non autorizzati. |
+| **Tasso di rigetto falso (FRR)** | 4,9%. FRR Mostra la probabilità che un sistema di sicurezza biometrico rigetti erroneamente i tentativi di accesso da parte di utenti autorizzati. |
 
 
 > [!NOTE]
