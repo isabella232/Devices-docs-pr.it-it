@@ -14,16 +14,17 @@ author: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
-ms.openlocfilehash: f6ea6324799981e57c36a11b33cf2e22ea80039e
-ms.sourcegitcommit: d24759da42dfe0b913fd9ebf716407a673c2b818
+ms.date: 09/22/2020
+appliesto:
+- Surface Hub 2S
+ms.openlocfilehash: dd580a3b67ffa7c46ce823765d589fec47fadb44
+ms.sourcegitcommit: d7fe059a823b7e5f1daec447d92dac60bdd2a26e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "11004478"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11072843"
 ---
 # Configurare Windows 10 Pro o Enterprise in Surface Hub 2
-
-**Si applica a: Surface Hub 2S** 
 
 Dopo aver completato il processo di installazione della migrazione a Windows 10 Pro o Enterprise, è possibile eseguire la procedura seguente per configurare le app e le impostazioni nel proprio Surface Hub 2. Questa procedura è consigliata per garantire un'esperienza ottimale quando si usa questo touch screen personalizzato di grandi dimensioni e un computer con penna.
 
@@ -182,7 +183,7 @@ In alternativa, è possibile installare lavagna da Microsoft Store:
 3. Installare l'app **Surface** . Questa dovrebbe essere la prima app elencata. Potrebbe essere necessario associare il MSA allo Store per installare l'app.
 4. Aggiungere l'app **Surface** alla barra delle applicazioni.
 
-### Snip & sketch
+### Cattura e annota
 
 1. Aprire l'app **Snip & sketch** e aggiungerla alla barra delle applicazioni.
 2. Selezionare i puntini di sospensione nell'angolo in alto a destra e quindi selezionare **Impostazioni**.
@@ -251,9 +252,8 @@ Scaricare e installare il nuovo [browser cromo Edge](https://www.microsoft.com/e
 
 1. Selezionare **Start**  >  **Settings**  >  **System**  >  **Power & Sleep**.
 2. Impostare il dispositivo di scorrimento Power Mode per **ottenere prestazioni ottimali**.
-3. Configurare i valori di schermata e Sleep in preferenza.
-
-### Salvaschermo
+3. Configurare i valori di schermata e Sleep in preferenza mentre si conta anche il rilevamento della presenza Doppler che risveglia il dispositivo quando viene rilevato il movimento. Di conseguenza, come procedura consigliata, è consigliabile impostare lo schermo per **disattivare la disattivazione dopo 2 ore** e il PC per disattivare la disattivazione **dopo 4 ore.**
+### Salvaschermo.
 
 1. Cercare la **schermata di blocco** e aprire **le impostazioni della schermata di blocco**.
 2. Configurare le impostazioni di **timeout dello schermo** e **le impostazioni dello screensaver** per le preferenze.
@@ -314,7 +314,7 @@ Attivare la modalità tablet, se necessario per esigenze di accessibilità.
 4. Verificare le app della barra delle applicazioni.
     - App Connect
     - Icona Blocca
-    - Snip & sketch
+    - Cattura e annota
     - Teams (se applicabile)
     - App di Office (se applicabile)
     - App Surface
@@ -324,12 +324,11 @@ Attivare la modalità tablet, se necessario per esigenze di accessibilità.
 6. Verificare che la proiezione in questo PC sia abilitata con l'app Connect (l'applicazione non deve essere in corso prima della connessione).
 7. Verificare le impostazioni di alimentazione e sospensione.
     - Salvaschermo: 15 minuti, impostato su (nessuno), mistificare o vuoto; casella di controllo per la richiesta di password selezionata
-    - Schermo: 2 ore
-    - PC: 4 ore
+    - Schermo: **disattivare dopo 2 ore.**
+    - PC:  **disattivare dopo 4 ore.**
 8. Verificare che Windows Hello funzioni.
-9. Verificare le impostazioni di alimentazione.
-10. Verificare la sincronizzazione le impostazioni sono disabilitate.
-11. Verificare le app di avvio.
+9. Verificare la sincronizzazione le impostazioni sono disabilitate.
+10. Verificare le app di avvio.
 
 > [!TIP]
 > Dopo l'installazione e la configurazione di Windows 10, l'hub di Surface 2S può essere gestito proprio come qualsiasi altro dispositivo Windows 10.
