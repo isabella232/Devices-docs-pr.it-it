@@ -11,12 +11,12 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: High
-  ms.openlocfilehash: 5cbfeee6dee7dcb921b5cbecaaeca7b4461073dc
-  ms.sourcegitcommit: c2df79cab0e59e9d7ea6640e5899531b57cd383f
+  ms.openlocfilehash: 6d3d6f4c3e9ed468f91cccf68ac3532afa3d2266
+  ms.sourcegitcommit: 3b1bc3682d0dee24149ec26cdc78d3148b8d7808
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 09/16/2020
-  ms.locfileid: "11016405"
+  ms.lasthandoff: 09/24/2020
+  ms.locfileid: "11077741"
 landingContent:
 - title: Dispositivi Surface
   linkLists:
@@ -38,13 +38,23 @@ landingContent:
       url: surface-book-quadro.md
     - text: Novità di Surface Dock 2
       url: surface-dock-whats-new.md
+- title: Microsoft Ignite
+  linkLists:
+  - linkListType: video
+    links:
+    - text: Distribuzione di zero touch con Surface & Autopilot
+      url: https://youtu.be/WQ-wg8fRzN0
+    - text: Surface Pro X e Windows su ARM in un ambiente remoto
+      url: https://youtu.be/bDw77ZQNPPw
+    - text: 'Surface Security: chip to cloud Modern Endpoint Protection da Microsoft'
+      url: https://youtu.be/uadAecDbqf4
 - title: Distribuisci i dispositivi Surface
   linkLists:
   - linkListType: deploy
     links:
     - text: Autopilot e dispositivi Surface
       url: windows-autopilot-and-surface-devices.md
-    - text: Supporto per la registrazione superficiale per Windows Autopilot
+    - text: Supporto alla registrazione di Surface per Windows Autopilot
       url: surface-autopilot-registration-support.md
     - text: Desktop virtuale Windows su Surface
       url: windows-virtual-desktop-surface.md
