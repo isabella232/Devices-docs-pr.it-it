@@ -1,5 +1,5 @@
 ---
-title: Hub di Surface 2S 85-inch
+title: Surface Hub 2S da 85"
 description: Questo articolo introduce Surface Hub 2S 85 pollici.
 keywords: Surface Hub 2S 85, specifiche tecniche
 ms.prod: surface-hub
@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/25/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 40c16aa783e0880a3d28178ed936a68d7dc49c1a
-ms.sourcegitcommit: d7fe059a823b7e5f1daec447d92dac60bdd2a26e
+ms.openlocfilehash: 149e3498b2d976b5ab090db1726d56eb2357ffc5
+ms.sourcegitcommit: 5fa5efefd510ce6f435d7142fb2f2cc08b520da9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11072828"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "11078736"
 ---
 # Surface Hub 2S 85 "panoramica & specifiche tecniche
 
@@ -35,7 +35,7 @@ La versione di 85 "della famiglia di Surface Hub porta l'esperienza di Surface H
 
 | Componente    | Descrizione                                                                                                                                                                                                                                         |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Dimensioni        | 44,5 "x 62,8" x 3,4 "<br>(1130mm x 1595mm x 85.6 mm)                                                                                                                                                                                                        |
+| Dimensioni        | 44,5 "x 77,1" x 3,4 "<br>(1130mm x 1959mm x 85.6 mm)                                                                                                                                                                                                        |
 | Peso            | 185 lb. (84kg)                                                                                                                                                                                                                                            |
 | Risoluzione        | 3840 x 2160                                                                                                                                                                                                                                               |
 | Schermo           | PixelSense™ display, proporzioni 16:9, colore a 10 bit, larghezza del bordo 30,5 mm, antiriflesso, LCD IPS, tocco in cella con 20 punti di tocco simultanei                                                                                                           |

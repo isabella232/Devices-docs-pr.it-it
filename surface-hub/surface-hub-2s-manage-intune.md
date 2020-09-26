@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 07/23/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 389db218d06f9f8d3f510e711b03487daf4e06f9
-ms.sourcegitcommit: ac34f0ec1a9df74ea688bf0da2a51fadf5139a41
+ms.openlocfilehash: a031fd7fd861e5d45194ec1a8c391621a2bcb71a
+ms.sourcegitcommit: 5fa5efefd510ce6f435d7142fb2f2cc08b520da9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "10934866"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "11078746"
 ---
 # Gestire Surface Hub 2S con Intune
 
@@ -26,10 +26,13 @@ Surface Hub 2S consente agli amministratori IT di gestire le impostazioni e i cr
 
 ### Registrazione manuale
 
-1. Eseguire l'accesso come amministratore locale in Surface Hub 2S e aprire l'app **Impostazioni**. Selezionare **Surface Hub** > **Gestione dispositivi** e quindi selezionare **+** da aggiungere.
-2. In seguito all'autenticazione, il dispositivo viene registrato automaticamente con Intune.
+1. Aprire l'app **Impostazioni** in Surface Hub 2S e accedere come amministratore locale. Selezionare **Surface Hub** > **Gestione dispositivi** e quindi selezionare **+** da aggiungere.
+2. Verrà richiesto di effettuare l'accesso con l'account da usare per Intune. In seguito all'autenticazione, il dispositivo viene registrato automaticamente con Intune.
 
    ![Registrare Surface Hub 2S con Intune](images/sh2-set-intune1.png)<br>
+   
+> [!NOTE]
+> L'account usato per l'autenticazione sarà l'account di registrazione di Intune e dovrà essere concesso in licenza per Intune.
 
 ### Registrazione automatica — Affiliata ad Azure Active Directory
 
