@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 09/15/2020
+ms.date: 09/29/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: d36f42485107dd84be08c20291b36540662503da
-ms.sourcegitcommit: c2df79cab0e59e9d7ea6640e5899531b57cd383f
+ms.openlocfilehash: 0c6a52d1023377f51ae6a63879e54b86db16cb9a
+ms.sourcegitcommit: 35f64110ce8e0c0b019b02023d746f648f554c1c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "11016455"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "11088630"
 ---
 # Eseguire la migrazione a Windows 10 Pro o Enterprise in Surface Hub 2
 
@@ -39,7 +39,7 @@ Si avvia la migrazione da team Windows 10 usando un PC separato e uno strumento 
 
 - Dispositivo Surface Hub 2S con sistema operativo Windows 10 team
 - Dispositivo separato con Windows 10
-- Strumento di configurazione UEFI di Surface
+- Strumento di configurazione UEFI di Surface per creare il pacchetto SEMM
 - Immagine di Windows 10 Pro o Enterprise OS, versione 1903 o successiva
 - Due unità USB con 16GB di spazio di archiviazione, formato FAT32
 - Driver e firmware per Windows 10 Pro e Enterprise in Surface Hub 2, Windows Installer. File MSI
@@ -52,7 +52,7 @@ Si avvia la migrazione da team Windows 10 usando un PC separato e uno strumento 
 | Passaggio  | Azione                                                                                                 | Riepilogo                                                                                                                                                                                                                                                                                                                                                                                                  |
 | - | ------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1 | [Verificare che la versione UEFI in Surface Hub 2S soddisfi i requisiti minimi](#verify-uefi-version-on-surface-hub-2s-meets-minimum-requirements)                                  | Verificare che la versione UEFI sia 694.2938.768.0 o successiva.                                                                                                                                                                                                                                                                                                                                                      |
-| 2 | [Download di Surface UEFI Configurator e Surface Hub 2 driver e firmware](#download-surface-uefi-configurator-and-surface-hub-2-drivers-and-firmware)                             | Scaricare [Surface UEFI Configurator](https://www.microsoft.com/download/details.aspx?id=46703) da strumenti Surface per l'installazione e installarlo in un PC separato. Scaricare [driver e firmware per Windows 10 Pro e Enterprise in Surface Hub 2. File MSI](https://www.microsoft.com/download/details.aspx?id=101974) e salvarlo per l'uso nel passaggio 5. |
+| 2 | [Download di Surface UEFI Configurator e Surface Hub 2 driver e firmware](#download-surface-uefi-configurator-and-surface-hub-2-drivers-and-firmware)                             | Selezionare il pulsante Download nella pagina [strumenti superficie per](https://www.microsoft.com/download/details.aspx?id=46703) la pagina, selezionare e scaricare il **Configuratore di Surface UEFI. File MSI** e installarlo in un PC separato. Scaricare [driver e firmware per Windows 10 Pro e Enterprise in Surface Hub 2. File MSI](https://www.microsoft.com/download/details.aspx?id=101974) e salvarlo per l'uso nel passaggio 5. |
 | 3 | [Preparare il certificato di SEMM](#prepare-semm-certificate)                                                                          | Preparare il certificato richiesto per l'uso di Surface UEFI Configurator o usare il certificato corrente.                                                                                                                                                                                                                                                                                                      |
 | 4 | [Creare un pacchetto SEMM](#create-semm-package)                                                                               | Avviare il configuratore di Surface UEFI per creare un pacchetto SEMM su un'unità USB che conterrà i file di configurazione necessari per l'applicazione in Surface Hub 2S. Copiare questi file di pacchetto di SEMM in una cartella nel PC.                                                                                                                                                                                          |
 | 5 | [Preparare l'unità flash USB contenente l'immagine di Windows 10, il pacchetto SEMM e i driver e il firmware per Windows 10 Pro e Enterprise in Surface Hub 2](#prepare-usb-flash-drive-containing-windows-10-image-semm-package-and-surface-hub-2-drivers-and-firmware) | Creare una singola unità USB (denominata **BOOTME** in questo esempio) contenente un'immagine di Windows 10. Aggiungere i driver e il firmware per Windows 10 Pro e Enterprise in Surface Hub 2 (passaggio 2) e i file di pacchetto di SEMM (passaggio 4) all'unità **BOOTME** .                                                                                                                                                                                                  |
@@ -76,6 +76,7 @@ La versione UEFI minima necessaria prima di eseguire la migrazione di Surface Hu
 3. Se la versione UEFI è precedente alla versione **694.2938.768.0**, sarà necessario ottenere una versione corrente con Windows Update.
 
 **Per aggiornare UEFI da Windows Update:**
+
 1. In Surface Hub 2S, accedere come **amministratore**, accedere a **tutte**le  >  **impostazioni delle**app >  **aggiornamento e sicurezza**di  >  **Windows Update** e installare tutti gli aggiornamenti, quindi riavviare il dispositivo. Verificare la versione UEFI usando l'app Surface. Nota: se non si conosce il nome utente o la password di amministratore, sarà necessario reimpostare il dispositivo. Per altre informazioni, vedere [reimpostazione e ripristino per Surface Hub 2S](https://docs.microsoft.com/surface-hub/surface-hub-2s-recover-reset).
 
 2. Ripetere questi passaggi fino a quando la versione UEFI non è **694.2938.768.0** o successiva.
@@ -86,7 +87,7 @@ La versione UEFI minima necessaria prima di eseguire la migrazione di Surface Hu
 
 In un PC separato:
 
-- Scaricare e installare Microsoft [Surface UEFI Configurator](https://www.microsoft.com/download/details.aspx?id=46703) da strumenti di Surface. Surface UEFI Configurator non può essere eseguito in Surface Hub 2S, mentre è installato Windows 10 team.
+- Scaricare Microsoft [Surface UEFI Configurator](https://www.microsoft.com/download/details.aspx?id=46703) da strumenti di Surface. Surface UEFI Configurator non può essere eseguito in Surface Hub 2S, mentre è installato Windows 10 team.
 
 - Download [di Surface Hub 2 driver e firmware Windows Installer. File MSI](https://www.microsoft.com/download/details.aspx?id=101974) da applicare durante l'installazione del nuovo sistema operativo.
 
@@ -100,59 +101,60 @@ Se è la prima volta che si usa Surface UEFI Configurator, è necessario prepara
 
 - In alternativa, è possibile generare un certificato autofirmato con uno script di PowerShell per la documentazione seguente: [requisiti di certificato in modalità di gestione di Surface Enterprise](https://docs.microsoft.com/surface/surface-enterprise-management-mode#surface-enterprise-management-mode-certificate-requirements). In alternativa, usare PowerShell per creare un certificato personalizzato per la documentazione seguente: [New-SelfSignedCertificate](https://docs.microsoft.com/powershell/module/pkiclient/new-selfsignedcertificate).
 
-Il pacchetto SEMM deve essere protetto con un certificato per verificare la firma dei file di configurazione prima che le impostazioni di UEFI possano essere applicate. Per altre informazioni, vedere la documentazione relativa alla [modalità di gestione di Surface Enterprise](https://docs.microsoft.com/surface/surface-enterprise-management-mode) .
+Il pacchetto SEMM creato usando lo strumento Surface UEFI Configurator deve essere protetto con un certificato per verificare la firma dei file di configurazione prima che le impostazioni di UEFI possano essere applicate. Per altre informazioni, vedere la documentazione relativa alla [modalità di gestione di Surface Enterprise](https://docs.microsoft.com/surface/surface-enterprise-management-mode) .
  
  
 ### Creare un pacchetto SEMM
 
-1. Aprire il **Configuratore di Surface UEFI** e selezionare **Avvia**.
+1. Installare lo strumento di **configurazione di Surface UEFI** scaricato in precedenza in un PC separato. 
+2. Aprire il **Configuratore di Surface UEFI** e selezionare **Avvia**.
 
    ![Open Surface UEFI Configurator](images/shm-fig2.png)
    
-2. Selezionare **dispositivi Surface** e quindi **Avanti**.
+3. Selezionare **dispositivi Surface** e quindi **Avanti**.
 
    ![Selezionare i dispositivi Surface](images/shm-fig3.png)
   
-3. Selezionare **pacchetto di configurazione**.
+4. Selezionare **pacchetto di configurazione**.
 
    ![Selezionare il pacchetto di configurazione](images/shm-fig4.png)
   
-4. Selezionare **protezione certificato**.
+5. Selezionare **protezione certificato**.
 
    ![Selezionare protezione certificato](images/shm-fig5.png)
 
-5. Verrà richiesto di aggiungere il file con estensione pfx certificato.
+6. Verrà richiesto di aggiungere il file con estensione pfx certificato.
 
    ![Verrà richiesto di aggiungere il certificato](images/shm-fig6.png)
    
-6. Immettere la **password del certificato** e scegliere **OK**.
+7. Immettere la **password del certificato** e scegliere **OK**.
 
    ![Immettere la password del certificato e scegliere OK](images/shm-fig7.png)
 
-7. Selezionare **password di protezione** per aggiungere una password per Surface UEFI. Questa password sarà necessaria ogni volta che si avvia l'avvio in UEFI. Si **consiglia vivamente** di impostare una password UEFI che si userà su Surface Hub 2S.
+8. Selezionare **password di protezione** per aggiungere una password per Surface UEFI. Questa password sarà necessaria ogni volta che si avvia l'avvio in UEFI. Si **consiglia vivamente** di impostare una password UEFI che si userà su Surface Hub 2S.
 
    ![Fare clic su password di protezione](images/shm-fig8.png)
    
-8. Impostare una **password UEFI** e scegliere **OK**.
+9. Impostare una **password UEFI** e scegliere **OK**.
+
+ > [!IMPORTANT]
+   > Salvare la password in un percorso sicuro accessibile agli amministratori IT dell'organizzazione responsabili della gestione degli hub di Surface. Se la password viene persa, non esiste un processo di ripristino. 
 
    ![Immettere la password UEFI](images/shm-fig9.png)
 
-   > [!IMPORTANT]
-   > Prendere nota della password. Se si dimentica o si perde la password, non esiste un processo di ripristino. 
-
-9. Selezionare **Surface Hub 2S** , quindi selezionare **Avanti**.
+10. Selezionare **Surface Hub 2S** , quindi selezionare **Avanti**.
 
    ![Selezionare Surface Hub 2S](images/shm-fig10.png)
    
-10. Seleziona **Avanti**.
+11. Seleziona **Avanti**.
 
     ![Selezionare Avanti](images/shm-fig10a.png)
 
-11. Per consentire l'installazione di Windows 10 Pro o Enterprise, selezionare **EnableOsMigration.**
+12. Per consentire l'installazione di Windows 10 Pro o Enterprise, selezionare **EnableOsMigration.**
 
     ![Selezionare Abilita migrazione del sistema operativo](images/shm-fig11.png)
     
-12. Impostare **EnableOSMigration** **su** attivato e selezionare **Avanti**.
+13. Impostare **EnableOSMigration** **su** attivato e selezionare **Avanti**.
 
     ![Impostare attiva migrazione del sistema operativo su attivato](images/shm-fig12.png)
 
@@ -185,7 +187,6 @@ Il pacchetto SEMM deve essere protetto con un certificato per verificare la firm
 
 - Unità flash USB con Windows 10 Pro o Enterprise Image, seguita dall'installazione di  [driver e firmware per Windows 10 Pro e Enterprise in Surface Hub 2](https://www.microsoft.com/download/details.aspx?id=101974).
  
-
 Questa procedura descrive la creazione di un'unità flash USB dal supporto di installazione e quindi l'aggiunta dei file del pacchetto SEMM e i driver e il firmware per Windows 10 Pro e Enterprise in Surface Hub 2. File MSI. Se si usano altri metodi di distribuzione, passare alla sezione seguente: [aggiornare UEFI in Surface Hub 2s per abilitare la migrazione del sistema operativo](#update-uefi-on-surface-hub-2s-to-enable-os-migration).
 
 > [!NOTE]
@@ -209,17 +210,17 @@ Questa procedura descrive la creazione di un'unità flash USB dal supporto di in
 
    ![Selezionare fine](images/shm-fig19.png)
    
-6. Copiare i file del pacchetto SEMM e i driver e il firmware per Windows 10 Pro e Enterprise in Surface Hub 2. MSI per l'unità flash USB (**BOOTME**) che contiene l'immagine di Windows 10:
+6. Copiare i file del pacchetto SEMM e i driver e il firmware per Windows 10 Pro e Enterprise in Surface Hub 2 (. File MSI) nella radice dell'unità flash USB (**BOOTME**) contenente l'immagine di Windows 10. L'unità USB BOOTME contiene:
 
-    - DfciUpdate. DFI
-    - File di testo con l'identificazione personale di SEMM. In questo esempio: SurfaceUEFI_2020Aug25_1058.txt)
+    - Immagine avviabile di Windows 10
+    - File di pacchetto di SEMM (copiati nella radice dell'unità USB)
+        - DfciUpdate. DFI
+        - File di testo con l'identificazione personale di SEMM. In questo esempio: SurfaceUEFI_2020Aug25_1058.txt. Il timestamp della data generato automaticamente corrisponde alla data in cui è stato creato il file usando Surface UEFI Configurator.
     - Driver e firmware per Windows 10 Pro e Enterprise in Surface Hub 2 (SurfaceHub2S_Win10_18362_20.082.25682.0.msi)
 
 ### Aggiornare UEFI in Surface Hub 2S per abilitare la migrazione del sistema operativo
 
-Usare l'unità **BOOTME** per installare i file di pacchetto di SEMM e aggiornare l'UEFI, abilitando Surface hub per eseguire Windows 10 Pro o Enterprise. Quindi fai il boot dall'unità **BOOTME** per installare Windows 10.
-
-1. Inserire l'unità **BOOTME** contenente i file di pacchetto di SEMM, i driver e il firmware per Windows 10 Pro e Enterprise in Surface Hub 2. MSI e Windows 10 installano i file nella porta USB-A di Surface Hub 2S.  
+1. Inserire l'unità **BOOTME** nella porta USB-a di Surface Hub 2S.
 
 2. Per eseguire il boot in UEFI:
 
@@ -283,5 +284,6 @@ Per ripristinare il dispositivo al team di Windows 10, vedere [reimpostazione e 
 
 | Versione | Data               | Descrizione                                                                                           |
 | ------- | ------------------ | ----------------------------------------------------------------------------------------------------- |
+| v. 1,2  | 29 settembre 2020 | Aggiornamenti vari per feedback sull'usabilità.                                                        |
 | v. 1,1  | 15 settembre 2020 | Aggiunta di una nota aggiuntiva nell'introduzione che chiarisce i requisiti di licenza per l'installazione di un nuovo sistema operativo. |
-| v. 1.0  | 1 settembre 2020  | Nuovo articolo                                                                                           |
+| v. 1.0  | 1 settembre 2020  | Nuovo articolo.                                                                                           |
