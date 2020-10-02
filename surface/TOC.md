@@ -4,6 +4,7 @@
 
 ## Panoramica
 
+### [Massimizzare il ROI con Microsoft Surface](forrester-tei-study.md)
 ### [Novità di Surface Dock 2](surface-dock-whats-new.md)
 ### [Panoramica tecnica su Surface Book 3 GPU](surface-book-GPU-overview.md)
 ### [Panoramica tecnica su Surface Book 3 Quadro RTX 3000](surface-book-quadro.md)
