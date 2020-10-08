@@ -12,12 +12,12 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 07/31/2019
 ms.localizationpriority: medium
-ms.openlocfilehash: c5cf643d0f4a68344bb098916a909dd66e1dac9b
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 1c8d8b6d89ec1a20550b7aa13c82c73a239c3965
+ms.sourcegitcommit: d0a5c8fb2b37eb11858c7be4549e55c4b36d7471
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833729"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "11104818"
 ---
 # Ripristinare o recuperare un hub Surface
 
@@ -73,7 +73,7 @@ Potrebbe essere necessario usare questo tipo di processo di ripristino nelle cir
 - [Il mozzo della superficie è bloccato](#recover-a-locked-surface-hub)
 
 >[!IMPORTANT]
->Il processo **di ripristino dal cloud** richiede una connessione Internet aperta (nessun proxy o altre autenticazioni). È consigliabile una connessione Ethernet.
+>Il processo **di recupero dal cloud** richiede una connessione cablata che fornisce la connettività Internet aperta (nessun proxy o altre richieste di autenticazione).
 
 ### Ripristinare un dispositivo Surface Hub in uno stato non valido
 

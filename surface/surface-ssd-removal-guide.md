@@ -8,7 +8,7 @@ ms.sitesec: library
 author: mccoybot
 ms.author: v-todmc
 ms.topic: article
-ms.date: 8/7/2020
+ms.date: 10/7/2020
 ms.reviewer: johnk
 manager: laurawi
 ms.audience: itpro
@@ -19,17 +19,17 @@ appliesto:
 ms.custom:
 - CI 121887
 - CSSTroubleshoot
-ms.openlocfilehash: 66860af06f4fad8f19ca26702350f19cc85ffef1
-ms.sourcegitcommit: bad416f04c6877f2200f134a69146bb633155f22
+ms.openlocfilehash: 00109e4e1bb3873fc2914b2044f58e6fa3b6c211
+ms.sourcegitcommit: d0a5c8fb2b37eb11858c7be4549e55c4b36d7471
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "10919225"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "11104808"
 ---
 # Procedure consigliate per la rimozione di SSD da dispositivi Surface compatibili
 
 > [!IMPORTANT]
-> Questo articolo è destinato all'uso da tecnici IT qualificati in un'organizzazione aziendale. Descrive le procedure consigliate per l'uso da parte dei tecnici IT qualificati quando rimuove e sostituisce gli SSD in dispositivi di Surface con SSD rimovibili. 
+> Questo articolo è destinato all'uso da tecnici IT qualificati in un'organizzazione aziendale. Descrive le procedure consigliate per l'uso da parte di tecnici IT qualificati per la rimozione e la sostituzione di SSD in Surface laptop 3 o Surface Pro X only. 
 
 > [!WARNING]
 > Aprire dispositivi e sostituire i componenti del dispositivo può presentare scosse elettriche, danni ai dispositivi, incendi e rischi per infortuni personali e altri pericoli.  Prestare sempre attenzione quando si intraprendono tali attività. Seguire le precauzioni e le procedure di sicurezza identificate nella [Guida alla rimozione di Pierluigi per le aziende](https://www.microsoft.com/download/100440). È consigliabile ottenere assistenza professionale se non si riesce a seguire le precauzioni e le procedure di sicurezza specificate nella "Guida alla rimozione di Pierluigi per le aziende".

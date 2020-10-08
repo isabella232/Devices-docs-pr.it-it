@@ -7,7 +7,7 @@ ms.date: 5/27/2020
 audience: Admin
 ms.topic: article
 ms.prod: surface
-localization_priority: Normal
+localization_priority: medium
 search.appverid:
 - SPO160
 - MET150
@@ -19,12 +19,12 @@ ms.custom:
 - CSSTroubleshoot
 ms.reviewer: mablaik
 description: Informazioni di supporto per i prodotti Microsoft Surface e Surface Hub.
-ms.openlocfilehash: 37554183b4839b5e6825a8ac680336b12e213219
-ms.sourcegitcommit: edc92b4be50e6a86f4b942bf71339d97aaf3c5ab
+ms.openlocfilehash: fa86756c122814e7f90351782fc8f6f34227ae42
+ms.sourcegitcommit: 56526c92d84dbc2cebcb8071d995efe399f306df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "11094913"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "11105257"
 ---
 # Supporto Surface
 
@@ -39,6 +39,8 @@ Se dopo aver eseguito il Toolkit si verificano ancora problemi, usare le schede 
 > [!NOTE]
 > Ti verrà richiesto di accedere al portale di invio online usando l'account Microsoft o l'account di Azure Active Directory.  
 
+Velocizzare la garanzia e le richieste di assistenza usando il [modulo di richiesta di garanzia e assistenza](https://download.microsoft.com/download/2/e/0/2e00e1c2-3f49-4b6a-b605-74a0244cb88b/Warranty_and_Service_Claim_Submission_Form.xlsx). Per informazioni su come usare il modulo, vedere istruzioni per i moduli per le [attestazioni di garanzia e assistenza](warranty-and-service-claim-form.md) e allegarlo all'invio del caso.
+
 Per i clienti commerciali: [inviare la richiesta di servizio](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=d383b26c-f150-6220-8f1b-e8aa325d9727). 
 
 Per i clienti Microsoft Premier: [inviare la richiesta di assistenza nell'hub Servizi](https://serviceshub.microsoft.com/support/contactsupport). 
@@ -52,11 +54,11 @@ Per i clienti Microsoft Premier: [inviare la richiesta di assistenza nell'hub Se
 
 ## Cina, India
 
-Fissare un appuntamento presso un centro walk-in di superficie per risolvere il problema:
+Fissare un appuntamento presso un centro Surface Walk-In per risolvere il problema:
 
-1. Passare alla pagina delle [informazioni di contatto di Surface walk-in Center](https://support.microsoft.com/help/4498593/find-surface-walk-in-center-contact-information) . 
-2. Selezionare la posizione in cui trovare il centro walk-in più vicino.  
-3. Scegliere il centro walk-in e contattarlo per pianificare un appuntamento.
+1. Accedere alla pagina [informazioni contatto superficie Walk-In centro](https://support.microsoft.com/help/4498593/find-surface-walk-in-center-contact-information) . 
+2. Selezionare la posizione in cui trovare il centro Walk-In più vicino.  
+3. Scegliere il centro Walk-In e contattarlo per pianificare un appuntamento.
 
 
 ---
