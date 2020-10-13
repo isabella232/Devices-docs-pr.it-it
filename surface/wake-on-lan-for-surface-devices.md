@@ -13,12 +13,12 @@ ms.topic: article
 ms.reviewer: scottmca
 manager: laurawi
 ms.audience: itpro
-ms.openlocfilehash: 760ba75ea7b36238d6de722d38e44a3854073112
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: a56f6e01a4d7bf1cc40d73f34c3abf8e04443989
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833152"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114614"
 ---
 # Riattivazione LAN per i dispositivi Surface
 
@@ -50,6 +50,7 @@ I dispositivi seguenti sono supportati per WOL:
 * Surface Studio 2 (vedere le istruzioni di Surface Studio 2)
 * Surface Pro 7
 * Laptop Surface 3
+* Portatile Surface go
 
 ## Driver WOL
 

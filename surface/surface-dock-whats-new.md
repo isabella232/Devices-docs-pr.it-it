@@ -8,16 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 10/01/2020
+ms.date: 10/12/2020
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 19aba3e88afd7b17de5b391d1bfe6eaf77db38e9
-ms.sourcegitcommit: f996a95af741e54536b1f3eb94d0f13f681f5d5d
+ms.openlocfilehash: e96242ab9cef127238bda3ee3ea797c943479798
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "11093139"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114684"
 ---
 # Novità di Surface Dock 
 
@@ -45,6 +45,7 @@ Surface Dock 2 è progettato per semplificare la gestione IT, consentendo agli a
   - Laptop Surface 3
   - Surface Book 3
   - Superficie Go 2
+  - Portatile Surface go
 
 ## Componenti di Surface Dock 2
 
@@ -115,7 +116,7 @@ Surface Dock 2 è progettato per semplificare la gestione IT, consentendo agli a
 
 
 
-1. *I dispositivi devono essere configurati per la riattivazione LAN tramite la modalità di gestione di Surface Enterprise (SEMM) o DFCI (device firmware Control Interface) per riattivare gli Stati di ibernazione o di spegnimento. La riattivazione da ibernazione o Power-off è supportata in Surface Pro 7, Surface laptop 3, Surface Pro X, Surface Book 3 e Surface Go 2.  Licenza software necessaria per alcune funzionalità. Venduti separatamente.*
+1. *I dispositivi devono essere configurati per la riattivazione LAN tramite la modalità di gestione di Surface Enterprise (SEMM) o DFCI (device firmware Control Interface) per riattivare gli Stati di ibernazione o di Power-Off. La riattivazione dalla sospensione o Power-Off è supportata in Surface Pro 7, Surface laptop 3, Surface Pro X, Surface Book 3 e Surface Go 2.  Licenza software necessaria per alcune funzionalità. Venduti separatamente.*
 
 2. *Licenza software necessaria per alcune funzionalità. Venduti separatamente.*
 

@@ -15,12 +15,12 @@ ms.topic: article
 ms.date: 06/08/2020
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: de16d76581926a90585b2c6beb2a7bf3b7a695bc
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 641d023b59426582130dcfb7e0d86c6f3af456e8
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10832276"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114694"
 ---
 # Proteggere Surface Dock 2 porte con la modalità di gestione di Surface Enterprise (SEMM)
 
@@ -30,7 +30,7 @@ Surface Enterprise Management Mode (SEMM) consente agli amministratori IT di pro
 
 ### Dispositivi supportati
 
-La gestione di Surface Dock 2 con SEMM è disponibile per i banchi collegati a Surface Book 3, Surface laptop 3 e Surface Pro 7. Questi dispositivi Surface compatibili vengono comunemente definiti **dispositivi host**. Un pacchetto viene applicato ai dispositivi host in base a se un dispositivo host è **autenticato** o non **autenticato**. Le impostazioni configurate si trovano nel layer UEFI nei dispositivi host che consentono all'amministratore IT di gestire Surface Dock 2, come qualsiasi altra periferica incorporata, ad esempio la fotocamera.
+La gestione di Surface Dock 2 con SEMM è disponibile per i banchi collegati a Surface Book 3, Surface laptop 3, Surface Laptop Go, Surface Pro 7 e Surface Pro X. Questi dispositivi Surface compatibili vengono comunemente definiti **dispositivi host**. Un pacchetto viene applicato ai dispositivi host in base a se un dispositivo host è **autenticato** o non **autenticato**. Le impostazioni configurate si trovano nel layer UEFI nei dispositivi host che consentono all'amministratore IT di gestire Surface Dock 2, come qualsiasi altra periferica incorporata, ad esempio la fotocamera.
 
 >[!NOTE]
 >È possibile gestire le porte di Surface Dock 2 solo quando il Dock è connesso a uno dei seguenti dispositivi compatibili: Surface Book 3, Surface laptop 3 e Surface Pro 7. Qualsiasi dispositivo che non riceve le impostazioni dei criteri autenticati UEFI è intrinsecamente un dispositivo non autenticato.

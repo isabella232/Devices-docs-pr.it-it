@@ -1,6 +1,6 @@
 ---
 title: Gestire e installare gli aggiornamenti di driver e firmware per il Surface
-description: Questo articolo descrive le opzioni disponibili per gestire e distribuire gli aggiornamenti del firmware e del driver per i dispositivi Surface.
+description: Questo articolo illustra le opzioni disponibili per gestire e distribuire gli aggiornamenti del firmware e del driver per i dispositivi Surface.
 ms.assetid: CD1219BA-8EDE-4BC8-BEEF-99B50C211D73
 ms.reviewer: ''
 manager: laurawi
@@ -14,12 +14,13 @@ author: coveminer
 ms.author: greglin
 ms.topic: article
 ms.audience: itpro
-ms.openlocfilehash: f41974193d62e4c0cbc1e286976105c20534d906
-ms.sourcegitcommit: ed4478dd3c6116a25b1e01a3a0f5ff6c1f940013
+ms.date: 10/12/2020
+ms.openlocfilehash: 39022ca631e35f4328d3c353b7b0d1e2ebaee6a7
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "10897064"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114634"
 ---
 # Gestire e installare gli aggiornamenti di driver e firmware per il Surface
 
@@ -68,7 +69,7 @@ A partire da endpoint Configuration Manager, è possibile sincronizzare e distri
 
 ## Dispositivi supportati
 
-I file con estensione msi scaricabili sono disponibili per i dispositivi Surface Pro 2 e versioni successive. Le informazioni sui file MSI per i dispositivi Surface più recenti, ad esempio Surface Pro 7 e Surface laptop 3, saranno disponibili in questa pagina al momento del rilascio.
+I file con estensione msi scaricabili sono disponibili per i dispositivi Surface Pro 2 e versioni successive (ad eccezione di Surface Pro X che esegue Windows 10 su ARM).
 
 ## Gestione del firmware con DFCI
 

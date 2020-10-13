@@ -13,20 +13,20 @@ ms.reviewer: hachidan
 manager: laurawi
 ms.localizationpriority: medium
 audience: itpro
-ms.date: 09/01/2020
-ms.openlocfilehash: 239b5e4659ff48e6c0fd9d2fca03341eadb9a27d
-ms.sourcegitcommit: 78694f3958117a339a28d3a5854908181f1b65d7
+ms.date: 10/12/2020
+ms.openlocfilehash: 463759d2dd01b9333d10a66c1781055f4a5217ac
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10993666"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114644"
 ---
 # Modalità di gestione Microsoft Surface Enterprise
 
 Microsoft Surface Enterprise Management Mode (SEMM) è una caratteristica dei dispositivi Surface con UEFI di Surface che consente di proteggere e gestire le impostazioni del firmware all'interno dell'organizzazione. Con SEMM, i professionisti IT possono preparare configurazioni di impostazioni UEFI e installarle su un dispositivo Surface. Oltre alla possibilità di configurare le impostazioni UEFI, SEMM usa anche un certificato per proteggere la configurazione da manomissioni o rimozione non autorizzate. SEMM è un requisito per poter eseguire la migrazione di un hub di Surface 2S a Windows 10 Pro e Enterprise.
 
 >[!NOTE]
->SEMM è disponibile solo nei dispositivi con il firmware di Surface UEFI. Questo include la maggior parte degli altri dispositivi Surface, tra cui Surface Pro 7, Surface Pro X, Surface Hub 2S e Surface laptop 3 SKU commerciali con un processore Intel. SEMM non è supportato nella SKU 15 "Surface laptop 3 con processore AMD (disponibile solo come SKU per il dettaglio). 
+>SEMM è disponibile solo nei dispositivi con il firmware di Surface UEFI. Questo include la maggior parte degli altri dispositivi Surface, tra cui Surface Pro 7, Surface Pro X, Surface Hub 2S e Surface laptop 3 SKU commerciali con un processore Intel e Surface laptop go. SEMM non è supportato nella SKU 15 "Surface laptop 3 con processore AMD (disponibile solo come SKU per il dettaglio). 
 
 Quando i dispositivi Surface sono configurati da SEMM e protetti con il certificato SEMM, vengono considerati *registrati* in SEMM. Quando il certificato SEMM viene rimosso e il controllo delle impostazioni UEFI viene restituito all'utente del dispositivo, il dispositivo Surface *viene considerato non* registrato in SEMM.
 
@@ -174,7 +174,7 @@ Per il certificato SEMM sono consigliate le impostazioni seguenti:
 * **Data di scadenza** -15 mesi dalla creazione di certificati
 * **Criteri di esportazione chiave** -esportabili
 
-Si consiglia inoltre di autenticare il certificato SEMM in un'architettura a chiave pubblica (PKI) a due livelli, in cui l'autorità di certificazione intermedia è dedicata a SEMM, abilitando la revoca del certificato. Per altre informazioni su una configurazione PKI a due livelli, vedere [Guida di test lab: distribuzione di una gerarchia PKI a due livelli di Active Directory](https://technet.microsoft.com/library/hh831348).
+Si consiglia inoltre di autenticare il certificato SEMM in un'architettura a chiave pubblica (PKI) a due livelli, in cui l'autorità di certificazione intermedia è dedicata a SEMM, abilitando la revoca del certificato. Per altre informazioni su una configurazione PKI a due livelli, vedere [Guida di test lab: distribuzione di un annuncio CS Two-Tier gerarchia PKI](https://technet.microsoft.com/library/hh831348).
 
 ### Certificato autofirmato 
 Puoi usare lo script di PowerShell di esempio seguente per creare un certificato autofirmato per l'uso in scenari di prova di concetto.
@@ -241,6 +241,18 @@ Se si vuole che SEMM ripristini o il ripristino funzioni, il certificato deve es
 Gli esempi di PowerShell che creano un pacchetto di configurazione per un tipo di dispositivo specifico possono essere usati anche per creare un pacchetto di reimpostazione con numero seriale indipendente. Se il certificato è ancora valido, è possibile creare un pacchetto di reimpostazione tramite PowerShell per reimpostare SEMM.
 
 ## Cronologia versioni
+
+
+### Versione 2.78.139.0
+
+Questa versione di SEMM include:
+
+- Supporto per laptop Surface go e Surface Pro X
+- Notifiche per la nuova versione di rilascio
+- Possibilità di creare pacchetti personalizzati per la modifica della proprietà
+- Correzioni di bug
+
+
 
 
 ### Versione 2.73.136.0

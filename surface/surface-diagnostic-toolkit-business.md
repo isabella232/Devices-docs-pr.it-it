@@ -8,16 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 07/31/2020
+ms.date: 10/12/2020
 ms.reviewer: hachidan
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 9c250cef63b760f3faab9172aa950c305e4e47e5
-ms.sourcegitcommit: f875a45961ff5f3c04006afc8690b5e5965e4d80
+ms.openlocfilehash: 1f2661811516507abd432dba602cf8ce81e6dbb3
+ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "10902984"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "11114664"
 ---
 # Implementare Toolkit di diagnostica per Surface per le aziende
 
@@ -46,6 +46,7 @@ Riga di comando |  Risolvere direttamente i dispositivi Surface in remoto senza 
 
 SDT for business è supportato nei dispositivi Surface 3 e versioni successive, tra cui:
 
+- Portatile Surface go
 - Surface Book 3
 - Superficie Go 2
 - Surface Pro X
@@ -180,6 +181,17 @@ In questo modo è possibile selezionare o rimuovere l'opzione per eseguire gli a
 
 ## Modifiche e aggiornamenti
 
+### Versione 2.124.139.0
+
+Questa versione di Surface Diagnostic Toolkit for business aggiunge il supporto per gli elementi seguenti:
+
+- Supporto integrato senza soluzione di continuità
+- Salvare tutti i risultati del test
+- Verificare se l'immagine è creata in formato personalizzato
+- Includere avvisi da Gestione dispositivi
+- Versione del firmware Dock
+- Contrassegnare le unità come potenziali errori nel test di archiviazione
+- Rimuovi collegamento allo Store 
 
 ### Versione 2.121.139
 *Data di rilascio: 31 2020 luglio*<br>
