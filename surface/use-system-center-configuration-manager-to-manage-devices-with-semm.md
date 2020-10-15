@@ -9,18 +9,19 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.reviewer: ''
+ms.reviewer: hachidan
 manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: bba99d202d5d0dc5085c454202ae9a95df56109c
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.date: 10/13/2020
+ms.openlocfilehash: bfd10df3bb7a7dd031c1719d4191ffc46418c4e3
+ms.sourcegitcommit: 30c1eb469610dfd2ad9169c154ca07e565240fdb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833159"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "11117852"
 ---
-# Usare Microsoft endpoint Configuration Manager per gestire i dispositivi con SEMM
+# Usare Microsoft Endpoint Configuration Manager per configurare dispositivi con SEMM
 
 La funzionalità SEMM (Microsoft Surface Enterprise Management Mode) dei dispositivi UEFI di Surface consente agli amministratori di gestire e proteggere la configurazione delle impostazioni di Surface UEFI. Per la maggior parte delle organizzazioni, questo processo viene eseguito creando pacchetti di Windows Installer (con estensione msi) con lo strumento Microsoft Surface UEFI Configurator. Questi pacchetti vengono quindi eseguiti o distribuiti nei dispositivi Surface client per la registrazione dei dispositivi in SEMM e per aggiornare la configurazione delle impostazioni di Surface UEFI.
 
@@ -391,7 +392,7 @@ Il modo migliore per visualizzare i nomi e gli ID delle impostazioni più recent
 
 L'impostazione di nomi e ID per tutti i dispositivi può essere visualizzata nello script ConfigureSEMM.ps1.
 
-L'impostazione di nomi e ID per dispositivi specifici può essere visualizzata negli script ConfigureSEMM- <device name> . ps1. Ad esempio, l'impostazione di nomi e ID per Surface Pro X può essere trovata nello script ConfigureSEMM-ProX.ps1.
+L'impostazione di nomi e ID per dispositivi specifici può essere visualizzata negli script ConfigureSEMM- <device name> . ps1. 
 
 ## Distribuire script di gestione configurazione di SEMM
 
