@@ -14,15 +14,15 @@ author: greg-lindsay
 ms.author: greglin
 ms.collection: M365-modern-desktop
 ms.topic: article
-ms.date: 10/08/2020
+ms.date: 10/21/2020
 appliesto:
 - Surface Hub 2S
-ms.openlocfilehash: 66245f84f4413df2d9ae7b683947afbd84484325
-ms.sourcegitcommit: 56526c92d84dbc2cebcb8071d995efe399f306df
+ms.openlocfilehash: 25705f889f70e3d12dfef690c34e03d98254725e
+ms.sourcegitcommit: 959d2d856b1e5b5c72cd636f576b5feb1b633048
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "11105341"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "11133181"
 ---
 # Configurare Windows 10 Pro o Enterprise in Surface Hub 2
 
@@ -422,11 +422,11 @@ Attivare la modalità tablet, se necessario per esigenze di accessibilità.
 
    - Il rilevamento della presenza sarà un'icona verde nella barra di sistema.
     
-6. Verificare che la proiezione in questo PC sia abilitata con l'app Connect (l'applicazione non deve essere in corso prima della connessione).
+6. Verificare che la proiezione in questo PC sia abilitata con l'app Connect. Dopo aver configurato le impostazioni  **di Project per questo PC** , eseguire l'app Connect almeno una volta. In seguito, non è necessario che l'app Connect sia in uso per proiettare su Surface Hub.
 
 7. Verificare le impostazioni di alimentazione e sospensione.
 
-    - Salvaschermo: 15 minuti, impostato su (nessuno), mistificare o vuoto; casella di controllo per la richiesta di password selezionata
+    - Salvaschermo: 15 minuti, impostato su (nessuno), mistificare o vuoto; Verificare che la casella di controllo relativa alla richiesta di password sia selezionata.
     - Schermo: **disattivare dopo 2 ore**.
     - PC:  **disattivare dopo 4 ore**.
     
