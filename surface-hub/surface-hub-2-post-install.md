@@ -17,12 +17,12 @@ ms.topic: article
 ms.date: 10/21/2020
 appliesto:
 - Surface Hub 2S
-ms.openlocfilehash: 25705f889f70e3d12dfef690c34e03d98254725e
-ms.sourcegitcommit: 959d2d856b1e5b5c72cd636f576b5feb1b633048
+ms.openlocfilehash: a17d4b05e6ee5f7415fed62d96b9e0a62a6dc123
+ms.sourcegitcommit: cbf237e59c97311bd8add3aae2a17738fe271ddc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "11133181"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "11134404"
 ---
 # Configurare Windows 10 Pro o Enterprise in Surface Hub 2
 
@@ -44,13 +44,14 @@ Durante l'esecuzione di questi passaggi, potrebbe essere utile usare una tastier
 
     - Le impostazioni usate in questo articolo sono destinate a consentire l'esperienza di tocco di grande schermo migliore e quindi potresti non voler sincronizzare altri dispositivi.
     
-4. Riavviare il dispositivo.
+4. Riavvia il dispositivo.
 
 ## Abilitare la tastiera virtuale e il touchpad
 
 1. Toccare e tenere premuto o fare clic con il pulsante destro del mouse sulla barra delle applicazioni e quindi scegliere **Mostra pulsante tastiera virtuale** e **Mostra touchpad**. 
 
     - La tastiera virtuale è utile per l'input diretto dell'utente e il touchpad Virtual aiuta con selezioni precise, suggerimenti per lo schermo in bilico o come alternativa per toccare e tenere premuto il pulsante destro del mouse. 
+    
     - Vedi l'esempio seguente.
 
       ![Impostazioni tocco](images/touch.png)
@@ -63,10 +64,9 @@ Durante l'esecuzione di questi passaggi, potrebbe essere utile usare una tastier
     
     3. Selezionare il tipo di tastiera accanto a ultimo nella riga superiore per abilitare QWERTY e l'ultima opzione della seconda riga per abilitare il Floating, che è molto utile in questo grande schermo. Vedere gli esempi seguenti.
 
-      ![Impostazioni della tastiera](images/kbd.png)
+       ![Impostazioni della tastiera](images/kbd.png)
  
 3. Configurare le impostazioni della tastiera morbida.
-
 
     1. Selezionare l'icona **Impostazioni** nella tastiera virtuale oppure cercare e aprire **le impostazioni di digitazione**.
     
@@ -90,6 +90,7 @@ Se il dispositivo Surface Hub è vicino a un PC, è possibile usare il [mouse se
 Usare [OneDrive for business](https://docs.microsoft.com/onedrive/onedrive) per condividere facilmente strumenti, log e altri file tra tutti i dispositivi di lavoro.
 
 - OneDrive consente di condividere i file di lavoro tra i computer portatili, Surface Hub desktop e i dispositivi mobili gestiti da Intune. I file possono essere modificati in qualsiasi dispositivo e tutti i dispositivi connessi alla rete verranno aggiornati con le modifiche.
+
 - Considerando le dimensioni di Surface Hub SSD (128GB), se si configura OneDrive nel dispositivo desktop Surface Hub, verificare che la configurazione predefinita contenga i file online e scarichi i file durante l'uso.
 
 Per configurare OneDrive per il download dei file solo quando necessario, impostare l'impostazione **file su richiesta** per **risparmiare spazio e scaricare i file durante l'uso**. Per altre informazioni, vedere [query e impostare gli Stati su richiesta di file in Windows](https://docs.microsoft.com/onedrive/files-on-demand-windows).
@@ -116,13 +117,17 @@ Per sincronizzare i file aziendali interni con l'unità locale con l'app di sinc
 5. Verificare che la configurazione sia impostata in modo da conservare i file online e scaricare i file solo quando si usano:
 
     1. Aprire Esplora file.
-    2. Passare a e fare clic con il pulsante destro del mouse su **Microsoft \ \<SharePoint Document Folder Name\> **.
+    
+    2. Passare a e fare clic con il pulsante destro del mouse sul nome di SharePoint. ad esempio, **Contoso \ \<SharePoint Document Folder Name\> **.
+    
     3. Selezionare **libera spazio**.
+    
     4. La colonna stato visualizzerà lo stato di file e cartelle. Per altre informazioni, vedere [sincronizzare i file di SharePoint con il client di sincronizzazione di OneDrive](https://support.microsoft.com/office/sync-sharepoint-files-with-the-onedrive-sync-client-groove-exe-59b1de2b-519e-4d3a-8f45-51647cf291cd).
     
 6. I file di canale di teams sono archiviati nei siti di SharePoint, con tutte le stesse funzionalità dei documenti di SharePoint, inclusa la cronologia delle versioni e la sincronizzazione con i dispositivi desktop locali. Per sincronizzare i file del canale teams:
 
-    1. Passare al canale teams di interesse e selezionare la scheda **file** nella parte superiore. Quindi seleziona **Sincronizza**. I file verranno avviati per la sincronizzazione e saranno visibili in Esplora file in **Desktop \ Microsoft \<name of the Teams Channel\> \ **.
+    1. Passare al canale teams di interesse e selezionare la scheda **file** nella parte superiore. Quindi seleziona **Sincronizza**. I file verranno avviati per la sincronizzazione e saranno visibili in Esplora file in **Desktop \ Contoso \<name of the Teams Channel\> \ **.
+    
     2. Usare la stessa procedura usata per sincronizzare i siti di SharePoint per mantenere i file nel cloud e scaricarli solo quando si usano, toccare e tenere premuto o fare clic con il pulsante destro del mouse in Esplora file nel nome del canale teams e quindi selezionare **libera spazio**.
 
 ## Impostazioni penna di Surface Hub
@@ -153,7 +158,7 @@ Associare la penna per aggiornare il firmware della penna e ottenere le informaz
 
 2. Nella parte inferiore della pagina selezionare scelte rapide da penna che apre la finestra di dialogo, visualizzata qui:
 
-![Scelte rapide da penna](images/sh2-pen-shortcuts.png)
+   ![Scelte rapide da penna](images/sh2-pen-shortcuts.png)
 
 ## Configurazione della videocamera
 
@@ -200,7 +205,9 @@ Per aggiungere un'icona alla barra delle applicazioni che consente il blocco del
 Per aggiornare tutte le app dello Store installate:
 
 1. Aprire l'app Microsoft Store e selezionare la **visualizzazione altri** puntini di sospensione nell'angolo in alto a destra.
+
 2. Selezionare **Download e aggiornamenti**.
+
 2. Selezionare **Ottieni aggiornamenti**.
 
 ### Microsoft Whiteboard
@@ -246,6 +253,7 @@ In alternativa, è possibile installare lavagna da Microsoft Store:
 3. Se Outlook è installato, assicurarsi di impostare Outlook OST per salvare solo la cache delle ultime due settimane. In questo modo si ridurrà notevolmente l'utilizzo del disco e il tempo di configurazione.
 
     - Selezionare **File**  >  **Impostazioni account** file e selezionare il proprio account.
+    
     - Selezionare **Cambia** e impostare il dispositivo di scorrimento per **usare la modalità cache** per 14 giorni.
 
 ### Microsoft Teams
@@ -307,6 +315,11 @@ Per informazioni sulla configurazione dell'app, vedere [come configurare il tele
 
 Scaricare e installare il nuovo [browser cromo Edge](https://www.microsoft.com/en-us/edge?form=MY01BL&OCID=MY01BL).
 
+
+### Strumento di diagnostica hardware Surface Hub
+
+[Strumento di diagnostica hardware Surface Hub](https://www.microsoft.com/p/surface-hub-hardware-diagnostic/9nblggh51f2g) disponibile gratuitamente da Microsoft Store. Lo strumento è progettato per assicurarti che il tuo hub Surface venga eseguito al meglio. Contiene test per determinare se il firmware è aggiornato e configurato correttamente. I test interattivi consentono di verificare che la funzionalità essenziale funzioni come previsto. Se si verificano problemi, i risultati possono essere salvati e condivisi con il team di supporto di Surface Hub. Fare clic sul collegamento per installarlo da Microsoft Store e quindi aggiungere l'applicazione alla barra delle applicazioni.
+
 ## Impostazioni aggiuntive
 
 ### Coda di penna selezionare per avviare la lavagna
@@ -336,7 +349,7 @@ Windows 10 Pro o Enterprise su Surface Hub 2 impedisce allo schermo di andare in
 2. Configurare le impostazioni di **timeout dello schermo** e **le impostazioni dello screensaver** per le preferenze. I valori predefiniti consigliati sono i seguenti:
 
    - Salvaschermo in (nessuno) o in uno screensaver di tua scelta.
-   - Attendere "tempo di 15 minuti".
+   - Attendere 15 minuti.
    - In curriculum visualizzare la schermata di accesso.
 
 
@@ -406,7 +419,7 @@ Attivare la modalità tablet, se necessario per esigenze di accessibilità.
 
    1. In un prompt dei comandi con privilegi elevati, immettere **gpupdate/force/boot/wait: 0**.
    
-3. Riavviare il dispositivo.
+3. Riavvia il dispositivo.
 
 4. Verificare le app della barra delle applicazioni.
 
