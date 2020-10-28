@@ -1,37 +1,36 @@
 ---
 title: Gestire gli aggiornamenti di Windows su una Surface Hub
-description: È possibile gestire gli aggiornamenti di Windows in Microsoft Surface Hub o Surface Hub 2S impostando la finestra di manutenzione, posticipando gli aggiornamenti o usando Windows Server Update Services (WSUS).
+description: Descrive le procedure consigliate per la gestione degli aggiornamenti in Microsoft Surface Hub o Surface Hub 2S.
 ms.assetid: A737BD50-2D36-4DE5-A604-55053D549045
 ms.reviewer: ''
 manager: laurawi
-keywords: gestire gli aggiornamenti di Windows, Surface Hub, WindowsServer Update Services, WSUS
+keywords: gestire gli aggiornamenti di Windows, Surface Hub, Windows Server Update Services
 ms.prod: surface-hub
 ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
+ms.date: 10/27/2020
 ms.localizationpriority: medium
-ms.openlocfilehash: 72214ec9436e6ea106d9e42c957664631ee88a0a
-ms.sourcegitcommit: f74253629aaf073b35b1af69439f76e63392c5aa
+ms.openlocfilehash: d6b95ac565132c4e4f1632c2abaffa13ddb2c54c
+ms.sourcegitcommit: 19d2a78242777590bd09af3ac6552c07b032e0a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "11103790"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "11142895"
 ---
 # Gestire gli aggiornamenti di Windows su una Surface Hub
 
-Le nuove versioni del sistema operativo Surface Hub vengono pubblicate tramite Windows Update, proprio come le versioni di Windows10. Sono disponibili due diverse modalità per gestire gli aggiornamenti da installare nei dispositivi Surface Hub e le tempistiche per l'applicazione degli aggiornamenti.
-- **Windows Update for Business**: Windows Update for Business, una novità di Windows10, è un insieme di funzionalità progettate per garantire alle aziende un maggiore controllo su come e quando Windows Update installa le versioni, riducendo i costi di gestione dei dispositivi. Con questo metodo, i dispositivi Surface Hub sono direttamente connessi al servizio Windows Update di Microsoft.
-- **WindowsServer Update Services (WSUS)**: è un insieme di servizi che consentono agli amministratori IT di ottenere gli aggiornamenti che Windows Update ritiene applicabili ai dispositivi inclusi nella rete aziendale, eseguire ulteriori test e cicli di valutazione su tali aggiornamenti e selezionare gli aggiornamenti da installare. Con questo metodo, i dispositivi Surface Hub riceveranno gli aggiornamenti da WSUS invece che da Windows Update.
+Le nuove versioni del sistema operativo Surface Hub vengono pubblicate tramite Windows Update, proprio come le versioni di Windows10. In questa pagina sono illustrate le procedure consigliate per la gestione degli aggiornamenti per i dispositivi Surface Hub. 
 
-Puoi anche configurare Surface Hub per ricevere gli aggiornamenti sia da Windows Update for Business che da WSUS. Vedi [Integrare Windows Update for Business con WindowsServer Update Services](https://technet.microsoft.com/itpro/windows/manage/waas-integrate-wufb#integrate-windows-update-for-business-with-windows-server-update-services) per maggiori dettagli.
+## Windows Update for Business
 
-| Funzionalità | Windows Update for Business | Windows Server Update Services (WSUS) |
-| ------------ | --------------------------- | ------------------------------------- |
-| Ricevere gli aggiornamenti direttamente dal servizio Windows Update di Microsoft, senza ulteriori infrastrutture richieste.  | Sì  | No  |
-| Posticipare gli aggiornamenti per fornire altro tempo per il test e la valutazione. | Sì  | Sì  |
-| Distribuire gli aggiornamenti a gruppi di dispositivi selezionati. | Sì | Sì |
-| Definire finestre di manutenzione per l'installazione degli aggiornamenti. | Sì  | Sì  |
+Windows Update for business è un set di funzionalità progettate per consentire alle aziende un controllo aggiuntivo su come e quando Windows Update installa i rilasci, riducendo i costi di gestione dei dispositivi. Con questo metodo, i dispositivi Surface Hub sono direttamente connessi al servizio Windows Update di Microsoft.
+
+- Ricevere gli aggiornamenti direttamente dal servizio Windows Update di Microsoft, senza ulteriori infrastrutture richieste. 
+- Posticipare gli aggiornamenti per fornire altro tempo per il test e la valutazione. 
+- Distribuire gli aggiornamenti a gruppi di dispositivi selezionati. 
+- Definire finestre di manutenzione per l'installazione degli aggiornamenti. 
 
 > [!TIP]
 > Usa la condivisione del contenuto peer-to-peer per ridurre i problemi di larghezza di banda durante gli aggiornamenti. Vedi [Ottimizzare il recapito degli aggiornamenti di Windows10](https://technet.microsoft.com/itpro/windows/manage/waas-optimize-windows-10-updates) per maggiori dettagli.
@@ -56,6 +55,7 @@ Per altre informazioni su Windows as a Service, vedi [Panoramica di Windows as a
 
 
 ## Usare Windows Update for Business
+
 I dispositivi Surface Hub, come tutti i dispositivi Windows10, includono **Windows Update for Business** che consente di controllare le modalità di aggiornamento dei dispositivi. Windows Update for Business permette di ridurre i costi di gestione dei dispositivi, fornisce controlli per la distribuzione degli aggiornamenti, garantisce un accesso più rapido agli aggiornamenti per la sicurezza e consente l'accesso su base continuativa alle innovazioni più recenti di Microsoft. Per altre informazioni, vedi [Gestire gli aggiornamenti con Windows Update for Business](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb).
 
 **Per configurare Windows Update for Business:**
@@ -67,9 +67,10 @@ I dispositivi Surface Hub, come tutti i dispositivi Windows10, includono **Windo
 
 
 ### Includere i dispositivi Surface Hub nei circuiti di distribuzione
+
 Puoi usare i circuiti di distribuzione per controllare le tempistiche dell'implementazione degli aggiornamenti nei dispositivi Surface Hub, in modo da avere il tempo necessario per convalidarli. Ad esempio, puoi aggiornare in prima istanza un piccolo pool di dispositivi per verificare la qualità prima di procedere all'implementazione su larga scala nell'intera organizzazione. A seconda di chi gestisce Surface Hub nella tua organizzazione, prendi in considerazione la possibilità di incorporare Surface Hub nei circuiti di distribuzione che hai creato per gli altri dispositivi Windows10. Per altre informazioni sui circuiti di distribuzione, vedi [Creare circuiti di distribuzione per gli aggiornamenti di Windows10](https://technet.microsoft.com/itpro/windows/manage/waas-deployment-rings-windows-10-updates).
 
-Questa tabella fornisce alcuni esempi dei circuiti di distribuzione.
+Per esempi di anelli di distribuzione, vedere la tabella seguente.
 
 | Circuito di distribuzione | Dimensione del circuito | Ramo di manutenzione | Posticipo per aggiornamenti delle funzionalità | Posticipo per aggiornamenti qualitativi (correzioni per la sicurezza, driver e altri aggiornamenti) | Fase di convalida |
 | --------- | --------- | --------- | --------- | --------- | --------- |
@@ -79,10 +80,8 @@ Questa tabella fornisce alcuni esempi dei circuiti di distribuzione.
 | Importanza critica (ad esempio, dispositivi delle sale riunioni dei dirigenti) | Bassa | Canale semestrale |  180 giorni dopo il rilascio (posticipo massimo per gli aggiornamenti delle funzionalità). | 30 giorni dopo il rilascio (posticipo massimo per gli aggiornamenti qualitativi). | Monitorare l'utilizzo dei dispositivi e il feedback degli utenti. |
 
 
-
-
-
 ### Configurare quando i dispositivi Surface Hub ricevono gli aggiornamenti
+
 Dopo avere determinato i circuiti di distribuzione per i dispositivi Surface Hub, configura i criteri per il posticipo degli aggiornamenti per ciascun circuito:
 - Per posticipare gli aggiornamenti delle funzionalità, imposta un criterio [Update/DeferFeatureUpdatesPeriodInDays](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-deferfeatureupdatesperiodindays) appropriato per ogni circuito.
 - Per posticipare gli aggiornamenti qualitativi, imposta un criterio [Update/DeferQualityUpdatesPeriodInDays](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-deferqualityupdatesperiodindays) appropriato per ogni circuito.
@@ -90,22 +89,9 @@ Dopo avere determinato i circuiti di distribuzione per i dispositivi Surface Hub
 > [!NOTE]
 > Se si verificano problemi durante l'implementazione degli aggiornamenti, puoi sospendere gli aggiornamenti usando [Update/PauseFeatureUpdates](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-pausefeatureupdates) e [Update/PauseQualityUpdates](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-pausequalityupdates).
 
-
-## Usare Windows Server Update Services
-
-Puoi connettere Surface Hub al server WSUS (Windows Server Update Services) per gestire gli aggiornamenti. Gli aggiornamenti verranno controllati tramite approvazione o con regole di distribuzione automatica configurate nel server WSUS, in modo che i nuovi aggiornamenti non saranno distribuiti fino a quando non scegli di farlo.
-
-**Per connettere manualmente un dispositivo Surface Hub a un server WSUS:**
-1. Apri **Impostazioni** nel dispositivo Surface Hub.
-2. Quando viene richiesto, immetti le credenziali di amministratore del dispositivo.
-3. Passa a **Aggiornamento e sicurezza** > **Windows Update** > **Opzioni avanzate** > **Configura server WindowsServer Update Services (WSUS)**.
-4. Fai clic su **Usa il server WSUS per scaricare gli aggiornamenti** e digita l'URL del server WSUS.
-
-Per connettere Surface Hub a un server WSUS con MDM, imposta un criterio [Update/UpdateServiceUrl](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_UpdateServiceUrl) appropriato.
-
 **Se utilizzi un server proxy o un altro metodo di blocco di URL**
 
-Se utilizzi un metodo diverso da WSUS per bloccare URL specifici e impedire gli aggiornamenti, dovrai aggiungere i seguenti URL di siti attendibili di Windows Update all’elenco degli indirizzi consentiti:
+Aggiungere gli URL del sito attendibili di Windows Update seguenti all'"elenco Consenti":
 - `http(s)://*.update.microsoft.com`
 - `http://download.windowsupdate.com` 
 - `http://windowsupdate.microsoft.com`
@@ -114,7 +100,7 @@ Al termine dell’installazione dell’Aggiornamento dell’anniversario di Wind
 
 ## Finestra di manutenzione
 
-Per garantire che il dispositivo sia sempre disponibile per l’uso durante l’orario lavorativo, Surface Hub esegue le operazioni amministrative durante una finestra di manutenzione specificata. Durante la finestra di manutenzione, l'hub Surface installa automaticamente gli aggiornamenti tramite Windows Update o WSUS e riavvia il dispositivo 20 minuti prima della fine della finestra.
+Per garantire che il dispositivo sia sempre disponibile per l’uso durante l’orario lavorativo, Surface Hub esegue le operazioni amministrative durante una finestra di manutenzione specificata. Durante la finestra di manutenzione, l'hub Surface installa automaticamente gli aggiornamenti tramite Windows Update e riavvia il dispositivo 20 minuti prima della fine della finestra.
 
 Surface Hub si attiene a queste linee guida per l'applicazione degli aggiornamenti:
 - Installare l'aggiornamento durante la finestra di manutenzione successiva. Se l'inizio di una riunione è pianificato durante una finestra di manutenzione o i sensori di Surface Hub rilevano che il dispositivo è in uso, l'aggiornamento in sospeso verrà posticipato alla finestra di manutenzione seguente.

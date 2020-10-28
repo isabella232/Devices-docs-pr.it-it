@@ -10,14 +10,14 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 07/27/2017
+ms.date: 10/27/2020
 ms.localizationpriority: medium
-ms.openlocfilehash: 0ad65170b3cc2534fec1b22730c718025026d7bc
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: e070c28d13cd8466bff47022f4508fdb8aa06331
+ms.sourcegitcommit: 19d2a78242777590bd09af3ac6552c07b032e0a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833687"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "11142915"
 ---
 # Programma di prima esecuzione - Surface Hub
 
@@ -71,7 +71,7 @@ Se i valori predefiniti visualizzati sono corretti, sarà possibile fare clic su
 ### Conseguenze
 
 >[!NOTE]
-> Dopo aver completato le impostazioni in questa pagina non potrai tornare a questa schermata, se non reimpostando il dispositivo (vedi [Reimpostazione del dispositivo](device-reset-surface-hub.md)). Assicurati che le impostazioni siano configurate in modo corretto prima di procedere.
+> Dopo aver completato le impostazioni in questa pagina non potrai tornare a questa schermata, se non reimpostando il dispositivo (vedi [Reimpostazione del dispositivo](device-reset-surface-hub.md)). Assicurati che le impostazioni siano configurate in modo corretto prima di procedere.
 
  
 
@@ -128,17 +128,17 @@ Questa pagina verrà visualizzata quando il dispositivo rileva una connessione c
 
 -   Puoi selezionare una rete wireless da usare al posto della connessione cablata limitata.
 -   Puoi evitare la connessione a una rete selezionando **Ignora questo passaggio**. Verrà visualizzata la [pagina Impostazioni automatiche](#set-up-for-you).
-    **Nota**  Se si ignora questo aspetto, il dispositivo non avrà una connessione di rete e non sarà possibile usare una connessione di rete per l'hub di Surface, inclusi elementi come la sincronizzazione di posta elettronica e calendario. È possibile connettersi a una rete wireless in seguito usando le impostazioni (vedere [gestione della rete wireless](wireless-network-management-for-surface-hub.md)).
+    **Nota** Se salti questo passaggio, il dispositivo non potrà usare una connessione di rete e tutte le funzionalità di Surface Hub che richiedono una connessione di rete non saranno disponibili, ad esempio la sincronizzazione di e-mail e calendario. È possibile connettersi a una rete wireless in seguito usando le impostazioni (vedere [gestione della rete wireless](wireless-network-management-for-surface-hub.md)).
 
      
 
 -   Puoi selezionare **Immetti impostazioni proxy** . In questo modo potrai specificare come usare il proxy di rete. Verrà visualizzata la schermata successiva.
 
-![Immagine della pagina del proxy di rete.](images/setupnetworksetup-2.png)
+    ![Immagine della pagina del proxy di rete.](images/setupnetworksetup-2.png)
 
-Questa è la schermata che vedrai se hai fatto clic su **Immetti impostazioni proxy** nella schermata precedente.
+    Questa è la schermata che vedrai se hai fatto clic su **Immetti impostazioni proxy** nella schermata precedente.
 
-![Immagine dei dettagli relativi alla configurazione del server proxy](images/setupnetworksetup-4.png)
+    ![Immagine dei dettagli relativi alla configurazione del server proxy](images/setupnetworksetup-4.png)
 
 ### Dettagli
 
@@ -371,9 +371,10 @@ Se hai deciso di aggiungere il dispositivo Surface Hub ad Azure Active Directory
 L'aggiunta ad Azure AD presenta due vantaggi principali:
 
 1.  Alcuni dipendenti dall'organizzazione saranno in grado di accedere al dispositivo come amministratori e potranno avviare l'app Impostazioni e configurare il dispositivo. Le persone con autorizzazioni amministrative verranno definite nella tua sottoscrizione di Azure AD.
+
 2.  Se Azure AD è connesso a una soluzione di gestione di dispositivi mobili (MDM), il dispositivo verrà registrato nella soluzione MDM in modo da poter applicare i criteri e la configurazione.
 
-![Immagine del messaggio che viene visualizzato quando aggiungi Surface Hub ad Azure Active Directory.](images/setupjoiningazuread-1.png)
+    ![Immagine del messaggio che viene visualizzato quando aggiungi Surface Hub ad Azure Active Directory.](images/setupjoiningazuread-1.png)
 
 ### Dettagli
 
@@ -451,7 +452,7 @@ Questa pagina tenerà di creare un nuovo account amministratore con le credenzia
 
 Per ottenere le funzionalità e le correzioni più recenti, è consigliabile aggiornare il dispositivo Surface Hub subito dopo aver completato tutti i passaggi della procedura di prima esecuzione.
 
-1.  Assicurati che il dispositivo abbia accesso ai server di Windows Update o a Windows Server Update Services (WSUS). Per configurare WSUS, vedi [Uso di WSUS](manage-windows-updates-for-surface-hub.md#use-windows-server-update-services).
+1.  Verificare che il dispositivo abbia accesso ai server Windows Update. 
 2.  Apri impostazioni, fai clic su **Aggiornamento e sicurezza**, **Windows Update** e quindi fai clic su **Verifica disponibilità aggiornamenti**.
 3.  Se sono disponibili aggiornamenti, verranno scaricati. Dopo aver completato il download, fai clic sul pulsante **Aggiorna** per installare gli aggiornamenti.
 4.  Segui le istruzioni sullo schermo dopo l'installazione degli aggiornamenti. Potrebbe essere necessario riavviare il dispositivo.
