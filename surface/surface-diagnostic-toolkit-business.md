@@ -12,12 +12,12 @@ ms.date: 10/12/2020
 ms.reviewer: hachidan
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 1f2661811516507abd432dba602cf8ce81e6dbb3
-ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
+ms.openlocfilehash: 97d0a3d76cf9286ca946e08be9f605084084b2ba
+ms.sourcegitcommit: 5448f775d3fe177806fce6cbaf0b2b091ed8b7d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "11114664"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "11145961"
 ---
 # <span data-ttu-id="4d651-103">Implementare Toolkit di diagnostica per Surface per le aziende</span><span class="sxs-lookup"><span data-stu-id="4d651-103">Deploy Surface Diagnostic Toolkit for Business</span></span>
 
@@ -25,7 +25,7 @@ ms.locfileid: "11114664"
 
 <span data-ttu-id="4d651-106">In particolare, SDT for business consente di:</span><span class="sxs-lookup"><span data-stu-id="4d651-106">Specifically, SDT for Business enables you to:</span></span>
 
-- [<span data-ttu-id="4d651-107">Personalizzare il pacchetto.</span><span class="sxs-lookup"><span data-stu-id="4d651-107">Customize the package.</span></span>](#create-custom-sdt)
+- [<span data-ttu-id="4d651-107">Personalizzare il pacchetto.</span><span class="sxs-lookup"><span data-stu-id="4d651-107">Customize the package.</span></span>](#preparing-the-sdt-package-for-distribution)
 - [<span data-ttu-id="4d651-108">Esegui l'app usando i comandi.</span><span class="sxs-lookup"><span data-stu-id="4d651-108">Run the app using commands.</span></span>](surface-diagnostic-toolkit-command-line.md)
 - [<span data-ttu-id="4d651-109">Eseguire più test hardware per la risoluzione dei problemi.</span><span class="sxs-lookup"><span data-stu-id="4d651-109">Run multiple hardware tests to troubleshoot issues.</span></span>](surface-diagnostic-toolkit-desktop-mode.md#multiple)
 - [<span data-ttu-id="4d651-110">Genera log per l'analisi dei problemi.</span><span class="sxs-lookup"><span data-stu-id="4d651-110">Generate logs for analyzing issues.</span></span>](surface-diagnostic-toolkit-desktop-mode.md#logs)
@@ -123,8 +123,6 @@ ms.locfileid: "11114664"
 ![elenco dei file installati in SDT in Esplora file](images/sdt-2.png)
 
 *<span data-ttu-id="4d651-191">Figura 2.</span><span class="sxs-lookup"><span data-stu-id="4d651-191">Figure 2.</span></span> <span data-ttu-id="4d651-192">File installati da SDT</span><span class="sxs-lookup"><span data-stu-id="4d651-192">Files installed by SDT</span></span>*
-
-<span id="create-custom-sdt" />
 
 ## <span data-ttu-id="4d651-193">Preparazione del pacchetto SDT per la distribuzione</span><span class="sxs-lookup"><span data-stu-id="4d651-193">Preparing the SDT package for distribution</span></span>
 
