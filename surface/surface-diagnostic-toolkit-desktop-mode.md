@@ -12,12 +12,12 @@ manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
 ms.date: 7/31/2020
-ms.openlocfilehash: ec4a90d0d72956eaa4f98e928d128dca70d49c59
-ms.sourcegitcommit: f875a45961ff5f3c04006afc8690b5e5965e4d80
+ms.openlocfilehash: 8b113d16f2053fe0904518b2643f1bafeaebdf64
+ms.sourcegitcommit: 5448f775d3fe177806fce6cbaf0b2b091ed8b7d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "10902957"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "11145941"
 ---
 # Usare Toolkit di diagnostica per Surface per le aziende in modalità desktop
 
@@ -26,7 +26,7 @@ Questo argomento spiega come usare Surface Diagnostic Toolkit (SDT) per aiutare 
 L'uso di SDT può determinare rapidamente se un problema segnalato è causato da un errore hardware o utente non riuscito. Per un elenco dei dispositivi Surface supportati in SDT, vedere [distribuire Toolkit di diagnostica superficie per le aziende](surface-diagnostic-toolkit-business.md).
 
 
-1. Indirizzare l'utente a installare [il pacchetto SDT](surface-diagnostic-toolkit-business.md#create-custom-sdt) da un punto di distribuzione del software o da una condivisione di rete. Dopo l'installazione, sei pronto per guidare l'utente tramite una serie di test. 
+1. Indirizzare l'utente all'installazione [del pacchetto SDT](surface-diagnostic-toolkit-business.md#preparing-the-sdt-package-for-distribution)da un punto di distribuzione del software o da una condivisione di rete. Dopo l'installazione, sei pronto per guidare l'utente tramite una serie di test. 
 
 2. Iniziare nella Home page, che consente agli utenti di immettere una descrizione del problema e fare clic su **continua**, come illustrato nella figura 1.
 
@@ -58,12 +58,12 @@ L'uso di SDT può determinare rapidamente se un problema segnalato è causato da
 5. Al termine di tutti i test, lo strumento chiede di verificare se il problema è stato risolto. 
 
  ![Il problema è stato risolto? ](images/sdt3.png)
- *Figura 3A. Il problema è stato risolto?*
+ *Figura 3A. il problema è stato risolto?*
 
 6. Se il problema non è stato risolto o non si sa, è possibile inviare un ticket di supporto selezionando **Contattaci** per **ottenere assistenza ora.**
  
  ![Inviare un ticket di supporto ](images/sdt4.png)
- *nella figura 3b. Inviare un ticket di supporto*
+ *Figura 3b. inviare un ticket di supporto*
 
 <span id="multiple" />
 

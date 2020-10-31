@@ -12,12 +12,12 @@ ms.date: 10/12/2020
 ms.reviewer: hachidan
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 1f2661811516507abd432dba602cf8ce81e6dbb3
-ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
+ms.openlocfilehash: 97d0a3d76cf9286ca946e08be9f605084084b2ba
+ms.sourcegitcommit: 5448f775d3fe177806fce6cbaf0b2b091ed8b7d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "11114664"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "11145961"
 ---
 # Implementare Toolkit di diagnostica per Surface per le aziende
 
@@ -25,7 +25,7 @@ Microsoft Surface Diagnostic Toolkit for business (SDT) consente agli amministra
 
 In particolare, SDT for business consente di:
 
-- [Personalizzare il pacchetto.](#create-custom-sdt)
+- [Personalizzare il pacchetto.](#preparing-the-sdt-package-for-distribution)
 - [Esegui l'app usando i comandi.](surface-diagnostic-toolkit-command-line.md)
 - [Eseguire più test hardware per la risoluzione dei problemi.](surface-diagnostic-toolkit-desktop-mode.md#multiple)
 - [Genera log per l'analisi dei problemi.](surface-diagnostic-toolkit-desktop-mode.md#logs)
@@ -123,8 +123,6 @@ Oltre al file exe, SDT installa un file JSON e un file di admin.dll (modules\adm
 ![elenco dei file installati in SDT in Esplora file](images/sdt-2.png)
 
 *Figura 2. File installati da SDT*
-
-<span id="create-custom-sdt" />
 
 ## Preparazione del pacchetto SDT per la distribuzione
 
