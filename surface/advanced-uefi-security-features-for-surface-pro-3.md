@@ -13,12 +13,12 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.openlocfilehash: 9460b4a5e8b44cbf4b6af57d01aab3b09afb49de
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 6a5c53c3e161bd4c49069a0665896762ce587618
+ms.sourcegitcommit: e9190a6fe68b8a7cd9b024aea4be9f885f0de388
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10832582"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163186"
 ---
 # Funzionalità di sicurezza UEFI avanzate per Surface Pro 3
 
@@ -54,7 +54,7 @@ Dopo aver installato l'aggiornamento UEFI v3.11.760.0 in un dispositivo Surface,
 | WiFi           | Abilita o disabilita il ricetrasmettitore Wi-Fi integrato nel dispositivo Surface. Viene disabilitata anche la funzionalità Bluetooth.                                                                              | **Enabled**, Disabled                       |
 | Bluetooth      | Abilita o disabilita il ricetrasmettitore Bluetooth integrato nel dispositivo Surface.                                                                                                        | **Enabled**, Disabled                       |
 
- 
+ 
 
 ## Automatizzare le impostazioni di sicurezza aggiuntive
 
@@ -69,12 +69,13 @@ In qualità di professionista IT con privilegi amministrativi, puoi automatizzar
 
 **Script di esempio**
 
->**Nota**:&nbsp;&nbsp;la password UEFI usata negli script di esempio riportati di seguito è presentata come testo non crittografato. Consigliamo di salvare gli script in un percorso protetto e di eseguirli in un ambiente controllato.
+> [!NOTE]
+> La password UEFI usata negli script di esempio di seguito è presentata come testo non crittografato. Consigliamo di salvare gli script in un percorso protetto e di eseguirli in un ambiente controllato.
 
 
 Mostrare tutte le opzioni di configurazione:
 
-```
+```powershell
 # Load the extension 
 [System.Reflection.Assembly]::Load("SurfaceUefiManager, Version=1.0.5483.22783, Culture=neutral, PublicKeyToken=20606f4b5276c705")  
  
@@ -99,7 +100,7 @@ foreach ($uefiOption in $uefiOptions)
 
 Impostare o modificare la password UEFI:
 
-```
+```powershell
 # Load the extension 
 [System.Reflection.Assembly]::Load("SurfaceUefiManager, Version=1.0.5483.22783, Culture=neutral, PublicKeyToken=20606f4b5276c705")  
  
@@ -115,7 +116,7 @@ $Password.ProposedValue = "12345"
 
 Controllare lo stato delle modifiche proposte:
 
-```
+```powershell
 # Load the extension 
 [System.Reflection.Assembly]::Load("SurfaceUefiManager, Version=1.0.5483.22783, Culture=neutral, PublicKeyToken=20606f4b5276c705")  
  
@@ -141,7 +142,7 @@ if ($details.Count -gt 0)
 
 Ripristinare i valori predefiniti di UEFI:
 
-```
+```powershell
 # Load the extension 
 [System.Reflection.Assembly]::Load("SurfaceUefiManager, Version=1.0.5483.22783, Culture=neutral, PublicKeyToken=20606f4b5276c705")  
  
@@ -166,11 +167,4 @@ Interpretazione dei codici di stato
 -   03: uno dei valori proposti impostati non è stato riconosciuto
 -   0F: la password di sblocco non corrisponde a quella attualmente impostata
 
- 
-
- 
-
-
-
-
-
+ 
