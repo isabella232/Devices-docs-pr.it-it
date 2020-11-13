@@ -80,6 +80,7 @@
 #### [Usare Toolkit di diagnostica per Surface per le aziende in modalità desktop](surface-diagnostic-toolkit-desktop-mode.md)
 #### [Eseguire Toolkit di diagnostica per Surface per le aziende usando i comandi](surface-diagnostic-toolkit-command-line.md)
 ### [Supporto per gli utenti finali](https://support.microsoft.com/products/surface-devices)
+### [Ciclo di vita del driver e del firmware Surface per i dispositivi basati su Windows](surface-driver-firmware-lifecycle-support.md)
 
 ## Garanzia e piani di assistenza estesi
 ### [Garanzia e piani di assistenza estesi Surface per le Aziende](https://www.microsoft.com/surface/business/warranty-service-offerings-and-support)
