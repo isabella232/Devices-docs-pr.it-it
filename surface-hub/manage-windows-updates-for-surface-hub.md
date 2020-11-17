@@ -12,12 +12,12 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 10/27/2020
 ms.localizationpriority: medium
-ms.openlocfilehash: d6b95ac565132c4e4f1632c2abaffa13ddb2c54c
-ms.sourcegitcommit: 19d2a78242777590bd09af3ac6552c07b032e0a1
+ms.openlocfilehash: e5ffefa44560d01135b3ac656d9357f1115110ba
+ms.sourcegitcommit: d60f82d9d22fe118f9c8dc24458d2c144b138eb8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "11142895"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "11174726"
 ---
 # Gestire gli aggiornamenti di Windows su una Surface Hub
 
@@ -120,7 +120,7 @@ Per tutti i nuovi dispositivi Surface Hub è impostata una finestra di manutenzi
 2.  Passa a **Aggiornamento e sicurezza** > **Windows Update** > **Opzioni avanzate**.
 3.  In **Ore di manutenzione** seleziona **Cambia**.
 
-Per cambiare la finestra di manutenzione con MDM, imposta il nodo **MOMAgent** nel [provider di servizi di configurazione SurfaceHub](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx). Vedi [Gestire le impostazioni con un provider MDM](manage-settings-with-mdm-for-surface-hub.md) per maggiori dettagli.
+Per modificare la finestra di manutenzione usando MDM, imposta il nodo **MaintenanceHoursSimple** nel [provider di servizi di configurazione di SurfaceHub](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx). Vedi [Gestire le impostazioni con un provider MDM](manage-settings-with-mdm-for-surface-hub.md) per maggiori dettagli.
 
 
 ## Altre informazioni
