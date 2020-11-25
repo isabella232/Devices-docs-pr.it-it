@@ -9,12 +9,12 @@ author: v-miegge
 ms.author: v-miegge
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: ab43155ee5e2973c5c45fc9ce8dd1395e3ca8bc5
-ms.sourcegitcommit: d60f82d9d22fe118f9c8dc24458d2c144b138eb8
+ms.openlocfilehash: 2aba835da79d40d4ae5f2786f77071ab9e210844
+ms.sourcegitcommit: e2ade2f198e4123c922c6a4fb5ab61e040e38ccb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "11174746"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "11190069"
 ---
 # Cronologia degli aggiornamenti di Surface Hub
 
@@ -28,6 +28,28 @@ Verrà aggiornata questa pagina man mano che vengono rilasciati nuovi aggiorname
 Fare riferimento alla pagina "[informazioni importanti su Surface Hub](https://support.microsoft.com/products/surface-devices/surface-hub)" per gli argomenti correlati sulle versioni correnti e precedenti che potrebbero richiedere l'attenzione.
 
 ## Aggiornamento di Windows 10 team 2020 (20H2)
+
+<details>
+<summary>24 novembre 2020-aggiornamento per Surface Hub 2S</summary>
+
+Questo aggiornamento è specifico di Surface Hub 2S e fornisce gli aggiornamenti del driver e del firmware descritti di seguito:
+
+* Aggiornamento del firmware di Surface SMC-3.91.139.0
+  * Migliorare l'affidabilità di standby connessa.
+* Aggiornamento del firmware per Surface Touch-3.91.139.0
+  * Migliorare la risposta al tocco di standby connessa.
+* Aggiornamento del firmware audio di Surface USB-3.91.139.0
+* Aggiornamento del firmware della penna di superficie-3.91.139.0
+</details>
+
+<details>
+<summary>27 ottobre 2020 — aggiornamento per Surface Hub 2S</summary>
+
+Questo aggiornamento è specifico di Surface Hub 2S e fornisce gli aggiornamenti del driver e del firmware descritti di seguito:
+
+* Aggiornamento del firmware dell'aggregatore di Surface System-4.14.139.0
+* Aggiornamento di Surface UEFI-694.3386.768.0
+</details>
 
 <details>
 <summary>Windows 10 team 2020 Update per Surface Hub-note sulla versione generale (build del sistema operativo 19042,572)</summary>
