@@ -9,12 +9,12 @@ author: v-miegge
 ms.author: v-miegge
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 2aba835da79d40d4ae5f2786f77071ab9e210844
-ms.sourcegitcommit: e2ade2f198e4123c922c6a4fb5ab61e040e38ccb
+ms.openlocfilehash: f45a2f202cdf350c6e51bb78a2bf87019a89453a
+ms.sourcegitcommit: 7c00ca47fe81a4f5b3a3317afabb4d028ff21289
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "11190069"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "11192847"
 ---
 # Cronologia degli aggiornamenti di Surface Hub
 
@@ -28,6 +28,24 @@ Verrà aggiornata questa pagina man mano che vengono rilasciati nuovi aggiorname
 Fare riferimento alla pagina "[informazioni importanti su Surface Hub](https://support.microsoft.com/products/surface-devices/surface-hub)" per gli argomenti correlati sulle versioni correnti e precedenti che potrebbero richiedere l'attenzione.
 
 ## Aggiornamento di Windows 10 team 2020 (20H2)
+
+<details>
+<summary>30 novembre 2020 — aggiornamento per il team basato su KB4586853 * (OS Build 19042,662)</summary>
+
+Questo aggiornamento per Surface Hub include miglioramenti della qualità e correzioni per la sicurezza. Gli aggiornamenti principali per Surface Hub, non già descritti nella [cronologia degli aggiornamenti di Windows 10](https://support.microsoft.com/help/4581839/windows-10-update-history), includono:
+
+* Aggiornare la pagina delle impostazioni di privacy per specificare altre opzioni.
+* Correzione che garantisce che la pulizia della sessione finale rimuova completamente tutti i dati correlati al cromo Edge.
+* Risolve un problema in cui le riunioni già avviate non sono visualizzate nella schermata di benvenuto/Start.
+* Risolve un problema con il ripristino del cloud per le impostazioni locali non en-US.
+* Skype for Business
+  * Migliora le prestazioni audio direzionali.
+  * Riduzione del "tocco penna" quando si usa la penna durante le chiamate Skype for business.
+* Migliora l'affidabilità quando si entra in un programma Windows Insider.
+* Migliora l'affidabilità di Windows Team Shell.
+
+Fare riferimento alla guida per l' [amministratore di Surface Hub](https://docs.microsoft.com/surface-hub/) per abilitare/disabilitare le funzionalità e i servizi del dispositivo. *[KB4586853](https://support.microsoft.com/help/4586853)
+</details>
 
 <details>
 <summary>24 novembre 2020-aggiornamento per Surface Hub 2S</summary>
