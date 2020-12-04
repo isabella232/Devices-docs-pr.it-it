@@ -12,12 +12,12 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 01/10/2018
 ms.localizationpriority: medium
-ms.openlocfilehash: ebae05d4d1fe67d690c19e003b2755c4720af265
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 92b42139020db13251fa6c5f8439d7084a61a132
+ms.sourcegitcommit: 5d02cca9ca8c0a252798c2fc0a89dbda81911c44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833975"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "11195381"
 ---
 # PowerShell per Surface Hub
 
@@ -33,6 +33,9 @@ Script di PowerShell che permettono di configurare e gestire il dispositivo Micr
     -   [Consentire ID di dispositivo per ActiveSync](#whitelisting-device-ids-cmdlet)
     -   [Accettazione e rifiuto automatici delle convocazioni riunione](#auto-accept-meetings-cmdlet)
     -   [Accettazione di convocazioni riunione esterne](#accept-ext-meetings-cmdlet)
+    
+ > [!NOTE]
+ > Vedere anche l' [autenticazione moderna e gli script non presidiati in Exchange Online PowerShell V2](https://techcommunity.microsoft.com/t5/exchange-team-blog/modern-auth-and-unattended-scripts-in-exchange-online-powershell/ba-p/1497387)
 
 ## Prerequisiti
 
