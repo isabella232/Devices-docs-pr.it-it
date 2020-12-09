@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 10/27/2020
+ms.date: 12/08/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 90bd5714b7427880f6e73c7031c26894d55ac500
-ms.sourcegitcommit: 5448f775d3fe177806fce6cbaf0b2b091ed8b7d1
+ms.openlocfilehash: 7035d4c89e2ef5937d0480cf2d77db2e7e829488
+ms.sourcegitcommit: e126b8ac66a781ebe42cdd677af3fe6a2eb5e72c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "11145951"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "11203538"
 ---
 # Installare l'aggiornamento 2020 di Windows 10 Team 
 
@@ -34,8 +34,12 @@ Per ottenere l'aggiornamento di Windows 2020, è possibile usare uno dei metodi 
 | ----- | -------------------------------------- | ----------------- |
 | 1     | NZ, Australia, Canada, Belgio, Messico | 27 ottobre 2020  |
 | 2     | UK, Giappone, Svizzera, Italia          | 10 novembre 2020 |
-| 3     | Stati Uniti, Germania                            | 30 novembre 2020 |
-| 4     | Globale                                 | 7 dicembre 2020  |
+| 3     | Stati Uniti, Germania                            | TBD |
+| 4     | Globale                                 | TBD  |
+
+## Manutenzione di Surface Hub 2S con Windows 10 Team Edition v1703 
+
+I clienti di tutte le aree geografiche possono continuare ad aggiornare i loro dispositivi di Surface Hub 2S usando Windows Update for business o usando un'immagine BMR (Bare Metal Recovery), come spiegato in [reimpostazione e ripristino per Surface Hub 2S](surface-hub-2s-recover-reset.md). Il supporto completo per la manutenzione per Windows 10 Team Edition versione 1703 è programmato per continuare fino al 16 marzo 2021.
 
 
 ## Supporto per dispositivi V1 
@@ -44,11 +48,11 @@ Rilasciata inizialmente per i dispositivi Surface Hub 2S, Windows 10 team 2020 U
  
 ## Novità
 
-Windows 10 team 2020 Update offre miglioramenti importanti alla distribuzione e alla gestibilità dei dispositivi insieme alle caratteristiche più recenti di Windows 10. 
+Windows 10 team 2020 Update offre miglioramenti importanti alla distribuzione e alla gestibilità dei dispositivi insieme alle caratteristiche più recenti di Windows 10. Per altre informazioni, vedere [novità di Windows 10 Team 2020 Update](surface-hub-2020-update-whats-new.md).
  
 ## Prima di iniziare
 
-Prima di installare Windows 10 team 2020 Update, verificare di aver salvato la chiave BitLocker associata al dispositivo. Per altre informazioni, vedere [novità di Windows 10 Team 2020 Update](surface-hub-2020-update-whats-new.md).
+Prima di installare Windows 10 team 2020 Update, verificare di aver salvato la chiave BitLocker associata al dispositivo. 
 
 **Per salvare manualmente la chiave BitLocker**
 
@@ -59,9 +63,6 @@ Prima di installare Windows 10 team 2020 Update, verificare di aver salvato la c
 
 Per altre informazioni, vedere [salvare la chiave BitLocker](save-bitlocker-key-surface-hub.md).
 
-
 ## Scopri di più
 
-
-- [Nuovo aggiornamento del sistema operativo Surface Hub rilasciato per l'anteprima pubblica.](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/new-surface-hub-os-update-released-for-public-preview/ba-p/1534823)
-
+- [Aggiornamenti importanti nell'aggiornamento di Surface hub Windows 10 team 2020](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/important-updates-on-the-surface-hub-windows-10-team-2020-update/ba-p/1960897)
