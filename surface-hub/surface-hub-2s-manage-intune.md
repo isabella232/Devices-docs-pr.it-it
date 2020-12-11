@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 07/23/2020
+ms.date: 12/10/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 2fafca4a8f19da72d1584c02cbebe1ce3c03adde
-ms.sourcegitcommit: a16c75f4e81c48e2d0e3ec45430af0939e4feaa2
+ms.openlocfilehash: 6b5dac9f418207293e3b9b386d59fd26762feb72
+ms.sourcegitcommit: 4b1cfcac090910a3ea634929942063eb51fc54f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "11105942"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "11206300"
 ---
 # Gestire Surface Hub 2S con Intune
 
@@ -40,7 +40,7 @@ Durante il processo di configurazione iniziale, quando si affilia un Surface Hub
 
 ## Gestione delle impostazioni del team di Windows 10 con Intune
 
-1. Accedere a **Microsoft Endpoint Manager**, selezionare i profili di configurazione dei **dispositivi**per  >  **Configuration profiles**  >  **creare il profilo**. 
+1. Accedere a **Microsoft Endpoint Manager**, selezionare i profili di configurazione dei **dispositivi**per  >  ****  >  **creare il profilo**. 
 2. In **piattaforma**selezionare **Windows 10 e le**  >  **restrizioni di dispositivo successive (team Windows 10)** e quindi selezionare **Crea**. 
 3. Ora è possibile esplorare e selezionare le impostazioni di restrizione del dispositivo predefinite per hub Surface e Surface Hub 2S.
 
@@ -52,13 +52,14 @@ Queste impostazioni si estendono alle seguenti categorie: app ed esperienze, app
 
 Oltre ai criteri disponibili direttamente tramite la console Intune, sono presenti numerosi provider di servizi di configurazione (CSP) che mappano le chiavi del registro di sistema o i file. 
 
-Microsoft fornisce in genere nuovi CSP con ogni nuova versione del sistema operativo Windows 10. L' [aggiornamento di Windows 10 Team 2020](surface-hub-install-2020preview.md), disponibile in anteprima tramite il programma Windows Insider, include più di 20 criteri di gestione dei dispositivi nuovi e aggiornati per i mozzi Surface Hub e Surface Hub 2S. Questi criteri MDM conferiscono agli amministratori IT un maggiore controllo sugli aggiornamenti delle app da Microsoft Store, impostazioni di proiezione wireless come Miracast su infrastruttura, impostazioni di rete, ad esempio qualità del servizio e autenticazione cablata 802.1 x, e nuove impostazioni relative alla privacy/PILR.
+Microsoft fornisce in genere nuovi CSP con ogni nuova versione del sistema operativo Windows 10. L' [aggiornamento di Windows 10 Team 2020](surface-hub-2020-update.md) include più di 20 criteri di gestione dei dispositivi nuovi e aggiornati per i mozzi Surface Hub e Surface Hub 2S. Questi criteri MDM conferiscono agli amministratori IT un maggiore controllo sugli aggiornamenti delle app da Microsoft Store, impostazioni di proiezione wireless come Miracast su infrastruttura, impostazioni di rete, ad esempio qualità del servizio e autenticazione cablata 802.1 x, e nuove impostazioni relative alla privacy/PILR.
 
 Per altre informazioni, vedi le risorse seguenti: 
 
 - [Riferimento del provider di servizi di configurazione](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) 
 - [CSP SurfaceHub](https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp)
 - [Criteri CSP supportati da Microsoft Surface Hub](https://docs.microsoft.com/windows/client-management/mdm/policy-csps-supported-by-surface-hub)
+- [Novità di Surface Hub team 2020 Update](surface-hub-2020-update-whats-new.md)
 
 ## Impostazioni Quality of Service (QoS)
 
