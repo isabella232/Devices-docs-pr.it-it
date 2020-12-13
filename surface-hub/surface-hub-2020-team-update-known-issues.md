@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 12/04/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 324f6a0125522f8f258b1c8faa614782a20fe6c8
-ms.sourcegitcommit: 16cc2e8d9dfc5d6e061e0b5b6ddfcf35547643f2
+ms.openlocfilehash: 87eb7d193b5afb1f1b2ea6e2dc1c17143d7ef3ef
+ms.sourcegitcommit: f007f40f4b4fb49280fe6073bd857c9d7624a9cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "11196772"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "11218877"
 ---
 # Problemi noti: aggiornamento di Windows 10 team 2020 
 
@@ -36,5 +36,5 @@ Per assicurarsi che Surface Hub riceva gli aggiornamenti più recenti, accedere 
 | I dispositivi hub 2S non riescono a ricevere gli aggiornamenti dei driver tramite WSUS.                                             | Surface Hub 2S supporta Windows Update e Windows Update for business per distribuire i driver; la distribuzione tramite Windows Server Update Services (WSUS) non è supportata.                                                                                                                                                                                                                                                                      | Se si usa WSUS, eseguire la migrazione a Windows Update for business.<br> <br>**Altre informazioni**: [che cos'è Windows Update for business?](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb)                                                                                                                                                                                                                                                                                                                            |
 | Microsoft lavagna non viene aggiornato da Microsoft Store                                               | Dopo l'aggiornamento a Windows 10 team 2020 Update, l'app lavagna Microsoft non riesce ad eseguire l'aggiornamento tramite Microsoft Store.                                                                                                                                                                                                                                                                                                                       | Disinstallare l'app lavagna e reinstallarla da Microsoft Store o dal provider MDM.                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | Single Sign-on non riesce per i dispositivi di Azure Active Directory Uniti quando si usa un telefono per accedere a Surface Hub | Se l'amministratore IT ha configurato il tenant per l'uso dell' [autenticazione senza password](surface-hub-2s-phone-authenticate.md) per accedere a Surface Hub e il dispositivo è collegato ad AAD, gli utenti non possono accedere usando un dispositivo mobile, ad esempio un telefono.                                                                                                       | Accedere manualmente a Surface Hub.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-
+| Il centro operativo ha un collegamento di impostazioni non selezionabile. | Questo collegamento non dovrebbe essere visualizzato nel team di Windows 10 e può causare confusione.                                                                                                       | La funzionalità è la stessa di prima dell'aggiornamento di 2020; la sezione app del menu Start deve essere usata per avviare l'app Impostazioni.                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
