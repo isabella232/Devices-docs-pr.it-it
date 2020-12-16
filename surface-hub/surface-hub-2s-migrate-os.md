@@ -9,16 +9,18 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 12/03/2020
+ms.date: 12/14/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 01c5c8a5c6b9f7ed657829fe792fc9eecd1facb5
-ms.sourcegitcommit: 5d02cca9ca8c0a252798c2fc0a89dbda81911c44
+ms.openlocfilehash: c2851505b3595ea768217de443676b45cc01a9ae
+ms.sourcegitcommit: efc38524f81238e0c36371f462eb57123e46d09b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11195401"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "11228557"
 ---
 # Eseguire la migrazione a Windows 10 Pro o Enterprise in Surface Hub 2
+
+- [Articolo cronologia versioni](#version-history)
 
 Surface Hub 2S viene preinstallato con il team di Windows 10. Questa edizione personalizzata di Windows 10 è progettata per facilitare la collaborazione in ambienti sala riunioni. Ora hai la possibilità di usare Windows 10 Pro o Enterprise per utilizzare Surface Hub 2S molto simile a qualsiasi altro PC. 
 
@@ -302,7 +304,7 @@ La procedura seguente descrive come creare un'unità flash USB dal supporto di i
 
 ### Installare i driver e il firmware di Surface Hub 2
 
-Per assicurarsi che il dispositivo disponga di tutti gli aggiornamenti e i driver più recenti, installare <a href="https://www.microsoft.com/download/details.aspx?id=101974" target="_blank"> driver e firmware per Windows 10 Pro e Enterprise OS su Surface Hub 2 </a> .
+Per assicurarsi che il dispositivo disponga di tutti gli aggiornamenti e i driver più recenti, installare <a href="https://www.microsoft.com/download/details.aspx?id=101974" target="_blank"> driver e firmware per Windows 10 Pro e Enterprise OS su Surface Hub 2 </a> . Dopo l'installazione dei driver e del firmware MSI, riavviare il dispositivo. Dopo aver riacceso l'hub, riattivare l'alimentazione del PC per un'ora e riavviare di nuovo il dispositivo. Non verrà richiesto il secondo riavvio. A seconda dello stato del computer prima della migrazione a Windows 10 Pro o Enterprise, potrebbe essere necessario questo secondo passaggio per verificare che tutto il firmware sia stato aggiornato.
  
 ## Configurare le impostazioni consigliate
 
@@ -324,7 +326,8 @@ Nella tabella seguente vengono riepilogate le modifiche apportate a questo artic
 
 | Versione | Data               | Descrizione                                                                                           |
 | ------- | ------------------ | ----------------------------------------------------------------------------------------------------- |
-| v. 1,3  | 3 dicembre 2020 | Aggiornamento con le indicazioni sulla gestione della registrazione di SEMM                                                        |
+| v. 1,4  | 14 dicembre 2020 | Fornisce [altre informazioni](#install-surface-hub-2-drivers-and-firmware) su come installare il file MSI per "driver e firmware per Windows 10 Pro e Enterprise OS su Surface Hub 2", in modo che sia necessario un secondo riavvio a seconda dello stato del sistema.                                                          |
+| v. 1,3  | 3 dicembre 2020 | Aggiornato con le indicazioni sulla [gestione della registrazione di SEMM](#managing-semm-enrollment).                                                       |
 | v. 1,2  | 29 settembre 2020 | Aggiornamenti vari che indirizzano il feedback sull'usabilità.                                                        |
 | v. 1,1  | 15 settembre 2020 | È stata inserita una nota aggiuntiva nell'introduzione che chiarisce i requisiti di licenza per l'installazione di un nuovo sistema operativo. |
 | v. 1.0  | 1 settembre 2020  | Nuovo articolo.                                                                                           |
