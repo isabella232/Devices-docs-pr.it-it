@@ -9,20 +9,21 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 12/04/2020
+ms.date: 12/17/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 87eb7d193b5afb1f1b2ea6e2dc1c17143d7ef3ef
-ms.sourcegitcommit: f007f40f4b4fb49280fe6073bd857c9d7624a9cc
+ms.openlocfilehash: c17d9b41bf4abc74319b16932074343edbe988d1
+ms.sourcegitcommit: 6252903b28f0c410065eb2515c746f5e9920c652
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "11218877"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "11237226"
 ---
 # Problemi noti: aggiornamento di Windows 10 team 2020 
 
 Questo articolo elenca i problemi noti per l'aggiornamento di Windows 10 team 2020, il sistema operativo corrente per Surface Hub.
 
 Per assicurarsi che Surface Hub riceva gli aggiornamenti più recenti, accedere con un account di amministratore e selezionare **tutte**le  >  **impostazioni delle**app  >  **Update e Security**  >  **Windows Update**e quindi installare tutti gli aggiornamenti.
+
 
 
 
@@ -36,5 +37,5 @@ Per assicurarsi che Surface Hub riceva gli aggiornamenti più recenti, accedere 
 | I dispositivi hub 2S non riescono a ricevere gli aggiornamenti dei driver tramite WSUS.                                             | Surface Hub 2S supporta Windows Update e Windows Update for business per distribuire i driver; la distribuzione tramite Windows Server Update Services (WSUS) non è supportata.                                                                                                                                                                                                                                                                      | Se si usa WSUS, eseguire la migrazione a Windows Update for business.<br> <br>**Altre informazioni**: [che cos'è Windows Update for business?](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb)                                                                                                                                                                                                                                                                                                                            |
 | Microsoft lavagna non viene aggiornato da Microsoft Store                                               | Dopo l'aggiornamento a Windows 10 team 2020 Update, l'app lavagna Microsoft non riesce ad eseguire l'aggiornamento tramite Microsoft Store.                                                                                                                                                                                                                                                                                                                       | Disinstallare l'app lavagna e reinstallarla da Microsoft Store o dal provider MDM.                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | Single Sign-on non riesce per i dispositivi di Azure Active Directory Uniti quando si usa un telefono per accedere a Surface Hub | Se l'amministratore IT ha configurato il tenant per l'uso dell' [autenticazione senza password](surface-hub-2s-phone-authenticate.md) per accedere a Surface Hub e il dispositivo è collegato ad AAD, gli utenti non possono accedere usando un dispositivo mobile, ad esempio un telefono.                                                                                                       | Accedere manualmente a Surface Hub.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| Il centro operativo ha un collegamento di impostazioni non selezionabile. | Questo collegamento non dovrebbe essere visualizzato nel team di Windows 10 e può causare confusione.                                                                                                       | La funzionalità è la stessa di prima dell'aggiornamento di 2020; la sezione app del menu Start deve essere usata per avviare l'app Impostazioni.                                                                                                                                                                                                                                                                                                                                                                                                                           |
-
+| Il centro operativo ha un collegamento di impostazioni non selezionabile. | Questo collegamento non dovrebbe essere visualizzato nel team di Windows 10 e può causare confusione.   | La funzionalità è la stessa di prima dell'aggiornamento di 2020; la sezione app del menu Start deve essere usata per avviare l'app Impostazioni.    |
+| Dispositivi hub 2S che segnalano tutti gli zeri per il numero di serie dopo l'aggiornamento al 24 novembre 2020 aggiornamento per Windows 10 team 2020 per 2S. | Dopo l'aggiornamento dell'aggiornamento del 24 novembre per l'aggiornamento di Surface Hub 2S Windows 10 team 2020 o l'installazione dell'immagine di ripristino di Windows 10 team 2020, alcuni dispositivi segnalano tutti gli zeri per il numero di serie. In questo modo viene impedito l'iscrizione ai provider MDM.  | Prima di aggiornare i dispositivi con l'aggiornamento del 24 novembre 2020 per Windows 10 team 2020, verificare che il dispositivo abbia installato l'aggiornamento del 1 ° settembre 2020 per Windows 10 Creators team Creator. Altre informazioni: [cronologia degli aggiornamenti di Surface Hub](surface-hub-update-history.md). **Nota:** I dispositivi devono avere la **superficie di aggiornamento del firmware SMC 1.177.139.0** prima di passare all' **aggiornamento firmware SMC 3.91.139.0.** In questo modo si evita che i numeri seriali vengano impostati su zero |
