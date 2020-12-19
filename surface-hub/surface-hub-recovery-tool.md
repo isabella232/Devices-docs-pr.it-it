@@ -10,14 +10,14 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 05/22/2018
+ms.date: 12/18/2018
 ms.localizationpriority: medium
-ms.openlocfilehash: 1988a6ed59525d7dc77872e532247dbc50f01bdf
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: a9ebab6848efa706609a39b0eb99fa42df2156bf
+ms.sourcegitcommit: ce7ad475b776a78ba215e77111ea5371afeb4f28
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10836893"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "11237335"
 ---
 # Uso dello strumento di ripristino di Surface Hub
 
@@ -53,9 +53,9 @@ Se lo strumento non riesce a rieseguire la riimmagine dell'unità, contattare il
 
 ## Scaricare lo strumento Surface Hub Recovery
 
-Lo strumento di ripristino di Surface Hub è disponibile per il download dagli [strumenti di Surface hub per](https://www.microsoft.com/download/details.aspx?id=52210) l'oggetto sotto il nome file **SurfaceHub_Recovery_v1.14.137.0.msi**.
+Lo strumento di ripristino di Surface Hub è disponibile per il download dagli [strumenti di Surface hub per](https://www.microsoft.com/download/details.aspx?id=52210)  l'oggetto sotto il nome file **SurfaceHub_Recovery_v2.0.139.0.msi**.
 
-Per avviare il download, fare clic su **Scarica**, scegliere **SurfaceHub_Recovery_v1.14.137.0.msi** nell'elenco e fare clic su **Avanti**. Nella finestra popup scegliere una delle opzioni seguenti:
+Per avviare il download, fare clic su **Scarica**, scegliere **SurfaceHub_Recovery_v2.0.139.0.msi** nell'elenco e fare clic su **Avanti**. Nella finestra popup scegliere una delle opzioni seguenti:
 
 - Fare clic su **Esegui** per avviare immediatamente l'installazione.
 - Fare clic su **Salva** per copiare il download nel computer per l'installazione successiva.
@@ -72,13 +72,20 @@ Installare lo strumento Surface Hub Recovery nel PC host.
 
     ![Pulsante Start dello strumento di ripristino](images/shrt-start.png)
 
+
 3. Nella finestra **linee guida** fare clic su **Avanti**.
 
     ![Non consentire al computer di accedere alle indicazioni per il sonno](images/shrt-guidance.png)
 
-4. fare clic su **Sì** per scaricare l'immagine. Il tempo necessario per scaricare l'immagine di ripristino dipende dalle velocità di connessione Internet. In una connessione aziendale media può essere necessaria fino a un'ora per scaricare il file di immagine da 8GB.
+4. Nella finestra Seleziona immagine fare clic su **RS2** o sul relativo successore **20H2**, selezionare **continua** e quindi selezionare **Scarica immagine.**
 
-    ![Scaricare l'immagine?](images/shrt-download.png)
+     ![Strumento di ripristino selezionare immagine ](images/shrt-select-image.png) ![ download strumento di recupero immagini](images/shrt-download-image.png)
+
+5. Il tempo necessario per scaricare l'immagine di ripristino dipende dalle velocità di connessione Internet. In una connessione aziendale media può essere necessaria fino a un'ora per scaricare il file di immagine da 8GB.
+
+    ![Download dell'immagine](images/shrt-download.png)
+
+
 
 5. Al termine del download, lo strumento indica di connettere un'unità SSD. Se lo strumento non riesce a trovare l'unità collegata, è probabile che il cavo usato non riferisca il nome dell'SSD a Windows.  Lo strumento di imaging deve trovare il nome dell'unità come "LITEON L CH-128V2S USB Device" prima che possa continuare.  Per altre informazioni su come rimuovere l'unità esistente dal proprio hub Surface, vedere [sostituzione di Surface Hub SSD](surface-hub-ssd-replacement.md).
 
@@ -86,13 +93,11 @@ Installare lo strumento Surface Hub Recovery nel PC host.
 
 6. Quando l'unità viene riconosciuta, fare clic sul pulsante **Start** per avviare il processo di creazione di immagini. Nell'avviso che tutti i dati dell'unità verranno cancellati, fare clic su **OK**.
 
-    ![Avviare nuovamente la creazione di immagini nell'SSD](images/shrt-drive-start.png)
+
 
     Prima di applicare l'immagine del sistema all'unità, l'SSD viene ripartizionato e formattato. La copia dei file binari di sistema impiegano circa 30 minuti, ma può richiedere più tempo a seconda della velocità del bus USB, del cavo usato o del software antivirus installato nel sistema.
 
-    ![Copia eseguita](images/shrt-done.png)
 
-    ![Completamento della riimaging](images/shrt-complete.png)
 
 ## Problemi comuni per la risoluzione dei problemi
 
@@ -100,7 +105,19 @@ Problema | Note
 --- | ---
 Lo strumento non riesce a immagine dell'SSD | Assicurarsi di usare un SSD fornito in fabbrica e uno dei cavi testati.
 Il processo di riimaging viene interrotto/bloccato | È sicuro chiudere e riavviare lo strumento di ripristino di Surface Hub senza effetti negativi per l'SSD.
-L'unità non viene riconosciuta dallo strumento | Verificare che l'SSD Surface hub sia enumerato come unità Lite-on, "LITEON L CH-128V2S USB Device".  Se l'unità viene riconosciuta come un altro dispositivo denominato, il cavo corrente non è compatibile. Provare un altro cavo o uno dei cavi testati sopra elencati.
+L'unità non viene riconosciuta dallo strumento | Verificare che l'unità SSD Surface hub sia enumerata come Lite-On Drive, "LITEON L CH-128V2S USB Device".  Se l'unità viene riconosciuta come un altro dispositivo denominato, il cavo corrente non è compatibile. Provare un altro cavo o uno dei cavi testati sopra elencati.
 Errore:-2147024809 | Aprire Disk Manager e rimuovere le partizioni nell'unità Surface Hub.  Disconnettere e riconnettere l'unità al computer host. Riavviare lo strumento di imaging.
 
 Se lo strumento non riesce a rieseguire la riimmagine dell'unità, contattare il [supporto per Surface Hub](https://support.microsoft.com/help/4037644/surface-contact-surface-warranty-and-software-support).
+
+## Cronologia versioni
+
+### Versione v 2.0.139.0
+
+*Data di rilascio: 18 dicembre 2020*<br>
+Questa versione dello strumento di ripristino di Surface Hub aggiunge il supporto per gli elementi seguenti:
+- Aggiornamento per supportare l'aggiornamento di Windows 10 team 2020 (20H2)
+- Miglioramenti dell'esperienza utente
+- Modifiche architetturali
+- Aggiunte di telemetria
+
