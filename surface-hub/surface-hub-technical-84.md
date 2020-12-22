@@ -9,23 +9,22 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 932e5b801c0990a080148e420db3259cdb7e2ab5
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.date: 12/21/2020
+ms.openlocfilehash: e8f01a7e6ce087f649d99c1fc13f149fa375fc8a
+ms.sourcegitcommit: e83316c8b5e3c29b0af0730ef05fd8b96b0d0cdd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833525"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "11238111"
 ---
 # Informazioni tecniche per 84 "Surface Hub
-
-## Misure 
 
 |
 --- | ---
 Prezzi | A partire da $21.999 
 Dimensioni |  46,12 "x 86,7" x 4,15 "(1171.5 mm x 2202.9 mm x 105.4 mm)
 Archiviazione/RAM | SSD 128GB con 8GB di RAM
-Responsabile del trattamento   | Intel® Core™ i7 di quarta generazione 
+Processore   | Intel® Core™ i7 di quarta generazione 
 Grafica |  NVIDIA Quadro K2200 
 Porte | **PC interno**<br>• (1) USB 3,0 (in basso) + (1) USB 3,0 (accesso laterale)<br>• (4) USB 2,0<br>• Ethernet 1000 base-T<br>• Output video DisplayPort<br>• Uscita stereo da 3,5 mm<br>• Connettore RJ11 per il controllo a livello di sistema<br>**PC alternativo**<br>• (2) USB 2,0 tipo B output<br>• connessione per fotocamera, sensori, microfono, altoparlanti<br>• (2) input video DisplayPort<br>**PC Guest**<br>• Ingresso video DisplayPort<br>• Ingresso video HDMI<br>• Ingresso video VGA<br>• Ingresso stereo da 3,5 mm<br>• (1) USB 2,0 tipo B Touchback™ output
 Sensori  | (2) sensori di presenza a infrarossi passivi, sensori di luce ambientale 
@@ -54,6 +53,11 @@ Tensione di input | 110/230V nominale, 90-265V max
 Alimentazione in ingresso, funzionamento |    900W max
 Alimentazione in ingresso, standby    |   5W nominale, 1-10W max
 
+> [!NOTE]
+> Surface Hub può essere usato continuamente per un massimo di 18 ore al giorno. Per ottimizzare l'efficienza, Surface Hub USA sensori intelligenti per disattivare lo schermo del LED quando la presenza non viene più rilevata, quindi non è necessario accenderla alla fine della giornata. Se l'unità viene installata in un ambiente di lavoro di 24 ore, i sensori possono essere disabilitati per conformarsi alla raccomandazione per l'uso massimo di 18 ore al giorno. Tieni presente che la visualizzazione prolungata di un segnale video può causare la ritenzione del bruciato o dell'immagine sullo schermo. Per ulteriori informazioni sulla gestione delle impostazioni di Power, vedere:
+>
+> - [Gestione locale per le impostazioni di Surface Hub](local-management-surface-hub-settings.md)
+> - [SurfaceHub CSP-gestione client Windows](https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp)
 
 ## Connessioni PC sostitutive 
 
@@ -96,28 +100,28 @@ RJ11, I/O in basso | ![](images/rj11.png) | Si connette ai sistemi di controllo 
 
 ## Diagrammi di porte e spazi
 
-***Visualizzazione superiore di 84 "Surface Hub***
+**_Visualizzazione superiore di 84 "Surface Hub_*_
 
 ![](images/sh-84-top.png)
 
 ---
 
 
-***Visualizzazione anteriore di 84 "Surface hub"***
+_*_Visualizzazione anteriore di 84 "Surface hub"_*_
 
 ![](images/sh-84-front.png)
 
 
 ---
 
-***Visualizzazione inferiore di 84 "Surface hub"***
+_*_Visualizzazione inferiore di 84 "Surface hub"_*_
 
 ![](images/sh-84-bottom.png)
 
 
 ---
 
-***Porte per PC sostitutivo su Surface Hub da 84"***
+_*_Porte per PC sostitutivo su Surface Hub da 84"_*_
 
 ![](images/sh-84-rpc-ports.png)
 
@@ -125,21 +129,21 @@ RJ11, I/O in basso | ![](images/rj11.png) | Si connette ai sistemi di controllo 
 
 ---
 
-***Visualizzazione posteriore di 84 "Surface hub"***
+_*_Visualizzazione posteriore di 84 "Surface hub"_*_
 
 ![](images/sh-84-rear.png)
 
 
 ---
 
-***Spazi per 84 "Surface hub"***
+_*_Spazi per 84 "Surface hub"_*_
 
 ![](images/sh-84-clearance.png)
 
 ---
 
 
-***Maniglie di sollevamento rimovibili in 84 "Surface Hub***
+_*_Maniglie di sollevamento rimovibili in 84 "Surface Hub_*_
 
 ![](images/sh-84-hand.png)
 
@@ -147,17 +151,17 @@ RJ11, I/O in basso | ![](images/rj11.png) | Si connette ai sistemi di controllo 
 ---
 
 
-***Thread di montaggio a muro sul retro di 84 "Surface Hub***
+_*_Thread di montaggio a muro sul retro di 84 "Surface Hub_*_
 
 ![](images/sh-84-wall.png)
 
 ---
-***Maniglie di sollevamento nella vista superiore di 84 "Surface hub"***
+_*_Maniglie di sollevamento nella vista superiore di 84 "Surface hub"_*_
 
 ![](images/sh-84-hand-top.png)
 
 ---
-***Vista laterale di 84 "Surface hub"***
+_*_Vista laterale di 84 "Surface Hub_**
 
 ![](images/sh-84-side.png)
 
