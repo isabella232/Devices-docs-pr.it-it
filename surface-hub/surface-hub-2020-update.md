@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 12/17/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 043c7ed49dafab7e0f3d042f5b98d527ffe0610f
-ms.sourcegitcommit: 6252903b28f0c410065eb2515c746f5e9920c652
+ms.openlocfilehash: b3f1f0884273728abc8b4f6e8662190dacdaf2b2
+ms.sourcegitcommit: 8c75e57dc32eaf7c11cb9badea74809fd3877ffc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "11237216"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "11253965"
 ---
 # Installare l'aggiornamento 2020 di Windows 10 Team 
 
@@ -39,14 +39,17 @@ Per ottenere l'aggiornamento di Windows 2020, è possibile usare uno dei metodi 
 | 3     | Stati Uniti, Germania                            | TBD |
 | 4     | Globale                                 | TBD  |
 
-## Manutenzione di Surface Hub 2S con Windows 10 Team Edition v1703 
+## Manutenzione degli hub di Surface con Windows 10 Team Edition versione 1703 
 
-I clienti di tutte le aree geografiche possono continuare ad aggiornare i loro dispositivi di Surface Hub 2S usando Windows Update for business o usando un'immagine BMR (Bare Metal Recovery), come spiegato in [reimpostazione e ripristino per Surface Hub 2S](surface-hub-2s-recover-reset.md). Il supporto completo per la manutenzione per Windows 10 Team Edition versione 1703 è programmato per continuare fino al 16 marzo 2021.
+Il supporto completo per la manutenzione per Windows 10 Team Edition versione 1703 è programmato per continuare fino al 16 marzo 2021.
 
+### dispositivi 2S 
 
-## Supporto per dispositivi V1 
+I clienti di tutte le aree geografiche possono continuare ad aggiornare i loro dispositivi di Surface Hub 2S all'aggiornamento di 2020 usando Windows Update for business o usando un'immagine BMR (Bare Metal Recovery), come spiegato in [reimpostazione e ripristino per Surface Hub 2S](surface-hub-2s-recover-reset.md).
 
-Rilasciata inizialmente per i dispositivi Surface Hub 2S, Windows 10 team 2020 Update sarà presto disponibile per i dispositivi Surface Hub V1. Per altre informazioni, Vedi [Blog Surface it Pro](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/surface-hub-windows-10-team-2020-update-available-october-27/ba-p/1810739).
+### Dispositivi V1 
+
+I clienti di tutte le aree geografiche possono ora aggiornare i loro dispositivi Surface Hub V1 all'aggiornamento di 2020 [usando lo strumento di ripristino di Surface Hub](surface-hub-recovery-tool.md). Saranno presto disponibili altri metodi per aggiornare questi dispositivi all'aggiornamento di Windows 10 team 2020. Per altre informazioni, Vedi [Blog Surface it Pro](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/surface-hub-windows-10-team-2020-update/ba-p/2000144).
  
 ## Novità
 
