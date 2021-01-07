@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 12/17/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: b3f1f0884273728abc8b4f6e8662190dacdaf2b2
-ms.sourcegitcommit: 8c75e57dc32eaf7c11cb9badea74809fd3877ffc
+ms.openlocfilehash: c89063765462a76ae48d17e1480bbff29f48ebdc
+ms.sourcegitcommit: 8bca7edea5401dfc97614e18a058a023aa9497c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/06/2021
-ms.locfileid: "11253965"
+ms.locfileid: "11254205"
 ---
 # Installare l'aggiornamento 2020 di Windows 10 Team 
 
@@ -70,5 +70,5 @@ Per altre informazioni, vedere [salvare la chiave BitLocker](save-bitlocker-key-
 
 ## Scopri di più
 
-- [Problemi noti: aggiornamento di Windows 10 team 2020](surface-hub-2020-update.md)
+- [Problemi noti: aggiornamento di Windows 10 team 2020](surface-hub-2020-team-update-known-issues.md)
 - [Aggiornamenti importanti nell'aggiornamento di Surface hub Windows 10 team 2020](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/important-updates-on-the-surface-hub-windows-10-team-2020-update/ba-p/1960897)
