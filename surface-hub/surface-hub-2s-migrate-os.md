@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 12/14/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: c2851505b3595ea768217de443676b45cc01a9ae
-ms.sourcegitcommit: efc38524f81238e0c36371f462eb57123e46d09b
+ms.openlocfilehash: 9878e64e414f4fe9ec3abfbd49adf233edc1da1d
+ms.sourcegitcommit: 53d1eac8840fafbcd155798fce0d8c843f48dca3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "11228557"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "11255488"
 ---
 # Eseguire la migrazione a Windows 10 Pro o Enterprise in Surface Hub 2
 
@@ -34,7 +34,7 @@ Surface Hub 2S viene preinstallato con il team di Windows 10. Questa edizione pe
 
 Avviare la migrazione dal team di Windows 10 usando un PC separato e lo strumento scaricabile *Surface UEFI Configurator*. Usare lo strumento per creare un pacchetto che contiene una nuova impostazione UEFI applicata a Surface Hub 2S.  
 
-Surface UEFI Configurator funziona come interfaccia nella modalità di gestione di Surface Enterprise (SEMM). È progettato per facilitare la gestione centralizzata delle impostazioni del firmware nei dispositivi Surface in un ambiente aziendale. Per altre informazioni, vedere la <a href="https://docs.microsoft.com/surface/surface-enterprise-management-mode" target="_blank"> documentazione di Microsoft SEMM</a>
+Surface UEFI Configurator funziona come interfaccia nella modalità di gestione di Surface Enterprise (SEMM). È progettato per facilitare la gestione centralizzata delle impostazioni del firmware nei dispositivi Surface in un ambiente aziendale. Per altre informazioni, vedere la <a href="https://docs.microsoft.com/surface/surface-enterprise-management-mode" target="_blank"> documentazione di Microsoft SEMM </a> .
  
 
 ## Componenti della soluzione
@@ -81,26 +81,34 @@ Prima di eseguire la migrazione di Surface Hub dal team Windows 10 al desktop di
 **Per aggiornare UEFI tramite Windows Update:**
 
 1. Nell'hub di Surface 2S accedere come **amministratore**. 
+
     >[!Note]
     > Se non si conosce il nome utente o la password di amministratore, è necessario reimpostare il dispositivo. Per altre informazioni, vedere <a href="https://docs.microsoft.com/surface-hub/surface-hub-2s-recover-reset" target="_blank"> reimpostazione e ripristino per Surface Hub 2S.</a>
 
 1. Accedere a **tutte**le  >  **impostazioni delle**app  >  **aggiornamento e sicurezza**di  >  **Windows Update**e quindi installare tutti gli aggiornamenti. 
+
 1. Riavvia il dispositivo. 
-1. Verificare la versione UEFI usando l'app Surface. 
+
+1. Verificare la versione UEFI usando l'app Surface.
+
 1. A questo punto, se la versione UEFI non è ancora in versione 694.2938.768.0 o successiva, è possibile ripetere i passaggi descritti in precedenza oppure è possibile ottenere l'UEFI più recente installando l'immagine di Windows 10 team 2020 Update bare metal Recovery (BMR).
 
 **Per aggiornare UEFI tramite l'immagine di recupero bare metal (BMR):**
 
-1.  Accedere al [sito di ripristino della superficie](https://support.microsoft.com/surfacerecoveryimage) e selezionare **Surface Hub 2S**
+1.  Accedere al [sito di ripristino della superficie](https://support.microsoft.com/surfacerecoveryimage) e selezionare **Surface Hub 2S**.
+
 3.  Immettere il numero di serie dell'hub (situato sul lato posteriore dell'hub accanto alla connessione di alimentazione).
+
 4.  Seguire le indicazioni per scaricare l'immagine su un'unità USB formattata con l'installazione dell'aggiornamento di Windows 10 team 2020.
+
 5.  Dopo aver completato l'aggiornamento e il dispositivo immette la configurazione per la prima volta OOBE, non è necessario completare la procedura guidata, verrà aggiornata la versione UEFI. Spegnere invece il dispositivo tenendo premuto il pulsante di alimentazione finché lo schermo non si spegne. 
 
 ### Download di Surface UEFI Configurator e Surface Hub 2 driver e firmware
 
 In un PC separato:
 
-1. Nella <a href="https://www.microsoft.com/download/details.aspx?id=46703" target="_blank"> pagina strumenti superficie per it </a> selezionare **Scarica**.  
+1. Nella <a href="https://www.microsoft.com/download/details.aspx?id=46703" target="_blank"> pagina strumenti superficie per it </a> selezionare **Scarica**.
+
 1. Selezionare e scaricare il file MSI di Surface UEFI Configurator e installarlo in un PC separato. Lo strumento di configurazione UEFI di Surface non può essere eseguito su un hub di Surface 2S mentre è installato Windows 10 Team Edition.
 
 1. Scaricare i <a href="https://www.microsoft.com/download/details.aspx?id=101974" target="_blank"> driver di Surface Hub 2 e il file MSI del firmware di Windows Installer </a> . Questo file viene usato quando si installa il nuovo sistema operativo.
@@ -191,6 +199,7 @@ Se dopo la migrazione si sceglie di ripristinare il dispositivo al team di Windo
 #### Salvare il pacchetto SEMM in un'unità USB
 
 1. Connettere un'unità USB al PC. 
+
 1. Scegliere **Hub 2S**, quindi selezionare **Avanti**.
 
    ![Selezionare USB](images/shm-fig13.png)
@@ -225,24 +234,25 @@ La procedura seguente descrive come creare un'unità flash USB dal supporto di i
 
 1. Per creare un'installazione di Windows 10 Pro, nella <a href="https://www.microsoft.com/software-download/windows10" target="_blank"> pagina Scarica Windows 10 </a> seguire le istruzioni per scaricare lo strumento per la creazione di elementi multimediali. Per scaricare Windows 10 Enterprise, accedere al <a href="https://www.microsoft.com/licensing/servicecenter/default.aspx" target="_blank"> centro servizi per contratti multilicenza Microsoft </a> .
 
-2. Inserire una nuova unità di archiviazione USB. 
+1. Inserire una nuova unità di archiviazione USB. 
+
 1. Aprire lo strumento creazione multimediale, selezionare **Crea supporto di installazione**e quindi selezionare **Avanti**.
 
    ![Creare elementi multimediali di installazione.](images/shm-fig16.png)
    
-3. Selezionare una lingua e quindi scegliere **Windows 10** e **64 bit (x64)**. Quindi selezionare **Avanti**.
+1. Selezionare una lingua e quindi scegliere **Windows 10** e **64 bit (x64)**. Quindi selezionare **Avanti**.
 
    ![Selezionare lingua e scegliere Windows 10 e 64 bit. Quindi selezionare Avanti.](images/shm-fig17.png)
    
-4. Selezionare **unità flash USB**, quindi scegliere **Avanti**.
+1. Selezionare **unità flash USB**, quindi scegliere **Avanti**.
 
    ![Selezionare U S B Flash Drive e selezionare Avanti.](images/shm-fig18.png)
    
-5. Al termine del download, selezionare **fine**.
+1. Al termine del download, selezionare **fine**.
 
    ![Selezionare fine.](images/shm-fig19.png)
    
-6. Copiare i file del pacchetto SEMM e i driver e il firmware per Windows 10 Pro e Enterprise OS in Surface Hub 2 (il file MSI) nella radice dell'unità flash USB (*BOOTME*) che contiene l'immagine di Windows 10. L'unità USB BOOTME contiene:
+1. Copiare i file del pacchetto SEMM e i driver e il firmware per Windows 10 Pro e Enterprise OS in Surface Hub 2 (il file MSI) nella radice dell'unità flash USB (*BOOTME*) che contiene l'immagine di Windows 10. L'unità USB BOOTME contiene:
 
     - Immagine avviabile di Windows 10.
     
@@ -296,7 +306,7 @@ La procedura seguente descrive come creare un'unità flash USB dal supporto di i
 
 3. Se il dispositivo non si avvia automaticamente sull'unità USB, spegnere il dispositivo (scollegare il cavo di alimentazione e quindi ricollegarlo). Dopo aver ricollegato il cavo di alimentazione, il dispositivo dovrebbe avviarsi dopo pochi secondi. Verrà visualizzato il logo bianco al centro dello schermo. 
 
-    Se il dispositivo non si attiva, premere e rilasciare il pulsante di alimentazione. Subito dopo aver visualizzato il logo al centro dello schermo, tenere premuto il pulsante volume finché non viene visualizzato il cerchio di filatura sotto il logo bianco.
+    Se il dispositivo non si attiva, premere e rilasciare il pulsante di alimentazione. Subito dopo aver visualizzato il logo al centro dello schermo, tenere premuto il pulsante **volume** finché non viene visualizzato il cerchio di filatura sotto il logo bianco.
  
    ![Eseguire l'avvio in Windows 10 dall'unità U S B.](images/shm-fig26.png)
    
