@@ -11,17 +11,19 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: High
-  ms.openlocfilehash: c356595e058c45cc95631d2ebd12ee2e5cc75c1d
-  ms.sourcegitcommit: b1c630dcf12530cf7034478bfe66ad3bb11b59c9
+  ms.openlocfilehash: aa883bb614b3d0230e00b4b8254e673182d60751
+  ms.sourcegitcommit: 00b6b59bd110633b6ae46345a592b72d68cc5121
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 11/12/2020
-  ms.locfileid: "11166648"
+  ms.lasthandoff: 01/11/2021
+  ms.locfileid: "11255687"
 landingContent:
 - title: Dispositivi Surface
   linkLists:
   - linkListType: whats-new
     links:
+    - text: Surface Pro 7 + for business
+      url: https://www.microsoft.com/surface/business/surface-pro-7-plus
     - text: Portatile Surface go for business
       url: https://www.microsoft.com/surface/business/surface-laptop-go
     - text: Surface Pro X per le aziende
@@ -32,8 +34,8 @@ landingContent:
   linkLists:
   - linkListType: get-started
     links:
-    - text: Massimizzare il ROI con Microsoft Surface
-      url: forrester-tei-study.md
+    - text: Novità di Surface Pro 7 + for business
+      url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/surface-pro-7-brings-next-level-performance-and-versatility-to/ba-p/1928797
     - text: Desktop virtuale Windows su Surface
       url: windows-virtual-desktop-surface.md
     - text: Novità di Surface Dock 2
@@ -76,7 +78,7 @@ landingContent:
       url: surface-diagnostic-toolkit-business.md
     - text: Principali soluzioni di supporto
       url: support-solutions-surface.md
-    - text: Driver di superficie e ciclo di vita del firmware per dispositivi basati su Windows
+    - text: Ciclo di vita del driver e del firmware Surface per i dispositivi basati su Windows
       url: surface-driver-firmware-lifecycle-support.md
 - title: Esplora le indicazioni di sicurezza
   linkLists:
