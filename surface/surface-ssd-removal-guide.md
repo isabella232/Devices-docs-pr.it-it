@@ -8,33 +8,35 @@ ms.sitesec: library
 author: mccoybot
 ms.author: v-todmc
 ms.topic: article
-ms.date: 10/21/2020
+ms.date: 01/13/2020
 ms.reviewer: ''
 manager: laurawi
 ms.audience: itpro
 audience: ITPro
 appliesto:
-- Surface Laptop 3
+- Surface Pro 7+
 - Surface Pro X
 - Surface Laptop Go
+- Surface Laptop 3
 ms.custom:
 - CI 121887
 - CSSTroubleshoot
-ms.openlocfilehash: 56c740b39d86ea3fab386e88efa6932e050bb957
-ms.sourcegitcommit: 959d2d856b1e5b5c72cd636f576b5feb1b633048
+ms.openlocfilehash: b65feb24803311aba809819cd6da273ed6934c75
+ms.sourcegitcommit: 41124d496abaa38a0d989159f2afec3542d562ca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "11133171"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "11269107"
 ---
 # Procedure consigliate per la rimozione di SSD da dispositivi Surface compatibili
 
 > [!IMPORTANT]
 > Questo articolo è destinato all'uso da tecnici IT qualificati in un'organizzazione aziendale. Descrive le procedure consigliate per l'uso da parte di tecnici IT qualificati per la rimozione e la sostituzione di SSD nei seguenti dispositivi Surface compatibili: 
 
-- Laptop Surface 3 
-- Surface Pro X 
+- Surface Pro 7 +
+- Surface Pro X
 - Portatile Surface go
+- Laptop Surface 3
 
 > [!WARNING]
 > Aprire dispositivi e sostituire i componenti del dispositivo può presentare scosse elettriche, danni ai dispositivi, incendi e rischi per infortuni personali e altri pericoli.  Prestare sempre attenzione quando si intraprendono tali attività. Seguire le precauzioni e le procedure di sicurezza identificate nella [Guida alla rimozione di Pierluigi per le aziende](https://www.microsoft.com/download/100440). È consigliabile ottenere assistenza professionale se non si riesce a seguire le precauzioni e le procedure di sicurezza specificate nella "Guida alla rimozione di Pierluigi per le aziende".
@@ -80,7 +82,7 @@ Se il dispositivo viene crittografato prima della rimozione e della sostituzione
 
 ## Rimuovere e sostituire SSD 
 
-1.  Rimuovere l'SSD usando le istruzioni in [Guida alla rimozione di Pierluigi per Enterprise](https://www.microsoft.com/download/100440). 
+1.  Rimuovere l'SSD usando le istruzioni appropriate per il dispositivo incluso nella [Guida alla rimozione di Pierluigi per le aziende](https://www.microsoft.com/download/100440). 
 2.  Inserire l'SSD originale in un nuovo dispositivo e connettere il nuovo dispositivo a una connessione internet cablata.
 3.  Accendere il nuovo dispositivo. Il dispositivo può passare a un aggiornamento del firmware durante l'avvio.  
  
@@ -90,14 +92,14 @@ Se il dispositivo viene crittografato prima della rimozione e della sostituzione
 
 Se durante il trasferimento l'SSD non è crittografato, eseguire le operazioni seguenti: 
 
-1.  Accedere alla **Sign-In Options**  >  **password** delle opzioni di accesso (rappresentata dall'icona chiave sul lato sinistro).  
+1.  Accedere alla ****  >  **password** delle opzioni di accesso (rappresentata dall'icona chiave sul lato sinistro).  
 2.  Immettere la password e accedere in attesa del completamento dell'autenticazione a due fattori (se applicabile).
-3.  Dopo aver effettuato l'accesso completo, accedere all' **Start**  >  **account**Start  >  **Sign out**.  
+3.  Dopo aver effettuato l'accesso completo, accedere all' ****  >  **account**Start  >  ****.  
 4.  Eseguire di nuovo l'accesso usando la password e configurare Windows Hello e un PIN quando viene richiesto. 
     - Se il dispositivo è stato abilitato per BitLocker per facilitare la rimozione e la sostituzione di SSD e si vuole abilitare BitLocker dopo la sostituzione, **accedere a BitLocker**  >  **Manage**BitLocker  >  **Resume**BitLocker.  
 6.  Eseguire [Microsoft Surface Diagnostic Toolkit for business](surface-diagnostic-toolkit-for-business-intro.md) (SDT) per verificare la funzionalità completa del dispositivo.  
-7.  Controlla l'attivazione di Windows passando all'attivazione **delle impostazioni**  >  **Activation**.  Se vengono visualizzati messaggi di errore, selezionare **risoluzione dei problemi**. 
-8.  Selezionare l'account di Office aprendo l' **app di Office**, passare all' **File**  >  **account** file e quindi verificare la ricerca di eventuali messaggi di errore.  
+7.  Controlla l'attivazione di Windows passando all'attivazione **delle impostazioni**  >  ****.  Se vengono visualizzati messaggi di errore, selezionare **risoluzione dei problemi**. 
+8.  Selezionare l'account di Office aprendo l' **app di Office**, passare all' ****  >  **account** file e quindi verificare la ricerca di eventuali messaggi di errore.  
 
 ### Gestione degli SSD crittografati 
 
@@ -109,14 +111,14 @@ Se l'SSD viene crittografato durante il trasferimento, eseguire le operazioni se
 1.  Inserire l'unità USB che contiene la chiave di ripristino di BitLocker nel secondo dispositivo. 
 2.  Aprire il file txt che contiene la chiave di ripristino di BitLocker. 
 3.  Immettere manualmente la chiave di ripristino di BitLocker nel nuovo dispositivo che contiene l'SSD originale.  
-4.  Dopo aver immesso correttamente la chiave di ripristino di BitLocker, accedere alla password delle **Opzioni di accesso**  >  **Password** (rappresentata dall'icona chiave sul lato sinistro).  
+4.  Dopo aver immesso correttamente la chiave di ripristino di BitLocker, accedere alla password delle **Opzioni di accesso**  >  **** (rappresentata dall'icona chiave sul lato sinistro).  
 5.  Immettere la password e accedere, in attesa del completamento dell'autenticazione a due fattori (se applicabile).
-6.  Dopo aver effettuato l'accesso completo, accedere all' **Start**  >  **account**Start  >  **Sign out**.  
+6.  Dopo aver effettuato l'accesso completo, accedere all' ****  >  **account**Start  >  ****.  
 7.  Eseguire di nuovo l'accesso usando la password e quindi configurare Windows Hello e aggiungere un PIN. 
 8.  Se il dispositivo è stato abilitato per BitLocker per facilitare la rimozione e la sostituzione di SSD e se si vuole abilitare BitLocker dopo la sostituzione, accedere a **Impostazioni**  >  **BitLocker**  >  **Manage**BitLocker  >  **Resume BitLocker**.  
 9.  Eseguire **[SDT](surface-diagnostic-toolkit-for-business-intro.md)** per verificare la funzionalità completa del dispositivo.  
-10. Per controllare l'attivazione di Windows **Settings**, selezionare  >  **attivazione**impostazioni.  Se vengono visualizzati messaggi di errore, selezionare **risoluzione dei problemi**.
-11. Per controllare lo stato dell'account di Office, aprire l' **app di Office**, quindi scegliere **File**  >  **account** file per verificare la disponibilità di eventuali messaggi di errore.
+10. Per controllare l'attivazione di Windows ****, selezionare  >  **attivazione**impostazioni.  Se vengono visualizzati messaggi di errore, selezionare **risoluzione dei problemi**.
+11. Per controllare lo stato dell'account di Office, aprire l' **app di Office**, quindi scegliere ****  >  **account** file per verificare la disponibilità di eventuali messaggi di errore.
 
 ## Scopri di più
 
