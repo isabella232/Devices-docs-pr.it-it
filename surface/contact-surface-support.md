@@ -19,12 +19,12 @@ ms.custom:
 - CSSTroubleshoot
 ms.reviewer: mablaik
 description: Informazioni di supporto per i prodotti Microsoft Surface e Surface Hub.
-ms.openlocfilehash: fa86756c122814e7f90351782fc8f6f34227ae42
-ms.sourcegitcommit: 56526c92d84dbc2cebcb8071d995efe399f306df
+ms.openlocfilehash: 41ed1cf624317234fb8786bb2c8615e6eed58551
+ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "11105257"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271540"
 ---
 # Supporto Surface
 
@@ -41,7 +41,7 @@ Se dopo aver eseguito il Toolkit si verificano ancora problemi, usare le schede 
 
 Velocizzare la garanzia e le richieste di assistenza usando il [modulo di richiesta di garanzia e assistenza](https://download.microsoft.com/download/2/e/0/2e00e1c2-3f49-4b6a-b605-74a0244cb88b/Warranty_and_Service_Claim_Submission_Form.xlsx). Per informazioni su come usare il modulo, vedere istruzioni per i moduli per le [attestazioni di garanzia e assistenza](warranty-and-service-claim-form.md) e allegarlo all'invio del caso.
 
-Per i clienti commerciali: [inviare la richiesta di servizio](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=d383b26c-f150-6220-8f1b-e8aa325d9727). 
+Per i clienti commerciali: [inviare la richiesta di servizio](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=d383b26c-f150-6220-8f1b-e8aa325d9727&hidden=false). 
 
 Per i clienti Microsoft Premier: [inviare la richiesta di assistenza nell'hub Servizi](https://serviceshub.microsoft.com/support/contactsupport). 
 

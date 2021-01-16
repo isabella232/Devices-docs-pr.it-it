@@ -1,5 +1,5 @@
 ---
-title: Supporto per la registrazione superficiale per Windows Autopilot
+title: Supporto alla registrazione di Surface per Windows Autopilot
 description: In questo articolo vengono illustrati i requisiti per inviare le richieste di registrazione del pilota automatico al supporto Microsoft.
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -12,14 +12,14 @@ ms.date: 9/14/2020
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 9a308edb37cc2cfd99490acad16bd2ae6a4d458a
-ms.sourcegitcommit: c2df79cab0e59e9d7ea6640e5899531b57cd383f
+ms.openlocfilehash: 4ff3803701ffe71e1c5c0c36200c40e833a7fb25
+ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "11016476"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271390"
 ---
-# Supporto per la registrazione superficiale per Windows Autopilot
+# Supporto alla registrazione di Surface per Windows Autopilot
 
 Un processo semplificato per la registrazione dei dispositivi Surface per la distribuzione di Autopilot Windows è ora disponibile nel supporto Microsoft. A partire da settembre 2020, i clienti e i provider di soluzioni cloud Microsoft (CSP) possono registrare i dispositivi Surface inviando richieste al supporto Microsoft. In questa pagina sono descritti i requisiti per gli scenari di registrazione del pilota automatico supportati seguenti:
  
@@ -44,7 +44,7 @@ Vedere la tabella seguente per dettagli sulle informazioni che sarà necessario 
 
 ## Inviare richieste di supporto
 
-  [![Ge supporto per la registrazione del pilota automatico per Surface](images/autopilot-reg-support-surface.png)](https://support.microsoft.com/supportrequestform/0d8bf192-cab7-6d39-143d-5a17840b9f5f)
+  [![Ge supporto per la registrazione del pilota automatico per Surface](images/autopilot-reg-support-surface.png)](https://prod.support.services.microsoft.com/supportrequestform/0d8bf192-cab7-6d39-143d-5a17840b9f5f)
  
  
  

@@ -8,16 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 10/12/2020
+ms.date: 1/15/2021
 ms.reviewer: jessko
 manager: laurawi
 ms.audience: itpro
-ms.openlocfilehash: 7d82a24126798c20f11c51074f6099e1363c257f
-ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
+ms.openlocfilehash: 30f7cd7d861b6497cd536aeb0ea348b6946a2674
+ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "11114624"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271360"
 ---
 # Distribuzione, gestione e manutenzione di Surface Pro X
 
@@ -42,7 +42,7 @@ Le organizzazioni che usano già soluzioni moderne per la gestione, la sicurezza
 
 ## Considerazioni sulla distribuzione basate su immagini
 
-MDT (Microsoft Deployment Toolkit) e Microsoft Endpoint Configuration Manager (in precedenza System Center Configuration Manager) attualmente non supportano Surface Pro X per la distribuzione del sistema operativo. I clienti che si affidano alla distribuzione basata su immagini devono considerare Surface Pro 7 mentre continuano a valutare il momento giusto per la transizione alle soluzioni di distribuzione moderne. 
+MDT (Microsoft Deployment Toolkit) e Microsoft Endpoint Configuration Manager (in precedenza System Center Configuration Manager) attualmente non supportano Surface Pro X per la distribuzione del sistema operativo. I clienti che fanno affidamento sulla distribuzione basata su immagini dovrebbero considerare Surface Pro 7+ mentre continuano a valutare il momento giusto per passare a soluzioni di distribuzione moderne. 
 
 ## Gestione dei dispositivi Surface Pro X
 
@@ -180,7 +180,7 @@ Nelle seguenti tabelle viene visualizzata la disponibilità delle funzionalità 
 
 ### Posso distribuire Surface Pro X con MDT o Endpoint Configuration Manager?
 
-The Microsoft Deployment Toolkit (MDT) e Microsoft Endpoint Configuration Manager attualmente non supportano Surface Pro X per la distribuzione del sistema operativo. I clienti che si affidano alla distribuzione basata su immagini devono considerare Surface Pro 7 mentre continuano a valutare il momento giusto per la transizione al cloud.
+Microsoft Deployment Toolkit (MDT) e Microsoft Endpoint Configuration Manager attualmente non supportano Surface Pro X per la distribuzione del sistema operativo. I clienti che fanno affidamento sulla distribuzione basata su immagini dovrebbero considerare Surface Pro 7+ mentre continuano a valutare il momento giusto per passare al cloud.
 
 ### Come posso distribuire Surface Pro X?
 

@@ -14,12 +14,12 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.audience: itpro
 ms.date: 9/14/2020
-ms.openlocfilehash: d2a948d236ffa286192937cc5ca71099b6eeeafb
-ms.sourcegitcommit: c2df79cab0e59e9d7ea6640e5899531b57cd383f
+ms.openlocfilehash: 31f11db8c3ab12d1af754267022d9060d3a8c026
+ms.sourcegitcommit: 1b86286bd13b13749ddbf454ae78d9a24fec44ee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "11016425"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "11271102"
 ---
 # Windows Autopilot e dispositivi Surface
 
@@ -45,7 +45,7 @@ Windows Autopilot-i dispositivi registrati vengono identificati tramite Internet
 
 ## Gestione moderna
 
-Autopilot è l'opzione di distribuzione consigliata per i dispositivi Surface, tra cui Surface Pro 7, Surface laptop 3 e Surface Pro X, progettato specificamente per la distribuzione tramite Autopilot.
+Autopilot è l'opzione di distribuzione consigliata per i dispositivi Surface, tra cui Surface Pro 7 +, Surface laptop 3, Surface Pro 7 e Surface Pro X, progettato specificamente per la distribuzione tramite Autopilot.
 
  È consigliabile registrare i dispositivi Surface con l'aiuto di un provider di soluzioni cloud Microsoft. Questo passaggio consente di gestire le impostazioni del firmware UEFI in Surface direttamente da Intune. Elimina la necessità di toccare fisicamente i dispositivi per la gestione dei certificati. Per informazioni dettagliate, vedere [gestione di Intune delle impostazioni di Surface UEFI](surface-manage-dfci-guide.md) .
 
@@ -53,7 +53,7 @@ Autopilot è l'opzione di distribuzione consigliata per i dispositivi Surface, t
 
 La distribuzione estensiva di dispositivi Surface tramite il pilota automatico Windows, inclusa la registrazione per partner di Surface al momento dell'acquisto, richiede Windows 10 versione 1709 (Update per i creatori di cadute) o versioni successive.
 
-Queste versioni di Windows supportano un valore hash di 4.000 byte (4K) che identifica in modo univoco i dispositivi per il pilota automatico di Windows, che è necessario per le distribuzioni in scala. Tutti i nuovi dispositivi Surface, tra cui Surface Pro 7, Surface Pro X e Surface laptop 3, vengono forniti con Windows 10 versione 1903 o successiva.
+Queste versioni di Windows supportano un valore hash di 4.000 byte (4K) che identifica in modo univoco i dispositivi per il pilota automatico di Windows, che è necessario per le distribuzioni in scala. Tutti i nuovi dispositivi Surface, tra cui Surface Pro 7 +, Surface Pro X e Surface laptop 3 Ship con Windows 10 versione 1903 o successiva.
 
 ## Esperienza di Exchange su dispositivi Surface che necessitano di riparazioni o sostituzioni
 
@@ -87,4 +87,4 @@ I partner di Surface abilitati per Windows Autopilot includono:
 Per altre informazioni su Windows Autopilot, vedere:
 - [Panoramica di Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)
 - [Requisiti di Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements)
-- [Supporto per la registrazione superficiale per Windows Autopilot](surface-autopilot-registration-support.md)
+- [Supporto alla registrazione di Surface per Windows Autopilot](surface-autopilot-registration-support.md)

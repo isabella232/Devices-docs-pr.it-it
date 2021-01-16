@@ -12,13 +12,13 @@ ms.author: greglin
 ms.topic: article
 ms.reviewer: hachidan
 manager: laurawi
-ms.date: 10/12/2020
-ms.openlocfilehash: 218f98b23adcb7bae2af92655d85144c6e5665e6
-ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
+ms.date: 01/15/2021
+ms.openlocfilehash: d8d47db3bd6f69783670b285a797337373e02d72
+ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "11114724"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271430"
 ---
 # Gestire le impostazioni UEFI di Surface
 
@@ -28,7 +28,7 @@ Tutte le generazioni correnti e future dei dispositivi Surface usano un'interfac
 
 La gestione UEFI è supportata nelle operazioni seguenti: 
 
-- Surface Pro 4, Surface Pro (5a gen), Surface Pro 6, Surface Pro 7, Surface Pro X
+- Surface Pro 4, Surface Pro (5a gen), Surface Pro 6, Surface Pro 7, Surface Pro 7 +, Surface Pro X
 - Superficie portatile (1a Gen), Surface laptop 2, Surface laptop 3, Surface laptop go
 - Surface Studio (1a generazione), Surface Studio 2
 - Surface Book, Surface Book 2, Surface Book 3
@@ -36,7 +36,7 @@ La gestione UEFI è supportata nelle operazioni seguenti:
 
 ## Supporto per la gestione basata sul cloud
 
-Con i profili di DFCI (device firmware Configuration Interface) incorporati in Microsoft Intune (ora disponibile in anteprima pubblica), Surface UEFI Management estende il moderno stack di gestione fino al livello hardware UEFI. DFCI supporta il provisioning a zero tocco, Elimina le password del BIOS, fornisce il controllo delle impostazioni di sicurezza, incluse le opzioni di avvio e le periferiche predefinite, e stabilisce le basi per scenari di sicurezza avanzati in futuro. DFCI è attualmente disponibile per Surface Pro 7, Surface Pro X e Surface laptop 3. Per altre informazioni, vedere [gestione di Intune delle impostazioni di Surface UEFI](surface-manage-dfci-guide.md).
+Con i profili di DFCI (device firmware Configuration Interface) incorporati in Microsoft Intune (ora disponibile in anteprima pubblica), Surface UEFI Management estende il moderno stack di gestione fino al livello hardware UEFI. DFCI supporta il provisioning a zero tocco, Elimina le password del BIOS, fornisce il controllo delle impostazioni di sicurezza, incluse le opzioni di avvio e le periferiche predefinite, e stabilisce le basi per scenari di sicurezza avanzati in futuro. DFCI è attualmente disponibile per Surface Pro 7 +, Surface Laptop Go, Surface Book 3, Surface laptop 3, Surface Pro 7 e Surface Pro X.  Per altre informazioni, vedere [gestione di Intune delle impostazioni di Surface UEFI](surface-manage-dfci-guide.md).
 
 ## Menu open Surface UEFI
 
@@ -165,9 +165,7 @@ La pagina di gestione consente di gestire l'uso della gestione delle funzioni di
 Zero Touch UEFI Management consente di gestire in remoto le impostazioni UEFI usando un profilo di dispositivo all'interno di Intune denominato device firmware Configuration Interface (DFCI). Se non si configura questa impostazione, la possibilità di gestire i dispositivi idonei con DFCI è impostata su **pronto**. Per evitare DFCI, selezionare **opt-out**. 
 
 > [!NOTE]
-> La pagina delle impostazioni di gestione UEFI e l'uso di DFCI sono disponibili solo in Surface Pro 7, Surface Pro X e Surface laptop 3.  
-
-Per altre informazioni, vedere [gestione di Intune delle impostazioni di Surface UEFI](surface-manage-dfci-guide.md).
+> La pagina delle impostazioni di gestione UEFI e l'uso di DFCI sono attualmente disponibili per Surface Pro 7 +, Surface Laptop Go, Surface Book 3, Surface laptop 3, Surface Pro 7 e Surface Pro X. Per altre informazioni, Vedi [gestione di Intune delle impostazioni di Surface UEFI](surface-manage-dfci-guide.md).
 
 ## Menu UEFI: Esci 
 

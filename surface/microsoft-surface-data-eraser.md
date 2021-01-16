@@ -14,13 +14,13 @@ author: coveminer
 ms.author: greglin
 ms.topic: article
 audience: itpro
-ms.date: 10/12/2020
-ms.openlocfilehash: 8b201ce45533c28740a7c6bdfcb56688ada25718
-ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
+ms.date: 01/15/2021
+ms.openlocfilehash: 2ae1b7b3af93c1449b96bf6307c830a928c1f0a7
+ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "11114704"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271410"
 ---
 # Microsoft Surface Data Eraser
 
@@ -160,6 +160,13 @@ Dopo aver creato una chiavetta USB di Microsoft Surface Data Eraser, puoi avviar
 
 Microsoft Surface Data Eraser viene aggiornato periodicamente da Microsoft. Per ulteriori informazioni sulle modifiche apportate in ogni nuova versione, vedi quanto segue:
 
+### 2.34.139.0
+*Data di rilascio: 15 gennaio 2021*
+
+Questa versione di Surface Data Eraser:
+
+- Include correzioni di bug
+
 ### 3.33.139
 *Data di rilascio: 9 settembre 2020*
 
@@ -180,16 +187,21 @@ Questa versione di Surface Data Eraser aggiunge il supporto per:
 - Nuovo SSD in Surface go
 
 ### 3.28.137
-*Data di rilascio: 11 Nov 2019* Questa versione di Surface Data Eraser:
+*Data di rilascio: 11 Nov 2019*
+
+Questa versione di Surface Data Eraser:
 
 - Include correzioni di bug
 
 ### Versione 3.21.137
-*Data di rilascio: 21 ott 2019* Questa versione di Surface Data Eraser viene compilata per x86 e aggiunge il supporto per i dispositivi seguenti:
+*Data di rilascio: 21 ott 2019*
 
-- Supporta Surface Pro 7, Surface Pro X e Surface laptop 3
+Questa versione di Surface Data Eraser viene compilata per x86 e aggiunge il supporto per i dispositivi seguenti:
+
+- Surface Pro 7, Surface Pro X e Surface laptop 3
 
 ### Versione 3.2.78.0
+
 *Data di rilascio: 4 dic 2018*
 
 Questa versione di Surface Data Eraser:
@@ -198,6 +210,7 @@ Questa versione di Surface Data Eraser:
 
 
 ### Versione 3.2.75.0
+
 *Data di rilascio: 12 novembre 2018*
 
 Questa versione di Surface Data Eraser:
@@ -206,6 +219,7 @@ Questa versione di Surface Data Eraser:
 - Risolvere i problemi relativi alla scheda SD
 
 ### Versione 3.2.69.0
+
 *Data di rilascio: 12 ottobre 2018*
 
 Questa versione di Surface Data Eraser aggiunge il supporto per gli elementi seguenti:
@@ -214,18 +228,21 @@ Questa versione di Surface Data Eraser aggiunge il supporto per gli elementi seg
 - Surface Laptop 2
 
 ### Versione 3.2.68.0
+
 Questa versione di Microsoft Surface Data Eraser aggiunge il supporto per:
 
 - Surface Go
 
 
 ### Versione 3.2.58.0
+
 Questa versione di Microsoft Surface Data Eraser aggiunge il supporto per:
 
 - Dispositivi di archiviazione aggiuntivi (unità) per dispositivi portatili Surface Pro e Surface
 
 
 ### Versione 3.2.46.0
+
 Questa versione di Microsoft Surface Data Eraser aggiunge il supporto per:
 
 - Surface Pro con LTE Advanced

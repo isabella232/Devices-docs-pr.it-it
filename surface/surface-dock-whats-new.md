@@ -12,12 +12,12 @@ ms.date: 12/2/2020
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: b93813498dc19bc7fff95f651fca77ca2c677746
-ms.sourcegitcommit: 071ca4874e807bb61a22b38a04f53802478d8391
+ms.openlocfilehash: 81c224cf6c5232c4cefd4e64889bd2f724d22bac
+ms.sourcegitcommit: 1b86286bd13b13749ddbf454ae78d9a24fec44ee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "11194841"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "11271133"
 ---
 # Novità di Surface Dock 
 
@@ -46,6 +46,7 @@ Surface Dock 2 è progettato per semplificare la gestione IT, consentendo agli a
   - Surface Book 3
   - Superficie Go 2
   - Portatile Surface go
+  - Surface Pro 7 +
 
 ## Componenti di Surface Dock 2
 
@@ -64,6 +65,7 @@ Surface Dock 2 è progettato per semplificare la gestione IT, consentendo agli a
   - Surface Book 3
   - Superficie Go 2
   - Surface Pro 7
+  - Surface Pro 7 +
   - Surface Pro X
   - Laptop Surface 3
 
@@ -116,7 +118,7 @@ Surface Dock 2 è progettato per semplificare la gestione IT, consentendo agli a
 
 
 
-1. *I dispositivi devono essere configurati per la riattivazione LAN tramite la modalità di gestione di Surface Enterprise (SEMM) o DFCI (device firmware Control Interface) per riattivare gli Stati di ibernazione o di Power-Off. La riattivazione dalla sospensione o Power-Off è supportata in Surface Pro 7, Surface laptop 3, Surface Pro X, Surface Book 3 e Surface Go 2.  Licenza software necessaria per alcune funzionalità. Venduti separatamente.*
+1. *I dispositivi devono essere configurati per la riattivazione LAN tramite la modalità di gestione di Surface Enterprise (SEMM) o DFCI (device firmware Control Interface) per riattivare gli Stati di ibernazione o di Power-Off. La riattivazione dalla sospensione o Power-Off è supportata in Surface Pro 7 +, Surface Pro 7, Surface laptop 3, Surface Pro X, Surface Book 3 e Surface Go 2.  Licenza software necessaria per alcune funzionalità. Venduti separatamente.*
 
 2. *Licenza software necessaria per alcune funzionalità. Venduti separatamente.*
 

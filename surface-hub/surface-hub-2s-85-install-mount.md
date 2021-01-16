@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 01/11/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: b01c9e2a98e6b8064c3fd27c1b4909174872cbcb
-ms.sourcegitcommit: 00b6b59bd110633b6ae46345a592b72d68cc5121
+ms.openlocfilehash: 65a1784fbbcea8861d6d9ed7a160cbe39d4d4d6c
+ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "11255809"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271590"
 ---
 # Installare e montare il mozzo della superficie 2S 85 "
 
@@ -24,7 +24,7 @@ Questo articolo fornisce indicazioni per il supporto per l'installazione fisica 
 
 ## Unboxing video
 
-È ora disponibile un compagno di video per l'installazione di Surface Hub 2S 85 ". Prima di iniziare, verificare [l'unboxing e l'installazione di Surface Hub 2s 85 "](https://aka.ms/Hub2S85Unboxing).
+È ora disponibile un Companion come video per lo spostamento e l'installazione di Surface Hub 2S 85 ". Prima di iniziare, consultare [Microsoft Surface Hub 2s 85 "-unboxing e configurazione](https://aka.ms/Hub2S85Unboxing). 
 
 ## Seguire tutte le precauzioni di sicurezza 
 

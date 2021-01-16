@@ -9,17 +9,17 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 10/12/2020
+ms.date: 1/15/2021
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: ec1d53a4bdbcaaf6606dcb0e52fc81de92a2a53b
-ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
+ms.openlocfilehash: 2140faf346229842bffc4f9348041f4667b94686
+ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "11114544"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271370"
 ---
 # Riferimento SKU di sistema
 
@@ -49,6 +49,8 @@ Modello di sistema e SKU di sistema sono variabili archiviate nelle tabelle SMBI
 | Surface Laptop                                               | Surface Laptop   | Surface_Laptop                   |
 | Laptop Surface 2 consumer                                    | Surface Laptop 2 | Surface_Laptop_2_1769_Consumer   |
 | Superficie portatile 2 commerciale                                  | Surface Laptop 2 | Surface_Laptop_2_1769_Commercial |
+| Surface Pro 7 +                                               | Surface Pro 7 + | Surface_Pro_7 + _1960|
+| Surface Pro 7 + LTE                                           | Surface Pro 7 + | Surface_Pro_7 + _with_LTE_Advanced_1961|
 | Surface Pro 7                 | Surface Pro 7    | Surface_Pro_7_1866         |
 | Surface Pro X                 | Surface Pro X    | Surface_Pro_X_1876         |
 | Surface Pro X con processore SQ2                | Surface Pro X    | Surface_Pro_X_H_1876        |
@@ -67,7 +69,7 @@ gwmi -namespace root\wmi -class MS_SystemInformation | select SystemSKU
 ```
 
 **Recupero dell'USK tramite le informazioni di sistema**  
-È anche possibile trovare il SKU di sistema e il modello di sistema per un dispositivo in **informazioni di sistema**. A tale scopo, effettua quanto segue:
+È anche possibile trovare il SKU di sistema e il modello di sistema per un dispositivo in **informazioni di sistema**. A tale scopo, procedere come segue:
 
 1. Selezionare **Start**e quindi digitare **msinfo32** nella casella di ricerca.  
 1. Selezionare **informazioni di sistema**.

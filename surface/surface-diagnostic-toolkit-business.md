@@ -8,16 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 10/12/2020
+ms.date: 01/15/2021
 ms.reviewer: hachidan
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 97d0a3d76cf9286ca946e08be9f605084084b2ba
-ms.sourcegitcommit: 5448f775d3fe177806fce6cbaf0b2b091ed8b7d1
+ms.openlocfilehash: 227463e484a6f3b933fc1118d9dec058f93074a8
+ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "11145961"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271580"
 ---
 # Implementare Toolkit di diagnostica per Surface per le aziende
 
@@ -46,27 +46,15 @@ Riga di comando |  Risolvere direttamente i dispositivi Surface in remoto senza 
 
 SDT for business è supportato nei dispositivi Surface 3 e versioni successive, tra cui:
 
-- Portatile Surface go
-- Surface Book 3
-- Superficie Go 2
-- Surface Pro X
-- Surface Pro 7
-- Laptop Surface 3
-- Surface Pro 6
-- Surface Laptop 2
-- Surface Go
-- Surface go con LTE
-- Surface Book 2
-- Surface Pro con LTE Advanced (Modello 1807)
-- Surface Pro (Modello 1796)
-- Surface Laptop
-- Surface Studio
-- Surface Studio 2
-- Surface Book
-- Surface Pro 4
+- Surface Book-tutte le generazioni
+- Surface go-tutte le generazioni
+- Laptop Surface-tutte le generazioni
+- Surface Pro 3 e versioni successive
+- Surface Pro X-tutte le generazioni
+- Surface Studio-tutte le generazioni
 - Surface 3 LTE
 - Surface 3
-- Surface Pro 3
+
 
 ## Installazione di Surface Diagnostic Toolkit for business
 
@@ -178,6 +166,15 @@ In questo modo è possibile selezionare o rimuovere l'opzione per eseguire gli a
 - [Usare i comandi con Surface Diagnostic Toolkit for business](surface-diagnostic-toolkit-command-line.md)
 
 ## Modifiche e aggiornamenti
+
+### Versione 2.131.139.0
+
+Questa versione di Surface Diagnostic Toolkit for business aggiunge il supporto per gli elementi seguenti:
+
+- Supporto per Surface Pro 7 +
+- Esperienza di supporto senza soluzione di continuità in Surface Pro X
+- Miglioramenti della sicurezza
+- Miglioramenti inclusi nell'esperienza utente
 
 ### Versione 2.124.139.0
 

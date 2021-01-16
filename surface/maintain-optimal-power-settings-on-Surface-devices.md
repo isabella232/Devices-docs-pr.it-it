@@ -1,6 +1,6 @@
 ---
 title: Procedure consigliate per le impostazioni di risparmio energia per i dispositivi Surface
-description: Questo argomento fornisce consigli pratici per la gestione delle impostazioni di potenza ottimali e spiega come l'area ottimizza l'esperienza di risparmio energia. Questo articolo si applica a tutti i dispositivi Surface attualmente supportati, tra cui Surface Pro 7, Surface Pro X e Surface laptop 3.
+description: Questo argomento fornisce consigli pratici per la gestione delle impostazioni di potenza ottimali e spiega come l'area ottimizza l'esperienza di risparmio energia. Questo articolo si applica a tutti i dispositivi Surface attualmente supportati, tra cui Surface Pro 7 +, Surface Pro 7, Surface Pro X e Surface laptop 3.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,13 +11,13 @@ ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.date: 10/28/2019
-ms.openlocfilehash: 73a74dc05a5a6929fa6360e04aac5d342b9c06a8
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.date: 1/15/2021
+ms.openlocfilehash: 54aff228e8a72d413fc53bd14fe15d8ad7b15ab0
+ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10832511"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271400"
 ---
 # Procedure consigliate per le impostazioni di risparmio energia per i dispositivi Surface
 
@@ -40,7 +40,7 @@ Per garantire che i dispositivi Surface in tutta l'organizzazione traggano vanta
 
 Il modo in cui Surface implementa la gestione dell'alimentazione differisce significativamente rispetto allo standard precedente del sistema operativo che riduce gradualmente e disattiva l'alimentazione tramite una serie di Stati di sospensione; ad esempio, in bicicletta tra S1, S2, S3 e così via.
 
-La superficie è invece un'immagine con un profilo di alimentazione personalizzato che sostituisce la funzionalità di sospensione e consumo di energia legacy con caratteristiche di standby moderne e una fine tuning dinamico. Questo profilo di alimentazione personalizzato viene implementato tramite il driver hub seriale Surface e il modulo aggregator di sistema (SAM). Il chip SAM funziona come proprietario dei criteri di alimentazione del dispositivo Surface, usando gli algoritmi per calcolare i requisiti di potenza ottimali. Funziona in combinazione con Windows Power Manager per allocare o limitare solo l'esatta quantità di energia necessaria per il funzionamento dei componenti hardware. Questo articolo si applica a tutti i dispositivi Surface attualmente supportati, tra cui Surface Pro 7, Surface Pro X e Surface laptop 3.
+La superficie è invece un'immagine con un profilo di alimentazione personalizzato che sostituisce la funzionalità di sospensione e consumo di energia legacy con caratteristiche di standby moderne e una fine tuning dinamico. Questo profilo di alimentazione personalizzato viene implementato tramite il driver hub seriale Surface e il modulo aggregator di sistema (SAM). Il chip SAM funziona come proprietario dei criteri di alimentazione del dispositivo Surface, usando gli algoritmi per calcolare i requisiti di potenza ottimali. Funziona in combinazione con Windows Power Manager per allocare o limitare solo l'esatta quantità di energia necessaria per il funzionamento dei componenti hardware. Questo articolo si applica a tutti i dispositivi Surface attualmente supportati, tra cui Surface Pro 7 +, Surface Laptop Go, Surface Pro 7, Surface Pro X e Surface laptop 3.
 
 ## Utilizzo del profilo di alimentazione personalizzato in Surface
 
@@ -51,7 +51,7 @@ Se si accede alle opzioni di Power in un dispositivo Surface, si noterà che è 
 
 Il profilo di alimentazione personalizzato algoritmicamente Embedded consente la connettività di standby moderna per Surface mantenendo uno stato di basso consumo per la funzionalità Instant on/Instant off tipica degli smartphone. S0ix, noto anche come lo stato della piattaforma di runtime inattivo più profondo (gocciola), è la modalità di alimentazione predefinita per i dispositivi Surface. La modalità standby moderna è composta da due modi:
 
-- **Standby connesso.** La modalità predefinita per il recapito continuo di messaggi di posta elettronica, messaggistica e dati sincronizzati sul cloud, standby connesso mantiene la connessione Wi-Fi e mantiene la connettività di rete.
+- **Standby connesso.** La modalità predefinita per il recapito continuo di messaggi di posta elettronica, messaggistica e dati sincronizzati con cloud, standby connesso mantiene Wi-Fi e mantiene la connettività di rete.
 
 - **Standby disconnesso.** Una modalità facoltativa per la durata della batteria estesa, standby disconnessa offre la stessa esperienza immediata e consente di risparmiare energia disattivando Wi-Fi, Bluetooth e connettività di rete correlata.
 
@@ -137,4 +137,4 @@ Per altre informazioni, vedere:
 - [Personalizzare il dispositivo di scorrimento Power performance di Windows](https://docs.microsoft.com/windows-hardware/customize/desktop/customize-power-slider)
 
 - [Risparmio batteria](https://docs.microsoft.com/windows-hardware/design/component-guidelines/battery-saver)
-- [Gestire e distribuire gli aggiornamenti di driver e firmware Surface](manage-surface-driver-and-firmware-updates.md)
+- [Gestire e installare gli aggiornamenti di driver e firmware per il Surface](manage-surface-driver-and-firmware-updates.md)

@@ -8,16 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 8/12/2020
+ms.date: 01/15/2021
 ms.reviewer: rohenr
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: a3dfb5e4b2e5dc87dd4ae1dbced943e6be0772df
-ms.sourcegitcommit: 16845b3289a035b4e6ab5e7536307ef66651db28
+ms.openlocfilehash: bf6f98b8abf665f65b33a0f03c44d386ebbee5b4
+ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926308"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271530"
 ---
 # Desktop virtuale Windows su Surface
 
@@ -37,7 +37,7 @@ Per un elenco dei provider di partner approvati e per i fornitori di software in
 
 Surface Engineering offre una lunga serie di nuovi standard per l'innovazione superando la tastiera e il mouse per immaginare modi più naturali per interagire con i dispositivi, sia tramite tocco, voce, input penna o Surface dial. E con l'integrazione da chip a cloud di Microsoft 365 e la sicurezza e la gestibilità di Windows 10 Pro, Surface offre hardware, software, app e servizi connessi come previsto. Anche se è possibile eseguire WVD da dispositivi Windows risalenti a Windows 7, Microsoft Surface Devices offre vantaggi esclusivi, incluso il supporto per:
 
-- **Fattori di forma flessibili** -come i dispositivi 2-in-1 come Surface Go 2, Surface Pro 7 e Surface Pro X con la penna, il tocco e la tastiera rimovibile. È anche possibile usare la nuova superficie Duo per connettersi a WVD.
+- **Fattori di forma flessibili** , come i dispositivi 2-in-1, come Surface Pro 7 +, Surface Go 2, Surface Pro 7 e Surface Pro X con la penna, il tocco e la tastiera rimovibile. È anche possibile usare la nuova superficie Duo per connettersi a WVD.
 - **Scenari di lavoro permanenti, su richiesta e just-in-time,** con accesso offline e su dispositivo per esperienze più produttive.
 - La **sicurezza e la gestibilità dei dispositivi moderni di Windows 10** garantiscono la flessibilità di essere produttivi ovunque.
 
@@ -47,7 +47,7 @@ La famiglia Microsoft Surface for business comprende un portafoglio diversificat
 
 ### Endpoint desktop virtuale moderno
 
-I dispositivi Surface 2-in-1, tra cui [Surface Go 2](https://www.microsoft.com/p/surface-go-2) (10,5 "), [Surface Pro 7](https://www.microsoft.com/surface/devices/surface-pro-7/) (12") e [Surface Pro X](https://www.microsoft.com/p/surface-pro-x/) (13 "), consentono agli utenti l'endpoint desktop ideale cloud che riunisce l'equilibrio ottimale tra portabilità, versatilità, potenza e batteria per tutto il giorno. Da ingegneri del sito che fanno affidamento su Surface Go 2 in modalità tablet per i consulenti finanziari che allegano Surface Pro 7 a un dock e a più monitor, i dispositivi 2-in-1 garantiscono la versatilità che è giunta a definire il luogo di lavoro moderno.
+I dispositivi Surface 2-in-1, tra cui [Surface Go 2](https://www.microsoft.com/p/surface-go-2) (10,5 "), [Surface Pro 7 +](https://www.microsoft.com/surface/business/surface-pro-7-plus) (12") e [Surface Pro X](https://www.microsoft.com/p/surface-pro-x/) (13 "), consentono agli utenti l'endpoint desktop ideale cloud che riunisce l'equilibrio ottimale tra la portabilità, la versatilità, la potenza e la batteria per tutto il giorno. Da ingegneri del sito che fanno affidamento su Surface Go 2 in modalità tablet per i consulenti finanziari che allegano Surface Pro 7 a un dock e a più monitor, i dispositivi 2-in-1 garantiscono la versatilità che è giunta a definire il luogo di lavoro moderno.
 
  Diversamente dai tradizionali e fissi VDI "Terminal", i dispositivi Surface permettono agli utenti di lavorare ovunque e consentire alle aziende di rimanere valide e operative durante gli eventi imprevisti, dalle condizioni meteorologiche gravose alle emergenze della sanità pubblica. Con il supporto per scenari permanenti, su richiesta e just-in-time, i dispositivi Surface aiutano efficacemente le aziende a sostenere le operazioni in corso e a mitigare il rischio da eventi di disturbo. Le caratteristiche progettate per migliorare la produttività sui dispositivi Surface 2-in-1 includono:
 
@@ -138,7 +138,7 @@ Surface esegue valutazioni del ciclo di vita per calcolare l'impatto ambientale 
 
 ## Riepilogo
 
-Windows Virtual Desktop su Surface offre alle organizzazioni una maggiore flessibilità e resilienza per soddisfare le diverse esigenze di utenti, stakeholder e clienti. L'uso di soluzioni desktop virtuali Windows su dispositivi Surface offre vantaggi esclusivi rispetto al continuo affidamento su dispositivi legacy.  I fattori di forma flessibili come Surface Go 2 e Surface Pro 7 connessi al cloud (o offline) consentono agli utenti di essere produttivi ovunque e in qualsiasi momento. Se i dipendenti lavorano in scenari permanenti, su richiesta o just-in-time, Windows Virtual Desktop su Surface offre alle aziende la versatilità per sostenere la produttività in tutte le interruzioni delle emergenze sanitarie o di altri eventi imprevisti. Usando la sicurezza incorporata a più livelli e la gestibilità moderna di Windows 10, le aziende possono trarre vantaggio da un ecosistema in espansione di servizi basati sul cloud per distribuire e ridimensionare rapidamente i desktop e le app di Windows. In poche parole, Windows Virtual Desktop su Surface offre tecnologie necessarie per le organizzazioni e le aziende di tutte le dimensioni.
+Windows Virtual Desktop su Surface offre alle organizzazioni una maggiore flessibilità e resilienza per soddisfare le diverse esigenze di utenti, stakeholder e clienti. L'uso di soluzioni desktop virtuali Windows su dispositivi Surface offre vantaggi esclusivi rispetto al continuo affidamento su dispositivi legacy.  I fattori di forma flessibili come Surface Go 2 e Surface Pro 7 + connessi al cloud (o offline) consentono agli utenti di essere produttivi ovunque e in qualsiasi momento. Se i dipendenti lavorano in scenari permanenti, su richiesta o just-in-time, Windows Virtual Desktop su Surface offre alle aziende la versatilità per sostenere la produttività in tutte le interruzioni delle emergenze sanitarie o di altri eventi imprevisti. Usando la sicurezza incorporata a più livelli e la gestibilità moderna di Windows 10, le aziende possono trarre vantaggio da un ecosistema in espansione di servizi basati sul cloud per distribuire e ridimensionare rapidamente i desktop e le app di Windows. In poche parole, Windows Virtual Desktop su Surface offre tecnologie necessarie per le organizzazioni e le aziende di tutte le dimensioni.
 
 ## Scopri di più
 
@@ -157,7 +157,7 @@ Per altre informazioni, vedi le risorse seguenti:
 <a id="2">2. </a> la durata della batteria varia in modo significativo con le impostazioni, l'uso e altri fattori.<br>
 <a id="3">3. </a> disponibilità del servizio e prestazioni soggette alla rete del provider di servizi. Contattare il provider di servizi per informazioni dettagliate, compatibilità, prezzi, scheda SIM e attivazione. Vedere tutte le specifiche e le frequenze in surface.com.<br>
 <a id="4">4. </a> Forrester Consulting, "A Forrester Total Economic Impact™ Study: massimizzare il ROI da microsoft 365 Enterprise con Microsoft Surface", commissionato da Microsoft, 2018.<br>
-<a id="5">5. </a> Surface go e Surface Go 2 usare un UEFI di terze parti e non supportare DFCI. DFCI è attualmente disponibile per Surface Book 3, Surface laptop 3, Surface Pro 7 e Surface Pro X. per saperne di più sulla gestione delle impostazioni di Surface UEFI.<br>
+<a id="5">5. </a> Surface go e Surface Go 2 usare un UEFI di terze parti e non supportare DFCI. DFCI è attualmente disponibile per Surface Pro 7 +, Surface Laptop Go, Surface Book 3, Surface laptop 3, Surface Pro 7 e Surface Pro X.<br>
 <a id="6">6. gli </a> SSD rimovibili sono disponibili su Surface laptop 3 e Surface Pro X. si noti che il disco rigido non è un utente rimovibile. Il disco rigido è rimovibile solo dal tecnico specializzato seguendo le istruzioni Microsoft.<br>
-<a id="7">7. </a> DFCI è attualmente disponibile per Surface Book 3, Surface laptop 3, Surface Pro 7 e Surface Pro X. per [saperne di più](https://docs.microsoft.com/surface/manage-surface-uefi-settings) sulla gestione delle impostazioni di Surface UEFI.
+<a id="7">7. </a>  DFCI è attualmente disponibile per Surface Pro 7 +, Surface Laptop Go, Surface Book 3, Surface laptop 3, Surface Pro 7 e Surface Pro X. per [saperne di più](surface-manage-dfci-guide.md) sulla gestione delle impostazioni di Surface UEFI.
 

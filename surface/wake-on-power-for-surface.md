@@ -2,13 +2,13 @@
 title: Come abilitare la riattivazione dell'alimentazione per Surface
 ms.author: v-todmc
 author: mccoybot
-ms.date: 7/30/2020
 audience: ITPro
 search.appverid:
 - SPO160
 - MET150
 appliesto:
 - Surface Book 3
+- Surface Pro 7+
 - Surface Pro 7
 - Surface Laptop 3
 - Surface Pro X
@@ -26,12 +26,13 @@ ms.localizationpriority: medium
 ms.topic: article
 manager: laurawi
 ms.audience: itpro
-ms.openlocfilehash: dee2a2962cf6b70a1bf11cf597b4d41f4b5568e4
-ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
+ms.date: 01/15/2021
+ms.openlocfilehash: 6ad359861f6af29c567bf0fbf26878ec15c7c642
+ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "11114574"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271560"
 ---
 # Riattivazione alimentazione per i dispositivi Surface
 
@@ -39,6 +40,7 @@ I dispositivi Surface possono essere spenti quando si è lontani dalla propria s
 
 La funzionalità riattiva in Power è disponibile nei dispositivi seguenti:
 
+- Surface Pro 7 +
 - Surface Book 3
 - Surface Pro 7
 - Laptop Surface 3
@@ -61,13 +63,13 @@ Surface UEFI Configurator consente di salvare singole impostazioni UEFI in un pa
     :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-1.png" alt-text="Selezionare dispositivi Surface e selezionare Avanti.":::
 3.  Selezionare **Start**, quindi selezionare **Crea** in **pacchetto di configurazione**.
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-2.png" alt-text="Selezionare dispositivi Surface e selezionare Avanti.":::
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-2.png" alt-text="Selezionare Crea pacchetto di configurazione.":::
 4.  Selezionare **protezione certificato**e aggiungere il file con estensione pfx certificato. 
 5. Immettere la password, scegliere **Avanti**, aggiungere la **protezione tramite password**, in base alle esigenze e quindi selezionare **Avanti**.
 6.  Nella pagina **scegliere il tipo di superficie da cui si vuole assegnare la destinazione** selezionare i dispositivi di destinazione in base alle esigenze. Ad esempio, selezionare **Surface Pro 7**.
 7.  Nella pagina **funzionalità avanzate** selezionare **riattiva in Power**, impostare la caratteristica **su**attivato e quindi selezionare **Avanti**.
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-3.png" alt-text="Selezionare dispositivi Surface e selezionare Avanti."::: 
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-3.png" alt-text="Selezionare Riattiva in Power e imposta su attivato."::: 
 8.  Nella pagina **completata** selezionare **fine**.
 
     > [!NOTE]
@@ -86,10 +88,10 @@ Puoi applicare il pacchetto MSI ai dispositivi della rete usando strumenti di di
 
 2.  Nella finestra di dialogo **avviso** selezionare **OK** o disabilitare BitLocker, in base alle esigenze.
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-4.png" alt-text="Selezionare dispositivi Surface e selezionare Avanti.":::
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-4.png" alt-text="Selezionare OK o disabilitare BitLocker in base alle esigenze.":::
 3.  Nella pagina di benvenuto selezionare **Avanti** per eseguire il pacchetto e applicare l'impostazione UEFI appena configurata.
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-5.png" alt-text="Selezionare dispositivi Surface e selezionare Avanti.":::
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-5.png" alt-text="Una pagina iniziale, selezionare Avanti.":::
 4.  Riavviare il dispositivo. 
 
 La riattivazione dell'alimentazione è ora configurata. Per verificare le impostazioni, disattivare il dispositivo, scollegare l'alimentazione e quindi riconnettere l'alimentazione. Il dispositivo dovrebbe iniziare automaticamente. 

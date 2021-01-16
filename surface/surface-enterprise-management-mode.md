@@ -13,20 +13,20 @@ ms.reviewer: hachidan
 manager: laurawi
 ms.localizationpriority: medium
 audience: itpro
-ms.date: 10/12/2020
-ms.openlocfilehash: 463759d2dd01b9333d10a66c1781055f4a5217ac
-ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
+ms.date: 01/15/2021
+ms.openlocfilehash: e6f81639253c646f5d3956243a80f4d61c91028a
+ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "11114644"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271420"
 ---
 # Modalità di gestione Microsoft Surface Enterprise
 
 Microsoft Surface Enterprise Management Mode (SEMM) è una caratteristica dei dispositivi Surface con UEFI di Surface che consente di proteggere e gestire le impostazioni del firmware all'interno dell'organizzazione. Con SEMM, i professionisti IT possono preparare configurazioni di impostazioni UEFI e installarle su un dispositivo Surface. Oltre alla possibilità di configurare le impostazioni UEFI, SEMM usa anche un certificato per proteggere la configurazione da manomissioni o rimozione non autorizzate. SEMM è un requisito per poter eseguire la migrazione di un hub di Surface 2S a Windows 10 Pro e Enterprise.
 
 >[!NOTE]
->SEMM è disponibile solo nei dispositivi con il firmware di Surface UEFI. Questo include la maggior parte degli altri dispositivi Surface, tra cui Surface Pro 7, Surface Pro X, Surface Hub 2S e Surface laptop 3 SKU commerciali con un processore Intel e Surface laptop go. SEMM non è supportato nella SKU 15 "Surface laptop 3 con processore AMD (disponibile solo come SKU per il dettaglio). 
+>SEMM è disponibile solo nei dispositivi con il firmware di Surface UEFI. Questo include la maggior parte degli altri dispositivi Surface, tra cui Surface Pro 7 +, Surface Pro X, Surface Hub 2S e Surface laptop 3 SKU commerciali con un processore Intel e Surface laptop go. SEMM non è supportato nella SKU 15 "Surface laptop 3 con processore AMD (disponibile solo come SKU per il dettaglio). 
 
 Quando i dispositivi Surface sono configurati da SEMM e protetti con il certificato SEMM, vengono considerati *registrati* in SEMM. Quando il certificato SEMM viene rimosso e il controllo delle impostazioni UEFI viene restituito all'utente del dispositivo, il dispositivo Surface *viene considerato non* registrato in SEMM.
 
@@ -178,9 +178,12 @@ Si consiglia inoltre di autenticare il certificato SEMM in un'architettura a chi
 
 ### Certificato autofirmato 
 Puoi usare lo script di PowerShell di esempio seguente per creare un certificato autofirmato per l'uso in scenari di prova di concetto.
-Per usare questo script, copiare il testo seguente in blocco note e salvare il file come script di PowerShell (con estensione ps1). Nota: questo script crea un certificato con una password `12345678` . Il certificato generato da questo script non è consigliato per gli ambienti di produzione.
+Per usare questo script, copiare il testo seguente in blocco note e salvare il file come script di PowerShell (con estensione ps1). 
+
+> [!NOTE]
+> Questo script crea un certificato con una password `12345678` . Il certificato generato da questo script non è consigliato per gli ambienti di produzione.
   
-   ```
+```powershell
 if (-not (Test-Path "Demo Certificate"))  { New-Item -ItemType Directory -Force -Path "Demo Certificate" }
 if (Test-Path "Demo Certificate\TempOwner.pfx") { Remove-Item "Demo Certificate\TempOwner.pfx" }
 
@@ -201,7 +204,7 @@ $TestUefiV2 = New-SelfSignedCertificate `
   -KeyExportPolicy Exportable
 
 $TestUefiV2 | Export-PfxCertificate -Password $pw -FilePath "Demo Certificate\TempOwner.pfx"
-   ```
+```
 
 >[!IMPORTANT]
 >Per l'uso con SEMM e Microsoft Surface UEFI Configurator, il certificato deve essere esportato con la chiave privata e con la password di protezione. Microsoft Surface UEFI Configurator richiede di selezionare il file di certificato SEMM (PFX) e la password del certificato quando necessario.
@@ -242,6 +245,12 @@ Gli esempi di PowerShell che creano un pacchetto di configurazione per un tipo d
 
 ## Cronologia versioni
 
+### Versione 2.79.139.0
+
+Questa versione di SEMM include:
+- Supporto per Surface Pro 7 +
+- Miglioramenti dell'esperienza utente
+
 
 ### Versione 2.78.139.0
 
@@ -251,9 +260,6 @@ Questa versione di SEMM include:
 - Notifiche per la nuova versione di rilascio
 - Possibilità di creare pacchetti personalizzati per la modifica della proprietà
 - Correzioni di bug
-
-
-
 
 ### Versione 2.73.136.0
 

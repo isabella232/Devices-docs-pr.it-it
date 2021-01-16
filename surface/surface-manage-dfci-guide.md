@@ -13,17 +13,18 @@ ms.reviewer: jesko
 manager: laurawi
 ms.audience: itpro
 appliesto:
+- Surface Pro 7+
 - Surface Pro 7
 - Surface Pro X
 - Surface Laptop 3
 - Surface Book 3
 - Surface Laptop Go
-ms.openlocfilehash: e984741a8367935eab18351815c5f00d9f8a72b7
-ms.sourcegitcommit: efc38524f81238e0c36371f462eb57123e46d09b
+ms.openlocfilehash: dde34126c726ec0ac8093a665804c4fb0f639e3e
+ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "11228547"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271570"
 ---
 # Gestione di Intune delle impostazioni UEFI di Surface
 
@@ -51,6 +52,7 @@ In modo cruciale, DFCI Abilita la gestione del tocco zero, eliminando l'esigenza
 
 DFCI è supportato nei dispositivi seguenti:
 
+- Surface Pro 7 +
 - Surface Pro 7
 - Surface Pro X
 - Laptop Surface 3
@@ -86,7 +88,7 @@ Prima di configurare le impostazioni dei criteri di DFCI, creare prima di tutto 
     ![Creare il profilo DFCI](images/df1.png)
 
 5. Fare clic su **OK** e quindi selezionare **Crea**.
-6. Selezionare **assegnazioni** e in **selezionare gruppi per includere** Selezionare il gruppo di sicurezza di Azure ad contenente i dispositivi di destinazione, come illustrato nella figura seguente. Fare clic su **Save**.
+6. Selezionare **assegnazioni** e in **selezionare gruppi per includere** Selezionare il gruppo di sicurezza di Azure ad contenente i dispositivi di destinazione, come illustrato nella figura seguente. Fai clic su **Salva**.
 
     ![Assegnare un gruppo di sicurezza](images/df2a.png)
 
@@ -148,7 +150,7 @@ Intune include i tag di ambito per delegare diritti amministrativi e regole di a
 
 ## Registrare i dispositivi in Autopilot
 
-Come indicato sopra, DFCI può essere applicato solo ai dispositivi registrati in Windows Autopilot da un rivenditore o da un distributore ed è supportato solo in questo momento in Surface Pro 7, Surface Pro X e Surface laptop 3. Per motivi di sicurezza, non è possibile "eseguire il provisioning automatico" dei dispositivi in Autopilot.
+Come indicato sopra, DFCI può essere applicato solo ai dispositivi registrati in Windows Autopilot da un rivenditore o da un distributore ed è supportato solo in Surface Pro 7 +, Surface Laptop Go, Surface Pro 7, Surface Pro X e Surface laptop 3. Per motivi di sicurezza, non è possibile "eseguire il provisioning automatico" dei dispositivi in Autopilot. Per altre informazioni, vedere [supporto per la registrazione della superficie per Windows Autopilot](surface-autopilot-registration-support.md). 
 
 ## Sincronizzare manualmente i dispositivi Autopilot
 

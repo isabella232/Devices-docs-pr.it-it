@@ -11,14 +11,15 @@ ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.reviewer: ''
+ms.reviewer: hachinda
 manager: laurawi
-ms.openlocfilehash: 183eceee47eba8b8d1e794e9e7d3efffa7a9b2e0
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.date: 1/15/2021
+ms.openlocfilehash: f310b4a43a8a0fc0e77295344ac723770ce821bc
+ms.sourcegitcommit: 1b86286bd13b13749ddbf454ae78d9a24fec44ee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833482"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "11271063"
 ---
 # Registrare e configurare i dispositivi Surface con SEMM
 
@@ -26,12 +27,13 @@ Con la modalità di gestione di Surface Enterprise (SEMM) Microsoft, è possibil
 
 Per una panoramica più di alto livello di SEMM, vedi la [modalità di gestione Microsoft Surface Enterprise](https://technet.microsoft.com/itpro/surface/surface-enterprise-management-mode).
 
-Un metodo semplificato per la gestione del firmware dal cloud su Surface Pro 7, Surface Pro X e Surface laptop 3 è ora disponibile in anteprima pubblica. Per altre informazioni, vedere [gestione di Intune delle impostazioni di Surface UEFI](surface-manage-dfci-guide.md).
+In alternativa a SEMM, i dispositivi Surface più recenti supportano la gestione remota di un sottoinsieme di impostazioni del firmware tramite Microsoft Intune. Per altre informazioni, vedere [gestione di Intune delle impostazioni di Surface UEFI](surface-manage-dfci-guide.md).
 
 > [!NOTE]
 > SEMM è supportato solo in Surface Pro X tramite il gestore UEFI. Per altre informazioni, vedere [distribuzione, gestione e manutenzione di Surface Pro X](surface-pro-arm-app-management.md).
 
 #### Scaricare e installare Microsoft Surface UEFI Configurator
+
 Lo strumento usato per creare pacchetti di SEMM è Microsoft Surface UEFI Configurator. È possibile scaricare Microsoft Surface UEFI Configurator dalla pagina [strumenti superficie per it](https://www.microsoft.com/download/details.aspx?id=46703) nell'area download Microsoft.
 Eseguire il file di Windows Installer (MSI) Microsoft Surface UEFI Configurator per avviare l'installazione dello strumento. Al termine del programma di installazione, trova Microsoft Surface UEFI Configurator nella sezione tutte le app del menu Start.
 

@@ -11,18 +11,18 @@ ms.author: greglin
 ms.topic: article
 ms.reviewer: tokatz
 manager: laurawi
-ms.date: 10/26/2020
-ms.openlocfilehash: d211ceea20b89824d45e433cf9670abe137130a0
-ms.sourcegitcommit: 07ac65bf70c8c6efcda28eecc3013983fc386e0d
+ms.date: 01/15/2021
+ms.openlocfilehash: 69ca7bc7383a122dfd4f069135319b92ff7edfb0
+ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "11136146"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271380"
 ---
 # Ottimizzare la connettività Wi-Fi per i dispositivi Surface
 
 
-Per rimanere in contatto con la durata della batteria giornaliera, i dispositivi Surface implementano le impostazioni di connettività wireless che equilibrano le prestazioni e la conservazione dell'energia. Al di fuori degli scenari di mobilità più esigenti, gli utenti possono mantenere una connettività wireless sufficiente senza modificare le impostazioni di rete predefinite o le opzioni correlate. Questa pagina evidenzia le principali considerazioni sulla connettività wireless in scenari mobili con i più recenti dispositivi Surface, tra cui Surface Pro 7, Surface Pro X, Surface laptop 3, Surface Book 3, Surface Go 2 e Surface laptop go.  
+Per rimanere in contatto con la durata della batteria giornaliera, i dispositivi Surface implementano le impostazioni di connettività wireless che equilibrano le prestazioni e la conservazione dell'energia. Al di fuori degli scenari di mobilità più esigenti, gli utenti possono mantenere una connettività wireless sufficiente senza modificare le impostazioni di rete predefinite o le opzioni correlate. Questa pagina evidenzia le principali considerazioni relative alla connettività wireless in scenari per dispositivi mobili con i più recenti sistemi Surface, tra cui Surface Pro 7 +, Surface Laptop Go, Surface Go 2, Surface Pro X, Surface laptop 3, Surface Book 3 e Surface Pro 7.
 
 ## Prerequisiti
 
@@ -35,7 +35,7 @@ Se si gestisce una rete wireless in genere accessibile da diversi tipi di dispos
 - **802.11 r.** "**Transizione BSS veloce"** accelera la connessione ai nuovi punti di accesso wireless riducendo il numero di fotogrammi necessari prima che il dispositivo possa accedere ad un altro AP mentre ci si sposta con il dispositivo. Nella nuova generazione di dispositivi Surface rilasciati a partire da 2019 gli utenti finali possono accedere alle impostazioni di aggressività del roaming nel dispositivo. Anche se non è consigliabile modificare le impostazioni predefinite, gli utenti devono essere consapevoli di questa funzionalità e capire in che modo le impostazioni specifiche possono influire sulla possibilità di rimanere connesse.
 - **802.11 k.** **"Report Neighbor"** fornisce i dispositivi con informazioni sulle condizioni correnti nei punti di accesso adiacenti. Può aiutare il dispositivo Surface a scegliere l'AP migliore usando criteri diversi dalla potenza del segnale, ad esempio l'utilizzo di AP.
 
-I dispositivi Surface specifici possono anche usare i frame di gestione della transizione BSS "802.11 v", che funziona in modo molto simile a 802.11 k per fornire informazioni sulle vicinanze del candidato APs. Questi includono Surface go, Surface Pro 7, Surface Pro X e Surface laptop 3. 
+I dispositivi Surface specifici possono anche usare i frame di gestione della transizione BSS "802.11 v", che funziona in modo molto simile a 802.11 k per fornire informazioni sulle vicinanze del candidato APs. Questi includono Surface Pro 7 +, Surface go, Surface Go 2, Surface Pro 7, Surface Pro X e Surface laptop 3. 
 
 ## Gestione delle impostazioni utente
 
@@ -97,7 +97,7 @@ Abbandonare l'impostazione di aggressività del roaming nello stato predefinito,
 1. Accedere alla pagina **Start > pannello di controllo**  >  **e**alla  >  **rete Internet e al centro condivisione.**
 2. In **connessioni** selezionare **Wi-Fi** e quindi selezionare **Proprietà.**
 3. Selezionare **client per Microsoft Networks** e quindi selezionare **Configura**
-4. Selezionare **Advanced**l'  >  **aggressività del roaming** avanzato e scegliere il valore preferito nel menu a discesa.
+4. Selezionare **** l'  >  **aggressività del roaming** avanzato e scegliere il valore preferito nel menu a discesa.
 
 ![* Impostazioni di aggressività del roaming-QualComm *](images/wifi-roaming.png) <br>
 
