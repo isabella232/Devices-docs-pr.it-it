@@ -14,21 +14,21 @@ metadata:
   author: greg-lindsay
   ms.author: greglin
   manager: laurawi
-  ms.openlocfilehash: fb4d07fb216a283a2a6d7b576e06cdfe7dc74a47
-  ms.sourcegitcommit: 880980b64bb394423280acbcb1653012a4de5642
+  ms.openlocfilehash: b4161e3e041b8c6838ad7a498bb0c50784485fea
+  ms.sourcegitcommit: 9bf5c4367b471f77949482390fddf8ff137f60b5
   ms.translationtype: HT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 01/22/2021
-  ms.locfileid: "11297069"
+  ms.lasthandoff: 01/25/2021
+  ms.locfileid: "11297899"
 landingContent:
 - title: Preparati per Surface Hub 2S
   linkLists:
   - linkListType: whats-new
     links:
+    - text: Aggiornamento all'implementazione del team Windows 10
+      url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/update-to-the-windows-10-team-rollout/ba-p/1669655
     - text: Installare e montare Surface Hub 2S 85" (guida di preparazione)
       url: surface-hub-2s-85-install-mount.md
-    - text: Installare l'aggiornamento 2020 di Windows 10 Team
-      url: surface-hub-2020-update.md
     - text: Novità dell'aggiornamento 2020 di Windows 10 Team
       url: surface-hub-2020-update-whats-new.md
     - text: Surface Hub 2S copre il divario tra lo spazio digitale e quello fisico negli spazi di lavoro ibridi odierni
