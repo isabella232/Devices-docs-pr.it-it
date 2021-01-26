@@ -12,17 +12,17 @@ ms.author: greglin
 ms.topic: article
 ms.reviewer: hachidan
 manager: laurawi
-ms.date: 01/15/2021
-ms.openlocfilehash: d8d47db3bd6f69783670b285a797337373e02d72
-ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
+ms.date: 01/25/2021
+ms.openlocfilehash: af9eac171dea5d29ce9776766a2c5842bea9eb8c
+ms.sourcegitcommit: 1b12ea363785697ddc705b0a0cc7bb35cad6b327
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "11271430"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "11300697"
 ---
 # Gestire le impostazioni UEFI di Surface
 
-Tutte le generazioni correnti e future dei dispositivi Surface usano un'interfaccia UEFI (Unified Extensible Firmware Interface) univoca progettata da Microsoft in modo specifico per questi dispositivi. Le impostazioni di Surface UEFI offrono la possibilità di abilitare o disabilitare dispositivi e componenti incorporati, proteggere le impostazioni UEFI e modificare le impostazioni di avvio del dispositivo Surface. 
+ I dispositivi Surface PC sono progettati per utilizzare un'interfaccia UEFI (Unified Extensible Firmware Interface) univoca progettata da Microsoft in modo specifico per questi dispositivi. Le impostazioni di Surface UEFI offrono la possibilità di abilitare o disabilitare dispositivi e componenti incorporati, proteggere le impostazioni UEFI e modificare le impostazioni di avvio del dispositivo Surface. 
 
 ## Prodotti supportati
 
@@ -32,7 +32,7 @@ La gestione UEFI è supportata nelle operazioni seguenti:
 - Superficie portatile (1a Gen), Surface laptop 2, Surface laptop 3, Surface laptop go
 - Surface Studio (1a generazione), Surface Studio 2
 - Surface Book, Surface Book 2, Surface Book 3
-- Superficie andare, superficie andare 2
+- Superficie andare, superficie andare 2[ <sup> 1 </sup> ](#references)
 
 ## Supporto per la gestione basata sul cloud
 
@@ -227,6 +227,10 @@ Quando aggiorni il firmware del dispositivo Surface, tramite Windows Update o un
 ![Schermata di avvio di Surface indicante che l'avvio protetto è stato disabilitato.](images/manage-surface-uefi-fig18.png "Surface boot screen that indicates Secure Boot has been disabled")
 
 *Figura 20. Schermata di avvio di Surface indicante che l'avvio protetto è stato disabilitato nelle impostazioni UEFI di Surface*
+
+## Riferimenti
+
+1. Superficie go e Surface Go 2 usare un UEFI di terze parti e non supportare DFCI. 
 
 ## Argomenti correlati
 
