@@ -9,27 +9,24 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 12/21/2020
+ms.date: 11/26/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 7fe02f0e377c8ac586f7e60387f1d8e1f071a15a
-ms.sourcegitcommit: e83316c8b5e3c29b0af0730ef05fd8b96b0d0cdd
+ms.openlocfilehash: 093185838250e9b52c078ece4e206639f8b7a630
+ms.sourcegitcommit: 38bb1d92064fb1ab0fe69f9c88ef6e44c9232b97
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "11238101"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "11304504"
 ---
 # Surface Hub 2S 85 "panoramica & specifiche tecniche
 
-La versione di 85 "della famiglia di Surface Hub porta l'esperienza di Surface Hub 2S in spazi che richiedono uno schermo più grande, ad esempio sale conferenze, sale riunioni o spazi di calco più grandi. Disponibile a partire da gennaio 2021, Surface Hub 2S 85 "offre le seguenti esperienze:
+La versione di 85 "della famiglia di Surface Hub porta l'esperienza di Surface Hub 2S in spazi che richiedono uno schermo più grande, ad esempio sale conferenze, sale riunioni o spazi di calco più grandi. Surface Hub 2S 85 "offre le seguenti esperienze:
 
 - **Progettato per la collaborazione di gruppo.** Invita l'input penna simultaneo in Microsoft whiteboard e i partecipanti remoti più grandi della vita in Microsoft teams.
 - **Esperienza di Surface Hub 2S coerente.** Offre lo stesso design premium, tecnologia di visualizzazione 4K, tocco, penna/inchiostro, cartuccia di calcolo e supporto per la fotocamera come hub di Surface 2S 50 ".
 - **Integrazione con sistemi A/V esistenti e nuovi.** Si unisce alle periferiche certificate Microsoft teams e si integra con le camere Microsoft teams.
 
 ![Surface Hub 2S 85 "](images/hub-2s-85.png)
-
-> [!NOTE]
-> *Surface Hub 2S in arrivo in 2021; Prodotti pre-release mostrati; i prodotti e le caratteristiche soggetti a certificazione/approvazione normativa possono cambiare e possono variare in base al paese o all'area geografica.*
 
 ## Surface Hub 2S 85 "specifiche tecniche
 
@@ -64,6 +61,6 @@ La versione di 85 "della famiglia di Surface Hub porta l'esperienza di Surface H
 4. Il sensore Doppler non è disponibile in Hong Kong, India, Kuwait e Oman.
 5. La garanzia limitata Microsoft è in aggiunta ai diritti di diritto dei consumatori. 
 
-## Scopri di più
+## Altre informazioni
 
 - [Surface Hub 2S 85 "-collaborazione su vasta scala](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/surface-hub-2s-85-quot-collaboration-at-a-massive-scale/ba-p/1669717)
