@@ -12,12 +12,12 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 07/31/2019
 ms.localizationpriority: medium
-ms.openlocfilehash: 1c8d8b6d89ec1a20550b7aa13c82c73a239c3965
-ms.sourcegitcommit: d0a5c8fb2b37eb11858c7be4549e55c4b36d7471
+ms.openlocfilehash: 73c7cf5a387bf7506bb69f62100171df4d94ad2d
+ms.sourcegitcommit: 25b8d880c6438f94b008f47b4fecc3aa4c473e85
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "11104818"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "11304819"
 ---
 # Ripristinare o recuperare un hub Surface
 
@@ -31,7 +31,7 @@ Questo articolo descrive come reimpostare o recuperare un hub di Surface Microso
 - Informazioni sulla registrazione di gestione di dispositivi mobili (MDM)
 - Informazioni sulla configurazione impostate usando MDM o l'app impostazioni
 
-[Il recupero di un hub Surface dal cloud](#recover-a-surface-hub-from-the-cloud) rimuove anche queste informazioni. Inoltre, l'hub Surface Scarica una nuova immagine del sistema operativo e la installa. Puoi specificare se il processo di ripristino mantiene altre informazioni memorizzate nell'hub Surface.
+[Il recupero di un hub Surface dal cloud](#recover-a-surface-hub-from-the-cloud) rimuove anche queste informazioni. Inoltre, l'hub Surface Scarica una nuova immagine del sistema operativo e la installa. Puoi specificare se il processo di ripristino mantiene altre informazioni memorizzate nell'hub Surface. La stessa immagine del sistema operativo viene usata dallo [strumento di ripristino di Surface Hub](surface-hub-recovery-tool.md) se è necessario recuperare un hub Surface per cui non è possibile usare nessuna di queste opzioni.
 
 ## Reimpostare un hub di Surface
 
@@ -51,12 +51,15 @@ Durante il processo di reimpostazione, se viene visualizzata una schermata vuota
 
    ![Immagine che mostra l'app impostazioni per Surface Hub.](images/sh-settings.png)
 
-1. Selezionare **aggiorna & sicurezza**.
+2. Selezionare **aggiorna & sicurezza**.
 
    ![Immagine che mostra il gruppo di sicurezza Update & nell'app impostazioni per Surface Hub.](images/sh-settings-update-security.png)
 
-1. Selezionare **ripristino**e quindi, in **Reimposta dispositivo**, selezionare inizia **.**
+3. Selezionare **ripristino**e quindi, in **Reimposta dispositivo**, selezionare inizia **.**
 
+   > [!IMPORTANT]
+   > Verificare di avere la chiave BitLocker disponibile prima di reimpostare il dispositivo, dato che verrà richiesto in un secondo momento. Per altre informazioni, vedere [salvare la chiave BitLocker](save-bitlocker-key-surface-hub.md). Quando l'hub viene riavviato nella partizione di ripristino, verrà chiesto di immettere la chiave BitLocker. Se si ignora il messaggio, il comando Reimposta non riesce.
+   
    ![Immagine che mostra l'opzione Reimposta dispositivo nell'app impostazioni per hub Surface.](images/sh-settings-reset-device.png)
 
    Al termine del processo di reimpostazione, l'hub Surface avvia di nuovo il [programma prima esecuzione](first-run-program-surface-hub.md) . Se il processo di reimpostazione incontra un problema, rimanda il mozzo della superficie all'immagine del sistema operativo esistente in precedenza e quindi Visualizza la schermata iniziale.
@@ -81,7 +84,7 @@ Se l'account del dispositivo entra in uno stato instabile o se l'account dell'am
 
 1. Nell'hub Surface selezionare Aggiorna **Impostazioni** &gt; **&** &gt; **ripristino**della sicurezza.
 
-1. In **Recupera dal cloud**selezionare **Riavvia ora**.
+2. In **Recupera dal cloud**selezionare **Riavvia ora**.
 
    ![ripristino dal cloud](images/recover-from-the-cloud.png)
 
@@ -91,27 +94,27 @@ In rari casi, un dispositivo Surface Hub potrebbe riscontrare un errore durante 
 
 1. Individuare l'interruttore di alimentazione nella parte inferiore del mozzo della superficie. L'interruttore di alimentazione si trova accanto alla connessione del cavo di alimentazione. Per altre informazioni sull'interruttore di alimentazione, vedere la [Guida alla preparazione del sito hub Surface (PDF)](surface-hub-site-readiness-guide.md).
 
-1. Mentre l'hub Surface Visualizza la schermata iniziale, usare l'interruttore Power per disattivare l'hub Surface.
+2. Mentre l'hub Surface Visualizza la schermata iniziale, usare l'interruttore Power per disattivare l'hub Surface.
 
-1. Usare l'interruttore di accensione per riattivare il mozzo della superficie. Il dispositivo viene avviato e viene visualizzata la schermata del logo Surface Hub. Quando vedi puntini di filatura sotto il logo di Surface Hub, usa l'interruttore Power per disattivare di nuovo il mozzo della superficie.  
+3. Usare l'interruttore di accensione per riattivare il mozzo della superficie. Il dispositivo viene avviato e viene visualizzata la schermata del logo Surface Hub. Quando vedi puntini di filatura sotto il logo di Surface Hub, usa l'interruttore Power per disattivare di nuovo il mozzo della superficie.  
 
-1. Ripetere il passaggio 3 3 volte oppure finché l'hub Surface non Visualizza il messaggio "preparazione della riparazione automatica". Dopo aver visualizzato questo messaggio, l'hub Surface Visualizza la schermata di ripristino di Windows.
+4. Ripetere il passaggio 3 3 volte oppure finché l'hub Surface non Visualizza il messaggio "preparazione della riparazione automatica". Dopo aver visualizzato questo messaggio, l'hub Surface Visualizza la schermata di ripristino di Windows.
 
-1. Selezionare **Opzioni avanzate**.
+5. Selezionare **Opzioni avanzate**.
 
-1. Selezionare **Recupera dal cloud**. (Facoltativamente, è possibile selezionare **Reimposta**. Tuttavia, il **recupero dal cloud** è l'approccio consigliato.
+6. Selezionare **Recupera dal cloud**. (Facoltativamente, è possibile selezionare **Reimposta**. Tuttavia, il **recupero dal cloud** è l'approccio consigliato.
 
    ![Ripristino dal cloud](images/recover-from-cloud.png)
-1. Se viene chiesto di immettere la chiave BitLocker, eseguire una delle operazioni seguenti:
+7. Se viene chiesto di immettere la chiave BitLocker, eseguire una delle operazioni seguenti:
 
    - Per mantenere le informazioni protette da BitLocker nell'hub di Surface, immettere la chiave BitLocker.
    - Per annullare le informazioni protette, selezionare **Ignora l'unità**  
 
-1. Quando viene richiesto, selezionare **Reinstalla**.
+8. Quando viene richiesto, selezionare **Reinstalla**.
 
     ![Reinstalla](images/reinstall.png)
 
-1. Per ripartizionare il disco, selezionare **Sì**.
+9. Per ripartizionare il disco, selezionare **Sì**.
 
    ![Ripartizione](images/repartition.png)
 

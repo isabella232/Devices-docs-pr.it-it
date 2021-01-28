@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 12/05/2019
 ms.localizationpriority: Medium
-ms.openlocfilehash: e3b1e380f9776fc56e99b8d4e35f708aa952759c
-ms.sourcegitcommit: e075b46f14b730464d66246b0280ef2cfa16b3fe
+ms.openlocfilehash: 88f5d912f7505aecaa5bd7ba659acab2d6c4fa1a
+ms.sourcegitcommit: 25b8d880c6438f94b008f47b4fecc3aa4c473e85
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "10963577"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "11304809"
 ---
 # Reset e ripristino per Surface Hub 2S
 
@@ -26,20 +26,23 @@ Per iniziare, accedi a Surface Hub 2S con le credenziali di amministratore, Apri
 
 ## Reimpostare il dispositivo
 
+   > [!IMPORTANT]
+   > Verificare di avere la chiave BitLocker disponibile prima di reimpostare il dispositivo, dato che verrà richiesto in un secondo momento. Per altre informazioni, vedere [salvare la chiave BitLocker](save-bitlocker-key-surface-hub.md).
+
 1. Per reimpostare il dispositivo, selezionare **inizia**.
 
 2. Quando viene visualizzata la finestra **pronto per reimpostare il dispositivo** , selezionare **Reimposta**. 
   
-   > [!NOTE]
-   > Surface Hub 2S reinstalla il sistema operativo dalla partizione di ripristino. Il completamento può richiedere fino a un'ora.
+   > [!IMPORTANT]
+   > Quando l'hub viene riavviato nella partizione di ripristino, verrà chiesto di immettere la chiave BitLocker. Se si ignora il messaggio, il comando Reimposta non riesce. Dopo aver immesso la chiave BitLocker, l'hub reinstalla il sistema operativo dalla partizione di ripristino. Il completamento può richiedere fino a un'ora.
   
 3. Per riconfigurare il dispositivo, eseguire il programma di installazione per la prima volta.
 
 4. Se si gestisce il dispositivo con Microsoft Intune o un'altra soluzione di gestione di dispositivi mobili, ritirare ed eliminare il record precedente e quindi ripetere la registrazione del nuovo dispositivo. Per altre informazioni, vedere [rimuovere i dispositivi tramite wipe, ritirarsi o annullare la registrazione manuale del dispositivo](https://docs.microsoft.com/intune/devices-wipe).
 
-> [!div class="mx-imgBorder"]
-> ![* Reset e ripristino per Surface Hub 2S *](images/sh2-reset.png)
-<br/>*Figura 1. Reset e ripristino per Surface Hub 2S* 
+   > [!div class="mx-imgBorder"]
+   > ![* Reset e ripristino per Surface Hub 2S *](images/sh2-reset.png)
+   <br/>*Figura 1. Reset e ripristino per Surface Hub 2S* 
 
 ## Recuperare Surface Hub 2S usando un'unità di ripristino USB
 
@@ -64,8 +67,8 @@ Con Surface Hub 2S puoi reinstallare il dispositivo usando un'immagine di ripris
    1. Continua a premere entrambi i pulsanti finché non viene visualizzato il logo Windows.
    1. Rilasciare il pulsante di alimentazione, ma continuare a tenere premuto il pulsante volume giù fino a quando non inizia l'interfaccia utente di installazione.
 
-   ![* Usare i pulsanti volume giù e Power per avviare il ripristino *](images/sh2-keypad.png) <br>
-   **Figura 2. Pulsanti di alimentazione e di volume**
+      ![* Usare i pulsanti volume giù e Power per avviare il ripristino *](images/sh2-keypad.png)
+      <br>*Figura 2. Pulsanti di alimentazione e di volume*
 
 1. Nella schermata Selezione lingua selezionare la lingua di visualizzazione per il mozzo della superficie 2S.
 

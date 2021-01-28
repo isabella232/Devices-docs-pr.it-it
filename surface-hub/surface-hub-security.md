@@ -9,18 +9,18 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 03/27/2020
+ms.date: 01/26/2021
 ms.localizationpriority: High
-ms.openlocfilehash: f6022c4fd16cd8afbbea892e73ad831f12b10eaa
-ms.sourcegitcommit: ac34f0ec1a9df74ea688bf0da2a51fadf5139a41
+ms.openlocfilehash: 446166618161fc54a77bab94b2d61ad85359a082
+ms.sourcegitcommit: 25b8d880c6438f94b008f47b4fecc3aa4c473e85
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "10934856"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "11304849"
 ---
 # Panoramica della sicurezza di Surface Hub
 
-Surface Hub offre un dispositivo di elaborazione bloccato con il firmware della piattaforma personalizzata che gestisce il sistema operativo Windows 10 team. Il dispositivo risultante utilizza il tradizionale chiosco multimediale di sicurezza "monouso", segue il metodo "eseguire solo ciò di cui si ha bisogno" e offre un approccio moderno. Sviluppato per supportare una ricca esperienza utente collaborativa, Surface Hub è protetto dalle minacce alla sicurezza in continua evoluzione.
+Surface Hub offre un'esperienza simile a un'appliance bloccata con il firmware della piattaforma personalizzata che gestisce il sistema operativo del team Windows 10. Il dispositivo risultante utilizza il tradizionale chiosco multimediale di sicurezza "monouso", segue il metodo "eseguire solo ciò di cui si ha bisogno" e offre un approccio moderno. Sviluppato per supportare una ricca esperienza utente collaborativa, Surface Hub è protetto dalle minacce alla sicurezza in continua evoluzione.
 
 Basato su Windows 10, Surface Hub offre una sicurezza moderna di classe enterprise che consente agli amministratori IT di applicare la protezione dei dati con BitLocker, Trusted Platform Module 2.0 (TPM), oltre alla sicurezza basata sul cloud con Windows Defender (noto anche come Microsoft Defender).
 
