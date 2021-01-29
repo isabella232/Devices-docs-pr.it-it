@@ -14,18 +14,20 @@ metadata:
   author: greg-lindsay
   ms.author: greglin
   manager: laurawi
-  ms.openlocfilehash: b4161e3e041b8c6838ad7a498bb0c50784485fea
-  ms.sourcegitcommit: 9bf5c4367b471f77949482390fddf8ff137f60b5
+  ms.openlocfilehash: 655b10e575d1a7057e829c0312b586c2980462f4
+  ms.sourcegitcommit: 046623bfcc01a2daa3eacd229a6c5e70365d25b6
   ms.translationtype: HT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 01/25/2021
-  ms.locfileid: "11297899"
+  ms.lasthandoff: 01/29/2021
+  ms.locfileid: "11306086"
 landingContent:
 - title: Preparati per Surface Hub 2S
   linkLists:
   - linkListType: whats-new
     links:
-    - text: Aggiornamento all'implementazione del team Windows 10
+    - text: Accessori audio e video certificati da Microsoft Teams per Surface Hub 2S
+      url: surface-hub-2s-certifications.md
+    - text: Aggiornamento all'implementazione di Windows 10 Team
       url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/update-to-the-windows-10-team-rollout/ba-p/1669655
     - text: Installare e montare Surface Hub 2S 85" (guida di preparazione)
       url: surface-hub-2s-85-install-mount.md
