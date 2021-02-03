@@ -1,6 +1,6 @@
 ---
-title: PowerShell per Surface Hub (Surface Hub)
-description: Script di PowerShell che permettono di configurare e gestire il dispositivo Microsoft Surface Hub.
+title: PowerShell per il mozzo della superficie (V1)
+description: Questa pagina include gli script di PowerShell destinati all'hub della superficie originale (V1)
 ms.assetid: 3EF48F63-8E4C-4D74-ACD5-461F1C653784
 ms.reviewer: ''
 manager: laurawi
@@ -10,18 +10,19 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 01/10/2018
+ms.date: 02/01/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 92b42139020db13251fa6c5f8439d7084a61a132
-ms.sourcegitcommit: 5d02cca9ca8c0a252798c2fc0a89dbda81911c44
+ms.openlocfilehash: c0fa06153dc5597827f2973ecc9f728e35d79e85
+ms.sourcegitcommit: 5cfac94c220c8a8d4620c6a7fa75ae2fae089c7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11195381"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "11312002"
 ---
-# PowerShell per Surface Hub
+# PowerShell per il mozzo della superficie (V1)
 
-Script di PowerShell che permettono di configurare e gestire il dispositivo Microsoft Surface Hub.
+> [!NOTE]
+ >Questa pagina include gli script di PowerShell progettati per l'hub Surface originale (V1). Per gli script più recenti per la creazione di account per Surface Hub 2S, Vedi [creare l'account del dispositivo Surface Hub 2S](surface-hub-2s-account.md).
 
 -   [Script di PowerShell per gli amministratori di Surface Hub](#scripts-for-admins)
     -   [Creare un account locale](#create-on-premises-ps-scripts)
@@ -30,7 +31,7 @@ Script di PowerShell che permettono di configurare e gestire il dispositivo Micr
     -   [Abilitare Skype for Business (EnableSfb.ps1)](#enable-sfb-ps-scripts)
 -   [Cmdlet utili](#useful-cmdlets)
     -   [Creazione di criteri di Exchange ActiveSync compatibili con Surface Hub](#create-compatible-as-policy)
-    -   [Consentire ID di dispositivo per ActiveSync](#whitelisting-device-ids-cmdlet)
+    -   [Consentire ID di dispositivo per ActiveSync](#allowing-device-ids-for-activesync)
     -   [Accettazione e rifiuto automatici delle convocazioni riunione](#auto-accept-meetings-cmdlet)
     -   [Accettazione di convocazioni riunione esterne](#accept-ext-meetings-cmdlet)
     
@@ -993,7 +994,7 @@ else
 
 ## <a href="" id="acct-verification-ps-scripts"></a>Script di verifica degli account
 
-Questo script convaliderà l'account del dispositivo creato in precedenza in un dispositivo Surface Hub, indipendentemente dal metodo di creazione usato. Questo script è sostanzialmente di tipo operazione riuscita/operazione non riuscita. Se uno dei test restituisce un errore, visualizzerai un messaggio di errore dettagliato, mentre se tutti i test hanno esito positivo, il risultato finale sarà un rapporto breve. Puoi ad esempio visualizzare:
+Questo script convalida l'account di dispositivo creato in precedenza su Surface Hub e Surface Hub 2S, indipendentemente dal metodo usato per crearlo. Questo script è sostanzialmente di tipo operazione riuscita/operazione non riuscita. Se uno dei test restituisce un errore, visualizzerai un messaggio di errore dettagliato, mentre se tutti i test hanno esito positivo, il risultato finale sarà un rapporto breve. Puoi ad esempio visualizzare:
 
 ``` syntax
 15 tests executed
@@ -1642,7 +1643,7 @@ A questo punto l'account del dispositivo deve semplicemente essere riconvertito 
 Set-Mailbox $strRoomUpn -Type Room
 ```
 
-### <a href="" id="whitelisting-device-ids-cmdlet"></a>Consentire ID di dispositivo per ActiveSync
+### Consentire ID di dispositivo per ActiveSync
 
 Per consentire un account `$strRoomUpn`, esegui il comando seguente:
 

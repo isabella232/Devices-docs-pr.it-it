@@ -12,12 +12,12 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 06/20/2019
 ms.localizationpriority: medium
-ms.openlocfilehash: 6e93069c2d90bdc4c2f505bc28ba0ec1a4f08076
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: b5f828ee6757c150b1287e8210c81592e970b74a
+ms.sourcegitcommit: 5cfac94c220c8a8d4620c6a7fa75ae2fae089c7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833368"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "11311962"
 ---
 # Applicazione di criteri ActiveSync agli account del dispositivo - Surface Hub
 
@@ -31,17 +31,15 @@ Per il corretto funzionamento di queste funzionalità, i criteri di ActiveSync p
 
 ## Consentire il DeviceID
 
-
-L'organizzazione potrebbe disporre di un criterio globale che impedisce la sincronizzazione degli account del dispositivo configurati nei dispositivi Surface Hub. Per configurare questa proprietà, vedi [Consentire ID di dispositivo per ActiveSync](appendix-a-powershell-scripts-for-surface-hub.md#whitelisting-device-ids-cmdlet).
+L'organizzazione potrebbe disporre di un criterio globale che impedisce la sincronizzazione degli account del dispositivo configurati nei dispositivi Surface Hub. Per configurare questa proprietà, vedi [Consentire ID di dispositivo per ActiveSync](appendix-a-powershell-scripts-for-surface-hub.md#allowing-device-ids-for-activesync).
 
 ## Impostazione di PasswordEnabled
 
-
 L'account del dispositivo deve disporre di un criterio di ActiveSync con l'attributo **PasswordEnabled** impostato su False o 0. Per configurare questa proprietà, vedi [Creare un criterio di Microsoft Exchange ActiveSync compatibile con Surface Hub](appendix-a-powershell-scripts-for-surface-hub.md#create-compatible-as-policy).
 
- 
+ 
 
- 
+ 
 
 
 

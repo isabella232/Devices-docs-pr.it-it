@@ -13,21 +13,26 @@ ms.reviewer: scottmca
 ms.localizationpriority: medium
 ms.audience: itpro
 manager: jarrettr
+ms.date: 02/02/2021
 appliesto:
 - Surface Laptop (1st Gen)
 - Surface Laptop 2
 - Surface Laptop 3
-ms.openlocfilehash: d7ae6fc434f77cad86e73f111243968493de4ff2
-ms.sourcegitcommit: e6224f81f8efb6ac862afec0e60e3ddb182e9e6f
+ms.openlocfilehash: fb51dd3785882e74c90d8b2717e4cc499d492d6f
+ms.sourcegitcommit: 5cfac94c220c8a8d4620c6a7fa75ae2fae089c7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "11247308"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "11312062"
 ---
 # Come abilitare la tastiera del computer portatile Surface durante la distribuzione di MDT
 
 Questo articolo risolve un approccio di distribuzione che usa Microsoft Deployment Toolkit (MDT). Puoi anche applicare queste informazioni ad altre metodologie di distribuzione. Nella maggior parte dei tipi di dispositivi Surface la tastiera dovrebbe funzionare durante l'installazione di Lite Touch (LTI). Tuttavia, Surface laptop richiede alcuni driver aggiuntivi per abilitare la tastiera. Per i dispositivi portatili Surface (1st Gen) e Surface laptop 2, è necessario preparare la struttura delle cartelle e i profili di selezione che consentono di specificare i driver della tastiera da usare durante la fase di preinstallazione di Windows (Windows PE) di LTI. Per altre informazioni sulla struttura delle cartelle, vedere [distribuire un'immagine di Windows 10 con MDT: passaggio 5: preparare il repository dei driver](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt?redirectedfrom=MSDN#step-5-prepare-the-drivers-repository).
 
+> [!TIP]    
+> Quando si usano i driver della tastiera per Surface laptop 2 e Surface laptop 3 nella stessa istanza di avvio di Windows PE, potrebbe essere necessario reimpostare manualmente il firmware se la tastiera o il touchpad non funzionano in Windows PE:
+>
+> - Premere e tenere premuto il pulsante di alimentazione per 30 secondi. Se si è connessi a un alimentatore (PSU), premere e tenere premuto il pulsante di alimentazione finché non si vede la luce alla fine del cavo PSU brevemente disattivare prima di riattivare l'elemento.
 
 > [!IMPORTANT]
 > Se si sta distribuendo un'immagine di Windows 10 a un computer portatile Surface con Windows 10 in modalità S preinstallato, vedere KB [4032347, problemi durante la distribuzione di dispositivi Windows in Surface con Windows 10 preinstallato in modalità s](https://support.microsoft.com/help/4032347/surface-preinstall-windows10-s-mode-issues).
@@ -50,78 +55,8 @@ Per aggiungere i driver della tastiera al profilo di selezione, eseguire le oper
    ![Immagine che mostra la posizione della cartella WindowsPEX64 in Deployment Workbench](./images/surface-laptop-keyboard-1.png)
 
 4. Fare clic con il pulsante destro del mouse sulla cartella **WindowsPEX64** e scegliere **Importa driver**.
+
 5. Seguire le istruzioni della procedura guidata Importa driver per importare le cartelle del driver nella cartella WindowsPEX64.  
-
-> [!NOTE]
->  Controllare il pacchetto MSI scaricato per determinare il formato e la struttura della directory.  La struttura della directory inizierà con SurfacePlatformInstaller (file MSI meno recenti) o SurfaceUpdate (file MSI più nuovi) a seconda di quando è stato rilasciato l'MSI. 
-
-Per supportare laptop Surface (1a generazione), importare le cartelle seguenti:
-
- - SurfacePlatformInstaller\Drivers\System\GPIO
- - SurfacePlatformInstaller\Drivers\System\SurfaceHidMiniDriver
- - SurfacePlatformInstaller\Drivers\System\SurfaceSerialHubDriver
- - SurfacePlatformInstaller\Drivers\System\PreciseTouch
-
-O per i file MSI più recenti che iniziano con "SurfaceUpdate", USA:
-
-- SurfaceUpdate\SerialIOGPIO
-- SurfaceUpdate\SurfaceHidMiniDriver
-- SurfaceUpdate\SurfaceSerialHubDriver
-- SurfaceUpdate\Itouch
-
-Per supportare Surface laptop 2, importare le cartelle seguenti:
-
- - SurfacePlatformInstaller\Drivers\System\GPIO
- - SurfacePlatformInstaller\Drivers\System\SurfaceHIDMiniDriver
- - SurfacePlatformInstaller\Drivers\System\SurfaceSerialHubDriver
- - SurfacePlatformInstaller\Drivers\System\I2C
- - SurfacePlatformInstaller\Drivers\System\SPI
- - SurfacePlatformInstaller\Drivers\System\UART
- - SurfacePlatformInstaller\Drivers\System\PreciseTouch
-
-O per i file MSI più recenti che iniziano con "SurfaceUpdate", USA:
-
-- SurfaceUpdate\SerialIOGPIO
-- SurfaceUpdate\IclSerialIOI2C
-- SurfaceUpdate\IclSerialIOSPI
-- SurfaceUpdate\IclSerialIOUART
-- SurfaceUpdate\SurfaceHidMini
-- SurfaceUpdate\SurfaceSerialHub
-- SurfaceUpdate\Itouch
-
- 
-Per supportare Surface laptop 3 con processore Intel, importare le cartelle seguenti:
-
-- SurfaceUpdate\IclSerialIOGPIO
-- SurfaceUpdate\IclSerialIOI2C
-- SurfaceUpdate\IclSerialIOSPI
-- SurfaceUpdate\IclSerialIOUART
-- SurfaceUpdate\SurfaceHidMini
-- SurfaceUpdate\SurfaceSerialHub
-- SurfaceUpdate\SurfaceHotPlug
-- SurfaceUpdate\Itouch
-
-L'importazione delle cartelle seguenti consentirà la funzionalità completa di tastiera, trackpad e tocco in PE per Surface laptop 3.
-
-- IclSerialIOGPIO
-- IclSerialIOI2C
-- IclSerialIOSPI
-- IclSerialIOUART
-- iTouch
-- IclChipset
-- IclChipsetLPSS
-- IclChipsetNorthpeak
-- ManagementEngine
-- SurfaceAcpiNotify
-- SurfaceBattery
-- SurfaceDockIntegration
-- SurfaceHidMini
-- SurfaceHotPlug
-- SurfaceIntegration
-- SurfaceSerialHub
-- SurfaceService
-- SurfaceStorageFwUpdate
-
 
     > [!NOTE]
     >  Controllare il pacchetto MSI scaricato per determinare il formato e la struttura della directory.  La struttura della directory inizierà con SurfacePlatformInstaller (file MSI meno recenti) o SurfaceUpdate (file MSI più nuovi) a seconda di quando è stato rilasciato l'MSI. 
@@ -153,19 +88,89 @@ L'importazione delle cartelle seguenti consentirà la funzionalità completa di 
     O per i file MSI più recenti che iniziano con "SurfaceUpdate", USA:
 
     - SurfaceUpdate\SerialIOGPIO
-    - SurfaceUpdate\IclSerialIOI2C
-    - SurfaceUpdate\IclSerialIOSPI
-    - SurfaceUpdate\IclSerialIOUART
+    - SurfaceUpdate\serialioi2c
+    - SurfaceUpdate\SerialIOSPI
+    - SurfaceUpdate\SerialIOUART
+    - SurfaceUpdate\SurfaceHidMini
+    - SurfaceUpdate\SurfaceSerialHub
+    - SurfaceUpdate\Itouch
+
+     
+    Per supportare Surface laptop 3 con processore Intel, importare le cartelle seguenti:
+
+    - SurfaceUpdate\SerialIOGPIO
+    - SurfaceUpdate\SerialIOI2C
+    - SurfaceUpdate\SerialIOSPI
+    - SurfaceUpdate\SerialIOUART
+    - SurfaceUpdate\SurfaceHidMini
+    - SurfaceUpdate\SurfaceSerialHub
+    - SurfaceUpdate\SurfaceHotPlug
+    - SurfaceUpdate\Itouch
+
+    L'importazione delle cartelle seguenti consentirà la funzionalità completa di tastiera, trackpad e tocco in PE per Surface laptop 3.
+
+    - SerialIOGPIO
+    - SerialIOI2C
+    - SerialIOSPI
+    - SerialIOUART
+    - iTouch
+    - Chipset
+    - ChipsetLPSS
+    - ChipsetNorthpeak
+    - ManagementEngine
+    - SurfaceAcpiNotify
+    - SurfaceBattery
+    - SurfaceDockIntegration
+    - SurfaceHidMini
+    - SurfaceHotPlug
+    - SurfaceIntegration
+    - SurfaceSerialHub
+    - SurfaceService
+    - SurfaceStorageFwUpdate
+
+     > [!NOTE]
+     >  Controllare il pacchetto MSI scaricato per determinare il formato e la struttura della directory.  La struttura della directory inizierà con SurfacePlatformInstaller (file MSI meno recenti) o SurfaceUpdate (file MSI più nuovi) a seconda di quando è stato rilasciato l'MSI. 
+
+     Per supportare laptop Surface (1a generazione), importare le cartelle seguenti:
+
+    - SurfacePlatformInstaller\Drivers\System\GPIO
+    - SurfacePlatformInstaller\Drivers\System\SurfaceHidMiniDriver
+    - SurfacePlatformInstaller\Drivers\System\SurfaceSerialHubDriver
+    - SurfacePlatformInstaller\Drivers\System\PreciseTouch
+
+    O per i file MSI più recenti che iniziano con "SurfaceUpdate", USA:
+
+    - SurfaceUpdate\SerialIOGPIO
+    - SurfaceUpdate\SurfaceHidMiniDriver
+    - SurfaceUpdate\SurfaceSerialHubDriver
+    - SurfaceUpdate\Itouch
+
+    Per supportare Surface laptop 2, importare le cartelle seguenti:
+
+    - SurfacePlatformInstaller\Drivers\System\GPIO
+    - SurfacePlatformInstaller\Drivers\System\SurfaceHIDMiniDriver
+    - SurfacePlatformInstaller\Drivers\System\SurfaceSerialHubDriver
+    - SurfacePlatformInstaller\Drivers\System\I2C
+    - SurfacePlatformInstaller\Drivers\System\SPI
+    - SurfacePlatformInstaller\Drivers\System\UART
+    - SurfacePlatformInstaller\Drivers\System\PreciseTouch
+
+    O per i file MSI più recenti che iniziano con "SurfaceUpdate", USA:
+
+    - SurfaceUpdate\SerialIOGPIO
+    - SurfaceUpdate\SerialIOI2C
+    - SurfaceUpdate\SerialIOSPI
+    - SurfaceUpdate\SerialIOUART
     - SurfaceUpdate\SurfaceHidMini
     - SurfaceUpdate\SurfaceSerialHub
     - SurfaceUpdate\Itouch
 
     Per supportare Surface laptop 3 con processore Intel, importare le cartelle seguenti:
 
-    - SurfaceUpdate\IclSerialIOGPIO
-    - SurfaceUpdate\IclSerialIOI2C
-    - SurfaceUpdate\IclSerialIOSPI
-    - SurfaceUpdate\IclSerialIOUART
+    - SurfaceUpdate\SerialIOGPIO
+    - SurfaceUpdate\SerialIOI2C
+    - SurfaceUpdate\SerialIOSPI
+    - SurfaceUpdate\SerialIOUART
     - SurfaceUpdate\SurfaceHidMini
     - SurfaceUpdate\SurfaceSerialHub
     - SurfaceUpdate\SurfaceHotPlug
