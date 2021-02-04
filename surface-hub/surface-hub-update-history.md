@@ -9,12 +9,12 @@ author: v-miegge
 ms.author: v-miegge
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 28f6f844818a00078f2efa812da8bdd7dc28b115
-ms.sourcegitcommit: 5cfac94c220c8a8d4620c6a7fa75ae2fae089c7f
+ms.openlocfilehash: b26351fa822f1c3bc8933578902ea304581f5e6f
+ms.sourcegitcommit: 040dffc996fa5be0d93103b5093748c8d919679e
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/03/2021
-ms.locfileid: "11311992"
+ms.locfileid: "11312712"
 ---
 # Cronologia degli aggiornamenti di Surface Hub
 
@@ -28,6 +28,20 @@ Verrà aggiornata questa pagina man mano che vengono rilasciati nuovi aggiorname
 Fare riferimento alla pagina "[informazioni importanti su Surface Hub](https://support.microsoft.com/products/surface-devices/surface-hub)" per gli argomenti correlati sulle versioni correnti e precedenti che potrebbero richiedere l'attenzione.
 
 ## Aggiornamento di Windows 10 team 2020 (20H2)
+
+<details>
+<summary>2 febbraio 2021 — aggiornamento per il team basato su KB4598291 * (OS Build 19042,789)</summary>
+
+Questo aggiornamento per Surface Hub include miglioramenti della qualità e correzioni per la sicurezza. Gli aggiornamenti principali per Surface Hub, non già descritti nella [cronologia degli aggiornamenti di Windows 10](https://support.microsoft.com/help/4581839/windows-10-update-history), includono:
+
+* Correzione che consente la sincronizzazione del calendario con Exchange per funzionare quando l'UPN dell'account del dispositivo non è uguale al relativo SMTP.
+* Aggiunge la possibilità per gli amministratori di disabilitare l'uso dell'autenticazione moderna durante la sincronizzazione del calendario con Exchange.
+* Assicura che agli utenti di Surface Hub non venga chiesto di immettere le credenziali del proxy dopo che è stata abilitata la funzionalità "Usa credenziali account dispositivo".
+* Risolve un problema in cui i controlli di aggiornamento di Windows Update e Store non vengono mai completati se è in uso un proxy che richiede l'autenticazione.
+* Migliora l'affidabilità dell'app Connect durante gli scenari di ingestione cablata.
+
+Fare riferimento alla guida per l' [amministratore di Surface Hub](https://docs.microsoft.com/surface-hub/) per abilitare/disabilitare le funzionalità e i servizi del dispositivo. *[KB4598291](https://support.microsoft.com/help/4598291)
+</details>
 
 <details>
 <summary>15 gennaio 2021 — aggiornamento per Surface Hub 2S</summary>
