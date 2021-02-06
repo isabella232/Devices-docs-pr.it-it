@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 11/26/2020
+ms.date: 02/05/2021
 ms.localizationpriority: Medium
-ms.openlocfilehash: 093185838250e9b52c078ece4e206639f8b7a630
-ms.sourcegitcommit: 38bb1d92064fb1ab0fe69f9c88ef6e44c9232b97
+ms.openlocfilehash: 01d9712bce55a6be28a58adccdc9a2eef0837c52
+ms.sourcegitcommit: 7809222a51eb184f07d6b3ffbdd04a6272b247f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "11304504"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "11314389"
 ---
 # Surface Hub 2S 85 "panoramica & specifiche tecniche
 
@@ -28,12 +28,14 @@ La versione di 85 "della famiglia di Surface Hub porta l'esperienza di Surface H
 
 ![Surface Hub 2S 85 "](images/hub-2s-85.png)
 
-## Surface Hub 2S 85 "specifiche tecniche
+## Surface Hub 2S 85" specifiche tecniche
 
 | Componente    | Descrizione                                                                                                                                                                                                                                         |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Dimensioni        | 44,5 "x 77,1" x 3,4 "<br>(1130mm x 1959mm x 85.6 mm)                                                                                                                                                                                                        |
-| Peso            | 185 lb. (84kg)                                                                                                                                                                                                                                            |
+| Dimensioni        | 44,5 "x 77,1" x 3,4 "<br>(1130 mm x 1959 mm x 85,6 mm)                                                                                                                                                                                                        |
+| Dimensioni spedizione        | 89,5 "x 62" x 22,8 "<br>(2275 mm x 1573 mm x 580 mm)                                                                                                                                                                                                        |
+| Peso            | 185 libbre (84 kg)                                                                                                                                                                                                                                            |
+| Peso spedizione            | 399 libbre (181 kg)                                                                                                                                                                                                                                            |
 | Risoluzione        | 3840 x 2160                                                                                                                                                                                                                                               |
 | Schermo           | PixelSense™ display, proporzioni 16:9, colore a 10 bit, larghezza del bordo 30,5 mm, antiriflesso, LCD IPS, tocco in cella con 20 punti di tocco simultanei                                                                                                           |
 | Calcolo           | Cartuccia di calcolo modulare<br>Processore Intel® Core™ i5 quad-core di ottava generazione, 8GB RAM, 128GB SSD <sup> 1</sup>                                                                                                                                                      |

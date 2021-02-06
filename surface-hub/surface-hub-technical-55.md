@@ -1,8 +1,8 @@
 ---
-title: Informazioni tecniche per 55 "Surface Hub
+title: Informazioni tecniche per 55 "Surface Hub (V1)
 ms.reviewer: ''
 manager: laurawi
-description: Specifiche per 55 "Surface hub"
+description: Specifiche per 55 "Surface Hub (V1)
 ms.prod: surface-hub
 ms.sitesec: library
 author: dansimp
@@ -10,14 +10,16 @@ ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 12/21/2020
-ms.openlocfilehash: e321b64ebbbc62da70cfdc1979053ee8facb7235
-ms.sourcegitcommit: e83316c8b5e3c29b0af0730ef05fd8b96b0d0cdd
+appliesto:
+- Surface Hub
+ms.openlocfilehash: 5d0c88b1e0b7fdd0f144a7ee641dcab7599c68a1
+ms.sourcegitcommit: 7809222a51eb184f07d6b3ffbdd04a6272b247f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "11238091"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "11314449"
 ---
-# Informazioni tecniche per 55 "Surface Hub
+# Informazioni tecniche per 55 "Surface Hub (V1)
 
 |
 --- | ---
@@ -103,56 +105,56 @@ RJ11, I/O in basso | ![](images/rj11.png) | Si connette ai sistemi di controllo 
 
 ## Diagrammi di porte e spazi
 
-**_Visualizzazione superiore di 55 "Surface Hub_*_
+***Visualizzazione superiore di 55 "Surface Hub***
 
 ![](images/sh-55-top.png)
 
 ---
 
 
-_*_Visualizzazione anteriore di 55 "Surface hub"_*_
+***Visualizzazione anteriore di 55 "Surface hub"***
 
 ![](images/sh-55-front.png)
 
 
 ---
 
-_*_Visualizzazione inferiore di 55 "Surface hub"_*_
+***Visualizzazione inferiore di 55 "Surface hub"***
 
 ![](images/sh-55-bottom.png)
 
 
 ---
 
-_*_Porte per PC sostitutivo su Surface Hub da 55"_*_
+***Porte per PC sostitutivo su Surface Hub da 55"***
 
 ![](images/sh-55-rpc-ports.png)
 
 
 ---
 
-_*_Tastiera sul lato destro di 55 "Surface hub"_*_
+***Tastiera sul lato destro di 55 "Surface hub"***
 
 ![](images/key-55.png)
 
 
 ---
 
-_*_Visualizzazione posteriore di 55 "Surface hub"_*_
+***Visualizzazione posteriore di 55 "Surface hub"***
 
 ![](images/sh-55-rear.png)
 
 
 ---
 
-_*_Spazi per 55 "Surface hub"_*_
+***Spazi per 55 "Surface hub"***
 
 ![](images/sh-55-clearance.png)
 
 ---
 
 
-_*_Maniglie anteriore e inferiore e spazi per 55 "Surface hub"_*_
+***Maniglie anteriore e inferiore e spazi per 55 "Surface hub"***
 
 ![](images/sh-55-hand.png)
 
@@ -160,7 +162,7 @@ _*_Maniglie anteriore e inferiore e spazi per 55 "Surface hub"_*_
 ---
 
 
-_*_Maniglie posteriore e clearance per 55 "Surface Hub_**
+***Maniglie posteriore e spazi per 55 "Surface hub"***
 
 ![](images/sh-55-hand-rear.png)
 

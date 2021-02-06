@@ -1,5 +1,5 @@
 ---
-title: Creare account del dispositivo con l&#39;interfaccia utente (Surface Hub)
+title: Creare un account di dispositivo usando l'interfaccia utente (Surface Hub V1)
 description: Se vuoi usare un&#39;interfaccia GUI, puoi creare un account per Surface Hub con l&#39;interfaccia utente di Office 365 o l&#39;interfaccia di amministrazione di Exchange.
 ms.assetid: D11BCDC4-DABA-4B9A-9ECB-58E02CC8218C
 ms.reviewer: ''
@@ -12,15 +12,17 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 05/04/2018
 ms.localizationpriority: medium
-ms.openlocfilehash: e1f82f084103d4eef942e812c5e4f0e8bf425def
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 9e6d72dc2b36bb149ee09c2edab885c80e60ac14
+ms.sourcegitcommit: 7809222a51eb184f07d6b3ffbdd04a6272b247f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10834076"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "11314469"
 ---
-# Creare account del dispositivo con l&#39;interfaccia utente (Surface Hub)
+# Creare un account di dispositivo usando l'interfaccia utente (Surface Hub V1)
 
+ > [!NOTE]
+ >Questa pagina include informazioni sull'hub della superficie originale (V1). Per Surface Hub 2S, Vedi [creare l'account del dispositivo Surface Hub 2S](surface-hub-2s-account.md).
 
 Se preferisci usare un'interfaccia utente grafica, puoi creare un account del dispositivo per Microsoft Surface Hub con l'[interfaccia utente di Office 365](#create-device-acct-o365) o l'[interfaccia di amministrazione di Exchange](#create-device-acct-eac).
 
@@ -35,7 +37,7 @@ Se preferisci usare un'interfaccia utente grafica, puoi creare un account del di
 
 ### <a href="" id="create-device-acct-o365-admin-ctr"></a>Creare l'account nell'interfaccia di amministrazione
 
-1.  Accedere a Office 365 visitandohttps://portal.office.com
+1.  Accedere a Office 365 visitando https://portal.office.com
 2.  Specifica le credenziali di amministratore per il tuo tenant di Office 365. In questo modo è possibile usare l'interfaccia di amministrazione di Microsoft 365.
 
     ![Interfaccia di amministrazione di Microsoft 365.](images/setupdeviceaccto365-02.png)
@@ -82,7 +84,7 @@ A partire da questo momento, dovrai completare il processo di creazione dell'acc
 
 Per eseguire i cmdlet usati da questi script di PowerShell, devi installare i seguenti componenti per la console PowerShell di amministrazione:
 
--   [Assistente per l'accesso ai Microsoft Online Services per professionisti IT-RTW](https://www.microsoft.com/download/details.aspx?id=41950)
+-   [Microsoft Online Services Sign-In Assistant per professionisti IT-RTW](https://www.microsoft.com/download/details.aspx?id=41950)
 -   [Modulo di Microsoft Azure Active Directory per Windows PowerShell](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/WindowsAzurePowershellGet.3f.3f.3fnew.appids)
 -   [Modulo di Windows PowerShell per Skype for Business Online](https://www.microsoft.com/download/details.aspx?id=39366)
 
@@ -357,12 +359,12 @@ Abilita l'account del dispositivo con Skype for Business.
 
 Per abilitare Skype for Business, l'ambiente deve soddisfare i prerequisiti seguenti:
 
--   Per il piano Office 365 è necessario avere il piano standalone 2 o superiore di Skype for business online. Il piano deve supportare funzionalità per conferenze.
--   Se hai bisogno di VoIP aziendale (telefonia PSTN) usando i provider di servizi di telefonia per Surface Hub, hai bisogno di Skype for business online piano Standalone 3.
--   Gli utenti tenant devono avere cassette postali di Exchange.
--   L'account di Surface Hub richiede una licenza standalone piano 2 o Skype for business online di Skype for business online, ma non richiede una licenza di Exchange Online.
+- Per il piano Office 365 è necessario avere il piano standalone 2 o superiore di Skype for business online. Il piano deve supportare funzionalità per conferenze.
+- Se hai bisogno di VoIP aziendale (telefonia PSTN) usando i provider di servizi di telefonia per Surface Hub, hai bisogno di Skype for business online piano Standalone 3.
+- Gli utenti tenant devono avere cassette postali di Exchange.
+- L'account di Surface Hub richiede una licenza standalone piano 2 o Skype for business online di Skype for business online, ma non richiede una licenza di Exchange Online.
 
-1.  Per iniziare, crea una sessione di PowerShell remota da un PC.
+1. Per iniziare, crea una sessione di PowerShell remota da un PC.
 
     ```PowerShell
     Import-Module SkypeOnlineConnector
@@ -374,19 +376,12 @@ Per abilitare Skype for Business, l'ambiente deve soddisfare i prerequisiti segu
 
 Se non sei certo del valore da usare per il parametro `RegistrarPool` nel tuo ambiente, puoi ottenere il valore da un utente Skype for Business esistente con questo cmdlet:
 
-    ```PowerShell
+ ```PowerShell
     Get-CsOnlineUser -Identity ‘alice@contoso.microsoft.com’| fl *registrarpool*
-    ```
-    
+ ```
+
 3. Per abilitare l'account di Surface Hub per Skype for Business Server, esegui questo cmdlet:
 
    ```PowerShell
    Enable-CsMeetingRoom -Identity $strEmail -RegistrarPool "sippoolbl20a04.infra.lync.com" -SipAddressType EmailAddress
    ```
-
-    
-
-
-
-
-

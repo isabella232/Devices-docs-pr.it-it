@@ -1,5 +1,5 @@
 ---
-title: Preparare l'ambiente per Microsoft Surface Hub
+title: Preparare l'ambiente per Microsoft Surface Hub (V1)
 description: Questa sezione contiene una panoramica dei passaggi necessari per preparare l'ambiente in modo da poter usare tutte le funzionalità di Microsoft Surface Hub.
 ms.assetid: 336A206C-5893-413E-A270-61BFF3DF7DA9
 ms.reviewer: ''
@@ -12,14 +12,16 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 12/04/2017
 ms.localizationpriority: medium
-ms.openlocfilehash: 0ee406df6d3022f04a80f4ce253bd76f6473f1c8
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+appliesto:
+- Surface Hub
+ms.openlocfilehash: 95b575e5213e3e11685b342cb2a7b77eb3e868a0
+ms.sourcegitcommit: 7809222a51eb184f07d6b3ffbdd04a6272b247f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10834004"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "11314399"
 ---
-# Preparare l'ambiente per Microsoft Surface Hub
+# Preparare l'ambiente per Microsoft Surface Hub (V1)
 
 
 Questa sezione contiene una panoramica delle dipendenze per l'installazione e del processo di installazione. Le info di questa sezione ti aiuteranno a preparare l'ambiente e a raccogliere le informazioni necessarie a configurare il tuo Surface Hub.

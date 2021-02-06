@@ -1,8 +1,8 @@
 ---
-title: Informazioni tecniche per 84 "Surface Hub
+title: Informazioni tecniche per 84 "Surface Hub (V1)
 ms.reviewer: ''
 manager: laurawi
-description: Specifiche per 84 "Surface hub"
+description: Specifiche per 84 "Surface Hub (V1)
 ms.prod: surface-hub
 ms.sitesec: library
 author: dansimp
@@ -10,14 +10,16 @@ ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 12/21/2020
-ms.openlocfilehash: e8f01a7e6ce087f649d99c1fc13f149fa375fc8a
-ms.sourcegitcommit: e83316c8b5e3c29b0af0730ef05fd8b96b0d0cdd
+appliesto:
+- Surface Hub
+ms.openlocfilehash: 6d309dbc05cd4fcb9abae54bd8a604787b74b312
+ms.sourcegitcommit: 7809222a51eb184f07d6b3ffbdd04a6272b247f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "11238111"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "11314459"
 ---
-# Informazioni tecniche per 84 "Surface Hub
+# Informazioni tecniche per 84 "Surface Hub (V1)
 
 |
 --- | ---
@@ -100,28 +102,28 @@ RJ11, I/O in basso | ![](images/rj11.png) | Si connette ai sistemi di controllo 
 
 ## Diagrammi di porte e spazi
 
-**_Visualizzazione superiore di 84 "Surface Hub_*_
+***Visualizzazione superiore di 84 "Surface Hub***
 
 ![](images/sh-84-top.png)
 
 ---
 
 
-_*_Visualizzazione anteriore di 84 "Surface hub"_*_
+***Visualizzazione anteriore di 84 "Surface hub"***
 
 ![](images/sh-84-front.png)
 
 
 ---
 
-_*_Visualizzazione inferiore di 84 "Surface hub"_*_
+***Visualizzazione inferiore di 84 "Surface hub"***
 
 ![](images/sh-84-bottom.png)
 
 
 ---
 
-_*_Porte per PC sostitutivo su Surface Hub da 84"_*_
+***Porte per PC sostitutivo su Surface Hub da 84"***
 
 ![](images/sh-84-rpc-ports.png)
 
@@ -129,21 +131,21 @@ _*_Porte per PC sostitutivo su Surface Hub da 84"_*_
 
 ---
 
-_*_Visualizzazione posteriore di 84 "Surface hub"_*_
+***Visualizzazione posteriore di 84 "Surface hub"***
 
 ![](images/sh-84-rear.png)
 
 
 ---
 
-_*_Spazi per 84 "Surface hub"_*_
+***Spazi per 84 "Surface hub"***
 
 ![](images/sh-84-clearance.png)
 
 ---
 
 
-_*_Maniglie di sollevamento rimovibili in 84 "Surface Hub_*_
+***Maniglie di sollevamento rimovibili in 84 "Surface Hub***
 
 ![](images/sh-84-hand.png)
 
@@ -151,17 +153,17 @@ _*_Maniglie di sollevamento rimovibili in 84 "Surface Hub_*_
 ---
 
 
-_*_Thread di montaggio a muro sul retro di 84 "Surface Hub_*_
+***Thread di montaggio a muro sul retro di 84 "Surface Hub***
 
 ![](images/sh-84-wall.png)
 
 ---
-_*_Maniglie di sollevamento nella vista superiore di 84 "Surface hub"_*_
+***Maniglie di sollevamento nella vista superiore di 84 "Surface hub"***
 
 ![](images/sh-84-hand-top.png)
 
 ---
-_*_Vista laterale di 84 "Surface Hub_**
+***Vista laterale di 84 "Surface hub"***
 
 ![](images/sh-84-side.png)
 
