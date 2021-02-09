@@ -14,12 +14,12 @@ ms.date: 02/01/2021
 ms.localizationpriority: medium
 appliesto:
 - Surface Hub
-ms.openlocfilehash: 09d600efbf07bb58de1b5ebffcb6731e4125a62d
-ms.sourcegitcommit: 7809222a51eb184f07d6b3ffbdd04a6272b247f9
+ms.openlocfilehash: 73c028357849cd660d3b8720aaaa28aade12fea1
+ms.sourcegitcommit: 32b6c25698479fa289f642c5b5761ff3be15b686
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "11314429"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "11317980"
 ---
 # PowerShell per il mozzo della superficie (V1)
 
@@ -68,11 +68,11 @@ Che cosa serve per eseguire gli script?
 
 Gli script di creazione degli account provvederanno a:
 
--   Richiedere le credenziali di amministratore
--   Creare account del dispositivo nel tuo dominio/tenant
--   Creare o assegnare criteri di ActiveSync compatibili con Surface Hub per gli account del dispositivo
+-   Richiedere le credenziali di amministratore.
+-   Creare account di dispositivo nel dominio/tenant.
+-   Crea o assegna un criterio ActiveSync compatibile con un hub Surface agli account del dispositivo.
 -   Impostare diversi attributi per gli account creati in Exchange e Skype for Business.
--   Assegnare licenze e autorizzazioni agli account creati
+-   Assegnare licenze e autorizzazioni agli account creati.
 
 Ecco gli attributi che vengono impostati dagli script:
 
@@ -551,7 +551,7 @@ else
 
 ### <a href="" id="create-os356-ps-scripts"></a>Creare un account del dispositivo con Office 365
 
-Crea un account come descritto in [Creare un account del dispositivo con Office 365](create-a-device-account-using-office-365.md)
+Crea un account come descritto in [creare un account di dispositivo con Office 365](create-a-device-account-using-office-365.md).
 
 ```PowerShell
 # SHAccountCreateO365.ps1
@@ -998,7 +998,7 @@ else
 
 Questo script convalida l'account di dispositivo creato in precedenza su Surface Hub e Surface Hub 2S, indipendentemente dal metodo usato per crearlo. Questo script è sostanzialmente di tipo operazione riuscita/operazione non riuscita. Se uno dei test restituisce un errore, visualizzerai un messaggio di errore dettagliato, mentre se tutti i test hanno esito positivo, il risultato finale sarà un rapporto breve. Puoi ad esempio visualizzare:
 
-``` syntax
+```console
 15 tests executed
 0 failures
 2 warnings

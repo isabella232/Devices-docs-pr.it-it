@@ -8,16 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 12/2/2020
+ms.date: 02/08/2021
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 81c224cf6c5232c4cefd4e64889bd2f724d22bac
-ms.sourcegitcommit: 1b86286bd13b13749ddbf454ae78d9a24fec44ee
+ms.openlocfilehash: d1eb3a6e01d28dc5b3239396c8149c97c0e6a91e
+ms.sourcegitcommit: 7029e80d9ca1a3de5c336cf662e566ed4b6b3e7a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "11271133"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "11319200"
 ---
 # Novità di Surface Dock 
 
@@ -106,7 +106,7 @@ Surface Dock 2 è progettato per semplificare la gestione IT, consentendo agli a
 | Alimentazione host Surflink                 | 60W                                                         | 120W                                                                                                | N/D              |
 | Potenza di caricamento USB                      | 30W                                                         | 60W                                                                                                 |                  |
 | Velocità in bit USB                        | 5 Gbps                                                      | 10 Gbps                                                                                             | 10 Gbps          |
-| Supporto per monitor                     | 2 x 4K @30fps o<br>1 x 4K @ 60fps                         | 2 x 4K @ 60fps                                                                                      | 1 x 4K @ 60fps   |
+| Supporto per monitor                     | 2 x 4K @30fps o<br>1 x 4K @ 60fps                         | 2 x 4K @ 60fps<br> o 1 x 4K @120fps                                                                                     | 1 x 4K @ 60fps   |
 | Wake-on-LAN dalla modalità standby connessa <sup> 1</sup> | Sì                                                         | Sì                                                                                                 |                  |
 | Wake-on-LAN dalle modalità di sospensione di S4/S5  | No                                                          | Sì                                                                                                 |          Sì        |
 | Avvio PXE di rete                    | Sì                                                         | Sì                                                                                                 |        Sì          |

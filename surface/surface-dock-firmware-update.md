@@ -1,6 +1,6 @@
 ---
-title: Aggiornamento del firmware Microsoft Surface Dock-informazioni tecniche per gli amministratori IT
-description: Questo articolo spiega come usare Microsoft Surface Dock Update firmware per aggiornare il firmware di Surface Dock. Una volta installato nel dispositivo Surface, aggiornerà qualsiasi Dock di superficie collegato al dispositivo Surface.
+title: Aggiornamento del firmware Microsoft Surface Dock 1
+description: Questo articolo spiega come usare l'aggiornamento del firmware Microsoft Surface dock per installare e gestire il firmware nel Dock Surface originale 1. Una volta installato nel dispositivo Surface, aggiornerà Surface Dock 1 Devices collegato al dispositivo Surface.
 ms.localizationpriority: medium
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -11,20 +11,23 @@ ms.topic: article
 ms.reviewer: scottmca
 manager: laurawi
 ms.audience: itpro
-ms.date: 8/07/2020
-ms.openlocfilehash: 9069903421d6e621dfbc31cd1cfaffb045fa9f19
-ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
+ms.date: 2/08/2021
+ms.openlocfilehash: a0acaaf0676c3f4403a2b233297781579ca1f4ae
+ms.sourcegitcommit: 7029e80d9ca1a3de5c336cf662e566ed4b6b3e7a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "11114554"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "11319210"
 ---
-# Aggiornamento del firmware Microsoft Surface Dock: informazioni tecniche per gli amministratori IT
+# Aggiornamento del firmware Microsoft Surface Dock
 
 > [!IMPORTANT]
 > Questo articolo contiene le istruzioni tecniche per gli amministratori IT. Per gli utenti privati, vedere [come aggiornare il firmware di Surface Dock](https://support.microsoft.com/help/4023478/surface-update-your-surface-dock)   nel sito del supporto tecnico Microsoft. Le istruzioni del sito di supporto sono le stesse della procedura di installazione generale di seguito, ma in questo articolo sono disponibili altre informazioni per il monitoraggio, la verifica e la distribuzione dell'aggiornamento in più dispositivi in rete.
 
-Questo articolo spiega come usare Microsoft Surface Dock Update firmware per aggiornare il firmware nel Dock Surface originale 1 e non si applica a Surface Dock 2. Una volta installato nel dispositivo Surface, aggiornerà qualsiasi Dock di superficie collegato al dispositivo Surface. 
+Questo articolo spiega come usare l'aggiornamento del firmware Microsoft Surface dock per installare e gestire il firmware nel Dock Surface originale 1. Una volta installato nel dispositivo Surface, aggiornerà Surface Dock 1 Devices collegato al dispositivo Surface.
+
+> [!NOTE]
+> Questo articolo non si applica a Surface Dock 2, che riceve gli aggiornamenti automaticamente tramite Windows Update o tramite Microsoft endpoint Configuration Manager o altri strumenti di distribuzione MSI. Per altre informazioni, vedere [novità di Surface Dock](surface-dock-whats-new.md).
 
 Questo strumento sostituisce lo strumento Microsoft Surface Dock Updater precedente, precedentemente disponibile per il download come parte di strumenti di Surface. Lo strumento precedente è stato denominato Surface_Dock_Updater_vx.xx.xxx.x.msi (dove x indica il numero di versione) e non è più disponibile per il download e non deve essere usato.
 
@@ -51,13 +54,17 @@ Per monitorare l'aggiornamento:
 
 2. Digitare il comando seguente a un prompt dei comandi con privilegi elevati:
 
-    ```cmd
+    ```console
     Reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF\Services\SurfaceDockFwUpdate\Parameters"
     ```
 3. Installare l'aggiornamento come descritto nella [sezione successiva](#install-the-surface-dock-firmware-update) di questo articolo.
+
 4. L'evento 2007 con il testo seguente indica un aggiornamento riuscito: **aggiornamento del firmware terminato. hr = 0 DriverTelementry eventCode = 2007**. 
-    - Se l'aggiornamento non riesce, l'ID evento 2007 verrà visualizzato come evento di **errore** anziché **informazioni**. Inoltre, la versione riportata nel registro di sistema di Windows non sarà aggiornata.
+
+   Se l'aggiornamento non riesce, l'ID evento 2007 verrà visualizzato come evento di **errore** anziché **informazioni**. Inoltre, la versione riportata nel registro di sistema di Windows non sarà aggiornata.
+   
 5. Al termine dell'aggiornamento, i valori DWORD aggiornati verranno visualizzati nel registro di sistema di Windows, in modo che corrispondano alla versione corrente dello strumento. Per informazioni dettagliate, vedere la sezione [riferimenti alle versioni](#versions-reference) in questo articolo. Ad esempio:
+
     - Component10CurrentFwVersion 0x04ac3970 (78395760)
     - Component20CurrentFwVersion 0x04915a70 (76634736)
 
@@ -76,15 +83,16 @@ Puoi usare i comandi di Windows Installer (Msiexec.exe) per distribuire l'aggior
 
 - **Msiexec.exe/i \<path to msi file\> /quiet/norestart** 
 
-  Ad esempio:
-  ```
-  msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31680_0.msi" /quiet /norestart
-  ```
+Ad esempio:
 
-  > [!NOTE]
-  > Per impostazione predefinita, un file di log non viene creato. Per creare un file di log, sarà necessario accodare "/l*v [path]". Ad esempio: Msiexec.exe/i \<path to msi file\> /l*v%windir%\logs\ SurfaceDockFWI. log "
+```console
+msiexec /i "\\share\folder\Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31680_0.msi" /quiet /norestart
+```
 
-  Per altre informazioni, vedere la documentazione relativa alle [Opzioni della riga di comando](https://docs.microsoft.com/windows/win32/msi/command-line-options) .
+> [!NOTE]
+> Per impostazione predefinita, un file di log non viene creato. Per creare un file di log, sarà necessario accodare "/l*v [path]". Ad esempio: Msiexec.exe/i \<path to msi file\> /l*v%windir%\logs\ SurfaceDockFWI. log "
+
+Per altre informazioni, vedere la documentazione relativa alle [Opzioni della riga di comando](https://docs.microsoft.com/windows/win32/msi/command-line-options) .
 
 > [!IMPORTANT]
 > Se si vuole che il dock per Surface venga aggiornato usando qualsiasi altro metodo, vedere [aggiornare Surface Dock](https://support.microsoft.com/help/4023478/surface-update-your-surface-dock) per i dettagli.
@@ -123,7 +131,7 @@ Il completamento dell'aggiornamento del firmware di Surface Dock restituisce i n
 
 **Tabella 1. File di log per l'aggiornamento del firmware di Surface Dock**
 
-| Log                              | Location                               | Note                                                                                                                                                                                                         |
+| Log                              | Posizione                               | Note                                                                                                                                                                                                         |
 | -------------------------------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Log degli aggiornamenti del firmware di Surface Dock | Il percorso deve essere specificato (Vedi nota) | Le versioni precedenti di questo strumento hanno scritto eventi per le applicazioni e i servizi Logs\Microsoft Surface Dock Updater.                                                                                                  |
 | Log di installazione di dispositivi Windows       | %windir%\inf\setupapi.dev.log           | Per altre informazioni sull'uso del log di installazione del dispositivo, vedere la documentazione relativa alla [registrazione di Setupapi](https://docs.microsoft.com/windows-hardware/drivers/install/setupapi-logging--windows-vista-and-later-) . |
@@ -164,14 +172,20 @@ Questa versione dell'aggiornamento del firmware di Surface Dock include correzio
 - Aggiornamento della superficie di ancoraggio 1 con Surface Pro X. 
    > [!NOTE]
    > Se si sta usando Surface Pro X, scaricare il. ARM64 Build. Per tutti gli altri dispositivi, usare la build AMD64. 
+
+#### Valori della chiave del registro di sistema
+
+I valori del registro di sistema che indicano lo stato degli aggiornamenti del firmware sono invariati rispetto alla versione precedente di questo strumento: 
+
+- Component10CurrentFwVersion è stato aggiornato a **4ac3970**.
+- Component20CurrentFwVersion è stato aggiornato a **4a1d570**.
  
-
-
 ### Versione 1.42.139 
 *Data di rilascio: 18 2019 settembre*
 
 Questa versione, contenuta in Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31680_0.MSI, aggiorna il firmware in background. 
-**Valori della chiave del registro di sistema aggiornati:**<br>
+
+#### Valori della chiave del registro di sistema aggiornati
 
 - Component10CurrentFwVersion è stato aggiornato a **4ac3970**.
 - Component20CurrentFwVersion è stato aggiornato a **4a1d570**.
