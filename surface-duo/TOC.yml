@@ -1,0 +1,29 @@
+- name: Surface Duo
+  href: index.yml
+  items:
+    - name: Panoramica
+      items:
+        - name: Panoramica di gestione di Surface Duo
+          href: surface-duo-manage.md
+        - name: Panoramica della sicurezza di Surface Duo
+          href: surface-duo-secure.md
+        - name: Specifiche tecniche di Surface Duo
+          href: 'https://www.microsoft.com/surface/business/surface-duo'
+    - name: Protezione
+      items:
+        - name: Framework di configurazione della sicurezza di Android Enterprise
+          href: 'https://docs.microsoft.com/mem/intune/enrollment/android-configuration-framework'
+    - name: Gestisci
+      items:
+        - name: Configurare il profilo lavoro per Surface Duo
+          href: surface-duo-config-work-profile.md
+        - name: Configurare l'icona di avvio Microsoft per Surface Duo
+          href: surface-duo-launcher-config.md
+    - name: Supporto
+      items:
+        - name: Contatta il supporto di Surface Duo
+          href: contact-surface-duo-support.md
+        - name: Offerte di servizi di garanzia
+          href: surface-lifecycle-android-devices.md
+        - name: Ciclo di vita superficiale per dispositivi basati su Android
+          href: 'https://www.microsoft.com/surface/business/warranty-service-offerings-and-support'
