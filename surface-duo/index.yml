@@ -1,0 +1,122 @@
+### YamlMime:Landing
+title: Documentazione di Surface Duo
+summary: Produttività per dispositivi mobili alimentata da due schermi con le app Microsoft 365 e Android per dispositivi mobili
+metadata:
+  title: Documentazione di Surface Duo
+  description: Introduzione a Microsoft Surface Duo
+  ms.service: product-insights
+  ms.topic: landing-page
+  manager: laurawi
+  author: greg-lindsay
+  ms.author: greglin
+  audience: itpro
+  ms.localizationpriority: medium
+  ms.openlocfilehash: 21a98b8daa3cb3200109edbf65f3344c2058cf11
+  ms.sourcegitcommit: 37e0994e2b8ae62b0352b016b698edcc7ca500fb
+  ms.translationtype: HT
+  ms.contentlocale: it-IT
+  ms.lasthandoff: 02/10/2021
+  ms.locfileid: "11326038"
+landingContent:
+- title: Novità
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: Framework interfaccia utente fluent per Surface Duo
+      url: https://devblogs.microsoft.com/surface-duo/fluent-ui-android-dual-screen
+    - text: Registrare dispositivi dedicati Android Enterprise in modalità dispositivo condiviso di Azure AD
+      url: https://techcommunity.microsoft.com/t5/intune-customer-success/intune-public-preview-enroll-android-enterprise-dedicated/ba-p/1820093
+    - text: Dietro le quinte in Surface Duo con Microsoft Mechanics
+      url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/behind-the-scenes-on-surface-duo-with-microsoft-mechanics/ba-p/1665998
+- title: Informazioni di base
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Scoprire nuovi modi di usare Surface Duo (YouTube)
+      url: https://www.youtube.com/playlist?list=PLNA-j_cL4mUTCt7P_IZrMZL5Manoz4QrX
+    - text: Trovare un rivenditore commerciale per Surface Duo
+      url: https://www.microsoft.com/surface/business/where-to-buy-microsoft-surface
+    - text: Aggiungere app gestite di Google Play
+      url: https://docs.microsoft.com/mem/intune/apps/apps-add-android-for-work
+- title: Surface Duo
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Panoramica di gestione di Surface Duo
+      url: surface-duo-manage.md
+    - text: Panoramica della sicurezza di Surface Duo
+      url: surface-duo-secure.md
+    - text: Specifiche tecniche di Surface Duo
+      url: https://www.microsoft.com/surface/business/surface-duo
+- title: Registrare Surface Duo in gestione MDM
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: Registrare i dispositivi di profilo aziendale Android Enterprise
+      url: https://docs.microsoft.com/mem/intune/enrollment/android-work-profile-enroll
+    - text: Registrare dispositivi completamente gestiti
+      url: https://docs.microsoft.com/mem/intune/enrollment/android-fully-managed-enroll
+    - text: Registrare dispositivi dedicati
+      url: https://docs.microsoft.com/mem/intune/enrollment/android-kiosk-enroll
+- title: Gestire Surface Duo
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Configurare il profilo di lavoro Android Enterprise per Surface Duo
+      url: surface-duo-config-work-profile.md
+    - text: Aggiungere criteri di configurazione delle app per i dispositivi Android Enterprise gestiti
+      url: https://docs.microsoft.com/mem/intune/apps/app-configuration-policies-use-android
+    - text: Gestire i dispositivi con Microsoft Intune
+      url: https://docs.microsoft.com/mem/intune/remote-actions/device-management
+  - linkListType: video
+    links:
+    - text: Distribuire, gestire e abilitare la produttività con Surface Duo nell'organizzazione
+      url: https://youtu.be/DOsBMNFmdfw
+- title: Esplora le indicazioni di sicurezza
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Framework di configurazione della sicurezza di Android Enterprise
+      url: https://docs.microsoft.com/mem/intune/enrollment/android-configuration-framework
+    - text: Configurazioni di sicurezza del profilo aziendale di Android Enterprise
+      url: https://docs.microsoft.com/mem/intune/enrollment/android-work-profile-security-settings
+    - text: Impostazioni di conformità di Android Enterprise
+      url: https://docs.microsoft.com/mem/intune/protect/compliance-policy-create-android-for-work
+- title: Sviluppare app per Surface Duo
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Ottenere l'SDK di Surface Duo
+      url: https://docs.microsoft.com/dual-screen/android/get-duo-sdk
+    - text: Portare le proprie app Android in Surface Duo
+      url: https://docs.microsoft.com/dual-screen/android/bring-to-duo
+    - text: Usare l'emulatore Surface Duo
+      url: https://docs.microsoft.com/dual-screen/android/use-emulator
+- title: Risoluzione dei problemi di Surface Duo
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Risolvere i problemi relativi ai dispositivi Android Enterprise
+      url: https://docs.microsoft.com/mem/intune/enrollment/troubleshoot-android-enrollment
+    - text: Risolvere i problemi di gestione delle applicazioni mobili
+      url: https://docs.microsoft.com/mem/intune/apps/troubleshoot-mam
+    - text: Ciclo di vita superficiale per dispositivi basati su Android
+      url: surface-lifecycle-android-devices.md
+- title: Partecipare alla community di Surface
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: Microsoft Ignite-gestione di dispositivi Android
+      url: https://youtu.be/szQMosnYETc
+    - text: Blog Surface IT Pro
+      url: https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro
+    - text: Community tecnica dei dispositivi Surface
+      url: https://techcommunity.microsoft.com/t5/Surface-Devices/ct-p/SurfaceDevices
+- title: Hai bisogno di assistenza?
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: Contatta il supporto di Surface Duo
+      url: /surface-duo/contact-surface-duo-support
+    - text: Garanzia e piani di assistenza estesi Surface per le Aziende
+      url: https://www.microsoft.com/surface/business/warranty-service-offerings-and-support
