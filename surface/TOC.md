@@ -37,9 +37,9 @@
 ### [Compatibilità delle app Surface Pro X](surface-pro-arm-app-performance.md)
 ### [Gestire e installare gli aggiornamenti di driver e firmware per il Surface](manage-surface-driver-and-firmware-updates.md)
 ### [Surface Deployment Accelerator](microsoft-surface-deployment-accelerator.md)
-### [Distribuire Windows10 nei dispositivi Surface con MDT](deploy-windows-10-to-surface-devices-with-mdt.md)
+### [Distribuire Windows 10 nei dispositivi Surface con MDT](deploy-windows-10-to-surface-devices-with-mdt.md)
 ### [Abilitare la tastiera di Surface Laptop durante la distribuzione di MDT](enable-surface-keyboard-for-windows-pe-deployment.md)
-### [Aggiornare i dispositivi Surface a Windows10 con MDT](upgrade-surface-devices-to-windows-10-with-mdt.md)
+### [Aggiornare i dispositivi Surface a Windows 10 con MDT](upgrade-surface-devices-to-windows-10-with-mdt.md)
 ### [Personalizzare la Configurazione guidata per le distribuzioni di Surface](customize-the-oobe-for-surface-deployments.md)
 ### [Riferimento di superficie SKU di sistema](surface-system-sku-reference.md)
 
@@ -81,8 +81,8 @@
 ### [Supporto per gli utenti finali](https://support.microsoft.com/products/surface-devices)
 ### [Ciclo di vita del driver e del firmware Surface per i dispositivi basati su Windows](surface-driver-firmware-lifecycle-support.md)
 
-## Garanzia e piani di assistenza estesi
-### [Garanzia e piani di assistenza estesi Surface per le Aziende](https://www.microsoft.com/surface/business/warranty-service-offerings-and-support)
+## Piani di garanzia e protezione
+### [Piani di garanzia e protezione di Surface per le aziende](https://www.microsoft.com/surface/business/warranty-service-offerings-and-support)
 ### [Termini e Condizioni](https://support.microsoft.com/help/4493926/warranties-extended-service-plans-and-terms-conditions-for-your-device)
 ### [Verificare lo stato della garanzia del dispositivo](https://mybusinessservice.surface.com/)
 ### [Protezione dei dati quando si invia Surface in assistenza ](https://support.microsoft.com/help/4023508/surface-faq-protecting-your-data-service)
