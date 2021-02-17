@@ -12,12 +12,12 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 02/11/2020
 ms.localizationpriority: medium
-ms.openlocfilehash: 34a05eeabd284e0ad43317577b8e7ff9348ffe21
-ms.sourcegitcommit: 7e028c1e66fb393dc0e8917dac257ce95e5e9ce7
+ms.openlocfilehash: 0cc444eab51e9c3cc0bf2f9c2f0c36ac491906b1
+ms.sourcegitcommit: 7b09b4bc757c5385c4f5560713cb03448afde9ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "11327340"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "11339367"
 ---
 # Uso dello strumento di ripristino di Surface Hub
 
@@ -56,9 +56,9 @@ Se lo strumento non riesce a riimimare l'unità, contatta il [supporto di Surfac
 Lo strumento di ripristino di Surface Hub è disponibile per il download da [Strumenti di Surface Hub per l'IT](https://www.microsoft.com/download/details.aspx?id=52210)  con il nome file **SurfaceHub_Recovery_v2.7.139.0.msi**.
 
 > [!IMPORTANT]
-> Questa versione, rilasciata l'11 febbraio 2021, sostituisce la build precedente, che non è più funzionante. Se lo strumento è stato scaricato in precedenza, eliminare e usare la versione corrente.
+> Questa versione, rilasciata l'11 febbraio 2021, sostituisce la build precedente, che non è più funzionante. Se lo strumento è stato scaricato in precedenza, disinstallarlo e installare la versione corrente.
 
-Per avviare il download, fare clic su **Download,** **scegliereSurfaceHub_Recovery_v2.7.139.0.msi'elenco** e fare clic su **Avanti.** Dal popup scegliere una delle opzioni seguenti:
+Per avviare il download, fare clic su **Download,** **scegliereSurfaceHub_Recovery_v2.7.139.0.msi'elenco** e fare clic su **Avanti.** Dal popup, scegliere una delle opzioni seguenti:
 
 - Fare **clic su Esegui** per avviare immediatamente l'installazione.
 - Fare **clic su** Salva per copiare il download nel computer per un'installazione successiva.
@@ -80,7 +80,7 @@ Installare lo strumento di ripristino di Surface Hub nel PC host.
 
     ![Non consentire al computer di passare alla guida di sospensione](images/shrt-guidance.png)
 
-4. Nella finestra Seleziona immagine fare clic su **RS2** o sul successore **20H2,** selezionare **Continua e** quindi **selezionare Scarica immagine.**
+4. Nella finestra Seleziona immagine fare clic su **RS2** o sul successore **20H2,** selezionare **Continua e** quindi **Selezionare Scarica immagine.**
 
      ![Immagine di download dello strumento ](images/shrt-select-image.png) ![ di recupero dell'immagine selezionata](images/shrt-download-image.png)
 
@@ -90,7 +90,7 @@ Installare lo strumento di ripristino di Surface Hub nel PC host.
 
 
 
-5. Al termine del download, lo strumento indica di connettere un'unità SSD. Se lo strumento non è in grado di individuare l'unità collegata, è probabile che il cavo utilizzato non sia in grado di segnalare il nome dell'unità SSD a Windows.  Lo strumento di creazione di immagini deve trovare il nome dell'unità come "LITEON L CH-128V2S USB Device" prima di poter continuare.  Per altre informazioni su come rimuovere l'unità esistente dal dispositivo Surface Hub, vedi La sostituzione [dell'unità SSD](surface-hub-ssd-replacement.md)di Surface Hub.
+5. Al termine del download, lo strumento indica di connettere un'unità SSD. Se lo strumento non riesce a individuare l'unità collegata, è probabile che il cavo in uso non segnala il nome dell'unità SSD a Windows.  Lo strumento di creazione di immagini deve trovare il nome dell'unità come "LITEON L CH-128V2S USB Device" prima di poter continuare.  Per altre informazioni su come rimuovere l'unità esistente dal dispositivo Surface Hub, vedi La sostituzione [dell'unità SSD](surface-hub-ssd-replacement.md)di Surface Hub.
 
     ![Connettere SSD](images/shrt-drive.png)
 
