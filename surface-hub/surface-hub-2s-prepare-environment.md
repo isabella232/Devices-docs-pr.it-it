@@ -9,54 +9,60 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 12/28/2020
+ms.date: 2/26/2021
 ms.localizationpriority: Medium
-ms.openlocfilehash: af66449806c9aa525fa3f5df84012d3daeed96ba
-ms.sourcegitcommit: dbd14649442ad039aeb265cd60ed029d483a4bb0
+ms.openlocfilehash: caa6372820222f6f2f225f028161b3441b147a82
+ms.sourcegitcommit: 7e1b351024e33926901ddbdc562ba12aea0b4196
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "11251453"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "11385144"
 ---
-# Prepara l'ambiente per Surface Hub 2S
+# <a name="prepare-your-environment-for-surface-hub-2s"></a>Prepara l'ambiente per Surface Hub 2S
 
-## Disponibilità di Office 365
+## <a name="office-365-readiness"></a>Preparazione di Office 365
 
-Se si usa Exchange Online, Skype for business online, Microsoft teams o Microsoft lavagna e si intende gestire Surface Hub 2S con Intune, vedere prima di tutto i [requisiti di Office 365 per gli endpoint](https://docs.microsoft.com/office365/enterprise/office-365-endpoints).
+Se usi Exchange Online, Skype for Business online, Microsoft Teams o Microsoft Whiteboard e intendi gestire Surface Hub 2S con Intune, esamina innanzitutto i requisiti di [Office 365](https://docs.microsoft.com/office365/enterprise/office-365-endpoints)per gli endpoint.
 
-Gli endpoint di Office 365 consentono di ottimizzare la rete inviando tutte le richieste di rete di Office 365 attendibili direttamente attraverso il firewall, bypassando qualsiasi ulteriore controllo o elaborazione a livello di pacchetto. Questa funzionalità riduce la latenza e i requisiti della capacità perimetrale.
+Gli endpoint di Office 365 consentono di ottimizzare la rete inviando tutte le richieste di rete attendibili di Office 365 direttamente attraverso il firewall, ignorando tutte le ulteriori ispezioni o elaborazioni a livello di pacchetto. Questa funzionalità consente di ridurre la latenza e i requisiti di capacità perimetrale.
 
-Microsoft aggiorna regolarmente il servizio Office 365 con nuove funzionalità e funzionalità, che possono modificare le porte, gli URL e gli indirizzi IP necessari. Per valutare, configurare e mantenere aggiornate le modifiche, sottoscrivere l' [indirizzo IP di Office 365 e il servizio Web URL](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service).
+Microsoft aggiorna regolarmente il servizio Office 365 con nuove caratteristiche e funzionalità, che possono alterare le porte, gli URL e gli indirizzi IP necessari. Per valutare, configurare e rimanere aggiornati con le modifiche, sottoscrivere il servizio Web url e indirizzo IP di [Office 365.](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service)
 
 > [!NOTE]
-> Surface hub funziona con Microsoft teams, Skype for Business Server 2019, Skype for Business Server 2015 o Skype for business online.
+> Surface Hub funziona con Microsoft Teams, Skype for Business Server 2019, Skype for Business Server 2015 o Skype for Business online.
 Le piattaforme precedenti, ad esempio Lync Server 2013, non sono supportate. Surface Hub non è supportato in ambienti GCC-High o DoD.
 
 
-## Affiliazione dispositivi
+## <a name="device-affiliation"></a>Affiliazione dei dispositivi
 
-USA affiliazione dispositivo per gestire l'accesso degli utenti all'app impostazioni in Surface Hub 2S.
-Con il sistema operativo Windows 10 team (che viene eseguito su Surface Hub 2S), solo gli utenti autorizzati possono modificare le impostazioni usando l'app Impostazioni. Poiché la scelta dell'affiliazione può avere un impatto sulla disponibilità delle caratteristiche, pianificare in modo appropriato che gli utenti possano accedere alle funzionalità come previsto.
+Usa l'affiliazione dei dispositivi per gestire l'accesso degli utenti all'app Impostazioni in Surface Hub 2S.
+Con il sistema operativo Windows 10 Team (eseguito in Surface Hub 2S), solo gli utenti autorizzati possono modificare le impostazioni usando l'app Impostazioni. Poiché la scelta dell'affiliazione può influire sulla disponibilità delle funzionalità, pianificare in modo appropriato per garantire che gli utenti possano accedere alle funzionalità come previsto.
 
 > [!NOTE]
-> È possibile impostare l'affiliazione del dispositivo solo durante la configurazione dell'esperienza fuori sede (OOBE) iniziale. Se è necessario reimpostare l'affiliazione del dispositivo, è necessario ripetere la configurazione di OOBE.
+> Puoi impostare l'affiliazione dei dispositivi solo durante la configurazione iniziale della Configurazione guidata. Se devi reimpostare l'affiliazione del dispositivo, dovrai ripetere l'installazione della Configurazione guidata.
 
-## Nessuna affiliazione
+## <a name="no-affiliation"></a>Nessuna affiliazione
 
-Nessuna affiliazione è come avere un hub di Surface 2S in un gruppo di lavoro con un altro account di amministratore locale in ogni hub di Surface 2S. Se si sceglie nessuna affiliazione, è necessario salvare localmente la [chiave BitLocker in un'unità thumb USB](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-key-management-faq). È comunque possibile registrare il dispositivo con Intune; Tuttavia, solo l'amministratore locale può accedere all'app impostazioni usando le credenziali dell'account configurate durante la configurazione guidata. È possibile modificare la password dell'account di amministratore nell'app Impostazioni.
+Nessuna affiliazione è come avere Surface Hub 2S in un gruppo di lavoro con un account amministratore locale diverso in ogni Surface Hub 2S. Se scegli Nessuna affiliazione, devi salvare localmente la chiave [BitLocker in un'unità usb usb.](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-key-management-faq) Puoi comunque registrare il dispositivo con Intune; Tuttavia, solo l'amministratore locale può accedere all'app Impostazioni usando le credenziali dell'account configurate durante la Configurazione utente. Puoi modificare la password dell'account amministratore dall'app Impostazioni.
 
-## Active Directory Domain Services
+## <a name="active-directory-domain-services"></a>Active Directory Domain Services
 
-Se si affilia Surface Hub 2S con servizi di dominio Active Directory locale, è necessario gestire l'accesso all'app impostazioni usando un gruppo di sicurezza nel dominio. Questo consente di verificare che tutti i membri del gruppo di sicurezza dispongano delle autorizzazioni per modificare le impostazioni in Surface Hub 2S. Tenere inoltre presente quanto segue:
+Se consoci Surface Hub 2S con Servizi di dominio Active Directory locale, devi gestire l'accesso all'app Impostazioni usando un gruppo di sicurezza nel dominio. Ciò garantisce che tutti i membri del gruppo di sicurezza siano in grado di modificare le impostazioni in Surface Hub 2S. Tenere presente anche quanto segue:
 
-- Quando l'hub di Surface 2S è affiliato con i servizi di dominio Active Directory locale, la chiave BitLocker può essere salvata nello schema Active Directory. Per altre informazioni, vedere [preparare l'organizzazione per BitLocker: pianificazione e criteri](https://docs.microsoft.com/windows/security/information-protection/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies).
+- Quando Surface Hub 2S è affiliato a Servizi di dominio Active Directory locale, la chiave BitLocker può essere salvata nello schema di Active Directory. Per altre informazioni, vedi [Preparare l'organizzazione per BitLocker: pianificazione e criteri.](https://docs.microsoft.com/windows/security/information-protection/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies)
 
-- Le autorità di certificazione radice attendibili dell'organizzazione vengono inserite nello stesso contenitore di Surface Hub 2S, quindi non è necessario importarle usando un pacchetto di provisioning.
+- Le AUTORITÀ di certificazione radice attendibili dell'organizzazione vengono spinte nello stesso contenitore in Surface Hub 2S, il che significa che non è necessario importarle usando un pacchetto di provisioning.
 
-- È comunque possibile registrare il dispositivo con Intune per gestire in modo centralizzato le impostazioni di Surface Hub 2S.
+- Puoi comunque registrare il dispositivo con Intune per gestire centralmente le impostazioni in Surface Hub 2S.
 
-## Azure Active Directory
+## <a name="azure-active-directory"></a>Azure Active Directory
 
-Quando si sceglie di affiliare la superficie Hub 2S con Azure Active Directory (Azure AD), qualsiasi utente nel gruppo di sicurezza amministratori globali può accedere all'app impostazioni in Surface Hub 2S. Attualmente, nessun altro gruppo può essere delegato per accedere all'app impostazioni in Surface Hub 2S.
+Quando scegli di consociare Surface Hub 2S con Azure Active Directory (Azure AD), qualsiasi utente nel gruppo di sicurezza Global Admins può accedere all'app Impostazioni in Surface Hub 2S. Puoi anche configurare account di amministratore non globale che limitano le autorizzazioni alla gestione dell'app Impostazioni in Surface Hub 2S. In questo modo puoi impostare l'ambito delle autorizzazioni di amministratore solo per Surface Hub 2S e impedire l'accesso amministratore potenzialmente indesiderato in un intero dominio di Azure AD. 
 
-Se è stata abilitata la registrazione automatica di Intune per l'organizzazione, Surface Hub 2S si iscriverà automaticamente con Intune. La chiave BitLocker del dispositivo viene salvata automaticamente in Azure AD. Quando affiliante Surface Hub 2S con Azure AD, Single Sign-on e Easy Authentication non funzionerà.
+Se hai abilitato la registrazione automatica di Intune per l'organizzazione, Surface Hub 2S si registrerà automaticamente con Intune. La chiave BitLocker del dispositivo viene salvata automaticamente in Azure AD. 
+
+Per altre informazioni sulla gestione di Surface Hub con Azure AD, vedi: 
+
+ - [Gestione del gruppo amministratori](admin-group-management-for-surface-hub.md)
+ - [Configurare gli account diversi da amministratore globale in Surface Hub 2S](surface-hub-2s-nonglobal-admin.md)
+
