@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 03/01/2020
+ms.date: 03/02/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 28278827aeba20f46d5fd79b7a1de6c54bfce1e8
-ms.sourcegitcommit: 7e1b351024e33926901ddbdc562ba12aea0b4196
+ms.openlocfilehash: 1fab09ef21dbddbb2b4f292acd716c6e6cbaff7e
+ms.sourcegitcommit: 5c904229a0257297be7f724c264e484d2c4b5168
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "11385254"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "11387483"
 ---
 # <a name="install-and-mount-surface-hub-2s-85"></a>Installare e montare Surface Hub 2S 85"
 
@@ -24,7 +24,11 @@ Questo articolo fornisce indicazioni di supporto per l'installazione fisica di M
 
 ## <a name="unboxing-video"></a>Unboxing video
 
-È ora disponibile un video complementare per lo spostamento e l'installazione di Surface Hub 2S 2S 85". Prima di iniziare, consulta [l'unboxing e la configurazione di Microsoft Surface Hub 2S 2S 85".](https://www.microsoft.com/zh-cn/videoplayer/embed/RE4MRqV)  
+- Prima di iniziare, consultare il video di configurazione e unboxing di Microsoft Surface Hub 2S 2S 85":
+
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwwgL]
+
+- Una versione cinese di questo video è disponibile [nell'Appendice B](#appendix-b-unboxing-video) di seguito. 
 
 ## <a name="follow-all-safety-precautions"></a>Seguire tutte le precauzioni di sicurezza 
 
@@ -37,7 +41,7 @@ Questo articolo fornisce indicazioni di supporto per l'installazione fisica di M
 >- Per evitare rischi di inciampo, mantenere l'area di assemblaggio libera dei materiali di imballamento.
 
 > [!IMPORTANT]
->Prima di procedere, esaminare le informazioni aggiuntive sulla sicurezza elencate [nell'Appendice](#appendix) seguente.
+>Prima di procedere, esaminare le informazioni aggiuntive sulla sicurezza elencate [nell'Appendice A](#appendix-a-additional-safety-information) di seguito.
 
 ## <a name="1-remove-outer-packaging-materials"></a>1. Rimuovere i materiali di confezionamento esterni
 
@@ -71,7 +75,7 @@ Altri materiali di legatura sono forniti nella piccola casella che si trova sott
 ## <a name="4-rotate-packaging-frame-to-fit-elevator"></a>4. Ruotare il fotogramma di creazione del pacchetto per adattarlo all'elevatore
 
 1. Ruotare il fotogramma per adattarlo all'elevatore
-2. Ruota su un'estremità smussata della cornice interna e slitta verso l'edificio.
+2. Ruotare sull'estremità in rilievo della cornice interna e scorrere nell'edificio.
 
  ![Ruotare il fotogramma di creazione del pacchetto per adattarlo all'elevatore](images/hub85mount4a.png) <br>
 
@@ -86,10 +90,10 @@ Altri materiali di legatura sono forniti nella piccola casella che si trova sott
  ![Rimuovi dall'edificio](images/hub85mount5a.png) <br>
 
 
-## <a name="6-place-surface-hub-85-back-on-pallet"></a>6. Posizionare Surface Hub da 85" di nuovo sul palette
+## <a name="6-place-surface-hub-85-back-on-pallet"></a>6. Ri collocare Surface Hub da 85" su palette
 
 1. Utilizzando l'estremità smussata, ruotare di nuovo su palette.
-2. Sblocca i freni a rotellina (x4).
+2. Sblocca freni a rotellina (x4).
 3. Spostare il prodotto nella posizione di montaggio a parete o carrello.
 
  ![Ri collocare Surface Hub da 85" su palette](images/hub85mount6a.png) <br>
@@ -102,7 +106,7 @@ Altri materiali di legatura sono forniti nella piccola casella che si trova sott
 4. Tagliare le 3 cinghie di materiale in materiale trasparente.
 5. Rimuovi il coperchio.
 6. Rimuovere i pezzi bianchi di gomma.
-7. Rimuovi welcome kit.
+7. Rimuovi Welcome Kit.
 8. Rimuovere l'estremità sollevando verticalmente.
 9. Rimuovere i pezzi di estremità del legna con le viti delle manopole sulla base del legna.
 
@@ -112,16 +116,16 @@ Altri materiali di legatura sono forniti nella piccola casella che si trova sott
    >  Non lasciare l'hub 2S 85" automatico. È necessaria una persona aggiuntiva per tenere il dispositivo in posizione verticale. Una volta rimossi i pezzi finali, almeno una persona deve mantenere il contatto con Hub 2S fino al completamento del posizionamento sul montaggio a parete o sul carrello.
 
 10. Solleva il plywood end piece up e back.
-11. Rimuovi l'etichetta di rilievo dalla parte posteriore.
+11. Rimuovere l'etichetta di rilievo dalla parte posteriore.
 12. Solleva l'Hub 2S dal cassetto inferiore e posiziona il carrello o il montaggio a parete.
 
     > [!NOTE]
     > Seguendo le istruzioni del carrello o del montaggio a parete, preparare il sistema di montaggio prima di rimuovere Hub 2S dal cassetto di confezionamento interno.
  
     > [!TIP]
-    > Quando afferra l'Hub 2S, tieni presente che il blocco della mano viene tagliato in basso. È necessario fare attenzione con la mano superiore per non afferrare il dispositivo in cui si trovano gli altoparlanti. La grafica alle estremità della cover del dispositivo fornisce la posizione generale dell'altoparlante.
+    > Quando afferra l'Hub 2S, tieni presente che il blocco della mano viene tagliato in basso. È necessario fare attenzione con la mano superiore per non afferrare il dispositivo in cui si trovano gli altoparlanti. L'immagine alle estremità della cover del dispositivo fornisce la posizione generale dell'altoparlante.
 
-13. Tasser d'elasticità elastica (x2).
+13. Ritagli elastici a molla (x2).
 14. Rimuovere il panno.
 15. Nota le posizioni per il posizionamento delle penne (x2), della fotocamera e del cavo di alimentazione.
 16. Collegare penne (x2), fotocamera e cavo di alimentazione.
@@ -149,15 +153,13 @@ Se si utilizzano altre opzioni di montaggio (non Steelcase), saranno necessari s
 
 ## <a name="supplemental-strapping-kit"></a>Kit di legatura supplementare
 
-Un ulteriore set di materiali di associazione di imballaggi interni è disponibile nel kit allegato nella parte posteriore, in basso a destra.
+Un ulteriore set di materiali di associazione per l'imballaggi interni è disponibile nel kit allegato nella parte posteriore, in basso a destra.
 
-## <a name="appendix"></a>Appendice 
-
-### <a name="additional-safety-information"></a>Ulteriori informazioni sulla sicurezza
+## <a name="appendix-a-additional-safety-information"></a>Appendice A: Ulteriori informazioni sulla sicurezza
 
 > [!WARNING]
 > **Sollevamento pesante oggetto/ergonomia**<br>
-> Il dispositivo è molto pesante. Per ridurre il rischio di infortunio, morte o danno al dispositivo, ti consigliamo di sollevare il dispositivo almeno da due o più persone. È importante usare una postura di sollevamento appropriata durante il sollevamento e/o lo spostamento del dispositivo.
+> Il dispositivo è molto pesante. Per ridurre il rischio di infortunio, morte o danni correlati al dispositivo, ti consigliamo di sollevare il dispositivo almeno da due o più persone. È importante usare una postura di sollevamento appropriata durante il sollevamento e/o lo spostamento del dispositivo.
 > Utilizzare buone procedure di sollevamento ergonomia, tra cui:
 > - Pianificare in anticipo. Assicurarsi che il team di sollevamento accetti il piano.
 >- Determinare se è possibile sollevare l'unità. È troppo pesante o troppo difficile?
@@ -166,7 +168,7 @@ Un ulteriore set di materiali di associazione di imballaggi interni è disponibi
 >- Solleva con le tue piedi, non con la parte posteriore.
 >- Piegare gli incisi, mantenendo la parte posteriore dritta.
 >- Mantenere l'unità vicino al corpo.
->- Centra il corpo sull'unità. Allontanare i piedi sulla larghezza della scapola.
+>- Centra il corpo sull'unità. Tenere i piedi separati dalla larghezza della scapola.
 >- Solleva la linea retta senza problemi.
 >- Mantenere il busto dritto; non ruotare durante il sollevamento o dopo il sollevamento del carico
 
@@ -203,6 +205,14 @@ Un touchscreen incrinato o scheggiato causato da un uso improprio o da un abuso 
 > [!WARNING]
 >  **Installazione corretta**<br>
 Per evitare rischi correlati all'installazione impropria dei dispositivi, l'installazione deve essere eseguita da utenti che hanno letto e compreso l'istruzione di installazione prima di iniziare a lavorare. Se non si dispone delle attrezzature o delle competenze necessarie o se non si è incerti, la superficie di montaggio può supportare correttamente un programma di installazione professionale.
+
+
+## <a name="appendix-b-unboxing-video"></a>Appendice B: Video di unboxing
+
+
+### <a name="microsoft-surface-hub-2s-85-unboxing-and-set-up-video-chinese"></a>Video di configurazione e unboxing di Microsoft Surface Hub 2S 85" (cinese)
+
+> [!VIDEO https://www.microsoft.com/zh-cn/videoplayer/embed/RE4MRqV]
 
 
 ## <a name="more-information"></a>Altre informazioni

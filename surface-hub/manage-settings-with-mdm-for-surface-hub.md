@@ -10,35 +10,35 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 03/07/2018
+ms.date: 03/03/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 2bee8b58b7978923c6e60e43f9e10a85dc4bec06
-ms.sourcegitcommit: 17170c03206d190851b5f8e794fcc83ebbed7b5f
+ms.openlocfilehash: d09a95d25b4f4ae86d64acd7d7f16f004f991ce3
+ms.sourcegitcommit: 5c904229a0257297be7f724c264e484d2c4b5168
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "11103902"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "11387501"
 ---
-# Gestire le impostazioni con un provider MDM (Surface Hub)
+# <a name="manage-settings-with-an-mdm-provider-surface-hub"></a>Gestire le impostazioni con un provider MDM (Surface Hub)
 
 Surface Hub e altri dispositivi Windows10 consentono agli amministratori IT di gestire le impostazioni e i criteri con un provider di gestione dei dispositivi mobili (MDM, Mobile Device Management). Un componente di gestione predefinito comunica con il server di gestione, quindi non occorre installare ulteriori client nel dispositivo. Per altre informazioni, vedi [Gestione dei dispositivi mobili Windows10](https://msdn.microsoft.com/library/windows/hardware/dn914769.aspx).
 
-Surface Hub è stato convalidato con i provider di MDM di prima parte di Microsoft:
+Surface Hub è stato convalidato con i provider MDM di prima parte di Microsoft:
 - Soluzione autonoma Microsoft Intune
-- MDM locale con Microsoft endpoint Configuration Manager
+- MDM locale con Microsoft Endpoint Configuration Manager
 
 Puoi anche gestire i dispositivi Surface Hub con qualsiasi provider MDM di terze parti in grado di comunicare con Windows10 tramite il protocollo MDM.
 
-## <a href="" id="enroll-into-mdm"></a>Registrare un dispositivo Surface Hub in MDM
-È possibile registrare i mozzi della superficie usando la registrazione in blocco, manuale o automatica.
+## <a name="enroll-a-surface-hub-into-mdm"></a><a href="" id="enroll-into-mdm"></a>Registrare un dispositivo Surface Hub in MDM
+Puoi registrare i dispositivi Surface Hub usando la registrazione in blocco, manuale o automatica.
 
-### Registrazione in blocco
+### <a name="bulk-enrollment"></a>Registrazione in blocco
 **Per configurare la registrazione in blocco**
 - Surface Hub supporta il [CSP Provisioning](https://msdn.microsoft.com/library/windows/hardware/mt203665.aspx) per la registrazione in blocco in MDM. Per altre informazioni, vedi [Registrazione in blocco in Windows10](https://msdn.microsoft.com/library/windows/hardware/mt613115.aspx).<br>
 -OPPURE-
-- Se si dispone di un'infrastruttura di Microsoft endpoint Configuration Manager locale, vedere [come eseguire la registrazione in blocco dei dispositivi con gestione di dispositivi mobili locale in Microsoft endpoint Configuration Manager](https://docs.microsoft.com/configmgr/mdm/deploy-use/bulk-enroll-devices-on-premises-mdm).
+- Se si dispone di un'infrastruttura di Microsoft Endpoint Configuration Manager locale, vedere Come registrare in blocco i dispositivi con Gestione dispositivi mobili [locale in Microsoft Endpoint Configuration Manager.](https://docs.microsoft.com/configmgr/mdm/deploy-use/bulk-enroll-devices-on-premises-mdm)
 
-### Registrazione manuale
+### <a name="manual-enrollment"></a>Registrazione manuale
 **Per configurare la registrazione manuale**
 1. Nel dispositivo Surface Hub apri **Impostazioni**.
 2. Quando viene richiesto, digita le credenziali di amministratore del dispositivo.
@@ -46,21 +46,21 @@ Puoi anche gestire i dispositivi Surface Hub con qualsiasi provider MDM di terze
 4. In **Gestione dei dispositivi**, seleziona **+ Gestione dei dispositivi**.
 5. Segui le istruzioni nella finestra di dialogo per connetterti al tuo provider MDM.
 
-### Registrazione automatica tramite il join di Azure Active Directory
+### <a name="automatic-enrollment-via-azure-active-directory-join"></a>Registrazione automatica tramite l'aggiunta ad Azure Active Directory
 
-Surface hub ora supporta la possibilità di registrare automaticamente in Intune unendo il dispositivo ad Azure Active Directory. 
+Surface Hub ora supporta la possibilità di eseguire automaticamente la registrazione in Intune tramite l'aggiunta del dispositivo ad Azure Active Directory. 
 
-Il primo passaggio consiste nel configurare la registrazione automatica di MDM. Vedere [abilitare la registrazione automatica di Windows 10](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment).
+Il primo passaggio consiste nel configurare la registrazione automatica mdm. Vedi [Abilitare la registrazione automatica di Windows 10.](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment)
 
-Quindi, quando i dispositivi vengono impostati durante la prima esecuzione, selezionare l'opzione per partecipare ad Azure Active Directory, vedere [configurare gli amministratori per la pagina del dispositivo](https://docs.microsoft.com/surface-hub/first-run-program-surface-hub#set-up-admins-for-this-device-page)
+Quindi, quando i dispositivi vengono impostati durante la prima esecuzione, seleziona l'opzione per l'aggiunta ad Azure Active Directory, vedi la pagina Configurare gli amministratori [per questo dispositivo](https://docs.microsoft.com/surface-hub/first-run-program-surface-hub#set-up-admins-for-this-device-page)
 
-## Gestire le impostazioni di Surface Hub con MDM
+## <a name="manage-surface-hub-settings-with-mdm"></a>Gestire le impostazioni di Surface Hub con MDM
 
-Puoi usare MDM per gestire alcune [impostazioni del CSP SurfaceHub](#supported-surface-hub-csp-settings) e alcune [impostazioni di Windows10](#supported-windows-10-settings). A seconda del provider MDM che usi, puoi impostare queste impostazioni usando un'interfaccia utente predefinita oppure distribuendo codice SyncML personalizzato. Microsoft Intune e Microsoft endpoint Configuration Manager offrono esperienze predefinite per facilitare la creazione di modelli di criteri per Surface Hub. Fai riferimento alla documentazione del tuo provider MDM per informazioni su come creare e distribuire SyncML.
+Puoi usare MDM per gestire alcune [impostazioni del CSP SurfaceHub](#supported-surface-hub-csp-settings) e alcune [impostazioni di Windows10](#supported-windows-10-settings). A seconda del provider MDM che usi, puoi impostare queste impostazioni usando un'interfaccia utente predefinita oppure distribuendo codice SyncML personalizzato. Microsoft Intune e Microsoft Endpoint Configuration Manager offrono esperienze integrate per creare modelli di criteri per Surface Hub. Fai riferimento alla documentazione del tuo provider MDM per informazioni su come creare e distribuire SyncML.
 
-### Impostazioni supportate del CSP SurfaceHub
+### <a name="supported-surface-hub-csp-settings"></a>Impostazioni supportate del CSP SurfaceHub
 
-Puoi configurare le impostazioni di Surface Hub nella tabella seguente con MDM. La tabella identifica se l'impostazione è supportata con Microsoft Intune, Microsoft endpoint Configuration Manager o SyncML.
+Puoi configurare le impostazioni di Surface Hub nella tabella seguente con MDM. La tabella indica se l'impostazione è supportata con Microsoft Intune, Microsoft Endpoint Configuration Manager o SyncML.
 
 Per altre informazioni, vedi il [provider di servizi di configurazione SurfaceHub](https://msdn.microsoft.com/library/windows/hardware/mt608323). 
 
@@ -74,7 +74,7 @@ Per altre informazioni, vedi il [provider di servizi di configurazione SurfaceHu
 |                 Canale Miracast da usare per la proiezione wireless                  |                                               InBoxApps/WirelessProjection/Channel                                               |                       Sì                        | Sì.<br> [Usa un'impostazione personalizzata.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Sì             |
 |              Connessione all'area di lavoro di Operations Management Suite               |                                         MOMAgent/WorkspaceID <br> MOMAgent/WorkspaceKey                                          |                       Sì                        | Sì.<br> [Usa un'impostazione personalizzata.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Sì             |
 |                         Immagine di sfondo della schermata iniziale                          |                                             InBoxApps/Welcome/CurrentBackgroundPath                                              |                       Sì                        | Sì.<br> [Usa un'impostazione personalizzata.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Sì             |
-|               Visualizzazione delle informazioni sulla riunione nella schermata iniziale                |                                               InBoxApps/Welcome/MeetingInfoOption                                                |                       Sì                        | Sì.<br> [Usare un'impostazione personalizzata.] (#example-Manage-Surface-Hub-settings-with-Microsoft-endpoint-Configuration-Manager |             Sì             |
+|               Visualizzazione delle informazioni sulla riunione nella schermata iniziale                |                                               InBoxApps/Welcome/MeetingInfoOption                                                |                       Sì                        | Sì.<br> [Usa un'impostazione personalizzata.] (#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager |             Sì             |
 |                      Nome descrittivo per la proiezione wireless                       |                                                     Properties/FriendlyName                                                      | Sì <br> [Usa un criterio personalizzato.](#example-manage-surface-hub-settings-with-microsoft-intune) | Sì.<br> [Usa un'impostazione personalizzata.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Sì             |
 |                   Account del dispositivo                                                 | DeviceAccount/*`<name_of_policy>`* <br> Vedi [CSP SurfaceHub](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx). |                        No                        |                       No                        |             Sì             |
 |                               Specificare il dominio di Skype                               |                                              InBoxApps/SkypeForBusiness/DomainName                                               |                    Sì </br>                     | Sì.<br> [Usa un'impostazione personalizzata.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Sì             |
@@ -92,13 +92,13 @@ Per altre informazioni, vedi il [provider di servizi di configurazione SurfaceHu
 
 \*Le impostazioni supportate con SyncML possono anche essere configurate in un pacchetto di provisioning di Progettazione configurazione di Windows.
 
-### Impostazioni di Windows 10 supportate
+### <a name="supported-windows-10-settings"></a>Impostazioni di Windows 10 supportate
 
 Oltre alle impostazioni specifiche per Surface Hub, esistono numerose impostazioni comuni a tutti i dispositivi Windows10. Queste impostazioni sono definite nelle [Informazioni di riferimento sui provider di servizi di configurazione (CSP)](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference). 
 
-Le tabelle seguenti includono info sulle impostazioni di Windows10 convalidate con Surface Hub. È disponibile una tabella per le impostazioni relative a queste aree: sicurezza, browser, Windows Update, Windows Defender, riavvio remoto, certificati e log. Ogni tabella identifica se l'impostazione è supportata con Microsoft Intune, Microsoft endpoint Configuration Manager o SyncML.
+Le tabelle seguenti includono info sulle impostazioni di Windows10 convalidate con Surface Hub. È disponibile una tabella per le impostazioni relative a queste aree: sicurezza, browser, Windows Update, Windows Defender, riavvio remoto, certificati e log. Ogni tabella identifica se l'impostazione è supportata con Microsoft Intune, Microsoft Endpoint Configuration Manager o SyncML.
 
-#### Impostazioni relative alla sicurezza
+#### <a name="security-settings"></a>Impostazioni relative alla sicurezza
 
 |      Impostazione       |                                            Dettagli                                             |                                                                          Riferimento sui provider di servizi di configurazione (CSP)                                                                           |            Supportata con<br>Intune?             |    Supportata con<br>Configuration Manager?     | Supportata con<br>SyncML\*? |
 |--------------------|------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-------------------------------------------------|-----------------------------|
@@ -111,7 +111,7 @@ Le tabelle seguenti includono info sulle impostazioni di Windows10 convalidate c
 
 \*Le impostazioni supportate con SyncML possono anche essere configurate in un pacchetto di provisioning di Progettazione configurazione di Windows. 
 
-#### Impostazioni relative al browser
+#### <a name="browser-settings"></a>Impostazioni relative al browser
 
 |                          Impostazione                          |                                                                        Dettagli                                                                        |                                                                             Riferimento sui provider di servizi di configurazione (CSP)                                                                              |            Supportata con<br>Intune?             |    Supportata con<br>Configuration Manager?     | Supportata con<br>SyncML\*? |
 |-----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-------------------------------------------------|-----------------------------|
@@ -121,13 +121,13 @@ Le tabelle seguenti includono info sulle impostazioni di Windows10 convalidate c
 |                    Consenti Do Not Track                     |                                                          Usa questa impostazione per consentire le intestazioni Do Not Track.                                                          |                          [Browser/AllowDoNotTrack](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_AllowDoNotTrack)                          | Sì <br> [Usa un criterio personalizzato.](#example-manage-surface-hub-settings-with-microsoft-intune) | Sì.<br> [Usa un'impostazione personalizzata.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Sì             |
 |                       Consenti popup                       |                                                         Usa questa impostazione per bloccare le finestre popup del browser.                                                          |                              [Browser/AllowPopups](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_AllowPopups)                              | Sì <br> [Usa un criterio personalizzato.](#example-manage-surface-hub-settings-with-microsoft-intune) | Sì.<br> [Usa un'impostazione personalizzata.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Sì             |
 |                 Consenti suggerimenti per la ricerca                  |                                                  Usa questa impostazione per bloccare i suggerimenti per la ricerca nella barra degli indirizzi.                                                  |       [Browser/AllowSearchSuggestionsinAddressBar](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_AllowSearchSuggestionsinAddressBar)       | Sì <br> [Usa un criterio personalizzato.](#example-manage-surface-hub-settings-with-microsoft-intune) | Sì.<br> [Usa un'impostazione personalizzata.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Sì             |
-|                     Consenti Windows Defender SmartScreen                     |                                                       Tienilo abilitato per attivare Windows Defender SmartScreen.                                                       |                         [Browser/AllowSmartScreen](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_AllowSmartScreen)                         | Sì <br> [Usa un criterio personalizzato.](#example-manage-surface-hub-settings-with-microsoft-intune) | Sì.<br> [Usa un'impostazione personalizzata.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Sì             |
-| Evitare di ignorare gli avvisi di Windows Defender SmartScreen per i siti Web |     Per una maggiore sicurezza, USA per impedire agli utenti di ignorare gli avvisi di Windows Defender SmartScreen e bloccarli dall'accesso a siti Web potenzialmente malevoli.     |         [Browser/PreventSmartScreenPromptOverride](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_PreventSmartScreenPromptOverride)         | Sì <br> [Usa un criterio personalizzato.](#example-manage-surface-hub-settings-with-microsoft-intune) | Sì.<br> [Usa un'impostazione personalizzata.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Sì             |
-|  Evitare di ignorare gli avvisi di Windows Defender SmartScreen per i file   | Per una maggiore sicurezza, USA per impedire agli utenti di ignorare gli avvisi di Windows Defender SmartScreen e bloccarli dal Download di file non verificati da Microsoft Edge. | [Browser/PreventSmartScreenPromptOverrideForFiles](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_PreventSmartScreenPromptOverrideForFiles) | Sì <br> [Usa un criterio personalizzato.](#example-manage-surface-hub-settings-with-microsoft-intune) | Sì.<br> [Usa un'impostazione personalizzata.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Sì             |
+|                     Consenti Windows Defender SmartScreen                     |                                                       Mantieni abilitata questa opzione per attivare Windows Defender SmartScreen.                                                       |                         [Browser/AllowSmartScreen](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_AllowSmartScreen)                         | Sì <br> [Usa un criterio personalizzato.](#example-manage-surface-hub-settings-with-microsoft-intune) | Sì.<br> [Usa un'impostazione personalizzata.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Sì             |
+| Impedisci di ignorare Windows Defender avvisi di SmartScreen per i siti Web |     Per una maggiore sicurezza, usa questa impostazione per impedire agli utenti di ignorare Windows Defender avvisi di SmartScreen e impedire loro di accedere a siti Web potenzialmente dannosi.     |         [Browser/PreventSmartScreenPromptOverride](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_PreventSmartScreenPromptOverride)         | Sì <br> [Usa un criterio personalizzato.](#example-manage-surface-hub-settings-with-microsoft-intune) | Sì.<br> [Usa un'impostazione personalizzata.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Sì             |
+|  Impedisci di ignorare Windows Defender avvisi di SmartScreen per i file   | Per una maggiore sicurezza, usa questa impostazione per impedire agli utenti di ignorare Windows Defender avvisi di SmartScreen e impedire loro di scaricare file nonverificati da Microsoft Edge. | [Browser/PreventSmartScreenPromptOverrideForFiles](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Browser_PreventSmartScreenPromptOverrideForFiles) | Sì <br> [Usa un criterio personalizzato.](#example-manage-surface-hub-settings-with-microsoft-intune) | Sì.<br> [Usa un'impostazione personalizzata.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Sì             |
 
 \*Le impostazioni supportate con SyncML possono anche essere configurate in un pacchetto di provisioning di Progettazione configurazione di Windows.
 
-#### Impostazioni di Windows Update
+#### <a name="windows-update-settings"></a>Impostazioni di Windows Update
 
 |                      Impostazione                      |                                                                                                           Dettagli                                                                                                            |                                                                    Riferimento sui provider di servizi di configurazione (CSP)                                                                    |            Supportata con<br>Intune?             |    Supportata con<br>Configuration Manager?     | Supportata con<br>SyncML\*? |
 |---------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-------------------------------------------------|-----------------------------|
@@ -141,37 +141,37 @@ Le tabelle seguenti includono info sulle impostazioni di Windows10 convalidate c
 
 \*Le impostazioni supportate con SyncML possono anche essere configurate in un pacchetto di provisioning di Progettazione configurazione di Windows.
 
-#### Impostazioni relative a Windows Defender
+#### <a name="windows-defender-settings"></a>Impostazioni relative a Windows Defender
 
 |      Impostazione      |                                              Dettagli                                               |                                                     Riferimento sui provider di servizi di configurazione (CSP)                                                      |            Supportata con<br>Intune?             |    Supportata con<br>Configuration Manager?     | Supportata con<br>SyncML\*? |
 |-------------------|----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-------------------------------------------------|-----------------------------|
 | Criteri di Defender |            Usa queste impostazioni per configurare varie impostazioni relative a Defender, inclusa l'ora pianificata per l'analisi.            | Defender/*`<name of policy>`* <br> Vedere [Criteri CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx) | Sì <br> [Usa un criterio personalizzato.](#example-manage-surface-hub-settings-with-microsoft-intune) | Sì.<br> [Usa un'impostazione personalizzata.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Sì             |
-|  Stato di Defender  | USA per avviare un'analisi Defender, forzare un aggiornamento per l'intelligence della sicurezza, eseguire query su eventuali minacce rilevate. |                   [CSP Defender](https://msdn.microsoft.com/library/windows/hardware/mt187856.aspx)                    |                       Sì                        |                       Sì                       |             Sì             |
+|  Stato di Defender  | Consente di avviare un'analisi di Defender, forzare un aggiornamento di Security Intelligence, eseguire query su eventuali minacce rilevate. |                   [CSP Defender](https://msdn.microsoft.com/library/windows/hardware/mt187856.aspx)                    |                       Sì                        |                       Sì                       |             Sì             |
 
 \*Le impostazioni supportate da SyncML possono anche essere configurate in un pacchetto di provisioning di Progettazione configurazione di Windows.
 
-#### Avvio remoto
+#### <a name="remote-reboot"></a>Avvio remoto
 
 |                       Impostazione                        |                                                          Dettagli                                                          |                                                             Riferimento sui provider di servizi di configurazione (CSP)                                                             |            Supportata con<br>Intune?             |    Supportata con<br>Configuration Manager?     | Supportata con<br>SyncML\*? |
 |------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-------------------------------------------------|-----------------------------|
-|            Riavvia il dispositivo immediatamente             | Usa questa impostazione in combinazione con OMS per ridurre al minimo i costi di supporto - vedi [Monitorare il dispositivo Microsoft Surface Hub](monitor-surface-hub.md). |        ./Vendor/MSFT/Reboot/RebootNow <br> Vedi [CSP Reboot](https://msdn.microsoft.com/library/windows/hardware/mt720802.aspx)        |                       Sì                        |                       No                        |             Sì             |
+|            Riavvia il dispositivo immediatamente             | Da usare in combinazione con Monitoraggio di Azure per ridurre al minimo i costi di supporto. Vedi [Monitorare Microsoft Surface Hub.](monitor-surface-hub.md) |        ./Vendor/MSFT/Reboot/RebootNow <br> Vedi [CSP Reboot](https://msdn.microsoft.com/library/windows/hardware/mt720802.aspx)        |                       Sì                        |                       No                        |             Sì             |
 |    Riavvia il dispositivo nella data e nell'ora pianificate    |                                                        Vedi sopra.                                                         |     ./Vendor/MSFT/Reboot/Schedule/Single <br> Vedere [Riavvio CSP](https://msdn.microsoft.com/library/windows/hardware/mt720802.aspx)     | Sì <br> [Usa un criterio personalizzato.](#example-manage-surface-hub-settings-with-microsoft-intune) | Sì.<br> [Usa un'impostazione personalizzata.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Sì             |
 | Riavvia il dispositivo ogni giorno nella data e nell'ora pianificate |                                                        Vedi sopra.                                                         | ./Vendor/MSFT/Reboot/Schedule/DailyRecurrent <br> Vedi [CSP Reboot](https://msdn.microsoft.com/library/windows/hardware/mt720802.aspx) | Sì <br> [Usa un criterio personalizzato.](#example-manage-surface-hub-settings-with-microsoft-intune) | Sì.<br> [Usa un'impostazione personalizzata.](#example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager) |             Sì             |
 
 \*Le impostazioni supportate con SyncML possono anche essere configurate in un pacchetto di provisioning di Progettazione configurazione di Windows.
 
-#### Installa i certificati
+#### <a name="install-certificates"></a>Installa i certificati
 
 |             Impostazione             |                           Dettagli                            |                                           Riferimento sui provider di servizi di configurazione (CSP)                                            |                                                         Supportata con<br>Intune?                                                          |                                                                  Supportata con<br>Configuration Manager?                                                                  | Supportata con<br>SyncML\*? |
 |---------------------------------|--------------------------------------------------------------|----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| Installa certificati di CA attendibili | Usa questa impostazione per distribuire certificati radice trusted e certificati di CA intermedia. | [RootCATrustedCertificates CSP](https://msdn.microsoft.com/library/windows/hardware/dn904970.aspx) | Sì. <br> Vedi l'argomento relativo a come [configurare i profili certificato di Intune](https://docs.microsoft.com/intune/deploy-use/configure-intune-certificate-profiles). | Sì. <br> Vedere [come creare profili di certificato in Microsoft endpoint Configuration Manager](https://docs.microsoft.com/configmgr/protect/deploy-use/create-certificate-profiles). |             Sì             |
+| Installa certificati di CA attendibili | Usa questa impostazione per distribuire certificati radice trusted e certificati di CA intermedia. | [RootCATrustedCertificates CSP](https://msdn.microsoft.com/library/windows/hardware/dn904970.aspx) | Sì. <br> Vedi l'argomento relativo a come [configurare i profili certificato di Intune](https://docs.microsoft.com/intune/deploy-use/configure-intune-certificate-profiles). | Sì. <br> Vedere [Come creare profili di certificato in Microsoft Endpoint Configuration Manager.](https://docs.microsoft.com/configmgr/protect/deploy-use/create-certificate-profiles) |             Sì             |
 
 <!--
 | Install client certificates  | Use to deploy Personal Information Exchange (.pfx, .p12) certificates. | [ClientCertificateInstall CSP](https://msdn.microsoft.com/library/windows/hardware/dn920023.aspx) | Yes. <br> See [How to Create and Deploy PFX Certificate Profiles in Intune Standalone](https://blogs.technet.microsoft.com/karanrustagi/2016/03/16/want-to-push-a-certificate-to-device-but-cant-use-ndes-continue-reading/). | Yes. <br> See [How to create PFX certificate profiles in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/protect/deploy-use/create-pfx-certificate-profiles). | Yes |
 -->
 \*Le impostazioni supportate con SyncML possono anche essere configurate in un pacchetto di provisioning di Progettazione configurazione di Windows.
 
-#### Raccogli log
+#### <a name="collect-logs"></a>Raccogli log
 
 |     Impostazione      |                      Dettagli                       |                                     Riferimento sui provider di servizi di configurazione (CSP)                                      | Supportata con<br>Intune? | Supportata con<br>Configuration Manager? | Supportata con<br>SyncML\*? |
 |------------------|----------------------------------------------------|----------------------------------------------------------------------------------------|---------------------------|------------------------------------------|-----------------------------|
@@ -181,7 +181,7 @@ Le tabelle seguenti includono info sulle impostazioni di Windows10 convalidate c
 | Collect security auditing logs | Use to remotely collect security auditing logs from Surface Hub. | SecurityAuditing node in [Reporting CSP](https://msdn.microsoft.com/library/windows/hardware/mt608321.aspx) | No | No | Yes |-->
 \*Le impostazioni supportate con SyncML possono anche essere configurate in un pacchetto di provisioning di Progettazione configurazione di Windows.
 
-#### Impostare i criteri QoS (Quality of Service) di rete
+#### <a name="set-network-quality-of-service-qos-policy"></a>Impostare i criteri QoS (Quality of Service) di rete
 
 |        Impostazione         |                                                            Dettagli                                                             |                                                    Riferimento sui provider di servizi di configurazione (CSP)                                                     |            Supportata con<br>Intune?             |    Supportata con<br>Configuration Manager?     | Supportata con<br>SyncML\*? |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-------------------------------------------------|-----------------------------|
@@ -189,7 +189,7 @@ Le tabelle seguenti includono info sulle impostazioni di Windows10 convalidate c
 
 \*Le impostazioni supportate con SyncML possono anche essere configurate in un pacchetto di provisioning di Progettazione configurazione di Windows.
 
-#### Configurare il proxy di rete
+#### <a name="set-network-proxy"></a>Configurare il proxy di rete
 
 |      Impostazione      |                               Dettagli                               |                                                Riferimento sui provider di servizi di configurazione (CSP)                                                 |            Supportata con<br>Intune?             |    Supportata con<br>Configuration Manager?     | Supportata con<br>SyncML\*? |
 |-------------------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-------------------------------------------------|-----------------------------|
@@ -197,7 +197,7 @@ Le tabelle seguenti includono info sulle impostazioni di Windows10 convalidate c
 
 \*Le impostazioni supportate con SyncML possono anche essere configurate in un pacchetto di provisioning di Progettazione configurazione di Windows.
 
-#### Configura il menu Start
+#### <a name="configure-start-menu"></a>Configura il menu Start
 
 |       Impostazione        |                                                                       Dettagli                                                                        |                                                        Riferimento sui provider di servizi di configurazione (CSP)                                                         |            Supportata con<br>Intune?             |    Supportata con<br>Configuration Manager?     | Supportata con<br>SyncML\*? |
 |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-------------------------------------------------|-----------------------------|
@@ -205,8 +205,8 @@ Le tabelle seguenti includono info sulle impostazioni di Windows10 convalidate c
 
 \*Le impostazioni supportate con SyncML possono anche essere configurate in un pacchetto di provisioning di Progettazione configurazione di Windows.
 
-### Generare URI OMA per le impostazioni 
-Devi usare l'URI OMA di un'impostazione per creare criteri personalizzati in Intune o un'impostazione personalizzata in Microsoft endpoint Configuration Manager.
+### <a name="generate-oma-uris-for-settings"></a>Generare URI OMA per le impostazioni 
+Devi usare l'URI OMA di un'impostazione per creare un criterio personalizzato in Intune o un'impostazione personalizzata in Microsoft Endpoint Configuration Manager.
 
 **Per generare l'URI OMA per qualsiasi impostazione nella documentazione CSP**
 1. Nella documentazione del CSP individua il nodo radice del CSP. In genere ha questo aspetto `./Vendor/MSFT/<name of CSP>` <br>
@@ -222,14 +222,14 @@ Anche il tipo di dati è indicato nella documentazione del CSP. I tipi di dati p
 - bool (booleano)
 
 
-## Esempio: Gestire le impostazioni di Surface Hub con Microsoft Intune
+## <a name="example-manage-surface-hub-settings-with-microsoft-intune"></a>Esempio: Gestire le impostazioni di Surface Hub con Microsoft Intune
 
 Puoi usare Microsoft Intune per gestire le impostazioni di Surface Hub. Per le impostazioni personalizzate, segui le istruzioni in [Come configurare le impostazioni dei dispositivi personalizzati in Microsoft Intune](https://docs.microsoft.com/intune/custom-settings-configure). Per **Piattaforma**seleziona **Windows 10 e versioni successive**, mentre in **Tipo di profilo** seleziona **Restrizioni dei dispositivi (Windows 10 Team)**.
 
 
 
-## Esempio: gestire le impostazioni di Surface Hub con Microsoft endpoint Configuration Manager
-Configuration Manager supporta la gestione di dispositivi moderni che non richiedono il client Configuration Manager per gestirli, incluso Surface Hub. Se si usa già Configuration Manager per gestire altri dispositivi nell'organizzazione, è possibile continuare a usare la console di Configuration Manager come singola posizione per la gestione degli hub di Surface.
+## <a name="example-manage-surface-hub-settings-with-microsoft-endpoint-configuration-manager"></a>Esempio: gestire le impostazioni di Surface Hub con Microsoft Endpoint Configuration Manager
+Configuration Manager supporta la gestione dei dispositivi moderni che non richiedono il client di Configuration Manager per gestirli, incluso Surface Hub. Se usi già Configuration Manager per gestire altri dispositivi nell'organizzazione, puoi continuare a usare la console di Configuration Manager come posizione singola per la gestione dei dispositivi Surface Hub.
 
 > [!NOTE]
 > Queste istruzioni si basano sul ramo corrente di Configuration Manager.
@@ -267,9 +267,9 @@ Configuration Manager supporta la gestione di dispositivi moderni che non richie
 18. Al termine, nella finestra di dialogo **Sfoglia impostazioni** fai clic su **Chiudi**.
 19. Completa la procedura guidata. <br> Puoi visualizzare il nuovo elemento di configurazione nel nodo **Elementi di configurazione** nell'area di lavoro **Asset e conformità**.
 
-Per altre informazioni, vedere [creare elementi di configurazione per dispositivi windows 8,1 e Windows 10 gestiti senza il client Microsoft endpoint Configuration Manager](https://docs.microsoft.com/configmgr/compliance/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client).
+Per altre informazioni, vedi Creare elementi di configurazione per i dispositivi [Windows 8.1 e Windows 10](https://docs.microsoft.com/configmgr/compliance/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client)gestiti senza il client Microsoft Endpoint Configuration Manager.
 
-## Argomenti correlati
+## <a name="related-topics"></a>Argomenti correlati
 
 [Gestire Microsoft Surface Hub](manage-surface-hub.md)
 
