@@ -1,136 +1,131 @@
 ---
-title: Ripristinare o recuperare un hub Surface
-description: Descrive i processi di ripristino e recupero per il mozzo della superficie e fornisce istruzioni.
+title: Reimpostare o ripristinare un dispositivo Surface Hub
+description: Descrive i processi di reimpostazione e ripristino per Surface Hub e fornisce istruzioni.
 ms.assetid: 44E82EEE-1905-464B-A758-C2A1463909FF
 ms.reviewer: ''
 manager: laurawi
-keywords: Reimposta Hub superficie, recupera
+keywords: reimpostare Surface Hub, ripristinare
 ms.prod: surface-hub
 ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 07/31/2019
+ms.date: 03/10/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 73c7cf5a387bf7506bb69f62100171df4d94ad2d
-ms.sourcegitcommit: 25b8d880c6438f94b008f47b4fecc3aa4c473e85
+ms.openlocfilehash: 4b6797a83936b919aa43a7ae9fc8ae4dd720223a
+ms.sourcegitcommit: f0c976664116c45605edf3d56c4f58119a246b93
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "11304819"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "11406634"
 ---
-# Ripristinare o recuperare un hub Surface
+# <a name="reset-or-recover-a-surface-hub"></a>Reimpostare o ripristinare un dispositivo Surface Hub
 
-Questo articolo descrive come reimpostare o recuperare un hub di Surface Microsoft.  
+Questo articolo descrive come reimpostare o ripristinare un Microsoft Surface Hub.  
 
-[La reimpostazione di Surface Hub](#reset-a-surface-hub) restituisce il proprio sistema operativo all'ultimo aggiornamento cumulativo di Windows e rimuove tutti i file utente locali e le informazioni di configurazione. Le informazioni rimosse includono le seguenti:
+[La reimpostazione di Surface Hub](#reset-a-surface-hub) riporta il sistema operativo all'ultimo aggiornamento cumulativo di Windows e rimuove tutti i file utente locali e le informazioni di configurazione. Le informazioni rimosse includono quanto segue:
 
 - L'account del dispositivo
 - Informazioni sull'account per gli amministratori locali del dispositivo
-- Domain-Join o Azure AD-informazioni di join
-- Informazioni sulla registrazione di gestione di dispositivi mobili (MDM)
-- Informazioni sulla configurazione impostate usando MDM o l'app impostazioni
+- Informazioni sull'aggiunta a un dominio o azure AD
+- Informazioni di registrazione di Gestione dispositivi mobili (MDM)
+- Informazioni di configurazione impostate tramite MDM o l'app Impostazioni
 
-[Il recupero di un hub Surface dal cloud](#recover-a-surface-hub-from-the-cloud) rimuove anche queste informazioni. Inoltre, l'hub Surface Scarica una nuova immagine del sistema operativo e la installa. Puoi specificare se il processo di ripristino mantiene altre informazioni memorizzate nell'hub Surface. La stessa immagine del sistema operativo viene usata dallo [strumento di ripristino di Surface Hub](surface-hub-recovery-tool.md) se è necessario recuperare un hub Surface per cui non è possibile usare nessuna di queste opzioni.
+[Anche il ripristino di un dispositivo Surface Hub dal cloud](#recover-a-surface-hub-from-the-cloud) rimuove queste informazioni. Inoltre, Surface Hub scarica una nuova immagine del sistema operativo e la installa. Puoi specificare se il processo di ripristino mantiene altre informazioni archiviate in Surface Hub. La stessa immagine del sistema operativo viene usata dallo strumento di ripristino [di Surface Hub](surface-hub-recovery-tool.md) se devi ripristinare un dispositivo Surface Hub per il quale nessuna di queste opzioni può essere usata.
 
-## Reimpostare un hub di Surface
+## <a name="reset-a-surface-hub"></a>Reimpostare un dispositivo Surface Hub
 
-Potrebbe essere necessario reimpostare l'hub Surface per motivi come i seguenti:
+Potrebbe essere necessario reimpostare Surface Hub per motivi come i seguenti:
 
-- Si sta purposing il dispositivo per una nuova area riunioni e si vuole riconfigurarlo.
+- Si sta ripulindo il dispositivo per un nuovo spazio riunioni e si desidera riconfigurarlo.
 - Vuoi modificare la modalità di gestione locale del dispositivo.
-- Il nome utente o la password dell'account del dispositivo o dell'account di amministratore è stata persa.
-- Dopo l'installazione di un aggiornamento, le prestazioni del dispositivo vengono decrementate.
+- Il nome utente o la password dell'account del dispositivo o dell'account amministratore è stato perso.
+- Dopo aver installato un aggiornamento, le prestazioni del dispositivo diminuiscono.
 
 Durante il processo di reimpostazione, se viene visualizzata una schermata vuota per lunghi periodi di tempo, attendere e non eseguire alcuna azione.
 
 > [!WARNING]
-> Il processo di ripristino del dispositivo può richiedere fino a sei ore. Non disattivare o scollegare il mozzo della superficie fino al completamento del processo. Se si interrompe il processo, il dispositivo diventa inutilizzabile. Il dispositivo richiede il servizio di garanzia per ridiventare funzionale.
+> Il processo di reimpostazione del dispositivo può richiedere fino a sei ore. Non spegnere o scollegare Surface Hub fino al termine del processo. Se interrompi il processo, il dispositivo diventa inoperabile. Il dispositivo richiede un servizio di garanzia per poter diventare nuovamente funzionante.
 
 1. Nel dispositivo Surface Hub apri **Impostazioni**.
 
-   ![Immagine che mostra l'app impostazioni per Surface Hub.](images/sh-settings.png)
+   ![Immagine che mostra l'app Impostazioni per Surface Hub.](images/sh-settings.png)
 
-2. Selezionare **aggiorna & sicurezza**.
+2. Selezionare **Aggiorna & sicurezza**.
 
-   ![Immagine che mostra il gruppo di sicurezza Update & nell'app impostazioni per Surface Hub.](images/sh-settings-update-security.png)
+   ![Immagine che mostra il gruppo & sicurezza nell'app Impostazioni per Surface Hub.](images/sh-settings-update-security.png)
 
-3. Selezionare **ripristino**e quindi, in **Reimposta dispositivo**, selezionare inizia **.**
+3. Selezionare **Ripristino**e quindi, in **Reimposta dispositivo,** selezionare **Introduzione.**
 
    > [!IMPORTANT]
-   > Verificare di avere la chiave BitLocker disponibile prima di reimpostare il dispositivo, dato che verrà richiesto in un secondo momento. Per altre informazioni, vedere [salvare la chiave BitLocker](save-bitlocker-key-surface-hub.md). Quando l'hub viene riavviato nella partizione di ripristino, verrà chiesto di immettere la chiave BitLocker. Se si ignora il messaggio, il comando Reimposta non riesce.
+   > Assicurati di avere la chiave BitLocker disponibile prima di reimpostare il dispositivo, come verrà richiesto in un secondo momento. Per altre informazioni, vedi [Salvare la chiave di BitLocker.](save-bitlocker-key-surface-hub.md) Quando l'hub si riavvia nella partizione di ripristino, ti verrà richiesto di immettere la chiave BitLocker. Se si ignora il prompt, la reimpostazione avrà esito negativo.
    
-   ![Immagine che mostra l'opzione Reimposta dispositivo nell'app impostazioni per hub Surface.](images/sh-settings-reset-device.png)
+   ![Immagine che mostra l'opzione Reimposta dispositivo nell'app Impostazioni per Surface Hub.](images/sh-settings-reset-device.png)
 
-   Al termine del processo di reimpostazione, l'hub Surface avvia di nuovo il [programma prima esecuzione](first-run-program-surface-hub.md) . Se il processo di reimpostazione incontra un problema, rimanda il mozzo della superficie all'immagine del sistema operativo esistente in precedenza e quindi Visualizza la schermata iniziale.
+   Al termine del processo di reimpostazione, Surface Hub avvia [di nuovo il programma di prima](first-run-program-surface-hub.md) esecuzione. Se il processo di reimpostazione rileva un problema, il dispositivo Surface Hub viene riportato all'immagine del sistema operativo esistente in precedenza e quindi viene visualizzata la schermata iniziale.
 
 <span id="cloud-recovery" />
 
-## Ripristinare un dispositivo Surface Hub dal cloud
+## <a name="recover-a-surface-hub-from-the-cloud"></a>Ripristinare un dispositivo Surface Hub dal cloud
 
-Se per qualche motivo l'hub Surface diventa inutilizzabile, è comunque possibile recuperarlo dal cloud senza assistenza da parte del supporto Microsoft. L'hub Surface può scaricare un'immagine del sistema operativo fresco dal cloud e usare tale immagine per reinstallare il sistema operativo.
+Se per qualche motivo Surface Hub diventa inutilizzabile, puoi comunque recuperarlo dal cloud senza assistenza del supporto Tecnico Microsoft. Surface Hub può scaricare una nuova immagine del sistema operativo dal cloud e usarla per reinstallare il sistema operativo.
 
-Potrebbe essere necessario usare questo tipo di processo di ripristino nelle circostanze seguenti:
+Potrebbe essere necessario utilizzare questo tipo di processo di ripristino nelle circostanze seguenti:
 
-- [L'hub Surface o gli account correlati sono entrati in uno stato instabile](#recover-a-surface-hub-in-a-bad-state)
-- [Il mozzo della superficie è bloccato](#recover-a-locked-surface-hub)
+- [Surface Hub o i relativi account sono entrati in uno stato instabile](#recover-a-surface-hub-in-a-bad-state)
+- [Surface Hub è bloccato](#recover-a-locked-surface-hub)
 
 >[!IMPORTANT]
->Il processo **di recupero dal cloud** richiede una connessione cablata che fornisce la connettività Internet aperta (nessun proxy o altre richieste di autenticazione).
+>Il **processo Di ripristino dal cloud** richiede una connessione cablata che fornisce connettività Internet aperta (nessun proxy o altre richieste di autenticazione).
 
-### Ripristinare un dispositivo Surface Hub in uno stato non valido
+### <a name="recover-a-surface-hub-in-a-bad-state"></a>Ripristinare un dispositivo Surface Hub in uno stato non valido
 
-Se l'account del dispositivo entra in uno stato instabile o se l'account dell'amministratore incontra problemi, è possibile usare l'app impostazioni per avviare il processo di ripristino del cloud. È consigliabile usare il processo di ripristino del cloud solo quando il processo di ripristino del [dispositivo](#reset-a-surface-hub) non risolve il problema.
+Se l'account del dispositivo entra in uno stato instabile o se si verificano problemi con l'account amministratore, puoi usare l'app Impostazioni per avviare il processo di ripristino cloud. Devi usare il processo di ripristino cloud solo quando il processo di [reimpostazione](#reset-a-surface-hub) del dispositivo non risolve il problema.
 
-1. Nell'hub Surface selezionare Aggiorna **Impostazioni** &gt; **&** &gt; **ripristino**della sicurezza.
+1. Nel dispositivo Surface Hub seleziona **Impostazioni** &gt; **Aggiornamento & sicurezza** &gt; **Ripristino**.
 
-2. In **Recupera dal cloud**selezionare **Riavvia ora**.
+2. In **Ripristina dal cloud**seleziona **Riavvia ora.**
 
    ![ripristino dal cloud](images/recover-from-the-cloud.png)
 
-### Ripristinare un dispositivo Surface Hub bloccato
+### <a name="recover-a-locked-surface-hub"></a>Ripristinare un dispositivo Surface Hub bloccato
 
-In rari casi, un dispositivo Surface Hub potrebbe riscontrare un errore durante la cancellazione dei dati dell'utente e delle app al termine di una sessione. In questo caso, il dispositivo viene riavviato automaticamente e ritenta l'operazione. Ma se l'operazione non riesce più volte, il dispositivo si blocca automaticamente per proteggere i dati degli utenti. Per sbloccarlo, è necessario [reimpostare il dispositivo](#reset-a-surface-hub) o, se non funziona, recuperarlo dal cloud.
+In rari casi, un dispositivo Surface Hub potrebbe riscontrare un errore durante la cancellazione dei dati dell'utente e delle app al termine di una sessione. In questo caso, il dispositivo si riavvia automaticamente e tenta di nuovo l'operazione. Tuttavia, se l'operazione non riesce più volte, il dispositivo si blocca automaticamente per proteggere i dati dell'utente. Per sbloccarlo, devi [reimpostare il dispositivo](#reset-a-surface-hub) o, se non funziona, recuperarlo dal cloud.
 
-1. Individuare l'interruttore di alimentazione nella parte inferiore del mozzo della superficie. L'interruttore di alimentazione si trova accanto alla connessione del cavo di alimentazione. Per altre informazioni sull'interruttore di alimentazione, vedere la [Guida alla preparazione del sito hub Surface (PDF)](surface-hub-site-readiness-guide.md).
+1. Individua l'interruttore di alimentazione nella parte inferiore di Surface Hub. L'interruttore di alimentazione è accanto alla connessione del cavo di alimentazione. Per ulteriori informazioni sull'interruttore di alimentazione, vedi la Guida alla preparazione del sito [Surface Hub (PDF)](surface-hub-site-readiness-guide.md).
 
-2. Mentre l'hub Surface Visualizza la schermata iniziale, usare l'interruttore Power per disattivare l'hub Surface.
+2. Mentre Surface Hub visualizza la schermata iniziale, usa l'interruttore di alimentazione per disattivare Surface Hub.
 
-3. Usare l'interruttore di accensione per riattivare il mozzo della superficie. Il dispositivo viene avviato e viene visualizzata la schermata del logo Surface Hub. Quando vedi puntini di filatura sotto il logo di Surface Hub, usa l'interruttore Power per disattivare di nuovo il mozzo della superficie.  
+3. Usa l'interruttore di alimentazione per riattivare Surface Hub. Il dispositivo viene avviato e visualizza la schermata del logo di Surface Hub. Quando vedi punti rotanti sotto il logo di Surface Hub, usa l'interruttore di alimentazione per spegnere di nuovo Surface Hub.  
 
-4. Ripetere il passaggio 3 3 volte oppure finché l'hub Surface non Visualizza il messaggio "preparazione della riparazione automatica". Dopo aver visualizzato questo messaggio, l'hub Surface Visualizza la schermata di ripristino di Windows.
+4. Ripeti il passaggio 3 tre volte o finché il dispositivo Surface Hub non visualizza il messaggio "Preparazione del ripristino automatico". Dopo la visualizzazione di questo messaggio, Surface Hub visualizza la schermata Windows RE.
 
-5. Selezionare **Opzioni avanzate**.
+ 
+5. Seleziona **Reimposta per installare di nuovo Windows.** 
+![reimpostazione per reinstallare](images/recover-from-cloud.png)
 
-6. Selezionare **Recupera dal cloud**. (Facoltativamente, è possibile selezionare **Reimposta**. Tuttavia, il **recupero dal cloud** è l'approccio consigliato.
+8. Seleziona **Download cloud.** 
 
-   ![Ripristino dal cloud](images/recover-from-cloud.png)
-7. Se viene chiesto di immettere la chiave BitLocker, eseguire una delle operazioni seguenti:
+   ![Download cloud](images/recover-cloud-download.png)
 
-   - Per mantenere le informazioni protette da BitLocker nell'hub di Surface, immettere la chiave BitLocker.
-   - Per annullare le informazioni protette, selezionare **Ignora l'unità**  
+>[!IMPORTANT]
+>Se viene visualizzato un messaggio di errore che indica **Impossibile scaricare**, selezionare **Annulla** e riprovare.
 
-8. Quando viene richiesto, selezionare **Reinstalla**.
+9. Selezionare **Pulire completamente l'unità.**  
+![ ripristino e pulizia completa dell'unità](images/recover-fully-clean-drive.png)
 
-    ![Reinstalla](images/reinstall.png)
+10. Ti verrà chiesto **Se sei pronto per reimpostare questo dispositivo?**. Seleziona **Reimposta**. 
+![ripristinare e confermare la reimpostazione](images/recover-confirm-reset.png)
 
-9. Per ripartizionare il disco, selezionare **Sì**.
+11. Il download inizia e il processo di ripristino indica **reimpostazione di questo dispositivo.** 
+![ripristino visualizzato in corso](images/recover-in-progress.png)
 
-   ![Ripartizione](images/repartition.png)
+## <a name="contact-support"></a>Supporto tecnico
 
-   Prima di tutto, il processo di ripristino Scarica l'immagine del sistema operativo dal cloud.  
-
-   ![download 97& in corso](images/recover-progress.png)
-
-   Al termine del download, il processo di ripristino Ripristina il mozzo della superficie in base alle opzioni selezionate.
-   
-
-## Supporto tecnico
-
-Se si hanno domande o si ha bisogno di assistenza, è possibile [creare una richiesta di supporto](https://support.microsoft.com/supportforbusiness/productselection).
+Se hai domande o hai bisogno di assistenza, puoi [creare una richiesta di supporto](https://support.microsoft.com/supportforbusiness/productselection).
 
 
-## Argomenti correlati
+## <a name="related-topics"></a>Argomenti correlati
 
 [Gestire Microsoft Surface Hub](manage-surface-hub.md)
 
