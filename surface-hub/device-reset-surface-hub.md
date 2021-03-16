@@ -12,12 +12,12 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 03/10/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: 4b6797a83936b919aa43a7ae9fc8ae4dd720223a
-ms.sourcegitcommit: f0c976664116c45605edf3d56c4f58119a246b93
+ms.openlocfilehash: 8d9a4f995abda4e005e8136ace62e10fb564c9b8
+ms.sourcegitcommit: ea853f2dba67e63e6df33538670fd581e17facab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "11406634"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "11408811"
 ---
 # <a name="reset-or-recover-a-surface-hub"></a>Reimpostare o ripristinare un dispositivo Surface Hub
 
@@ -37,7 +37,7 @@ Questo articolo descrive come reimpostare o ripristinare un Microsoft Surface Hu
 
 Potrebbe essere necessario reimpostare Surface Hub per motivi come i seguenti:
 
-- Si sta ripulindo il dispositivo per un nuovo spazio riunioni e si desidera riconfigurarlo.
+- Si sta riconfigurando il dispositivo per un nuovo spazio riunioni e si desidera riconfigurarlo.
 - Vuoi modificare la modalità di gestione locale del dispositivo.
 - Il nome utente o la password dell'account del dispositivo o dell'account amministratore è stato perso.
 - Dopo aver installato un aggiornamento, le prestazioni del dispositivo diminuiscono.
@@ -49,18 +49,21 @@ Durante il processo di reimpostazione, se viene visualizzata una schermata vuota
 
 1. Nel dispositivo Surface Hub apri **Impostazioni**.
 
-   ![Immagine che mostra l'app Impostazioni per Surface Hub.](images/sh-settings.png)
+   > [!div class="mx-imgBorder"]
+   > ![Immagine che mostra l'app Impostazioni per Surface Hub.](images/sh-settings.png)
 
 2. Selezionare **Aggiorna & sicurezza**.
 
-   ![Immagine che mostra il gruppo & sicurezza nell'app Impostazioni per Surface Hub.](images/sh-settings-update-security.png)
+   > [!div class="mx-imgBorder"]
+   > ![Immagine che mostra il gruppo & sicurezza nell'app Impostazioni per Surface Hub.](images/sh-settings-update-security.png)
 
 3. Selezionare **Ripristino**e quindi, in **Reimposta dispositivo,** selezionare **Introduzione.**
 
    > [!IMPORTANT]
    > Assicurati di avere la chiave BitLocker disponibile prima di reimpostare il dispositivo, come verrà richiesto in un secondo momento. Per altre informazioni, vedi [Salvare la chiave di BitLocker.](save-bitlocker-key-surface-hub.md) Quando l'hub si riavvia nella partizione di ripristino, ti verrà richiesto di immettere la chiave BitLocker. Se si ignora il prompt, la reimpostazione avrà esito negativo.
    
-   ![Immagine che mostra l'opzione Reimposta dispositivo nell'app Impostazioni per Surface Hub.](images/sh-settings-reset-device.png)
+   > [!div class="mx-imgBorder"]
+   > ![Immagine che mostra l'opzione Reimposta dispositivo nell'app Impostazioni per Surface Hub.](images/sh-settings-reset-device.png)
 
    Al termine del processo di reimpostazione, Surface Hub avvia [di nuovo il programma di prima](first-run-program-surface-hub.md) esecuzione. Se il processo di reimpostazione rileva un problema, il dispositivo Surface Hub viene riportato all'immagine del sistema operativo esistente in precedenza e quindi viene visualizzata la schermata iniziale.
 
@@ -86,7 +89,8 @@ Se l'account del dispositivo entra in uno stato instabile o se si verificano pro
 
 2. In **Ripristina dal cloud**seleziona **Riavvia ora.**
 
-   ![ripristino dal cloud](images/recover-from-the-cloud.png)
+   > [!div class="mx-imgBorder"]
+   > ![ripristino dal cloud](images/recover-from-the-cloud.png)
 
 ### <a name="recover-a-locked-surface-hub"></a>Ripristinare un dispositivo Surface Hub bloccato
 
@@ -99,26 +103,31 @@ In rari casi, un dispositivo Surface Hub potrebbe riscontrare un errore durante 
 3. Usa l'interruttore di alimentazione per riattivare Surface Hub. Il dispositivo viene avviato e visualizza la schermata del logo di Surface Hub. Quando vedi punti rotanti sotto il logo di Surface Hub, usa l'interruttore di alimentazione per spegnere di nuovo Surface Hub.  
 
 4. Ripeti il passaggio 3 tre volte o finché il dispositivo Surface Hub non visualizza il messaggio "Preparazione del ripristino automatico". Dopo la visualizzazione di questo messaggio, Surface Hub visualizza la schermata Windows RE.
-
  
-5. Seleziona **Reimposta per installare di nuovo Windows.** 
-![reimpostazione per reinstallare](images/recover-from-cloud.png)
+5. Seleziona **Reimposta**. 
 
-8. Seleziona **Download cloud.** 
+6. Se viene richiesto di immettere la chiave BitLocker, eseguire una delle operazioni seguenti:
+   - Per conservare le informazioni protette da BitLocker in Surface Hub, immetti la chiave BitLocker.
+   - Per eliminare le informazioni protette, selezionare Ignora questa unità
+
+7. Seleziona **Download cloud.** 
 
    ![Download cloud](images/recover-cloud-download.png)
 
->[!IMPORTANT]
->Se viene visualizzato un messaggio di errore che indica **Impossibile scaricare**, selezionare **Annulla** e riprovare.
+   >[!IMPORTANT]
+   >Se viene visualizzato un messaggio di errore che indica **Impossibile scaricare**, selezionare **Annulla** e quindi **reimpostare di** nuovo.
 
-9. Selezionare **Pulire completamente l'unità.**  
-![ ripristino e pulizia completa dell'unità](images/recover-fully-clean-drive.png)
+8. Selezionare **Pulire completamente l'unità.**
+ 
+   ![ripristino e pulizia completa dell'unità](images/recover-fully-clean-drive.png)
 
-10. Ti verrà chiesto **Se sei pronto per reimpostare questo dispositivo?**. Seleziona **Reimposta**. 
-![ripristinare e confermare la reimpostazione](images/recover-confirm-reset.png)
+9. Ti verrà chiesto **Se sei pronto per reimpostare questo dispositivo?**. Seleziona **Reimposta**. 
+   
+   ![ripristinare e confermare la reimpostazione](images/recover-confirm-reset.png)
 
-11. Il download inizia e il processo di ripristino indica **reimpostazione di questo dispositivo.** 
-![ripristino visualizzato in corso](images/recover-in-progress.png)
+10. Il download inizia e il processo di ripristino indica **reimpostazione di questo dispositivo.**
+
+    ![ripristino visualizzato in corso](images/recover-in-progress.png)
 
 ## <a name="contact-support"></a>Supporto tecnico
 
