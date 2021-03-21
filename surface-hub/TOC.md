@@ -21,11 +21,11 @@
 #### [Personalizzare il supporto murale di Surface Hub 2S](surface-hub-2s-custom-install.md)
 #### [Foglio di lavoro per la configurazione](setup-worksheet-surface-hub.md)
 #### [Panoramica delle porte e della tastiera di Surface Hub 2S](surface-hub-2s-port-keypad-overview.md)
-#### [Connettere i dispositivi a Surface Hub 2S](surface-hub-2s-connect.md)
-### [Preparare l'ambiente per Microsoft Surface Hub 2S](surface-hub-2s-prepare-environment.md)
+#### [Connessione dei dispositivi a Surface Hub 2S](surface-hub-2s-connect.md)
+### [Preparare l'ambiente per Microsoft Surface Hub](prepare-your-environment-for-surface-hub.md)
 
 
-## Distribuisci
+## Distribuzione
 ### [Adozione di Surface Hub 2S e formazione](surface-hub-2s-adoption-kit.md)
 ### [Video di adozione di Surface Hub 2S](surface-hub-2s-adoption-videos.md)
 ### [Prima configurazione di Surface Hub 2S](surface-hub-2s-setup.md)
