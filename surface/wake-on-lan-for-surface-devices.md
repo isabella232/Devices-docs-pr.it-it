@@ -14,12 +14,12 @@ ms.reviewer: jesko
 manager: laurawi
 ms.audience: itpro
 ms.date: 3/19/2021
-ms.openlocfilehash: 1fbbf899876d154469d48fa75a179196697205c1
-ms.sourcegitcommit: 8b35cdee6c638359403697711ee53d07cca6ee51
+ms.openlocfilehash: 9c3302616de97cf60b7d750948fed653456a7cba
+ms.sourcegitcommit: 6c362c5d5f67449f1adf4618847093eaf6ad087b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "11442164"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "11442890"
 ---
 # <a name="wake-on-lan-for-surface-devices"></a>Riattivazione LAN per i dispositivi Surface
 
@@ -44,7 +44,7 @@ Gli amministratori IT possono attivare i dispositivi usando una richiesta wake o
 Molte soluzioni di gestione, ad esempio Microsoft Endpoint Configuration Manager e le app di Microsoft Store di terze parti, offrono supporto incorporato per WOL. Tieni presente che i dispositivi devono essere in modalità Standby connesso (sospensione) e connessi all'alimentazione CA. Per ulteriori informazioni sui dispositivi di attivazione con Endpoint Configuration Manager, vedere [Configure Wake on LAN - Configuration Manager.](https://docs.microsoft.com/mem/configmgr/core/clients/deploy/configure-wake-on-lan)
 
 
-## <a name="to-check-wol-is-enabled-on-your-device"></a>Per verificare che WOL sia abilitato nel dispositivo
+### <a name="to-check-wol-is-enabled-on-your-device"></a>Per verificare che WOL sia abilitato nel dispositivo
 
 1. Nel dispositivo connesso Ethernet selezionare la scheda di rete e quindi scegliere **Proprietà**.
 
