@@ -12,14 +12,14 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 07/27/2017
 ms.localizationpriority: medium
-ms.openlocfilehash: bef626fce875d5074f3ed47ed957e821beec7c77
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 215736527121306c712932f57a5a3a853fb3bb20
+ms.sourcegitcommit: 366eedceb9f859f5e87ba032b161f248360cb895
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10834028"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "11445582"
 ---
-# Gestione delle password (Surface Hub)
+# <a name="password-management-surface-hub"></a>Gestione delle password (Surface Hub)
 
 Ogni account del dispositivo Microsoft Surface Hub richiede una password per l'autenticazione e l'abilitazione delle funzionalità nel dispositivo. Per motivi di sicurezza, potrebbe essere utile modificare la password o impostarne la "rotazione" con regolarità. Tuttavia, se la password dell'account del dispositivo cambia, la password precedentemente archiviata nel dispositivo Surface Hub non sarà più valida e tutte le funzionalità che dipendono dall'account del dispositivo verranno disabilitate. Sarà necessario aggiornare la password dell'account del dispositivo in Surface Hub dall'app Impostazioni per riabilitare queste funzionalità.
 
@@ -29,16 +29,16 @@ Per semplificare la gestione delle password per gli account del dispositivo Surf
 2.  Consentire al dispositivo Surface Hub di ruotare automaticamente la password dell'account del dispositivo.
 
 
-## Disattivare la rotazione delle password per l'account del dispositivo
+## <a name="turn-off-password-rotation-for-the-device-account"></a>Disattivare la rotazione delle password per l'account del dispositivo
 
 Imposta la proprietà **PasswordNeverExpires** dell'account del dispositivo su True. Devi verificare se l'impostazione soddisfa i requisiti di sicurezza della tua organizzazione.
 
 
-## Consentire al dispositivo Surface Hub di ruotare automaticamente la password dell'account del dispositivo
+## <a name="allow-the-surface-hub-to-automatically-rotate-the-device-accounts-password"></a>Consentire al dispositivo Surface Hub di ruotare automaticamente la password dell'account del dispositivo
 
-Il dispositivo Surface Hub può gestire una password dell'account del dispositivo cambiandola frequentemente senza richiedere l'aggiornamento manuale delle informazioni dell'account del dispositivo. Puoi abilitare questa funzionalità in **Impostazioni**. Una volta abilitata, la password dell'account del dispositivo cambierà ogni settimana durante l'orario di manutenzione.
+Surface Hub può modificare automaticamente la password di un account del dispositivo senza richiedere l'aggiornamento manuale. Puoi abilitare questa funzionalità in **Impostazioni Account**  >  **Surface**  >  **Hub.** Se accerti Rotazione password, Surface Hub tenterà di cambiare la password ogni 7 giorni durante le ore di manutenzione. Le password non cambiano durante una riunione. Se sono trascorsi 7 giorni dall'ultima rotazione della password, ma Surface Hub era spento, tenterà di cambiare la password immediatamente quando è attivata o ogni 10 minuti fino a quando non avrà esito positivo.
 
-Importante: quando la password dell'account del dispositivo viene modificata, la nuova password non verrà più visualizzata. Se hai bisogno di accedere all'account o per specificare nuovamente la password (ad esempio, se vuoi modificare le impostazioni dell'account del dispositivo in Surface Hub), devi reimpostare la password con Active Directory o tramite il portale di amministrazione di Office 365.
+Le password generate automaticamente contengono da 15 a 32 caratteri, tra cui una combinazione di lettere maiuscole e minuscole, numeri e caratteri speciali. Tieni presente che quando la password dell'account del dispositivo viene modificata, non ti verrà visualizzata la nuova password. Se devi accedere all'account o fornire di nuovo la password (ad esempio, se vuoi modificare le impostazioni dell'account del dispositivo nel Dispositivo Surface Hub), dovrai usare Active Directory o il portale di amministrazione di Microsoft 365 per reimpostare la password.
 
 > [!IMPORTANT]
-> Se l'organizzazione usa una topologia ibrida (con alcuni servizi ospitati in locale e alcuni ospitati online tramite Office 365), dovrai configurare l'account del dispositivo nel formato **dominio\nomeutente**. In caso contrario, la rotazione delle password non funzionerà.
+> Il formato usato per aggiungere l'account del dispositivo a Surface Hub ha un impatto sull'opzione di [affiliazione](prepare-your-environment-for-surface-hub.md) del dispositivo da usare per il corretto funzionamento della rotazione delle password. Se si aggiunge l'account nel formato **dominio\nomeutente,** consociare l'hub ad Active Directory locale durante la configurazione iniziale. Se si aggiunge l'account in `username@domain.com` formato, consociare l'hub ad Azure Active Directory durante la configurazione iniziale. In caso contrario, la rotazione delle password non funzionerà.
