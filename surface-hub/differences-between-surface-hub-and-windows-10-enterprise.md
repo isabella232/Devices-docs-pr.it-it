@@ -7,16 +7,16 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 03/03/2021
+ms.date: 03/23/2021
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: f3ffcc46912fba3313e4489f5713b6ffcacf2d8a
-ms.sourcegitcommit: 5c904229a0257297be7f724c264e484d2c4b5168
+ms.openlocfilehash: 9c76f9405146c5cda4afe6b46ce7e1cce0062682
+ms.sourcegitcommit: 88ce9e77afdc3d09984edc05286cd0f1eb054223
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "11387479"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "11448300"
 ---
 # <a name="operating-system-essentials-surface-hub"></a>Nozioni fondamentali del sistema operativo (Surface Hub)
 
@@ -71,26 +71,26 @@ I file salvati in queste directory vengono eliminati quando l'utente preme **Ter
 Con alcune eccezioni, le app UWP (Universal Windows Platform) predefinite in Surface Hub sono disponibili anche nei PC Windows 10.
 
 App UWP preinstallate in Surface Hub:
+
 - Sveglie e orologio
 - Calcolatrice
 - Connessione
 - Excel Mobile
 - Hub di Feedback
-- Esplora file*
+- Esplora file
 - Informazioni di base
 - Mappe
 - Microsoft Edge
 - Microsoft Power BI
+- Microsoft Teams
+- Microsoft Whiteboard
 - OneDrive
 - Foto
 - PowerPoint Mobile
-- Impostazioni*
-- Skype for Business*
+- Impostazioni
 - Store
-- Lavagna*
+- Suggerimenti
 - Word Mobile
-
-*Le app con un asterisco (&ast;) sono specifiche di Surface Hub*
 
 *Criteri dell'organizzazione su cui può influire questo aspetto:* <br> Usa le linee guida per Windows 10 Enterprise per determinare le funzionalità e i requisiti di rete per le app predefinite di Surface Hub.
 
@@ -106,11 +106,11 @@ Per consentire l'uso di Surface Hub negli spazi comuni, come le sale riunioni, i
 
 Surface Hub implementa queste funzionalità di sicurezza di Windows 10:
 - [Avvio protetto UEFI](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/secure-boot-overview)
-- [Integrità del codice modalità utente con Device Guard](https://technet.microsoft.com/itpro/windows/keep-secure/introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies)
+- [Controllo di applicazioni di Windows Defender e protezione dell'integrità del codice basata sulla virtualizzazione](https://technet.microsoft.com/itpro/windows/keep-secure/introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies)
 - [Criteri di restrizione delle applicazioni con AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview)
 - [Crittografia unità BitLocker](https://technet.microsoft.com/itpro/windows/keep-secure/bitlocker-overview)
 - [Trusted Platform Module (TPM)](https://technet.microsoft.com/itpro/windows/keep-secure/trusted-platform-module-overview)
-- [Windows Defender](https://technet.microsoft.com/itpro/windows/keep-secure/windows-defender-in-windows-10)
+- [Microsoft Defender](https://technet.microsoft.com/itpro/windows/keep-secure/windows-defender-in-windows-10)
 - [Controllo dell'account utente](https://technet.microsoft.com/itpro/windows/keep-secure/user-account-control-overview) per l'accesso all'app Impostazioni
 
 Queste funzionalità di Surface Hub offrono maggiore sicurezza:
@@ -121,6 +121,8 @@ Queste funzionalità di Surface Hub offrono maggiore sicurezza:
 - Il download di driver Plug and Play avanzati è disabilitato
 
 *Criteri dell'organizzazione su cui può influire questo aspetto:* <br> Prendi in considerazione queste funzionalità durante la valutazione della sicurezza per Surface Hub.
+
+Per altre informazioni, vedi [Panoramica della sicurezza di Surface Hub](surface-hub-security.md)
 
 ## <a name="management"></a>Gestione
 
@@ -136,7 +138,7 @@ Le funzionalità amministrative di Windows 10 Enterprise, ad esempio Microsoft M
 
 ### <a name="remote-management-and-monitoring"></a>Gestione e monitoraggio remoti
 
-Surface Hub supporta la gestione remota tramite soluzioni di gestione dei dispositivi mobili (MDM, Mobile Device Management), ad esempio [Microsoft Intune](https://docs.microsoft.com/intune/) e il monitoraggio tramite Monitoraggio [di Azure.](https://azure.microsoft.com/services/monitor/) 
+Surface Hub supporta la gestione remota tramite soluzioni di gestione dei dispositivi mobili (MDM), ad esempio [Microsoft Intune](https://docs.microsoft.com/intune/) e il monitoraggio tramite [Azure Monitor.](https://azure.microsoft.com/services/monitor/) 
 
 *Criteri dell'organizzazione su cui può influire questo aspetto:* <br> Surface Hub non supporta l'installazione degli agenti Win32 richiesti dalla maggior parte degli strumenti di gestione e monitoraggio dei PC tradizionali, come System Center Operations Manager.
 
