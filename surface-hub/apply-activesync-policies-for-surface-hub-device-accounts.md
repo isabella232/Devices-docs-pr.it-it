@@ -15,28 +15,28 @@ ms.localizationpriority: medium
 appliesto:
 - Surface Hub
 - Surface Hub 2S
-ms.openlocfilehash: 4db5066c62f4e0e324a5cc3ddad027e00a2e18c9
-ms.sourcegitcommit: 7809222a51eb184f07d6b3ffbdd04a6272b247f9
+ms.openlocfilehash: e8181ec499364c48586f5218983f667331788fc3
+ms.sourcegitcommit: f9e7c091a26df0f99500c0d8b6cf40a81133e4e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "11314409"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "11470444"
 ---
-# Applicazione di criteri ActiveSync agli account del dispositivo - Surface Hub
+# <a name="applying-activesync-policies-to-device-accounts-surface-hub"></a>Applicazione di criteri ActiveSync agli account del dispositivo - Surface Hub
 
 
-L'account del dispositivo in tutte le versioni di Microsoft Surface Hub USA ActiveSync per sincronizzare la posta e il calendario. In questo modo gli utenti possono partecipare e avviare riunioni pianificate da Surface Hub, nonché inviare tramite e-mail tutte le lavagne create durante la riunione.
+I dispositivi Surface Hub che usano il sistema operativo Windows 10 Team 1703 usano ActiveSync per sincronizzare la posta e il calendario dell'account del dispositivo. In questo modo gli utenti possono partecipare e avviare riunioni pianificate da Surface Hub, nonché inviare tramite e-mail tutte le lavagne create durante la riunione.
 
 Per il corretto funzionamento di queste funzionalità, i criteri di ActiveSync per l'organizzazione devono essere configurati come segue:
 
--   Non possono esistere criteri globali che bloccano la sincronizzazione della cassetta postale delle risorse usata dall'account del dispositivo Surface Hub. Se esiste un criterio di blocco, è necessario aggiungere l'hub Surface come dispositivo consentito.
+-   Non possono esistere criteri globali che bloccano la sincronizzazione della cassetta postale delle risorse usata dall'account del dispositivo Surface Hub. Se esiste un criterio di blocco di questo tipo, devi aggiungere Surface Hub come dispositivo consentito.
 -   Devi impostare un criterio cassetta postale per dispositivi mobili con l'impostazione **PasswordEnabled** impostata su False. Le altre impostazioni del criterio cassetta postale per dispositivi mobili non sono compatibili con il dispositivo Surface Hub.
 
-## Consentire il DeviceID
+## <a name="allowing-the-deviceid"></a>Autorizzazione di DeviceID
 
 L'organizzazione potrebbe disporre di un criterio globale che impedisce la sincronizzazione degli account del dispositivo configurati nei dispositivi Surface Hub. Per configurare questa proprietà, vedi [Consentire ID di dispositivo per ActiveSync](appendix-a-powershell-scripts-for-surface-hub.md#allowing-device-ids-for-activesync).
 
-## Impostazione di PasswordEnabled
+## <a name="setting-passwordenabled"></a>Impostazione di PasswordEnabled
 
 L'account del dispositivo deve disporre di un criterio di ActiveSync con l'attributo **PasswordEnabled** impostato su False o 0. Per configurare questa proprietà, vedi [Creare un criterio di Microsoft Exchange ActiveSync compatibile con Surface Hub](appendix-a-powershell-scripts-for-surface-hub.md#create-compatible-as-policy).
 

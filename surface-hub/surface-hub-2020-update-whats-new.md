@@ -9,14 +9,14 @@ ms.author: greglin
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.date: 02/01/2021
+ms.date: 03/25/2021
 ms.localizationpriority: Medium
-ms.openlocfilehash: 96452885e19adc9784bb8d14be8ac6f2f86e883d
-ms.sourcegitcommit: 6c362c5d5f67449f1adf4618847093eaf6ad087b
+ms.openlocfilehash: 14e08cf099ac441f7b2b3b76366406868ac6c056
+ms.sourcegitcommit: f9e7c091a26df0f99500c0d8b6cf40a81133e4e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "11442870"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "11470424"
 ---
 # <a name="whats-new-in-windows-10-team-2020-update"></a>Novità dell'aggiornamento 2020 di Windows 10 Team
 
@@ -25,9 +25,18 @@ Windows 10 Team 2020 Update apporta miglioramenti principali alla distribuzione 
 ##  <a name="deployment-and-manageability"></a>Distribuzione e gestibilità
 
 - **Autenticazione moderna per gli account dei dispositivi cloud**. Surface Hub supporta l'autenticazione basata su Servizi Web Exchange (EWS) e Active Directory Authentication Library (ADAL) per connettersi a Exchange, consentendo ai clienti di deprecato l'uso dell'autenticazione di base. Per altre informazioni, vedi [Autenticazione moderna in Surface Hub.](https://docs.microsoft.com/surface-hub/surface-hub-modern-auth)
-- **Più di 20 criteri mdm (Mobile Device Management)** nuovi e aggiornati.      Questi criteri offrono agli amministratori IT un controllo migliorato sulle impostazioni di più dispositivi, tra cui: aggiornamenti delle app da Microsoft Store, impostazioni di proiezione wireless come Miracast sull'infrastruttura, impostazioni di rete come qualità del servizio e autenticazione cablata 802.1x e nuove impostazioni relative a privacy/GDPR. Per ulteriori informazioni, vedere: 
-- [Gestire Surface Hub con Microsoft Intune](surface-hub-2s-manage-intune.md).
-- [Criteri CSP supportati da Microsoft Surface Hub](https://docs.microsoft.com//windows/client-management/mdm/policy-csps-supported-by-surface-hub)
+- **Più di 20 impostazioni dei criteri**di gestione dei dispositivi mobili (MDM) nuove e aggiornate.  Queste impostazioni dei criteri offrono agli amministratori IT un controllo migliorato su più impostazioni del dispositivo, tra cui: aggiornamenti delle app da Microsoft Store, impostazioni di proiezione wireless come Miracast sull'infrastruttura, impostazioni di rete come qualità del servizio e autenticazione cablata 802.1x e nuove impostazioni correlate a privacy/GDPR. I nuovi provider di servizi di configurazione includono: 
+
+  - [CSP account](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) 
+  - [Firewall-CSP](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp) 
+  - [CSP RemoteWipe](https://docs.microsoft.com/windows/client-management/mdm/remotewipe-csp) 
+  - [Wifi-CSP](https://docs.microsoft.com/windows/client-management/mdm/wifi-csp) 
+  - [Wirednetwork-CSP](https://docs.microsoft.com/windows/client-management/mdm/wirednetwork-csp) 
+
+Per ulteriori informazioni, vedere: 
+- [CSP supportati in Microsoft Surface Hub](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#surfacehubcspsupport)
+- [Gestire Surface Hub con un provider MDM](manage-settings-with-mdm-for-surface-hub.md)
+
 
 ##  <a name="azure-active-directory-joined-devices"></a>Dispositivi aggiunti ad Azure Active Directory
 

@@ -1,6 +1,6 @@
 ---
-title: PowerShell per il mozzo della superficie (V1)
-description: Questa pagina include gli script di PowerShell destinati all'hub della superficie originale (V1)
+title: PowerShell per Surface Hub (v1)
+description: Questa pagina include script di PowerShell destinati al Dispositivo Surface Hub originale (v1)
 ms.assetid: 3EF48F63-8E4C-4D74-ACD5-461F1C653784
 ms.reviewer: ''
 manager: laurawi
@@ -14,17 +14,17 @@ ms.date: 02/01/2021
 ms.localizationpriority: medium
 appliesto:
 - Surface Hub
-ms.openlocfilehash: 73c028357849cd660d3b8720aaaa28aade12fea1
-ms.sourcegitcommit: 32b6c25698479fa289f642c5b5761ff3be15b686
+ms.openlocfilehash: bf130c2707de4507a76f0c0d6f711af3082a7647
+ms.sourcegitcommit: 4ec96ff1cd563d055fa0689a63f136acf2794a2e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "11317980"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "11474753"
 ---
-# PowerShell per il mozzo della superficie (V1)
+# <a name="powershell-for-surface-hub-v1"></a>PowerShell per Surface Hub (v1)
 
 > [!NOTE]
- >Questa pagina include gli script di PowerShell progettati per l'hub Surface originale (V1). Per gli script più recenti per la creazione di account per Surface Hub 2S, Vedi [creare l'account del dispositivo Surface Hub 2S](surface-hub-2s-account.md).
+ >Questa pagina include script di PowerShell destinati al Dispositivo Surface Hub originale (v1). Per gli script di creazione degli account più recenti per Surface Hub 2S, vedi [Creare e testare un account del dispositivo.](create-and-test-a-device-account-surface-hub.md)
 
 -   [Script di PowerShell per gli amministratori di Surface Hub](#scripts-for-admins)
     -   [Creare un account locale](#create-on-premises-ps-scripts)
@@ -38,9 +38,9 @@ ms.locfileid: "11317980"
     -   [Accettazione di convocazioni riunione esterne](#accept-ext-meetings-cmdlet)
     
  > [!NOTE]
- > Vedere anche l' [autenticazione moderna e gli script non presidiati in Exchange Online PowerShell V2](https://techcommunity.microsoft.com/t5/exchange-team-blog/modern-auth-and-unattended-scripts-in-exchange-online-powershell/ba-p/1497387)
+ > Vedere anche Autenticazione moderna e script [automatico in PowerShell V2 di Exchange Online](https://techcommunity.microsoft.com/t5/exchange-team-blog/modern-auth-and-unattended-scripts-in-exchange-online-powershell/ba-p/1497387)
 
-## Prerequisiti
+## <a name="prerequisites"></a>Prerequisiti
 
 Per eseguire correttamente questi script di PowerShell, è necessario installare i prerequisiti seguenti:
 
@@ -48,7 +48,7 @@ Per eseguire correttamente questi script di PowerShell, è necessario installare
 - [Modulo di Microsoft Azure Active Directory per Windows PowerShell (versione a 64 bit)](https://www.powershellgallery.com/packages/MSOnline/1.1.183.17)
 - [Modulo di Windows PowerShell per Skype for Business online](https://www.microsoft.com/download/details.aspx?id=39366)
 
-## <a href="" id="scripts-for-admins"></a>Script di PowerShell per gli amministratori di Surface Hub
+## <a name="powershell-scripts-for-surface-hub-administrators"></a><a href="" id="scripts-for-admins"></a>Script di PowerShell per gli amministratori di Surface Hub
 
 Qual è la funzione degli script?
 
@@ -64,13 +64,13 @@ Che cosa serve per eseguire gli script?
 > [!NOTE]
 > Che tu stia creando un nuovo account o modificando un account esistente, lo script di convalida verificherà la corretta configurazione dell'account del dispositivo. Devi sempre eseguire lo script di convalida prima di aggiungere un account del dispositivo a Surface Hub.
 
-## Esecuzione degli script
+## <a name="running-the-scripts"></a>Esecuzione degli script
 
 Gli script di creazione degli account provvederanno a:
 
 -   Richiedere le credenziali di amministratore.
--   Creare account di dispositivo nel dominio/tenant.
--   Crea o assegna un criterio ActiveSync compatibile con un hub Surface agli account del dispositivo.
+-   Creare account del dispositivo nel dominio/tenant.
+-   Crea o assegna un criterio ActiveSync compatibile con Surface Hub agli account del dispositivo.
 -   Impostare diversi attributi per gli account creati in Exchange e Skype for Business.
 -   Assegnare licenze e autorizzazioni agli account creati.
 
@@ -183,15 +183,14 @@ Ecco gli attributi che vengono impostati dagli script:
 </tbody>
 </table>
 
-## Script di creazione degli account
+## <a name="account-creation-scripts"></a>Script di creazione degli account
 
 Questi script creeranno un account del dispositivo al posto tuo. Puoi usare lo [Script di verifica degli account](#acct-verification-ps-scripts) per assicurarti della corretta esecuzione.
 
 Gli script di creazione degli account non possono modificare un account esistente, ma possono essere usati per comprendere quali cmdlet eseguire per configurare correttamente l'account esistente.
 
-### <a href="" id="create-on-premises-ps-scripts"></a>Creare un account locale
+### <a name="create-an-on-premises-account"></a><a href="" id="create-on-premises-ps-scripts"></a>Creare un account locale
 
-Crea un account come descritto in [Distribuzione locale](on-premises-deployment-surface-hub-device-accounts.md).
 
 ```PowerShell
 # SHAccountCreateOnPrem.ps1
@@ -549,9 +548,9 @@ else
 }
 ```
 
-### <a href="" id="create-os356-ps-scripts"></a>Creare un account del dispositivo con Office 365
+### <a name="create-a-device-account-using-office-365"></a><a href="" id="create-os356-ps-scripts"></a>Creare un account del dispositivo con Office 365
 
-Crea un account come descritto in [creare un account di dispositivo con Office 365](create-a-device-account-using-office-365.md).
+Crea un account come descritto in [Create a device account using Office 365](create-and-test-a-device-account-surface-hub.md).
 
 ```PowerShell
 # SHAccountCreateO365.ps1
@@ -994,9 +993,9 @@ else
 }
 ```
 
-## <a href="" id="acct-verification-ps-scripts"></a>Script di verifica degli account
+## <a name="account-verification-script"></a><a href="" id="acct-verification-ps-scripts"></a>Script di verifica degli account
 
-Questo script convalida l'account di dispositivo creato in precedenza su Surface Hub e Surface Hub 2S, indipendentemente dal metodo usato per crearlo. Questo script è sostanzialmente di tipo operazione riuscita/operazione non riuscita. Se uno dei test restituisce un errore, visualizzerai un messaggio di errore dettagliato, mentre se tutti i test hanno esito positivo, il risultato finale sarà un rapporto breve. Puoi ad esempio visualizzare:
+Questo script convalida l'account del dispositivo creato in precedenza in Surface Hub e Surface Hub 2S, indipendentemente dal metodo usato per crearlo. Questo script è sostanzialmente di tipo operazione riuscita/operazione non riuscita. Se uno dei test restituisce un errore, visualizzerai un messaggio di errore dettagliato, mentre se tutti i test hanno esito positivo, il risultato finale sarà un rapporto breve. Puoi ad esempio visualizzare:
 
 ```console
 15 tests executed
@@ -1445,7 +1444,7 @@ Write-Host -ForegroundColor Green $Global:iTotalPasses "passes "
 Cleanup
 ```
 
-## <a href="" id="enable-sfb-ps-scripts"></a>Abilitare Skype for Business
+## <a name="enable-skype-for-business"></a><a href="" id="enable-sfb-ps-scripts"></a>Abilitare Skype for Business
 
 Questo script abiliterà Skype for Business in un account del dispositivo. Usalo solo se Skype for Business non è stato precedentemente abilitato durante la creazione dell'account.
 
@@ -1605,9 +1604,9 @@ PrintSuccess "Successfully enabled $strRoomUri as a Skype for Business meeting r
 Cleanup
 ```
 
-## Cmdlet utili
+## <a name="useful-cmdlets"></a>Cmdlet utili
 
-### <a href="" id="create-compatible-as-policy"></a>Creazione di criteri di ActiveSync compatibili con Surface Hub
+### <a name="creating-a-surface-hub-compatible-activesync-policy"></a><a href="" id="create-compatible-as-policy"></a>Creazione di criteri di ActiveSync compatibili con Surface Hub
 
 Per fare in modo che Surface Hub usi i servizi Exchange, nel dispositivo deve essere effettuato il provisioning di un account del dispositivo configurato con criteri ActiveSync compatibili. Questi criteri hanno i requisiti seguenti:
 
@@ -1645,7 +1644,7 @@ A questo punto l'account del dispositivo deve semplicemente essere riconvertito 
 Set-Mailbox $strRoomUpn -Type Room
 ```
 
-### Consentire ID di dispositivo per ActiveSync
+### <a name="allowing-device-ids-for-activesync"></a>Consentire ID di dispositivo per ActiveSync
 
 Per consentire un account `$strRoomUpn`, esegui il comando seguente:
 
@@ -1661,7 +1660,7 @@ Get-ActiveSyncDevice -Mailbox $strRoomUpn
 
 Questo consente di recuperare le informazioni sul dispositivo per ogni dispositivo in cui è stato eseguito il provisioning dell'account, compresa la proprietà `DeviceId`.
 
-### <a href="" id="auto-accept-meetings-cmdlet"></a>Accettazione e rifiuto automatici delle convocazioni riunione
+### <a name="auto-accepting-and-declining-meeting-requests"></a><a href="" id="auto-accept-meetings-cmdlet"></a>Accettazione e rifiuto automatici delle convocazioni riunione
 
 Per fare in modo che un account del dispositivo accetti o rifiuti automaticamente le convocazioni riunione in base alla disponibilità, l'attributo **AutomateProcessing** deve essere impostato su **AutoAccept**. Questa operazione è consigliata per evitare la sovrapposizione delle riunioni.
 
@@ -1669,12 +1668,12 @@ Per fare in modo che un account del dispositivo accetti o rifiuti automaticament
 Set-CalendarProcessing $strRoomUpn -AutomateProcessing AutoAccept
 ```
 
-### <a href="" id="accept-ext-meetings-cmdlet"></a>Accettazione di convocazioni riunione esterne
+### <a name="accepting-external-meeting-requests"></a><a href="" id="accept-ext-meetings-cmdlet"></a>Accettazione di convocazioni riunione esterne
 
 Per fare in modo che un account del dispositivo accetti le convocazioni riunione esterne (una convocazione riunione proveniente da un account di un altro tenant/dominio), l'account del dispositivo deve essere impostato per consentire l'elaborazione delle convocazioni riunione esterne. Una volta impostato, l'account del dispositivo accetterà automaticamente le convocazioni provenienti da account esterni e da account locali.
 
 > [!Note]
-> Se l'attributo **AutomateProcessing** non è impostato su **AutoAccept**, l'impostazione non avrà alcun effetto.
+> Se **l'attributo AutomateProcessing** non è impostato su **AutoAccept,** l'impostazione non avrà alcun effetto.
 
 ```PowerShell
 Set-CalendarProcessing $strRoomUpn -ProcessExternalMeetingMessages $true
