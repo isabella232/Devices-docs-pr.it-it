@@ -15,17 +15,17 @@ ms.localizationpriority: medium
 appliesto:
 - Surface Hub
 - Surface Hub 2S
-ms.openlocfilehash: e8181ec499364c48586f5218983f667331788fc3
-ms.sourcegitcommit: f9e7c091a26df0f99500c0d8b6cf40a81133e4e2
+ms.openlocfilehash: 7ead08e49d3eee2d616ac9fcf06b85dd82e136dc
+ms.sourcegitcommit: 4ec96ff1cd563d055fa0689a63f136acf2794a2e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "11470444"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "11474733"
 ---
 # <a name="applying-activesync-policies-to-device-accounts-surface-hub"></a>Applicazione di criteri ActiveSync agli account del dispositivo - Surface Hub
 
 
-I dispositivi Surface Hub che usano il sistema operativo Windows 10 Team 1703 usano ActiveSync per sincronizzare la posta e il calendario dell'account del dispositivo. In questo modo gli utenti possono partecipare e avviare riunioni pianificate da Surface Hub, nonché inviare tramite e-mail tutte le lavagne create durante la riunione.
+I dispositivi Surface Hub che usano account del dispositivo Active Directory (provisioning nell'Hub in formato **dominio\nome** utente) e i servizi exchange locali usano ActiveSync per sincronizzare posta e calendario. In questo modo gli utenti possono partecipare e avviare riunioni pianificate da Surface Hub, nonché inviare tramite e-mail tutte le lavagne create durante la riunione.
 
 Per il corretto funzionamento di queste funzionalità, i criteri di ActiveSync per l'organizzazione devono essere configurati come segue:
 

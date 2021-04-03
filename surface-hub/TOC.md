@@ -30,10 +30,10 @@
 ### [Prima configurazione di Surface Hub 2S](surface-hub-2s-setup.md)
 ### [Connessione dei dispositivi a Surface Hub 2S](surface-hub-2s-connect.md)
 ### [Elenco di controllo per la distribuzione di Surface Hub 2S](surface-hub-2s-deploy-checklist.md)
-### [Creare un account dispositivo per Surface Hub 2S](surface-hub-2s-account.md)
+### [Creare e testare un account del dispositivo](create-and-test-a-device-account-surface-hub.md)
 ### [Creare pacchetti di provisioning per Surface Hub 2S](surface-hub-2s-deploy.md)
 ### [Distribuire app in Surface Hub 2S con Intune](surface-hub-2s-deploy-apps-intune.md)
-### [Creare gli account locali di Surface Hub 2S con PowerShell](surface-hub-2s-onprem-powershell.md)
+### [Creare gli account locali di Surface Hub 2S con PowerShell](https://docs.microsoft.com/microsoftteams/rooms/with-skype-for-business-server-2015)
 ### [App di Teams su Surface Hub](hub-teams-app.md)
 ### [Accessori certificati Teams per Surface Hub 2S](surface-hub-2s-certifications.md)
 
@@ -84,12 +84,10 @@
 
 ## Distribuisci
 ### [Creare e testare un account del dispositivo](create-and-test-a-device-account-surface-hub.md)
-#### [Distribuzione online](online-deployment-surface-hub-device-accounts.md)
-#### [Distribuzione locale (singola foresta)](on-premises-deployment-surface-hub-device-accounts.md)
-#### [Distribuzione locale (più foreste)](on-premises-deployment-surface-hub-multi-forest.md)
+#### [Distribuzione online](https://docs.microsoft.com/microsoftteams/rooms/with-office-365)
+#### [Distribuzione locale (singola foresta)](https://docs.microsoft.com/microsoftteams/rooms/with-skype-for-business-server-2015)
+#### [Distribuzione locale (più foreste)] (https://docs.microsoft.com/skypeforbusiness/deploy/deploy-clients/multiple-forest-on-premises-deployments
 #### [Distribuzione ibrida](hybrid-deployment-surface-hub-device-accounts.md)
-#### [Distribuzione online o ibrida con l'ambiente Skype Hybrid Voice](skype-hybrid-voice.md)
-#### [Crea un account del dispositivo tramite l'interfaccia utente](create-a-device-account-using-office-365.md)
 #### [Proprietà di Microsoft Exchange](exchange-properties-for-surface-hub-device-accounts.md)
 #### [Applicazione di criteri ActiveSync agli account del dispositivo](apply-activesync-policies-for-surface-hub-device-accounts.md)
 #### [Gestione delle password](password-management-for-surface-hub-device-accounts.md)
