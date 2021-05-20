@@ -12,21 +12,21 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 03/16/2019
 ms.localizationpriority: medium
-ms.openlocfilehash: ecbeca9f0910f1fa1ff2721bcf1b745195552ca2
-ms.sourcegitcommit: f74253629aaf073b35b1af69439f76e63392c5aa
+ms.openlocfilehash: 5e0714d284cc5c8207633719ec8fb52cec9f95cb
+ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "11103800"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "11576986"
 ---
-# Creare pacchetti di provisioning (Surface Hub)
+# <a name="create-provisioning-packages-surface-hub"></a>Creare pacchetti di provisioning (Surface Hub)
 
 Questo argomento spiega come creare un pacchetto di provisioning con Progettazione configurazione di Windows e come applicarlo ai dispositivi Surface Hub. Per Surface Hub, i pacchetti di provisioning possono essere usati per aggiungere certificati, installare app della piattaforma UWP (Universal Windows Platform) e personalizzare criteri e impostazioni.
 
 È possibile applicare un pacchetto di provisioning tramite una chiavetta USB durante l'installazione di prima esecuzione o con l'app **Impostazioni**. 
 
 
-## Vantaggi
+## <a name="advantages"></a>Vantaggi
 -   Configurare rapidamente i dispositivi senza usare un provider di gestione di dispositivi mobili (MDM, Mobile Device Management).
 
 -   Connettività di rete non necessaria.
@@ -36,7 +36,7 @@ Questo argomento spiega come creare un pacchetto di provisioning con Progettazio
 [Scopri i vantaggi e gli usi dei pacchetti di provisioning.](https://technet.microsoft.com/itpro/windows/configure/provisioning-packages)
 
 
-## Requisiti 
+## <a name="requirements"></a>Requisiti 
 
 Per creare e applicare un pacchetto di provisioning a un dispositivo Surface Hub, sono necessari i requisiti seguenti:
 
@@ -47,7 +47,7 @@ Per creare e applicare un pacchetto di provisioning a un dispositivo Surface Hub
 Devi creare il pacchetto di provisioning in un PC con Windows 10, salvare il pacchetto in un'unità USB e quindi distribuirlo nel tuo dispositivo Surface Hub.
 
 
-## Elementi supportati per i pacchetti di provisioning di Surface Hub
+## <a name="supported-items-for-surface-hub-provisioning-packages"></a>Elementi supportati per i pacchetti di provisioning di Surface Hub
 
 Utilizzando la procedura guidata **Effettuare il provisioning dei dispositivi Surface Hub** è possibile:
 
@@ -70,11 +70,11 @@ Utilizzando l'editor di provisioning avanzato è possibile aggiungere questi ele
 >
 >![editor avanzato aperto](images/icd-simple-edit.png)
 
-## Utilizzare la procedura guidata per il provisioning di Surface Hub
+## <a name="use-the-surface-hub-provisioning-wizard"></a>Utilizzare la procedura guidata per il provisioning di Surface Hub
 
 Dopo aver [installato Progettazione configurazione di Windows](https://technet.microsoft.com/itpro/windows/configure/provisioning-install-icd) puoi usarlo per creare un pacchetto di provisioning.
 
-### Creare il pacchetto di provisioning 
+### <a name="create-the-provisioning-package"></a>Creare il pacchetto di provisioning 
 
 1. Aprire Progettazione configurazione di Windows:
    - Dal campo di ricerca della schermata Start o del menu Start digita "Progettazione configurazione di Windows" e fai clic sul collegamento corrispondente 
@@ -87,21 +87,21 @@ Dopo aver [installato Progettazione configurazione di Windows](https://technet.m
 
 3. Assegna un nome al progetto e fai clic su **Avanti**.
 
-### Configurare le impostazioni
+### <a name="configure-settings"></a>Configurare le impostazioni
 
 <table>
 <tr><td style="width:45%" valign="top"><img src="images/one.png" alt="step one"/> <img src="images/add-certificates.png" alt="add certificates"/></br></br>Per effettuare il provisioning del dispositivo con un certificato, fai clic su <strong>Aggiungi certificato</strong>. Immetti un nome per il certificato, quindi individua e seleziona il certificato da utilizzare.</td><td><img src="images/add-certificates-details.png" alt="add a certificate"/></td></tr> 
-<tr><td style="width:45%" valign="top"><img src="images/two.png" alt="step two"/>  <img src="images/proxy.png" alt="configure proxy settings"/></br></br>Scegli <strong>Sì</strong> o <strong>No</strong> per le impostazioni del proxy. Per configurazione predefinita Surface Hub rileva automaticamente le impostazioni del proxy, per cui è possibile selezionare <strong>No</strong> se è questa l'impostazione che si desidera. Tuttavia, se in precedenza, l'infrastruttura richiedeva l'utilizzo di un server proxy e, dopo la modifica, non è più necessario, è possibile utilizzare un pacchetto di provisioning per ripristinare le impostazioni predefinite dei dispositivi Surface Hub selezionando <strong>Sì</strong> e <strong>Rileva automaticamente impostazioni</strong>. </br></br>Scegliendo <strong>Sì</strong>, è possibile rilevare automaticamente le impostazioni del proxy o configurare manualmente le impostazioni immettendo un URL in uno script di installazione o un indirizzo statico del server proxy. È inoltre possibile identificare se si desidera utilizzare il server proxy per indirizzi locali e immettere le eccezioni (indirizzi a cui Surface Hub deve connettersi direttamente senza utilizzare il server proxy).  </td><td><img src="images/proxy-details.png" alt="configure proxy settings"/></td></tr>
-<tr><td style="width:45%" valign="top"><img src="images/three.png" alt="step three"/>  <img src="images/set-up-device-admins.png" alt="device admins"/></br></br>È possibile registrare il dispositivo in Active Directory e specificare un gruppo di sicurezza per usare l'app Impostazioni, eseguire la registrazione ad Azure Active Directory per consentire agli amministratori globali di usare l'app Impostazioni o creare un account amministratore locale nel dispositivo.</br></br>Per registrare il dispositivo in Active Directory, immettere le credenziali per un account utente con privilegi minimi per aggiungere il dispositivo al dominio e specificare il gruppo di sicurezza per disporre di credenziali di amministratore in Surface Hub. Se un pacchetto di provisioning che registra un dispositivo in Active Directory viene applicato a un dispositivo Surface Hub ripristinato, lo stesso account di dominio può essere utilizzato solo se l'account elencato è un amministratore di dominio o è lo stesso account che ha inizialmente configurato il dispositivo Surface Hub. In caso contrario, è necessario utilizzare un account di dominio diverso nel pacchetto di provisioning.</br></br>Prima di utilizzare una procedura guidata di Progettazione configurazione di Windows per configurare la registrazione in blocco in Azure AD, <a href="https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup" data-raw-source="[set up Azure AD join in your organization](https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup)">configura l'aggiunta di Azure AD nella tua organizzazione</a>. L'impostazione <strong>Numero massimo di dispositivi per utente</strong> nel tenant di Azure AD determina quante volte può essere utilizzato il token di massa recuperato nella procedura guidata. Per registrare il dispositivo in Azure AD, seleziona l'opzione corrispondente e immetti un nome descrittivo per il token di massa che otterrai utilizzando la procedura guidata. Imposta una data di scadenza per il token (il valore massimo è di 30 giorni dalla data di recupero del token). Fai clic su <strong>Recupera token di massa</strong>. Nella <strong> finestra Let&#39;s è stato effettuato l'accesso </strong> , immettere un account che disponga delle autorizzazioni per l'aggiunta di un dispositivo a Azure ad e quindi la password. Fai clic su <strong>Accetta</strong> per concedere le autorizzazioni necessarie a Progettazione configurazione di Windows.</br></br>Per creare un account amministratore locale, seleziona l'opzione corrispondente e immetti un nome utente e una password. </br></br><strong>Importante:</strong> se crei un account locale nel pacchetto di provisioning, devi la password utilizzando l'app <strong>Impostazioni</strong> ogni 42 giorni. Se la password non viene modificata entro tale periodo, l'account potrebbe essere bloccato ed è impossibile accedervi.  </td><td><img src="images/set-up-device-admins-details.png" alt="join Active Directory, Azure AD, or create a local admin account"/></td></tr>
-<tr><td style="width:45%" valign="top"><img src="images/four.png" alt="step four"/> <img src="images/enroll-mdm.png" alt="enroll in device management"/></br></br>Seleziona <strong>Sì</strong> o <strong>No</strong> per la registrazione in MDM. </br></br>Selezionando <strong>Sì</strong>, è necessario fornire un account di servizio e una password o un certificato di identificazione personale autorizzato a registrare il dispositivo, nonché specificare il tipo di autenticazione. Se richiesto dal provider MDM, immettere l'URL per i servizi di individuazione, registrazione e criteri. <a href="manage-settings-with-mdm-for-surface-hub.md" data-raw-source="[Learn more about managing Surface Hub with MDM.](manage-settings-with-mdm-for-surface-hub.md)">Altre informazioni sulla gestione di Surface Hub con MDM.</a></td><td><img src="images/enroll-mdm-details.png" alt="enroll in mobile device management"/></td></tr>
-<tr><td style="width:45%" valign="top"><img src="images/five.png" alt="step five"/> <img src="images/add-applications.png" alt="add applications"/></br></br>È possibile installare più app della piattaforma UWP (Universal Windows Platform) in un pacchetto di provisioning. Per informazioni sulle impostazioni, vedi <a href="https://technet.microsoft.com/itpro/windows/configure/provision-pcs-with-apps" data-raw-source="[Provision PCs with apps](https://technet.microsoft.com/itpro/windows/configure/provision-pcs-with-apps)">Effettuare il provisioning di PC con app</a>. </br></br><strong>Importante: </strong> anche se l'interfaccia della procedura guidata consente di selezionare un'app Win32 classica, Includi solo le app UWP in un pacchetto di provisioning che verrà applicato a Surface Hub. Se si include un'app Win32 classica, il provisioning non andrà a buon fine. </td><td><img src="images/add-applications-details.png" alt="add an application"/></td></tr>
-<tr><td style="width:45%" valign="top"><img src="images/six.png" alt="step six"/>  <img src="images/add-config-file.png" alt="Add configuration file"/></br></br>Si Don&#39;t configurare le impostazioni in questo passaggio. Fornisce istruzioni per includere un file di configurazione che contiene un elenco degli account del dispositivo. Il file di configurazione non deve contenere le intestazioni di colonna. Quando si applica il pacchetto di provisioning a Surface Hub, se un file di configurazione di Surface Hub è incluso nell'unità USB, è possibile selezionare l'account e il nome descrittivo per il dispositivo dal file. Vedere il <a href="#sample-configuration-file" data-raw-source="[Sample configuration file](#sample-configuration-file)">file di configurazione di esempio</a> per un esempio.</br></br><strong>Importante: </strong> il file di configurazione può essere applicato solo durante l'esperienza di installazione out-of-box (OOBE) e può essere usato solo con il provisioning dei pacchetti creati con Windows Configuration designer rilasciato con Windows 10, versione 1703.  </td><td><img src="images/add-config-file-details.png" alt="Add a Surface Hub configuration file"/></td></tr>
-<tr><td style="width:45%" valign="top">  <img src="images/finish.png" alt="finish"/></br></br>Puoi impostare una password per proteggere il pacchetto di provisioning. Quando si applica il pacchetto di provisioning a un dispositivo devi immettere la password.</td><td><img src="images/finish-details.png" alt="Protect your package"/></td></tr>
+<tr><td style="width:45%" valign="top"><img src="images/two.png" alt="step two"/>  <img src="images/proxy.png" alt="configure proxy settings"/></br></br>Scegli <strong>Sì</strong> o <strong>No</strong> per le impostazioni del proxy. Per configurazione predefinita Surface Hub rileva automaticamente le impostazioni del proxy, per cui è possibile selezionare <strong>No</strong> se è questa l'impostazione che si desidera. Tuttavia, se in precedenza, l'infrastruttura richiedeva l'utilizzo di un server proxy e, dopo la modifica, non è più necessario, è possibile utilizzare un pacchetto di provisioning per ripristinare le impostazioni predefinite dei dispositivi Surface Hub selezionando <strong>Sì</strong> e <strong>Rileva automaticamente impostazioni</strong>. </br></br>Scegliendo <strong>Sì</strong>, è possibile rilevare automaticamente le impostazioni del proxy o configurare manualmente le impostazioni immettendo un URL in uno script di installazione o un indirizzo statico del server proxy. È inoltre possibile identificare se si desidera utilizzare il server proxy per indirizzi locali e immettere le eccezioni (indirizzi a cui Surface Hub deve connettersi direttamente senza utilizzare il server proxy).  </td><td><img src="images/proxy-details.png" alt="proxy configuration details"/></td></tr>
+<tr><td style="width:45%" valign="top"><img src="images/three.png" alt="step three"/>  <img src="images/set-up-device-admins.png" alt="device admins"/></br></br>È possibile registrare il dispositivo in Active Directory e specificare un gruppo di sicurezza per usare l'app Impostazioni, eseguire la registrazione ad Azure Active Directory per consentire agli amministratori globali di usare l'app Impostazioni o creare un account amministratore locale nel dispositivo.</br></br>Per registrare il dispositivo in Active Directory, immettere le credenziali per un account utente con privilegi minimi per aggiungere il dispositivo al dominio e specificare il gruppo di sicurezza per disporre di credenziali di amministratore in Surface Hub. Se un pacchetto di provisioning che registra un dispositivo in Active Directory viene applicato a un dispositivo Surface Hub ripristinato, lo stesso account di dominio può essere utilizzato solo se l'account elencato è un amministratore di dominio o è lo stesso account che ha inizialmente configurato il dispositivo Surface Hub. In caso contrario, è necessario utilizzare un account di dominio diverso nel pacchetto di provisioning.</br></br>Prima di utilizzare una procedura guidata di Progettazione configurazione di Windows per configurare la registrazione in blocco in Azure AD, <a href="https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup" data-raw-source="[set up Azure AD join in your organization](https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup)">configura l'aggiunta di Azure AD nella tua organizzazione</a>. L'impostazione <strong>Numero massimo di dispositivi per utente</strong> nel tenant di Azure AD determina quante volte può essere utilizzato il token di massa recuperato nella procedura guidata. Per registrare il dispositivo in Azure AD, seleziona l'opzione corrispondente e immetti un nome descrittivo per il token di massa che otterrai utilizzando la procedura guidata. Imposta una data di scadenza per il token (il valore massimo è di 30 giorni dalla data di recupero del token). Fai clic su <strong>Recupera token di massa</strong>. Nella finestra Consenti&#39;l'accesso immetti un account che dispone delle autorizzazioni per aggiungere un dispositivo <strong> ad Azure AD e quindi la </strong> password. Fai clic su <strong>Accetta</strong> per concedere le autorizzazioni necessarie a Progettazione configurazione di Windows.</br></br>Per creare un account amministratore locale, seleziona l'opzione corrispondente e immetti un nome utente e una password. </br></br><strong>Importante:</strong> se crei un account locale nel pacchetto di provisioning, devi la password utilizzando l'app <strong>Impostazioni</strong> ogni 42 giorni. Se la password non viene modificata entro tale periodo, l'account potrebbe essere bloccato ed è impossibile accedervi.  </td><td><img src="images/set-up-device-admins-details.png" alt="join Active Directory, Azure AD, or create a local admin account"/></td></tr>
+<tr><td style="width:45%" valign="top"><img src="images/four.png" alt="step four"/> <img src="images/enroll-mdm.png" alt="enroll in device management"/></br></br>Usa questa sezione per registrarti nei provider MDM oltre a Intune. Per la registrazione di Intune, usare l'aggiunta ad Azure AD nella sezione precedente con <a href="https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment" data-raw-source="[automatic Intune enrollment](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)"> la registrazione automatica di </a> Intune.</br></br>Seleziona <strong>Sì</strong> o <strong>No</strong> per la registrazione in MDM. </br></br>Selezionando <strong>Sì</strong>, è necessario fornire un account di servizio e una password o un certificato di identificazione personale autorizzato a registrare il dispositivo, nonché specificare il tipo di autenticazione. Se richiesto dal provider MDM, immettere l'URL per i servizi di individuazione, registrazione e criteri. <a href="manage-settings-with-mdm-for-surface-hub.md" data-raw-source="[Learn more about managing Surface Hub with MDM.](manage-settings-with-mdm-for-surface-hub.md)">Altre informazioni sulla gestione di Surface Hub con MDM.</a></td><td><img src="images/enroll-mdm-details.png" alt="enroll in mobile device management"/></td></tr>
+<tr><td style="width:45%" valign="top"><img src="images/five.png" alt="step five"/> <img src="images/add-applications.png" alt="add applications"/></br></br>È possibile installare più app della piattaforma UWP (Universal Windows Platform) in un pacchetto di provisioning. Per informazioni sulle impostazioni, vedi <a href="https://technet.microsoft.com/itpro/windows/configure/provision-pcs-with-apps" data-raw-source="[Provision PCs with apps](https://technet.microsoft.com/itpro/windows/configure/provision-pcs-with-apps)">Effettuare il provisioning di PC con app</a>. </br></br><strong>Importante: anche se l'interfaccia della procedura guidata ti consente di selezionare un'app Win32 classica, includi solo le app UWP in un pacchetto di provisioning che verrà applicato </strong> a Surface Hub. Se si include un'app Win32 classica, il provisioning non andrà a buon fine. </td><td><img src="images/add-applications-details.png" alt="add an application"/></td></tr>
+<tr><td style="width:45%" valign="top"><img src="images/six.png" alt="step six"/>  <img src="images/add-config-file.png" alt="Add configuration file"/></br></br>Non è&#39;configurare alcuna impostazione in questo passaggio. Fornisce istruzioni per includere un file di configurazione che contiene un elenco degli account del dispositivo. Il file di configurazione non deve contenere le intestazioni di colonna. Quando si applica il pacchetto di provisioning a Surface Hub, se un file di configurazione di Surface Hub è incluso nell'unità USB, è possibile selezionare l'account e il nome descrittivo per il dispositivo dal file. Vedere il <a href="#sample-configuration-file" data-raw-source="[Sample configuration file](#sample-configuration-file)">file di configurazione di esempio</a> per un esempio.</br></br><strong>Importante: il file di configurazione può essere applicato solo durante l'esperienza di installazione predefinita e può essere usato solo con i pacchetti di provisioning creati con progettazione della configurazione di Windows rilasciati con </strong> Windows 10 versione 1703.  </td><td><img src="images/add-config-file-details.png" alt="Add a Surface Hub configuration file"/></td></tr>
+<tr><td style="width:45%" valign="top">  <img src="images/finish.png" alt="finish creating your package"/></br></br>Puoi impostare una password per proteggere il pacchetto di provisioning. Quando si applica il pacchetto di provisioning a un dispositivo devi immettere la password.</td><td><img src="images/finish-details.png" alt="Protect your package"/></td></tr>
 </table>
 
 Al termine, fai clic su **Crea**. L'operazione richiede solo pochi secondi. Al termine della compilazione del pacchetto, il percorso in cui è archiviato il pacchetto è visualizzato come collegamento ipertestuale nella parte inferiore della pagina.
 
-## File di configurazione di esempio
+## <a name="sample-configuration-file"></a>File di configurazione di esempio
 
 Un file di configurazione di Surface Hub contiene un elenco degli account del dispositivo che il dispositivo può usare per connettersi a Exchange e Skype for Business. Quando si applica un pacchetto di provisioning a Surface Hub, è possibile includere un file di configurazione nella directory radice dell'unità flash USB, quindi selezionare l'account desiderato da applicare al dispositivo. Il file di configurazione può essere applicato solo durante la configurazione guidata dell'installazione (OOBE) e può essere usato solo con pacchetti di provisioning creati con la Progettazione configurazione di Windows rilasciata con Windows 10, versione 1703.
 
@@ -139,11 +139,11 @@ StHelens@contoso.com,password,St Helens Surface Hub
 Rushmore@contoso.com,password,Rushmore Surface Hub
 ```
 
-## Utilizzare il provisioning avanzato
+## <a name="use-advanced-provisioning"></a>Utilizzare il provisioning avanzato
 
 Dopo aver [installato Progettazione configurazione di Windows](https://technet.microsoft.com/itpro/windows/configure/provisioning-install-icd) puoi usarlo per creare un pacchetto di provisioning.
 
-### Creare il pacchetto di provisioning (avanzato)
+### <a name="create-the-provisioning-package-advanced"></a>Creare il pacchetto di provisioning (avanzato)
 
 1. Aprire Progettazione configurazione di Windows:
    - Dal campo di ricerca della schermata Start o del menu Start digita "Progettazione configurazione di Windows" e fai clic sul collegamento corrispondente 
@@ -156,24 +156,26 @@ Dopo aver [installato Progettazione configurazione di Windows](https://technet.m
    
 3. Assegna un nome al progetto e fai clic su **Avanti**.
 
-4. Selezionare il **Team comune per Windows 10**, fare clic su **Avanti**e quindi su **fine**.
+4. Selezionare **Comune a Windows 10 Team**, fare clic su **Avanti**e quindi su **Fine.**
 
     ![Progettazione immagine e configurazione - Nuovo progetto](images/icd-new-project.png)
 
-5. Nel progetto, in **personalizzazioni disponibili**, selezionare **impostazioni comuni del team**.
+5. Nel progetto, in **Personalizzazioni disponibili,** selezionare **Impostazioni team comuni.**
 
     ![Progettazione immagine e configurazione - Impostazioni comuni](images/icd-common-settings.png)
 
 
-### Aggiungere un certificato al pacchetto
+### <a name="add-a-certificate-to-your-package"></a>Aggiungere un certificato al pacchetto
 Puoi usare i pacchetti di provisioning per installare certificati che consentiranno al dispositivo di eseguire l'autenticazione in Microsoft Exchange.
 
 > [!NOTE]
-> I pacchetti di provisioning sono in grado di installare i certificati solo nell'archivio del dispositivo (computer locale) e non nell'archivio dell'utente. Se l'organizzazione richiede che i certificati vengano installati nell'archivio dell'utente, usa Gestione di dispositivi mobili (MDM) per distribuire tali certificati. Per altri dettagli, vedi la documentazione della soluzione MDM.
+> I pacchetti di provisioning sono in grado di installare i certificati solo nell'archivio del dispositivo (computer locale) e non nell'archivio dell'utente. Se l'organizzazione richiede che i certificati siano installati **** nell'archivio utenti, puoi usare il pulsante Importa certificato nella sezione Aggiornamento dei certificati di sicurezza di **&**  >  **** dell'app hub **Impostazioni.** In alternativa, i criteri di gestione dei dispositivi mobili [(MDM)](manage-settings-with-mdm-for-surface-hub.md) possono essere usati per distribuire i certificati nell'archivio dei dispositivi o nell'archivio utenti.
 
-1. Nel riquadro **Personalizzazioni disponibili** passa a **Impostazioni di runtime** > **Certificati** > **ClientCertificates**. 
+1. Nel riquadro **Personalizzazioni disponibili**, passa a **Impostazioni di runtime** > **Certificati** > **ClientCertificates**.
+   > [!NOTE]
+   > La sezione **ClientCertificates** è per i file pfx con una chiave privata. I file CER per le CA radice devono essere inseriti nella sezione **RootCertificates** e per le CA intermedie nella sezione **CACertificates.**
 
-2. Immetti **CertificateName** e quindi fai clic su **Aggiungi**. 
+2. Immettere un'etichetta per **CertificateName** e quindi fare clic su **Aggiungi.** 
 
 2. Immetti **CertificatePassword**. 
 
@@ -184,12 +186,12 @@ Puoi usare i pacchetti di provisioning per installare certificati che consentira
 5. Per **KeyLocation**, seleziona **Software only**.
 
 
-### Aggiungere un'app UWP (Universal Windows Platform) al pacchetto
+### <a name="add-a-universal-windows-platform-uwp-app-to-your-package"></a>Aggiungere un'app UWP (Universal Windows Platform) al pacchetto
 Prima di aggiungere un'app UWP a un pacchetto di provisioning, hai bisogno del pacchetto dell'app (un file con estensione APPX o APPXBUNDLE) e di eventuali file di dipendenza. Se hai acquistato l'app da Microsoft Store per le aziende, ti servirà anche la licenza dell'app *non codificata*. Vedi [Distribuire app offline](https://technet.microsoft.com/itpro/windows/manage/distribute-offline-apps#download-an-offline-licensed-app) per informazioni su come scaricare questi elementi da Microsoft Store per le aziende.
 
 1. Nel riquadro **Personalizzazioni disponibili** passa a **Impostazioni di runtime** > **UniversalAppInstall** > **DeviceContextApp**.
 
-2. Immetti un valore per **PackageFamilyName** per l'app e quindi fai clic su **Aggiungi**. Per coerenza, usa il nome della famiglia di pacchetti dell'app. Se hai acquistato l'app da Microsoft Store per le aziende, puoi trovare il nome della famiglia di pacchetti nella licenza dell'app. Aprire il file di licenza usando un editor di testo e usare il valore compreso tra i tag.. \<PFM\> .. \</PFM\>
+2. Immetti un valore per **PackageFamilyName** per l'app e quindi fai clic su **Aggiungi**. Per coerenza, usa il nome della famiglia di pacchetti dell'app. Se hai acquistato l'app da Microsoft Store per le aziende, puoi trovare il nome della famiglia di pacchetti nella licenza dell'app. Apri il file di licenza con un editor di testo e usa il valore tra i \<PFM\> \</PFM\> tag ... .
 
 3. Per **ApplicationFile**, fai clic su **Sfoglia** per trovare e selezionare l'app di destinazione (un file \*.appx o \*.appxbundle).
 
@@ -201,12 +203,12 @@ Se hai acquistato l'app da Microsoft Store per le aziende, dovrai anche aggiunge
 
 2. In Progettazione immagine e configurazione, nel riquadro **Personalizzazioni disponibili** passa a **Impostazioni di runtime** > **UniversalAppInstall** > **DeviceContextAppLicense**.
 
-3. Immetti **LicenseProductId** e quindi fai clic su **Aggiungi**. Per coerenza, usa l'ID licenza dell'app disponibile nella licenza dell'app. Apri il file di licenza con un editor di testo. Quindi, nel \<License\> tag, usa il valore nell'attributo **LicenseID** .
+3. Immetti **LicenseProductId** e quindi fai clic su **Aggiungi**. Per coerenza, usa l'ID licenza dell'app disponibile nella licenza dell'app. Apri il file di licenza con un editor di testo. Quindi, nel \<License\> tag, usa il valore nell'attributo **LicenseID.**
 
 4. Seleziona il nuovo nodo **LicenseProductId**. Per **LicenseInstall**, fai clic su **Sfoglia** per individuare e selezionare il file di licenza che hai rinominato nel passaggio 1.
 
 
-### Aggiungere un criterio al pacchetto
+### <a name="add-a-policy-to-your-package"></a>Aggiungere un criterio al pacchetto
 Surface Hub supporta un sottoinsieme di criteri del [provider di servizi di configurazione Policy](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx). Alcuni di questi criteri possono essere configurati con Progettazione immagine e configurazione.
 
 1. Nel riquadro **Personalizzazioni disponibili** passa a **Impostazioni di runtime** > **Criteri**.
@@ -216,18 +218,18 @@ Surface Hub supporta un sottoinsieme di criteri del [provider di servizi di conf
 3. Seleziona e imposta il criterio che vuoi aggiungere al pacchetto di provisioning.
 
 
-### Aggiungere impostazioni di Surface Hub al pacchetto 
+### <a name="add-surface-hub-settings-to-your-package"></a>Aggiungere impostazioni di Surface Hub al pacchetto 
 
 Puoi aggiungere al pacchetto di provisioning impostazioni dal [provider di servizi di configurazione SurfaceHub](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx). 
 
-1. Nel riquadro **personalizzazioni disponibili** passa a impostazioni di **Runtime**  >  **SurfaceHub**.
+1. Nel riquadro **Personalizzazioni disponibili** vai a **Impostazioni di runtime**  >  **SurfaceHub.**
 
 2. Seleziona una delle aree delle impostazioni disponibili.
 
 3. Seleziona e imposta l'impostazione che vuoi aggiungere al pacchetto di provisioning. 
 
 
-## Compilare il pacchetto
+## <a name="build-your-package"></a>Compilare il pacchetto
 
 1. Dopo aver configurato il pacchetto di provisioning, fai clic su **Salva** nel menu **File**.
 
@@ -252,7 +254,7 @@ Puoi aggiungere al pacchetto di provisioning impostazioni dal [provider di servi
     -   **Abilita firma pacchetto**: se selezioni questa opzione, devi selezionare un certificato valido da usare per la firma del pacchetto. Per specificare il certificato, fai clic su **Sfoglia...** e scegli il certificato che vuoi usare per firmare il pacchetto.
 
         > [!IMPORTANT]
-        > Ti consigliamo di includere nel pacchetto di provisioning un certificato di provisioning attendibile. Quando il pacchetto viene applicato a un dispositivo, il certificato viene aggiunto all'archivio di sistema e qualsiasi pacchetto firmato con tale certificato potrà in seguito essere applicato automaticamente. 
+        > Ti consigliamo di includere nel pacchetto di provisioning un certificato di provisioning attendibile. Quando il pacchetto viene applicato a un dispositivo, il certificato viene aggiunto all'archivio di sistema e qualsiasi pacchetto firmato con tale certificato potrà in seguito essere applicato automaticamente. 
 
 7. Fai clic su **Avanti** per specificare il percorso di output in cui vuoi posizionare il pacchetto di provisioning creato. Per impostazione predefinita, Progettazione immagini e configurazione di Windows usa la cartella di progetto come percorso di output.<p>
 Facoltativamente, puoi fare clic su **Sfoglia** per modificare il percorso di output predefinito.
@@ -272,15 +274,15 @@ Se la compilazione riesce, verranno visualizzati il nome del pacchetto di provis
 11. Seleziona il link **Percorso di output** per passare al percorso del pacchetto. Copia il file con estensione PPKG in un'unità flash USB vuota.
 
 
-## Applicare un pacchetto di provisioning in un dispositivo Surface Hub
+## <a name="apply-a-provisioning-package-to-surface-hub"></a>Applicare un pacchetto di provisioning in un dispositivo Surface Hub
 
-Sono disponibili due opzioni per la distribuzione di pacchetti di provisioning in un dispositivo Surface Hub. [Durante la prima esecuzione guidata](#apply-a-provisioning-package-during-first-run)è possibile applicare un pacchetto di provisioning che installa i certificati o dopo il completamento del programma di prima esecuzione, è possibile applicare un pacchetto di provisioning che configura le impostazioni, le app e i certificati tramite [le impostazioni](#apply-a-package-using-settings). 
+Sono disponibili due opzioni per la distribuzione di pacchetti di provisioning in un dispositivo Surface Hub. Durante la prima esecuzione [guidata,](#apply-a-provisioning-package-during-first-run)è possibile applicare un pacchetto di provisioning che installa i certificati oppure al termine del programma di prima esecuzione, è possibile applicare un pacchetto di provisioning che configura impostazioni, app e certificati [tramite Impostazioni](#apply-a-package-using-settings). 
 
 
-### Applicare un pacchetto di provisioning durante la prima esecuzione
+### <a name="apply-a-provisioning-package-during-first-run"></a>Applicare un pacchetto di provisioning durante la prima esecuzione
 
 > [!IMPORTANT]
-> Durante il programma di prima esecuzione, è possibile usare solo i pacchetti di provisioning per installare i certificati. Usa l'app **Impostazioni** per installare app e applicare altre impostazioni.
+> Durante il programma di prima esecuzione, puoi usare solo pacchetti di provisioning per installare i certificati. Usa l'app **Impostazioni** per installare app e applicare altre impostazioni.
 
 1. Alla prima accensione del dispositivo Surface Hub, il programma di prima esecuzione visualizzerà la [**pagina Ciao**](first-run-program-surface-hub.md#first-page). Assicurati che le impostazioni siano configurate in modo corretto prima di procedere.
 
@@ -310,7 +312,7 @@ Sono disponibili due opzioni per la distribuzione di pacchetti di provisioning i
     
 Le impostazioni dal pacchetto di provisioning verranno applicate al dispositivo e la configurazione guidata sarà completa. Dopo il riavvio del dispositivo, è possibile rimuovere l'unità flash USB.
 
-### Applicare un pacchetto usando le Impostazioni
+### <a name="apply-a-package-using-settings"></a>Applicare un pacchetto usando le Impostazioni
 
 1. Inserisci l'unità flash USB contenente il file con estensione ppkg in Surface Hub.
 

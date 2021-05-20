@@ -11,18 +11,18 @@ ms.date: 07/08/2019
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: 524d207ec1c117fb81d26ee233ea382ccb8d71d9
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 2403c57f88b0e14209b77b9f666141694384868d
+ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10834029"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "11577036"
 ---
-# Gestione locale per le impostazioni di Surface Hub
+# <a name="local-management-for-surface-hub-settings"></a>Gestione locale per le impostazioni di Surface Hub
 
 Dopo la configurazione iniziale di Microsoft Surface Hub, le impostazioni del dispositivo possono essere gestite localmente tramite **Impostazioni**.
 
-## Impostazioni di Surface Hub
+## <a name="surface-hub-settings"></a>Impostazioni di Surface Hub
 
 Oltre ad avere molte impostazioni comuni ad altri dispositivi Windows, i dispositivi Surface Hub presentano anche impostazioni configurabili solo in questi dispositivi. Questa tabella elenca le impostazioni configurabili solo nei dispositivi Surface Hub. 
 
@@ -45,20 +45,19 @@ Oltre ad avere molte impostazioni comuni ad altri dispositivi Windows, i disposi
 | Canale proiezione wireless (Miracast) | Surface Hub > Proiezione | Consente di impostare il canale per la proiezione Miracast. |
 | Visualizzazione delle info sulla riunione nella schermata iniziale | Surface Hub > Schermata iniziale | Consente di scegliere se informazioni come organizzatore della riunione, ora e oggetto devono essere visualizzate nella schermata iniziale. |
 | Sfondo della schermata iniziale |  Surface Hub > Schermata iniziale | Consente di scegliere un'immagine di sfondo per la schermata iniziale. |
-| Timeout della sessione per la schermata iniziale | Hub superficie > sessione & Power | Scegliere quanto tempo deve trascorrere prima che il dispositivo Surface Hub torni alla schermata iniziale quando non viene rilevato alcun movimento. |
-| Ripresa della sessione | Hub superficie > sessione & Power | Scegliere se consentire agli utenti di riprendere una sessione dopo che non viene rilevata alcuna animazione o se pulire automaticamente una sessione. |
-| Accesso ai file e alle riunioni di Office 365 | Hub superficie > sessione & Power | Scegliere se un utente può accedere a Office 365 per ottenere l'accesso alle riunioni e ai file. |
-| Attivazione dello schermo con i sensori di movimento | Hub superficie > sessione & Power | Consente di scegliere se lo schermo deve attivarsi quando viene rilevato movimento. |
-| Timeout dello schermo | Hub superficie > sessione & Power | Scegliere per quanto tempo il dispositivo deve essere inattivo prima di disattivare lo schermo. |
-| Timeout sospensione | Hub superficie > sessione & Power | Consente di scegliere per quanto tempo il dispositivo deve rimanere inattivo prima di passare in modalità sospensione. |
+| Timeout sessione per la schermata iniziale | Surface Hub > di & sessione | Scegliere quanto tempo deve trascorrere prima che il dispositivo Surface Hub torni alla schermata iniziale quando non viene rilevato alcun movimento. |
+| Ripresa della sessione | Surface Hub > di & sessione | Scegliere se consentire agli utenti di riprendere una sessione dopo che non viene rilevata alcuna animazione o se pulire automaticamente una sessione. |
+| Accesso ai file e alle riunioni di Office 365 | Surface Hub > di & sessione | Scegliere se un utente può accedere a Office 365 per ottenere l'accesso alle riunioni e ai file. |
+| Attivazione dello schermo con i sensori di movimento | Surface Hub > di & sessione | Consente di scegliere se lo schermo deve attivarsi quando viene rilevato movimento. |
+| Timeout dello schermo | Surface Hub > di & sessione | Scegli per quanto tempo il dispositivo deve essere inattivo prima di spegnere lo schermo. |
+| Timeout sospensione | Surface Hub > di & sessione | Consente di scegliere per quanto tempo il dispositivo deve rimanere inattivo prima di passare in modalità sospensione. |
 | Nome descrittivo | Surface Hub > Informazioni su | Consente di impostare il nome del dispositivo Surface Hub che gli utenti visualizzeranno quando si connettono in modalità wireless. |
 | Orario di manutenzione | Aggiornamento e sicurezza &gt; Windows Update &gt; Opzioni avanzate | Consente di configurare quando possono essere installati gli aggiornamenti. |
-| Configurazione del server WSUS (WindowsServer Update Services) | Aggiornamento e sicurezza &gt; Windows Update &gt; Opzioni avanzate | Consente di indicare se Surface Hub deve ricevere gli aggiornamenti da un server WSUS invece che da Windows Update. |
-| Ripristino dal cloud | Aggiornamento e sicurezza &gt; Ripristino | Reinstallare il sistema operativo nel dispositivo Surface Hub su una build del produttore dal cloud. |
+| Ripristino dal cloud | Aggiornamento e sicurezza > Ripristino | Reinstallare il sistema operativo nel dispositivo Surface Hub su una build del produttore dal cloud. |
 | Salvataggio della chiave BitLocker | Aggiornamento e sicurezza > Ripristino | Consente di eseguire il backup della chiave BitLocker del dispositivo Surface Hub in un'unità USB. |
 | Raccogliere i log | Aggiornamento e sicurezza &gt; Ripristino | Consente di salvare i log in un'unità USB per inviarli a Microsoft in un secondo momento. | 
 
-## Argomenti correlati
+## <a name="related-topics"></a>Argomenti correlati
 
 [Gestire le impostazioni di Surface Hub](manage-surface-hub-settings.md)
 

@@ -11,12 +11,12 @@ ms.date: 03/03/2021
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: b78c6fff81642700a554655ea02aa437a025fc72
-ms.sourcegitcommit: 5c904229a0257297be7f724c264e484d2c4b5168
+ms.openlocfilehash: 29d6cce102576b394d8f3fcf648c4e015fbbf730
+ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "11387414"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "11577096"
 ---
 # <a name="remote-surface-hub-management"></a>Gestione remota di Surface Hub
 
@@ -25,5 +25,5 @@ ms.locfileid: "11387414"
 |Argomento | Descrizione|
 | ------ | --------------- |
 | [Gestire le impostazioni con un provider MDM]( https://technet.microsoft.com/itpro/surface-hub/manage-settings-with-mdm-for-surface-hub) | Surface Hub permette agli amministratori IT di gestire criteri e applicazioni aziendali in questi dispositivi con una soluzione di gestione dei dispositivi mobili (MDM).|
-| [Monitorare il dispositivo Surface Hub](monitor-surface-hub.md) | Il monitoraggio per i dispositivi Surface Hub è abilitato tramite Monitoraggio di Azure.|
-| [Aggiornamenti di Windows](manage-windows-updates-for-surface-hub.md) | Puoi gestire gli aggiornamenti di Windows nel tuo dispositivo Surface Hub impostando la finestra di manutenzione, posticipando gli aggiornamenti o tramite WSUS.|
+| [Monitorare il dispositivo Surface Hub](monitor-surface-hub.md) | Il monitoraggio per Surface Hub dispositivi è abilitato tramite Monitoraggio di Azure.|
+| [Aggiornamenti di Windows](manage-windows-updates-for-surface-hub.md) | È possibile gestire Windows aggiornamenti sul Surface Hub impostando la finestra di manutenzione, posticipando gli aggiornamenti o utilizzando Windows Update for Business (WUfB).|

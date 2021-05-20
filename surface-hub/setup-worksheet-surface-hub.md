@@ -10,248 +10,91 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 06/20/2019
+ms.date: 05/14/2021
 ms.localizationpriority: medium
-ms.openlocfilehash: e0c31082669336d3762fd02f46a939aa8b0ff1bc
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+appliesto:
+- Surface Hub
+- Surface Hub 2S
+ms.openlocfilehash: c0bba196aa71c751d092b4e1f2f6005d653b2f69
+ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833854"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "11576716"
 ---
-# Foglio di lavoro per la configurazione (Surface Hub)
-
+# <a name="setup-worksheet-surface-hub"></a>Foglio di lavoro per la configurazione (Surface Hub)
 
 Quando al termine della pre-installazione vuoi avviare la prima configurazione del tuo dispositivo Microsoft Surface Hub, accertati di avere tutte le informazioni elencate in questa sezione.
 
 Devi compilare un elenco per ogni dispositivo Surface Hub da configurare, anche se alcune informazioni possono essere usate in tutti i dispositivi Surface Hub, come le informazioni sul proxy o le credenziali di dominio. Alcune di queste informazioni potrebbero non essere necessarie, a seconda di come hai scelto di configurare il dispositivo o a seconda di come è configurato l'ambiente per l'infrastruttura dell'organizzazione.
 
-<table>
-<tr>
-<th>Proprietà</th>
-<th>In quali casi si usa</th>
-<th>Esempio</th>
-<th>Valore effettivo</th>
-</tr>
-<tr>
-<td>
-<p>Informazioni sul proxy</p>
-</td>
-<td>
-<p>Se la rete usa un proxy per l'accesso alla rete e/o a Internet, devi specificare uno script o informazioni sulla porta o sul server.</p>
-</td>
-<td>
-<p>Script proxy: <code>http://contoso/proxy.pa</code> </br>
-- oppure - </br>
-Informazioni sul server e sulla porta: 10.10.10.100, porta 80
-</p>
-</td>
-<td>
-<p></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Credenziali di rete wireless (nome utente e password)</p>
-</td>
-<td>
-<p>Se decidi di connettere il tuo dispositivo al Wi-Fi e la rete wireless richiede le credenziali utente.</p>
-</td>
-<td>
-<p>admin1@contoso.com, #MiaPassw0rd</p>
-</td>
-<td>
-<p></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>UPN dell'account del dispositivo o Dominio\nomeutente e password dell'account del dispositivo</p>
-</td>
-<td>
-<p>Si tratta del nome dell'entità utente (UPN) o del dominio\nomeutente e della password dell'account del dispositivo. La posta, il calendario e Skype for Business dipendono da un account del dispositivo compatibile.</p>
-</td>
-<td>
-<p> UPN: ConfRoom15@contoso.com, #Passw0rd1 </br>
-- oppure - <br> 
-Nome utente e dominio: CONTOSO\ConfRoom15, #Passw0rd1</p>
-</td>
-<td>
-<p></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Server Microsoft Exchange dell'account del dispositivo</p>
-</td>
-<td>
-<p>Si tratta del server Exchange dell'account del dispositivo.
-La posta, il calendario e Skype for Business dipendono da un account del dispositivo compatibile.
-Per il corretto funzionamento della posta e del calendario, l'account del dispositivo deve avere un server Exchange valido. Il dispositivo tenterà di trovarlo automaticamente.</p>
-</td>
-<td>
-<p>outlook.office365.com</p>
-</td>
-<td>
-<p></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Indirizzo SIP (Session Initiation Protocol) dell'account del dispositivo</p>
-</td>
-<td>
-<p>Si tratta dell'indirizzo SIP Skype for Business dell'account del dispositivo.
-La posta, il calendario e Skype for Business dipendono da un account del dispositivo compatibile.
-Per il corretto funzionamento di Skype for Business, l'account del dispositivo deve avere un indirizzo SIP valido. Il dispositivo tenterà di trovarlo automaticamente.</p>
-</td>
-<td>
-<p>SIP: ConfRoom15@contoso.com</p>
-</td>
-<td>
-<p></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Nome descrittivo</p>
-</td>
-<td>
-<p>Il nome descrittivo del dispositivo è il nome di broadcast che gli utenti vedranno quando provano a connettersi in modalità wireless a Surface Hub. Questo nome verrà visualizzato in evidenza sullo schermo di Surface Hub.
-Ti consigliamo di scegliere un nome descrittivo riconoscibile e univoco, in modo che gli utenti possano distinguere un dispositivo Surface Hub da un altro durante il tentativo di connessione.</p>
-</td>
-<td>
-<p>Sala riunioni 15</p>
-</td>
-<td>
-<p></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Nome dispositivo</p>
-</td>
-<td>
-<p>Il nome del dispositivo è il nome che verrà usato per l'aggiunta al dominio ed è l'identità che visualizzerai nel provider MDM se il dispositivo è registrato in MDM.
-Il nome del dispositivo scelto non deve essere uguale a quello di altri dispositivi nel dominio Active Directory dell'utente (se decidi di aggiungere il dispositivo al dominio). Il dispositivo non può essere aggiunto al dominio se il nome non è univoco.
-</p>
-</td>
-<td>
-<p>sala15</p>
-</td>
-<td>
-<p></p>
-</td>
-</tr>
-<tr>
-<td colspan="4">
-<p><b>PER L'AGGIUNTA AD AZURE AD</b></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Credenziali utente tenant di Azure AD (nome utente e password)</p>
-</td>
-<td>
-<p>Se decidi di assegnare a persone della tua organizzazione Azure Active Directory (Azure AD) il ruolo di amministratori del dispositivo, devi eseguire l'aggiunta ad Azure AD.
-Per l'aggiunta ad Azure AD, devi avere credenziali utente valide.</p>
-</td>
-<td>
-<p>admin1@contoso.com, #MiaPassw0rd</p>
-</td>
-<td>
-<p></p>
-</td>
-</tr>
-<tr>
-<td colspan="4">
-<p><b>PER L'AGGIUNTA A UN DOMINIO</b></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Dominio per l'aggiunta</p>
-</td>
-<td>
-<p>Si tratta del dominio a cui dovrai eseguire l'aggiunta per consentire al gruppo di sicurezza scelto di diventare amministratori del dispositivo.
-Potrebbe servirti il nome di dominio completo (FQDN).</p>
-</td>
-<td>
-<p>contoso (nome breve) O contoso.corp.com (FQDN)</p>
-</td>
-<td>
-<p></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Credenziali dell'account di dominio (nome utente e password)</p>
-</td>
-<td>
-<p>L'aggiunta a un dominio non può avvenire a meno che non specifichi credenziali dell'account sufficienti per l'aggiunta al dominio. Dopo aver specificato un dominio per l'aggiunta e le credenziali per l'aggiunta al dominio, il gruppo di sicurezza scelto può modificare le impostazioni nel dispositivo.</p>
-</td>
-<td>
-<p>admin1, #MiaPassw0rd</p>
-</td>
-<td>
-<p></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Alias gruppo di sicurezza amministratori</p>
-</td>
-<td>
-<p>Si tratta di un gruppo di sicurezza in Active Directory (AD). I membri di questo gruppo di sicurezza possono modificare le impostazioni nel dispositivo.</p>
-</td>
-<td>
-<p>AmministratoriSurfaceHub</p>
-</td>
-<td>
-<p></p>
-</td>
-</tr>
-<tr>
-<td colspan="4">
-<p><b>SE USI UN AMMINISTRATORE LOCALE</b></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Credenziali dell'account dell'amministratore locale (nome utente e password)</p>
-</td>
-<td>
-<p>Se decidi di non eseguire l'aggiunta a un dominio AD o ad Azure AD, puoi creare un account amministratore locale nel dispositivo.</p>
-</td>
-<td>
-<p>admin1, #MiaPassw0rd</p>
-</td>
-<td>
-<p></p>
-</td>
-</tr>
-<tr>
-<td colspan="4">
-<p><b>SE VUOI INSTALLARE CERTIFICATI O APP</b></p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Unità USB</p>
-</td>
-<td>
-<p>Se prima della prima esecuzione sai di voler installare certificati o app universali, segui i passaggi descritti in <a href="provisioning-packages-for-certificates-surface-hub.md">Creare pacchetti di provisioning</a>. I pacchetti di provisioning verranno creati in un'unità USB.</p>
-</td>
-<td>
-<p></p>
-</td>
-<td>
-<p></p>
-</td>
-</tr>
-</table> 
+Al termine, vedere [l'elenco di controllo post-distribuzione riportato di](#post-deployment-checklist) seguito.
 
+| Proprietà                                                          | In quali casi si usa                                                                                                                                                                                                                                                                                                                                                           | Esempio                                                                                                                               | Altre informazioni                                                                                                                                                                                                                                                              |
+| ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Informazioni sul proxy                                                 | Se si utilizza un proxy per l'accesso alla rete o a Internet, è necessario fornire uno script o informazioni sul server/porta.                                                                                                                                                                                                                                                                        |  Script proxy: http://contoso/proxy.pac <br><br>Oppure:<br><br>Informazioni sul server e sulla porta: 10.10.10.100, porta 80                                  | [Configurare il proxy usando il pacchetto di provisioning.](surface-hub-2s-deploy.md)                                                                                                                           |
+| Credenziali di rete wireless (nome utente e password)              | Se connetti il dispositivo a Wi-Fi e la rete wireless richiede le credenziali utente.                                                                                                                                                                                                                                                                                           | admin1@contoso.com, #MiaPassw0rd                                                                                                       | [Gestione della rete wireless](wireless-network-management-for-surface-hub.md)                                                                                                                                                 |
+| UPN dell'account del dispositivo o Dominio\nomeutente e password dell'account del dispositivo | Si tratta del nome dell'entità utente (UPN) o del dominio\nomeutente e della password dell'account del dispositivo. Posta, calendario, Microsoft Teams e Skype for Business dipendono da un account del dispositivo compatibile.                                                                                                                                                                            | UPN: ConfRoom15@contoso.com, #Passw0rd1 <br><br>Oppure:<br><br>Nome utente e dominio: CONTOSO\ConfRoom15, #Passw0rd1                        | [Creare e testare un account del dispositivo](create-and-test-a-device-account-surface-hub.md) |
+| Proprietà cassetta postale                                                | La cassetta postale deve essere configurata con le proprietà corrette per assicurare la migliore esperienza per le riunioni nel dispositivo Surface Hub.                                                                                                                                                                                                                                                                | Vedere [Proprietà di Microsoft Exchange](exchange-properties-for-surface-hub-device-accounts.md) |                                                                                                                                        |
+| URL EWS per la cassetta postale dell'account del dispositivo                              | Si tratta del server Exchange dell'account del dispositivo. Posta, calendario, Microsoft Teams e Skype for Business dipendono da un account del dispositivo compatibile. Per il corretto funzionamento della posta e del calendario, l'account del dispositivo deve avere un server Exchange valido. Il dispositivo tenterà di trovarlo automaticamente.                                                                                               | https://outlook.office365.com/EWS/exchange.asmx                                                                                                                 | [Creare e testare un account del dispositivo](create-and-test-a-device-account-surface-hub.md)<br><br>[Proprietà di Microsoft Exchange](exchange-properties-for-surface-hub-device-accounts.md)      |
+| Indirizzo SIP (Session Initiation Protocol) dell'account del dispositivo          | Questo è l'indirizzo SIP dell'account del dispositivo. Posta, calendario, Microsoft Teams e Skype for Business dipendono da un account del dispositivo compatibile. Perché i team o Skype per le aziende funzionino, l'account del dispositivo deve avere un indirizzo SIP valido Il dispositivo tenterà di trovarlo automaticamente.                                                                                              | SIP: ConfRoom15@contoso.com                                                                                                           |                                                                                                                                                                                                                                                                         |
+| Password dell'account del dispositivo                                           | Per semplificare la gestione, puoi disabilitare la scadenza della password per l'account del dispositivo o consentire Surface Hub ruotare automaticamente la password dell'account del dispositivo. <br> <br>**Nota:** Se si aggiunge l'account nel formato dominio\nomeutente, consociare l'hub ad Active Directory locale durante la configurazione iniziale. Se aggiungi l'account in username@domain.com, consoci l'hub con Azure Active Directory durante la configurazione iniziale. In caso contrario, la rotazione delle password non funzionerà.                                                                                                                                                                                                                 |                                                                                                                                       | [Gestione delle password](password-management-for-surface-hub-device-accounts.md)                                                                                                                                                 |
+| Exchange Servizi Web (EWS)                                       | Abilitare EWS. Surface Hub utilizza EWS per sincronizzare il calendario.                                                                                                                                                                                                                                                                                                                          |                                                                                                                                       | [Autenticazione moderna di Surface Hub](surface-hub-modern-auth.md)                                                                                                                                                            |
+| Autenticazione a più fattori                                        | Disabilitare l'autenticazione a più fattori nell'account del dispositivo. Quando il Surface Hub accede Exchange in background senza l'interazione dell'utente, non può rispondere a prompt interattivi, ad esempio l'autenticazione a più fattori.                                                                                                                                                                         |                                                                                                                                       |                                                                                                                                                                                                                                                                         |
+| Dettagli registrazione MDM                                            | Se vuoi registrare manualmente il dispositivo in MDM, dovrai disporre di credenziali utente valide per il provider MDM e l'URL di registrazione. Il dispositivo tenterà di trovare automaticamente l'URL di registrazione. | manage.microsoft.com | [Gestire Surface Hub con un provider MDM](manage-settings-with-mdm-for-surface-hub.md) |
+| Nome descrittivo                                                     | Il nome descrittivo del dispositivo è il nome di broadcast che gli utenti vedranno quando provano a connettersi in modalità wireless a Surface Hub. Questo nome verrà visualizzato in evidenza sullo schermo di Surface Hub. Ti consigliamo di scegliere un nome descrittivo riconoscibile e univoco, in modo che gli utenti possano distinguere un dispositivo Surface Hub da un altro durante il tentativo di connessione.             | Sala riunioni 15                                                                                                                    | [Prima installazione per Surface Hub](surface-hub-2s-setup.md)                                                                                                                                                                   |
+| Nome dispositivo                                                       | Il nome del dispositivo è il nome che verrà usato per l'aggiunta al dominio ed è l'identità che visualizzerai nel provider MDM se il dispositivo è registrato in MDM. Il nome del dispositivo scelto non deve essere uguale a quello di qualsiasi altro dispositivo nel dominio di Active Directory (se si decide di aggiungere il dominio al dispositivo). Il dispositivo non può aggiungere il dominio senza un nome univoco.  | sala15                                                                                                                            | [Prima installazione per Surface Hub](surface-hub-2s-setup.md)                                                                                                                                                                   |
+| Modalità app Teams                                                    | - Modalità 0: Skype for Business con Microsoft Teams per le riunioni pianificate.<br>- Modalità 1: Microsoft Teams con Skype for Business per le riunioni pianificate.<br>- Modalità 2 : Microsoft Teams solo                                                                                                                                                         |                                                                                                                                       | [Modifica della piattaforma di comunicazione aziendale predefinita](manage-settings-with-mdm-for-surface-hub.md)                                                                            |
 
+## <a name="device-affiliation"></a>Affiliazione dei dispositivi
 
+Usa Affiliazione del dispositivo per gestire l'accesso degli utenti all'app Impostazioni in Surface Hub. Con il Windows 10 Team operativo (che viene eseguito Surface Hub), solo gli utenti autorizzati possono modificare le impostazioni usando l'app Impostazioni app. Poiché la scelta dell'affiliazione può influire sulla disponibilità delle funzionalità, pianificare in modo appropriato per garantire che gli utenti possano accedere alle funzionalità come previsto.
 
+> [!NOTE]
+> Puoi impostare l'affiliazione dei dispositivi solo durante la configurazione iniziale della configurazione guidata. Se devi reimpostare l'affiliazione del dispositivo, dovrai ripetere l'installazione della Configurazione guidata.
 
+### <a name="if-youre-joining-azure-ad"></a>Se si sta partecipando ad Azure AD
+
+| Proprietà                                                 | In quali casi si usa                                                                                                                                                                                                                                                    | Esempio                         | Altre informazioni                                                                                                                        |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| Credenziali utente tenant di Azure AD (nome utente e password) | Se decidi di far diventare amministratori gli utenti dell'organizzazione di Azure Active Directory (Azure AD) nel dispositivo, dovrai aggiungere il Surface Hub ad Azure AD. Per aggiungerlo ad Azure AD, sono necessarie credenziali valide per un account nel tenant.                                                               | admin1@contoso.com, #MiaPassw0rd | [Gestione del gruppo amministratori](admin-group-management-for-surface-hub.md)                     |
+| Account di amministratore non globale                                | Per Surface Hub dispositivi aggiunti ad Azure AD, puoi limitare le autorizzazioni di amministratore alla gestione dell'app Impostazioni in Surface Hub. In questo modo è possibile impostare l'ambito delle autorizzazioni di amministratore solo Surface Hub e impedire l'accesso di amministratore potenzialmente indesiderato a un intero dominio di Azure AD. |                                 | [Configurare account di amministratore non globali in Surface Hub](surface-hub-2s-nonglobal-admin.md) |
+
+### <a name="if-youre-joining-a-domain"></a>Se si sta partecipando a un dominio
+
+| Proprietà                                           | In quali casi si usa                                                                                                                                                                                                                        | Esempio                                         |
+| -------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
+| Dominio per l'aggiunta                                     | Si tratta del dominio a cui dovrai eseguire l'aggiunta per consentire al gruppo di sicurezza scelto di diventare amministratori del dispositivo. Potrebbe servirti il nome di dominio completo (FQDN).                                                                          | contoso (nome breve) O contoso.corp.com (FQDN) |
+| Credenziali dell'account di dominio (nome utente e password) | L'aggiunta a un dominio non può avvenire a meno che non specifichi credenziali dell'account sufficienti per l'aggiunta al dominio. Dopo aver specificato un dominio per l'aggiunta e le credenziali per l'aggiunta al dominio, il gruppo di sicurezza scelto può modificare le impostazioni nel dispositivo. | admin1, #MiaPassw0rd                             |
+| Alias gruppo di sicurezza amministratori                         | Si tratta di un gruppo di sicurezza in Active Directory (AD). I membri di questo gruppo di sicurezza possono modificare le impostazioni nel dispositivo.                                                                                                                | AmministratoriSurfaceHub                                |
+
+### <a name="if-youre-using-a-local-admin"></a>Se si usa un amministratore locale
+
+| Proprietà                                                | In quali casi si usa                                                                                   | Esempio             |
+| ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------- |
+| Credenziali dell'account dell'amministratore locale (nome utente e password) | Se decidi di non eseguire l'aggiunta a un dominio AD o ad Azure AD, puoi creare un account amministratore locale nel dispositivo. | admin1, #MiaPassw0rd |
+
+### <a name="if-you-need-to-install-certificates-or-apps"></a>Se devi installare certificati o app
+
+| Proprietà  | In quali casi si usa                                                                                                                                                                                                                                                                                        |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Unità USB | Se prima della prima esecuzione sai di voler installare certificati o app universali, segui i passaggi descritti in [Creare pacchetti di provisioning](provisioning-packages-for-certificates-surface-hub.md). I pacchetti di provisioning verranno creati in un'unità USB. |
+
+## <a name="post-deployment-checklist"></a>Elenco di controllo post-distribuzione
+
+| Segno di spunta                                      | Risposta                                                                                                                                                                                                          |
+| ------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Sincronizzazione dell'account del dispositivo**                 | ☐ Sì <br><br>☐ No                                                                                                                                                                                                |
+| **Chiave Bitlocker**                          | ☐ salvato nel file (nessuna affiliazione) <br><br>☐ salvato in Active Directory (affiliazione AD) <br><br>☐ salvato in Azure AD (affiliazione di Azure AD)                                                                          |
+| **Aggiornamenti del sistema operativo del dispositivo**                      | ☐ completato                                                                                                                                                                                                       |
+| **Windows Aggiornamenti dello Store**                  | ☐ automatico <br><br>☐ manuale                                                                                                                                                                                      |
+| **Microsoft Teams riunione pianificata**      | ☐ messaggio di posta elettronica di conferma ricevuto <br><br>☐ riunione visualizzata nella schermata Start <br><br>☐ funzioni one-touch join <br><br>☐ in grado di partecipare all'audio <br><br>☐ in grado di partecipare al video <br><br>☐ in grado di condividere lo schermo               |
+| **Skype for Business riunione pianificata**   | ☐ messaggio di posta elettronica di conferma ricevuto<br>☐ riunione visualizzata nella schermata Start<br>☐ one-touch join funziona correttamente<br>☐ in grado di partecipare all'audio<br>☐ in grado di partecipare al video<br>☐ in grado di condividere lo schermo<br>☐ in grado di inviare/ricevere messaggi istantanei |
+| **Riunione pianificata quando è già stata invitata** | ☐ riunione rifiutata                                                                                                                                                                                                |
+| **Microsoft Teams riunione ad hoc**         | ☐ invitare altri utenti a lavorare <br><br>☐ in grado di partecipare all'audio <br><br>☐ in grado di partecipare al video <br><br>☐ in grado di condividere lo schermo                                                                                                |
+| **Microsoft Whiteboard**                   | ☐ avvio dalla schermata iniziale <br><br>☐ avvio da Microsoft Teams                                                                                                                                        |
+| **Chiamata Teams/Skype in arrivo**              | ☐ in grado di partecipare all'audio<br>☐ in grado di partecipare al video<br>☐ in grado di condividere lo schermo<br>☐ in grado di inviare/ricevere messaggi istantanei (solo Skype for Business messaggistica istantanea)                                                                                     |
+| **Flussi video in tempo reale in arrivo**            | ☐ massimo 2 (Skype for Business)<br>☐ massimo 4 (Microsoft Teams)                                                                                                                                                 |
+| **Microsoft Teams Comportamento modalità 0**        | ☐ Skype for Business riquadro nella schermata Iniziale/Iniziale<br>☐ può partecipare a riunioni Skype for Business pianificate (Skype interfaccia utente)<br>☐ può partecipare a riunioni Teams pianificate (Teams interfaccia utente)                                                |
+| **Microsoft Teams Comportamento modalità 1**        | ☐ Teams riquadro nella schermata Iniziale/Iniziale<br>☐ può partecipare a riunioni Skype for Business pianificate (Skype interfaccia utente)<br>☐ può partecipare a riunioni Teams pianificate (Teams interfaccia utente)                                                             |
+| **Microsoft Teams Comportamento della modalità 2**        | ☐ Teams riquadro nella schermata Iniziale/Iniziale<br>☐ può partecipare a riunioni Teams pianificate<br>☐ non partecipare a Skype for Business riunioni                                                                                       |
