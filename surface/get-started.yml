@@ -11,17 +11,19 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: High
-  ms.openlocfilehash: 9360df030e5a562dfeb3ad471c228408122c3471
-  ms.sourcegitcommit: f8f32455b1230742c58ee74004cbaaad037069b6
+  ms.openlocfilehash: 301a4b733ee477c1e9999dba84cd58283c02844f
+  ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 02/14/2021
-  ms.locfileid: "11328180"
+  ms.lasthandoff: 05/20/2021
+  ms.locfileid: "11576826"
 landingContent:
 - title: Dispositivi Surface
   linkLists:
   - linkListType: whats-new
     links:
+    - text: Surface Laptop 4 + for Business
+      url: https://www.microsoft.com/surface/business/surface-laptop-4
     - text: Surface Pro 7 + for business
       url: https://www.microsoft.com/surface/business/surface-pro-7-plus
     - text: Surface Laptop Go for Business
@@ -34,21 +36,21 @@ landingContent:
   linkLists:
   - linkListType: get-started
     links:
-    - text: Novità di Surface Pro 7+ for Business
-      url: https://techcommunity.microsoft.com/t5/surface-it-pro-blog/surface-pro-7-brings-next-level-performance-and-versatility-to/ba-p/1928797
+    - text: Surface Laptop della tecnologia per 4 processori
+      url: surface-laptop-processors.md
+    - text: Surface Headphones panoramica tecnica di Surface Headphones 2+
+      url: surface-headphones.md
     - text: Desktop virtuale Windows su Surface
       url: windows-virtual-desktop-surface.md
-    - text: Novità di Surface Dock 2
-      url: surface-dock-whats-new.md
 - title: Microsoft Ignite
   linkLists:
   - linkListType: video
     links:
     - text: Distribuzione zero touch con Surface & AutoPilot
       url: https://youtu.be/WQ-wg8fRzN0
-    - text: Surface Pro X e Windows ARM in un mondo remoto
+    - text: Surface Pro X e Windows in ARM in un mondo remoto
       url: https://youtu.be/bDw77ZQNPPw
-    - text: 'Surface Security : Da Chip a Cloud Modern Endpoint Protection di Microsoft'
+    - text: 'Surface Security : da chip a cloud Endpoint Protection da Microsoft'
       url: https://youtu.be/uadAecDbqf4
 - title: Distribuisci i dispositivi Surface
   linkLists:
@@ -64,12 +66,12 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
+    - text: Surface Enterprise Management Mode
+      url: surface-enterprise-management-mode.md
     - text: Gestire e installare gli aggiornamenti di driver e firmware per il Surface
       url: manage-surface-driver-and-firmware-updates.md
-    - text: Gestione di Intune delle impostazioni UEFI di Surface
+    - text: Gestire DFCI nei dispositivi Surface
       url: surface-manage-dfci-guide.md
-    - text: Distribuzione, gestione e manutenzione di Surface Pro X
-      url: surface-pro-arm-app-management.md
 - title: Risoluzione dei problemi
   linkLists:
   - linkListType: learn
@@ -86,7 +88,7 @@ landingContent:
     links:
     - text: Protezione DMA nei dispositivi Surface
       url: dma-protect.md
-    - text: Proteggere le porte di Surface Dock 2 con la modalità SEMM (Surface Enterprise Management Mode)
+    - text: Secure Surface Dock 2 ports with Surface Enterprise Management Mode (SEMM)
       url: secure-surface-dock-ports-semm.md
     - text: Strumento Surface Data Eraser
       url: microsoft-surface-data-eraser.md
@@ -116,5 +118,5 @@ landingContent:
     links:
     - text: Contattare il supporto di Surface
       url: contact-surface-support.md
-    - text: Piani di garanzia e protezione di Surface for Business
+    - text: Piani di garanzia e protezione di Surface per le aziende
       url: https://www.microsoft.com/surface/business/warranty-service-offerings-and-support
