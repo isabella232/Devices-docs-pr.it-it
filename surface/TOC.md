@@ -4,10 +4,11 @@
 
 ## Panoramica
 
-### [Surface Pro 7 + for business](https://www.microsoft.com/surface/business/surface-pro-7-plus)
+### [Surface Laptop 4 per le aziende](https://www.microsoft.com/surface/business/surface-laptop-4)
+### [Panoramica tecnica dei processori di Surface Laptop 4](surface-laptop-processors.md)
+### [Surface Pro 7+ per le aziende](https://www.microsoft.com/surface/business/surface-pro-7-plus)
 ### [Surface Go 2 per le aziende](https://www.microsoft.com/surface/business/surface-go-2)
 ### [Surface Pro X per le aziende](https://www.microsoft.com/surface/business/surface-pro-x)
-### [Surface Laptop 3 per le aziende](https://www.microsoft.com/surface/business/surface-laptop-3)
 ### [Surface Studio 2 per le aziende](https://www.microsoft.com/surface/business/surface-studio-2)
 ### [Surface Book 3 per le aziende](https://www.microsoft.com/surface/business/surface-book-3)
 ### [Massimizzare il ROI con Microsoft Surface](forrester-tei-study.md)
@@ -15,7 +16,9 @@
 ### [Novità di Surface Dock 2](surface-dock-whats-new.md)
 ### [Panoramica tecnica su Surface Book 3 GPU](surface-book-GPU-overview.md)
 ### [Panoramica tecnica su Surface Book 3 Quadro RTX 3000](surface-book-quadro.md)
-### [Mobilità sicura e lavoro ovunque con LTE Advanced](https://www.microsoft.com/surface/business/lte-laptops-and-tablets)
+### [Mobilità sicura e lavoro da qualsiasi posizione con LTE Advanced](https://www.microsoft.com/surface/business/lte-laptops-and-tablets)
+### [Panoramica tecnica di Surface Headphones 2+](surface-headphones.md)
+
 
 ## Pianificazione
 
