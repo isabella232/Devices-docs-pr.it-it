@@ -13,11 +13,11 @@
 ## Pianificazione
 ### [Guida alla preparazione del sito di Surface Hub 2S](surface-hub-2s-site-readiness-guide.md) 
 #### [Pianificazione del sito per Surface Hub 2S](surface-hub-2s-site-planning.md)
-#### [Guida introduttiva di Surface Hub 2S](surface-hub-2s-quick-start.md)
-#### [Installare e montare Surface Hub 2S](surface-hub-2s-install-mount.md)
-#### [Spostamento e movimentazione di Surface Hub 2S 85"](hub-move.md)
+#### [Avvio rapido di Surface Hub 2S](surface-hub-2s-quick-start.md)
+#### [Installare e montare Surface Hub 2S 50"](surface-hub-2s-install-mount.md)
+#### [Spostamento e gestione di Surface Hub 2S 85"](hub-move.md)
 #### [Installare e montare Surface Hub 2S 85"](surface-hub-2s-85-install-mount.md)
-#### [Personalizzare il supporto murale di Surface Hub 2S](surface-hub-2s-custom-install.md)
+#### [Personalizzare il montaggio a parete Surface Hub 2S 50"](surface-hub-2s-custom-install.md)
 #### [Foglio di lavoro per la configurazione](setup-worksheet-surface-hub.md)
 #### [Panoramica delle porte e della tastiera di Surface Hub 2S](surface-hub-2s-port-keypad-overview.md)
 #### [Connessione dei dispositivi a Surface Hub 2S](surface-hub-2s-connect.md)
@@ -29,7 +29,6 @@
 ### [Video di adozione di Surface Hub 2S](surface-hub-2s-adoption-videos.md)
 ### [Prima configurazione di Surface Hub 2S](surface-hub-2s-setup.md)
 ### [Connessione dei dispositivi a Surface Hub 2S](surface-hub-2s-connect.md)
-### [Elenco di controllo per la distribuzione di Surface Hub 2S](surface-hub-2s-deploy-checklist.md)
 ### [Creare e testare un account del dispositivo](create-and-test-a-device-account-surface-hub.md)
 ### [Creare pacchetti di provisioning per Surface Hub 2S](surface-hub-2s-deploy.md)
 ### [Distribuire app in Surface Hub 2S con Intune](surface-hub-2s-deploy-apps-intune.md)
@@ -85,8 +84,10 @@
 ## Distribuisci
 ### [Creare e testare un account del dispositivo](create-and-test-a-device-account-surface-hub.md)
 #### [Distribuzione online](https://docs.microsoft.com/microsoftteams/rooms/with-office-365)
+
 #### [Distribuzione locale (singola foresta)](https://docs.microsoft.com/microsoftteams/rooms/with-skype-for-business-server-2015)
-#### [Distribuzione locale (più foreste)] (https://docs.microsoft.com/skypeforbusiness/deploy/deploy-clients/multiple-forest-on-premises-deployments
+
+#### [Distribuzione locale (più foreste)](https://docs.microsoft.com/skypeforbusiness/deploy/deploy-clients/multiple-forest-on-premises-deployments)
 #### [Distribuzione ibrida](hybrid-deployment-surface-hub-device-accounts.md)
 #### [Proprietà di Microsoft Exchange](exchange-properties-for-surface-hub-device-accounts.md)
 #### [Applicazione di criteri ActiveSync agli account del dispositivo](apply-activesync-policies-for-surface-hub-device-accounts.md)
@@ -135,8 +136,8 @@
 ### [Principali soluzioni di supporto per Surface Hub](support-solutions-surface-hub.md)
 ### [Risolvere i problemi relativi a Microsoft Surface Hub](troubleshoot-surface-hub.md)
 ### [Cronologia degli aggiornamenti di Surface Hub](surface-hub-update-history.md)
-### [Problemi noti e altre informazioni su Microsoft Surface Hub](known-issues-and-additional-info-about-surface-hub.md)
-### [Come usare il recupero cloud per BitLocker in un Surface Hub](use-cloud-recovery-for-bitlocker-on-surfacehub.md)
+### [Problemi noti: Sistema Operativo di Windows 10 Team](surface-hub-2020-team-update-known-issues.md)
+### [Come usare il ripristino cloud per BitLocker su un Surface Hub](use-cloud-recovery-for-bitlocker-on-surfacehub.md)
 ### [Uso dello strumento di diagnostica hardware Surface Hub per testare un account di dispositivo](use-surface-hub-diagnostic-test-device-account.md)
 ### [Risolvere i problemi relativi a Miracast su Surface Hub](miracast-troubleshooting.md)
 ### [Surface Hub Miracast Channels 149-165 non supportato in Europa, Giappone, Israele](surfacehub-miracast-not-supported-europe-japan-israel.md)

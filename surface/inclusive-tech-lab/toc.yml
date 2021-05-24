@@ -1,0 +1,93 @@
+items:
+  - name: Inclusive Tech Lab
+    href: index.md
+    items:
+      - name: Funzione Cognitiva da progettare per le disabilità
+        href: understanding-function-to-design-for-disabilities.md
+        items:
+          - name: Le barriere all'accessibilità possono avvenire contemporaneamente
+            href: barriers-to-accessibility-can-co-occur.md
+          - name: Che cos'è la cognizione?
+            href: cognition.md
+            items:
+              - name: Attenzione
+                href: cognition-attention.md
+              - name: Memoria
+                href: cognition-memory.md
+              - name: Giudizio
+                href: cognition-judgment.md
+              - name: Elaborazione (velocità)
+                href: cognition-processing-speed.md
+              - name: Elaborazione (comprensione)
+                href: cognition-processing-comprehension.md
+          - name: Che cos'è la mobilità?
+            href: mobility.md
+            items:
+              - name: Afferrare
+                href: mobility-grasp.md
+              - name: Capacità motorie
+                href: mobility-fine-motor-skills.md
+              - name: Coordinazione
+                href: mobility-coordination.md
+              - name: Controllo (movimento volontario e involontario)
+                href: mobility-control.md
+              - name: Velocità
+                href: mobility-speed.md
+              - name: Tono muscolare
+                href: mobility-muscle-tone.md
+              - name: Resistenza
+                href: mobility-endurance.md
+              - name: Postura
+                href: mobility-posture.md
+          - name: Che cos'è la visione?
+            href: vision.md
+            items:
+              - name: Cecità (cecità)
+                href: vision-blindness-sightlessness.md
+              - name: Ipovisione (vista parziale)
+                href: vision-low-vision-partially-sighted.md
+              - name: Acutezza ridotta
+                href: vision-decreased-acuity.md
+              - name: Perdita di campo visivo
+                href: vision-visual-field-loss.md
+              - name: Daltonismo
+                href: vision-color-blindness.md
+              - name: Fotofobia (sensibilità alla luce)
+                href: vision-photophobia-light-sensitivity.md
+          - name: Che cos'è l'udito?
+            href: hearing.md
+            items:
+              - name: Perdita dell’udito (lieve)
+                href: hearing-mild.md
+              - name: Perdita dell'udito (moderata/grave)
+                href: hearing-moderate-severe.md
+              - name: Perdita dell’udito (profonda)
+                href: hearing-profound.md
+              - name: Perdita dell'udito (asimmetrica)
+                href: hearing-asymmetrical.md
+          - name: 'Che cosa sono la voce, il linguaggio e la comunicazione?'
+            href: voice-speech-communication.md
+            items:
+              - name: Afasia (ricettiva)
+                href: voice-speech-communication-aphasia-receptive.md
+              - name: Afasia (espressiva)
+                href: voice-speech-communication-aphasia-expressive.md
+              - name: Qualità del linguaggio
+                href: voice-speech-communication-speech-quality.md
+              - name: Partecipazione sociale
+                href: voice-speech-communication-social-participation.md
+              - name: Non verbale
+                href: voice-speech-communication-non-verbal.md
+          - name: Che cosa sono la sensazione e la percezione?
+            href: sensation-perception.md
+            items:
+              - name: Vestibolare
+                href: sensation-perception-vestibular.md
+              - name: Dolore cronico
+                href: sensation-perception-chronic-pain.md
+              - name: Integrità della pelle
+                href: sensation-perception-skin-integrity.md
+              - name: Sensazione (ipersensibile e insensibile)
+                href: sensation-perception-sensation.md
+              - name: Propriocezione
+                href: sensation-perception-proprioception.md

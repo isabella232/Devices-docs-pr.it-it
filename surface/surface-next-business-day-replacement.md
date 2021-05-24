@@ -3,7 +3,7 @@ title: Informazioni e aree di copertura del servizio di sostituzione il giorno l
 ms.author: v-kaij
 author: greg-lindsay
 manager: laurawi
-ms.date: 02/19/2021
+ms.date: 05/18/2021
 audience: Admin
 ms.topic: article
 ms.prod: surface
@@ -14,39 +14,108 @@ appliesto:
 - Surface Hub
 ms.reviewer: irenewhite
 description: Informazioni e aree di copertura del servizio di sostituzione il giorno lavorativo successivo.
-ms.openlocfilehash: febc81156fea88d1f08ef162152b9cde6d78a559
-ms.sourcegitcommit: 8b35cdee6c638359403697711ee53d07cca6ee51
+ms.openlocfilehash: 387286698a1f82066bf1631682e2ceb749c0a6ab
+ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "11442134"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "11577086"
 ---
 # <a name="next-business-day-replacement-information--coverage-areas"></a>Informazioni e aree di copertura del servizio di sostituzione il giorno lavorativo successivo
 
 La sostituzione il giorno lavorativo successivo è una servizio a pagamento che prevede la spedizione a domicilio di un dispositivo Surface entro il giorno lavorativo successivo. 
 
-Il servizio di sostituzione il giorno lavorativo successivo è disponibile per i sottoscrittori dei piani di protezione Complete for Business Plus negli Stati Uniti, in Canada e in Europa (limitatamente ad Austria, Belgio, Repubblica Ceca, Francia, Germania, Paesi Bassi, Polonia e Regno Unito), Australia, Singapore e Japan. Tali servizi si applicano dopo che un agente ha stabilito che un dispositivo sostitutivo è necessario, le scorte sono sufficienti, e una sostituzione viene ordinata entro il tempo limite ordinario predefinito da Microsoft. 
+La sostituzione entro Il giorno lavorativo successivo è disponibile con l'acquisto del piano di protezione Complete for Business Plus (disponibilità in alcuni paesi). Questi servizi si applicano dopo che un agente ha determinato che è necessario un dispositivo sostitutivo, ha confermato l'inventario disponibile e ha inviato un ordine per un dispositivo sostitutivo entro un  tempo limite standard, predeterminato da Microsoft. 
 
 ## <a name="guidelines"></a>Linee guida
 
 - La spedizione notturna è soggetta alla disponibilità dei nostri vettori autorizzati a consegnare di notte.
-- Per garantire la consegna dei dispositivi sostitutivi entro il giorno lavorativo successivo, le richieste di sostituzione dei dispositivi devono essere trasmesse entro i tempi limite illustrati nella tabella 1. 
+- Per garantire la consegna dei dispositivi sostitutivi entro il giorno lavorativo successivo, le richieste di sostituzione dei dispositivi devono essere trasmesse entro i tempi limite illustrati di seguito.
 - Per le condizioni complete, consulta [Garanzie, piani di servizio estesi e condizioni di uso del dispositivo](https://support.microsoft.com/topic/warranties-extended-service-plans-and-terms-conditions-for-your-device-eedf7a23-84a7-1a47-480b-0e10503eedf5)
 
-### <a name="table-1-replacement-request-cutoff-times-by-locale"></a>Tabella 1. Tempi limite per la richiesta di sostituzione in base alla regione
+## <a name="coverage"></a>Ambito del servizio
 
-| Regione                                                                                                    | Tempo limite |
-| -------------------------------------------------------------------------------------------------------------- | --------------- |
-| **Stati Uniti e Canada**                                                                                     | 14:00 CST    (UTC-6)      |
-| **Europe** (limitata ad Austria, Belgio, Repubblica Ceca, Francia, Germania, Paesi Bassi, Polonia e Regno Unito | 12:00 CET   (UTC+1)     |
-| **Australia**                                                                                                  | 13:00 AET   (UTC+11)    |
-| **Singapore**                                                                                                  | 13:00 SGT    (UTC+8)   |
-| **Giappone**                                                                                                      | 13:00 JST    (UTC+9)   |
+Per un elenco dei codici postali supportati, vedere "Ambito del servizio nel giorno lavorativo successivo" se applicabile di seguito. 
+
+- [Australia](#australia)
+- [Austria](#austria)
+- [Belgio](#belgium)
+- [Canada](#canada)
+- [Repubblica Ceca](#czech-republic)
+- [Danimarca](#denmark)
+- [Finlandia](#finland)
+- [Francia](#france)
+- [Germania](#germany)
+- [Irlanda](#ireland)
+- [Italia](#italy)
+- [Giappone](#japan)
+- [Norvegia](#norway)
+- [Polonia](#poland)
+- [Portogallo](#portugal)
+- [Singapore](#singapore)
+- [Spagna](#spain)
+- [Svezia](#sweden)
+- [Svizzera](#switzerland)
+- [Paesi Bassi](#the-netherlands)
+- [Stati Uniti](#united-states)
 
 
-##  <a name="available-areas-in-japan"></a>Aree disponibili in Giappone 
+#### <a name="australia"></a>Australia
 
-Sarà disponibile nelle seguenti aree geografiche in Giappone. Per altre informazioni, vedi [Surface Complete for Business Plus (Giappone)](https://cdn.techcommunity.microsoft.com/assets/Surface/jp-next-day-replace-surface.pdf)
+- Tempo limite: 14:30 AET (UTC + 11)
+
+#### <a name="austria"></a>Austria
+
+- Tempo limite: 12:00 CET (UTC + 1)
+- [Ambito del servizio nel giorno lavorativo successivo](https://download.microsoft.com/download/5/7/5/575447e3-70c1-468b-a714-22d3cded7a6e/NBD%20Coverage%20-%20Austria%20Post%20Codes%20030321.xlsx)
+
+#### <a name="belgium"></a>Belgio
+
+- Tempo limite: 12:00 CET (UTC + 1)
+- [Ambito del servizio nel giorno lavorativo successivo](https://download.microsoft.com/download/f/b/9/fb95d99c-1403-4ecf-bbde-0bab2af2c2ce/NBD%20Coverage%20-%20Belgium%20Post%20Codes%20030321.xlsx)
+
+#### <a name="canada"></a>Canada
+
+- Tempo limite: 14:00 CST (UTC-6)
+
+#### <a name="czech-republic"></a>Repubblica Ceca
+
+- Tempo limite: 12:00 CET (UTC + 1)
+
+#### <a name="denmark"></a>Danimarca 
+
+- Tempo limite: 12:00 CET (UTC + 1) 
+- [Ambito del servizio nel giorno lavorativo successivo](https://download.microsoft.com/download/9/e/6/9e6b4db6-b9f6-412e-a296-a10b5bc6e591/NBD%20Coverage%20-%20Denmark%20Post%20Codes%20030321.xlsx)
+
+#### <a name="finland"></a>Finlandia
+
+- Tempo limite: 12:00 CET (UTC + 1)
+- [Ambito del servizio nel giorno lavorativo successivo](https://download.microsoft.com/download/b/d/d/bddd01a3-6f8e-4bd2-9549-4dbf0a5aee86/NBD%20Coverage%20-%20Finland%20Post%20Codes%20030321.xlsx)
+
+#### <a name="france"></a>Francia
+
+- Tempo limite: 12:00 CET (UTC + 1)
+
+#### <a name="germany"></a>Germania
+
+- Tempo limite: 12:00 CET (UTC + 1)
+
+#### <a name="ireland"></a>Irlanda
+
+- Tempo limite: 12:00 CET (UTC + 1)
+- [Ambito del servizio nel giorno lavorativo successivo](https://download.microsoft.com/download/d/6/f/d6f05276-3657-49d3-8871-a2e445b686ef/NBD%20Coverage%20-%20Ireland%20Post%20Codes%20030321.xlsx)
+
+#### <a name="italy"></a>Italia
+
+- Tempo limite: 12:00 CET (UTC + 1)
+- [Ambito del servizio nel giorno lavorativo successivo](https://download.microsoft.com/download/6/9/a/69a57c96-f4ce-4f93-a99a-2469ed737351/NBD%20Coverage%20-%20Italy%20Post%20Codes%20030321.xlsx)
+
+#### <a name="japan"></a>Giappone
+
+- Tempo limite: 15:30 JST (UTC + 9)
+- [Ambito del servizio nel giorno lavorativo successivo](https://cdn.techcommunity.microsoft.com/assets/Surface/jp-next-day-replace-surface.pdf)
+
+**Aree disponibili in Giappone** 
 
 - Aomori
 - Iwate
@@ -79,3 +148,44 @@ Sarà disponibile nelle seguenti aree geografiche in Giappone. Per altre informa
 - Hiroshima
 - Yamaguchi
 
+#### <a name="norway"></a>Norvegia
+
+- Tempo limite: 12:00 CET (UTC + 1)
+- [Ambito del servizio nel giorno lavorativo successivo](https://download.microsoft.com/download/2/8/0/2803e50f-b7fb-431a-9eb9-efba7fb32260/NBD%20Coverage%20-%20Norway%20Post%20Codes%20032521.xlsx)
+
+#### <a name="poland"></a>Polonia
+
+- Tempo limite: 12:00 CET (UTC + 1)
+
+
+#### <a name="portugal"></a>Portogallo
+
+- Tempo limite: 12:00 CET (UTC + 1)
+- [Ambito del servizio nel giorno lavorativo successivo](https://download.microsoft.com/download/5/1/4/5146ceeb-651c-4b10-afeb-ea1abb733e33/NBD%20Coverage%20-%20Portugal%20Post%20Codes%20030321.xlsx)
+
+#### <a name="singapore"></a>Singapore
+
+- Tempo limite: 13:00 SGT (UTC + 8)
+
+#### <a name="spain"></a>Spagna
+
+- Tempo limite: 12:00 CET (UTC + 1)
+- [Ambito del servizio nel giorno lavorativo successivo](https://download.microsoft.com/download/6/1/d/61da1e35-e17e-4a67-ab81-27cf7a21f91b/NBD%20Coveragef-%20Spain%20Post%20Codes%20030321.xlsx)
+
+#### <a name="sweden"></a>Svezia
+
+- Tempo limite: 12:00 CET (UTC + 1)
+- [Ambito del servizio nel giorno lavorativo successivo](https://download.microsoft.com/download/3/c/8/3c8a0591-2ee9-4742-835f-86b8c79b986f/NBD%20Coverage%20-%20Sweden%20Post%20Codes%20030321.xlsx)
+
+#### <a name="switzerland"></a>Svizzera
+
+- Tempo limite: 12:00 CET (UTC + 1)
+- [Ambito del servizio nel giorno lavorativo successivo](https://download.microsoft.com/download/e/6/9/e69789ca-4617-4b23-afb2-09529f320de3/NBD%20Coverage%20-%20Switzerland%20Post%20Codes%20030321%20update.xlsx)
+
+#### <a name="the-netherlands"></a>Paesi Bassi
+
+- Tempo limite: 12:00 CET (UTC + 1)
+
+#### <a name="united-states"></a>Stati Uniti 
+
+- Tempo limite: 14:00 CST (UTC-6)
