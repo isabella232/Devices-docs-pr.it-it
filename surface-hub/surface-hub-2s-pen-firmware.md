@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 04/15/2021
 ms.localizationpriority: Medium
-ms.openlocfilehash: 6f1ca4f05653ec798ed1b47d2e42e974e7f7414d
-ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
+ms.openlocfilehash: c94cb701fb1b7fcdc0168a795f57a4e497317902
+ms.sourcegitcommit: 77b2c51f8467ac3ac37399551b0cc20d9ce57d24
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "11576956"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "11585967"
 ---
 # <a name="update-pen-firmware-on-surface-hub-2s"></a>Aggiornare il firmware della penna in Surface Hub 2S
 
@@ -26,29 +26,44 @@ Puoi aggiornare il firmware Surface Hub 2 penna da Windows Update for Business o
 
 Questa sezione descrive come aggiornare il firmware della penna tramite i cicli di manutenzione automatizzati per Windows Update, configurato per impostazione predefinita per l'esecuzione notturna alle 3 del giorno. Dovrai pianificare il completamento di due cicli di manutenzione prima di applicare l'aggiornamento alla penna Surface Hub 2. In alternativa, come qualsiasi altro aggiornamento, puoi usare Windows Update for Business (WUfB) per applicare il firmware della penna. Per ulteriori informazioni, vedere [Managing Windows updates on Surface Hub](manage-windows-updates-for-surface-hub.md).
 
-1. Assicurati che la Surface Hub 2 penna sia associata Surface Hub 2S: **** tieni premuto il pulsante superiore finché la luce LED dell'indicatore bianco non inizia a lampeggiare. <br>
-![Surface Hub 2 penna](images/sh2-pen-1.png) <br>
+1. Assicurati che la Surface Hub 2 penna sia associata Surface Hub 2S: **** tieni premuto il pulsante superiore finché la luce LED dell'indicatore bianco non inizia a lampeggiare.
+
+    > [!div class="mx-imgBorder"]
+    > ![Surface Hub 2 penna](images/sh2-pen-1.png)
+
 2. In Surface Hub, accedere come amministratore, **aprire**Impostazioni e quindi cercare nuovi Bluetooth dispositivi.
+
 3. Selezionare la penna per completare il processo di associazione.
+
 4. Premi il **pulsante** superiore della penna per applicare l'aggiornamento. Il completamento potrebbe richiedere fino a due ore.
 
 ## <a name="update-pen-firmware-by-downloading-to-separate-pc"></a>Aggiornare il firmware della penna scaricandolo in un PC separato
 
 Puoi aggiornare il firmware su Surface Hub 2 penna da un PC separato che esegue Windows 10. Questo metodo consente inoltre di verificare che il firmware della penna sia stato aggiornato correttamente alla versione più recente.
 
-1. Associa la Surface Hub 2 penna al PC Bluetooth: tieni premuto **** il pulsante superiore finché la luce LED dell'indicatore bianco non inizia a lampeggiare. <br>
-![Surface Hub 2 penna](images/sh2-pen-1.png) <br>
+1. Associa la Surface Hub 2 penna al PC Bluetooth: tieni premuto **** il pulsante superiore finché la luce LED dell'indicatore bianco non inizia a lampeggiare.
+
+    > [!div class="mx-imgBorder"]
+    > ![Surface Hub 2 penna](images/sh2-pen-1.png)
+
 2. Nel PC cerca nuovi dispositivi Bluetooth computer.
+
 3. Selezionare la penna per completare il processo di associazione.
+
 4. Disconnettere tutte le altre Surface Hub 2s prima di avviare un nuovo aggiornamento.
-3. Scarica lo [Surface Hub 2 Pen Firmware Update Tool](https://download.microsoft.com/download/8/3/F/83FD5089-D14E-42E3-AF7C-6FC36F80D347/Pen_Firmware_Tool.zip) nel PC.
-4. Eseguire **PenCfu.exe.** Lo stato dell'installazione viene visualizzato nello strumento. L'aggiornamento potrebbe richiedere alcuni minuti. 
+
+5. Scarica lo [Surface Hub 2 Pen Firmware Update Tool](https://download.microsoft.com/download/8/3/F/83FD5089-D14E-42E3-AF7C-6FC36F80D347/Pen_Firmware_Tool.zip) nel PC.
+
+6. Eseguire **PenCfu.exe.** Lo stato dell'installazione viene visualizzato nello strumento. L'aggiornamento potrebbe richiedere alcuni minuti. 
 
 
 ## <a name="check-firmware-version-of-surface-hub-2-pen"></a>Controllare la versione del firmware Surface Hub 2 penna
 
 1. Esegui **get_version.bat** e premi il **pulsante** superiore sulla penna.
-2. Lo strumento segnala la versione firmware della penna. Esempio:
+
+2. Lo strumento segnala la versione firmware della penna. 
+
+   Esempio:
     - Il vecchio firmware è 468.2727.368
     - Il nuovo firmware è 468.3347.368
 
@@ -57,16 +72,20 @@ Puoi aggiornare il firmware su Surface Hub 2 penna da un PC separato che esegue 
 È possibile eseguire Surface Hub 2 Pen Firmware Update Tool (PenCfu.exe) dalla riga di comando.
 
 1. Associa la penna al PC e fai clic **sul pulsante** superiore della penna.
+
 2. Fai doppio ** clicPenCfu.exe** per avviare l'aggiornamento del firmware. Tieni presente che il file di configurazione e i file di immagine del firmware devono essere archiviati nella stessa cartella dello strumento.
+
 3. Per ulteriori opzioni, ** eseguirePenCfu.exe -h** per visualizzare i parametri disponibili, come indicato nella tabella seguente.  
-    - Esempio: PenCfu.exe -h
+
+   Esempio: `PenCfu.exe -h`
+
 4. Immetti **CTRL+C per** arrestare lo strumento in modo sicuro.
 
- 
 
-| **Comando**    | **Descrizione**                                                                                                                                                                                                                                                                                                                                                                                |
-| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| -h guida        | Visualizza la Guida dell'interfaccia della riga di comando dello strumento ed esci.                                                                                                                                                                                                                                                                                                                                             |
-| -v versione     | Visualizzare la versione dello strumento ed uscire.                                                                                                                                                                                                                                                                                                                                                                 |
+| Comando | Descrizione |
+| -------------- |---------------------------- |
+| -h guida        | Visualizza la Guida dell'interfaccia della riga di comando dello strumento ed esci. |
+| -v versione     | Visualizzare la versione dello strumento ed uscire. |
 | -l log-filter  | Impostare un livello di filtro per il file di registro. I messaggi di registro hanno 4 livelli possibili: DEBUG (minimo), INFO, AVVISO ed ERRORE (massimo). L'impostazione di un livello di filtro del registro consente di filtrare i messaggi di registro solo per i messaggi con lo stesso livello o superiore. Ad esempio, se il livello di filtro è impostato su AVVISO, verranno registrati solo i messaggi DI AVVISO ed ERRORE. Per impostazione predefinita, questa opzione è impostata su OFF, che disabilita la registrazione. |
-| -g get-version | Se specificato, lo strumento otterrà solo la versione FW della penna connessa corrispondente al file di configurazione archiviato nella stessa cartella dello strumento.                                                                                                                                                                                                                                    
+| -g get-version | Se specificato, lo strumento otterrà solo la versione FW della penna connessa corrispondente al file di configurazione archiviato nella stessa cartella dello strumento.  |
+

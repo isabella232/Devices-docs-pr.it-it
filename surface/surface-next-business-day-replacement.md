@@ -3,7 +3,7 @@ title: Informazioni e aree di copertura del servizio di sostituzione il giorno l
 ms.author: v-kaij
 author: greg-lindsay
 manager: laurawi
-ms.date: 05/18/2021
+ms.date: 05/23/2021
 audience: Admin
 ms.topic: article
 ms.prod: surface
@@ -14,12 +14,12 @@ appliesto:
 - Surface Hub
 ms.reviewer: irenewhite
 description: Informazioni e aree di copertura del servizio di sostituzione il giorno lavorativo successivo.
-ms.openlocfilehash: 387286698a1f82066bf1631682e2ceb749c0a6ab
-ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
+ms.openlocfilehash: 2708890c864582cf638c48474f85ddc01ef36576
+ms.sourcegitcommit: 77b2c51f8467ac3ac37399551b0cc20d9ce57d24
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "11577086"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "11585927"
 ---
 # <a name="next-business-day-replacement-information--coverage-areas"></a>Informazioni e aree di copertura del servizio di sostituzione il giorno lavorativo successivo
 
@@ -46,6 +46,7 @@ Per un elenco dei codici postali supportati, vedere "Ambito del servizio nel gio
 - [Finlandia](#finland)
 - [Francia](#france)
 - [Germania](#germany)
+- [Hong Kong](#hong-kong)
 - [Irlanda](#ireland)
 - [Italia](#italy)
 - [Giappone](#japan)
@@ -81,6 +82,7 @@ Per un elenco dei codici postali supportati, vedere "Ambito del servizio nel gio
 #### <a name="czech-republic"></a>Repubblica Ceca
 
 - Tempo limite: 12:00 CET (UTC + 1)
+- [Copertura del servizio nel giorno lavorativo successivo](https://download.microsoft.com/download/9/2/6/926014cb-38b2-4270-b841-d3dc56f6e341/NBD%20Coverage%20-%20Czech%20Republic%20Post%20Codes%20042821.xlsx)
 
 #### <a name="denmark"></a>Danimarca 
 
@@ -95,10 +97,16 @@ Per un elenco dei codici postali supportati, vedere "Ambito del servizio nel gio
 #### <a name="france"></a>Francia
 
 - Tempo limite: 12:00 CET (UTC + 1)
+- [Copertura del servizio nel giorno lavorativo successivo](https://download.microsoft.com/download/7/b/0/7b0fa1bb-4c75-474a-83be-6d55e0fa719f/NBD%20Coverage%20-%20France%20Postal%20Codes%20042821.xlsx)
 
 #### <a name="germany"></a>Germania
 
 - Tempo limite: 12:00 CET (UTC + 1)
+- [Copertura del servizio nel giorno lavorativo successivo](https://download.microsoft.com/download/d/4/f/d4f6c11f-ada2-4400-b502-2e722644427b/NBD%20Coverage%20-%20Germany%20Post%20Codes%20042821.xlsx)
+
+#### <a name="hong-kong"></a>Hong Kong
+
+- Tempo limite:16:00 HKT (UTC + 8) 
 
 #### <a name="ireland"></a>Irlanda
 
@@ -113,40 +121,7 @@ Per un elenco dei codici postali supportati, vedere "Ambito del servizio nel gio
 #### <a name="japan"></a>Giappone
 
 - Tempo limite: 15:30 JST (UTC + 9)
-- [Ambito del servizio nel giorno lavorativo successivo](https://cdn.techcommunity.microsoft.com/assets/Surface/jp-next-day-replace-surface.pdf)
-
-**Aree disponibili in Giappone** 
-
-- Aomori
-- Iwate
-- Miyagi
-- Akita
-- Yamagata
-- Fukushima
-- Ibaraki
-- Saitama
-- Chiba
-- Tokyo
-- Kanagawa
-- Niigata
-- Toyama
-- Ishikawa
-- Fukui
-- Yamanashi
-- Nagano
-- Gifu
-- Shizuoka
-- Aichi
-- Mie
-- Shiga
-- Kyoto
-- Osaka
-- Hyogo
-- Nara
-- Wakayama
-- Tottori
-- Hiroshima
-- Yamaguchi
+- [Copertura del servizio nel giorno lavorativo successivo](https://download.microsoft.com/download/c/7/8/c781a035-19f7-4563-9dd9-e8c5f3713342/NBD%20Coverage%20-%20Japan%20Post%20Codes%20060121.xlsx)
 
 #### <a name="norway"></a>Norvegia
 
@@ -156,7 +131,8 @@ Per un elenco dei codici postali supportati, vedere "Ambito del servizio nel gio
 #### <a name="poland"></a>Polonia
 
 - Tempo limite: 12:00 CET (UTC + 1)
-
+- [Copertura del servizio nel giorno lavorativo successivo](https://download.microsoft.com/download/f/e/8/fe8b9b43-5f72-4cf1-971d-78dd46f8ea1c/NBD%20Coverage%20-%20Poland%20Post%20Codes%20042821.xlsx
+)
 
 #### <a name="portugal"></a>Portogallo
 
@@ -185,6 +161,7 @@ Per un elenco dei codici postali supportati, vedere "Ambito del servizio nel gio
 #### <a name="the-netherlands"></a>Paesi Bassi
 
 - Tempo limite: 12:00 CET (UTC + 1)
+- [Copertura del servizio nel giorno lavorativo successivo](https://download.microsoft.com/download/6/3/f/63f2ff4c-3b8f-465e-9498-0878f7ba70f3/NBD%20Coverage%20-%20Netherlands%20Post%20Codes%20042821.xlsx)
 
 #### <a name="united-states"></a>Stati Uniti 
 
