@@ -23,11 +23,11 @@ ms.locfileid: "10897074"
 ---
 # <span data-ttu-id="f762e-104">Gestire gli aggiornamenti dei driver di Surface in Configuration Manager</span><span class="sxs-lookup"><span data-stu-id="f762e-104">Manage Surface driver updates in Configuration Manager</span></span>
 
-## <span data-ttu-id="f762e-105">Riepilogo</span><span class="sxs-lookup"><span data-stu-id="f762e-105">Summary</span></span>
+## <a name="summary"></a><span data-ttu-id="f762e-105">Riepilogo</span><span class="sxs-lookup"><span data-stu-id="f762e-105">Summary</span></span>
 
 <span data-ttu-id="f762e-106">A partire da [Microsoft System Center Configuration Manager versione 1710](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1710#software-updates), è possibile sincronizzare e distribuire il firmware Microsoft Surface e gli aggiornamenti dei driver direttamente tramite il client Configuration Manager.</span><span class="sxs-lookup"><span data-stu-id="f762e-106">Starting in [Microsoft System Center Configuration Manager version 1710](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1710#software-updates), you can synchronize and deploy Microsoft Surface firmware and driver updates directly through the Configuration Manager client.</span></span> <span data-ttu-id="f762e-107">Il processo è simile alla distribuzione di aggiornamenti regolari.</span><span class="sxs-lookup"><span data-stu-id="f762e-107">The process resembles deploying regular updates.</span></span> <span data-ttu-id="f762e-108">Tuttavia, sono necessarie altre configurazioni per ottenere gli aggiornamenti di Surface driver nel catalogo.</span><span class="sxs-lookup"><span data-stu-id="f762e-108">However, some additional configurations are required to get the Surface driver updates into your catalog.</span></span>
 
-## <span data-ttu-id="f762e-109">Prerequisiti</span><span class="sxs-lookup"><span data-stu-id="f762e-109">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="f762e-109">Prerequisiti</span><span class="sxs-lookup"><span data-stu-id="f762e-109">Prerequisites</span></span>
 
 <span data-ttu-id="f762e-110">Per gestire gli aggiornamenti dei driver di Surface, è necessario soddisfare i prerequisiti seguenti:</span><span class="sxs-lookup"><span data-stu-id="f762e-110">To manage Surface driver updates, the following prerequisites must be met:</span></span>
 
@@ -37,7 +37,7 @@ ms.locfileid: "10897074"
 > [!NOTE]
 > <span data-ttu-id="f762e-114">Se l'ambiente non soddisfa i prerequisiti, vedere i [metodi alternativi](https://support.microsoft.com/help/4098906/manage-surface-driver-updates-in-configuration-manager#1) per distribuire gli aggiornamenti del driver di superficie e del firmware nella sezione [domande frequenti](#frequently-asked-questions-faq) .</span><span class="sxs-lookup"><span data-stu-id="f762e-114">If your environment doesn’t meet the prerequisites, refer to the [alternative methods](https://support.microsoft.com/help/4098906/manage-surface-driver-updates-in-configuration-manager#1) to deploy Surface driver and firmware updates in the [FAQ](#frequently-asked-questions-faq) section.</span></span>
 
-## <span data-ttu-id="f762e-115">File di log utili</span><span class="sxs-lookup"><span data-stu-id="f762e-115">Useful log files</span></span>
+## <a name="useful-log-files"></a><span data-ttu-id="f762e-115">File di log utili</span><span class="sxs-lookup"><span data-stu-id="f762e-115">Useful log files</span></span>
 
 <span data-ttu-id="f762e-116">I registri seguenti sono particolarmente utili per gestire gli aggiornamenti di Surface driver.</span><span class="sxs-lookup"><span data-stu-id="f762e-116">The following logs are especially useful when you manage Surface driver updates.</span></span>
 
@@ -49,7 +49,7 @@ ms.locfileid: "10897074"
 <span data-ttu-id="f762e-123">Questi registri si trovano nel server del sito che gestisce il SUP o nel SUP stesso se è installato direttamente in un server del sito.</span><span class="sxs-lookup"><span data-stu-id="f762e-123">These logs are located on the site server that manages the SUP, or on the SUP itself if it's installed directly on a site server.</span></span>
 <span data-ttu-id="f762e-124">Per un elenco completo dei log di Configuration Manager, vedere [file di log in System Center Configuration Manager](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/log-files).</span><span class="sxs-lookup"><span data-stu-id="f762e-124">For a complete list of Configuration Manager logs, see [Log files in System Center Configuration Manager](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/log-files).</span></span>
 
-## <span data-ttu-id="f762e-125">Abilitazione della gestione aggiornamenti di Surface driver</span><span class="sxs-lookup"><span data-stu-id="f762e-125">Enabling Surface driver updates management</span></span>
+## <a name="enabling-surface-driver-updates-management"></a><span data-ttu-id="f762e-125">Abilitazione della gestione aggiornamenti di Surface driver</span><span class="sxs-lookup"><span data-stu-id="f762e-125">Enabling Surface driver updates management</span></span>
 
 <span data-ttu-id="f762e-126">Per abilitare la gestione degli aggiornamenti di Surface driver in Configuration Manager, eseguire le operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="f762e-126">To enable Surface driver updates management in Configuration Manager, follow these steps:</span></span>
 
@@ -83,7 +83,7 @@ ms.locfileid: "10897074"
    > [!NOTE]
    > <span data-ttu-id="f762e-148">La maggior parte dei driver di superficie appartiene a più gruppi di prodotti Windows 10.</span><span class="sxs-lookup"><span data-stu-id="f762e-148">Most Surface drivers belong to multiple Windows 10 product groups.</span></span> <span data-ttu-id="f762e-149">Potrebbe non essere necessario selezionare tutti i prodotti elencati qui.</span><span class="sxs-lookup"><span data-stu-id="f762e-149">You may not have to select all the products that are listed here.</span></span> <span data-ttu-id="f762e-150">Per ridurre il numero di prodotti che popolano il catalogo di aggiornamento, è consigliabile selezionare solo i prodotti richiesti dall'ambiente per la sincronizzazione.</span><span class="sxs-lookup"><span data-stu-id="f762e-150">To help reduce the number of products that populate your Update Catalog, we recommend that you select only the products that are required by your environment for synchronization.</span></span>
 
-## <span data-ttu-id="f762e-151">Verifica della configurazione</span><span class="sxs-lookup"><span data-stu-id="f762e-151">Verifying the configuration</span></span>
+## <a name="verifying-the-configuration"></a><span data-ttu-id="f762e-151">Verifica della configurazione</span><span class="sxs-lookup"><span data-stu-id="f762e-151">Verifying the configuration</span></span>
 
 <span data-ttu-id="f762e-152">Per verificare che il SUP sia configurato correttamente, eseguire le operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="f762e-152">To verify that the SUP is configured correctly, follow these steps:</span></span>
 
@@ -123,7 +123,7 @@ ms.locfileid: "10897074"
 
    ![Tutti i risultati della ricerca degli aggiornamenti software](images/manage-surface-driver-updates-4.png)
 
-## <span data-ttu-id="f762e-163">Sincronizzazione manuale</span><span class="sxs-lookup"><span data-stu-id="f762e-163">Manual synchronization</span></span>
+## <a name="manual-synchronization"></a><span data-ttu-id="f762e-163">Sincronizzazione manuale</span><span class="sxs-lookup"><span data-stu-id="f762e-163">Manual synchronization</span></span>
 
 <span data-ttu-id="f762e-164">Se non si vuole attendere la sincronizzazione successiva, eseguire la procedura seguente per avviare una sincronizzazione:</span><span class="sxs-lookup"><span data-stu-id="f762e-164">If you don't want to wait until the next synchronization, follow these steps to start a synchronization:</span></span>
 
@@ -150,13 +150,13 @@ ms.locfileid: "10897074"
    Synchronizing update 74102899-0a49-48cf-97e6-05bde18a27ff - Microsoft driver update for Surface UEFI
    ```
 
-## <span data-ttu-id="f762e-169">Distribuzione di aggiornamenti di Surface firmware e driver</span><span class="sxs-lookup"><span data-stu-id="f762e-169">Deploying Surface firmware and driver updates</span></span>
+## <a name="deploying-surface-firmware-and-driver-updates"></a><span data-ttu-id="f762e-169">Distribuzione di aggiornamenti di Surface firmware e driver</span><span class="sxs-lookup"><span data-stu-id="f762e-169">Deploying Surface firmware and driver updates</span></span>
 
 <span data-ttu-id="f762e-170">È possibile distribuire gli aggiornamenti del firmware e del driver della superficie nello stesso modo in cui si distribuiscono altri aggiornamenti.</span><span class="sxs-lookup"><span data-stu-id="f762e-170">You can deploy Surface firmware and driver updates in the same manner as you deploy other updates.</span></span>
 
 <span data-ttu-id="f762e-171">Per altre informazioni sulla distribuzione, vedere [System Center 2012 Configuration Manager-part7: aggiornamenti software (distribuzione)](https://blogs.technet.microsoft.com/elie/2012/05/25/system-center-2012-configuration-managerpart7-software-updates-deploy/).</span><span class="sxs-lookup"><span data-stu-id="f762e-171">For more information about deployment, see [System Center 2012 Configuration Manager–Part7: Software Updates (Deploy)](https://blogs.technet.microsoft.com/elie/2012/05/25/system-center-2012-configuration-managerpart7-software-updates-deploy/).</span></span>
 
-## <span data-ttu-id="f762e-172">Domande frequenti</span><span class="sxs-lookup"><span data-stu-id="f762e-172">Frequently asked questions (FAQ)</span></span>
+## <a name="frequently-asked-questions-faq"></a><span data-ttu-id="f762e-172">Domande frequenti</span><span class="sxs-lookup"><span data-stu-id="f762e-172">Frequently asked questions (FAQ)</span></span>
 
 **<span data-ttu-id="f762e-173">Dopo aver seguito i passaggi descritti in questo articolo, i driver di Surface non sono ancora sincronizzati.</span><span class="sxs-lookup"><span data-stu-id="f762e-173">After I follow the steps in this article, my Surface drivers are still not synchronized.</span></span> <span data-ttu-id="f762e-174">Perché?</span><span class="sxs-lookup"><span data-stu-id="f762e-174">Why?</span></span>**
 
@@ -176,7 +176,7 @@ ms.locfileid: "10897074"
 
 <span data-ttu-id="f762e-193">Per informazioni su come distribuire gli aggiornamenti del driver di superficie e del firmware tramite canali alternativi, vedere [gestire gli aggiornamenti del driver di superficie e del firmware](manage-surface-driver-and-firmware-updates.md).</span><span class="sxs-lookup"><span data-stu-id="f762e-193">For information about how to deploy Surface driver and firmware updates through alternative channels, see [Manage Surface driver and firmware updates](manage-surface-driver-and-firmware-updates.md).</span></span> <span data-ttu-id="f762e-194">Se si vuole scaricare il file con estensione msi o exe e quindi distribuire i canali tradizionali di distribuzione del software, vedere [mantenere aggiornato il firmware della superficie con Configuration Manager](https://docs.microsoft.com/archive/blogs/thejoncallahan/keeping-surface-firmware-updated-with-configuration-manager).</span><span class="sxs-lookup"><span data-stu-id="f762e-194">If you want to download the .msi or .exe file, and then deploy through traditional software deployment channels, see [Keeping Surface Firmware Updated with Configuration Manager](https://docs.microsoft.com/archive/blogs/thejoncallahan/keeping-surface-firmware-updated-with-configuration-manager).</span></span>
 
-## <span data-ttu-id="f762e-195">Altre informazioni</span><span class="sxs-lookup"><span data-stu-id="f762e-195">Additional Information</span></span>
+## <a name="additional-information"></a><span data-ttu-id="f762e-195">Altre informazioni</span><span class="sxs-lookup"><span data-stu-id="f762e-195">Additional Information</span></span>
 
 <span data-ttu-id="f762e-196">Per altre informazioni sul driver di superficie e gli aggiornamenti del firmware, vedere gli articoli seguenti:</span><span class="sxs-lookup"><span data-stu-id="f762e-196">For more information about Surface driver and firmware updates, see the following articles:</span></span>
 

@@ -26,7 +26,7 @@ ms.locfileid: "10834046"
 >[!NOTE]
 ><span data-ttu-id="3634b-106">Surface Hub userà l'input video selezionato fino a quando non viene effettuata una nuova connessione, la connessione esistente viene interrotta oppure l'app Connect viene chiusa.</span><span class="sxs-lookup"><span data-stu-id="3634b-106">Surface Hub will use the video input that you select until a new connection is made, the existing connection is disrupted, or the Connect App is closed.</span></span>
 
-## <span data-ttu-id="3634b-107">Quale metodo devo scegliere?</span><span class="sxs-lookup"><span data-stu-id="3634b-107">Which method should I choose?</span></span>
+## <a name="which-method-should-i-choose"></a><span data-ttu-id="3634b-107">Quale metodo devo scegliere?</span><span class="sxs-lookup"><span data-stu-id="3634b-107">Which method should I choose?</span></span>
 
 <span data-ttu-id="3634b-108">Sono disponibili diverse opzioni per la connessione di dispositivi esterni e schermi a Surface Hub.</span><span class="sxs-lookup"><span data-stu-id="3634b-108">When connecting external devices and displays to a Surface Hub, there are several available options.</span></span> <span data-ttu-id="3634b-109">Il metodo usato dipende dallo scenario e dalle specifiche esigenze.</span><span class="sxs-lookup"><span data-stu-id="3634b-109">The method you use will depend upon your scenario and needs.</span></span> 
 
@@ -37,7 +37,7 @@ ms.locfileid: "10834046"
 | <span data-ttu-id="3634b-116">Accendere il dispositivo Surface Hub da un PC Windows 10 esterno, spegnere il computer incorporato di Surface Hub.</span><span class="sxs-lookup"><span data-stu-id="3634b-116">Power the Surface Hub from an external Windows 10 PC, turning off the embedded computer of the Surface Hub.</span></span> <span data-ttu-id="3634b-117">Fotocamere, microfoni, altoparlanti e altre periferiche vengono inviate al PC esterno, in aggiunta a penna e tocco.</span><span class="sxs-lookup"><span data-stu-id="3634b-117">Cameras, microphones, speakers, and other peripherals, are sent to the external PC, in addition to pen and touch.</span></span> | [<span data-ttu-id="3634b-118">Modalità PC sostitutivo</span><span class="sxs-lookup"><span data-stu-id="3634b-118">Replacement PC Mode</span></span>](#replacement-pc-mode) |
 
 
-## <span data-ttu-id="3634b-119">Modalità Guest</span><span class="sxs-lookup"><span data-stu-id="3634b-119">Guest Mode</span></span>
+## <a name="guest-mode"></a><span data-ttu-id="3634b-119">Modalità Guest</span><span class="sxs-lookup"><span data-stu-id="3634b-119">Guest Mode</span></span>
 
 
 <span data-ttu-id="3634b-120">La modalità Guest usa una connessione cablata per consentire agli utenti di visualizzare i contenuti dei propri dispositivi su Surface Hub.</span><span class="sxs-lookup"><span data-stu-id="3634b-120">Guest Mode uses a wired connection, so people can display content from their devices to the Surface Hub.</span></span> <span data-ttu-id="3634b-121">Se il dispositivo di origine è basato su Windows, saranno disponibili anche le funzioni touchback e inkback.</span><span class="sxs-lookup"><span data-stu-id="3634b-121">If the source device is Windows-based, that device can also provide Touchback and Inkback.</span></span> <span data-ttu-id="3634b-122">Il PC interno a Surface Hub riceve i dati audio e video dal dispositivo connesso e li presenta su Surface Hub.</span><span class="sxs-lookup"><span data-stu-id="3634b-122">Surface Hub's internal PC takes video and audio from the connected device and presents them on the Surface Hub.</span></span> <span data-ttu-id="3634b-123">Se l'hub Surface incontra un segnale HDCP (High-bandwidth Digital Content Protection), l'origine verrà visualizzata come immagine nera.</span><span class="sxs-lookup"><span data-stu-id="3634b-123">If Surface Hub encounters a High-Bandwidth Digital Content Protection (HDCP) signal, the source will be displayed as a black image.</span></span> <span data-ttu-id="3634b-124">Per visualizzare il contenuto senza violare i requisiti HDCP, usa il tastierino numerico sul lato destro di Surface Hub per scegliere direttamente l'origine esterna.</span><span class="sxs-lookup"><span data-stu-id="3634b-124">To display your content without violating HDCP requirements, use the keypad on the right side of the Surface Hub to directly choose the external source.</span></span>
@@ -45,7 +45,7 @@ ms.locfileid: "10834046"
 >[!NOTE]
 ><span data-ttu-id="3634b-125">Quando è connessa un'origine HDCP, usa il tastierino laterale per cambiare l'input di origine.</span><span class="sxs-lookup"><span data-stu-id="3634b-125">When an HDCP source is connected, use the side  keypad to change source inputs.</span></span>
 
-### <span data-ttu-id="3634b-126">Porte</span><span class="sxs-lookup"><span data-stu-id="3634b-126">Ports</span></span>
+### <a name="ports"></a><span data-ttu-id="3634b-126">Porte</span><span class="sxs-lookup"><span data-stu-id="3634b-126">Ports</span></span>
 
 <span data-ttu-id="3634b-127">Per la modalità Guest è possibile usare una delle porte seguenti di Surface Hub.</span><span class="sxs-lookup"><span data-stu-id="3634b-127">Use these ports on the Surface Hub for Guest Mode.</span></span>
 
@@ -116,7 +116,7 @@ ms.locfileid: "10834046"
 
  
 
-### <span data-ttu-id="3634b-158">Posizione delle porte</span><span class="sxs-lookup"><span data-stu-id="3634b-158">Port locations</span></span>
+### <a name="port-locations"></a><span data-ttu-id="3634b-158">Posizione delle porte</span><span class="sxs-lookup"><span data-stu-id="3634b-158">Port locations</span></span>
 
 <span data-ttu-id="3634b-159">Queste sono le porte di connessione usate per la modalità Guest sui dispositivi Surface Hub da 55" e 84".</span><span class="sxs-lookup"><span data-stu-id="3634b-159">These are the port connections used for Guest Mode on the 55" and 84" Surface Hubs.</span></span>
 
@@ -128,7 +128,7 @@ ms.locfileid: "10834046"
 
 <span data-ttu-id="3634b-163">Porte per connessioni cablate sul dispositivo Surface Hub da 84"</span><span class="sxs-lookup"><span data-stu-id="3634b-163">Wired port connections on 84" Surface Hub</span></span>
 
-### <span data-ttu-id="3634b-164">Enumerazione delle porte</span><span class="sxs-lookup"><span data-stu-id="3634b-164">Port enumeration</span></span>
+### <a name="port-enumeration"></a><span data-ttu-id="3634b-164">Enumerazione delle porte</span><span class="sxs-lookup"><span data-stu-id="3634b-164">Port enumeration</span></span>
 
 <span data-ttu-id="3634b-165">Quando un dispositivo Surface Hub viene connesso a un computer guest tramite la porta USB per connessioni cablate, viene identificato e configurato un certo numero di dispositivi USB.</span><span class="sxs-lookup"><span data-stu-id="3634b-165">When a Surface hub is connected to a guest computer with the wired connect USB port, a number of USB devices are discovered and configured.</span></span> <span data-ttu-id="3634b-166">Questi dispositivi periferici vengono creati per le funzioni touchback e inkback</span><span class="sxs-lookup"><span data-stu-id="3634b-166">These peripheral devices are created for Touchback and Inkback.</span></span> <span data-ttu-id="3634b-167">e risultano visibili in Gestione dispositivi.</span><span class="sxs-lookup"><span data-stu-id="3634b-167">The peripheral devices can be viewed in Device Manager.</span></span> <span data-ttu-id="3634b-168">Per alcuni di questi dispositivi vengono visualizzati nomi duplicati in Gestione dispositivi.</span><span class="sxs-lookup"><span data-stu-id="3634b-168">Device Manager will show duplicate names for some devices.</span></span>
 
@@ -162,7 +162,7 @@ ms.locfileid: "10834046"
 
 -   <span data-ttu-id="3634b-183">Dispositivo USB composito</span><span class="sxs-lookup"><span data-stu-id="3634b-183">USB composite device</span></span>
 
-### <span data-ttu-id="3634b-184">Connettività in modalità Guest</span><span class="sxs-lookup"><span data-stu-id="3634b-184">Guest Mode connectivity</span></span>
+### <a name="guest-mode-connectivity"></a><span data-ttu-id="3634b-184">Connettività in modalità Guest</span><span class="sxs-lookup"><span data-stu-id="3634b-184">Guest Mode connectivity</span></span>
 
 <span data-ttu-id="3634b-185">La scelta del cavo video dipende dai contenuti trasmessi dall'input di origine.</span><span class="sxs-lookup"><span data-stu-id="3634b-185">Your choice of video cable will be determined by what is available from your source input.</span></span> <span data-ttu-id="3634b-186">Il dispositivo Surface Hub supporta tre tipi di input video: DisplayPort, HDMI e VGA.</span><span class="sxs-lookup"><span data-stu-id="3634b-186">The Surface Hub has three choices of video input: DisplayPort, HDMI, and VGA.</span></span> <span data-ttu-id="3634b-187">Fai riferimento al grafico seguente per informazioni sulle risoluzioni disponibili.</span><span class="sxs-lookup"><span data-stu-id="3634b-187">See the following chart for available resolutions.</span></span>
 
@@ -243,20 +243,20 @@ ms.locfileid: "10834046"
 
 <span data-ttu-id="3634b-231">Se il computer connesso in modalità Guest non è compatibile con le funzionalità Touchback e Inkback, il cavo USB non è necessario.</span><span class="sxs-lookup"><span data-stu-id="3634b-231">If the computer you are using for Guest Mode is not compatible with Touchback and Inkback, then you won't need the USB cable.</span></span>
 
-## <span data-ttu-id="3634b-232">Modalità PC sostitutivo</span><span class="sxs-lookup"><span data-stu-id="3634b-232">Replacement PC Mode</span></span>
+## <a name="replacement-pc-mode"></a><span data-ttu-id="3634b-232">Modalità PC sostitutivo</span><span class="sxs-lookup"><span data-stu-id="3634b-232">Replacement PC Mode</span></span>
 
 
 <span data-ttu-id="3634b-233">In modalità PC sostitutivo, il computer integrato in Surface Hub viene disattivato e un PC esterno viene connesso a Surface Hub.</span><span class="sxs-lookup"><span data-stu-id="3634b-233">In Replacement PC Mode, the embedded computer of the Surface Hub is turned off and an external PC is connected to the Surface Hub.</span></span> <span data-ttu-id="3634b-234">Le connessioni alle porte del PC sostitutivo consentono di accedere alle principali periferiche di Surface Hub, tra cui lo schermo, la penna e le funzionalità di tocco.</span><span class="sxs-lookup"><span data-stu-id="3634b-234">Connections to replacement PC ports give access to key peripherals on the Surface Hub, including the screen, pen, and touch features.</span></span> <span data-ttu-id="3634b-235">Questo non significa che Surface Hub non tragga vantaggio dall'esperienza Windows Team, ma che sarà disponibile una maggiore flessibilità, offerta dalla possibilità di usare e gestire il proprio computer Windows.</span><span class="sxs-lookup"><span data-stu-id="3634b-235">This does mean that your Surface Hub won’t have the benefit of the Windows Team experience, but you will have the flexibility offered by providing and managing your own Windows computer.</span></span>
 
-### <span data-ttu-id="3634b-236">Requisiti software</span><span class="sxs-lookup"><span data-stu-id="3634b-236">Software requirements</span></span>
+### <a name="software-requirements"></a><span data-ttu-id="3634b-236">Requisiti software</span><span class="sxs-lookup"><span data-stu-id="3634b-236">Software requirements</span></span>
 
 <span data-ttu-id="3634b-237">Per eseguire Surface Hub in modalità PC sostitutivo è necessaria una versione a 64 bit di Windows 10 Home, Windows 10 Pro o Windows 10 Enterprise.</span><span class="sxs-lookup"><span data-stu-id="3634b-237">You can run Surface Hub in Replacement PC Mode with 64-bit versions of Windows 10 Home, Windows 10 Pro, and Windows 10 Enterprise.</span></span> <span data-ttu-id="3634b-238">Puoi scaricare il [pacchetto di driver per PC sostitutivi di Surface Hub](https://www.microsoft.com/download/details.aspx?id=52210) dall'area download Microsoft.</span><span class="sxs-lookup"><span data-stu-id="3634b-238">You can download the  [Surface Hub Replacement PC driver package](https://www.microsoft.com/download/details.aspx?id=52210) from the Microsoft Download Center.</span></span> <span data-ttu-id="3634b-239">Ti consigliamo di installare i driver in tutti i computer che intendi usare come PC sostitutivi.</span><span class="sxs-lookup"><span data-stu-id="3634b-239">We recommend that you install these drivers on any computer you plan to use as a replacement PC.</span></span>
 
-### <span data-ttu-id="3634b-240">Requisiti hardware</span><span class="sxs-lookup"><span data-stu-id="3634b-240">Hardware requirements</span></span>
+### <a name="hardware-requirements"></a><span data-ttu-id="3634b-240">Requisiti hardware</span><span class="sxs-lookup"><span data-stu-id="3634b-240">Hardware requirements</span></span>
 
 <span data-ttu-id="3634b-241">Surface Hub è compatibile con un'ampia gamma di componenti hardware.</span><span class="sxs-lookup"><span data-stu-id="3634b-241">Surface Hub is compatible with a range of hardware.</span></span> <span data-ttu-id="3634b-242">È sufficiente scegliere una combinazione di processore e memoria che consenta al PC sostitutivo di supportare i programmi che dovrai usare.</span><span class="sxs-lookup"><span data-stu-id="3634b-242">Choose the processor and memory confirmation for your replacement PC so that it supports the programs you'll be using.</span></span> <span data-ttu-id="3634b-243">L'hardware del PC sostitutivo, inoltre, deve supportare versioni a 64 bit di Windows 10.</span><span class="sxs-lookup"><span data-stu-id="3634b-243">Your replacement PC hardware needs to support 64-bit versions of Windows 10.</span></span>
 
-### <span data-ttu-id="3634b-244">Scheda grafica</span><span class="sxs-lookup"><span data-stu-id="3634b-244">Graphics adapter</span></span>
+### <a name="graphics-adapter"></a><span data-ttu-id="3634b-244">Scheda grafica</span><span class="sxs-lookup"><span data-stu-id="3634b-244">Graphics adapter</span></span>
 
 <span data-ttu-id="3634b-245">In modalità PC sostitutivo, Surface Hub supporta qualsiasi scheda grafica in grado di produrre un segnale DisplayPort.</span><span class="sxs-lookup"><span data-stu-id="3634b-245">In Replacement PC Mode, Surface Hub supports any graphics adapter that can produce a DisplayPort signal.</span></span> <span data-ttu-id="3634b-246">Per un'esperienza migliore si consiglia tuttavia una scheda grafica ottimizzata per la risoluzione e la frequenza di aggiornamento di Surface Hub.</span><span class="sxs-lookup"><span data-stu-id="3634b-246">You'll improve your experience with a graphics adapter that can match Surface Hub's resolution and refresh rate.</span></span> <span data-ttu-id="3634b-247">Per un uso ottimale di Surface Hub in modalità PC sostitutivo, è consigliato un segnale video a 120 Hz.</span><span class="sxs-lookup"><span data-stu-id="3634b-247">For example, the best and recommended replacement PC experience on the Surface Hub is with a 120Hz video signal.</span></span>
 
@@ -295,7 +295,7 @@ ms.locfileid: "10834046"
 
  
 
-### <span data-ttu-id="3634b-258">Porte</span><span class="sxs-lookup"><span data-stu-id="3634b-258">Ports</span></span>
+### <a name="ports"></a><span data-ttu-id="3634b-258">Porte</span><span class="sxs-lookup"><span data-stu-id="3634b-258">Ports</span></span>
 
 <span data-ttu-id="3634b-259">Porte per PC sostitutivo su Surface Hub da 55"</span><span class="sxs-lookup"><span data-stu-id="3634b-259">Replacement PC ports on 55" Surface Hub</span></span>
 
@@ -411,7 +411,7 @@ ms.locfileid: "10834046"
 
  
 
-### <span data-ttu-id="3634b-311">Istruzioni per l'installazione del PC sostitutivo</span><span class="sxs-lookup"><span data-stu-id="3634b-311">Replacement PC setup instructions</span></span>
+### <a name="replacement-pc-setup-instructions"></a><span data-ttu-id="3634b-311">Istruzioni per l'installazione del PC sostitutivo</span><span class="sxs-lookup"><span data-stu-id="3634b-311">Replacement PC setup instructions</span></span>
 
 **<span data-ttu-id="3634b-312">Per usare la modalità PC sostitutivo</span><span class="sxs-lookup"><span data-stu-id="3634b-312">To use Replacement PC Mode</span></span>**
 
@@ -445,11 +445,11 @@ ms.locfileid: "10834046"
 3.  <span data-ttu-id="3634b-329">Accendi Surface Hub mediante l'interruttore di alimentazione accanto al cavo di alimentazione.</span><span class="sxs-lookup"><span data-stu-id="3634b-329">Turn on the Surface Hub using the power switch next to the power cable.</span></span>
 
  
-## <span data-ttu-id="3634b-330">Uscita video</span><span class="sxs-lookup"><span data-stu-id="3634b-330">Video Out</span></span>
+## <a name="video-out"></a><span data-ttu-id="3634b-330">Uscita video</span><span class="sxs-lookup"><span data-stu-id="3634b-330">Video Out</span></span>
  
 <span data-ttu-id="3634b-331">Surface Hub include una porta di uscita video per il mirroring del contenuto visivo da Surface Hub a un altro schermo.</span><span class="sxs-lookup"><span data-stu-id="3634b-331">The Surface Hub includes a Video Out port for mirroring visual content from the Surface Hub to another display.</span></span>
 
-### <span data-ttu-id="3634b-332">Porte</span><span class="sxs-lookup"><span data-stu-id="3634b-332">Ports</span></span>
+### <a name="ports"></a><span data-ttu-id="3634b-332">Porte</span><span class="sxs-lookup"><span data-stu-id="3634b-332">Ports</span></span>
 
 <span data-ttu-id="3634b-333">Porta di uscita video su Surface Hub da 55"</span><span class="sxs-lookup"><span data-stu-id="3634b-333">Video Out port on the 55" Surface Hub</span></span>
 
@@ -481,12 +481,12 @@ ms.locfileid: "10834046"
 </tbody>
 </table>
 
-## <span data-ttu-id="3634b-346">Cavi</span><span class="sxs-lookup"><span data-stu-id="3634b-346">Cables</span></span>
+## <a name="cables"></a><span data-ttu-id="3634b-346">Cavi</span><span class="sxs-lookup"><span data-stu-id="3634b-346">Cables</span></span>
 
 <span data-ttu-id="3634b-347">Entrambi i dispositivi Surface Hub da 55 e 84 pollici sono stati testati per funzionare con cavi certificati DisplayPort e HDMI.</span><span class="sxs-lookup"><span data-stu-id="3634b-347">Both the 55” and 84” Surface Hub devices have been tested to work with Certified DisplayPort and HDMI cables.</span></span>  <span data-ttu-id="3634b-348">Benché i fornitori vendano cavi più lunghi che potrebbero funzionare con Surface Hub, solo i cavi che sono stati certificati dai laboratori di test sono garantiti per funzionare con l'Hub.</span><span class="sxs-lookup"><span data-stu-id="3634b-348">While vendors do sell longer cables that may work with the Surface Hub, only those cables that have been certified by testing labs are certain to work with the Hub.</span></span> <span data-ttu-id="3634b-349">Ad esempio, i cavi DisplayPort sono certificati solo fino a 3 metri, ma molti fornitori vendono cavi di lunghezza tre volte superiore.</span><span class="sxs-lookup"><span data-stu-id="3634b-349">For example, DisplayPort cables are certified only up to 3 meters, however many vendors sell cables that are 3 times that length.</span></span> <span data-ttu-id="3634b-350">Se è necessario un cavo lungo, è consigliabile usare un cavo HDMI.</span><span class="sxs-lookup"><span data-stu-id="3634b-350">If a long cable is necessary, we strongly suggest using HDMI.</span></span>  <span data-ttu-id="3634b-351">HDMI ha molte soluzioni convenienti per i cavi prolungati, incluso l'uso dei ripetitori.</span><span class="sxs-lookup"><span data-stu-id="3634b-351">HDMI has many cost-effective solutions for long-haul cables, including the use of repeaters.</span></span> <span data-ttu-id="3634b-352">Se viene rilevato un sink HDMI, quasi tutte le origini DisplayPort passeranno automaticamente alla segnalazione HDMI.</span><span class="sxs-lookup"><span data-stu-id="3634b-352">Nearly every DisplayPort source will automatically switch to HDMI signaling if a HDMI sink is detected.</span></span>
 
 
-## <span data-ttu-id="3634b-353">Accessori Bluetooth</span><span class="sxs-lookup"><span data-stu-id="3634b-353">Bluetooth accessories</span></span>
+## <a name="bluetooth-accessories"></a><span data-ttu-id="3634b-353">Accessori Bluetooth</span><span class="sxs-lookup"><span data-stu-id="3634b-353">Bluetooth accessories</span></span>
 
 <span data-ttu-id="3634b-354">È possibile connettere i seguenti accessori a Surface Hub utilizzando il Bluetooth:</span><span class="sxs-lookup"><span data-stu-id="3634b-354">You can connect the following accessories to Surface Hub using Bluetooth:</span></span>
 

@@ -26,7 +26,7 @@ ms.locfileid: "10832654"
 
 <span data-ttu-id="70ae3-106">L'uso di un sistema di controllo della sala con il dispositivo Surface Hub implica la connessione dell'hardware di controllo della sala a Surface Hub, generalmente tramite la porta seriale RJ11 nella parte inferiore di Surface Hub.</span><span class="sxs-lookup"><span data-stu-id="70ae3-106">Using a room control system with your Surface Hub involves connecting room control hardware to the Surface Hub, usually through the RJ11 serial port on the bottom of the Surface Hub.</span></span>
 
-## <span data-ttu-id="70ae3-107">Impostazioni del terminale</span><span class="sxs-lookup"><span data-stu-id="70ae3-107">Terminal settings</span></span>
+## <a name="terminal-settings"></a><span data-ttu-id="70ae3-107">Impostazioni del terminale</span><span class="sxs-lookup"><span data-stu-id="70ae3-107">Terminal settings</span></span>
 
 <span data-ttu-id="70ae3-108">Per la connessione al pannello di controllo di un sistema di controllo della sala, non è necessario configurare le impostazioni del terminale in Surface Hub.</span><span class="sxs-lookup"><span data-stu-id="70ae3-108">To connect to a room control system control panel, you don't need to configure any terminal settings on the Surface Hub.</span></span> <span data-ttu-id="70ae3-109">Se vuoi connettere un PC o un portatile al dispositivo Surface Hub e inviare comandi seriali da Surface Hub, puoi usare un programma di emulazione del terminale come Tera Term o PuTTY.</span><span class="sxs-lookup"><span data-stu-id="70ae3-109">If you want to connect a PC or laptop to your Surface Hub and send serial commands from the Surface Hub, you can use a terminal emulator program like Tera Term or PuTTY.</span></span> 
 
@@ -40,7 +40,7 @@ ms.locfileid: "10832654"
 | <span data-ttu-id="70ae3-122">Avanzamento riga</span><span class="sxs-lookup"><span data-stu-id="70ae3-122">Line feed</span></span> | <span data-ttu-id="70ae3-123">ogni ritorno a capo</span><span class="sxs-lookup"><span data-stu-id="70ae3-123">every carriage return</span></span> |
  
 
-## <span data-ttu-id="70ae3-124">Diagramma di collegamento</span><span class="sxs-lookup"><span data-stu-id="70ae3-124">Wiring diagram</span></span>
+## <a name="wiring-diagram"></a><span data-ttu-id="70ae3-124">Diagramma di collegamento</span><span class="sxs-lookup"><span data-stu-id="70ae3-124">Wiring diagram</span></span>
 
 <span data-ttu-id="70ae3-125">Puoi usare un connettore RJ-11 (6P6C) standard per la connessione della porta seriale di Surface Hub a un sistema di controllo della sala.</span><span class="sxs-lookup"><span data-stu-id="70ae3-125">You can use a standard RJ-11 (6P6C) connector to connect the Surface Hub serial port to a room control system.</span></span> <span data-ttu-id="70ae3-126">Si tratta del metodo consigliato.</span><span class="sxs-lookup"><span data-stu-id="70ae3-126">This is the recommended method.</span></span> <span data-ttu-id="70ae3-127">Anche se sconsigliato, puoi usare in alternativa un cavo a 4 conduttori RJ-11.</span><span class="sxs-lookup"><span data-stu-id="70ae3-127">You can also use an RJ-11 4-conductor cable, but we do not recommend this method.</span></span>
 
@@ -48,7 +48,7 @@ ms.locfileid: "10832654"
 
 ![Immagine che mostra il diagramma di collegamento.](images/room-control-wiring-diagram.png)
 
-## <span data-ttu-id="70ae3-130">Set di comandi</span><span class="sxs-lookup"><span data-stu-id="70ae3-130">Command sets</span></span>
+## <a name="command-sets"></a><span data-ttu-id="70ae3-130">Set di comandi</span><span class="sxs-lookup"><span data-stu-id="70ae3-130">Command sets</span></span>
 
 <span data-ttu-id="70ae3-131">I sistemi di controllo della sala usano scenari di sale riunioni comuni per i comandi.</span><span class="sxs-lookup"><span data-stu-id="70ae3-131">Room control systems use common meeting-room scenarios for commands.</span></span> <span data-ttu-id="70ae3-132">I comandi provengono dal sistema di controllo della sala e vengono comunicati tramite una connessione seriale a un dispositivo Surface Hub.</span><span class="sxs-lookup"><span data-stu-id="70ae3-132">Commands originate from the room control system, and are communicated over a serial connection to a Surface Hub.</span></span> <span data-ttu-id="70ae3-133">I comandi sono basati su ASCII e il dispositivo Surface Hub riconoscerà le modifiche dello stato.</span><span class="sxs-lookup"><span data-stu-id="70ae3-133">Commands are ASCII based, and the Surface Hub will acknowledge when state changes occur.</span></span>
 
@@ -62,7 +62,7 @@ ms.locfileid: "10832654"
 | <span data-ttu-id="70ae3-142">?</span><span class="sxs-lookup"><span data-stu-id="70ae3-142">?</span></span> | <span data-ttu-id="70ae3-143">Consente di richiedere un valore corrente</span><span class="sxs-lookup"><span data-stu-id="70ae3-143">Queries for a current value</span></span> |
  
 
-## <span data-ttu-id="70ae3-144">Alimentazione</span><span class="sxs-lookup"><span data-stu-id="70ae3-144">Power</span></span>
+## <a name="power"></a><span data-ttu-id="70ae3-144">Alimentazione</span><span class="sxs-lookup"><span data-stu-id="70ae3-144">Power</span></span>
 
 <span data-ttu-id="70ae3-145">Surface Hub può trovarsi in uno degli stati di alimentazione seguenti.</span><span class="sxs-lookup"><span data-stu-id="70ae3-145">Surface Hub can be in one of these power states.</span></span>
 
@@ -91,7 +91,7 @@ ms.locfileid: "10832654"
 
 
 
-## <span data-ttu-id="70ae3-187">Luminosità</span><span class="sxs-lookup"><span data-stu-id="70ae3-187">Brightness</span></span>
+## <a name="brightness"></a><span data-ttu-id="70ae3-187">Luminosità</span><span class="sxs-lookup"><span data-stu-id="70ae3-187">Brightness</span></span>
 
 <span data-ttu-id="70ae3-188">Il livello di luminosità corrente è compreso nell'intervallo da 0 a 100.</span><span class="sxs-lookup"><span data-stu-id="70ae3-188">The current brightness level is a range from 0 to 100.</span></span>
 
@@ -102,7 +102,7 @@ ms.locfileid: "10832654"
 | <span data-ttu-id="70ae3-193">Brightness+</span><span class="sxs-lookup"><span data-stu-id="70ae3-193">Brightness+</span></span> | <span data-ttu-id="70ae3-194">Il controller SMC (System Management Controller) invia il comando per aumentare la luminosità.</span><span class="sxs-lookup"><span data-stu-id="70ae3-194">System management controller (SMC) sends the brightness up command.</span></span></br></br><span data-ttu-id="70ae3-195">Il servizio PC nel sistema di controllo della sala invia notifica al controller SMC del nuovo livello di luminosità.</span><span class="sxs-lookup"><span data-stu-id="70ae3-195">PC service on the room control system notifies SMC of new brightness level.</span></span> |  <span data-ttu-id="70ae3-196">Brightness = 51</span><span class="sxs-lookup"><span data-stu-id="70ae3-196">Brightness = 51</span></span> |
 | <span data-ttu-id="70ae3-197">Brightness-</span><span class="sxs-lookup"><span data-stu-id="70ae3-197">Brightness-</span></span> |  <span data-ttu-id="70ae3-198">Il controller SMC invia il comando per ridurre la luminosità.</span><span class="sxs-lookup"><span data-stu-id="70ae3-198">SMC sends the brightness down command.</span></span></br></br><span data-ttu-id="70ae3-199">Il servizio PC invia notifica al controller SMC del nuovo livello di luminosità.</span><span class="sxs-lookup"><span data-stu-id="70ae3-199">PC service notifies SMC of new brightness level.</span></span> | <span data-ttu-id="70ae3-200">Brightness = 50</span><span class="sxs-lookup"><span data-stu-id="70ae3-200">Brightness = 50</span></span> |
 
-## <span data-ttu-id="70ae3-201">Volume</span><span class="sxs-lookup"><span data-stu-id="70ae3-201">Volume</span></span>
+## <a name="volume"></a><span data-ttu-id="70ae3-201">Volume</span><span class="sxs-lookup"><span data-stu-id="70ae3-201">Volume</span></span>
 
 <span data-ttu-id="70ae3-202">Il livello di volume corrente è compreso nell'intervallo da 0 a 100.</span><span class="sxs-lookup"><span data-stu-id="70ae3-202">The current volume level is a range from 0 to 100.</span></span>
 
@@ -119,7 +119,7 @@ ms.locfileid: "10832654"
 
  
 
-## <span data-ttu-id="70ae3-217">Disattivazione dell'audio</span><span class="sxs-lookup"><span data-stu-id="70ae3-217">Mute for audio</span></span>
+## <a name="mute-for-audio"></a><span data-ttu-id="70ae3-217">Disattivazione dell'audio</span><span class="sxs-lookup"><span data-stu-id="70ae3-217">Mute for audio</span></span>
 
 <span data-ttu-id="70ae3-218">L'audio può essere disattivato.</span><span class="sxs-lookup"><span data-stu-id="70ae3-218">Audio can be muted.</span></span>
 
@@ -130,7 +130,7 @@ ms.locfileid: "10832654"
 
  
 
-## <span data-ttu-id="70ae3-226">Origine video</span><span class="sxs-lookup"><span data-stu-id="70ae3-226">Video source</span></span>
+## <a name="video-source"></a><span data-ttu-id="70ae3-226">Origine video</span><span class="sxs-lookup"><span data-stu-id="70ae3-226">Video source</span></span>
 
 <span data-ttu-id="70ae3-227">Possono essere usate diverse origini di visualizzazione.</span><span class="sxs-lookup"><span data-stu-id="70ae3-227">Several display sources can be used.</span></span>
 
@@ -153,7 +153,7 @@ ms.locfileid: "10832654"
 | <span data-ttu-id="70ae3-250">Source-</span><span class="sxs-lookup"><span data-stu-id="70ae3-250">Source-</span></span> | <span data-ttu-id="70ae3-251">Il controller SMC passa all'origine di input attiva precedente.</span><span class="sxs-lookup"><span data-stu-id="70ae3-251">SMC cycles to the previous active input source.</span></span></br></br><span data-ttu-id="70ae3-252">Il servizio PC invia notifica al controller SMC dell'origine di input corrente.</span><span class="sxs-lookup"><span data-stu-id="70ae3-252">PC service notifies SMC of the current input source.</span></span> |  <span data-ttu-id="70ae3-253">Source=&lt;#&gt;</span><span class="sxs-lookup"><span data-stu-id="70ae3-253">Source=&lt;#&gt;</span></span> |
 | <span data-ttu-id="70ae3-254">Source?</span><span class="sxs-lookup"><span data-stu-id="70ae3-254">Source?</span></span> |  <span data-ttu-id="70ae3-255">Il controller SMC richiede l'origine di input attiva al servizio PC.</span><span class="sxs-lookup"><span data-stu-id="70ae3-255">SMC queries PC service for the active input source.</span></span></br></br><span data-ttu-id="70ae3-256">Il servizio PC invia notifica al controller SMC dell'origine di input corrente.</span><span class="sxs-lookup"><span data-stu-id="70ae3-256">PC service notifies SMC of the current in;put source.</span></span> | <span data-ttu-id="70ae3-257">Source=&lt;#&gt;</span><span class="sxs-lookup"><span data-stu-id="70ae3-257">Source=&lt;#&gt;</span></span> |
 
-## <span data-ttu-id="70ae3-258">Errori</span><span class="sxs-lookup"><span data-stu-id="70ae3-258">Errors</span></span>
+## <a name="errors"></a><span data-ttu-id="70ae3-258">Errori</span><span class="sxs-lookup"><span data-stu-id="70ae3-258">Errors</span></span>
 
 <span data-ttu-id="70ae3-259">Gli errori vengono restituiti nel formato indicato in questa tabella.</span><span class="sxs-lookup"><span data-stu-id="70ae3-259">Errors are returned following the format in this table.</span></span>
 
@@ -167,7 +167,7 @@ ms.locfileid: "10832654"
 
  
 
-## <span data-ttu-id="70ae3-274">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="70ae3-274">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="70ae3-274">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="70ae3-274">Related topics</span></span>
 
 
 [<span data-ttu-id="70ae3-275">Gestire Microsoft Surface Hub</span><span class="sxs-lookup"><span data-stu-id="70ae3-275">Manage Microsoft Surface Hub</span></span>](manage-surface-hub.md)

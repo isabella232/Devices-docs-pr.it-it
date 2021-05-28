@@ -31,12 +31,12 @@ ms.locfileid: "10832685"
 
 
 
-## <span data-ttu-id="9171e-113">Risoluzione dei problemi di configurazione </span><span class="sxs-lookup"><span data-stu-id="9171e-113">Setup troubleshooting</span></span>
+## <a name="setup-troubleshooting"></a><span data-ttu-id="9171e-113">Risoluzione dei problemi di configurazione </span><span class="sxs-lookup"><span data-stu-id="9171e-113">Setup troubleshooting</span></span>
 
 
 <span data-ttu-id="9171e-114">In questa sezione sono elencate le cause e le soluzioni possibili per risolvere i problemi che potresti riscontrare durante la configurazione del dispositivo Microsoft Surface Hub.</span><span class="sxs-lookup"><span data-stu-id="9171e-114">This section lists causes, and possible fixes to help troubleshoot issues you might find when you set up your Microsoft Surface Hub.</span></span>
 
-### <span data-ttu-id="9171e-115">Problemi relativi al dispositivo</span><span class="sxs-lookup"><span data-stu-id="9171e-115">On-device</span></span>
+### <a name="on-device"></a><span data-ttu-id="9171e-115">Problemi relativi al dispositivo</span><span class="sxs-lookup"><span data-stu-id="9171e-115">On-device</span></span>
 
 <span data-ttu-id="9171e-116">Soluzioni possibili per i problemi relativi al dispositivo Surface Hub dopo il completamento del programma di prima esecuzione.</span><span class="sxs-lookup"><span data-stu-id="9171e-116">Possible fixes for issues on the Surface Hub after you've completed the first-run program.</span></span>
 
@@ -143,7 +143,7 @@ ms.locfileid: "10832685"
 </table>
  
 
-### <span data-ttu-id="9171e-150">Prima esecuzione</span><span class="sxs-lookup"><span data-stu-id="9171e-150">First run</span></span>
+### <a name="first-run"></a><span data-ttu-id="9171e-150">Prima esecuzione</span><span class="sxs-lookup"><span data-stu-id="9171e-150">First run</span></span>
 
 <span data-ttu-id="9171e-151">Soluzioni possibili per i problemi relativi al programma di prima esecuzione di Surface Hub.</span><span class="sxs-lookup"><span data-stu-id="9171e-151">Possible fixes for issues with Surface Hub first-run program.</span></span>
 
@@ -212,7 +212,7 @@ ms.locfileid: "10832685"
 
  
 
-### <span data-ttu-id="9171e-178">Pagina dell'account del dispositivo, problemi relativi alle impostazioni per account esistenti</span><span class="sxs-lookup"><span data-stu-id="9171e-178">Device account page, issues for existing account settings</span></span>
+### <a name="device-account-page,-issues-for-existing-account-settings"></a><span data-ttu-id="9171e-178">Pagina dell'account del dispositivo, problemi relativi alle impostazioni per account esistenti</span><span class="sxs-lookup"><span data-stu-id="9171e-178">Device account page, issues for existing account settings</span></span>
 
 <table>
 <tr>
@@ -372,7 +372,7 @@ ms.locfileid: "10832685"
 
  
 
-### <span data-ttu-id="9171e-227">Prima esecuzione, pagina del server Exchange</span><span class="sxs-lookup"><span data-stu-id="9171e-227">First run, Exchange server page</span></span>
+### <a name="first-run,-exchange-server-page"></a><span data-ttu-id="9171e-227">Prima esecuzione, pagina del server Exchange</span><span class="sxs-lookup"><span data-stu-id="9171e-227">First run, Exchange server page</span></span>
 
 <table>
 <colgroup>
@@ -431,7 +431,7 @@ ms.locfileid: "10832685"
 
  
 
-## <span data-ttu-id="9171e-243">Errori di Exchange ActiveSync</span><span class="sxs-lookup"><span data-stu-id="9171e-243">Exchange ActiveSync errors</span></span>
+## <a name="exchange-activesync-errors"></a><span data-ttu-id="9171e-243">Errori di Exchange ActiveSync</span><span class="sxs-lookup"><span data-stu-id="9171e-243">Exchange ActiveSync errors</span></span>
 
 
 <span data-ttu-id="9171e-244">In questa sezione sono elencati i codici di stato, il mapping, i messaggi utente e le azioni che un amministratore può eseguire per risolvere gli errori di Exchange ActiveSync.</span><span class="sxs-lookup"><span data-stu-id="9171e-244">This section lists status codes, mapping, user messages, and actions an admin can take to solve Exchange ActiveSync errors.</span></span>
@@ -607,13 +607,13 @@ ms.locfileid: "10832685"
 </tbody>
 </table>
 
-## <span data-ttu-id="9171e-372">Supporto tecnico</span><span class="sxs-lookup"><span data-stu-id="9171e-372">Contact Support</span></span>
+## <a name="contact-support"></a><span data-ttu-id="9171e-372">Supporto tecnico</span><span class="sxs-lookup"><span data-stu-id="9171e-372">Contact Support</span></span>
 
 <span data-ttu-id="9171e-373">Se si hanno domande o si ha bisogno di assistenza, è possibile [creare una richiesta di supporto](https://support.microsoft.com/supportforbusiness/productselection).</span><span class="sxs-lookup"><span data-stu-id="9171e-373">If you have questions or need help, you can [create a support request](https://support.microsoft.com/supportforbusiness/productselection).</span></span>
 
 
  
-## <span data-ttu-id="9171e-374">Contenuti correlati</span><span class="sxs-lookup"><span data-stu-id="9171e-374">Related content</span></span>
+## <a name="related-content"></a><span data-ttu-id="9171e-374">Contenuti correlati</span><span class="sxs-lookup"><span data-stu-id="9171e-374">Related content</span></span>
 
 - [<span data-ttu-id="9171e-375">Risoluzione dei problemi di connessione Miracast a Surface Hub</span><span class="sxs-lookup"><span data-stu-id="9171e-375">Troubleshooting Miracast connection to the Surface Hub</span></span>](https://docs.microsoft.com/surface-hub/miracast-troubleshooting)
  
