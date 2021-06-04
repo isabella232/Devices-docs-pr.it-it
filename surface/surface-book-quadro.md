@@ -27,7 +27,7 @@ Surface Book 3 for business alimentato dalla NVIDIA® Quadro RTX™ 3000 GPU è 
 - **Intelligenza artificiale** -rimuovere attività ridondanti e noiose e calcolare il lavoro intensivo con i core di tensore di 240 per l'ai.
 - **Grafica avanzata e tecnologia Compute** -esperienza di velocità e interattività notevoli durante la grafica più gravosa e calcolare i carichi di lavoro con core CUDA di 1.920 e 6GB di memoria GDDR6.
 
-## Soluzione Grade Enterprise
+##  <a name="enterprise-grade-solution"></a>Soluzione Grade Enterprise
 
 Di fondamentale importanza per i clienti commerciali, quadro RTX 3000 offre una soluzione completamente professionale che combina le funzionalità di Ray tracing e Deep Learning con una soluzione di gestione e supporto di livello aziendale integrata. I driver quadro sono testati e certificati per più di 100 applicazioni professionali, offrendo un ulteriore livello di garanzia della qualità per convalidare la stabilità, l'affidabilità e le prestazioni.
  
@@ -36,7 +36,7 @@ Quadro include strumenti aziendali dedicati per la gestione remota dei dispositi
 NVIDIA sviluppa e gestisce i driver per le aziende (ODE) ottimizzati per l'organizzazione, testati e convalidati per consentire a livello aziendale stabilità, affidabilità, disponibilità e supporto per la disponibilità di prodotti estesa. Ogni versione del driver include più di 2.000 giorni di test con le applicazioni professionali e i test case, oltre alla certificazione WHQL. Le minacce alla sicurezza vengono continuamente monitorate e vengono rilasciati aggiornamenti di sicurezza regolari per la protezione dalle vulnerabilità appena scoperte. Inoltre, i driver quadro vengono sottoposti a un ulteriore livello di test per Surface Engineering prima del rilascio tramite Windows Update.
  
 
-## Creato per carichi di lavoro intensivi di calcolo
+##  <a name="built-for-compute-intensive-workloads"></a>Creato per carichi di lavoro intensivi di calcolo
 
 Surface Book 3 con quadro RTX 3000 offre le migliori prestazioni grafiche di qualsiasi computer portatile di Surface, consentendo ai professionisti avanzati di lavorare ovunque.
  
@@ -89,7 +89,7 @@ Surface Book 3 con quadro RTX 3000 offre le migliori prestazioni grafiche di qua
 | NVIDIA Optimus                                             | Sì             |
 
  
-## Test ISV & accelerazione delle app
+##  <a name="isv-testing-&-app-acceleration"></a>Test ISV & accelerazione delle app
 
 Come illustrato nella tabella 3, Surface Book 3 con quadro RTX 3000 è testato e approvato dagli ISV principali e offre un'accelerazione significativamente più rapida tra le applicazioni professionali. SPECview Perf 13 benchmark test results confronta Surface Book 3 15-inch con NVIDIA Quadro RTX 3000 versus Surface Book 2 15-inch con i dispositivi NVIDIA GeForce GTX 1060.
 
@@ -125,7 +125,7 @@ Come illustrato nella tabella 3, Surface Book 3 con quadro RTX 3000 è testato e
 
 
 
-## SKU
+##  <a name="skus"></a>Sku
 
 **Tabella 4. Surface Book 3 con SKU RTX 3000 di quadro**
 
@@ -134,7 +134,7 @@ Come illustrato nella tabella 3, Surface Book 3 con quadro RTX 3000 è testato e
 | 15 pollici | Quad-Core 10 gen Core i7-1065G7 | Elementi grafici Intel Iris™ Plus<br>NVIDIA Quadro RTX 3000. Progettazione Max-Q con memoria grafica GDDR6 da 6GB | 32 LPDDR4x | 512 GB      |
 | 15 pollici | Quad-Core 10 gen Core i7-1065G7 | Elementi grafici Intel Iris™ Plus<br>NVIDIA Quadro RTX 3000. Progettazione Max-Q con memoria grafica GDDR6 da 6GB | 32 LPDDR4x | 1 TB        |
 
-## Riepilogo
+##  <a name="summary"></a>Riepilogo
 
 Surface Book 3 con quadro RTX 3000 offre le migliori prestazioni grafiche di qualsiasi computer portatile di Surface, offrendo ad architetti, ingegneri, sviluppatori e scienziati dati gli strumenti necessari per lavorare in modo efficiente ovunque:
  
@@ -142,7 +142,7 @@ Surface Book 3 con quadro RTX 3000 offre le migliori prestazioni grafiche di qua
 - Prestazioni di livello desktop in un fattore di forma per dispositivi mobili.
 - Caratteristiche di livello aziendale, affidabilità e supporto per progetti mission-critical.
 
-## Scopri di più
+##  <a name="learn-more"></a>Scopri di più
 
 - [Panoramica tecnica su Surface Book 3 GPU](surface-book-GPU-overview.md)
 - [Surface per le aziende](https://www.microsoft.com/surface/business)

@@ -29,7 +29,7 @@ ms.locfileid: "10893078"
 
 Queste sono le soluzioni di supporto Microsoft per problemi comuni che possono verificarsi con i dispositivi Surface in un'organizzazione. Se il problema non è elencato, [contattare il supporto Surface](contact-surface-support.md?tabs=online).
 
-## Driver della superficie e firmware
+##  <a name="surface-drivers-and-firmware"></a>Driver della superficie e firmware
 
 Microsoft rilascia regolarmente gli aggiornamenti e le soluzioni per i dispositivi Surface. Per garantire che i dispositivi ricevano gli aggiornamenti futuri, inclusi gli aggiornamenti della sicurezza, è importante mantenere i dispositivi Surface aggiornati.
 
@@ -40,34 +40,34 @@ Microsoft rilascia regolarmente gli aggiornamenti e le soluzioni per i dispositi
 - [Gestire gli aggiornamenti dei driver e del firmware di Surface](https://docs.microsoft.com/surface/manage-surface-pro-3-firmware-updates)
 - [Come gestire gli aggiornamenti di Surface driver in Configuration Manager](https://support.microsoft.com/help/4098906)
 
-## Problemi relativi al dock di Surface
+##  <a name="surface-dock-issues"></a>Problemi relativi al dock di Surface
 
 - [Risolvere i problemi relativi a Surface Dock e agli alloggiamenti di espansione](https://support.microsoft.com/help/4023468/surface-troubleshoot-surface-dock-and-docking-stations)
 - [Risoluzione dei problemi di connessione della superficie a una seconda schermata](https://support.microsoft.com/help/4023496)
 - [Aggiornamento del firmware Microsoft Surface Dock](https://docs.microsoft.com/surface/surface-dock-updater)
 
-## Problemi di tastiera o cover del dispositivo
+##  <a name="device-cover-or-keyboard-issues"></a>Problemi di tastiera o cover del dispositivo
 
 - [Risoluzione dei problemi della tastiera o della cover con tasti di Surface](https://www.microsoft.com/surface/support/hardware-and-drivers/troubleshoot-surface-keyboards)
 
-## Problemi di schermo incrinato o graffiato
+##  <a name="screen-cracked-or-scratched-issues"></a>Problemi di schermo incrinato o graffiato
 
 - [Contattare il supporto di Surface](contact-surface-support.md?tabs=online)
 
-## Problemi di alimentazione superficiale o batteria
+##  <a name="surface-power-or-battery-issues"></a>Problemi di alimentazione superficiale o batteria
 
 - [Come caricare Surface (informazioni di Surface PSU)](https://support.microsoft.com/help/4023496)
 - [La batteria superficiale non viene caricata o la superficie non viene eseguita sulla batteria](https://support.microsoft.com/help/4023536)
 - [Surface non si accende o non si riattiva dalla modalità di sospensione](https://support.microsoft.com/help/4023537)
 - [Massimizzare la durata della batteria di Surface](https://support.microsoft.com/help/4483194)
 
-## Reimposta dispositivo
+##  <a name="reset-device"></a>Reimposta dispositivo
 
 - [Creazione e utilizzo di un'unità di ripristino USB per Surface](https://support.microsoft.com/help/4023512)
 - [Domande frequenti: proteggere i dati se si invia una superficie in per il servizio](https://support.microsoft.com/help/4023508)
 - [Microsoft Surface Data Eraser](https://docs.microsoft.com/surface/microsoft-surface-data-eraser)
 
-## Problemi di distribuzione
+##  <a name="deployment-issues"></a>Problemi di distribuzione
 
 - [DISK0 non è stato trovato quando si distribuisce Windows su Surface Pro modello 1796 o Surface laptop](https://support.microsoft.com/help/4046108)
 - [Surface Pro modello 1796 e Surface laptop 1TB Visualizza due unità](https://support.microsoft.com/help/4046105)

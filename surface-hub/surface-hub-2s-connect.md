@@ -26,7 +26,7 @@ Surface Hub 2S consente di connettere dispositivi esterni, rispecchiare la visua
 > [!NOTE]
 > Surface Hub 2S usa l'input video selezionato fino a quando non viene effettuata una nuova connessione, la connessione esistente viene interrotta oppure l'app Connect viene chiusa.
 
-## Configurazioni cablate consigliate 
+##  <a name="recommended-wired-configurations"></a>Configurazioni cablate consigliate 
 
 In generale, è consigliabile usare connessioni via cavo native quando possibile, ad esempio da USB-C a USB-C o da HDMI a HDMI. Altre combinazioni come MiniDP a HDMI o MiniDP a USB-C funzioneranno anche. Potrebbe essere necessaria una configurazione aggiuntiva per ottimizzare l'esperienza di uscita video, come descritto in questa pagina.
 
@@ -47,11 +47,11 @@ Quando si connette un computer guest a Surface Hub 2S tramite la porta USB-C, ve
 | Mouse e altri dispositivi di puntamento | Mouse compatibile HID |
 | Controller USB | Hub USB generico<br>Dispositivo USB composito |
 
-## Connessione di video-in a Surface Hub 2S
+##  <a name="connecting-video-in-to-surface-hub-2s"></a>Connessione di video-in a Surface Hub 2S
 
 È possibile inserire il video in Surface Hub 2S usando USB-C o HDMI, come indicato nella tabella seguente.  
 
-### Impostazioni di Surface Hub 2S video-in
+###  <a name="surface-hub-2s-video-in-settings"></a>Impostazioni di Surface Hub 2S video-in
 
 | **Tipo di segnale** | **Risoluzione** | **Frequenza dei fotogrammi** | **HDMI** | **USB-C** |
 | --------------- | -------------- | -------------- | -------- | --------- |
@@ -70,11 +70,11 @@ Quando si connette un computer guest a Surface Hub 2S tramite la porta USB-C, ve
 > [!NOTE]
 > Il video da un PC esterno connesso può sembrare più piccolo quando viene visualizzato in Surface Hub 2S.
 
-## Hub superficie speculare 2S visualizzato in un altro dispositivo
+##  <a name="mirroring-surface-hub-2s-display-on-another-device"></a>Hub superficie speculare 2S visualizzato in un altro dispositivo
 
 È possibile eseguire il video di output in un altro schermo usando MiniDP, come indicato nella tabella seguente.
 
-### Impostazioni di Surface Hub 2S video-out
+###  <a name="surface-hub-2s-video-out-settings"></a>Impostazioni di Surface Hub 2S video-out
 
 | **Tipo di segnale** | **Risoluzione** | **Frequenza dei fotogrammi** | **MiniDP** |
 | --------------- | -------------- | -------------- | ---------- |
@@ -100,7 +100,7 @@ Surface Hub 2S include una porta di uscita video MiniDP per proiettare il conten
 > [!NOTE]
 > Se il secondo monitor usa un rapporto di proporzioni 16:9 (il rapporto predominante per la maggior parte dei monitor TV), le barre nere potrebbero essere visualizzate sul lato sinistro e destro dello schermo con mirroring. In questo caso, potresti voler informare gli utenti che non è necessario modificare la seconda visualizzazione.
 
-## Selezione di cavi
+##  <a name="selecting-cables"></a>Selezione di cavi
 
 Tenere presente i suggerimenti seguenti:
 
@@ -111,11 +111,11 @@ Tenere presente i suggerimenti seguenti:
 > [!NOTE]
 > La maggior parte delle origini DisplayPort passa automaticamente alla segnalazione HDMI se viene rilevato HDMI.
 
-## Connettersi in modalità wireless a Surface Hub 2S
+##  <a name="wirelessly-connect-to-surface-hub-2s"></a>Connettersi in modalità wireless a Surface Hub 2S
 
 Windows 10 supporta nativamente Miracast, che consente di connettersi senza fili a Surface Hub 2S.<br><br>
 
-### Per connettersi tramite Miracast:
+###  <a name="to-connect-using-miracast"></a>Per connettersi tramite Miracast:
 
 1. Nel dispositivo Windows 10 immettere il **tasto logo Windows**  +  **K**. 
 2. Nella finestra Connetti cercare il nome del mozzo della superficie 2S nell'elenco dei dispositivi vicini. Puoi trovare il nome dell'hub di Surface 2S nell'angolo in basso a sinistra dello schermo.
@@ -124,9 +124,9 @@ Windows 10 supporta nativamente Miracast, che consente di connettersi senza fili
 > [!NOTE]
 >Se il nome del dispositivo Surface Hub 2S non viene visualizzato come previsto, è possibile che la sessione precedente sia stata chiusa prematuramente. In questo caso, accedere direttamente a Surface Hub 2S per terminare la sessione precedente e quindi connettersi dal dispositivo esterno.
 
-## Connettere le periferiche a Surface Hub 2S
+##  <a name="connecting-peripherals-to-surface-hub-2s"></a>Connettere le periferiche a Surface Hub 2S
 
-### Accessori Bluetooth
+###  <a name="bluetooth-accessories"></a>Accessori Bluetooth
 
 È possibile connettere gli accessori seguenti a Surface Hub-2S tramite Bluetooth:
 

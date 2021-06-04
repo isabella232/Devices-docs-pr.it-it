@@ -21,7 +21,7 @@ ms.locfileid: "10833344"
 
 Questa pagina contiene una formazione completa per Surface Hub 2S, disponibile su richiesta.
 
-## Capitolo 1-Panoramica della formazione
+##  <a name="chapter-1---training-overview"></a>Capitolo 1-Panoramica della formazione
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46Jud] 
 
@@ -33,7 +33,7 @@ Questa pagina contiene una formazione completa per Surface Hub 2S, disponibile s
 - Panoramica dei servizi di formazione
 - Procedure consigliate per la formazione
 
-## Capitolo 2-Guida introduttiva di Surface Hub
+##  <a name="chapter-2---getting-started-with-surface-hub"></a>Capitolo 2-Guida introduttiva di Surface Hub
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46Ejt] 
 
@@ -44,7 +44,7 @@ Questa pagina contiene una formazione completa per Surface Hub 2S, disponibile s
 - Guida introduttiva a Surface Hub
 - Raccolta delle aspettative
 
-## Capitolo 3-spostamento nell'hub della superficie
+##  <a name="chapter-3---navigating-surface-hub"></a>Capitolo 3-spostamento nell'hub della superficie
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46OFW] 
 
@@ -56,7 +56,7 @@ Questa pagina contiene una formazione completa per Surface Hub 2S, disponibile s
 - Teams/Skype
 - Termina sessione
 
-## Capitolo 4-lavagna e collaborazione
+##  <a name="chapter-4---whiteboarding-and-collaboration"></a>Capitolo 4-lavagna e collaborazione
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46M4v] 
 
@@ -68,7 +68,7 @@ Questa pagina contiene una formazione completa per Surface Hub 2S, disponibile s
 - Condivisione della lavagna
 - Esportare la lavagna 
  
-## Capitolo 5-esplorare le app di Surface Hub
+##  <a name="chapter-5---exploring-surface-hub-apps"></a>Capitolo 5-esplorare le app di Surface Hub
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46Ejz] 
 
@@ -78,7 +78,7 @@ Questa pagina contiene una formazione completa per Surface Hub 2S, disponibile s
 - Microsoft Excel
 - Microsoft Edge
 
-## Capitolo 6-app avanzate e Office 365
+##  <a name="chapter-6---advanced-apps-and-office-365"></a>Capitolo 6-app avanzate e Office 365
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46EjA] 
 
@@ -90,7 +90,7 @@ Questa pagina contiene una formazione completa per Surface Hub 2S, disponibile s
 - OneDrive
 - Creare documenti in modalità condivisa
 
-## Capitolo 7-dispositivi di connessione
+##  <a name="chapter-7---connecting-devices"></a>Capitolo 7-dispositivi di connessione
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46M4w] 
 
@@ -101,7 +101,7 @@ Questa pagina contiene una formazione completa per Surface Hub 2S, disponibile s
 - Flussi di lavoro delle app line-of-business
 - Risoluzione dei problemi di Miracast e connessione cablata    
  
-## Capitolo 8-riunioni Skype for business
+##  <a name="chapter-8---skype-for-business-meetings"></a>Capitolo 8-riunioni Skype for business
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46M4x] 
 
@@ -112,7 +112,7 @@ Questa pagina contiene una formazione completa per Surface Hub 2S, disponibile s
 - Gestione di una riunione Skype for business
 - Presentare il contenuto
     
-## Capitolo 9-riunioni di Microsoft Teams
+##  <a name="chapter-9---microsoft-teams-meetings"></a>Capitolo 9-riunioni di Microsoft Teams
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46OFZ] 
 
@@ -125,7 +125,7 @@ Questa pagina contiene una formazione completa per Surface Hub 2S, disponibile s
 - Presentare il contenuto
 - Conclusione
 
-## Capitolo 10-risoluzione dei problemi di base
+##  <a name="chapter-10---basic-troubleshooting"></a>Capitolo 10-risoluzione dei problemi di base
 
 > [!video https://www.microsoft.com/videoplayer/embed/RE46z65] 
 

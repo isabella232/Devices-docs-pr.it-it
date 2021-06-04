@@ -34,7 +34,7 @@ Surface Duo include la protezione integrata in tutti i livelli con hardware, fir
 - **Microsoft Defender ATP.** Il software antivirus e di protezione antimalware per la finestra 10 di livello aziendale è ora disponibile per i dispositivi Android gestiti da Intune. Per altre informazioni, vedere [Microsoft Defender ATP per Android](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-android). 
 
 
-## Sicurezza per la gestione di dispositivi mobili
+##  <a name="mobile-device-management-security"></a>Sicurezza per la gestione di dispositivi mobili
 
 Surface Duo è protetto in un ambiente aziendale tramite una soluzione EMM (Enterprise Mobility Management) che offre un set coerente di strumenti di protezione, tecnologie e procedure consigliate per soddisfare i requisiti di organizzazione e conformità. Una vasta gamma di API di gestione offre agli uffici IT gli strumenti per evitare perdite di dati e applicare la conformità in diversi scenari. Le opzioni di supporto multiprofilo e di gestione dei dispositivi consentono la separazione dei dati personali e del lavoro, contribuendo a proteggere i dati aziendali.
 
@@ -43,13 +43,13 @@ La sicurezza di MDM si basa su un set di tecnologie di configurazione in espansi
 Ad esempio, potresti voler rafforzare l'autenticazione dei dispositivi richiedendo agli utenti di immettere un PIN alfanumerico a 6 cifre insieme all'autenticazione a due fattori.  Potresti voler limitare i dispositivi che gli utenti possono eseguire la registrazione per assicurarti di rimanere conforme ai limiti di licenza o evitare di concedere l'accesso ai telefoni "jailbroken" o ad altri tipi di dispositivo non supportati.
 Intune e altri EMMs consentono alle organizzazioni di gestire i dispositivi in base alle proprie esigenze.
 
-## Criteri di protezione delle app
+##  <a name="app-protection-policies"></a>Criteri di protezione delle app
 
 I criteri di protezione delle app sono regole che assicurano che i dati di un'organizzazione rimangano sicuri o contenuti in un'app gestita. Un criterio può essere una regola imposta quando l'utente tenta di accedere o di trasferire dati "aziendali" oppure un set di azioni che sono vietate o monitorate quando l'utente si trova all'interno dell'app. Un'app gestita è un'app a cui sono applicati i criteri di protezione delle app e può essere gestita da Intune.
 
 I criteri di protezione delle app consentono di gestire e proteggere i dati dell'organizzazione all'interno di un'applicazione. Molte app per la produttività, come le app di Microsoft Office, possono essere gestite da Intune MAM. Vedere l'elenco ufficiale delle [app protette di Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-supported-intune-apps) disponibili per l'uso pubblico.
 
-## Considerazioni sulla sicurezza per la gestione di Surface Duo
+##  <a name="security-considerations-for-managing-surface-duo"></a>Considerazioni sulla sicurezza per la gestione di Surface Duo
 
 Il numero crescente di impostazioni dei criteri disponibili nelle soluzioni per la gestione di dispositivi mobili consente alle organizzazioni di regolare i livelli di protezione in base alle specifiche esigenze. Per aiutare le organizzazioni a dare priorità alle impostazioni di sicurezza per Surface Duo (o qualsiasi altro dispositivo Android), Intune ha introdotto il [Framework di configurazione della sicurezza di Android Enterprise](https://docs.microsoft.com/mem/intune/enrollment/android-configuration-framework) organizzato in diversi scenari di configurazione, fornendo indicazioni per il profilo del lavoro e gli scenari completamente gestiti.
  

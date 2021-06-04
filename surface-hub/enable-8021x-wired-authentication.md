@@ -25,7 +25,7 @@ L'imposizione e l'abilitazione dell'autenticazione cablata 802.1x su dispositivi
 
 La configurazione primaria da impostare è il criterio **LanProfile**. A seconda del metodo di autenticazione selezionato, altri criteri potrebbero essere necessari, il criterio **EapUserData** o i criteri MDM per l'aggiunta di certificati utente o del computer (ad esempio [ClientCertificateInstall](https://docs.microsoft.com/windows/client-management/mdm/clientcertificateinstall-csp) per certificati utente/dispositivo o [RootCATrustedCertificates](https://docs.microsoft.com/windows/client-management/mdm/rootcacertificates-csp) per certificati dispositivo). 
 
-## Elemento dei criteri LanProfile
+##  <a name="lanprofile-policy-element"></a>Elemento dei criteri LanProfile
 
 Per configurare Surface Hub per l'utilizzo di uno dei metodi di autenticazione 802.1x supportati, utilizza il seguente OMA-URI. 
 
@@ -49,7 +49,7 @@ Profile File Name: .\Ethernet.xml
 1 profile(s) were exported successfully.
 ```
 
-## Elemento dei criteri EapUserData
+##  <a name="eapuserdata-policy-element"></a>Elemento dei criteri EapUserData
 
 Se il metodo di autenticazione selezionato richiede un nome utente e una password anziché un certificato, puoi utilizzare l'elemento **EapUserData** per specificare le credenziali per il dispositivo da utilizzare per eseguire l'autenticazione in rete. 
 
@@ -61,7 +61,7 @@ Questo nodo OMA-URI accetta una stringa di testo XML come parametro. L'XML forni
 
 
 
-## Aggiunta di certificati
+##  <a name="adding-certificates"></a>Aggiunta di certificati
 
 Se il metodo di autenticazione selezionato è basato su certificati, sarà necessario [creare un pacchetto di provisioning](provisioning-packages-for-surface-hub.md), [utilizzare MDM](https://docs.microsoft.com/windows/client-management/mdm/clientcertificateinstall-csp)o importare un certificato dalle impostazioni (aggiornamento**delle impostazioni**  >  **e**  >  **certificati**di sicurezza) per distribuire tali certificati nel dispositivo Surface Hub nell'archivio certificati appropriato. Quando si aggiungono i certificati, ogni PFX deve contenere un solo certificato (un PFX non può includere più certificati).
 

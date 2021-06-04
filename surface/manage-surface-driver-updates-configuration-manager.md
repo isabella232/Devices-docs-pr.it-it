@@ -23,11 +23,11 @@ ms.locfileid: "10897074"
 ---
 # Gestire gli aggiornamenti dei driver di Surface in Configuration Manager
 
-## Riepilogo
+##  <a name="summary"></a>Riepilogo
 
 A partire da [Microsoft System Center Configuration Manager versione 1710](https://docs.microsoft.com/sccm/core/plan-design/changes/whats-new-in-version-1710#software-updates), è possibile sincronizzare e distribuire il firmware Microsoft Surface e gli aggiornamenti dei driver direttamente tramite il client Configuration Manager. Il processo è simile alla distribuzione di aggiornamenti regolari. Tuttavia, sono necessarie altre configurazioni per ottenere gli aggiornamenti di Surface driver nel catalogo.
 
-## Prerequisiti
+##  <a name="prerequisites"></a>Prerequisiti
 
 Per gestire gli aggiornamenti dei driver di Surface, è necessario soddisfare i prerequisiti seguenti:
 
@@ -156,7 +156,7 @@ Se non si vuole attendere la sincronizzazione successiva, eseguire la procedura 
 
 Per altre informazioni sulla distribuzione, vedere [System Center 2012 Configuration Manager-part7: aggiornamenti software (distribuzione)](https://blogs.technet.microsoft.com/elie/2012/05/25/system-center-2012-configuration-managerpart7-software-updates-deploy/).
 
-## Domande frequenti
+##  <a name="faq"></a>Domande frequenti
 
 **Dopo aver seguito i passaggi descritti in questo articolo, i driver di Surface non sono ancora sincronizzati. Perché?**
 
@@ -176,7 +176,7 @@ No. Anche se l'aggiornamento viene importato in WSUS, l'aggiornamento non verrà
 
 Per informazioni su come distribuire gli aggiornamenti del driver di superficie e del firmware tramite canali alternativi, vedere [gestire gli aggiornamenti del driver di superficie e del firmware](manage-surface-driver-and-firmware-updates.md). Se si vuole scaricare il file con estensione msi o exe e quindi distribuire i canali tradizionali di distribuzione del software, vedere [mantenere aggiornato il firmware della superficie con Configuration Manager](https://docs.microsoft.com/archive/blogs/thejoncallahan/keeping-surface-firmware-updated-with-configuration-manager).
 
-## Altre informazioni
+##  <a name="learn-more"></a>Altre informazioni
 
 Per altre informazioni sul driver di superficie e gli aggiornamenti del firmware, vedere gli articoli seguenti:
 

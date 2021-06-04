@@ -21,7 +21,7 @@ ms.locfileid: "11271360"
 ---
 # Distribuzione, gestione e manutenzione di Surface Pro X
 
-## Introduzione
+##  <a name="introduction"></a>Introduzione
 
 Ideato per gestire i requisiti commerciali ad alte prestazioni, Surface Pro X è un precursore, incorpora il processore più potente in questa classe, il chipset Microsoft SQ1 e il chipset Microsoft SQ1 ARM.
 
@@ -29,7 +29,7 @@ Alimentato da una CPU a 3 GHz e da una GPU teraflop 2.1, Surface Pro X offre un'
 
 Surface Pro X è progettato quasi esclusivamente per un ambiente moderno basato su cloud e funziona al meglio con Microsoft 365, Intune e Windows Autopilot. In questo articolo vengono illustrate le considerazioni più importanti per la distribuzione, la gestione e la manutenzione di Surface Pro X.
 
-## Distribuzione di Surface Pro X
+##  <a name="deploying-surface-pro-x"></a>Distribuzione di Surface Pro X
 
 Per un'esperienza ottimale, distribuisci Surface Pro X tramite Windows Autopilot con l'assistenza di un Microsoft Cloud Solution Provider o tramite self-provisioning con profili di distribuzione di Windows Autopilot e relative funzionalità. Per ulteriori informazioni, fai riferimento a:
 
@@ -40,33 +40,33 @@ La distribuzione di Autopilot presenta diversi vantaggi: consente di usare il si
 
 Le organizzazioni che usano già soluzioni moderne per la gestione, la sicurezza e la produttività sono ben posizionate per sfruttare le funzionalità esclusive relative alle prestazioni di Surface Pro X. Anche i clienti che usano le app line-of-business moderne, le app del Microsoft store (UWP) o le soluzioni desktop remoto possono trarne vantaggio.
 
-## Considerazioni sulla distribuzione basate su immagini
+##  <a name="image-based-deployment-considerations"></a>Considerazioni sulla distribuzione basate su immagini
 
 MDT (Microsoft Deployment Toolkit) e Microsoft Endpoint Configuration Manager (in precedenza System Center Configuration Manager) attualmente non supportano Surface Pro X per la distribuzione del sistema operativo. I clienti che fanno affidamento sulla distribuzione basata su immagini dovrebbero considerare Surface Pro 7+ mentre continuano a valutare il momento giusto per passare a soluzioni di distribuzione moderne. 
 
-## Gestione dei dispositivi Surface Pro X
+##  <a name="managing-surface-pro-x-devices"></a>Gestione dei dispositivi Surface Pro X
 
-### Intune
+###  <a name="intune"></a>Intune
 
 Un componente di Microsoft Enterprise Mobility + Security, Intune si integra con Azure Active Directory per il controllo delle identità e degli accessi e fornisce la gestione granulare dei dispositivi Surface Pro X registrati. I criteri di gestione di dispositivi mobili (MDM) di Intune presentano numerosi vantaggi rispetto agli strumenti locali meno recenti, ad esempio i criteri di gruppo di Windows. Sono inclusi i tempi di accesso al dispositivo più veloci e un catalogo semplificato di criteri che consentono la gestione completa dei dispositivi dal cloud. Ad esempio, è possibile gestire LTE utilizzando i profili eSIM per configurare i piani dati e distribuire i codici di attivazione a più dispositivi.<br> 
 
 Per ulteriori informazioni sull'utilizzo di Intune, fare riferimento alla [documentazione di Intune](https://docs.microsoft.com/intune/).
 
-### Gestione condivisa
+###  <a name="co-management"></a>Gestione condivisa
 
 Una volta eseguita la distribuzione in Autopilot, puoi aggiungere dispositivi Surface Pro X a Azure AD o Active Directory (Aggiunta ad Azure AD ibrido) in cui potrai gestire i dispositivi con Intune o cogestirli con Endpoint Configuration Manager, che installerà il client ConfigMgr x86 a 32 bit.
 
-### Soluzioni MDM di terze parti
+###  <a name="third-party-mdm-solutions"></a>Soluzioni MDM di terze parti
 
 Potresti utilizzare strumenti MDM di terze parti per gestire i dispositivi Surface Pro X. Per i dettagli, contattare il provider MDM.
 
-### Software antivirus
+###  <a name="antivirus-software"></a>Software antivirus
 
 Windows Defender ti aiuta a proteggere Windows 10 su pc basati su ARM per la durata supportata del dispositivo Windows 10. 
 
 Non è possibile installare alcuni software antivirus di terze parti su un qualsiasi PC Windows 10 su un processore basato su ARM. La collaborazione con provider di software antivirus di terze parti continua per la disponibilità di app antivirus nei PC basati su ARM. Contatta il provider del software antivirus per capire quando saranno disponibili le app.
 
-## Manutenzione di Surface Pro X
+##  <a name="servicing-surface-pro-x"></a>Manutenzione di Surface Pro X
 
 Surface Pro X viene fornito con Windows 10 versione 2004 ed è compatibile con Windows 10, versione 1903 e versioni successive. Come dispositivo basato su ARM, dispone di requisiti specifici per la manutenzione dei driver e del firmware più recenti. 
 
@@ -75,17 +75,17 @@ Surface Pro X è stato progettato per usare Windows Update per semplificare il p
 1. Vai a **Start** > **Impostazioni > Aggiornamento e sicurezza > Windows Update** > **Opzioni avanzate.**
 2. In **Scegli come installare gli aggiornamenti,** seleziona **Automatico (scelta consigliata)**.
 
-### Consigli per i clienti commerciali
+###  <a name="recommendations-for-commercial-customers"></a>Consigli per i clienti commerciali
 
 - Usa Windows Update o Windows Update per le aziende per mantenere i driver e il firmware più recenti. Per altre informazioni, vedi [Distribuire gli aggiornamenti mediante Windows Update per le aziende](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb).
 - Per altre informazioni sulla distribuzione e la gestione degli aggiornamenti nei dispositivi Surface, vedere [Gestire e distribuire gli aggiornamenti di driver e firmware Surface](manage-surface-driver-and-firmware-updates.md).
 - Nota che Windows Server Update Services (WSUS) non supporta la possibilità di distribuire driver e firmware a Surface Pro X.
 
-## Esecuzione di app su Surface Pro X
+##  <a name="running-apps-on-surface-pro-x"></a>Esecuzione di app su Surface Pro X
 
 La maggior parte delle app viene eseguita su PC Windows 10 basati su ARM con esclusioni limitate.
 
-### App supportate
+###  <a name="supported-apps"></a>App supportate
 
 - La maggior parte delle app Win32 x86 viene eseguita su Surface Pro X.
 - Le app ARM64 e Microsoft Store UWP native offrono un'esperienza utente eccellente che utilizza la velocità nativa completa del processore basato su ARM, ottimizzando la durata della batteria.
@@ -94,7 +94,7 @@ La maggior parte delle app viene eseguita su PC Windows 10 basati su ARM con esc
 > [!NOTE]
 > Con l'emulazione a 64 bit presto disponibile in anteprima tramite il programma Windows Insider, è possibile eseguire le app a 64 bit (x64) su Surface Pro X.
 
-### App FastTrack Assure 
+###  <a name="fasttrack-app-assure"></a>App FastTrack Assure 
 
 Il programma app Assure è disponibile per i clienti commerciali per le applicazioni LOB, ISV e Microsoft di terze parti destinate a Windows 10 su ARM. Se i clienti commerciali riscontrano un problema di compatibilità con le app di Windows 10 su ARM, Microsoft fornirà risorse agli sviluppatori per la risoluzione dei problemi e l'assistenza con le correzioni alle app, senza costi aggiuntivi. Per saperne di più, visita [aka.ms/AppAssure](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assure).
 
@@ -103,29 +103,29 @@ Per altre informazioni sull'esecuzione delle app su Surface Pro X, fai riferimen
 - [Domande frequenti sul supporto per PC Windows 10 basati su ARM](https://support.microsoft.com/help/4521606)
 - [Documentazione di Windows 10 su ARM](https://docs.microsoft.com/windows/arm)
 
-## Desktop virtuali (VDI)
+##  <a name="virtual-desktops-(vdi)"></a>Desktop virtuali (VDI)
 
 Desktop virtuale Windows consente l'accesso a desktop, applicazioni e dati di Windows su qualsiasi dispositivo o piattaforma di elaborazione, da qualsiasi posizione. Per ulteriori informazioni, fai riferimento al [sito di Desktop virtuale Windows](https://aka.ms/wvd). 
 
-## Esplorazione con Surface Pro X
+##  <a name="browsing-with-surface-pro-x"></a>Esplorazione con Surface Pro X
 
 I browser più diffusi vengono eseguiti su Surface Pro X:
 
 - Edge, Firefox, Chrome e Internet Explorer inclusi vengono tutti eseguiti su Surface Pro X.
 - Firefox e Microsoft Edge basato su Chromium vengono eseguiti in modalità nativa e quindi hanno prestazioni avanzate su un PC Windows 10 in esecuzione su un processore basato su ARM.
 
-## Installazione e utilizzo di Microsoft Office
+##  <a name="installing-and-using-microsoft-office"></a>Installazione e utilizzo di Microsoft Office
 
 - Usa Office 365 per un'esperienza ottimale su un PC Windows 10 su un processore basato su ARM.
 - L'opzione "A portata di clic" di Office 365 installa Outlook, Word, Excel e PowerPoint, ottimizzati per essere eseguiti su un PC Windows 10 su un processore basato su ARM.
 - Microsoft Teams viene eseguito in modo ottimale su Surface Pro X.
 - Per le "versioni perpetue" di Office, ad esempio Office 2019, installare la versione a 32 bit.
 
-## VPN
+##  <a name="vpn"></a>VPN
 
 Per confermare se una VPN di terze parti specifica supporta un PC Windows 10 su un processore basato su ARM, contatta il provider VPN.
 
-## Riepilogo delle funzionalità
+##  <a name="feature-summary"></a>Riepilogo delle funzionalità
 
 Nelle seguenti tabelle viene visualizzata la disponibilità delle funzionalità principali selezionate su Surface Pro X con Windows 10 su ARM.
 
@@ -176,20 +176,20 @@ Nelle seguenti tabelle viene visualizzata la disponibilità delle funzionalità 
 
 
 
-## Domande frequenti
+##  <a name="faq"></a>Domande frequenti
 
-### Posso distribuire Surface Pro X con MDT o Endpoint Configuration Manager?
+###  <a name="can-i-deploy-surface-pro-x-with-mdt-or-endpoint-configuration-manager"></a>Posso distribuire Surface Pro X con MDT o Endpoint Configuration Manager?
 
 Microsoft Deployment Toolkit (MDT) e Microsoft Endpoint Configuration Manager attualmente non supportano Surface Pro X per la distribuzione del sistema operativo. I clienti che fanno affidamento sulla distribuzione basata su immagini dovrebbero considerare Surface Pro 7+ mentre continuano a valutare il momento giusto per passare al cloud.
 
-### Come posso distribuire Surface Pro X?
+###  <a name="how-can-i-deploy-surface-pro-x"></a>Come posso distribuire Surface Pro X?
 
 Distribuisci Surface Pro X tramite Windows Autopilot.
 
-### È BMR disponibile?
+###  <a name="is-a-bmr-available"></a>È BMR disponibile?
 
 Sì, fare riferimento a [Scaricare un'immagine di ripristino per ](https://support.microsoft.com/surfacerecoveryimage)Surface.
 
-### Per gestire Surface Pro X è necessario Intune?
+###  <a name="is-intune-required-to-manage-surface-pro-x"></a>Per gestire Surface Pro X è necessario Intune?
 
 Intune è consigliato ma non obbligatorio. Una volta eseguita la distribuzione in Autopilot, puoi aggiungere dispositivi Surface Pro X a Azure AD o Active Directory (Aggiunta ad Azure AD ibrido) in cui potrai gestire i dispositivi con Intune o cogestirli con Endpoint Configuration Manager, che installerà il client ConfigMgr x86 a 32 bit.

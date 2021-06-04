@@ -8,13 +8,13 @@ ms.locfileid: "10832409"
 ---
 <!-- BEGIN MICROSOFT SECURITY.MD V0.0.5 BLOCK -->
 
-## Sicurezza
+##  <a name="security"></a>Sicurezza
 
 Microsoft prende sul serio la sicurezza dei nostri prodotti e servizi software, che include tutti i repository del codice sorgente gestiti tramite le nostre organizzazioni GitHub, che includono [Microsoft](https://github.com/Microsoft), [Azure](https://github.com/Azure), [DotNet](https://github.com/dotnet), [ASPNET](https://github.com/aspnet), [Novell](https://github.com/xamarin)e [le nostre organizzazioni GitHub](https://opensource.microsoft.com/).
 
 Se si ritiene che sia stata trovata una vulnerabilità di sicurezza in qualsiasi repository di proprietà di Microsoft che soddisfi la [definizione di vulnerabilità di sicurezza di Microsoft](https://docs.microsoft.com/en-us/previous-versions/tn-archive/cc751383(v=technet.10)), segnalarla come descritto di seguito.
 
-## Segnalazione dei problemi di sicurezza
+##  <a name="reporting-security-issues"></a>Segnalazione dei problemi di sicurezza
 
 **Non segnalare le vulnerabilità della sicurezza attraverso i problemi pubblici di GitHub.**
 
@@ -38,11 +38,11 @@ Queste informazioni ci aiuteranno a valutare il rapporto più rapidamente.
 
 Se stai segnalando un bug Bounty, i report più completi possono contribuire a un premio di Bounty più elevato. Per altre informazioni sui programmi attivi, visitare la pagina del [programma Microsoft bug Bounty](https://microsoft.com/msrc/bounty) .
 
-## Lingue preferite
+##  <a name="preferred-languages"></a>Lingue preferite
 
 Preferiamo che tutte le comunicazioni siano in inglese.
 
-## Criterio
+##  <a name="policy"></a>Criterio
 
 Microsoft segue il principio della [divulgazione della vulnerabilità coordinata](https://www.microsoft.com/en-us/msrc/cvd).
 

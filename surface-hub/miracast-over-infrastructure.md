@@ -31,7 +31,7 @@ Miracast su infrastruttura offre numerosi vantaggi:
 - Si avvale di una connessione esistente che riduce il tempo per la connessione e fornisce un flusso molto stabile.
 
 
-## Come funziona
+##  <a name="how-it-works"></a>Come funziona
 
 Gli utenti tenteranno di connettersi a un ricevitore Miracast tramite la loro scheda Wi-Fi, come in precedenza. Quando l'elenco di ricevitori Miracast è popolato, Windows 10 indicherà che il destinatario è in grado di supportare una connessione tramite l'infrastruttura. Quando l'utente seleziona un ricevitore Miracast, Windows 10 tenterà di risolvere il nome host del dispositivo tramite DNS standard, nonché tramite DNS multicast (mDNS). Se il nome non è risolvibile tramite uno dei metodi DNS, Windows 10 tornerà a stabilire la sessione Miracast con la connessione Wi-Fi Direct standard.
 
@@ -41,7 +41,7 @@ Gli utenti tenteranno di connettersi a un ricevitore Miracast tramite la loro sc
 
 
 
-## Abilitazione di Miracast su infrastruttura 
+##  <a name="enabling-miracast-over-infrastructure-"></a>Abilitazione di Miracast su infrastruttura 
 
 Se hai un dispositivo Surface Hub o un altro dispositivo Windows 10 che è stato aggiornato a Windows 10, versione 1703, automaticamente disponi di questa nuova funzionalità. Per sfruttare i vantaggi nell'ambiente in uso, devi assicurarti che quanto segue è appropriato all'interno della tua distribuzione:
 
@@ -59,6 +59,6 @@ Se hai un dispositivo Surface Hub o un altro dispositivo Windows 10 che è stato
 
 L'impostazione **InBoxApps/WirelessProjection/PinRequired** nel [provider di servizi di configurazione SurfaceHub (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/surfacehub-csp) non è necessario per Miracast su infrastruttura. Questo avviene perché Miracast su infrastruttura funziona solo quando entrambi i dispositivi sono connessi alla stessa rete aziendale. In questo modo viene rimossa la restrizione di sicurezza che in precedenza mancava da Miracast. Ti consigliamo di continuare con questa impostazione, se la utilizzavi già in precedenza, poiché Miracast eseguirà il fallback a un Miracast regolare se la connessione all'infrastruttura non funzionerà. 
 
-## Domande frequenti
+##  <a name="faq"></a>Domande frequenti
 **Perché è ancora necessario Wi-Fi per usare Miracast sull'infrastruttura?**<br>
 Le richieste di individuazione per identificare i destinatari di Miracast possono avvenire solo tramite la scheda Wi-Fi. Una volta identificati i destinatari, Windows 10 può quindi tentare la connessione alla rete.

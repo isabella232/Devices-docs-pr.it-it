@@ -44,14 +44,14 @@ Questo articolo contiene un riepilogo degli scenari in cui una distribuzione pot
 
  
 
-## Scenario 1: rete wireless nella Configurazione guidata con MDT 2013
+##  <a name="scenario-1:-wireless-networking-in-oobe-with-mdt-2013"></a>Scenario 1: rete wireless nella Configurazione guidata con MDT 2013
 
 
 Quando una scheda di rete wireless è presente durante la Configurazione guidata, viene visualizzata la pagina **Connessione a rete wireless**, che chiede a un utente di connettersi a una rete wireless. Questa pagina non viene automaticamente nascosta dalle tecnologie di distribuzione, incluso MDT 2013, e di conseguenza verrà visualizzata anche quando una distribuzione è configurata per l'automazione completa.
 
 Per evitare che una distribuzione automatica venga arrestata da questa pagina, la pagina deve essere nascosta configurando un'altra impostazione nel file di risposte, ovvero **HideWirelessSetupInOOBE**. Puoi trovare informazioni aggiuntive sull'impostazione **HideWirelessSetupInOOBE** in [Guida di riferimento all'installazione automatica di Windows](https://technet.microsoft.com/library/ff716213.aspx).
 
-## Scenario 2: associazione della Penna per Surface nella Configurazione guidata
+##  <a name="scenario-2:-surface-pen-pairing-in-oobe"></a>Scenario 2: associazione della Penna per Surface nella Configurazione guidata
 
 
 Quando estrai un dispositivo Surface Pro 3, Surface Pro 4, Surface Book o Surface Studio dalla confezione per la prima volta e lo avvii, il completamento dell'installazione dell'immagine produttore computer include un prompt che ti chiede di associare al dispositivo la Penna per Surface inclusa. Questo prompt viene fornito solo dall'immagine produttore computer inclusa con il dispositivo e non è compreso in altre immagini usate per la distribuzione, come i supporti di installazione di Windows Enterprise scaricati dal Centro servizi per contratti multilicenza. Poiché l'associazione della Penna per Surface Bluetooth al di fuori di questa esperienza richiede l'uso del Pannello di controllo o della funzionalità Impostazioni PC e l'associazione manuale di un dispositivo Bluetooth, potresti voler fare in modo che gli utenti o un tecnico usino questo prompt per eseguire l'operazione di associazione.

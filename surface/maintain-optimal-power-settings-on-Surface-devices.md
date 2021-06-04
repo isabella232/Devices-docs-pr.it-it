@@ -23,7 +23,7 @@ ms.locfileid: "11271400"
 
 I dispositivi Surface sono progettati per sfruttare i più recenti progressi nel consumo di energia dei dispositivi mobili per offrire un'esperienza semplificata ottimizzata tra i carichi di lavoro. A seconda di quello che si sta facendo, la superficie si sintonizza dinamicamente su come i singoli componenti hardware vengono riattivati momentaneamente per gestire le attività in background, ad esempio un messaggio di posta elettronica o un traffico di rete, prima di tornare a uno stato di inattività ridotta (S0ix).
 
-## Riepilogo dei suggerimenti per gli amministratori IT
+##  <a name="summary"></a>Riepilogo dei suggerimenti per gli amministratori IT
 
 Per garantire che i dispositivi Surface in tutta l'organizzazione traggano vantaggio dalle caratteristiche di Power Optimization:
 
@@ -71,7 +71,7 @@ Surface integra le caratteristiche seguenti progettate per aiutare gli utenti a 
 
 Surface è progettato per un'esperienza di gestione dell'alimentazione semplificata che elimina la necessità di creare piani di alimentazione personalizzati o configurare manualmente le impostazioni di Power. Microsoft ottimizza l'esperienza utente distribuendo un singolo Power Plan (bilanciato) che sostituisce i piani di alimentazione multipli dalle build standard di Windows.
 
-### Interfaccia utente di Power Settings semplificata
+###  <a name="user-interface"></a>Interfaccia utente di Power Settings semplificata
 
 Surface offre un'interfaccia utente semplificata in conformità con le raccomandazioni per l'impostazione dell'alimentazione ottimale. In generale, è consigliabile regolare solo le impostazioni visibili nell'interfaccia utente predefinita ed evitare di configurare impostazioni avanzate di Power Settings o criteri di gruppo. L'uso della schermata predefinita e dei timeout di sospensione per evitare i massimi livelli di luminosità è il modo più efficace per consentire agli utenti di mantenere la durata della batteria estesa.
 
@@ -128,7 +128,7 @@ Per altre informazioni, vedere:
 | Controllare l'utilizzo dell'app | Le tue app | Chiudere le app.|
 | Controllare il cavo di alimentazione per eventuali danni.| Il cavo di alimentazione | Sostituire il cavo di alimentazione se usurato o danneggiato.|
 
-## Scopri di più 
+##  <a name="learn-more"></a>Scopri di più 
 
 - [Standby moderno](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby-wake-sources)
 

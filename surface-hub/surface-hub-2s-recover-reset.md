@@ -24,7 +24,7 @@ Se si verificano problemi con Surface Hub 2S, puoi ripristinare le impostazioni 
 
 Per iniziare, accedi a Surface Hub 2S con **** le credenziali di amministratore, apri l'app Impostazioni, seleziona Aggiornamento **& sicurezza**e quindi **seleziona Ripristino.**
 
-## Reimpostare il dispositivo
+##  <a name="reset-the-device"></a>Reimpostare il dispositivo
 
    > [!IMPORTANT]
    > Assicurati di avere a disposizione la chiave BitLocker prima di reimpostare il dispositivo, come ti verrà richiesto in seguito. Per altre informazioni, vedi [Salvare la chiave BitLocker.](save-bitlocker-key-surface-hub.md)
@@ -44,11 +44,11 @@ Per iniziare, accedi a Surface Hub 2S con **** le credenziali di amministratore,
    > ![*Ripristino e ripristino per Surface Hub 2S*](images/sh2-reset.png)
    <br/>*Figura 1. Ripristino e ripristino per Surface Hub 2S* 
 
-## Ripristinare Surface Hub 2S usando un'unità di ripristino USB
+##  <a name="recover-surface-hub-2s-by-using-a-usb-recovery-drive"></a>Ripristinare Surface Hub 2S usando un'unità di ripristino USB
 
 Novità di Surface Hub 2S, ora puoi reinstallare il dispositivo usando un'immagine di ripristino.
 
-### Ripristino da un'unità USB
+###  <a name="recovery-from-a-usb-drive"></a>Ripristino da un'unità USB
 
 Con Surface Hub 2S puoi reinstallare il dispositivo usando un'immagine di ripristino. In questo modo, puoi reinstallare il dispositivo nelle impostazioni di fabbrica se hai perso la chiave BitLocker o se non hai più le credenziali di amministratore per l'app Impostazioni.
 
@@ -90,6 +90,6 @@ Con Surface Hub 2S puoi reinstallare il dispositivo usando un'immagine di ripris
 
 Quando viene visualizzata la prima schermata di configurazione, rimuovi l'unità USB.
 
-## Supporto tecnico
+##  <a name="contact-support"></a>Supporto tecnico
 
 Se hai domande o hai bisogno di assistenza, puoi [creare una richiesta di supporto.](https://support.microsoft.com/supportforbusiness/productselection)

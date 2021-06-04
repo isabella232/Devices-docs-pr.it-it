@@ -102,7 +102,7 @@ SDT offre il supporto completo per la diagnosi del log in tutte le applicazioni,
 
 In base ai log, SDT genera un report per i problemi basati su software e firmware che è possibile salvare in una posizione preferita.
 
-## Argomenti correlati
+##  <a name="related-topics"></a>Argomenti correlati
 
 - [Eseguire Toolkit di diagnostica per Surface per le aziende usando i comandi](surface-diagnostic-toolkit-command-line.md)
 

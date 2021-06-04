@@ -24,12 +24,12 @@ ms.locfileid: "10832583"
 
 Microsoft Surface Hub offre due opzioni per la connettività alla rete aziendale e a Internet: connessione wireless e connessione cablata. Sebbene entrambe consentano l'accesso alla rete, ti consigliamo di usare una connessione cablata.
 
-## Modifica, aggiunta o analisi di una connessione di rete
+##  <a name="modifying,-adding,-or-reviewing-a-network-connection"></a>Modifica, aggiunta o analisi di una connessione di rete
 
 
 Se non è disponibile una connessione di rete cablata, il dispositivo Surface Hub può usare una rete wireless per l'accesso a internet. Un punto di accesso Wi-Fi connesso e configurato correttamente deve essere disponibile e a portata del dispositivo Surface Hub.
 
-### Scegliere un punto di accesso wireless
+###  <a name="choose-a-wireless-access-point"></a>Scegliere un punto di accesso wireless
 
 1.  In Surface Hub apri **Impostazioni** e immetti le tue credenziali di amministratore.
 2.  Fai clic su **Rete e Internet**. In **Wi-Fi** scegli un punto di accesso. Se vuoi che Surface Hub si connetta automaticamente a questo punto di accesso, fai clic su **Connetti automaticamente**. Fai clic su **Connetti**.
@@ -40,7 +40,7 @@ Se non è disponibile una connessione di rete cablata, il dispositivo Surface Hu
 
     ![Immagine che mostra la richiesta di chiave di sicurezza e password per la connessione a una rete Wi-Fi protetta.](images/networkmgtwireless-02.png)
 
-### Analizzare le impostazioni wireless
+###  <a name="review-wireless-settings"></a>Analizzare le impostazioni wireless
 
 1.  In Surface Hub apri **Impostazioni** e immetti le tue credenziali di amministratore.
 2.  Fai clic su **Rete e Internet**, quindi su **Wi-Fi** e infine su **Opzioni avanzate**.
@@ -48,7 +48,7 @@ Se non è disponibile una connessione di rete cablata, il dispositivo Surface Hu
 
     ![Immagine che mostra le proprietà per la connessione Wi-Fi.](images/networkmgtwireless-04.png)
 
-### Analizzare le impostazioni della connessione cablata
+###  <a name="review-wired-settings"></a>Analizzare le impostazioni della connessione cablata
 
 1.  In Surface Hub apri **Impostazioni** e immetti le tue credenziali di amministratore.
 2.  Fai clic su **Sistema**, quindi su **Rete e Internet** e infine sulla rete in Ethernet.
@@ -59,7 +59,7 @@ Se non è disponibile una connessione di rete cablata, il dispositivo Surface Hu
 
     ![Immagine che mostra le proprietà per la connessione Ethernet.](images/networkmgtwired-02.png)
 
-## Argomenti correlati
+##  <a name="related-topics"></a>Argomenti correlati
 
 
 [Gestire Microsoft Surface Hub](manage-surface-hub.md)

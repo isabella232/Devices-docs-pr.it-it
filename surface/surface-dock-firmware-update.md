@@ -160,7 +160,7 @@ Gli eventi vengono registrati nel log eventi applicazione.  Nota: le versioni pr
 - Assicurarsi che Surface dock sia disconnesso e quindi consentire un tempo sufficiente per completare l'aggiornamento come monitorato tramite un LED nella porta Ethernet del Dock. Attendere che il LED smetta di lampeggiare prima di scollegare Surface dock dall'alimentazione.
 - Connettere Surface dock a un dispositivo diverso per verificare se è in grado di aggiornare il Dock.
 
-## Riferimenti alle versioni
+##  <a name="references"></a>Riferimenti alle versioni
 
 >[!NOTE]
 >Il file di installazione viene rilasciato con il formato di denominazione seguente: **Surface_Dock_FwUpdate_X.XX.XXX_Win10_XXXXX_XX.XXX.XXXXX_X.MSI** (es: Surface_Dock_FwUpdate_1.42.139_Win10_17134_19.084.31680_0.msi) e viene installato per impostazione predefinita in C:\Program Files\SurfaceUpdate.

@@ -25,11 +25,11 @@ ms.locfileid: "11105412"
 
 Il modulo di attestazione della garanzia e del servizio consente di inviare più attestazioni in una richiesta di servizio per Microsoft Surface, Microsoft Surface Hub, Microsoft HoloLens 2 e Microsoft Azure Kinect Products.
 
-## Quando usare questo modulo
+##  <a name="when-to-use-this-form"></a>Quando usare questo modulo
 
 Usare il modulo di attestazione della garanzia e del servizio quando è necessario inviare una richiesta di garanzia hardware o richiedere un adeguamento alla garanzia.  
 
-## Come usare il modulo
+##  <a name="how-to-use-the-form"></a>Come usare il modulo
 
 1.  Scaricare il modulo e selezionare Abilita.
 2.  Immettere le informazioni sul prodotto:
@@ -67,13 +67,13 @@ Usare il modulo di attestazione della garanzia e del servizio quando è necessar
         1. Se si richiede una rettifica della garanzia, specificare una dichiarazione che conferisca la richiesta. Se non si richiede un adeguamento della garanzia, lasciarlo vuoto.
         2. Per velocizzare il processo, caricare la garanzia o la prova di acquisto hardware insieme alla richiesta.
 
-## Commissioni del servizio fuori garanzia
+##  <a name="out-of-warranty-service-fees"></a>Commissioni del servizio fuori garanzia
 
 Gli avvocati del supporto tecnico consentiranno di comunicare le tariffe fuori garanzia per i prodotti Kinect per Surface Hub, HoloLens e Azure.
 
 Per altre informazioni sulle spese per i servizi fuori garanzia, vedere [quanto costa il servizio fuori garanzia per il dispositivo Surface o l'accessorio?](https://support.microsoft.com/help/4563717)
 
-## Altre informazioni
+##  <a name="learn-more"></a>Altre informazioni
 
 Per altre informazioni sul servizio per Surface, vedere [come ottenere il servizio per Surface](https://support.microsoft.com/help/4023527/surface-how-to-get-service-for-surface).
 

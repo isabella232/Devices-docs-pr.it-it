@@ -20,7 +20,7 @@ ms.locfileid: "10833578"
 ---
 # Scompattare Surface Hub 2S
 
-## Decomprimere il mozzo della superficie 2S
+##  <a name="unpacking-the-surface-hub-2s"></a>Decomprimere il mozzo della superficie 2S
 
 Prima di rimuovere Surface Hub 2S dalla casella, verificare di avere assemblato la soluzione di montaggio e di essere disponibile per aiutarti.
 
@@ -33,7 +33,7 @@ Prima di rimuovere Surface Hub 2S dalla casella, verificare di avere assemblato 
 7. Allineare l'hardware installato con gli slot sul supporto in modo che restino saldamente in posizione.
 8. Seguire le istruzioni fornite con la soluzione di montaggio.
 
-## Installare la penna e la fotocamera
+##  <a name="install-pen-and-camera"></a>Installare la penna e la fotocamera
 
 1. Scartare la penna Surface Hub 2 e allegarla magneticamente al lato preferito del dispositivo.
 2. Rimuovere l'obiettivo aggrapparsi alla videocamera e allegarlo alla porta USB-C nella parte superiore del mozzo della superficie 2S.

@@ -102,7 +102,7 @@ Le modifiche ai livelli di luminosità possono essere inviate da un sistema di c
 | Brightness+ | Il controller SMC (System Management Controller) invia il comando per aumentare la luminosità.</br></br>Il servizio PC nel sistema di controllo della sala invia notifica al controller SMC del nuovo livello di luminosità. |  Brightness = 51 |
 | Brightness- |  Il controller SMC invia il comando per ridurre la luminosità.</br></br>Il servizio PC invia notifica al controller SMC del nuovo livello di luminosità. | Brightness = 50 |
 
-## Volume
+##  <a name="volume"></a>Volume
 
 Il livello di volume corrente è compreso nell'intervallo da 0 a 100.
 
@@ -167,7 +167,7 @@ Gli errori vengono restituiti nel formato indicato in questa tabella.
 
  
 
-## Argomenti correlati
+##  <a name="related-topics"></a>Argomenti correlati
 
 
 [Gestire Microsoft Surface Hub](manage-surface-hub.md)

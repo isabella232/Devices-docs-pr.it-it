@@ -61,7 +61,7 @@ Alimentazione in ingresso, standby    |   5W nominale
 > - [Gestione locale per le impostazioni di Surface Hub](local-management-surface-hub-settings.md)
 > - [SurfaceHub CSP-gestione client Windows](https://docs.microsoft.com/windows/client-management/mdm/surfacehub-csp)
 
-## Connessioni PC sostitutive 
+##  <a name="replacement-pc-connections"></a>Connessioni PC sostitutive 
 
 Connettore e posizione | Label | Descrizione
 --- | --- | ---
@@ -71,7 +71,7 @@ USB tipo B, I/O in basso | ![](images/usb.png) | Fornisce la connessione USB per
 USB tipo B, I/O in basso | ![](images/usb.png) | Fornisce la connessione USB per hub integrato.
 
 
-## Connessioni di connessione cablata
+##  <a name="wired-connect-connections"></a>Connessioni di connessione cablata
 
 Connettore e posizione | Label | Descrizione
 --- | --- | ---
@@ -81,7 +81,7 @@ VGA, I/O in basso | ![](images/vga.png) | Fornisce l'input VGA per PC con connes
 3,5 mm, I/O in basso | ![](images/35mm.png) | Fornisce l'input audio analogico.
 USB tipo B, I/O in basso | ![](images/usb.png) | Fornisce la connessione USB per l'acquisizione di Touchback.
 
-## Connessioni aggiuntive
+##  <a name="additional-connections"></a>Connessioni aggiuntive
 
 Connettore e posizione | Label | Descrizione
 --- | --- | ---
@@ -103,7 +103,7 @@ RJ11, I/O in basso | ![](images/rj11.png) | Si connette ai sistemi di controllo 
 
 
 
-## Diagrammi di porte e spazi
+##  <a name="diagrams-of-ports-and-clearances"></a>Diagrammi di porte e spazi
 
 ***Visualizzazione superiore di 55 "Surface Hub***
 

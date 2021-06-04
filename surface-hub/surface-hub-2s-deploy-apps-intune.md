@@ -22,7 +22,7 @@ ms.locfileid: "10833284"
 
 È possibile installare altre app per soddisfare le esigenze del team o dell'organizzazione.
 
-## Linee guida per gli sviluppatori
+##  <a name="developer-guidelines"></a>Linee guida per gli sviluppatori
 
 - Surface Hub esegue solo le [app della piattaforma UWP (Universal Windows Platform)](https://msdn.microsoft.com/windows/uwp/get-started/whats-a-uwp). Le app create utilizzando [Desktop App Converter](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-run-desktop-app-converter) non verranno eseguite su Surface Hub.
 - Le app devono essere destinate alla [famiglia di dispositivi universali](https://msdn.microsoft.com/library/windows/apps/dn894631) o alla famiglia di dispositivi Windows Team.
@@ -31,7 +31,7 @@ ms.locfileid: "10833284"
 - Durante lo sviluppo e l'invio di app a Microsoft Store, imposta la disponibilità della famiglia di dispositivi e le opzioni di licenza organizzativa per verificare che le app siano disponibili per l'esecuzione su Surface Hub.
 - Sono necessarie credenziali di amministratore per installare le app in Surface Hub. Progettato per l'uso nelle sale riunioni e in altri spazi condivisi, Surface Hub impedisce agli utenti abituali di accedere a Microsoft Store per scaricare e installare le app.
 
-## Linee guida per la distribuzione
+##  <a name="deployment-guidelines"></a>Linee guida per la distribuzione
 
 Puoi distribuire app UWP (Universal Windows Platform) a Surface Hub 2S usando Intune, facilitando la distribuzione delle app ai dispositivi.
 

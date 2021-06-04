@@ -23,7 +23,7 @@ ms.locfileid: "10833380"
 Il dispositivo Microsoft Surface Hub ha le stesse opzioni di accessibilità di Windows10.
 
 
-## Impostazioni di accessibilità predefinite
+##  <a name="default-accessibility-settings"></a>Impostazioni di accessibilità predefinite
 
 L'elenco completo delle impostazioni di accessibilità è disponibile per gli amministratori IT nell'app **Impostazioni**. Le impostazioni di accessibilità predefinite per Surface Hub includono:
 
@@ -57,7 +57,7 @@ Inoltre, quando gli utenti selezionano l'opzione [Termina sessione](finishing-yo
 - Controllo puntatore
 
 
-## Modificare le impostazioni di accessibilità durante una riunione
+##  <a name="change-accessibility-settings-during-a-meeting"></a>Modificare le impostazioni di accessibilità durante una riunione
 
 Durante una riunione, gli utenti possono attivare o disattivare le app e le funzionalità di accessibilità in due modi:
 - [Tasti di scelta rapida](https://support.microsoft.com/help/13813/windows-10-microsoft-surface-hub-keyboard-shortcuts)
@@ -66,7 +66,7 @@ Durante una riunione, gli utenti possono attivare o disattivare le app e le funz
 > ![Immagine del centro Azioni rapide in Surface Hub](images/sh-quick-action.png)
 
 
-## Argomenti correlati
+##  <a name="related-topics"></a>Argomenti correlati
 
 [Gestire Microsoft Surface Hub](manage-surface-hub.md)
 

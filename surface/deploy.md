@@ -23,7 +23,7 @@ ms.locfileid: "10832852"
 
 Informazioni sulla distribuzione di dispositivi Surface basati su ARM e Intel.
 
-## Distribuzione di dispositivi basati su ARM
+##  <a name="deploying-arm-based-devices"></a>Distribuzione di dispositivi basati su ARM
 
 | Argomento | Descrizione |
 | --- | --- |
@@ -32,7 +32,7 @@ Informazioni sulla distribuzione di dispositivi Surface basati su ARM e Intel.
 | [Compatibilità con le app PC basate su ARM Windows 10](surface-pro-arm-app-performance.md) | Rivedere le indicazioni per la compatibilità delle app per Surface Pro X. |
 
 
-## Distribuzione di dispositivi basati su Intel 
+##  <a name="deploying-intel-based-devices"></a>Distribuzione di dispositivi basati su Intel 
 
 | Argomento | Descrizione |
 | --- | --- |
@@ -45,7 +45,7 @@ Informazioni sulla distribuzione di dispositivi Surface basati su ARM e Intel.
 | [Surface Deployment Accelerator](microsoft-surface-deployment-accelerator.md)| Scopri come Microsoft Surface Deployment Accelerator offre un meccanismo di distribuzione semplice e veloce per le organizzazioni per la riimmagine dei dispositivi Surface. |
 [Impostazione del limite della batteria](battery-limit.md) | Informazioni su come usare il limite della batteria, un'impostazione UEFI che cambia la carica della batteria del dispositivo Surface e può prolungarne la longevità.
 
-## Argomenti correlati
+##  <a name="related-topics"></a>Argomenti correlati
 
 [Blog di Surface per professionisti IT](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro)
 

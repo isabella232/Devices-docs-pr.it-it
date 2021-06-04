@@ -20,11 +20,11 @@ ms.locfileid: "10832955"
 ---
 # Pianificazione del sito di Surface Hub 2S
 
-## Introduzione
+##  <a name="introduction"></a>Introduzione
 
 Progettato per la collaborazione con il team, Surface Hub 2S può trasformare il tuo modo di lavorare, non solo nelle sale riunioni, ma in qualsiasi luogo in cui vuoi lavorare. Uno dei vantaggi principali di Surface Hub 2S è la possibilità di spostarlo da uno spazio a un altro quando viene usato con il supporto per dispositivi mobili Steelcase e la batteria mobile. Fornendo funzionalità di Team Unplugged e ininterrotte, Surface Hub 2S può essere integrato in quasi tutte le aree di lavoro.
 
-## Considerazioni sulla sala
+##  <a name="room-considerations"></a>Considerazioni sulla sala
 
 Progettato per l'uso interattivo in sale riunioni più piccole e spazi di Calco, Surface Hub 2S offre una fotocamera 4K, un array di microfoni, altoparlanti cristallini e un brillante display 4K + risoluzione. Per ottimizzare l'esperienza dell'utente in spazi più ampi con più persone distanti dalla visualizzazione, possono essere necessarie periferiche come una fotocamera, un microfono o una soluzione per sistemi salati aggiuntivi, ad esempio le sale di Microsoft teams.
 
@@ -43,6 +43,6 @@ Se montato su un muro o installato sul supporto per dispositivi mobili, le aree 
 
 Per informazioni dettagliate sulle indicazioni per la pianificazione della sala e per altre info su Microsoft teams Rooms vedere [pianificare le sale Microsoft teams.](https://docs.microsoft.com/MicrosoftTeams/room-systems/skype-room-systems-v2-0)
 
-## Gestione della posizione di Surface Hub 2S
+##  <a name="managing-surface-hub-2s-location"></a>Gestione della posizione di Surface Hub 2S
 
 Se si prevede di usare Surface Hub 2S su un supporto per dispositivi mobili, è possibile esplorare soluzioni di terze parti che consentono di abilitare i servizi di posizione. Ad esempio, i sistemi RFID attivi possono consentire il monitoraggio in tempo reale in tutti gli spazi complessi di Office o Industrial. Per altre informazioni, vedere il proprio provider A/V o altre competenze di terze parti per le indicazioni.

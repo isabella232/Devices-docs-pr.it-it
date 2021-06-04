@@ -44,7 +44,7 @@ Tieni presente che le applicazioni vengono eseguite in modo diverso nei PC Windo
 - **Non è possibile installare alcuni software antivirus di terze parti**. Non sarà possibile installare software antivirus di terze parti in un PC con Windows 10 ARM. La sicurezza di Windows consentirà tuttavia di proteggerti per la durata supportata del tuo dispositivo Windows 10.
 - **Fax e scanner Windows non sono disponibili**. Questa caratteristica non è disponibile in un PC con Windows 10 ARM.
 
-## App assicura
+##  <a name="app-assure"></a>App assicura
 
 Microsoft si impegna a garantire ai clienti un'esperienza di compatibilità ottimale con Windows 10 nei dispositivi ARM64, ad esempio Surface Pro X. Abbiamo ampliato il programma assicura app per supportare i clienti che incontrano le sfide compatte dell'app fornendo agli ingegneri la soluzione per la risoluzione dei problemi e per fornire le correzioni delle app, senza costi aggiuntivi. Il servizio è disponibile per i clienti commerciali e EDU per le app LOB, ISV e Microsoft di prima parte destinate a Windows 10 in ARM64. 
 

@@ -41,13 +41,13 @@ Vedere la tabella seguente per dettagli sulle informazioni che sarà necessario 
 
  
 
-## Inviare richieste di supporto
+##  <a name="submit-support-requests"></a>Inviare richieste di supporto
 
   [![Ge supporto per la registrazione del pilota automatico per Surface](images/autopilot-reg-support-surface.png)](https://prod.support.services.microsoft.com/supportrequestform/0d8bf192-cab7-6d39-143d-5a17840b9f5f)
  
  
  
-## Altre informazioni
+##  <a name="learn-more"></a>Altre informazioni
 
 - [Windows Autopilot e dispositivi Surface](windows-autopilot-and-surface-devices.md)
 - [Registrare i dispositivi Windows in Intune con Windows Autopilot](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot)

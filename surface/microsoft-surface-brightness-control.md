@@ -38,7 +38,7 @@ Lo strumento oscura automaticamente la schermata quando non è in uso e include 
 
 - Installare surfacebrightnesscontrol.msi nel dispositivo di destinazione e il controllo della luminosità della superficie inizierà a funzionare immediatamente.
 
-## Configurazione del controllo di luminosità superficiale
+##  <a name="configuring-surface-brightness-control"></a>Configurazione del controllo di luminosità superficiale
 
 Puoi modificare i valori predefiniti tramite il registro di sistema di Windows. Per altre informazioni sull'uso del registro di sistema di Windows, vedere la [documentazione del registro di sistema](https://docs.microsoft.com/windows/desktop/sysinfo/registry).
 
@@ -60,18 +60,18 @@ Luminosità completa   | Impostazione predefinita: 100  <br>Opzione: intervallo 
 | Timeout inattività| Impostazione predefinita: 30 secondi <br>Opzione: qualsiasi valore numerico  <br>Tipo di dati: intero  <br> Digitare: REG_DWORD | Questa impostazione consente di gestire il periodo di inattività prima di impostare l'oscuramento del dispositivo. Se non si configura questa impostazione, il timeout di inattività è di 30 secondi.|
 | Telemetria abilitata | Impostazione predefinita: 01 <br>Opzione: 01, 00 <br> Digitare: REG_BINARY  | Questa impostazione consente di gestire la condivisione delle informazioni sull'utilizzo dell'app per migliorare il software e consentire un'esperienza utente migliore. Per disabilitare la telemetria, imposta il valore su 00. Se non si configura questa impostazione, le informazioni di telemetria vengono condivise con Microsoft in conformità con l' [informativa sulla privacy Microsoft](https://privacy.microsoft.com/privacystatement). |
 
-## Modifiche e aggiornamenti
+##  <a name="changes-and-updates"></a>Modifiche e aggiornamenti
 
-### Versione 1.16.137<br>
+###  <a name="version-1.16.137"></a>Versione 1.16.137<br>
 *Data di rilascio: 22 ottobre 2019*<br>
 Questa versione del controllo della luminosità superficiale aggiunge il supporto per i seguenti:-ricompilato per x86, aggiungendo il supporto per Surface Pro 7, Surface Pro X e Surface laptop 3. 
 
-### Versione 1.12.239.0
+###  <a name="version-1.12.239.0"></a>Versione 1.12.239.0
 *Data di rilascio: 26 aprile 2019*<br>
 Questa versione del controllo di luminosità superficiale aggiunge il supporto per i seguenti:
 - Correzioni di ritardo tocco.
 
 
-## Argomenti correlati
+##  <a name="related-topics"></a>Argomenti correlati
 
 - [Impostazione del limite di batteria](battery-limit.md)

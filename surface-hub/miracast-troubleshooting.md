@@ -84,6 +84,6 @@ Il passaggio di canale si verifica anche se il dispositivo di proiezione è conn
 
 Se sono presenti più reti Wi-Fi o punti di accesso nell'ambiente, qualche passaggio di canale è inevitabile. Questo viene risolto meglio verificando che tutti i driver Wi-Fi siano aggiornati.
 
-## Supporto tecnico
+##  <a name="contact-support"></a>Supporto tecnico
 
 Se si hanno domande o si ha bisogno di assistenza, è possibile [creare una richiesta di supporto](https://support.microsoft.com/supportforbusiness/productselection).

@@ -26,25 +26,25 @@ Surface Hub è un dispositivo di collaborazione progettato per essere usato nell
 
 Questo argomento spiega in che modo ognuno di questi stati viene reimpostato toccando l'opzione **Termina sessione**.
 
-## Applicazioni
+##  <a name="applications"></a>Applicazioni
 Quando avvii un'app in Surface Hub, l'app viene archiviata in memoria, mentre i dati vengono archiviati a livello di applicazione. Durante la sessione (o la riunione), i dati rimangono a disposizione di tutti gli utenti fino a quando non viene rimossa o sovrascritta la data. Se si seleziona l'opzione **Termina sessione**, lo stato delle applicazioni di Surface Hub viene annullato mediante la chiusura delle applicazioni, l'eliminazione della cronologia del browser, la reimpostazione delle applicazioni e la rimozione dei registri di Skype.
 
-### Chiudere le applicazioni
+###  <a name="close-applications"></a>Chiudere le applicazioni
 Surface Hub chiude tutte le finestre visibili, incluse le applicazioni Win32 e UWP (Universal Windows Platform). La fase di chiusura delle applicazioni usa la visualizzazione multitasking per interrogare le finestre visibili. Le finestre Win32 che non si chiudono entro un determinato intervallo di tempo vengono chiuse con **TerminateProcess**. 
    
-### Eliminare la cronologia del browser
+###  <a name="delete-browser-history"></a>Eliminare la cronologia del browser
 Surface Hub usa l'opzione di eliminazione della cronologia del browser disponibile in Edge per cancellare la cronologia di Edge e i dati memorizzati nella cache. Rispetto all'eliminazione manuale della cronologia del browser, con l'opzione **Termina sessione** vengono anche cancellati gli stati delle applicazioni e rimossi i dati prima dell'inizio della sessione o della riunione successiva. 
  
-### Reimpostare le applicazioni
+###  <a name="reset-applications"></a>Reimpostare le applicazioni
 L'opzione **Termina sessione** reimposta lo stato di ogni applicazione installata in Surface Hub. Con questa operazione vengono cancellate tutte le attività in background, i dati delle applicazioni, le notifiche e le finestre di dialogo del consenso. Le applicazioni vengono inoltre reimpostate allo stato di prima esecuzione per i successivi utenti di Surface Hub.  
  
-### Rimuovere i registri di Skype
+###  <a name="remove-skype-logs"></a>Rimuovere i registri di Skype
 Skype non archivia informazioni personali in Surface Hub. Le informazioni vengono archiviate nel servizio Skype in conformità alle linee guida esistenti di Skype for Business. Se si seleziona l'opzione **Termina sessione** gli unici dati rimossi sono le informazioni di registrazione a Skype locali, che comprendono anche i registri e i registri multimediali della piattaforma UCCP (Unified Communications Client Platform).   
 
-## Sistema operativo
+##  <a name="operating-system"></a>Sistema operativo
 Nel sistema operativo sono presenti numerose informazioni sullo stato delle sessioni che devono essere cancellate dopo ogni riunione Surface Hub. 
 
-### File system
+###  <a name="file-system"></a>File system
 I partecipanti alla riunione possono accedere a un set limitato di directory in Surface Hub. Se si seleziona l'opzione **Termina sessione**, Surface Hub annulla le directory seguenti:<br>
 - Musica
 - Video
@@ -61,13 +61,13 @@ Surface Hub cancella anche le directory seguenti, in cui molte applicazioni scri
 - Video musicali
 - Download pubblici
 
-### Credenziali
+###  <a name="credentials"></a>Credenziali
 Le credenziali utente archiviate in **TokenBroker**, **PasswordVault** o **Gestione credenziali** vengono eliminate quando tocchi **Termina sessione**.
 
-## Interfaccia utente
+##  <a name="user-interface"></a>Interfaccia utente
 Se si seleziona l'opzione **Termina sessione**, le impostazioni dell'interfaccia utente vengono reimpostate ai valori predefiniti. 
 
-### Elementi dell'interfaccia utente
+###  <a name="ui-items"></a>Elementi dell'interfaccia utente
 - Azioni rapide reimpostate allo stato predefinito
 - Notifiche di tipo avviso popup cancellate
 - Livelli di volume reimpostati
@@ -75,7 +75,7 @@ Se si seleziona l'opzione **Termina sessione**, le impostazioni dell'interfaccia
 - Layout della modalità tablet reimpostato
 - Disconnettere l'utente dalle riunioni e dai file di Office 365
 
-### Accessibilità
+###  <a name="accessibility"></a>Accessibilità
 Se si seleziona l'opzione **Termina sessione**, le app e le funzionalità di accessibilità vengono ripristinate alle impostazioni predefinite.
 - Filtro tasti
 - Contrasto elevato
@@ -85,10 +85,10 @@ Se si seleziona l'opzione **Termina sessione**, le app e le funzionalità di acc
 - Lente di ingrandimento
 - Assistente vocale
 
-### Appunti
+###  <a name="clipboard"></a>Appunti
 I dati copiati negli Appunti durante la sessione vengono cancellati. 
 
-## Domande frequenti
+##  <a name="faq"></a>Domande frequenti
 **Cosa accade se mi dimentico di toccare Termina sessione al termine di una riunione e, in seguito, qualcun altro usa Surface Hub?**<br>
 Surface Hub rimuove i contenuti di una riunione solo quando gli utenti toccano **Termina sessione**. Se termini la riunione senza avere toccato **Termina sessione**, il dispositivo tornerà alla schermata iniziale dopo alcuni minuti. Dalla schermata iniziale gli utenti hanno la possibilità di riprendere la sessione precedente o di avviarne una nuova. È inoltre possibile disattivare la capacità di riprendere una sessione se **Termina sessione** non viene premuto.
 

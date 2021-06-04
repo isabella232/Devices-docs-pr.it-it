@@ -24,7 +24,7 @@ ms.locfileid: "10834082"
 
 Puoi modificare l'account del dispositivo in Impostazioni per aggiungere un account se non è stato configurato nessun account o per modificare le proprietà di un account che è già stato configurato.
 
-## Dettagli
+##  <a name="details"></a>Dettagli
 
 
 <table>
@@ -72,7 +72,7 @@ Puoi modificare l'account del dispositivo in Impostazioni per aggiungere un acco
 
  
 
-## Conseguenze
+##  <a name="what-happened"></a>Conseguenze
 
 
 L'UPN e la password vengono usati per convalidare l'account in AD o Azure AD. Se la convalida ha esito negativo, potresti dover specificare dominio e nome utente.
@@ -81,7 +81,7 @@ Usando le credenziali fornite, Microsoft proverà a individuare l'indirizzo SIP.
 
 Se il dispositivo non riesce a trovare un server associato alle credenziali di accesso, dovrai specificare l'indirizzo del server Exchange. Microsoft Surface Hub userà il server Exchange per comunicare con ActiveSync, un componente che abilita diverse funzionalità chiave nel dispositivo.
 
-## Argomenti correlati
+##  <a name="related-topics"></a>Argomenti correlati
 
 
 [Gestire Microsoft Surface Hub](manage-surface-hub.md)

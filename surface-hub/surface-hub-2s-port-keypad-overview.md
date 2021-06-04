@@ -29,7 +29,7 @@ La figura seguente mostra la posizione delle porte e dei pulsanti fisici su una 
 
  ![Visualizzazione fronte/retro delle connessioni I/O e dei pulsanti fisici](images/hub2s-schematic.png)
 
-## Riferimento al componente porta e tastiera
+##  <a name="port-and-keypad-component-reference"></a>Riferimento al componente porta e tastiera
 
 |**Chiave**|**Componente**|**Descrizione**|**Parametri chiave**|
 |:--- |:--------- |:----------- |:-------------- |

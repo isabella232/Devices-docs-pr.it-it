@@ -26,7 +26,7 @@ Le istruzioni di configurazione per Surface Hub includono un foglio di lavoro pe
 
 Prima di accendere il dispositivo Microsoft Surface Hub per la prima volta, assicurati di aver completato l'elenco di controllo alla fine della sezione [Preparare l'ambiente per Surface Hub](prepare-your-environment-for-surface-hub.md) e di avere a disposizione le informazioni elencate in [Foglio di lavoro per la configurazione](setup-worksheet-surface-hub.md). All'accensione, il dispositivo ti guiderà attraverso una serie di schermate di configurazione. Se non hai configurato correttamente l'ambiente o non hai le informazioni necessarie, dovrai eseguire lavoro aggiuntivo successivamente per assicurarti che le impostazioni siano corrette.
 
-## Contenuto della sezione
+##  <a name="in-this-section"></a>Contenuto della sezione
 
 
 <table>

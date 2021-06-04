@@ -248,11 +248,11 @@ Se il computer connesso in modalità Guest non è compatibile con le funzionalit
 
 In modalità PC sostitutivo, il computer integrato in Surface Hub viene disattivato e un PC esterno viene connesso a Surface Hub. Le connessioni alle porte del PC sostitutivo consentono di accedere alle principali periferiche di Surface Hub, tra cui lo schermo, la penna e le funzionalità di tocco. Questo non significa che Surface Hub non tragga vantaggio dall'esperienza Windows Team, ma che sarà disponibile una maggiore flessibilità, offerta dalla possibilità di usare e gestire il proprio computer Windows.
 
-### Requisiti software
+###  <a name="requirements"></a>Requisiti software
 
 Per eseguire Surface Hub in modalità PC sostitutivo è necessaria una versione a 64 bit di Windows 10 Home, Windows 10 Pro o Windows 10 Enterprise. Puoi scaricare il [pacchetto di driver per PC sostitutivi di Surface Hub](https://www.microsoft.com/download/details.aspx?id=52210) dall'area download Microsoft. Ti consigliamo di installare i driver in tutti i computer che intendi usare come PC sostitutivi.
 
-### Requisiti hardware
+###  <a name="requirements"></a>Requisiti hardware
 
 Surface Hub è compatibile con un'ampia gamma di componenti hardware. È sufficiente scegliere una combinazione di processore e memoria che consenta al PC sostitutivo di supportare i programmi che dovrai usare. L'hardware del PC sostitutivo, inoltre, deve supportare versioni a 64 bit di Windows 10.
 

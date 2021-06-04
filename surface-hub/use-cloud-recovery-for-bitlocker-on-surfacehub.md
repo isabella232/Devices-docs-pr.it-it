@@ -31,7 +31,7 @@ Questo articolo descrive come usare la funzione di ripristino cloud se viene ric
 > [!IMPORTANT]
 > Questo processo richiede una connessione Internet aperta che non usa un proxy o un altro metodo di autenticazione.
 
-## Processo di ripristino del cloud
+##  <a name="cloud-recovery-process"></a>Processo di ripristino del cloud
 
 Per eseguire un ripristino cloud, eseguire le operazioni seguenti:
 
@@ -61,7 +61,7 @@ Per eseguire un ripristino cloud, eseguire le operazioni seguenti:
 
    ![Screenshot della casella fuori sede](images/06-out-of-box.png)
 
-## Messaggio di errore "si è verificato un problema"
+##  <a name="something-went-wrong-error-message"></a>Messaggio di errore "si è verificato un problema"
 
 Questo errore è in genere causato da problemi di rete che si verificano durante il download del ripristino. Quando si verifica questo problema, non disattivare l'hub perché non sarà possibile riavviarlo. Se viene visualizzato questo messaggio di errore, tornare al passaggio "Recupera dal cloud" e quindi riavviare il processo di ripristino.
 

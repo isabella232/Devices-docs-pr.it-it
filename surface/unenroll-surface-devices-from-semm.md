@@ -29,7 +29,7 @@ Quando un dispositivo Surface viene registrato in modalità di gestione di Surfa
 
 Per altre informazioni su SEMM, vedere [modalità di gestione Microsoft Surface Enterprise](https://technet.microsoft.com/itpro/surface/surface-enterprise-management-mode).
 
-## Annullare la registrazione di un dispositivo Surface da SEMM con un pacchetto di ripristino di Surface UEFI
+##  <a name="unenroll-a-surface-device-from-semm-with-a-surface-uefi-reset-package"></a>Annullare la registrazione di un dispositivo Surface da SEMM con un pacchetto di ripristino di Surface UEFI
 
 Il pacchetto di ripristino di Surface UEFI è il metodo principale usato per annullare la registrazione di un dispositivo Surface da SEMM. Come un pacchetto di configurazione UEFI di Surface, il pacchetto reset è un file di Windows Installer (con estensione msi) che configura SEMM nel dispositivo. A differenza del pacchetto di configurazione, il pacchetto Reimposta reimposta la configurazione di Surface UEFI su un dispositivo Surface sulle impostazioni predefinite, rimuove il certificato SEMM e Annulla la registrazione del dispositivo da SEMM.
 
@@ -74,7 +74,7 @@ Eseguire il file di Surface UEFI Reset package Windows Installer (con estensione
 
 *Figura 5. La presenza dell'elemento del pacchetto di configurazione della superficie Microsoft in programmi e funzionalità indica che il dispositivo è registrato in SEMM*
 
-## Annullare la registrazione di un dispositivo Surface da SEMM con una richiesta di ripristino
+##  <a name="unenroll-a-surface-device-from-semm-with-a-recovery-request"></a>Annullare la registrazione di un dispositivo Surface da SEMM con una richiesta di ripristino
 
 In alcuni scenari, un pacchetto di ripristino di Surface UEFI potrebbe non essere un'opzione valida per annullare la registrazione di un dispositivo Surface da SEMM (ad esempio, dove Windows è diventato inutilizzabile). In questi scenari puoi annullare la registrazione del dispositivo usando una richiesta di ripristino generata dall'interno di Surface UEFI. Il processo di richiesta di ripristino può essere avviato anche nei dispositivi in cui non è presente la password di Surface UEFI.
 

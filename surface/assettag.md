@@ -21,13 +21,13 @@ ms.locfileid: "10832577"
 
 Surface asset tag è un'utilità CLI (Command Line Interface) che consente di visualizzare, assegnare e modificare un valore di tag asset assegnato per i dispositivi Surface. Funziona in Surface Pro 3 e in tutti i dispositivi Surface più recenti.
 
-## Requisiti di sistema
+##  <a name="system-requirements"></a>Requisiti di sistema
 
 - Surface Pro 3 o versioni successive
 
 - Versione del firmware UEFI 3.9.150.0 o successiva
 
-## Uso di Surface Asset Tag 
+##  <a name="using-surface-asset-tag-"></a>Uso di Surface Asset Tag 
 
 Per eseguire il tag Surface asset:
 
@@ -40,7 +40,7 @@ Per eseguire il tag Surface asset:
 
 3.  Riavviare Surface.
 
-### Comandi dello strumento Tag asset   
+###  <a name="asset-tag-tool-commands"></a>Comandi dello strumento Tag asset   
 Negli esempi seguenti AssetTag.exe viene salvato in una directory in un computer locale (C:\assets). 
 
 Per ottenere il tag asset proposto, eseguire AssetTag-g.
@@ -70,7 +70,7 @@ C:\assets\AssetTag.exe -s testassettag12
 >Il valore del tag asset deve contenere tra i caratteri 1 e 36. I caratteri validi includono A-Z, a-z, 0-9, punto (.) e segno meno (-).
 
 
-## Gestione dei tag asset
+##  <a name="managing-asset-tags"></a>Gestione dei tag asset
 
 È possibile visualizzare il tag asset esistente nelle impostazioni UEFI in informazioni dispositivo (**Pannello di controllo > ripristino > avvio avanzato > Riavvia ora**.)
 
@@ -91,7 +91,7 @@ In alternativa, è possibile usare WMI per eseguire query sul tag asset esistent
 C:\Windows\System32> (Get-WmiObject -query “Select * from Win32_SystemEnclosure”)
   ```
   
-### Uso di PowerShell
+###  <a name="using-powershell"></a>Uso di PowerShell
 
 Puoi usare lo script seguente come strumento per ottenere il valore proposto e interpretare gli eventuali errori.
 

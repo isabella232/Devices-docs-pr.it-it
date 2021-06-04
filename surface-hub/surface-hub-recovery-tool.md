@@ -30,9 +30,9 @@ Per ri-creare un'immagine dell'unità SSD di Surface Hub con lo strumento di rip
 
 Se lo strumento non riesce a riimimare l'unità, contatta il [supporto di Surface Hub.](https://support.microsoft.com/help/4037644/surface-contact-surface-warranty-and-software-support)
 
-## Prerequisiti
+##  <a name="prerequisites"></a>Prerequisiti
 
-### Mandatory
+###  <a name="mandatory"></a>Mandatory
 
 - Pc host che esegue la versione a 64 bit di Windows 10 versione 1607 o successiva.
 - Accesso a Internet
@@ -41,7 +41,7 @@ Se lo strumento non riesce a riimimare l'unità, contatta il [supporto di Surfac
 - 10 GB di spazio libero su disco nel computer host
 - SSD forniti con Surface Hub o un SSD fornito dal supporto in sostituzione. Le SSD non fornite da Microsoft non sono supportate.
 
-### Consigliato
+###  <a name="recommended"></a>Consigliato
 
 - Connessione Internet ad alta velocità
 - Aprire la porta USB 3.0
@@ -51,7 +51,7 @@ Se lo strumento non riesce a riimimare l'unità, contatta il [supporto di Surfac
     - Rosawill RCUC16001
     - Ugreen 20231
 
-## Scaricare lo strumento di ripristino di Surface Hub
+##  <a name="download-surface-hub-recovery-tool"></a>Scaricare lo strumento di ripristino di Surface Hub
 
 Lo strumento di ripristino di Surface Hub è disponibile per il download da [Strumenti di Surface Hub per l'IT](https://www.microsoft.com/download/details.aspx?id=52210)  con il nome file **SurfaceHub_Recovery_v2.7.139.0.msi**.
 
@@ -65,7 +65,7 @@ Per avviare il download, fare clic su **Download,** **scegliereSurfaceHub_Recove
 
 Installare lo strumento di ripristino di Surface Hub nel PC host.
 
-## Eseguire lo strumento di ripristino di Surface Hub
+##  <a name="run-surface-hub-recovery-tool"></a>Eseguire lo strumento di ripristino di Surface Hub
 
 1. Nel PC host seleziona il pulsante **Start,** scorri l'elenco alfabetico a sinistra e seleziona il collegamento dello strumento di ripristino.
 
@@ -102,7 +102,7 @@ Installare lo strumento di ripristino di Surface Hub nel PC host.
 
 
 
-## Risoluzione dei problemi e problemi comuni
+##  <a name="troubleshooting-and-common-problems"></a>Risoluzione dei problemi e problemi comuni
 
 Problema | Note
 --- | ---
@@ -113,10 +113,10 @@ Errore: -2147024809 | Apri Gestione disco e rimuovi le partizioni nell'unità Su
 
 Se lo strumento non riesce a riimimare l'unità, contatta il [supporto di Surface Hub.](https://support.microsoft.com/help/4037644/surface-contact-surface-warranty-and-software-support)
 
-## Cronologia delle versioni
+##  <a name="version-history"></a>Cronologia delle versioni
 
 
-### Versione v2.7.139.0
+###  <a name="version-v2.7.139.0"></a>Versione v2.7.139.0
 
 *Data di rilascio: 11 febbraio 2021*<br>
 Questa versione dello strumento di ripristino di Surface Hub aggiunge il supporto per gli elementi seguenti:
@@ -124,7 +124,7 @@ Questa versione dello strumento di ripristino di Surface Hub aggiunge il support
 - Aggiornamento della sicurezza
 
 
-### Versione v2.0.139.0
+###  <a name="version-v2.0.139.0"></a>Versione v2.0.139.0
 
 > [!IMPORTANT]
 > Questa versione non è più funzionante. Scarica la versione corrente, elencata in precedenza. 

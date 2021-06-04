@@ -24,11 +24,11 @@ ms.locfileid: "11271380"
 
 Per rimanere in contatto con la durata della batteria giornaliera, i dispositivi Surface implementano le impostazioni di connettività wireless che equilibrano le prestazioni e la conservazione dell'energia. Al di fuori degli scenari di mobilità più esigenti, gli utenti possono mantenere una connettività wireless sufficiente senza modificare le impostazioni di rete predefinite o le opzioni correlate. Questa pagina evidenzia le principali considerazioni relative alla connettività wireless in scenari per dispositivi mobili con i più recenti sistemi Surface, tra cui Surface Pro 7 +, Surface Laptop Go, Surface Go 2, Surface Pro X, Surface laptop 3, Surface Book 3 e Surface Pro 7.
 
-## Prerequisiti
+##  <a name="prerequisites"></a>Prerequisiti
 
 In questo documento si presuppone che sia stata distribuita correttamente una rete wireless che supporta 802.11 n (Wi-Fi 4) o versione successiva in base alle procedure consigliate per le procedure consigliate dei principali fornitori di apparecchiature.
 
-## Configurazione di Access Point per funzionalità di roaming ottimali
+##  <a name="configuring-access-points-for-optimal-roaming-capabilities"></a>Configurazione di Access Point per funzionalità di roaming ottimali
 
 Se si gestisce una rete wireless in genere accessibile da diversi tipi di dispositivi client, è consigliabile abilitare protocolli specifici su Access Point (APs) nella WLAN, come descritto in [roaming veloce con 802.11 k, 802.11 v e 802.11 r](https://docs.microsoft.com/windows-hardware/drivers/network/fast-roaming-with-802-11k--802-11v--and-802-11r). I dispositivi Surface possono sfruttare i seguenti protocolli wireless:
 
@@ -37,18 +37,18 @@ Se si gestisce una rete wireless in genere accessibile da diversi tipi di dispos
 
 I dispositivi Surface specifici possono anche usare i frame di gestione della transizione BSS "802.11 v", che funziona in modo molto simile a 802.11 k per fornire informazioni sulle vicinanze del candidato APs. Questi includono Surface Pro 7 +, Surface go, Surface Go 2, Surface Pro 7, Surface Pro X e Surface laptop 3. 
 
-## Gestione delle impostazioni utente
+##  <a name="managing-user-settings"></a>Gestione delle impostazioni utente
 
 Puoi ottenere funzionalità di roaming ottimali grazie a una rete ben progettata che supporta 802.11 r e 802.11 k in tutti i punti di accesso. Verificare che la rete sia configurata in modo corretto per consentire agli utenti la migliore esperienza wireless è l'approccio consigliato rispetto al tentativo di gestire le impostazioni utente nei singoli dispositivi. 
 
-### Impostazioni consigliate degli utenti e procedure consigliate
+###  <a name="recommended-user-settings-and-best-practices"></a>Impostazioni consigliate degli utenti e procedure consigliate
 
 In alcune situazioni, la modifica delle impostazioni avanzate della scheda di rete incorporati in dispositivi di Surface può facilitare una connessione più affidabile. Tieni presente tuttavia che l'impossibilità di connettersi a risorse wireless è più spesso dovuta a un problema di Access Point, un difetto di progettazione della rete o un problema di sito ambientale.
 
 > [!NOTE]
 > La modalità di mantenimento della superficie Pro o Surface Go può anche influire sulla potenza del segnale. Se si verifica una perdita di larghezza di banda, verificare che non si stia tenendo la parte superiore dello schermo, in cui si trova il ricevitore radio Wi-Fi. Anche se tenendo la parte superiore dello schermo non blocca i segnali wireless, può attivare il driver di dispositivo per avviare le modifiche che riducono la connettività.
 
-### Mantieni l'impostazione automatica predefinita per la funzionalità dual Bandwidth
+###  <a name="keep-default-auto-setting-for-dual-bandwidth-capability"></a>Mantieni l'impostazione automatica predefinita per la funzionalità dual Bandwidth
 
 Nella maggior parte dei dispositivi Surface è possibile configurare le impostazioni della scheda di rete client per connettersi solo ai punti di accesso wireless oltre 5 gigahertz (GHz), connettere solo oltre 2,4 GHz o consentire al sistema operativo di scegliere l'opzione migliore (impostazione automatica predefinita).
 
@@ -69,7 +69,7 @@ Tieni presente che 2,4 GHz presenta alcuni vantaggi superiori a 5 GHz: si estend
 
 È anche possibile attivare o disattivare l'impostazione della banda in base alle esigenze dell'ambiente. Ad esempio, gli utenti che vivono in edifici di appartamenti ad alta densità con più hotspot Wi-Fi, in mezzo alla presenza di dispositivi consumer tutti i broadcasting via 2,4 GHz, potrebbero avvantaggiarsi impostando il loro dispositivo Surface per connettersi solo a 5 GHz e quindi ripristinare l'auto quando necessario.
 
-### Impostazioni di aggressività del roaming su dispositivi Surface con adapter Intel 
+###  <a name="roaming-aggressiveness-settings-on-surface-devices-with-intel-adapters"></a>Impostazioni di aggressività del roaming su dispositivi Surface con adapter Intel 
 
 Gli utenti potrebbero voler selezionare una soglia di intensità del segnale che chiede al dispositivo di cercare un nuovo punto di accesso quando il segnale scende (aggressività del roaming). Per impostazione predefinita, i dispositivi Surface con gli adattatori Intel tentano di spostarsi in un nuovo punto di accesso se l'intensità del segnale scende al di sotto di **media** (72% di intensità del segnale). Si noti inoltre che le organizzazioni possono implementare protocolli wireless creati appositamente in più punti di accesso alla rete per facilitare il roaming degli ambienti di rete congestionati, come spiegato in precedenza in questa pagina. 
 
@@ -86,7 +86,7 @@ Mentre aumenta l'aggressività del roaming sopra il **medio** può produrre una 
 
 ![* Impostazioni di aggressività del roaming-Intel *](images/wifi-roaming-int.png) <br>
 
-### Impostazioni di aggressività del roaming in Surface go e Surface Pro X
+###  <a name="roaming-aggressiveness-settings-on-surface-go-and-surface-pro-x"></a>Impostazioni di aggressività del roaming in Surface go e Surface Pro X
 
 I lavoratori di prima linea che usano Surface go possono selezionare una soglia di intensità del segnale che chiede al dispositivo di cercare un nuovo punto di accesso quando l'intensità del segnale scende (aggressività del roaming). Per impostazione predefinita, i dispositivi di superficie tentano di spostarsi in un nuovo punto di accesso se l'intensità del segnale scende al di sotto di **media** (50%). Tieni presente che ogni volta che aumenti l'aggressività del roaming, acceleri il consumo di energia della batteria.
 
@@ -102,6 +102,6 @@ Abbandonare l'impostazione di aggressività del roaming nello stato predefinito,
 ![* Impostazioni di aggressività del roaming-QualComm *](images/wifi-roaming.png) <br>
 
 
-## Conclusione
+##  <a name="conclusion"></a>Conclusione
 
 I dispositivi Surface sono progettati con le impostazioni predefinite per una connettività wireless ottimale bilanciata a fianco della necessità di preservare la durata della batteria. Il modo più efficace per abilitare la connettività affidabile per i dispositivi Surface è attraverso una rete ben progettata che supporta 802.11 r e 802.11 k. Gli utenti possono modificare le impostazioni della scheda di rete o l'aggressività del roaming, ma devono essere eseguite solo in risposta a specifici fattori ambientali e ripristinare lo stato predefinito, se non si verificano miglioramenti evidenti.

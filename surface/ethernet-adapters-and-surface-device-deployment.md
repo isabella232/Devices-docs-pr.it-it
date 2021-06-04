@@ -28,7 +28,7 @@ Questo articolo fornisce indicazioni e risposte per facilitare l'esecuzione di u
 
 La distribuzione di rete nei dispositivi Surface può porre alcune sfide complesse agli amministratori di sistema. A causa dell'assenza di una scheda di rete Ethernet cablata nativa, gli amministratori devono fornire la connettività tramite una scheda Ethernet rimovibile.
 
-## Selezionare una scheda Ethernet per dispositivi Surface
+##  <a name="select-an-ethernet-adapter-for-surface-devices"></a>Selezionare una scheda Ethernet per dispositivi Surface
 
 
 Prima di affrontare le problematiche correlate a come avviare l'ambiente di distribuzione o al modo in cui i dispositivi verranno riconosciuti dalla soluzione di distribuzione, devi usare una scheda di rete cablata.
@@ -53,7 +53,7 @@ I dispositivi Ethernet seguenti sono supportati per l'avvio di rete con i dispos
 
 Sono supportate anche le schede Ethernet di terze parti per la distribuzione di rete, ma queste non supportano l'avvio PXE. Per usare una scheda Ethernet di terze parti, devi caricare i driver nell'immagine di avvio di distribuzione e avviare questa immagine di avvio da un dispositivo di archiviazione separato, come una chiavetta USB.
 
-## Avviare dispositivi Surface dalla rete
+##  <a name="boot-surface-devices-from-the-network"></a>Avviare dispositivi Surface dalla rete
 
 Per eseguire l'avvio dalla rete o da una chiavetta USB collegata, devi indicare al dispositivo Surface che l'avvio deve avvenire da un dispositivo di avvio alternativo. Puoi modificare l'ordine di avvio nel firmware del sistema per classificare in ordine di priorità i dispositivi di avvio USB oppure puoi indicare al firmware di eseguire l'avvio da un dispositivo di avvio alternativo durante il processo di avvio stesso.
 

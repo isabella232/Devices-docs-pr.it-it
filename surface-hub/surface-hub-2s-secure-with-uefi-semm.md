@@ -43,11 +43,11 @@ Usare Microsoft Surface UEFI Configurator per attivare o disattivare le impostaz
     - Avvio
     - Data/ora
 
-## Creare un'immagine di configurazione UEFI
+##  <a name="create-uefi-configuration-image"></a>Creare un'immagine di configurazione UEFI
 
 Diversamente da altri dispositivi Surface, non è possibile usare un file MSI o un'immagine PE Win per applicare queste impostazioni su Surface Hub 2S. Devi invece creare un'immagine USB per caricarla nel dispositivo. Per creare un'immagine di configurazione UEFI di Surface Hub 2S, scaricare e installare la versione più recente di Microsoft Surface UEFI Configurator dalla pagina [strumenti Surface per it](https://www.microsoft.com/download/details.aspx?id=46703) nell'area download Microsoft. Per altre informazioni sull'uso di UEFI e SEMM, vedere [modalità di gestione di Microsoft Surface Enterprise](https://docs.microsoft.com/surface/surface-enterprise-management-mode).
 
-## Per configurare UEFI su Surface Hub 2S
+##  <a name="to-configure-uefi-on-surface-hub-2s"></a>Per configurare UEFI su Surface Hub 2S
 
 1. Avviare il configuratore UEFI e nella prima schermata scegliere **pacchetto di configurazione**.<br><br>
 ![* Avviare il configuratore UEFI e scegliere il pacchetto di configurazione *](images/sh2-uefi1.png) <br> <br>
@@ -68,6 +68,6 @@ Diversamente da altri dispositivi Surface, non è possibile usare un file MSI o 
 9. Dopo aver completato la creazione del pacchetto, il configuratore visualizzerà gli ultimi due caratteri dell'identificazione personale del certificato. Questi caratteri sono necessari quando si importano nella configurazione in Surface Hub 2S.<br>
 ![* Configurazione corretta del pacchetto *](images/sh2-uefi10.png) <br>
 
-## Per eseguire l'avvio in UEFI
+##  <a name="to-boot-into-uefi"></a>Per eseguire l'avvio in UEFI
 
 Disattivare l'hub di Surface 2S. Premere e tenere premuto il pulsante **volume su** e premere il pulsante di **accensione** . Tenere premuto il pulsante volume su finché non viene visualizzato il menu UEFI.

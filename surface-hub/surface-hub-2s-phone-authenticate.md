@@ -29,7 +29,7 @@ Il login senza password semplifica l'accesso alle tue app, riunioni e file. Surf
 - [Abilitare l'accesso tramite chiave di sicurezza senza password](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-security-key)
 
 
-## Configurare l'accesso con l'app Microsoft Authenticator
+##  <a name="configure-sign-in-using-microsoft-authenticator-app"></a>Configurare l'accesso con l'app Microsoft Authenticator
 
 **Nota:** A partire da Windows 10 team 2020 Update, gli utenti possono usare gli alias di posta elettronica preferiti in Azure AD, nonché il nome dell'entità utente (UPN), per accedere con Microsoft Authenticator. Ad esempio, un utente può usare l'alias preferito (John.Doe@contoso.com) o il relativo UPN (jdoe@contoso.com) per accedere.
  
@@ -43,7 +43,7 @@ L'app Microsoft Authenticator consente di accedere a Surface hub usando il dispo
 3. Dall'app Microsoft Authenticator nel dispositivo mobile, [attivare e usare l'accesso telefonico](https://docs.microsoft.com/azure/active-directory/user-help/user-help-auth-app-sign-in#turn-on-and-use-phone-sign-in-for-your-work-or-school-account) per l'account di lavoro o dell'Istituto di istruzione.
 
  
-## Configurare l'accesso tramite le chiavi di sicurezza di FIDO2
+##  <a name="configure-sign-in-using-fido2-security-keys"></a>Configurare l'accesso tramite le chiavi di sicurezza di FIDO2
 
 > [!NOTE]
 >  L'accesso senza password all'hub Surface con le chiavi di sicurezza di FIDO2 richiede l'aggiornamento di Windows 10 team 2020.
@@ -53,7 +53,7 @@ L'app Microsoft Authenticator consente di accedere a Surface hub usando il dispo
  
 Puoi anche accedere a Surface hub usando una chiave di sicurezza FIDO2 fornita dall'organizzazione. 
 
-### Per configurare l'accesso tramite una chiave di sicurezza:
+###  <a name="to-configure-sign-in-using-a-security-key"></a>Per configurare l'accesso tramite una chiave di sicurezza:
 
 
 1. Nel PC accedere alla [https://myprofile.microsoft.com/](https://myprofile.microsoft.com/) pagina e accedere al proprio account di lavoro o dell'Istituto di istruzione.
@@ -65,7 +65,7 @@ Puoi anche accedere a Surface hub usando una chiave di sicurezza FIDO2 fornita d
 7. Nella pagina **chiave di sicurezza** assegnare un nome alla chiave di sicurezza, quindi selezionare **Avanti**.
 8. Selezionare **fine** per completare il processo.
 
-## Accesso a Surface Hub
+##  <a name="sign-in-to-surface-hub"></a>Accesso a Surface Hub
 
 Dopo aver configurato l'accesso senza password, è possibile usarlo per semplificare l'accessibilità delle app, delle riunioni e dei file nell'hub Surface:
 
@@ -75,7 +75,7 @@ Dopo aver configurato l'accesso senza password, è possibile usarlo per semplifi
 - Dopo aver effettuato l'accesso a Surface Hub, è possibile usare altre app senza dover eseguire di nuovo l'accesso finché non si seleziona **Termina sessione**. La selezione di **fine sessione** Elimina le credenziali, i file e i dati personali dal dispositivo. Per altre informazioni, Vedi [Termina sessione](finishing-your-surface-hub-meeting.md).
 
 
-## Scopri di più
+##  <a name="learn-more"></a>Scopri di più
 
 - [Opzioni di autenticazione con password per Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-passwordless)
 - [Accesso senza password con l'app Microsoft Authenticator](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-phone)

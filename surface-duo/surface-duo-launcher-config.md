@@ -27,7 +27,7 @@ ms.locfileid: "11326293"
 
 Surface Duo supporta Microsoft Launcher per le aziende, un'applicazione Android che consente agli utenti di personalizzare il telefono, organizzarsi in viaggio e sincronizzare facilmente calendario, attività, note e altro ancora tra i dispositivi mobili e i pc. Infatti, l'icona di avvio di Surface Duo è una versione personalizzata a due schermate di Microsoft Launcher che puoi modificare per definire le esperienze preferite nei dispositivi completamente gestiti per la tua organizzazione e consentire agli utenti alcune opzioni per personalizzare le proprie esperienze in questi dispositivi aziendali. Ad esempio, puoi selezionare le app che vuoi aggiungere alla schermata iniziale, distribuire uno sfondo di personalizzazione o nascondere una barra di ricerca consentendo allo stesso tempo agli utenti di abilitare la barra di ricerca se lo desideri.
 
-## Impostazioni di Microsoft Launcher
+##  <a name="microsoft-launcher-settings"></a>Impostazioni di Microsoft Launcher
 
 Microsoft Launcher include le impostazioni seguenti per personalizzare l'esperienza utente finale:
 

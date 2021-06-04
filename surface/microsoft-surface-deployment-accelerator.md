@@ -32,7 +32,7 @@ Lo strumento SDA open source basato su script sfrutta Windows Assessment and Dep
 
 L'immagine risultante corrisponde strettamente alla configurazione delle immagini BMR (Bare Metal Recovery), senza applicazioni preinstallate come Microsoft Office o l'applicazione Surface UWP.
 
-## Requisiti
+##  <a name="requirements"></a>Requisiti
 
 1. Un'unità thumb USB di dimensioni almeno 16 GB. L'unità USB verrà formattata.
 2. Un file con estensione ISO con Windows 10 Pro o Windows 10 Enterprise. Lo strumento per la creazione di elementi multimediali può essere usato per scaricare Windows 10 e creare un file ISO. Per altre informazioni, vedere [scaricare Windows 10](https://www.microsoft.com/software-download/windows10).
@@ -40,7 +40,7 @@ L'immagine risultante corrisponde strettamente alla configurazione delle immagin
 
 Vedere la sezione [prerequisiti](https://github.com/microsoft/SurfaceDeploymentAccelerator/blob/master/README.md#prerequisites) del documento README per un elenco dettagliato dei requisiti.
 
-## Come eseguire l'SDA
+##  <a name="how-to-run-the-sda"></a>Come eseguire l'SDA
 
 **Per eseguire SDA:**
 
@@ -75,7 +75,7 @@ Vedere la sezione [prerequisiti](https://github.com/microsoft/SurfaceDeploymentA
 > [!IMPORTANT]
 > L'avvio dall'unità USB inizierà immediatamente l'installazione di Windows 10. Assicurarsi che il dispositivo sia pronto prima di inserire l'USB e riavviare. 
 
-## Collegamenti correlati
+##  <a name="related-links"></a>Collegamenti correlati
 
  - [Strumento di distribuzione delle immagini open source rilasciato su GitHub](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/open-source-image-deployment-tool-released-on-github/ba-p/1314115)
  - [Scaricare e installare Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install)

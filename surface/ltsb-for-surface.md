@@ -35,7 +35,7 @@ I dispositivi Surface per uso generale sono destinati a essere eseguiti sul cana
 
 I dispositivi di superficie in scenari specializzati, ad esempio i PC che controllano attrezzature mediche, sistemi di punti vendita e sportelli bancomat, potrebbero considerare l'uso di LTSC. Questi sistemi per scopi specifici in genere eseguono una singola attività e non richiedono gli aggiornamenti delle funzionalità con la frequenza di altri dispositivi dell'organizzazione. 
 
-## Argomenti correlati
+##  <a name="related-topics"></a>Argomenti correlati
 
 - [Blog di Surface per professionisti IT](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/bg-p/SurfaceITPro)
 

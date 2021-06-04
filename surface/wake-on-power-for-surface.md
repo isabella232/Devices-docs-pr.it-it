@@ -48,14 +48,14 @@ La funzionalità riattiva in Power è disponibile nei dispositivi seguenti:
 - Surface Pro X 
 
 
-## Panoramica e prerequisiti
+##  <a name="overview-and-prerequisites"></a>Panoramica e prerequisiti
 
 Surface UEFI Configurator consente di salvare singole impostazioni UEFI in un pacchetto di Windows Installer. msi per la distribuzione in dispositivi di destinazione. 
 
 > [!NOTE]
 > Questo articolo presuppone che tu sappia usare SEMM. Per altre informazioni, vedere la documentazione sulla [modalità di gestione di Surface Enterprise (SEMM)](surface-enterprise-management-mode.md) .
 
-## Per abilitare la riattivazione in Power
+##  <a name="to-enable-wake-on-power"></a>Per abilitare la riattivazione in Power
 
 1.  Scaricare l'ultima versione di [Surface UEFI Configurator](https://www.microsoft.com/download/confirmation.aspx?id=46703).
 2.  Accedere al dispositivo Surface come amministratore, aprire il **Configuratore di Surface UEFI**, selezionare **dispositivi Surface**e quindi fare clic su **Avanti**.
@@ -76,7 +76,7 @@ Surface UEFI Configurator consente di salvare singole impostazioni UEFI in un pa
     > Se è la prima volta che si forniscono impostazioni al dispositivo, verrà richiesto di specificare anche gli ultimi due caratteri dell'identificazione personale del certificato. 
 9.  Salvare il pacchetto MSI. 
 
-## Applicare il pacchetto MSI 
+##  <a name="apply-the-msi-package"></a>Applicare il pacchetto MSI 
 
 Puoi applicare il pacchetto MSI ai dispositivi della rete usando strumenti di distribuzione del software come Microsoft endpoint Configuration Manager. Questa procedura include i passaggi per installare il pacchetto nel computer locale. 
 
@@ -96,7 +96,7 @@ Puoi applicare il pacchetto MSI ai dispositivi della rete usando strumenti di di
 
 La riattivazione dell'alimentazione è ora configurata. Per verificare le impostazioni, disattivare il dispositivo, scollegare l'alimentazione e quindi riconnettere l'alimentazione. Il dispositivo dovrebbe iniziare automaticamente. 
 
-## Riferimenti
+##  <a name="references"></a>Riferimenti
 
 Per altre informazioni, vedere gli articoli seguenti. 
 

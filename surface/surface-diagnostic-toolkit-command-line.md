@@ -25,7 +25,7 @@ L'esecuzione di Surface Diagnostic Toolkit (SDT) al prompt dei comandi richiede 
 >[!NOTE]
 >Per eseguire SDT con i comandi, devi aver eseguito l'accesso all'account amministratore o a un account membro del gruppo Administrator nel dispositivo Surface.
 
-## Esecuzione della console dell'app SDT
+##  <a name="running-sdt-app-console"></a>Esecuzione della console dell'app SDT
 
 Scarica e installa la console dell'app SDT dalla pagina [di download di Surface Tools per IT.](https://www.microsoft.com/download/details.aspx?id=46703) Puoi usare il prompt dei comandi di Windows (cmd.exe) o Windows PowerShell per: 
 
@@ -49,7 +49,7 @@ Comando | Note
 >[!NOTE]
 >Per eseguire la console dell'app SDT in remoto nei dispositivi di destinazione, puoi usare uno strumento di gestione della configurazione come Microsoft Endpoint Configuration Manager. In alternativa, puoi creare un file ZIP contenente l'app console e i comandi della console appropriati e distribuirti in base ai processi di distribuzione software dell'organizzazione. 
 
-## Esecuzione di Best Practice Analyzer 
+##  <a name="running-best-practice-analyzer"></a>Esecuzione di Best Practice Analyzer 
 
 Puoi eseguire test BPA tra componenti chiave come BitLocker, Avvio protetto e Trusted Platform Module (TPM) e quindi output dei risultati in un file condivisibile. Lo strumento genera una serie di tabelle con intestazioni codificate a colori e descrittori di condizioni, insieme a indicazioni su come affrontare la risoluzione del problema. 
 
@@ -57,7 +57,7 @@ Puoi eseguire test BPA tra componenti chiave come BitLocker, Avvio protetto e Tr
 - Arancione indica che il componente non è in esecuzione in una condizione ottimale (non ottimale).
 - Il rosso indica che il componente è in uno stato anomalo. 
 
-### Output dei risultati BPA di esempio
+###  <a name="sample-bpa-results-output"></a>Output dei risultati BPA di esempio
 
 <table>
 <tr><th colspan="2"><font color="00ff00">BitLocker</font></th></tr>

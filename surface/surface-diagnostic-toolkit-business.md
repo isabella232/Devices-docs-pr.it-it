@@ -42,7 +42,7 @@ Modalità |  Scenari principali | Download | Scopri di più
 Modalità desktop |  Aiutare gli utenti a eseguire SDT sui dispositivi Surface per risolvere i problemi.<br>Creare un pacchetto personalizzato da distribuire in uno o più dispositivi Surface, consentendo agli utenti di selezionare registri specifici per la raccolta e l'analisi. | Pacchetto MSI distribuibili di SDT:<br>Programma di installazione di Microsoft Surface Diagnostic Toolkit for business<br>[Strumenti di Surface per IT](https://www.microsoft.com/download/details.aspx?id=46703) | [Usare il Toolkit di diagnostica Surface in modalità desktop](surface-diagnostic-toolkit-desktop-mode.md)
 Riga di comando |  Risolvere direttamente i dispositivi Surface in remoto senza interazione con l'utente, usando strumenti standard come Configuration Manager. Include i comandi seguenti:<br>`-DataCollector` raccoglie tutti i file di log<br>`-bpa` esegue la diagnostica sanitaria con Best Practice Analyzer.<br>`-windowsupdate` Controlla Windows Update per gli aggiornamenti mancanti del firmware o del driver.<br>`-warranty` Controlla le informazioni sulla garanzia. <br><br>| App console SDT:<br>Console app Microsoft Surface Diagnostics<br>[Strumenti di Surface per IT](https://www.microsoft.com/download/details.aspx?id=46703) | [Eseguire il Toolkit di diagnostica superficie usando i comandi](surface-diagnostic-toolkit-command-line.md)
 
-## Dispositivi supportati 
+##  <a name="supported-devices"></a>Dispositivi supportati 
 
 SDT for business è supportato nei dispositivi Surface 3 e versioni successive, tra cui:
 
@@ -165,7 +165,7 @@ In questo modo è possibile selezionare o rimuovere l'opzione per eseguire gli a
 - [Usare Toolkit di diagnostica per Surface per le aziende in modalità desktop](surface-diagnostic-toolkit-desktop-mode.md)
 - [Usare i comandi con Surface Diagnostic Toolkit for business](surface-diagnostic-toolkit-command-line.md)
 
-## Modifiche e aggiornamenti
+##  <a name="changes-and-updates"></a>Modifiche e aggiornamenti
 
 ### Versione 2.131.139.0
 

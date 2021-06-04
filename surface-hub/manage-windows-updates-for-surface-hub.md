@@ -23,7 +23,7 @@ ms.locfileid: "11174726"
 
 Le nuove versioni del sistema operativo Surface Hub vengono pubblicate tramite Windows Update, proprio come le versioni di Windows10. In questa pagina sono illustrate le procedure consigliate per la gestione degli aggiornamenti per i dispositivi Surface Hub. 
 
-## Windows Update for Business
+##  <a name="windows-update-for-business"></a>Windows Update for Business
 
 Windows Update for business è un set di funzionalità progettate per consentire alle aziende un controllo aggiuntivo su come e quando Windows Update installa i rilasci, riducendo i costi di gestione dei dispositivi. Con questo metodo, i dispositivi Surface Hub sono direttamente connessi al servizio Windows Update di Microsoft.
 
@@ -123,12 +123,12 @@ Per tutti i nuovi dispositivi Surface Hub è impostata una finestra di manutenzi
 Per modificare la finestra di manutenzione usando MDM, imposta il nodo **MaintenanceHoursSimple** nel [provider di servizi di configurazione di SurfaceHub](https://msdn.microsoft.com/library/windows/hardware/mt608323.aspx). Vedi [Gestire le impostazioni con un provider MDM](manage-settings-with-mdm-for-surface-hub.md) per maggiori dettagli.
 
 
-## Altre informazioni
+##  <a name="learn-more"></a>Altre informazioni
 
 - [Post di Blog: manutenzione, volo e gestione degli aggiornamenti per Surface Hub (con Intune, ovviamente!)](https://blogs.technet.microsoft.com/y0av/2018/05/31/7-3/)
 
 
-## Argomenti correlati
+##  <a name="related-topics"></a>Argomenti correlati
 
 [Gestire Microsoft Surface Hub](manage-surface-hub.md)
 

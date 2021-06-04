@@ -607,7 +607,7 @@ In questa sezione sono elencati i codici di stato, il mapping, i messaggi utente
 </tbody>
 </table>
 
-## Supporto tecnico
+##  <a name="contact-support"></a>Supporto tecnico
 
 Se si hanno domande o si ha bisogno di assistenza, è possibile [creare una richiesta di supporto](https://support.microsoft.com/supportforbusiness/productselection).
 

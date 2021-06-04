@@ -34,7 +34,7 @@ Puoi aggiungere il supporto per ogni protocollo eseguendo un piccolo pacchetto M
 
 Puoi scaricare i file di installazione MSI per PEAP, EAP-FAST o Cisco LEAP in un singolo file di archivio ZIP dall'Area download Microsoft. Per scaricare questo file, passa alla pagina degli [strumenti di Surface per l'IT](https://www.microsoft.com/download/details.aspx?id=46703) nell'Area download Microsoft, fai clic su **Download** e quindi seleziona il file **Cisco EAP-Supplicant Installer.zip**.
 
-## Distribuire PEAP, EAP-FAST o Cisco LEAP con MDT
+##  <a name="deploy-peap,-eap-fast,-or-cisco-leap-with-mdt"></a>Distribuire PEAP, EAP-FAST o Cisco LEAP con MDT
 
 
 Se stai già eseguendo una distribuzione di Windows nei dispositivi Surface nella tua organizzazione, l'aggiunta dei file di installazione per ogni protocollo alla condivisione di distribuzione e la configurazione dell'installazione automatica durante la distribuzione sono operazioni rapide e semplici. Puoi addirittura configurare una sequenza di attività per l'aggiornamento dei dispositivi Surface distribuiti in precedenza per offrire supporto per questi protocolli usando lo stesso processo.
@@ -83,7 +83,7 @@ Per specificare i protocolli in modo esplicito, segui questi passaggi:
 
 6.  Ripeti i passaggi da 2 a 5 per ogni protocollo desiderato.
 
-## Distribuire PEAP, EAP-FAST o Cisco LEAP con Configuration Manager
+##  <a name="deploy-peap,-eap-fast,-or-cisco-leap-with-configuration-manager"></a>Distribuire PEAP, EAP-FAST o Cisco LEAP con Configuration Manager
 
 
 Per le organizzazioni che gestiscono i dispositivi Surface con Configuration Manager, la distribuzione del supporto PEAP, EAP-FAST o Cisco LEAP per tali dispositivi è ancora più semplice. È sufficiente importare ogni file MSI come applicazione dall'area Raccolta software e quindi configurare una distribuzione nella raccolta di dispositivi Surface.
