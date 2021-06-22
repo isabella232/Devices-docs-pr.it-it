@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 12/14/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 5e2eaa88fe0e5677c78cb5a7d49802ed71d4b902
-ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
+ms.openlocfilehash: 472dc41bd73ace90cccdeb4e52884401c2f9d6d7
+ms.sourcegitcommit: 267e12897efd9d11f8c7303eaf780632741cfe77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "11576746"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "11613855"
 ---
 # <a name="migrate-to-windows-10-pro-or-enterprise-on-surface-hub-2"></a>Eseguire la migrazione a Windows 10 Pro o Enterprise in Surface Hub 2
 
@@ -28,11 +28,11 @@ Surface Hub 2S viene fornito con Windows 10 Team installato. Questa edizione per
 > Questo processo di migrazione richiede di seguire la procedura specifica descritta in questo articolo. Prima di continuare, leggere [Componenti della soluzione e](#solution-components) Flusso di lavoro di migrazione e [installazione.](#migration-and-installation-workflow-summary)
 
 > [!NOTE]
-> Quando si installa Windows 10 Pro o Enterprise, è necessaria una nuova licenza separata dalla licenza Windows 10 Team esistente.
+> Quando installi Windows 10 Pro o Enterprise in Surface Hub 2S, devi disporre di una nuova licenza distinta dalla licenza Windows 10 Team esistente fornita con il dispositivo.
 
 Avvia la migrazione da Windows 10 Team usando un PC separato e lo strumento *di configurazione UEFI di Surface* scaricabile. Lo strumento crea un pacchetto contenente una nuova impostazione UEFI che si applica al Surface Hub 2S.  
 
-Surface UEFI Configurator funziona come interfaccia in Surface Enterprise Management Mode (SEMM). Consente la gestione centralizzata delle impostazioni del firmware nei dispositivi Surface in un ambiente aziendale. Per altre informazioni, vedi Modalità di [gestione di Microsoft Surface Enterprise.](https://docs.microsoft.com/surface/surface-enterprise-management-mode)
+Surface UEFI Configurator funziona come interfaccia in Surface Enterprise Management Mode (SEMM). Consente la gestione centralizzata delle impostazioni del firmware nei dispositivi Surface in un ambiente aziendale. Per altre informazioni, vedi Modalità di [gestione di Microsoft Surface Enterprise.](/surface/surface-enterprise-management-mode)
  
 ## <a name="solution-components"></a>Componenti della soluzione
 
@@ -79,7 +79,7 @@ Prima di eseguire la Surface Hub da Windows 10 Team a Windows 10 Desktop, è nec
 1. Nel Surface Hub 2S, accedere come **amministratore**.
 
     >[!Note]
-    > Se non conosci il nome utente o la password di amministratore, dovrai reimpostare il dispositivo. Per ulteriori informazioni, vedere [Reset and recovery for Surface Hub 2S.](https://docs.microsoft.com/surface-hub/surface-hub-2s-recover-reset)
+    > Se non conosci il nome utente o la password di amministratore, dovrai reimpostare il dispositivo. Per ulteriori informazioni, vedere [Reset and recovery for Surface Hub 2S.](/surface-hub/surface-hub-2s-recover-reset)
 
 1. Vai a **Tutte le app**  >  **Impostazioni**  >  **Update e Security Windows**  >  **Update**e installa tutti gli aggiornamenti.
 1. Riavvia il dispositivo.
@@ -111,9 +111,9 @@ La modalità di ottenere un certificato dipende dalle dimensioni o dalla comples
 
 - Le aziende di medie dimensioni e altri spesso scelgono di ottenere certificati dai provider di partner. Questa opzione è consigliata per le organizzazioni che non dispongono di competenze IT o che non dispongono di un team dedicato alla sicurezza IT.
 
-- In alternativa, è possibile generare un certificato autofirmato utilizzando uno script di PowerShell. Per altre informazioni, vedi i requisiti [dei certificati per la modalità di gestione di Surface Enterprise](https://docs.microsoft.com/surface/surface-enterprise-management-mode#surface-enterprise-management-mode-certificate-requirements). Oppure puoi usare PowerShell per creare un certificato personalizzato. Per ulteriori informazioni, vedere la [documentazione relativa ai certificati autofirmati.](https://docs.microsoft.com/dotnet/core/additional-tools/self-signed-certificates-guide#create-a-self-signed-certificate)
+- In alternativa, è possibile generare un certificato autofirmato utilizzando uno script di PowerShell. Per altre informazioni, vedi i requisiti [dei certificati per la modalità di gestione di Surface Enterprise](/surface/surface-enterprise-management-mode#surface-enterprise-management-mode-certificate-requirements). Oppure puoi usare PowerShell per creare un certificato personalizzato. Per ulteriori informazioni, vedere la [documentazione relativa ai certificati autofirmati.](/dotnet/core/additional-tools/self-signed-certificates-guide#create-a-self-signed-certificate)
 
-Il pacchetto SEMM creato da Surface UEFI Configurator deve essere protetto con un certificato. Il certificato verifica la firma dei file di configurazione prima di poter applicare le impostazioni UEFI. Per ulteriori informazioni, vedere la [documentazione SEMM.](https://docs.microsoft.com/surface/surface-enterprise-management-mode)
+Il pacchetto SEMM creato da Surface UEFI Configurator deve essere protetto con un certificato. Il certificato verifica la firma dei file di configurazione prima di poter applicare le impostazioni UEFI. Per ulteriori informazioni, vedere la [documentazione SEMM.](/surface/surface-enterprise-management-mode)
  
 ### <a name="create-a-semm-package"></a>Creare un pacchetto SEMM
 
@@ -176,11 +176,11 @@ Per modificare le impostazioni UEFI al termine della migrazione, applica un altr
 
 #### <a name="if-you-work-with-partners"></a>Se si collabora con i partner
 
-Se l'azienda esternalizza la migrazione di Surface Hub 2 a Windows 10 Pro o Enterprise, è possibile che il partner trasferisca all'utente il certificato SEMM, il pacchetto SEMM e la password UEFI. In caso contrario, dopo aver eseguito la migrazione dell'hub, puoi annullare immediatamente la registrazione da SEMM. Questo passaggio consente l'amministrazione locale di UEFI e il trasferimento del dispositivo a un'altra parte. È comunque consigliabile usare una password UEFI, che può essere configurata dopo la migrazione. Per altre informazioni, vedi [Gestire le impostazioni UEFI di Surface.](https://docs.microsoft.com/surface/manage-surface-uefi-settings) 
+Se l'azienda esternalizza la migrazione di Surface Hub 2 a Windows 10 Pro o Enterprise, è possibile che il partner trasferisca all'utente il certificato SEMM, il pacchetto SEMM e la password UEFI. In caso contrario, dopo aver eseguito la migrazione dell'hub, puoi annullare immediatamente la registrazione da SEMM. Questo passaggio consente l'amministrazione locale di UEFI e il trasferimento del dispositivo a un'altra parte. È comunque consigliabile usare una password UEFI, che può essere configurata dopo la migrazione. Per altre informazioni, vedi [Gestire le impostazioni UEFI di Surface.](/surface/manage-surface-uefi-settings) 
 
 #### <a name="to-roll-back-to-windows-10-team"></a>Per eseguire il rollback a Windows 10 Team
 
-Se si sceglie di ripristinare l'Windows 10 Team dopo la migrazione, come descritto più avanti [in questo](#to-roll-back-to-windows-10-team)articolo, è consigliabile annullare la registrazione dell'hub da SEMM. Per altre informazioni, vedi [Annullare la registrazione dei dispositivi Surface da SEMM.](https://docs.microsoft.com/surface/unenroll-surface-devices-from-semm)
+Se si sceglie di ripristinare l'Windows 10 Team dopo la migrazione, come descritto più avanti [in questo](#to-roll-back-to-windows-10-team)articolo, è consigliabile annullare la registrazione dell'hub da SEMM. Per altre informazioni, vedi [Annullare la registrazione dei dispositivi Surface da SEMM.](/surface/unenroll-surface-devices-from-semm)
 
 #### <a name="save-the-semm-package-to-a-usb-drive"></a>Salvare il pacchetto SEMM in un'unità USB
 
@@ -208,9 +208,9 @@ Se si sceglie di ripristinare l'Windows 10 Team dopo la migrazione, come descrit
 
 - La soluzione di creazione di immagini corrente.
 
-- [Surface Deployment Accelerator](https://docs.microsoft.com/surface/microsoft-surface-deployment-accelerator). Usa questo strumento per creare un'immagine Windows 10 di avvio. L'immagine può includere tutti gli aggiornamenti Windows 10, Microsoft Office, altre app e i driver e il firmware necessari.
+- [Surface Deployment Accelerator](/surface/microsoft-surface-deployment-accelerator). Usa questo strumento per creare un'immagine Windows 10 di avvio. L'immagine può includere tutti gli aggiornamenti Windows 10, Microsoft Office, altre app e i driver e il firmware necessari.
 
-- Unità flash USB che contiene un'Windows 10 Pro o Enterprise immagine. Installa quindi [driver e firmware per Windows 10 Pro e Enterprise](https://www.microsoft.com/download/details.aspx?id=101974) in Surface Hub 2.
+- Unità flash USB che contiene un'Windows 10 Pro o Enterprise immagine. Questa opzione non sarà disponibile Wi-Fi dopo l'installazione della Configurazione guidata. Al termine dell'installazione, installa i driver [Surface Hub 2](https://www.microsoft.com/download/details.aspx?id=101974) e il firmware necessari per Windows 10 Pro e Enterprise nel dispositivo.
  
 La procedura seguente mostra come creare un'unità flash USB dal supporto di installazione e quindi aggiungere i file del pacchetto SEMM e i driver e il firmware per Windows 10 Pro e il sistema operativo Enterprise in un file MSI Surface Hub 2. Se si utilizza un altro metodo di distribuzione, passare alla sezione Aggiornamento UEFI in [Surface Hub 2S](#update-uefi-on-surface-hub-2s-to-enable-os-migration) per abilitare la migrazione del sistema operativo di questo articolo.
 
@@ -311,7 +311,7 @@ Per configurare Surface Hub 2S come dispositivo di produttività personale, vede
 Se vuoi ripristinare il dispositivo in Windows 10 Team, vedi Reimpostazione e ripristino [per Surface Hub 2S.](surface-hub-2s-recover-reset.md)
 
 > [!NOTE]
-> Prima di eseguire il rollback a Windows 10 Team, è consigliabile annullare la registrazione della Surface Hub da SEMM. Per altre informazioni, vedi [Annullare la registrazione dei dispositivi Surface da SEMM.](https://docs.microsoft.com/surface/unenroll-surface-devices-from-semm)
+> Prima di eseguire il rollback a Windows 10 Team, è consigliabile annullare la registrazione della Surface Hub da SEMM. Per altre informazioni, vedi [Annullare la registrazione dei dispositivi Surface da SEMM.](/surface/unenroll-surface-devices-from-semm)
 
 ## <a name="version-history"></a>Cronologia versioni
 

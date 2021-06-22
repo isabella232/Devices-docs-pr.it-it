@@ -13,72 +13,83 @@ ms.topic: article
 ms.reviewer: jesko
 manager: laurawi
 ms.audience: itpro
-ms.date: 3/19/2021
-ms.openlocfilehash: 9c3302616de97cf60b7d750948fed653456a7cba
-ms.sourcegitcommit: 6c362c5d5f67449f1adf4618847093eaf6ad087b
+ms.date: 6/04/2021
+ms.openlocfilehash: 83989461ca557d27740252149418056688774d3f
+ms.sourcegitcommit: 267e12897efd9d11f8c7303eaf780632741cfe77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "11442890"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "11613801"
 ---
 # <a name="wake-on-lan-for-surface-devices"></a>Riattivazione LAN per i dispositivi Surface
 
-I dispositivi Surface che usano una scheda Surface Ethernet per connettersi a una rete cablata possono sfruttare riattivazione LAN (WOL) da Connected Standby. Con WOL, puoi riattivare in remoto i dispositivi ed eseguire automaticamente attività di gestione usando soluzioni di gestione come Microsoft Endpoint Manager/Microsoft Intune.
+Per mantenere i dispositivi completamente aggiornati, gli amministratori IT devono essere in grado di gestire i dispositivi quando non sono in uso, in genere durante le finestre di manutenzione notturne. Wake on LAN (WOL) consente agli amministratori di riattivare in remoto i dispositivi ed eseguire automaticamente attività di gestione con Microsoft Endpoint Manager o soluzioni di terze parti.
 
-## <a name="wol-supported-devices"></a>Dispositivi supportati da WOL
+## <a name="requirements"></a>Requisiti
 
+I dispositivi devono essere connessi all'alimentazione CA e disporre di una connessione cablata con una delle seguenti schede Ethernet compatibili:
+
+- Scheda Ethernet Surface USB 3.0 Gigabit
 - Scheda Surface Ethernet
 - Surface USB-C to Ethernet and USB Adapter
+- Hub adattatore da viaggio USB-C Microsoft
+- Dock Surface
 - Surface Dock 2
-- Surface Pro 6 e versioni successive
-- Surface Book (tutte le generazioni)
-- Surface Laptop (tutte le generazioni)
-- Surface Go (tutte le generazioni)
-- Surface Studio 2 (vedi Appendice)
 
+> [!NOTE]
+> Surface Dock 2 offre il miglior supporto per Wake on LAN senza la necessità di ulteriori configurazioni IT. Per altre informazioni, vedi [Wake on LAN per Surface Dock 2](wake-on-lan-surface-dock2.md)
 
-## <a name="using-surface-wol"></a>Uso di Surface WOL
+## <a name="how-it-works"></a>Come funziona
 
-Gli amministratori IT possono attivare i dispositivi usando una richiesta wake on LAN (pacchetto magico) contenente l'indirizzo MAC del computer di destinazione. Per inviare un pacchetto magico e riattivare un dispositivo utilizzando WOL, devi conoscere l'indirizzo MAC del dispositivo di destinazione e della scheda Ethernet. Poiché il pacchetto magico non utilizza il protocollo di rete IP, non è possibile utilizzare l'indirizzo IP o il nome DNS del dispositivo.
+Quando non sono in uso, i dispositivi Surface entrano in uno stato inattivo e a basso consumo noto come Standby moderno o Standby connesso. Gli amministratori IT possono attivare in remoto i dispositivi usando una richiesta di riattivazione (pacchetto magico) che contiene l'indirizzo MAC (Media Access Control) del dispositivo Surface di destinazione. Molte soluzioni di gestione, ad esempio Microsoft Endpoint Configuration Manager e app Microsoft Store di terze parti, forniscono il supporto incorporato per WOL. Per ulteriori informazioni sui dispositivi di attivazione con Endpoint Configuration Manager, vedere [Configure Wake on LAN - Configuration Manager.](/mem/configmgr/core/clients/deploy/configure-wake-on-lan)
 
-Molte soluzioni di gestione, ad esempio Microsoft Endpoint Configuration Manager e le app di Microsoft Store di terze parti, offrono supporto incorporato per WOL. Tieni presente che i dispositivi devono essere in modalità Standby connesso (sospensione) e connessi all'alimentazione CA. Per ulteriori informazioni sui dispositivi di attivazione con Endpoint Configuration Manager, vedere [Configure Wake on LAN - Configuration Manager.](https://docs.microsoft.com/mem/configmgr/core/clients/deploy/configure-wake-on-lan)
+Il supporto per Wake on LAN varia a seconda dello stato di sospensione: Standby connesso o Ibernazione (stato di alimentazione S4).
 
+## <a name="connected-standby"></a>Standby connesso
 
-### <a name="to-check-wol-is-enabled-on-your-device"></a>Per verificare che WOL sia abilitato nel dispositivo
+Per impostazione predefinita, Windows 10 supporta Wake on LAN per i dispositivi Surface in Standby connesso.
 
-1. Nel dispositivo connesso Ethernet selezionare la scheda di rete e quindi scegliere **Proprietà**.
+### <a name="supported-surface-devices---connected-standby"></a>Dispositivi Surface supportati - Standby connesso
 
-   > [!div class="mx-imgBorder"]
-   > ![Scheda Surface Ethernet](images/surface-ethernet.png)
+- Surface Laptop 4 (solo processori Intel)
+- Surface Laptop 3 (solo processori Intel)
+- Surface Pro 7+
+- Surface Pro 7
+- Surface Pro X
+- Surface Go 2
+- Surface Laptop Go
+- Surface Book 3
 
-2. Selezionare **Configura**  >  **avanzate**.
-3. Scorri fino **a Modern Standby WoL Magic Packet** e assicurati che **l'opzione Enabled** sia selezionata.
+## <a name="hibernation"></a>Ibernazione
 
-     ![Verificare che IL SERVIZIO SIA abilitato nel dispositivo](images/ethernet-wol-setting.png)
+Per riattivare i dispositivi dall'ibernazione è necessario abilitare un'impostazione dei criteri UEFI tramite la modalità di gestione di [Surface Enterprise](surface-enterprise-management-mode.md) (SEMM) (non necessaria per i dispositivi connessi a Surface Dock 2).
 
-## <a name="appendix-surface-studio-2"></a>Appendice: Surface Studio 2
+### <a name="supported-surface-devices---hibernation"></a>Dispositivi Surface supportati - Ibernazione
 
-Per abilitare WOL in Surface Studio 2, usa la procedura seguente.
+- Surface Laptop 4 (solo processori Intel)
+- Surface Laptop 3 (solo processori Intel)
+- Surface Pro 7+
+- Surface Pro 7
+- Surface Laptop Go
+- Surface Book 3
 
-1. Creare le seguenti chiavi del Registro di sistema:
+### <a name="to-enable-wake-on-lan-uefi-setting"></a>Per abilitare l'impostazione UEFI Wake on LAN
 
-   ```console
-   ; Set CONNECTIVITYINSTANDBY to 1:
-   [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\F15576E8-98B7-4186-B944-EAFA664402D9]
-   "Attributes"=dword:00000001
-   ; Set EnforceDisconnectedStandby to 0 and AllowSystemRequiredPowerRequests to 1:
-   [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
-   "EnforceDisconnectedStandby"=dword:00000000
-   "AllowSystemRequiredPowerRequests"=dword:00000001
-   ```
+Per abilitare l'impostazione UEFI Wake on LAN, devi registrare i dispositivi di destinazione in SEMM, creare un pacchetto di configurazione e applicare il pacchetto ai dispositivi. Per ulteriori informazioni, fai riferimento a:
 
-2. Eseguire il comando seguente
+- [Surface Enterprise Management Mode](surface-enterprise-management-mode.md)
+- [Registrare e configurare i dispositivi Surface con SEMM](enroll-and-configure-surface-devices-with-semm.md)
 
-    ```powercfg /SETACVALUEINDEX SCHEME_BALANCED SUB_NONE CONNECTIVITYINSTANDBY 1```
+1. Scaricare e installare [**Surface UEFI Configurator**](https://www.microsoft.com/download/details.aspx?id=46703).
+2. Selezionare **Start**  >  **Configuration Package**  >  **Create**+ Certificate  > **Protection**.
+3. Passare a **Impostazioni avanzate e** impostare Wake on **LAN** su **On.**
+4. Applica il pacchetto ai dispositivi di destinazione.
 
+    > [!div class="mx-imgBorder"]
+    > ![Abilita l'impostazione dei criteri UEFI wake on LAN](images/wol-uefi.png)
 
 ## <a name="learn-more"></a>Altre informazioni
 
+- [Wake on LAN per Surface Dock 2](wake-on-lan-surface-dock2.md)
 - [Da MICROSOFT Surface USB-C a Ethernet e adattatore USB](https://www.microsoft.com/p/surface-usb-c-to-ethernet-and-usb-adapter/8wt81cglrblp?)
-
 - [Scheda Ethernet Surface USB 3.0 Gigabit](https://www.microsoft.com/p/surface-usb-30-gigabit-ethernet-adapter/8xn9fqvzbvq0?)

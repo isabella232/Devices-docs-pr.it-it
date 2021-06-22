@@ -1,6 +1,6 @@
 ---
 title: Nozioni fondamentali del sistema operativo (Surface Hub)
-description: Questo argomento illustra aspetti univoci del sistema operativo Windows 10 Team e in che modo differisce da Windows 10 Enterprise.
+description: In questo argomento vengono illustrati aspetti univoci del Windows 10 Team sistema operativo e le differenze rispetto a Windows 10 Enterprise.
 keywords: cronologia delle modifiche
 ms.prod: surface-hub
 ms.sitesec: library
@@ -11,20 +11,20 @@ ms.date: 03/23/2021
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: 9c76f9405146c5cda4afe6b46ce7e1cce0062682
-ms.sourcegitcommit: 88ce9e77afdc3d09984edc05286cd0f1eb054223
+ms.openlocfilehash: 54fe39fe35a63d27447fb0b4a01642f249475afc
+ms.sourcegitcommit: 267e12897efd9d11f8c7303eaf780632741cfe77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "11448300"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "11613815"
 ---
 # <a name="operating-system-essentials-surface-hub"></a>Nozioni fondamentali del sistema operativo (Surface Hub)
 
 Il sistema operativo di Surface Hub, Windows 10 Team, è basato su Windows 10 Enterprise e fornisce un supporto avanzato per la gestione aziendale, la sicurezza e altre funzionalità. Esistono tuttavia alcune importanti differenze tra le due versioni. Mentre l'edizione Enterprise è progettata per i PC, Windows 10 Team è completamente progettato per gli schermi di grandi dimensioni e le sale riunioni. Durante la valutazione dei requisiti di sicurezza e di gestione per Surface Hub, è consigliabile considerarlo come un nuovo sistema operativo. Questo articolo illustra le principali differenze tra Windows 10 Team in Surface Hub e Windows 10 Enterprise, descrivendo il significato di queste differenze per le organizzazioni.
 
-A partire da settembre 2020, i clienti hanno la possibilità di eseguire la migrazione a Windows 10 Pro o Enterprise in Surface Hub 2S. Per altre informazioni, vedi le risorse seguenti:
+A partire da settembre 2020, i clienti hanno la possibilità di eseguire la migrazione a Windows 10 Pro o Enterprise su Surface Hub 2S. Per altre informazioni, vedi le risorse seguenti:
 
-- [Annuncio della disponibilità di Windows 10 Pro ed Enterprise in Surface Hub 2.](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107)
+- [Annuncio della disponibilità di Windows 10 Pro e Enterprise in Surface Hub 2](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107).
 
 - [Eseguire la migrazione a Windows 10 Pro o Enterprise in Surface Hub 2](surface-hub-2s-migrate-os.md)
 
@@ -122,7 +122,7 @@ Queste funzionalità di Surface Hub offrono maggiore sicurezza:
 
 *Criteri dell'organizzazione su cui può influire questo aspetto:* <br> Prendi in considerazione queste funzionalità durante la valutazione della sicurezza per Surface Hub.
 
-Per altre informazioni, vedi [Panoramica della sicurezza di Surface Hub](surface-hub-security.md)
+Per ulteriori informazioni, vedere [panoramica Surface Hub sicurezza](surface-hub-security.md)
 
 ## <a name="management"></a>Gestione
 
@@ -138,13 +138,13 @@ Le funzionalità amministrative di Windows 10 Enterprise, ad esempio Microsoft M
 
 ### <a name="remote-management-and-monitoring"></a>Gestione e monitoraggio remoti
 
-Surface Hub supporta la gestione remota tramite soluzioni di gestione dei dispositivi mobili (MDM), ad esempio [Microsoft Intune](https://docs.microsoft.com/intune/) e il monitoraggio tramite [Azure Monitor.](https://azure.microsoft.com/services/monitor/) 
+Surface Hub supporta la gestione remota tramite soluzioni di gestione dei dispositivi mobili (MDM), ad esempio Microsoft Intune [e](/mem/intune/) il monitoraggio tramite Monitoraggio [di Azure.](/azure/azure-monitor/) 
 
 *Criteri dell'organizzazione su cui può influire questo aspetto:* <br> Surface Hub non supporta l'installazione degli agenti Win32 richiesti dalla maggior parte degli strumenti di gestione e monitoraggio dei PC tradizionali, come System Center Operations Manager.
 
 ### <a name="group-policy"></a>Criteri di gruppo
 
-Surface Hub non supporta Criteri di gruppo di Windows, incluso il controllo. Usa invece MDM per applicare i criteri per il dispositivo Surface Hub. Per altre informazioni su MDM, vedi [Gestire le impostazioni con un provider MDM](manage-settings-with-mdm-for-surface-hub.md).
+Surface Hub non supporta i criteri Windows di gruppo, incluso il controllo. Usa invece MDM per applicare i criteri per il dispositivo Surface Hub. Per altre informazioni su MDM, vedi [Gestire le impostazioni con un provider MDM](manage-settings-with-mdm-for-surface-hub.md).
 
 *Criteri dell'organizzazione su cui può influire questo aspetto:* <br> Usa MDM per gestire Surface Hub invece dei criteri di gruppo.
 
@@ -158,7 +158,7 @@ Surface Hub non supporta l'assistenza remota.
 
 ### <a name="domain-join-and-azure-active-directory-azure-ad-join"></a>Aggiunta a un dominio e ad Azure Active Directory (Azure AD) 
 
-Surface Hub usa l'aggiunta a un dominio e l'aggiunta ad Azure AD principalmente per fornire un gruppo di amministratori basato su directory. Gli utenti non possono accedere con un account di dominio. Per altre informazioni, vedi [Gestione del gruppo amministratori](admin-group-management-for-surface-hub.md).
+Surface Hub usa l'aggiunta a un dominio e l'aggiunta ad Azure AD principalmente per fornire un gruppo di amministratori basato su directory. L'aggiunta ibrida non è supportata. Gli utenti non possono accedere con un account di dominio. Per altre informazioni, vedi [Gestione del gruppo amministratori](admin-group-management-for-surface-hub.md).
 
 *Criteri dell'organizzazione su cui può influire questo aspetto:* <br> I criteri di gruppo non vengono applicati quando un dispositivo Surface Hub viene aggiunto al dominio. I criteri relativi all'appartenenza al dominio non vengono applicati per Surface Hub.
 
