@@ -3,7 +3,7 @@ title: Informazioni e aree di copertura del servizio di sostituzione il giorno l
 ms.author: v-kaij
 author: greg-lindsay
 manager: laurawi
-ms.date: 05/23/2021
+ms.date: 06/17/2021
 audience: Admin
 ms.topic: article
 ms.prod: surface
@@ -11,15 +11,14 @@ localization_priority: high
 ms.custom: references_regions
 appliesto:
 - Surface
-- Surface Hub
 ms.reviewer: irenewhite
 description: Informazioni e aree di copertura del servizio di sostituzione il giorno lavorativo successivo.
-ms.openlocfilehash: 2708890c864582cf638c48474f85ddc01ef36576
-ms.sourcegitcommit: 77b2c51f8467ac3ac37399551b0cc20d9ce57d24
+ms.openlocfilehash: 4488d2f1cc8a3e6c240710d59f3465d05abae12b
+ms.sourcegitcommit: 267e12897efd9d11f8c7303eaf780632741cfe77
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "11585927"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "11613845"
 ---
 # <a name="next-business-day-replacement-information--coverage-areas"></a>Informazioni e aree di copertura del servizio di sostituzione il giorno lavorativo successivo
 
@@ -58,6 +57,7 @@ Per un elenco dei codici postali supportati, vedere "Ambito del servizio nel gio
 - [Svezia](#sweden)
 - [Svizzera](#switzerland)
 - [Paesi Bassi](#the-netherlands)
+- [Regno Unito](#united-kingdom)
 - [Stati Uniti](#united-states)
 
 
@@ -106,7 +106,8 @@ Per un elenco dei codici postali supportati, vedere "Ambito del servizio nel gio
 
 #### <a name="hong-kong"></a>Hong Kong
 
-- Tempo limite:16:00 HKT (UTC + 8) 
+- Tempo limite: 16:00 HKT (UTC + 8) 
+- La copertura NBD è disponibile per tutti i codici postali di Hong Kong.
 
 #### <a name="ireland"></a>Irlanda
 
@@ -142,11 +143,12 @@ Per un elenco dei codici postali supportati, vedere "Ambito del servizio nel gio
 #### <a name="singapore"></a>Singapore
 
 - Tempo limite: 13:00 SGT (UTC + 8)
+- La copertura NBD è disponibile per tutti i codici postali di questo paese.
 
 #### <a name="spain"></a>Spagna
 
 - Tempo limite: 12:00 CET (UTC + 1)
-- [Ambito del servizio nel giorno lavorativo successivo](https://download.microsoft.com/download/6/1/d/61da1e35-e17e-4a67-ab81-27cf7a21f91b/NBD%20Coveragef-%20Spain%20Post%20Codes%20030321.xlsx)
+- [Ambito del servizio nel giorno lavorativo successivo](https://download.microsoft.com/download/6/1/d/61da1e35-e17e-4a67-ab81-27cf7a21f91b/NBD%20Coverage-%20Spain%20Post%20Codes%20030321.xlsx)
 
 #### <a name="sweden"></a>Svezia
 
@@ -161,7 +163,11 @@ Per un elenco dei codici postali supportati, vedere "Ambito del servizio nel gio
 #### <a name="the-netherlands"></a>Paesi Bassi
 
 - Tempo limite: 12:00 CET (UTC + 1)
-- [Copertura del servizio nel giorno lavorativo successivo](https://download.microsoft.com/download/6/3/f/63f2ff4c-3b8f-465e-9498-0878f7ba70f3/NBD%20Coverage%20-%20Netherlands%20Post%20Codes%20042821.xlsx)
+- [Copertura del servizio entro il giorno lavorativo successivo](https://download.microsoft.com/download/6/3/f/63f2ff4c-3b8f-465e-9498-0878f7ba70f3/NBD%20Coverage%20-%20Netherlands%20Post%20Codes%20042821.xlsx)
+
+### <a name="united-kingdom"></a>Regno Unito
+
+- Tempo limite: 12:00 CET (UTC + 1)
 
 #### <a name="united-states"></a>Stati Uniti 
 
