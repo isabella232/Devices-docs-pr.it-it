@@ -1,5 +1,5 @@
 ---
-title: riattivazione LAN con Surface Dock 2
+title: Riattivazione LAN con Surface Dock 2
 description: Surface Dock 2 offre il supporto migliore per Wake on LAN (WOL) che consente agli amministratori di riattivare in remoto i dispositivi ed eseguire automaticamente le attività di gestione.
 keywords: aggiornare, distribuire, driver, wol, wake-on-lan
 ms.prod: w10
@@ -13,15 +13,15 @@ ms.topic: article
 ms.reviewer: jesko
 manager: laurawi
 ms.audience: itpro
-ms.date: 6/03/2021
-ms.openlocfilehash: 74b36b60cb58ecb9042b73b8cdba7271d0af8c80
-ms.sourcegitcommit: 267e12897efd9d11f8c7303eaf780632741cfe77
+ms.date: 7/02/2021
+ms.openlocfilehash: 4a74efb8af776e9805ad3148ea656f0a65d5d09c
+ms.sourcegitcommit: d020d899e9c7e1eb0b85193ecb0a17a85bb39fe6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "11614095"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "11643852"
 ---
-# <a name="wake-on-lan-with-surface-dock-2"></a>riattivazione LAN con Surface Dock 2
+# <a name="wake-on-lan-with-surface-dock-2"></a>Riattivazione LAN con Surface Dock 2
 
 Per mantenere i dispositivi completamente aggiornati, gli amministratori IT devono essere in grado di gestire i dispositivi quando non sono in uso, in genere durante le finestre di manutenzione notturne. Surface Dock 2 offre il supporto migliore per Wake on LAN (WOL) consentendo agli amministratori di riattivare in remoto i dispositivi ed eseguire automaticamente attività di gestione con Microsoft Endpoint Manager o altre soluzioni di terze parti.
 
@@ -48,7 +48,7 @@ Surface Dock 2 fornisce il supporto WOL per i dispositivi nei seguenti stati di 
 
 - Standby connesso
 - Ibernazione (stato di alimentazione S4)
-- Ibernazione (stato di alimentazione "soft off" S5)
+- Spegnimento (stato di alimentazione "soft off" S5)
 
 Per ulteriori informazioni sugli stati di alimentazione, vedere [Stati di alimentazione del sistema](/windows/win32/power/system-power-states).
 
@@ -58,7 +58,7 @@ Quando non sono in uso, i dispositivi Surface entrano in uno stato inattivo e a 
 
 Per abilitare WOL nei dispositivi senza Surface Dock 2, vedi [Wake on LAN for Surface devices.](wake-on-lan-for-surface-devices.md)
 
-## <a name="learn-more"></a>Altre informazioni
+## <a name="learn-more"></a>Scopri di più
 
 - [Surface Dock 2](https://www.microsoft.com/p/surface-dock-2-for-business/8q4hgc6kbmdq?)
 - [Riattivazione LAN per i dispositivi Surface](wake-on-lan-for-surface-devices.md)

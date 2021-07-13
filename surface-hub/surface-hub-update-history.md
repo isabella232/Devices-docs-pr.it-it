@@ -9,12 +9,12 @@ author: v-miegge
 ms.author: v-miegge
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: f1790da48425b645d7e25342cfd4c1b0cde44661
-ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
+ms.openlocfilehash: b03b1a60ebc75e6af37c979082bf7c4a2eca4937
+ms.sourcegitcommit: d020d899e9c7e1eb0b85193ecb0a17a85bb39fe6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "11576736"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "11643842"
 ---
 # <a name="surface-hub-update-history"></a>Cronologia degli aggiornamenti di Surface Hub
 
@@ -29,6 +29,19 @@ Questa pagina verrà aggiornata quando verranno rilasciati nuovi aggiornamenti, 
 Fai riferimento alla pagina "[Surface Hub importanti](https://support.microsoft.com/products/surface-devices/surface-hub)" per gli argomenti correlati sulle versioni correnti e precedenti che potrebbero richiedere la tua attenzione.
 
 ## <a name="windows-10-team-2020-update-20h2"></a>Windows 10 Team 2020 Update (20H2)
+
+<details>
+<summary>10 giugno 2021 - Aggiornamento per Surface Hub 2S</summary>
+
+Questo aggiornamento è specifico di Surface Hub 2S e fornisce gli aggiornamenti del driver e del firmware descritti di seguito:
+
+* Aggiornamento UEFI di Surface - 694.3751.768.0
+  * Risolve le vulnerabilità critiche della sicurezza e migliora la stabilità del sistema.
+* Aggiornamento del firmware di Surface ME - 11.8.86.3877
+  * Risolve le vulnerabilità critiche della sicurezza e migliora la stabilità del sistema.
+* Driver dell'interfaccia del motore di gestione Intel(R) - 2102.100.0.1044
+  * Risolve le vulnerabilità critiche della sicurezza e migliora la stabilità del sistema.
+</details>
 
 <details>
 <summary>13 aprile 2021 - Aggiornamento per Team basato su KB5001330* (OS Build 19042.928)</summary>
@@ -46,11 +59,11 @@ Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](/
 Questo aggiornamento è specifico di Surface Hub 2S e fornisce gli aggiornamenti del driver e del firmware descritti di seguito:
 
 * Driver di Bluetooth Intel(R) - 22.30.0.4
-  * Risolve gli aggiornamenti della sicurezza e migliora la stabilità del sistema.
+  * Migliora la sicurezza e la stabilità del sistema.
 * Driver di grafica Intel(R) - 27.20.100.8682
-  * Risolve gli aggiornamenti della sicurezza e migliora la stabilità del sistema.
+  * Migliora la sicurezza e la stabilità del sistema.
 * Driver di Wi-Fi Intel(R) - 22.30.0.11
-  * Risolve gli aggiornamenti della sicurezza e migliora la stabilità del sistema.
+  * Migliora la sicurezza e la stabilità del sistema.
 </details>
 
 <details>
@@ -64,7 +77,7 @@ Questo aggiornamento della Surface Hub include miglioramenti qualitativi e corre
 * Risolve un problema a causa del quale Windows di aggiornamento di Windows Update e Store non verrebbe mai completato se fosse in uso un proxy che richiede l'autenticazione.
 * Migliora l'affidabilità dell'app Connessione durante gli scenari di inserimento cablati.
 
-Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](https://docs.microsoft.com/surface-hub/) riferimento alla guida dell'Surface Hub amministratore. *[KB4598291](https://support.microsoft.com/help/4598291)
+Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](/surface-hub/) riferimento alla guida dell'Surface Hub amministratore. *[KB4598291](https://support.microsoft.com/help/4598291)
 </details>
 
 <details>
@@ -100,7 +113,7 @@ Questo aggiornamento della Surface Hub include miglioramenti qualitativi e corre
 * Migliora l'affidabilità durante la registrazione al Windows Insider Program.
 * Migliora l'affidabilità Windows Shell di Team.
 
-Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](https://docs.microsoft.com/surface-hub/) riferimento alla guida dell'Surface Hub amministratore. *[KB4586853](https://support.microsoft.com/help/4586853)
+Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](/surface-hub/) riferimento alla guida dell'Surface Hub amministratore. *[KB4586853](https://support.microsoft.com/help/4586853)
 </details>
 
 <details>
@@ -128,9 +141,9 @@ Questo aggiornamento è specifico di Surface Hub 2S e fornisce gli aggiornamenti
 <details>
 <summary>Windows 10 Team 2020 Update for Surface Hub - General Release notes (OS Build 19042.572)</summary>
 
-Questo aggiornamento della Surface Hub include miglioramenti qualitativi e correzioni per la sicurezza. Gli aggiornamenti principali Surface Hub, non già descritti nella cronologia degli aggiornamenti di [Windows 10,](https://support.microsoft.com/help/4581839/windows-10-update-history)sono descritti nella pagina " Novità[di Windows 10 Team 2020 Update](https://docs.microsoft.com/surface-hub/surface-hub-2020-update-whats-new)".
+Questo aggiornamento della Surface Hub include miglioramenti qualitativi e correzioni per la sicurezza. Gli aggiornamenti principali Surface Hub, non già descritti nella cronologia degli aggiornamenti di [Windows 10,](https://support.microsoft.com/help/4581839/windows-10-update-history)sono descritti nella pagina " Novità[di Windows 10 Team 2020 Update](/surface-hub/surface-hub-2020-update-whats-new)".
 
-Fare riferimento alla pagina "[Install Windows 10 Team 2020 Update](https://docs.microsoft.com/surface-hub/surface-hub-2020-update)" per ulteriori informazioni sulla disponibilità degli aggiornamenti per area geografica, metodo di distribuzione e tipo di dispositivo.
+Fare riferimento alla pagina "[Install Windows 10 Team 2020 Update](/surface-hub/surface-hub-2020-update)" per ulteriori informazioni sulla disponibilità degli aggiornamenti per area geografica, metodo di distribuzione e tipo di dispositivo.
 </details>
 
 ## <a name="windows-10-team-creators-update-1703"></a>Windows 10 Team Creators Update (1703)
@@ -188,7 +201,7 @@ Questo aggiornamento della Surface Hub include miglioramenti qualitativi e corre
 * Risolve un problema per cui Hub 2S non può essere ascoltato bene da altri partecipanti durante Skype for Business chiamate.
 * Migliora l'affidabilità per alcuni scenari di utilizzo della lingua araba, ebraico e altri scenari di utilizzo della lingua RTL Surface Hub.
 
-Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](https://docs.microsoft.com/surface-hub/) riferimento alla guida dell'Surface Hub amministratore.
+Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](/surface-hub/) riferimento alla guida dell'Surface Hub amministratore.
 *[KB4537765](https://support.microsoft.com/help/4537765)
 </details>
 
@@ -199,7 +212,7 @@ Questo aggiornamento della Surface Hub include miglioramenti qualitativi e corre
 
 * Risolve un problema con la raccolta dei log per Microsoft Surface Hub 2S.
 
-Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](https://docs.microsoft.com/surface-hub/) riferimento alla guida dell'Surface Hub amministratore.
+Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](/surface-hub/) riferimento alla guida dell'Surface Hub amministratore.
 *[KB4534296](https://support.microsoft.com/help/4534296)
 </details>
 
@@ -215,7 +228,7 @@ Questo aggiornamento della Surface Hub include miglioramenti qualitativi e corre
  * È stato risolto un problema in Microsoft Edge che si verifica durante l'esplorazione di alcuni siti Web interni.
  * È stato risolto un problema in Skype for Business che si verificava durante la presentazione in modalità schermo intero.
 
-Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](https://docs.microsoft.com/surface-hub/) riferimento alla guida dell'Surface Hub amministratore.
+Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](/surface-hub/) riferimento alla guida dell'Surface Hub amministratore.
 *[KB4503289](https://support.microsoft.com/help/4503289)
 </details>
 
@@ -227,7 +240,7 @@ Questo aggiornamento della Surface Hub include miglioramenti qualitativi e corre
  * Garantisce che l'uscita video in Hub 2S per impostazione predefinita sia la modalità "Duplica".
  * Migliora l'affidabilità per alcuni scenari di utilizzo della lingua araba Surface Hub.
 
-Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](https://docs.microsoft.com/surface-hub/) riferimento alla guida dell'Surface Hub amministratore.
+Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](/surface-hub/) riferimento alla guida dell'Surface Hub amministratore.
 *[KB4503289](https://support.microsoft.com/help/4503289)
  </details>
 
@@ -241,7 +254,7 @@ Questo aggiornamento della Surface Hub include miglioramenti qualitativi e corre
 * Correzioni per migliorare l'affidabilità dell'app di diagnostica hardware in Hub 2S. 
 * Correzione per migliorare la coerenza dell'esperienza di installazione di prima esecuzione in Hub 2S. 
 
-Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](https://docs.microsoft.com/surface-hub/) riferimento alla guida dell'Surface Hub amministratore.
+Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](/surface-hub/) riferimento alla guida dell'Surface Hub amministratore.
 *[KB4503289](https://support.microsoft.com/help/4503289)
 </details>
 
@@ -255,7 +268,7 @@ Questo aggiornamento della Surface Hub include miglioramenti qualitativi e corre
 * Aggiunge il supporto per TLS 1.2 in Skype for Business.
 * Risolve un errore di connessione SIP nel client Skype quando il server Skype ha TLS 1.0 o TLS 1.1 disabilitato.
 
-Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](https://docs.microsoft.com/surface-hub/) riferimento alla guida dell'Surface Hub amministratore.
+Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](/surface-hub/) riferimento alla guida dell'Surface Hub amministratore.
 *[KB4499162](https://support.microsoft.com/help/4499162)
 </details>
 
@@ -266,7 +279,7 @@ Questo aggiornamento della Surface Hub include miglioramenti qualitativi e corre
 
 * Risolve il problema di sincronizzazione audio e video con alcuni dispositivi USB connessi alla Surface Hub.
 
-Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](https://docs.microsoft.com/surface-hub/) riferimento alla guida dell'Surface Hub amministratore.
+Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](/surface-hub/) riferimento alla guida dell'Surface Hub amministratore.
 *[KB4493436](https://support.microsoft.com/help/4493436)
 </details>
 
@@ -277,7 +290,7 @@ Questo aggiornamento della Surface Hub include miglioramenti qualitativi e corre
 
 * Risolve un problema che impedisce ad alcuni utenti di Signing-In a "Riunioni e file personali".
 
-Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](https://docs.microsoft.com/surface-hub/) riferimento alla guida dell'Surface Hub amministratore.
+Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](/surface-hub/) riferimento alla guida dell'Surface Hub amministratore.
 *[KBKB4467699](https://support.microsoft.com/help/KB4467699)
 </details>
 
@@ -293,7 +306,7 @@ Questo aggiornamento della Surface Hub include miglioramenti qualitativi e corre
 * Risolve il problema per cui l'hub segnala erroneamente "Nessuna connessione Internet" negli ambienti proxy aziendali.
 * È stata implementata una funzionalità che consente ai clienti di accedere a una nuova esperienza lavagna.
 
-Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](https://docs.microsoft.com/surface-hub/) riferimento alla guida dell'Surface Hub amministratore.
+Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](/surface-hub/) riferimento alla guida dell'Surface Hub amministratore.
 *[KB4462939](https://support.microsoft.com/help/4462939)
 </details>
 
@@ -307,7 +320,7 @@ Questo aggiornamento della Surface Hub include miglioramenti qualitativi e corre
 * Consente agli amministratori di disabilitare i servizi di messaggistica istantanea e di posta elettronica per l'hub
 * Ulteriori correzioni di bug e miglioramenti dell'affidabilità per l Surface Hub Skype for Business App
 
-Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](https://docs.microsoft.com/surface-hub/) riferimento alla guida dell'Surface Hub amministratore.
+Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](/surface-hub/) riferimento alla guida dell'Surface Hub amministratore.
 *[KB4343889](https://support.microsoft.com/help/4343889)
 </details>
 
@@ -318,7 +331,7 @@ Questo aggiornamento della Surface Hub include miglioramenti qualitativi e corre
 
 * Modifica della telemetria a supporto dei requisiti del GDPR in EMEA
 
-Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](https://docs.microsoft.com/surface-hub/) riferimento alla guida dell'Surface Hub amministratore.
+Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](/surface-hub/) riferimento alla guida dell'Surface Hub amministratore.
 *[KB4284830](https://support.microsoft.com/help/KB4284830)
 </details>
 
@@ -336,7 +349,7 @@ Questo aggiornamento della Surface Hub include miglioramenti qualitativi e corre
 * Risolve Miracast problema, quando Surface Hub ai canali da 149 a 165
   * I canali da 149 a 165 continueranno a essere inutilizzabili in Europa, Giappone o Israele a causa delle normative governative regionali
 
-Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](https://docs.microsoft.com/surface-hub/) riferimento alla guida dell'Surface Hub amministratore.
+Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](/surface-hub/) riferimento alla guida dell'Surface Hub amministratore.
 *[KB4093117](https://support.microsoft.com/help/4093117)
 </details>
 
@@ -348,7 +361,7 @@ Questo aggiornamento della Surface Hub include miglioramenti qualitativi e corre
 * È stato risolto un problema per cui le impostazioni MDM non venivano applicate correttamente
 * Processo di pulizia migliorato
 
-Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](https://docs.microsoft.com/surface-hub/) riferimento alla guida dell'Surface Hub amministratore.
+Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](/surface-hub/) riferimento alla guida dell'Surface Hub amministratore.
 *[KB4077528](https://support.microsoft.com/help/4077528)
 </details>
 
@@ -360,7 +373,7 @@ Questo aggiornamento della Surface Hub include miglioramenti qualitativi e corre
 * Aggiunge la possibilità di gestire il layout del riquadro del menu Start tramite MDM
 * Correzione di bug MDM per la configurazione della rotazione delle password
 
-Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](https://docs.microsoft.com/surface-hub/) riferimento alla guida dell'Surface Hub amministratore.
+Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](/surface-hub/) riferimento alla guida dell'Surface Hub amministratore.
 *[KB4057144](https://support.microsoft.com/help/4057144)
 </details>
 
@@ -372,7 +385,7 @@ Questo aggiornamento della Surface Hub include miglioramenti qualitativi e corre
 * Risolve i flash video della fotocamera (strappi o sfarfallio) durante Skype for Business chiamate
 * Risolve il problema relativo all'ID SSD del Centro notifiche
 
-Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](https://docs.microsoft.com/surface-hub/) riferimento alla guida dell'Surface Hub amministratore.
+Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](/surface-hub/) riferimento alla guida dell'Surface Hub amministratore.
 *[KB4053580](https://support.microsoft.com/help/4053580)
 </details>
 
@@ -390,7 +403,7 @@ Questo aggiornamento della Surface Hub include miglioramenti qualitativi e corre
 * Riduce e protegge in modo più accurato la telemetria trasmessa dal dispositivo, riducendo l'utilizzo della larghezza di banda.
 * Abilita una funzionalità che consente agli utenti di fornire commenti e suggerimenti a Microsoft al termine di una riunione.
 
-Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](https://docs.microsoft.com/surface-hub/) riferimento alla guida dell'Surface Hub amministratore.
+Per abilitare/disabilitare [i servizi e le funzionalità del dispositivo, fai](/surface-hub/) riferimento alla guida dell'Surface Hub amministratore.
 *[KB4048954](https://support.microsoft.com/help/4048954)
 </details>
 
@@ -509,9 +522,9 @@ Questo aggiornamento della Surface Hub include miglioramenti qualitativi e corre
   * Supporto delle credenziali proxy migliorato
   * Aggiunta e /miglioramento del Skype qualità del servizio (QoS)
   * Aggiunta della possibilità di impostare il volume del dispositivo predefinito in Impostazioni
-  * Supporto MDM migliorato per Surface Hub [impostazioni](https://docs.microsoft.com/surface-hub/remote-surface-hub-management)
+  * Supporto MDM migliorato per Surface Hub [impostazioni](/surface-hub/remote-surface-hub-management)
 * Sicurezza migliorata 
-  * Aggiunta della possibilità di limitare le unità USB BitLocker solo
+  * Aggiunta della possibilità di limitare le unità USB solo a BitLocker
   * Aggiunta della possibilità di disabilitare le porte USB tramite MDM
   * Aggiunta la possibilità di disabilitare la funzionalità "Riprendi sessione" in timeout
   * Aggiunta del supporto 802.1x cablato
