@@ -11,17 +11,19 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: High
-  ms.openlocfilehash: 021d30e782bc50e0c89fad6478c8e784234c768d
-  ms.sourcegitcommit: 267e12897efd9d11f8c7303eaf780632741cfe77
+  ms.openlocfilehash: 9367329bcaa7c42a31cc8de5ffcee2e65f4c8437
+  ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 06/22/2021
-  ms.locfileid: "11613925"
+  ms.lasthandoff: 07/24/2021
+  ms.locfileid: "11676510"
 landingContent:
 - title: Dispositivi Surface
   linkLists:
   - linkListType: whats-new
     links:
+    - text: Soluzioni di lavoro remote con Surface
+      url: https://www.microsoft.com/surface/business/remote-work-solutions
     - text: Surface Laptop 4 + for Business
       url: https://www.microsoft.com/surface/business/surface-laptop-4
     - text: Surface Pro 7+ per le aziende
@@ -86,7 +88,7 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Panoramica della sicurezza di Surface
+    - text: Panoramica della protezione di Surface
       url: surface-security.md
     - text: Protezione DMA nei dispositivi Surface
       url: dma-protect.md
@@ -102,6 +104,14 @@ landingContent:
       url: surface-enterprise-management-mode.md
     - text: Impostazione del limite della batteria
       url: battery-limit.md
+- title: Surface ROI
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: Massimizzare il ROI con Microsoft Surface
+      url: forrester-tei-study.md
+    - text: Impatto economico totale di Microsoft Surface per la formazione
+      url: forrester-tei-edu-study.md
 - title: Partecipare alla community di Surface
   linkLists:
   - linkListType: learn

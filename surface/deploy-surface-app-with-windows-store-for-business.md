@@ -14,12 +14,12 @@ ms.audience: itpro
 ms.reviewer: ''
 manager: laurawi
 ms.date: 4/16/2021
-ms.openlocfilehash: c7a882859339ff3d7feeb685c62672bc57c301ec
-ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
+ms.openlocfilehash: 339a6a3ab76f36004f2399b333d48487c9d6e31d
+ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "11576526"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "11676682"
 ---
 # <a name="deploy-surface-app-with-microsoft-store-for-business-and-education"></a>Distribuire l'app Surface con Microsoft Store per le aziende e Education
 
@@ -47,17 +47,7 @@ ms.locfileid: "11576526"
 - Surface Pro 3
 
 
-L'app Surface è un'app Microsoft Store semplice che fornisce il controllo di molte impostazioni e opzioni specifiche di Surface, tra cui: 
-
-* Abilitazione o disabilitazione del pulsante Windows nel dispositivo Surface 
-
-* Regolazione della sensibilità di una penna per Surface 
-
-* Personalizzazione delle azioni dei pulsanti della penna per Surface 
-
-* Abilitazione o disabilitazione dei miglioramenti audio di Surface 
-
-* Accesso rapido alla documentazione e alle informazioni di supporto per il dispositivo
+L'app Surface è un'app Microsoft Store leggera che fornisce il controllo di molte impostazioni e opzioni specifiche di Surface con accesso rapido alle informazioni sul dispositivo, tra cui il numero di serie, il nome del modello Surface, la versione UEFI e i driver correlati.  
 
 I clienti che Windows Update riceveranno normalmente l'app Surface come parte degli aggiornamenti automatici. Tuttavia, se l'organizzazione prepara le immagini per la distribuzione nei dispositivi Surface, potresti voler includere l'app Surface (in precedenza denominata Surface Hub) nel processo di creazione di immagini e distribuzione invece di richiedere agli utenti di ogni singolo dispositivo di scaricare e installare l'app dal Microsoft Store o dal Microsoft Store per le aziende. 
 
@@ -66,7 +56,7 @@ I clienti che Windows Update riceveranno normalmente l'app Surface come parte de
 
 ## <a name="surface-app-overview"></a>Panoramica dell'app Surface
 
-L'app Surface è disponibile come download gratuito [da Microsoft Store](https://www.microsoft.com/store/apps/Surface/9WZDNCRFJB8P). Gli utenti possono scaricarla e installarla dal Microsoft Store, ma se l'organizzazione usa invece Microsoft Store per le aziende, dovrai aggiungerla all'inventario dello Store ed eventualmente includere l'app come parte del processo di distribuzione di Windows. Questi processi vengono illustrati in questo articolo. Per ulteriori informazioni su Microsoft Store per le aziende, [vedere Microsoft Store per le aziende](https://docs.microsoft.com/microsoft-store/) nel TechCenter Windows. 
+L'app Surface è disponibile come download gratuito [da Microsoft Store](https://www.microsoft.com/store/apps/Surface/9WZDNCRFJB8P). Gli utenti possono scaricarla e installarla dal Microsoft Store, ma se l'organizzazione usa invece Microsoft Store per le aziende, dovrai aggiungerla all'inventario dello Store ed eventualmente includere l'app come parte del processo di distribuzione di Windows. Questi processi vengono illustrati in questo articolo. Per ulteriori informazioni sulle Microsoft Store per le aziende, [vedere Microsoft Store per le aziende](/microsoft-store/). 
 
 ## <a name="add-surface-app-to-a-microsoft-store-for-business-account"></a>Aggiungere un'app Surface a un Microsoft Store per le aziende account 
 
@@ -76,17 +66,15 @@ Prima che gli utenti possano installare o distribuire un'app dall'account Micros
 
 2. Accedere al portale. 
 
-3. Abilita licenze offline: fai clic su Gestisci impostazioni di **>Store**e quindi seleziona la casella di controllo Mostra app con licenza offline agli utenti che acquistino nello **Store,** come illustrato nella figura 1. Per altre informazioni sui modelli Microsoft Store per le aziende licenze delle app, vedi [App in Microsoft Store per le aziende e Education.](https://docs.microsoft.com/microsoft-store/)
+3. Abilita licenze offline: fai clic su Gestisci **** Impostazioni e quindi seleziona la casella di controllo Mostra app con licenza offline agli utenti che acquistino nello Store, come illustrato nella figura  >  **** 1. **** Per altre informazioni sui modelli Microsoft Store per le aziende licenze delle app, vedi [App in Microsoft Store per le aziende e Education.](/microsoft-store/)
 
    > [!div class="mx-imgBorder"]
    > ![Casella di controllo Mostra le app per le licenze offline](images/deploysurfapp-figure1-enablingapps.png "Show offline licenses apps checkbox")<br/>
    *Figura 1. Abilitare le app per l'uso offline*
 
-4. Aggiungi l'app Surface al tuo account Microsoft Store per le aziende seguendo questa procedura:
+4. Aggiungi l'app Surface al tuo account Microsoft Store per le aziende:
 
-    * Fai clic sul menu **Negozio.**
-    
-    * Nella casella di ricerca digita **App Surface**e quindi fai clic sull'icona di ricerca.
+    * Cercare **l'app Surface** in Store 
     
     * Dopo aver presentato l'app Surface nei risultati della ricerca, fai clic sull'icona dell'app.
     
@@ -229,4 +217,4 @@ Dopo l'importazione, l'app Surface sarà disponibile per la selezione nel passag
 
 3. Seleziona **Installa una singola applicazione** e specifica **l'app Surface** come applicazione da **installare.**
 
-Per ulteriori informazioni sull'inclusione di app nelle distribuzioni Windows, vedere [Deploy Windows 10 with the Microsoft Deployment Toolkit](https://technet.microsoft.com/itpro/windows/deploy/deploy-windows-10-with-the-microsoft-deployment-toolkit).
+Per altre informazioni sull'inclusione di app nelle Windows, vedi [Preparare la distribuzione con MDT.](/windows/deployment/deploy-windows-mdt/prepare-for-windows-deployment-with-mdt)

@@ -19,12 +19,12 @@ appliesto:
 - Surface Laptop 2
 - Surface Laptop 3
 - Surface Laptop 4
-ms.openlocfilehash: c02837b0cfda72c6f2a447b99ff4c94a027bb29c
-ms.sourcegitcommit: 267e12897efd9d11f8c7303eaf780632741cfe77
+ms.openlocfilehash: 1ee3376a24d3e83cc66c8a220a1f7afa195840d0
+ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "11613865"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "11676720"
 ---
 # <a name="how-to-enable-the-surface-laptop-keyboard-during-mdt-deployment"></a>Come abilitare la tastiera Surface Laptop durante la distribuzione di MDT
 
@@ -36,7 +36,7 @@ Questo articolo tratta un approccio di distribuzione che usa Microsoft Deploymen
 > - Tieni premuto il pulsante Di alimentazione per 30 secondi. Se si è connessi a un'unità di alimentazione (PSU), tenere premuto il pulsante Di alimentazione fino a quando la luce alla fine del cavo PSU si spegne brevemente prima di riattivarla.
 
 > [!IMPORTANT]
-> Se stai distribuendo un'immagine Windows 10 a un Surface Laptop con Windows 10 preinstallato in modalità S, vedi KB [4032347, Problemi](https://support.microsoft.com/help/4032347/surface-preinstall-windows10-s-mode-issues)durante la distribuzione di Windows nei dispositivi Surface con Windows 10 preinstallato in modalità S.
+> Se stai distribuendo un'immagine Windows 10 a un Surface Laptop con Windows 10 preinstallato in modalità S, vedi KB 4032347, Problemi durante la distribuzione di Windows nei dispositivi Surface con [Windows 10 preinstallato in modalità S.](https://support.microsoft.com/help/4032347/surface-preinstall-windows10-s-mode-issues)
 
 ## <a name="add-keyboard-drivers-to-the-selection-profile"></a>Aggiungere driver di tastiera al profilo di selezione
 
@@ -95,4 +95,4 @@ Importare le cartelle seguenti in base alle esigenze del Surface Laptop disposit
 
     ![Immagine che mostra i normali Surface Laptop (prima generazione) nella cartella Surface Laptop di Deployment Workbench](./images/surface-laptop-keyboard-5.png)
 
-Dopo aver configurato la condivisione di distribuzione MDT per usare il nuovo profilo di selezione e le impostazioni correlate, continuare il processo di distribuzione come descritto [in Deploy a Windows 10 image using MDT: Step 6: Create the deployment task sequence](/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt#step-6-create-the-deployment-task-sequence).
+Dopo aver configurato la condivisione di distribuzione MDT per usare il nuovo profilo di selezione e le impostazioni correlate, continuare il processo di distribuzione come descritto [in Deploy a Windows 10 image using MDT: Step 6: Create the deployment task sequence](/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt#step-6-create-the-deployment-task-sequence).

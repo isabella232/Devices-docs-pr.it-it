@@ -10,17 +10,17 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 05/28/2021
+ms.date: 07/20/2021
 ms.localizationpriority: medium
 appliesto:
 - Surface Hub
 - Surface Hub 2S
-ms.openlocfilehash: 087826a7a0cba7a47accc0d3d66714289f2ae9d2
-ms.sourcegitcommit: 267e12897efd9d11f8c7303eaf780632741cfe77
+ms.openlocfilehash: bb5c08454d6c148c5e07b80ee0b4452e5b768a87
+ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "11613975"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "11676710"
 ---
 # <a name="create-provisioning-packages-for-surface-hub"></a>Creare pacchetti di provisioning per Surface Hub
 
@@ -113,7 +113,8 @@ Oltre a questo pacchetto di provisioning, puoi usare un file di Surface Hub di c
 
 **Per creare un file Surface Hub file di configurazione:**
 
-1. Aprire Microsoft Excel (o un altro editor di .csv), creare un file .csv denominato SurfaceHubConfiguration.csv
+1. Aprire Microsoft Excel (o un altro editor di .csv), creare un file .csv denominato _SurfaceHubConfiguration.csv_.
+
 2. Immetti un elenco di account del dispositivo e nomi descrittivi nel formato seguente:
 
     ```
@@ -123,7 +124,7 @@ Oltre a questo pacchetto di provisioning, puoi usare un file di Surface Hub di c
     > [!NOTE]
     > Il file di configurazione non deve contenere le intestazioni di colonna. Se incluso in un pacchetto di provisioning applicato a Surface Hub, puoi selezionare l'account e il nome descrittivo per il dispositivo dal file. Per creare il file .csv, utilizzare un formato di indirizzo UPN (rainier@contoso.com) o un formato di nome di accesso di livello inferiore (contoso\rainier).
 
-- rainier@contoso.com,password,Rainier Surface Hub
+    rainier@contoso.com,password,Rainier Surface Hub
 
 3. Salva il file nella cartella del progetto e copialo nella chiave USB con il pacchetto di provisioning.
 
@@ -143,15 +144,19 @@ Se devi solo configurare le impostazioni comuni, seleziona **Fine**creazione e p
 > [!TIP]
 > Utilizzare la procedura guidata per creare un pacchetto con le impostazioni comuni, quindi passare all'editor avanzato per aggiungere altre impostazioni.<br><br> ![Passare all'editor avanzato](images/icd-simple-edit.png)
 
-1. Se si continua dalla sezione precedente, selezionare **Passa all'editor** avanzato altrimenti aprire progettazione Windows **configurazione** e selezionare **Provisioning avanzato**.<br>
-  ![Utilizzare il provisioning avanzato](images/sh-prov-adv.png)
+1. Se si continua dalla sezione precedente, selezionare **Passa all'editor** avanzato altrimenti aprire progettazione Windows **configurazione** e selezionare **Provisioning avanzato**.
+
+   ![Utilizzare il provisioning avanzato](images/sh-prov-adv.png)
 
 2. Assegnare un nome al progetto e selezionare **Avanti**.
-3. Selezionare **Common to Windows 10 Team**, selezionare **Next**e **quindi**finish .<br>
-     ![Nuovo progetto WCD](images/icd-new-project.png)
 
-4. Nel progetto, in **Personalizzazioni disponibili,** selezionare **Impostazioni team comuni.**<br>
-     ![Impostazioni comuni WCD](images/icd-common-settings.png)
+3. Selezionare **Common to Windows 10 Team**, selezionare **Next**e **quindi**finish .
+
+   ![Nuovo progetto WCD](images/icd-new-project.png)
+
+4. Nel progetto, in **Personalizzazioni disponibili,** selezionare **Impostazioni team comuni.**
+
+   :::image type="content" alt-text="Impostazioni comuni WCD." source="images/icd-common-settings.png":::
 
 ### <a name="add-a-certificate-to-your-package"></a>Aggiungere un certificato al pacchetto
 
@@ -178,8 +183,11 @@ Per aggiungere un'app UWP a un pacchetto di provisioning, è necessario il pacch
 **Per aggiungere un'app UWP:**
 
 1. Nel riquadro **Personalizzazioni disponibili** passa a **Impostazioni di runtime** > **UniversalAppInstall** > **DeviceContextApp**.
+
 2. Immetti un **PackageFamilyName** per l'app e quindi seleziona **Aggiungi.** Per coerenza, usa il nome della famiglia di pacchetti dell'app. Se hai acquistato l'app da Microsoft Store per le aziende, puoi trovare il nome della famiglia di pacchetti nella licenza dell'app. Apri il file di licenza con un editor di testo e usa il valore tra i tag PFM.
+
 3. Per **ApplicationFile**seleziona **Sfoglia per** trovare e selezionare l'app di destinazione ( .appx o .appxbundle).
+
 4. Per **DependencyAppxFiles**seleziona **Sfoglia** per trovare e aggiungere eventuali dipendenze per l'app. Per Surface Hub, avrai bisogno solo delle versioni x64 di queste dipendenze.
 
 Se hai acquistato l'app dal Microsoft Store per le aziende, dovrai aggiungere la licenza dell'app al pacchetto di provisioning.
@@ -187,8 +195,11 @@ Se hai acquistato l'app dal Microsoft Store per le aziende, dovrai aggiungere la
 **Per aggiungere la licenza dell'app:**
 
 1. Crea una copia della licenza dell'app e rinominala in modo da usare un'estensione **.ms-windows-store-license**. Ad esempio, rinomina "example.xml" in "example.ms-windows-store-license".
+
 2. In Progettazione Windows configurazione passare a **Personalizzazioni**disponibili  >  **Impostazioni di runtime**  >  **UniversalAppInstall**  >  **DeviceContextAppLicense**.
+
 3. Immetti **licenseProductId** e quindi seleziona **Aggiungi**. Per coerenza, usa l'ID licenza dell'app disponibile nella licenza dell'app. Apri il file di licenza con un editor di testo. Quindi, nel tag **License,** usa il valore **nell'attributo LicenseID.**
+
 4. Seleziona il nuovo nodo **LicenseProductId**. Per **LicenseInstall**seleziona **Sfoglia per** trovare e selezionare il file di licenza rinominato (example.ms-windows-store-license).
 
 ### <a name="add-a-policy-to-your-package"></a>Aggiungere un criterio al pacchetto
@@ -200,8 +211,7 @@ Surface Hub supporta un sottoinsieme di criteri del [provider di servizi di conf
 1. Vai a **Personalizzazioni disponibili**  >  **Impostazioni di runtime**  >  **Criteri**.
 2. Selezionare il componente che si desidera gestire e configurare l'impostazione dei criteri in base alle esigenze. Ad esempio, per impedire ai dipendenti di usare l'esplorazione del sito Web InPrivate Surface Hub, selezionare **AllowInPrivate** e quindi **selezionare Disabilita**.  
 
-    > [!div class="mx-imgBorder"]
-    > ![Configurare l'impostazione dei criteri](images/sh-prov-policies.png)
+   :::image type="content" alt-text="Configurare l'impostazione dei criteri." source="images/sh-prov-policies.png" lightbox="images/sh-prov-policies.png":::
 
 ### <a name="add-surface-hub-settings-to-your-package"></a>Aggiungere impostazioni di Surface Hub al pacchetto
 
@@ -217,14 +227,16 @@ Puoi aggiungere al pacchetto di provisioning impostazioni dal [provider di servi
 Quando crei un pacchetto di provisioning potresti includere informazioni riservate nei file di progetto e nel file del pacchetto di provisioning (con estensione PPKG). Anche se hai la possibilità di crittografare il file con estensione PPKG, i file di progetto non vengono crittografati.  Archiviare i file di progetto in un percorso sicuro o eliminarli se non sono più necessari.
 
 1. Apri **il Windows di**provisioning di Configuration Designer  >  ****  >  **Export.**
+
 2. Cambia **proprietario** in **Amministratore IT**.  
+
 3. Imposta un valore per **Versione pacchetto** e quindi seleziona **Avanti**.
 
-> [!TIP]
-> L'impostazione del proprietario su Amministratore IT garantisce che le impostazioni del pacchetto mantengano le "proprietà di precedenza" appropriate e rimangano effettive su Surface Hub se altri pacchetti di provisioning vengono successivamente applicati da altre origini.
+   > [!TIP]
+   > L'impostazione del proprietario su Amministratore IT garantisce che le impostazioni del pacchetto mantengano le "proprietà di precedenza" appropriate e rimangano effettive su Surface Hub se altri pacchetti di provisioning vengono successivamente applicati da altre origini.
 
-> [!TIP]
-> Puoi modificare i pacchetti esistenti e modificare il numero di versione per aggiornare i pacchetti applicati in precedenza.
+   > [!TIP]
+   > Puoi modificare i pacchetti esistenti e modificare il numero di versione per aggiornare i pacchetti applicati in precedenza.
 
 4. Facoltativo: puoi scegliere di crittografare il pacchetto e abilitare la firma del pacchetto:
 
@@ -235,26 +247,36 @@ Quando crei un pacchetto di provisioning potresti includere informazioni riserva
     > È consigliabile includere un certificato di provisioning attendibile nel pacchetto di provisioning. Quando il pacchetto viene applicato a un dispositivo, il certificato viene aggiunto all'archivio di sistema, consentendo l'applicazione automatica dei pacchetti successivi.
 
 5. Selezionare **Avanti** per specificare il percorso di output. Per impostazione predefinita, Progettazione configurazione di Windows usa la cartella di progetto come percorso di output. Oppure selezionare **Sfoglia** per modificare il percorso di output predefinito. Seleziona **Avanti**.
+
 6. Seleziona **Compila** per iniziare a compilare il pacchetto. Le informazioni sul progetto vengono visualizzate nella pagina di compilazione.
+
 7. Se la compilazione ha esito negativo, viene visualizzato un messaggio di errore con un collegamento alla cartella del progetto. Esaminare i log per diagnosticare l'errore e provare a compilare di nuovo il pacchetto.
+
 8. Se la compilazione ha esito positivo, vengono visualizzati il nome del pacchetto di provisioning, la directory di output e la directory del progetto. Selezionare **Fine** per chiudere la procedura guidata e tornare alla pagina Personalizzazioni.
+
 9. Seleziona  **il percorso**  di output per passare al percorso del pacchetto. Copia il file con estensione PPKG in un'unità flash USB vuota.
 
 ## <a name="apply-a-provisioning-package-to-surface-hub"></a>Applicare un pacchetto di provisioning in un dispositivo Surface Hub
 
-Sono disponibili due opzioni per la distribuzione di pacchetti di provisioning in un dispositivo Surface Hub. Durante la prima esecuzione [guidata,](#apply-a-provisioning-package-during-first-run)è possibile applicare un pacchetto di provisioning che installa i certificati oppure al termine del programma di prima esecuzione, è possibile applicare un pacchetto di provisioning che configura impostazioni, app e certificati [tramite Impostazioni](#apply-a-provisioning-package-using-settings-app).
+Esistono due modi per distribuire i pacchetti di provisioning in un Surface Hub:
+
+- [Eseguire prima l'installazione.](#apply-a-provisioning-package-during-first-run) Puoi applicare un pacchetto di provisioning per personalizzare più opzioni, tra cui le impostazioni Wi-Fi, le impostazioni proxy, i dettagli dell'account del dispositivo, l'aggiunta ad Azure AD e le impostazioni correlate.  
+- [Impostazioni app.](#apply-a-provisioning-package-using-settings-app) Dopo la prima esecuzione dell'installazione, puoi applicare un pacchetto di provisioning tramite l Impostazioni app. 
 
 ### <a name="apply-a-provisioning-package-during-first-run"></a>Applicare un pacchetto di provisioning durante la prima esecuzione
 
-> [!IMPORTANT]
-> Durante il programma di prima esecuzione, puoi usare solo pacchetti di provisioning per installare i certificati. Usa l'app **Impostazioni** per installare app e applicare altre impostazioni.
-
 1. Quando si attiva il Surface Hub per la prima volta, nel programma di prima esecuzione viene visualizzata la pagina Hi [**there**](first-run-program-surface-hub.md). Assicurati che le impostazioni siano configurate in modo corretto prima di procedere.
+
 2. Inserisci l'unità flash USB contenente il file con estensione ppkg in Surface Hub. Se il pacchetto è nella directory radice dell'unità, il programma di prima esecuzione lo riconoscerà e ti verrà chiesto se vuoi configurare il dispositivo. Seleziona **Configura**.
+
 3. Nella schermata successiva viene richiesto di selezionare un'origine di provisioning. Seleziona **Supporto rimovibile** e tocca **Avanti**.
+
 4. Seleziona il pacchetto di provisioning (*.ppkg) che vuoi applicare e tocca **Avanti.** Tieni presente che puoi installare un solo pacchetto durante la prima esecuzione.
+
 5. Il programma di prima esecuzione ti mostrerà un riepilogo delle modifiche che il pacchetto di provisioning applicherà. Seleziona **Sì, aggiungilo**.
+
 6. Se un file di configurazione è incluso nella directory radice dell'unità flash USB, vedrai la dicitura **Selezionare una configurazione**. Nel file di configurazione verrà visualizzato l'account del primo dispositivo con un riepilogo delle informazioni sull'account che verranno applicate a Surface Hub.
+
 7. In **Selezionare una configurazione**selezionare il nome del dispositivo da applicare e quindi selezionare **Avanti.**
 
 Le impostazioni dal pacchetto di provisioning verranno applicate al dispositivo e la configurazione guidata sarà completa. Dopo il riavvio del dispositivo, è possibile rimuovere l'unità flash USB.

@@ -1,0 +1,178 @@
+- name: Surface
+  href: index.yml
+  expanded: true
+  items:
+    - name: Documentazione per i dispositivi Surface
+      href: get-started.yml
+    - name: Panoramica
+      items:
+        - name: Panoramica tecnica
+          items:
+            - name: Panoramica della protezione di Surface
+              href: surface-security.md
+            - name: Desktop virtuale Windows su Surface
+              href: windows-virtual-desktop-surface.md
+            - name: Panoramica tecnica dei processori di Surface Laptop 4
+              href: surface-laptop-processors.md
+            - name: Panoramica tecnica di Surface Book 3 GPU
+              href: surface-book-GPU-overview.md
+            - name: Panoramica tecnica di Surface Book 3 Quadro RTX 3000
+              href: surface-book-quadro.md
+            - name: Panoramica tecnica di Surface Headphones 2+
+              href: surface-headphones.md
+        - name: Ordinare dispositivi Surface
+          items:
+            - name: Surface Laptop 4 per le aziende
+              href: 'https://www.microsoft.com/surface/business/surface-laptop-4'
+            - name: Surface Pro 7+ per le aziende
+              href: 'https://www.microsoft.com/surface/business/surface-pro-7-plus'
+            - name: Surface Go 2 per le aziende
+              href: 'https://www.microsoft.com/surface/business/surface-go-2'
+            - name: Surface Pro X per le aziende
+              href: 'https://www.microsoft.com/surface/business/surface-pro-x'
+            - name: Surface Studio 2 per le aziende
+              href: 'https://www.microsoft.com/surface/business/surface-studio-2'
+            - name: Surface Book 3 per le aziende
+              href: 'https://www.microsoft.com/surface/business/surface-book-3'
+    - name: Piano
+      items:
+        - name: Compatibilità dei dispositivi Surface con Long-Term Servicing Branch di Windows 10
+          href: surface-device-compatibility-with-windows-10-ltsc.md
+        - name: LTSB (Long-Term Servicing Branch) per dispositivi Surface
+          href: ltsb-for-surface.md
+        - name: Schede Ethernet e distribuzione di Surface
+          href: ethernet-adapters-and-surface-device-deployment.md
+        - name: Riferimento SKU del sistema Surface
+          href: surface-system-sku-reference.md
+    - name: Distribuire e gestire
+      items:
+        - name: Windows Autopilot
+          items:
+            - name: Windows Autopilot e dispositivi Surface
+              href: windows-autopilot-and-surface-devices.md
+            - name: Supporto alla registrazione di Surface per Windows Autopilot
+              href: surface-autopilot-registration-support.md
+            - name: Riferimento SKU del sistema Surface
+              href: surface-system-sku-reference.md
+        - name: Automatizzare la distribuzione
+          items:
+            - name: Surface Deployment Accelerator
+              href: microsoft-surface-deployment-accelerator.md
+            - name: Distribuire Windows 10 nei dispositivi Surface con MDT
+              href: deploy-windows-10-to-surface-devices-with-mdt.md
+            - name: Abilitare la tastiera di Surface Laptop durante la distribuzione di MDT
+              href: enable-surface-keyboard-for-windows-pe-deployment.md
+            - name: Aggiornare i dispositivi Surface a Windows 10 con MDT
+              href: upgrade-surface-devices-to-windows-10-with-mdt.md
+            - name: Personalizzare la Configurazione guidata per le distribuzioni di Surface
+              href: customize-the-oobe-for-surface-deployments.md
+            - name: Distribuire l'app Surface con Microsoft Store per le aziende
+              href: deploy-surface-app-with-windows-store-for-business.md
+        - name: Strumenti di Surface
+          items:
+            - name: Surface Enterprise Management Mode
+              href: surface-enterprise-management-mode.md
+              items:
+                - name: Registrare e configurare i dispositivi Surface con SEMM
+                  href: enroll-and-configure-surface-devices-with-semm.md
+                - name: Annullare la registrazione dei dispositivi Surface da SEMM
+                  href: unenroll-surface-devices-from-semm.md
+                - name: Usare Microsoft Endpoint Configuration Manager per configurare dispositivi con SEMM
+                  href: use-system-center-configuration-manager-to-manage-devices-with-semm.md
+            - name: Risolvere i problemi di Surface comuni con Toolkit di diagnostica per Surface per le aziende
+              href: surface-diagnostic-toolkit-for-business-intro.md
+              items:
+                - name: Implementare Toolkit di diagnostica per Surface per le aziende
+                  href: surface-diagnostic-toolkit-business.md
+                - name: Usare Toolkit di diagnostica per Surface per le aziende in modalità desktop
+                  href: surface-diagnostic-toolkit-desktop-mode.md
+                - name: Eseguire Toolkit di diagnostica per Surface per le aziende con i comandi
+                  href: surface-diagnostic-toolkit-command-line.md
+            - name: Surface Data Eraser
+              href: microsoft-surface-data-eraser.md
+            - name: Impostazione del limite della batteria
+              href: battery-limit.md
+            - name: Controllo della luminosità Surface
+              href: microsoft-surface-brightness-control.md
+            - name: Tag degli asset di Surface
+              href: assettag.md
+            - name: 'Abilitare PEAP, EAP-FAST e Cisco LEAP sui dispositivi Surface'
+              href: enable-peap-eap-fast-and-cisco-leap-on-surface-devices.md
+            - name: Aggiornamento del firmware di Surface Dock 1
+              href: surface-dock-firmware-update.md
+        - name: Gestire gli aggiornamenti
+          items:
+            - name: Gestire e installare gli aggiornamenti di driver e firmware per Surface
+              href: manage-surface-driver-and-firmware-updates.md
+            - name: Ciclo di vita del driver e del firmware Surface per i dispositivi basati su Windows
+              href: surface-driver-firmware-lifecycle-support.md
+            - name: Gestire gli aggiornamenti dei driver di Surface in Configuration Manager
+              href: manage-surface-driver-updates-configuration-manager.md
+        - name: Gestire UEFI (firmware)
+          items:
+            - name: Gestire le impostazioni UEFI di Surface
+              href: manage-surface-uefi-settings.md
+            - name: Gestire DFCI nei dispositivi Surface
+              href: surface-manage-dfci-guide.md
+            - name: Funzionalità di sicurezza UEFI avanzate per Surface Pro 3
+              href: advanced-uefi-security-features-for-surface-pro-3.md
+        - name: Surface Dock
+          items:
+            - name: Novità di Surface Dock 2
+              href: surface-dock-whats-new.md
+            - name: Gestire Surface Dock 2 con WMI
+              href: surface-dock2-wmi.md
+            - name: Proteggere le porte del Surface Dock 2 con SEMM
+              href: secure-surface-dock-ports-semm.md
+            - name: Aggiornamento del firmware di Surface Dock 1
+              href: surface-dock-firmware-update.md
+        - name: Dispositivi di riattivazione remota
+          items:
+            - name: Riattivazione LAN per i dispositivi Surface
+              href: wake-on-lan-for-surface-devices.md
+            - name: Riattivazione LAN con Surface Dock 2
+              href: wake-on-lan-surface-dock2.md
+            - name: Riattivazione alimentazione per i dispositivi Surface
+              href: wake-on-power-for-surface.md
+        - name: Procedure consigliate
+          items:
+            - name: Ottimizzare la connettività Wi-Fi per i dispositivi Surface
+              href: surface-wireless-connect.md
+            - name: Procedure consigliate per le impostazioni di risparmio energia per i dispositivi Surface
+              href: maintain-optimal-power-settings-on-Surface-devices.md
+            - name: Protezione DMA del Surface
+              href: dma-protect.md
+            - name: Procedure consigliate per la rimozione di unità SSD nei dispositivi Surface compatibili
+              href: surface-ssd-removal-guide.md
+            - name: Considerazioni su Surface ed Endpoint Configuration Manager
+              href: considerations-for-surface-and-system-center-configuration-manager.md
+        - name: Dispositivi ARM
+          items:
+            - name: 'Distribuzione, gestione e manutenzione di Surface Pro X'
+              href: surface-pro-arm-app-management.md
+            - name: Compatibilità delle app Surface Pro X
+              href: surface-pro-arm-app-performance.md
+    - name: Risoluzione dei problemi
+      items:
+        - name: Principali soluzioni di supporto per i dispositivi Surface
+          href: support-solutions-surface.md
+        - name: Blog di Surface per professionisti IT
+          href: 'https://techcommunity.microsoft.com/t5/surface-it-pro-blog/bg-p/SurfaceITPro'
+        - name: Supporto per gli utenti finali
+          href: 'https://support.microsoft.com/products/surface-devices'
+        - name: Contattare il supporto di Surface
+          href: contact-surface-support.md
+    - name: Manutenzione e garanzia
+      items:
+        - name: Piani di garanzia e protezione di Surface per le aziende
+          href: 'https://www.microsoft.com/surface/business/warranty-service-offerings-and-support'
+        - name: Termini e condizioni
+          href: 'https://support.microsoft.com/help/4493926/warranties-extended-service-plans-and-terms-conditions-for-your-device'
+        - name: Garanzia e servizio self-service di Surface
+          href: self-serve-warranty-service.md
+        - name: Sostituzione entro il giorno lavorativo successivo
+          href: surface-next-business-day-replacement.md
+        - name: Verificare lo stato della garanzia del dispositivo
+          href: 'https://mybusinessservice.surface.com/'
+        - name: 'Protezione dei dati quando si invia Surface in assistenza '
+          href: 'https://support.microsoft.com/help/4023508/surface-faq-protecting-your-data-service'

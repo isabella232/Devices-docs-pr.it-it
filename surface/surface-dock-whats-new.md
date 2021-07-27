@@ -12,14 +12,14 @@ ms.date: 04/13/2021
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 2036379ce52f3b7824570ab10473568a57f64fb0
-ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
+ms.openlocfilehash: 0abdd30f3bdc136dd94fcaf41cf7af16cc3c53ab
+ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "11576646"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "11676410"
 ---
-# <a name="whats-new-in-surface-dock"></a>Novità di Surface Dock
+# <a name="whats-new-in-surface-dock-2"></a>Novità di Surface Dock 2
 
 Surface Dock 2, il Surface Dock di nuova generazione, consente agli utenti di connettere monitor esterni e più periferiche per ottenere un'esperienza desktop completamente modernizzata da un dispositivo Surface. Progettato per ottimizzare l'efficienza in ufficio, in un'area di lavoro flessibile o a casa, Surface Dock 2 dispone di sette porte, tra cui due porte USB-C anteriori, con 15 potenza di ricarica rapida per telefono e accessori. 
 
@@ -106,7 +106,7 @@ Surface Dock 2 è progettato per semplificare la gestione IT, consentendo agli a
 | Blocco Kensington                     | Sì                                                         | Sì                                                                                                 |                  |
 | Lunghezza del cavo Surflink               | 65 cm                                                        | 80 cm                                                                                                | 20 cm             |
 | Alimentazione host Surflink                 | 60W                                                         | 120W                                                                                                | N/D              |
-| Alimentazione di carico USB                      | 602                                                         | 60W                                                                                                 |                  |
+| Alimentazione di carico USB                      | 30W                                                         | 60W                                                                                                 |                  |
 | Velocità in bit USB                        | 5 Gbps                                                      | 10 Gbps                                                                                             | 10 Gbps          |
 | Monitorare il supporto                     | 2 x 4k @30fps, o<br>1 x 4k @ 60fps                         | 2 x 4K @ 60fps<br> o 1 x 4K @120fps                                                                                     | 1 x 4K @ 60fps   |
 | Wake-on-LAN da Standby connesso <sup> 1</sup> | Sì                                                         | Sì                                                                                                 |                  |

@@ -12,12 +12,12 @@ ms.author: dansimp
 ms.topic: article
 ms.date: 07/27/2017
 ms.localizationpriority: medium
-ms.openlocfilehash: 215736527121306c712932f57a5a3a853fb3bb20
-ms.sourcegitcommit: 366eedceb9f859f5e87ba032b161f248360cb895
+ms.openlocfilehash: ab2726577201157ed9a7ff4d265e826c063cf477
+ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "11445582"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "11676610"
 ---
 # <a name="password-management-surface-hub"></a>Gestione delle password (Surface Hub)
 
@@ -36,9 +36,9 @@ Imposta la proprietà **PasswordNeverExpires** dell'account del dispositivo su T
 
 ## <a name="allow-the-surface-hub-to-automatically-rotate-the-device-accounts-password"></a>Consentire al dispositivo Surface Hub di ruotare automaticamente la password dell'account del dispositivo
 
-Surface Hub può modificare automaticamente la password di un account del dispositivo senza richiedere l'aggiornamento manuale. Puoi abilitare questa funzionalità in **Impostazioni Account**  >  **Surface**  >  **Hub.** Se accerti Rotazione password, Surface Hub tenterà di cambiare la password ogni 7 giorni durante le ore di manutenzione. Le password non cambiano durante una riunione. Se sono trascorsi 7 giorni dall'ultima rotazione della password, ma Surface Hub era spento, tenterà di cambiare la password immediatamente quando è attivata o ogni 10 minuti fino a quando non avrà esito positivo.
+Il Surface Hub può modificare automaticamente la password di un account del dispositivo senza richiedere l'aggiornamento manuale. È possibile abilitare questa funzionalità in **Impostazioni**  >  **Surface Hub**  >  **account**. Se si attiva Rotazione password, il Surface Hub tenterà di modificare la password ogni 7 giorni durante le ore di manutenzione. Le password non cambiano durante una riunione. Se sono trascorsi 7 giorni dall'ultima rotazione della password, ma il Surface Hub era disattivato, tenterà di cambiare la password immediatamente quando viene attivata o ogni 10 minuti fino a quando non avrà esito positivo.
 
-Le password generate automaticamente contengono da 15 a 32 caratteri, tra cui una combinazione di lettere maiuscole e minuscole, numeri e caratteri speciali. Tieni presente che quando la password dell'account del dispositivo viene modificata, non ti verrà visualizzata la nuova password. Se devi accedere all'account o fornire di nuovo la password (ad esempio, se vuoi modificare le impostazioni dell'account del dispositivo nel Dispositivo Surface Hub), dovrai usare Active Directory o il portale di amministrazione di Microsoft 365 per reimpostare la password.
+Le password generate automaticamente contengono da 15 a 32 caratteri, tra cui una combinazione di lettere maiuscole e minuscole, numeri e caratteri speciali. Tieni presente che quando la password dell'account del dispositivo viene modificata, non ti verrà visualizzata la nuova password. Se devi accedere all'account o fornire di nuovo la password (ad esempio, se vuoi modificare le impostazioni dell'account del dispositivo nel Surface Hub), dovrai usare Active Directory o il portale di amministrazione di Microsoft 365 per reimpostare la password.
 
 > [!IMPORTANT]
-> Il formato usato per aggiungere l'account del dispositivo a Surface Hub ha un impatto sull'opzione di [affiliazione](prepare-your-environment-for-surface-hub.md) del dispositivo da usare per il corretto funzionamento della rotazione delle password. Se si aggiunge l'account nel formato **dominio\nomeutente,** consociare l'hub ad Active Directory locale durante la configurazione iniziale. Se si aggiunge l'account in `username@domain.com` formato, consociare l'hub ad Azure Active Directory durante la configurazione iniziale. In caso contrario, la rotazione delle password non funzionerà.
+> [L'opzione di affiliazione](prepare-your-environment-for-surface-hub.md) del dispositivo selezionata durante la configurazione iniziale del Surface Hub influisce sul formato dell'account del dispositivo che può essere usato con la rotazione delle password. Gli hub affiliati a un Active Directory locale possono ruotare solo le password degli account del dispositivo immessi nel **formato dominio\nomeutente.** Gli hub affiliati a un Azure Active Directory possono ruotare solo le password degli account del dispositivo immessi nel formato, ma solo se l'account è solo cloud o se il dominio AAD è configurato per l'autenticazione cloud e il writeback delle `username@domain.com` [password.](/azure/active-directory/authentication/concept-sspr-writeback) [](/azure/active-directory/hybrid/choose-ad-authn#cloud-authentication)

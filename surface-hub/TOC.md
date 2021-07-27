@@ -31,7 +31,7 @@
 ### [Connessione dei dispositivi a Surface Hub 2S](surface-hub-2s-connect.md)
 ### [Creare e testare l’account del dispositivo](create-and-test-a-device-account-surface-hub.md)
 ### [Creare pacchetti di provisioning per Surface Hub](provisioning-packages-for-surface-hub.md)
-### [Distribuire app in Surface Hub 2S con Intune](surface-hub-2s-deploy-apps-intune.md)
+### [Installare app nel dispositivo Microsoft Surface Hub](install-apps-on-surface-hub.md)
 ### [Creare gli account locali di Surface Hub 2S con PowerShell](https://docs.microsoft.com/microsoftteams/rooms/with-skype-for-business-server-2015)
 ### [App di Teams su Surface Hub](hub-teams-app.md)
 ### [Accessori certificati Teams per Surface Hub 2S](surface-hub-2s-certifications.md)

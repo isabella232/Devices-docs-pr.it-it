@@ -12,14 +12,14 @@ ms.date: 04/13/2021
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 50c7c9109d98448f10afcf3105974c8bee9515af
-ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
+ms.openlocfilehash: 52b988315951132284c7016752a6817dadbf74c6
+ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "11577903"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "11676620"
 ---
-# <a name="surface-laptop-4-processors-tech-overview"></a>Surface Laptop della tecnologia per 4 processori
+# <a name="surface-laptop-4-processors-tech-overview"></a>Panoramica tecnica dei processori di Surface Laptop 4
 
 Surface Laptop 4 è progettato per fornire ai clienti commerciali un set ricco di opzioni per i dispositivi per aiutare i decision maker a allineare meglio gli obiettivi di approvvigionamento dei dispositivi a requisiti di ruolo sempre più specifici. Rispetto a Surface Laptop 3:
 
@@ -31,7 +31,7 @@ La scelta dello SKU dipende dalle priorità dei clienti:
 - Se le prestazioni delle app multi-thread e la durata della batteria più lunga sono una priorità assoluta, Surface Laptop 4 con processori AMD Ryzen Surface Edition è una buona scelta.
 - Se le prestazioni a thread singolo più veloci sono più importanti, insieme alle opzioni per una maggiore memoria e archiviazione, Surface Laptop 4 con processori core intel 11 di generazione è una buona scelta.
 
-Per ulteriori informazioni, vedere [Surface Laptop 4 for Business.](https://www.microsoft.com/surface/business/surface-laptop-4)
+Per ulteriori informazioni, vedere [Surface Laptop 4 per le aziende](https://www.microsoft.com/surface/business/surface-laptop-4).
 
 ## <a name="processor-tech-specs"></a>Specifiche tecniche del processore
 
@@ -85,7 +85,7 @@ Per informazioni generali sui processori Intel in Surface Laptop 4, vedere:
 | TDP /TDP predefinito    | 15W               | 15W               |
 | Max Temps            | 105C              | 105 C             |
 
-Per informazioni generali sui processori AMD in Surface Laptop 4, vedere [AMD Ryzen](https://www.amd.com/processors/ryzen)
+Per informazioni generali sui processori AMD in Surface Laptop 4, vedere [Microsoft Surface Laptop 4 Powered by AMD Ryzen Mobile Processors](https://www.amd.com/processors/ryzen-surface-edition).
 
 ## <a name="surface-laptop-4-skus"></a>Surface Laptop 4 SKU
 
@@ -104,4 +104,4 @@ Per informazioni generali sui processori AMD in Surface Laptop 4, vedere [AMD Ry
 
 ## <a name="learn-more"></a>Altre informazioni
 
-- [Surface Laptop 4 for Business](https://www.microsoft.com/surface/business/surface-laptop-4)
+- [Surface Laptop 4 per le aziende](https://www.microsoft.com/surface/business/surface-laptop-4)
