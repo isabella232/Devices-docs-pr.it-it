@@ -12,12 +12,12 @@ ms.date: 04/13/2021
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 0abdd30f3bdc136dd94fcaf41cf7af16cc3c53ab
-ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
+ms.openlocfilehash: a43566461ab6bbac8045326801617bd6f723316e
+ms.sourcegitcommit: ad08299d14810db746514f01d977a81fc5a3961e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "11676410"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "11708767"
 ---
 # <a name="whats-new-in-surface-dock-2"></a>Novità di Surface Dock 2
 
@@ -29,6 +29,7 @@ Surface Dock 2 è progettato per semplificare la gestione IT, consentendo agli a
 
 - Surface Enterprise Management Mode (SEMM) consente agli amministratori IT di proteggere le porte su Surface Dock 2. Per altre informazioni, vedi [Secure Surface Dock 2 ports with Surface Enterprise Management Mode.](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/secure-surface-dock-2-ports-with-surface-enterprise-management/ba-p/1418999)
 -  Windows Il supporto di Strumentazione gestione (WMI) consente agli amministratori IT di monitorare e gestire in remoto il firmware, lo stato dei criteri e i dati correlati più recenti nei dispositivi Surface Dock 2. Per altre informazioni, vedi [Gestire Surface Dock 2 con WMI.](surface-dock2-wmi.md)
+- Centralizzare gli aggiornamenti nella rete locale utilizzando gli strumenti di distribuzione del software. [Scarica il firmware e i driver di Surface Dock 2.](https://www.microsoft.com/en-us/download/details.aspx?id=101317)
 
 ## <a name="general-system-requirements"></a>Requisiti di sistema generali
 
@@ -94,7 +95,7 @@ Surface Dock 2 è progettato per semplificare la gestione IT, consentendo agli a
 **Tabella 1. Surface Dock e hub di viaggio USB-C**
 
 
-| Componente                           | Dock Surface                                                | Surface Dock 2                                                                                      | Hub di viaggio USB-C |
+| Componente                           | Surface Dock                                                | Surface Dock 2                                                                                      | Hub di viaggio USB-C |
 | ----------------------------------- | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ---------------- |
 | Surflink                            | Sì                                                         | Sì                                                                                                 | No               |
 | USB-A                               | 2 porte USB 3.1 gen 1 frontale<br>2 USB 3.1 Gen 1 posteriore | 2 usb 3.2 gen 2 posteriore (alimentazione da 7,5 W)                                                            | 1 USB 3.1 Gen 2  |
