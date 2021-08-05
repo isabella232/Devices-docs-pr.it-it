@@ -1,5 +1,5 @@
 ---
-title: Riferimento di superficie SKU di sistema
+title: Riferimento SKU del sistema Surface
 description: Vedi un riferimento ai nomi SKU di sistema e modello di sistema per tutti i dispositivi Surface.
 keywords: uefi, configurare, firmware, sicuro, semm, Autopilot
 ms.prod: w10
@@ -9,19 +9,19 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 04/19/2021
+ms.date: 08/02/2021
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: bf3fb926c5e66f5f02f921f1c0d4fbe5f016f02d
-ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
+ms.openlocfilehash: 71ded9892e9dde8de1976a89214ea946e1bd1da4
+ms.sourcegitcommit: 657d0d73a51f0dd35ad60740ed523164a55d2e04
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "11577046"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "11720920"
 ---
-# <a name="surface-system-sku-reference"></a>Riferimento di superficie SKU di sistema
+# <a name="surface-system-sku-reference"></a>Riferimento SKU del sistema Surface
 
 Questo documento fornisce un riferimento che può essere usato per varie attività IT, ad esempio la registrazione di dispositivi Surface con Windows Autopilot o la verifica dello stato del computer di un dispositivo specifico con PowerShell o WMI.
 
@@ -40,7 +40,7 @@ Modello di sistema e SKU di sistema sono variabili archiviate nelle tabelle SMBI
 | Surface Book 2 15"                                        | Surface Book 2   | Surface_Book_1793                |
 | Surface Book 3 13"                                        | Surface Book 3   | Surface_Book_3_1900                |
 | Surface Book 3 15"                                        | Surface Book 3   | Surface_Book_3_1899
-| Surface Go LTE Commercial | Sistema Go | Surface_Go_1825_Commercial |
+| Surface Go LTE Commercial | Surface Go | Surface_Go_1825_Commercial |
 | Surface Go Consumer                                          | Surface Go       | Surface_Go_1824_Consumer         |
 | Surface Go Commercial                                        | Surface Go       | Surface_Go_1824_Commercial       |
 | Surface Go 2                                                 | Surface Go 2     | Surface_Go_2_1927                |
@@ -56,16 +56,19 @@ Modello di sistema e SKU di sistema sono variabili archiviate nelle tabelle SMBI
 | Surface Pro X con processore SQ2                | Surface Pro X    | Surface_Pro_X_H_1876        |
 | Surface Laptop Intel da 3 13" | Surface Laptop 3 | Surface_Laptop_3_1867:1868 |
 | Surface Laptop Intel da 3 15" | Surface Laptop 3 | Surface_Laptop_3_1872      |
-| Surface Laptop AMD da 3 15"   | Surface Laptop 3 | Surface_Laptop_3_1873      | 
-| Surface Laptop Go  | Surface Laptop Go | Surface_Laptop_Go_1943      | 
+| Surface Laptop AMD da 3 15"   | Surface Laptop 3 | Surface_Laptop_3_1873      |
+| Surface Laptop Go  | Surface Laptop Go | Surface_Laptop_Go_1943      |
 | Surface Laptop Intel da 4 13" | Surface Laptop 4 | Surface_Laptop_4_1950:1951 |
 | Surface Laptop Intel da 4 15" | Surface Laptop 4 | Surface_Laptop_4_1978:1979     |
-| Surface Laptop AMD da 4 15"   | Surface Laptop 4 | Surface_Laptop_4_1952:1953     | 
-| Surface Laptop AMD da 4 13"   | Surface Laptop 4 | Surface_Laptop_4_1958:1959    | 
-| Surface Hub 2S 50"  | Surface Hub 2S | Surface Hub 2S   | 
-| Surface Hub 2S 85"  | Surface Hub 2S | Surface Hub 2S 85   | 
+| Surface Laptop AMD da 4 15"   | Surface Laptop 4 | Surface_Laptop_4_1952:1953     |
+| Surface Laptop AMD da 4 13"   | Surface Laptop 4 | Surface_Laptop_4_1958:1959    |
+| Surface Hub 2S 50"  | Surface Hub 2S | Surface Hub 2S   |
+| Surface Hub 2S 85"  | Surface Hub 2S | Surface Hub 2S 85   |
+| Surface Studio | Surface Studio | Surface_Studio   |
+| Surface Studio 2 | Surface Studio 2 | Surface_Studio_2_1707_Commercial   |
+|
 
-## <a name="examples"></a>Esempi 
+## <a name="examples"></a>Esempi
 
 **Recupero dello SKU tramite PowerShell**  
 Utilizzare il comando di PowerShell seguente per estrarre le informazioni sullo SKU di sistema:
@@ -86,9 +89,9 @@ Puoi anche trovare la SKU di sistema e il modello di sistema per un dispositivo 
  ``` powershell  
     - WMI Namespace – Root\WMI
     - WQL Query – SELECT * FROM MS_SystemInformation WHERE SystemSKU = "Surface_Pro_1796"
- ``` 
+ ```
 
 ## <a name="learn-more"></a>Altre informazioni
 
-- [Informazioni di riferimento su WMI](https://docs.microsoft.com/windows/win32/wmisdk/wmi-reference)
+- [Informazioni di riferimento su WMI](/windows/win32/wmisdk/wmi-reference)
 - [Supporto alla registrazione di Surface per Windows Autopilot](surface-autopilot-registration-support.md)

@@ -14,12 +14,12 @@ author: coveminer
 ms.author: greglin
 ms.topic: article
 ms.audience: itpro
-ms.openlocfilehash: eacb7bd6b1f2f62b97b02cc871f8980e65ba7c8a
-ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
+ms.openlocfilehash: 0eb0eb1e1d73852a2131c5aa5d6a7731ce78d54f
+ms.sourcegitcommit: 6d531906c36da51cb4032a220d70182e686114a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "11676550"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "11721256"
 ---
 # <a name="ethernet-adapters-and-surface-deployment"></a>Schede Ethernet e distribuzione di Surface
 
@@ -39,7 +39,8 @@ I dispositivi Ethernet seguenti sono supportati per l'avvio di rete con i dispos
 
 - Surface USB-C to Ethernet and USB 3.0 Adapter
 - Scheda Ethernet da Surface USB 3.0 a Gigabit
-- Dock Surface
+- Surface Dock
+- Surface Dock 2
 - Alloggiamento di espansione per Surface 3
 - Alloggiamento di espansione per Surface Pro 3
 - Alloggiamento di espansione per Surface Pro e Surface Pro 2

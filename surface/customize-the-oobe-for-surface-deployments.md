@@ -14,12 +14,12 @@ author: coveminer
 ms.author: greglin
 ms.topic: article
 ms.audience: itpro
-ms.openlocfilehash: e72abd2fbd3289989d64f23bbc06fa72d3c5b1d2
-ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
+ms.openlocfilehash: f704541a2d862550250794308df6201c38b09e15
+ms.sourcegitcommit: 6d531906c36da51cb4032a220d70182e686114a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "11676649"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "11721266"
 ---
 # <a name="customize-the-oobe-for-surface-deployments"></a>Personalizzare la Configurazione guidata per le distribuzioni di Surface
 
@@ -44,7 +44,7 @@ Questo articolo contiene un riepilogo degli scenari in cui una distribuzione pot
 
 Quando una scheda di rete wireless è presente durante la Configurazione guidata, viene visualizzata la pagina **Connessione a rete wireless**, che chiede a un utente di connettersi a una rete wireless. Questa pagina non viene automaticamente nascosta dalle tecnologie di distribuzione, incluso MDT 2013, e di conseguenza verrà visualizzata anche quando una distribuzione è configurata per l'automazione completa.
 
-Per evitare che una distribuzione automatica venga arrestata da questa pagina, la pagina deve essere nascosta configurando un'altra impostazione nel file di risposte, ovvero **HideWirelessSetupInOOBE**. Puoi trovare informazioni aggiuntive sull'impostazione **HideWirelessSetupInOOBE** in [Guida di riferimento all'installazione automatica di Windows](/previous-versions/windows/it-pro/windows-8.1-and-8/ff716213(v=win.10)).
+Per evitare che una distribuzione automatica venga arrestata da questa pagina, la pagina deve essere nascosta configurando un'altra impostazione nel file di risposte, ovvero **HideWirelessSetupInOOBE**. Puoi trovare informazioni aggiuntive sull'impostazione **HideWirelessSetupInOOBE** in [Guida di riferimento all'installazione automatica di Windows](/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-oobe-hidewirelesssetupinoobe).
 
 ## <a name="scenario-2-surface-pen-pairing-in-oobe"></a>Scenario 2: associazione della Penna per Surface nella Configurazione guidata
 
