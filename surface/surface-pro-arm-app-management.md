@@ -12,12 +12,12 @@ ms.date: 1/15/2021
 ms.reviewer: jessko
 manager: laurawi
 ms.audience: itpro
-ms.openlocfilehash: 83b3db2e9fa3da253c16d208b752bd7b6e6be771
-ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
+ms.openlocfilehash: f0fed17dade345bf3f7dc9619eab7981dcb30cb0
+ms.sourcegitcommit: 6d531906c36da51cb4032a220d70182e686114a8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "11676420"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "11721276"
 ---
 # <a name="deploying-managing--servicing-surface-pro-x"></a>Distribuzione, gestione e manutenzione di Surface Pro X
 
@@ -36,7 +36,7 @@ Per un'esperienza ottimale, distribuisci Surface Pro X tramite Windows Autopilot
 - [Windows Autopilot e dispositivi Surface](windows-autopilot-and-surface-devices.md)
 - [Panoramica di Windows Autopilot](/windows/deployment/windows-autopilot/windows-autopilot)
 
-La distribuzione di Autopilot presenta diversi vantaggi: consente di usare il sistema operativo di cui è stato eseguito il provisioning in fabbrica, semplificato per la distribuzione automatica per includere la preinstallazione di Office Pro Plus.
+La distribuzione di Autopilot offre diversi vantaggi: consente di usare il sistema operativo di cui è stato eseguito il provisioning predefinito, semplificato per la distribuzione senza tocco, per includere la preinstallazione di Microsoft 365 Apps for enterprise (nota anche come Office Pro Plus).
 
 Le organizzazioni che usano già soluzioni moderne per la gestione, la sicurezza e la produttività sono ben posizionate per sfruttare le funzionalità esclusive relative alle prestazioni di Surface Pro X. Anche i clienti che usano le app line-of-business moderne, le app del Microsoft store (UWP) o le soluzioni desktop remoto possono trarne vantaggio.
 
