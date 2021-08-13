@@ -11,12 +11,12 @@ ms.date: 07/08/2019
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: 2403c57f88b0e14209b77b9f666141694384868d
-ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
+ms.openlocfilehash: 92b60fb0f0ac83c2516ebb1ebde0748d9d933c4e
+ms.sourcegitcommit: 21fcd329a7b0c82c69e2a65c423d47c5b23b4e7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "11577036"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "11883003"
 ---
 # <a name="local-management-for-surface-hub-settings"></a>Gestione locale per le impostazioni di Surface Hub
 
@@ -44,7 +44,7 @@ Oltre ad avere molte impostazioni comuni ad altri dispositivi Windows, i disposi
 | Richiesta di un PIN per la proiezione wireless | Surface Hub > Proiezione | Consente di scegliere se è necessario immettere un PIN per usare la proiezione wireless. |
 | Canale proiezione wireless (Miracast) | Surface Hub > Proiezione | Consente di impostare il canale per la proiezione Miracast. |
 | Visualizzazione delle info sulla riunione nella schermata iniziale | Surface Hub > Schermata iniziale | Consente di scegliere se informazioni come organizzatore della riunione, ora e oggetto devono essere visualizzate nella schermata iniziale. |
-| Sfondo della schermata iniziale |  Surface Hub > Schermata iniziale | Consente di scegliere un'immagine di sfondo per la schermata iniziale. |
+| Sfondo della schermata iniziale |  Surface Hub > Schermata iniziale | Scegli un'immagine da usare come sfondo durante le sessioni utente e nella schermata iniziale. |
 | Timeout sessione per la schermata iniziale | Surface Hub > di & sessione | Scegliere quanto tempo deve trascorrere prima che il dispositivo Surface Hub torni alla schermata iniziale quando non viene rilevato alcun movimento. |
 | Ripresa della sessione | Surface Hub > di & sessione | Scegliere se consentire agli utenti di riprendere una sessione dopo che non viene rilevata alcuna animazione o se pulire automaticamente una sessione. |
 | Accesso ai file e alle riunioni di Office 365 | Surface Hub > di & sessione | Scegliere se un utente può accedere a Office 365 per ottenere l'accesso alle riunioni e ai file. |
