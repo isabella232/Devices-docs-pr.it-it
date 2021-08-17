@@ -11,12 +11,12 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: High
-  ms.openlocfilehash: 9367329bcaa7c42a31cc8de5ffcee2e65f4c8437
-  ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
+  ms.openlocfilehash: 88674469b94de346a6a3a2b427f4cff034a3d405
+  ms.sourcegitcommit: 2776af08eb63c0a23950c476256e5019f83effd8
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 07/24/2021
-  ms.locfileid: "11676510"
+  ms.lasthandoff: 08/17/2021
+  ms.locfileid: "11902675"
 landingContent:
 - title: Dispositivi Surface
   linkLists:
@@ -42,7 +42,7 @@ landingContent:
       url: surface-laptop-processors.md
     - text: Panoramica tecnica di Surface Headphones 2+
       url: surface-headphones.md
-    - text: Desktop virtuale Windows su Surface
+    - text: Desktop virtuale di Azure in Surface
       url: windows-virtual-desktop-surface.md
 - title: Microsoft Ignite
   linkLists:
@@ -50,9 +50,9 @@ landingContent:
     links:
     - text: Distribuzione zero touch con Surface & AutoPilot
       url: https://youtu.be/WQ-wg8fRzN0
-    - text: Surface Pro X e Windows in ARM in un mondo remoto
+    - text: Surface Pro X e Windows su ARM in un mondo remoto
       url: https://youtu.be/bDw77ZQNPPw
-    - text: 'Surface Security : da chip a cloud Endpoint Protection da Microsoft'
+    - text: 'Surface Security: da chip a cloud Endpoint Protection da Microsoft'
       url: https://youtu.be/uadAecDbqf4
 - title: Distribuisci i dispositivi Surface
   linkLists:
@@ -70,7 +70,7 @@ landingContent:
     links:
     - text: Surface Enterprise Management Mode
       url: surface-enterprise-management-mode.md
-    - text: Gestire e installare gli aggiornamenti di driver e firmware per il Surface
+    - text: Gestire e installare gli aggiornamenti di driver e firmware per Surface
       url: manage-surface-driver-and-firmware-updates.md
     - text: Gestire DFCI nei dispositivi Surface
       url: surface-manage-dfci-guide.md

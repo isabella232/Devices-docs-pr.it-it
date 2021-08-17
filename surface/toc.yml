@@ -10,7 +10,7 @@
           items:
             - name: Panoramica della protezione di Surface
               href: surface-security.md
-            - name: Desktop virtuale Windows su Surface
+            - name: Desktop virtuale Azure in Surface
               href: windows-virtual-desktop-surface.md
             - name: Panoramica tecnica dei processori di Surface Laptop 4
               href: surface-laptop-processors.md
