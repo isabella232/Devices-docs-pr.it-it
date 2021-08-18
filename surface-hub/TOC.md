@@ -27,7 +27,7 @@
 ## Distribuzione
 ### [Adozione di Surface Hub 2S e formazione](surface-hub-2s-adoption-kit.md)
 ### [Video di adozione di Surface Hub 2S](surface-hub-2s-adoption-videos.md)
-### [Prima configurazione di Surface Hub 2S](surface-hub-2s-setup.md)
+### [Prima configurazione di Surface Hub 2S](first-run-program-surface-hub.md)
 ### [Connessione dei dispositivi a Surface Hub 2S](surface-hub-2s-connect.md)
 ### [Creare e testare l’account del dispositivo](create-and-test-a-device-account-surface-hub.md)
 ### [Creare pacchetti di provisioning per Surface Hub](provisioning-packages-for-surface-hub.md)
