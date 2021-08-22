@@ -32,7 +32,9 @@
 ### [Creare e testare l’account del dispositivo](create-and-test-a-device-account-surface-hub.md)
 ### [Creare pacchetti di provisioning per Surface Hub](provisioning-packages-for-surface-hub.md)
 ### [Installare app nel dispositivo Microsoft Surface Hub](install-apps-on-surface-hub.md)
-### [Creare gli account locali di Surface Hub 2S con PowerShell](https://docs.microsoft.com/microsoftteams/rooms/with-skype-for-business-server-2015)
+### [Creare gli account locali di Surface Hub 2S con PowerShell](/microsoftteams/rooms/with-skype-for-business-server-2015)
+### [Microsoft Teams Rooms in Surface Hub](surface-hub-teams-rooms.md)
+### [Configurare la rete e la qualità del servizio di Microsoft Teams Rooms in Surface Hub](surface-hub-teams-rooms-networking.md)
 ### [App di Teams su Surface Hub](hub-teams-app.md)
 ### [Accessori certificati Teams per Surface Hub 2S](surface-hub-2s-certifications.md)
 
@@ -83,11 +85,11 @@
 
 ## Distribuisci
 ### [Creare e testare un account del dispositivo](create-and-test-a-device-account-surface-hub.md)
-#### [Distribuzione online](https://docs.microsoft.com/microsoftteams/rooms/with-office-365)
+#### [Distribuzione online](/microsoftteams/rooms/with-office-365)
 
-#### [Distribuzione locale (singola foresta)](https://docs.microsoft.com/microsoftteams/rooms/with-skype-for-business-server-2015)
+#### [Distribuzione locale (singola foresta)](/microsoftteams/rooms/with-skype-for-business-server-2015)
 
-#### [Distribuzione locale (più foreste)](https://docs.microsoft.com/skypeforbusiness/deploy/deploy-clients/multiple-forest-on-premises-deployments)
+#### [Distribuzione locale (più foreste)](/skypeforbusiness/deploy/deploy-clients/multiple-forest-on-premises-deployments)
 #### [Distribuzione ibrida](hybrid-deployment-surface-hub-device-accounts.md)
 #### [Proprietà di Microsoft Exchange](exchange-properties-for-surface-hub-device-accounts.md)
 #### [Applicazione di criteri ActiveSync agli account del dispositivo](apply-activesync-policies-for-surface-hub-device-accounts.md)
