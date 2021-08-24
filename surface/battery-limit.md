@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 manager: laurawi
 audience: itpro
 ms.date: 1/15/2021
-ms.openlocfilehash: 07e4131321387a410e5abd5b7039128942b1b339
-ms.sourcegitcommit: ad08299d14810db746514f01d977a81fc5a3961e
+ms.openlocfilehash: 52e43a1ac14f89f5671b6fad8fc2e1ef49480470
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "11708797"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911841"
 ---
 # <a name="battery-limit-setting"></a>Impostazione del limite della batteria
 
@@ -26,7 +26,7 @@ L'opzione Limite batteria è un'impostazione UEFI che modifica la modalità di c
 
 ## <a name="how-battery-limit-works"></a>Funzionamento del limite di batteria
 
-L'impostazione del dispositivo su Limite batteria modifica il protocollo per caricare la batteria del dispositivo. Quando il limite della batteria è abilitato, la carica della batteria sarà limitata al 50% della capacità massima. Il livello di addebito riportato Windows rifletterà questo limite. Di conseguenza, mostrerà che la batteria è carica fino al 50% e non si carica oltre questo limite. Se abiliti Il limite di batteria mentre il dispositivo è superiore al 50% di carica, l'icona Della batteria mostrerà che il dispositivo è collegato ma si scarica fino a quando il dispositivo non raggiunge il 50% della capacità massima di carica.  
+L'impostazione del dispositivo su Limite batteria modifica il protocollo per caricare la batteria del dispositivo. Quando il limite della batteria è abilitato, la carica della batteria sarà limitata al 50% della capacità massima. Il livello di addebito riportato in Windows rifletterà questo limite. Di conseguenza, mostrerà che la batteria è carica fino al 50% e non si carica oltre questo limite. Se abiliti Il limite di batteria mentre il dispositivo è superiore al 50% di carica, l'icona Della batteria mostrerà che il dispositivo è collegato ma si scarica fino a quando il dispositivo non raggiunge il 50% della capacità massima di carica.  
 
 ## <a name="supported-devices"></a>Dispositivi supportati
 
@@ -36,21 +36,21 @@ L'impostazione UEFI limite batteria è integrata nei dispositivi Surface più re
 
 L'impostazione Limite batteria UEFI di Surface può essere configurata avviando surface UEFI (**Power + Vol Up** quando si accende il dispositivo). Scegliere **configurazione di avvio**e quindi, in Opzioni **avanzate,** attivare Attiva modalità **limite** **batteria.**  
 
-![Limite batteria Opzioni avanzate](images/enable-bl.png)
+![Limite batteria Opzioni avanzate.](images/enable-bl.png)
 
 ## <a name="enabling-battery-limit-on-surface-go-and-surface-go-2"></a>Abilitazione del limite della batteria in Surface Go e Surface Go 2
 
 L'impostazione Limite batteria surface può essere configurata avviando surface UEFI (**Power + Vol Up** quando si accende il dispositivo). Scegli **configurazione di avvio**e quindi, in Modalità **tutto**schermo, sposta il dispositivo di scorrimento verso destra per impostare Limite batteria su **Abilitato.**  
 
-![Limite batteria modalità tutto schermo in Surface Go](images/go-batterylimit.png)
+![Limite batteria in modalità tutto schermo in Surface Go.](images/go-batterylimit.png)
 
 ## <a name="enabling-battery-limit-in-surface-uefi-surface-pro-3"></a>Abilitazione del limite di batteria in Surface UEFI (Surface Pro 3)
 
 L'impostazione Limite batteria UEFI di Surface può essere configurata avviando surface UEFI (**Power + Vol Up** quando si accende il dispositivo). Scegli **Modalità tutto schermo,** seleziona **Limite batteria**e quindi scegli **Abilitato.**
 
-![Screenshot delle opzioni avanzate](images/enable-bl-sp3.png)
+![Screenshot delle opzioni avanzate.](images/enable-bl-sp3.png)
 
-![Opzioni avanzate](images/enable-bl-sp3-2.png)
+![Opzioni avanzate.](images/enable-bl-sp3-2.png)
 
 ## <a name="enabling-battery-limit-using-surface-enterprise-management-mode-semm-or-surface-pro-3-firmware-powershell-scripts"></a>Abilitazione del limite di batteria tramite surface Enterprise Management Mode (SEMM) o Surface Pro 3 script di PowerShell del firmware
 
@@ -58,13 +58,13 @@ Il limite della batteria UEFI di Surface è disponibile anche per la configurazi
 
 - Surface Pro 4 e versioni successive
   - [Configuratore UEFI di Microsoft Surface](surface-enterprise-management-mode.md)  
-    - Script di PowerShell per Surface UEFI Manager (SEMM_Powershell.zip) nei [download di Surface Tools per IT](https://www.microsoft.com/download/details.aspx?id=46703)
+    - Script di PowerShell per Surface UEFI Manager (SEMM_Powershell.zip) in [Surface Tools for IT downloads](https://www.microsoft.com/download/details.aspx?id=46703)
 
 ### <a name="using-microsoft-surface-uefi-configurator"></a>Utilizzo del configuratore UEFI di Microsoft Surface
 
-Per configurare la modalità **** limite batteria, imposta l'impostazione Sostituzioni chiosco multimediale nella pagina **Configurazione** avanzata Impostazioni in SEMM (Surface Pro 4 e versioni successive).
+Per configurare la modalità **** Limite batteria, imposta l'impostazione Sostituzioni chiosco multimediale nella pagina **Configurazione** avanzata Impostazioni in SEMM (Surface Pro 4 e versioni successive).
 
-![Screenshot delle impostazioni avanzate](images/semm-bl.png)
+![Screenshot delle impostazioni avanzate.](images/semm-bl.png)
 
 ### <a name="using-surface-uefi-manager-powershell-scripts"></a>Uso degli script di PowerShell di Surface UEFI Manager
 

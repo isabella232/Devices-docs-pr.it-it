@@ -13,12 +13,12 @@ ms.topic: article
 ms.reviewer: hachidan
 manager: laurawi
 ms.date: 04/13/2021
-ms.openlocfilehash: 1ba8da50472927ff106b7243d89c15995844b191
-ms.sourcegitcommit: 21fcd329a7b0c82c69e2a65c423d47c5b23b4e7f
+ms.openlocfilehash: 60ace1e2b9344faeb9f130a56686ffac4643fc37
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "11883023"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911321"
 ---
 # <a name="manage-surface-uefi-settings"></a>Gestire le impostazioni UEFI di Surface
 
@@ -92,19 +92,19 @@ La pagina Sicurezza consente di impostare una password per proteggere le imposta
 
 La password deve contenere almeno 6 caratteri e fa distinzione tra maiuscole e minuscole.
 
-![Aggiunta di una password per proteggere le impostazioni UEFI di Surface](images/manage-surface-uefi-fig2.png "Add a password to protect Surface UEFI settings")
+![Aggiungi una password per proteggere le impostazioni UEFI di Surface.](images/manage-surface-uefi-fig2.png "Add a password to protect Surface UEFI settings")
 
 *Figura 3. Aggiunta di una password per proteggere le impostazioni UEFI di Surface*
 
 Nella pagina Security puoi anche modificare la configurazione di Avvio protetto nel tuo dispositivo Surface. La tecnologia Avvio protetto impedisce l'avvio di un codice di avvio non autorizzato nel dispositivo Surface, per proteggere il sistema da infezioni malware di tipo bootkit e rootkit. Puoi disabilitare Avvio protetto per permettere al dispositivo Surface di avviare sistemi operativi o supporti di avvio di terze parti. È inoltre possibile configurare l'avvio protetto per l'utilizzo con certificati di terze parti, come illustrato nella figura 4. Per altre informazioni, vedi [Avvio protetto](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/secure-boot-overview) nella Libreria TechNet.
 
-![Configurazione di Avvio protetto](images/manage-surface-uefi-fig3.png "Configure Secure Boot")
+![Configurare l'avvio protetto.](images/manage-surface-uefi-fig3.png "Configure Secure Boot")
 
 *Figura 4. Configurazione di Avvio protetto*
 
 A seconda del dispositivo, potresti anche essere in grado di vedere se il TPM è abilitato o disabilitato. Se non viene visualizzata l'impostazione **Abilita TPM,** aprire tpm.msc in Windows per verificare lo stato, come illustrato nella figura 5. Il dispositivo TPM viene usato per autenticare la crittografia per i dati del dispositivo con BitLocker. Per altre informazioni, vedi [Panoramica di BitLocker.](/windows/security/information-protection/bitlocker/bitlocker-overview)
 
-![Console TPM](images/manage-surface-uefi-fig5-a.png "TPM console")
+![Console TPM.](images/manage-surface-uefi-fig5-a.png "TPM console")
 
 *Figura 5. Console TPM*
 
@@ -156,7 +156,7 @@ Poi anche attivare o disattivare il supporto IPv6 per PXE con l'opzione **Enable
 
 ## <a name="uefi-menu-management"></a>Menu UEFI: Gestione
 
-La pagina Gestione consente di gestire l'uso di Zero Touch UEFI Management e di altre funzionalità nei dispositivi idonei, tra cui Surface Pro 7, Surface Pro X e Surface Laptop 3.  
+La pagina Gestione consente di gestire l'uso di Zero Touch UEFI Management e altre funzionalità nei dispositivi idonei, tra cui Surface Pro 7, Surface Pro X e Surface Laptop 3.  
 
 :::image type="content" alt-text="Gestire l'accesso a Zero Touch UEFI Management e ad altre funzionalità." source="images/manage-surface-uefi-fig7a.png":::
 
@@ -179,50 +179,50 @@ Utilizzare il **pulsante Riavvia** ora nella **pagina Esci** per uscire da impos
 
 Quando aggiorni il firmware del dispositivo Surface, tramite Windows Update o un'installazione manuale, gli aggiornamenti non vengono applicati immediatamente al dispositivo, ma al successivo ciclo di riavvio. Per altre informazioni sul processo di aggiornamento del firmware di Surface, vedere Gestire e distribuire gli aggiornamenti di driver e [firmware di Surface.](manage-surface-driver-and-firmware-updates.md) Lo stato di avanzamento dell'aggiornamento del firmware viene visualizzato su uno schermo con barre di stato di colori diversi per indicare il firmware di ogni componente. L'indicatore di stato di ogni componente viene visualizzato nelle figure da 9 a 18.
 
-![Aggiornamento del firmware UEFI di Surface con barra di stato blu](images/manage-surface-uefi-fig8.png "Surface UEFI firmware update with blue progress bar")
+![Aggiornamento del firmware UEFI di Surface con barra di avanzamento blu.](images/manage-surface-uefi-fig8.png "Surface UEFI firmware update with blue progress bar")
 
 *Figura 10. L'aggiornamento del firmware UEFI di Surface visualizza una barra di stato blu*
 
-![Firmware del controller integrato di sistema con la barra di stato verde](images/manage-surface-uefi-fig9.png "System Embedded Controller firmware with green progress bar")
+![Firmware del controller incorporato di sistema con barra di avanzamento verde.](images/manage-surface-uefi-fig9.png "System Embedded Controller firmware with green progress bar")
 
 *Figura 11. L'aggiornamento del firmware del controller integrato di sistema visualizza una barra di stato verde*
 
-![Aggiornamento del firmware del controller SAM con barra di stato arancione](images/manage-surface-uefi-fig10.png "SAM Controller firmware update with orange progress bar")
+![Aggiornamento del firmware del controller SAM con indicatore di stato arancione.](images/manage-surface-uefi-fig10.png "SAM Controller firmware update with orange progress bar")
 
 *Figura 12. L'aggiornamento del firmware del controller SAM visualizza una barra di stato arancione*
 
-![Firmware Intel Management Engine con barra di stato rosso](images/manage-surface-uefi-fig11.png "Intel Management Engine firmware with red progress bar")
+![Firmware del motore di gestione Intel con barra di avanzamento rossa.](images/manage-surface-uefi-fig11.png "Intel Management Engine firmware with red progress bar")
 
 *Figura 13. L'aggiornamento del firmware Intel Management Engine visualizza una barra di stato rossa*
 
-![Firmware di Surface touch con barra di stato grigia](images/manage-surface-uefi-fig12.png "Surface touch firmware with gray progress bar")
+![Firmware surface touch con indicatore di stato grigio.](images/manage-surface-uefi-fig12.png "Surface touch firmware with gray progress bar")
 
 *Figura 14. L'aggiornamento del firmware di Surface touch visualizza una barra di stato grigia*
 
-![Firmware Surface KIP con indicatore di stato verde chiaro](images/manage-surface-uefi-fig13.png "Surface touch firmware with light green progress bar")
+![Firmware Surface KIP con indicatore di stato verde chiaro.](images/manage-surface-uefi-fig13.png "Surface touch firmware with light green progress bar")
 
 *Figura 15. L'aggiornamento del firmware di Surface KIP visualizza un indicatore di stato verde chiaro*
 
-![Firmware ISH di Surface con barra di avanzamento rosa](images/manage-surface-uefi-fig14.png "Surface ISH firmware with pink progress bar")
+![Firmware ISH surface con barra di avanzamento rosa.](images/manage-surface-uefi-fig14.png "Surface ISH firmware with pink progress bar")
 
 *Figura 16 L'aggiornamento del firmware ISH di Surface visualizza un indicatore di stato rosa chiaro*
 
-![Firmware Surface Trackpad con indicatore di stato grigio](images/manage-surface-uefi-fig15.png "Surface Trackpad firmware with gray progress bar")
+![Firmware Surface Trackpad con indicatore di stato grigio.](images/manage-surface-uefi-fig15.png "Surface Trackpad firmware with gray progress bar")
 
 *Figura 17. L'aggiornamento del firmware di Surface Trackpad visualizza un indicatore di stato rosa*
 
-![Firmware Surface TCON con indicatore di stato grigio chiaro](images/manage-surface-uefi-fig16.png "Surface TCON firmware with light gray progress bar")
+![Firmware Surface TCON con indicatore di stato grigio chiaro.](images/manage-surface-uefi-fig16.png "Surface TCON firmware with light gray progress bar")
 
 *Figura 18. L'aggiornamento del firmware TCON di Surface visualizza un indicatore di stato grigio chiaro*
 
-![Firmware TPM surface con indicatore di stato viola chiaro](images/manage-surface-uefi-fig17.png "Surface TPM firmware with purple progress bar")
+![Firmware TPM surface con indicatore di stato viola chiaro.](images/manage-surface-uefi-fig17.png "Surface TPM firmware with purple progress bar")
 
 *Figura 19. L'aggiornamento del firmware TPM di Surface visualizza un indicatore di stato viola*
 
 >[!NOTE]
 >Viene visualizzato un messaggio di avviso aggiuntivo che indica che l'avvio protetto è disabilitato, come illustrato nella figura 19.
 
-![Schermata di avvio di Surface indicante che l'avvio protetto è stato disabilitato.](images/manage-surface-uefi-fig18.png "Surface boot screen that indicates Secure Boot has been disabled")
+![Schermata di avvio di Surface che indica che l'avvio protetto è stato disabilitato.](images/manage-surface-uefi-fig18.png "Surface boot screen that indicates Secure Boot has been disabled")
 
 *Figura 20. Schermata di avvio di Surface indicante che l'avvio protetto è stato disabilitato nelle impostazioni UEFI di Surface*
 

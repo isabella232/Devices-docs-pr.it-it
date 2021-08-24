@@ -1,6 +1,6 @@
 ---
 title: Regolare la luminosità, il volume e l'input di Surface Hub 2S
-description: Informazioni su come usare la visualizzazione su schermo per regolare la luminosità e le altre impostazioni di Surface Hub 2S.
+description: Scopri come usare lo schermo su schermo per regolare la luminosità e altre impostazioni in Surface Hub 2S.
 keywords: separare i valori con virgole
 ms.prod: surface-hub
 ms.sitesec: library
@@ -11,35 +11,35 @@ audience: Admin
 ms.topic: article
 ms.date: 07/09/2019
 ms.localizationpriority: Medium
-ms.openlocfilehash: ad97464bdaf95f38e87d8ab992860faa18cf1af8
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: b1c685d99e51966d265d9af436649d1d83a4e771
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833992"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911591"
 ---
-# Regolare la luminosità, il volume e l'input di Surface Hub 2S
+# <a name="adjust-surface-hub-2s-brightness-volume-and-input"></a>Regolare la luminosità, il volume e l'input di Surface Hub 2S
 
-Surface Hub 2S offre una visualizzazione su schermo per il volume, la luminosità e il controllo di input. Il pulsante origine funge da interruttore per passare tra il volume, la luminosità e i menu di controllo di input.
+Surface Hub 2S offre uno schermo su schermo per il controllo di volume, luminosità e input. Il pulsante Source funziona come interruttore per passare da un menu di controllo di input, luminosità e volume.
 
-##  <a name="to-show-the-on-screen-display"></a>Per visualizzare la visualizzazione su schermo
+## <a name="to-show-the-on-screen-display"></a>Per visualizzare lo schermo su schermo
 
-- Premere e tenere premuto il pulsante **origine** per 4 secondi.
+- Tieni premuto il **pulsante Source** per 4 secondi.
 
-  ![Visualizzazione su schermo di Surface Hub 2S](images/sh2-onscreen-display.png)<br>
+  ![Surface Hub 2S su schermo.](images/sh2-onscreen-display.png)<br>
 
- Quando la visualizzazione sullo schermo è visibile, usare uno o più pulsanti per raggiungere le impostazioni desiderate.
+ Quando lo schermo è visibile, usa uno o più pulsanti per raggiungere le impostazioni desiderate.
  
-##  <a name="to-adjust-volume"></a>Per regolare il volume
+## <a name="to-adjust-volume"></a>Per regolare il volume
 
-- Usare il pulsante **volume su/giù** per aumentare o diminuire il volume.
+- Usa il **pulsante Volume su/giù** per aumentare o ridurre il volume.
 
-##  <a name="to-adjust-brightness"></a>Per regolare la luminosità
+## <a name="to-adjust-brightness"></a>Per regolare la luminosità
 
-1. Premere di nuovo il pulsante **source** per passare al menu luminosità.
-2. Usare il pulsante **volume su/giù** per aumentare o diminuire la luminosità.
+1. Premi di **nuovo** il pulsante Source per passare al menu brightness.
+2. Usa il **pulsante Volume su/giù** per aumentare o diminuire la luminosità.
 
-##  <a name="to-adjust-input"></a>Per regolare l'input
+## <a name="to-adjust-input"></a>Per regolare l'input
 
-1. Premere due volte il pulsante **origine** per passare al menu origine.
-2. Usare il pulsante **volume su/giù** per spostarsi tra gli ingressi PC, HDMI e USB-C.
+1. Premi due **volte** il pulsante Source per passare al menu Source.
+2. Usa il **pulsante Volume su/giù** per passare da un input PC, HDMI e USB-C.

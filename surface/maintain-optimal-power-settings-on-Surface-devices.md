@@ -1,6 +1,6 @@
 ---
 title: Procedure consigliate per le impostazioni di risparmio energia per i dispositivi Surface
-description: Questo argomento fornisce consigli pratici per la gestione delle impostazioni di potenza ottimali e spiega come l'area ottimizza l'esperienza di risparmio energia. Questo articolo si applica a tutti i dispositivi Surface attualmente supportati, tra cui Surface Pro 7 +, Surface Pro 7, Surface Pro X e Surface laptop 3.
+description: In questo argomento vengono forniti consigli sulle procedure consigliate per mantenere le impostazioni di risparmio energia ottimali e viene illustrato come Surface semplifica l'esperienza di gestione del risparmio energia. Questo articolo si applica a tutti i dispositivi Surface attualmente supportati, tra cui Surface Pro 7+, Surface Pro 7, Surface Pro X e Surface Laptop 3.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -12,129 +12,129 @@ manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
 ms.date: 1/15/2021
-ms.openlocfilehash: 54aff228e8a72d413fc53bd14fe15d8ad7b15ab0
-ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
+ms.openlocfilehash: 23b94c865c43ad92b7ae6f047e980084760e4aed
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "11271400"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911751"
 ---
-# Procedure consigliate per le impostazioni di risparmio energia per i dispositivi Surface
+# <a name="best-practice-power-settings-for-surface-devices"></a>Procedure consigliate per le impostazioni di risparmio energia per i dispositivi Surface
 
-I dispositivi Surface sono progettati per sfruttare i più recenti progressi nel consumo di energia dei dispositivi mobili per offrire un'esperienza semplificata ottimizzata tra i carichi di lavoro. A seconda di quello che si sta facendo, la superficie si sintonizza dinamicamente su come i singoli componenti hardware vengono riattivati momentaneamente per gestire le attività in background, ad esempio un messaggio di posta elettronica o un traffico di rete, prima di tornare a uno stato di inattività ridotta (S0ix).
+I dispositivi Surface sono progettati per sfruttare i più recenti progressi nel consumo di energia dei dispositivi mobili per offrire un'esperienza semplificata ottimizzata tra i carichi di lavoro. A seconda di ciò che stai facendo, Surface regola dinamicamente il flusso dell'alimentazione ai singoli componenti hardware, svegliando momentaneamente i componenti di sistema per gestire le attività in background, ad esempio un messaggio di posta elettronica in arrivo o il traffico di rete, prima di tornare a uno stato di inattività a basso consumo (S0ix).
 
-##  <a name="summary"></a>Riepilogo dei suggerimenti per gli amministratori IT
+## <a name="summary-of-recommendations-for-it-administrators"></a>Riepilogo dei suggerimenti per gli amministratori IT
 
-Per garantire che i dispositivi Surface in tutta l'organizzazione traggano vantaggio dalle caratteristiche di Power Optimization:
+Per garantire che i dispositivi Surface nell'organizzazione trarranno vantaggio dalle funzionalità di ottimizzazione dell'alimentazione di Surface:
 
--  Installare i driver e il firmware più recenti da Windows Update o dal driver della superficie e dal firmware MSI. In questo modo, per impostazione predefinita, viene creato il Power Plan bilanciato (aka Power profile) e vengono configurate le impostazioni di potenza  Per altre informazioni, vedere [gestire e distribuire il driver della superficie e gli aggiornamenti del firmware](manage-surface-driver-and-firmware-updates.md).
-- Evitare di creare profili di alimentazione personalizzati o di modificare le impostazioni di Power avanzate non visibili nell'interfaccia utente predefinita (**System**  >  **Power & Sleep**).
-- Se è necessario gestire il profilo di alimentazione dei dispositivi in rete, ad esempio in organizzazioni altamente gestite, usare lo strumento di comando powercfg per esportare il piano di alimentazione dall'immagine di fabbrica del dispositivo Surface e quindi importarlo nel pacchetto di provisioning per i dispositivi Surface. 
+-  Installa i driver e il firmware più recenti da Windows Update o dal file MSI surface driver e firmware. In questo modo viene creata la combinazione per il risparmio di energia bilanciata (anche noto come profilo di alimentazione) per impostazione predefinita e vengono configurate impostazioni di risparmio energia ottimali.  Per altre informazioni, fai riferimento a [Gestire e distribuire gli aggiornamenti del firmware e dei driver di Surface.](manage-surface-driver-and-firmware-updates.md)
+- Evitare di creare profili di alimentazione personalizzati o di regolare le impostazioni avanzate di risparmio energia non visibili nell'interfaccia utente predefinita (**Alimentazione**  >  **di sistema & sospensione**).
+- Se devi gestire il profilo di alimentazione dei dispositivi nella rete (ad esempio nelle organizzazioni altamente gestite), usa lo strumento di comando powercfg per esportare la combinazione per il risparmio di energia dall'immagine di fabbrica del dispositivo Surface e quindi importarla nel pacchetto di provisioning per i dispositivi Surface. 
 
     >[!NOTE]
-    >È possibile esportare solo un piano di alimentazione in uno stesso tipo di dispositivo Surface.  Ad esempio, non è possibile esportare un Power Plan dal portatile Surface e importarlo in Surface Pro.  Per altre informazioni, vedere [configurare le impostazioni di risparmio energia](https://docs.microsoft.com/windows-hardware/customize/power-settings/configure-power-settings).
+    >Puoi esportare una combinazione per il risparmio di energia solo nello stesso tipo di dispositivo Surface.  Ad esempio, non è possibile esportare una combinazione per il risparmio di Surface Laptop e importarla in Surface Pro.  Per ulteriori informazioni, vedere [Configurare le impostazioni di risparmio energia.](https://docs.microsoft.com/windows-hardware/customize/power-settings/configure-power-settings)
 
 - Escludere i dispositivi Surface da eventuali impostazioni dei criteri di risparmio energia esistenti. 
 
-## Background
+## <a name="background"></a>Background
 
-Il modo in cui Surface implementa la gestione dell'alimentazione differisce significativamente rispetto allo standard precedente del sistema operativo che riduce gradualmente e disattiva l'alimentazione tramite una serie di Stati di sospensione; ad esempio, in bicicletta tra S1, S2, S3 e così via.
+Il modo in cui Surface implementa la gestione dell'alimentazione differisce in modo significativo dallo standard precedente del sistema operativo che riduce gradualmente e spegne l'alimentazione tramite una serie di stati di sospensione; ad esempio, ciclo attraverso S1, S2, S3 e così via.
 
-La superficie è invece un'immagine con un profilo di alimentazione personalizzato che sostituisce la funzionalità di sospensione e consumo di energia legacy con caratteristiche di standby moderne e una fine tuning dinamico. Questo profilo di alimentazione personalizzato viene implementato tramite il driver hub seriale Surface e il modulo aggregator di sistema (SAM). Il chip SAM funziona come proprietario dei criteri di alimentazione del dispositivo Surface, usando gli algoritmi per calcolare i requisiti di potenza ottimali. Funziona in combinazione con Windows Power Manager per allocare o limitare solo l'esatta quantità di energia necessaria per il funzionamento dei componenti hardware. Questo articolo si applica a tutti i dispositivi Surface attualmente supportati, tra cui Surface Pro 7 +, Surface Laptop Go, Surface Pro 7, Surface Pro X e Surface laptop 3.
+Surface viene invece immagineta con un profilo di alimentazione personalizzato che sostituisce le funzionalità di sospensione e consumo di energia legacy con funzionalità di standby moderne e ottimizzazione dinamica. Questo profilo di alimentazione personalizzato viene implementato tramite il driver Surface Serial Hub e il modulo di aggregazione di sistema (SAM). Il chip SAM funziona come proprietario dei criteri di alimentazione dei dispositivi Surface, usando algoritmi per calcolare i requisiti di alimentazione ottimali. Funziona in combinazione con Windows power manager per allocare o limitazione solo la quantità esatta di energia necessaria per il funzionamento dei componenti hardware. Questo articolo si applica a tutti i dispositivi Surface attualmente supportati, tra cui Surface Pro 7+, Surface Laptop Go, Surface Pro 7, Surface Pro X e Surface Laptop 3.
 
-## Utilizzo del profilo di alimentazione personalizzato in Surface
+## <a name="utilizing-the-custom-power-profile-in-surface"></a>Utilizzo del profilo di alimentazione personalizzato in Surface
 
-Se si accede alle opzioni di Power in un dispositivo Surface, si noterà che è disponibile un unico piano di alimentazione. Questo è il profilo di alimentazione personalizzato. Se si passa alle impostazioni di Power avanzate, viene visualizzato un sottoinsieme molto più piccolo di opzioni di alimentazione rispetto a un PC generico che utilizza Windows 10. A differenza dei dispositivi generici, Surface include firmware e componenti personalizzati per gestire queste opzioni di risparmio energia.
+Se si passa alle opzioni di alimentazione in un dispositivo Surface, si scoprirà che è disponibile una singola combinazione per il risparmio di energia. Questo è il profilo di alimentazione personalizzato. Se si passa alle impostazioni avanzate per il risparmio di energia, verrà visualizzato un sottoinsieme molto più piccolo di opzioni di risparmio energia rispetto a un PC generico che esegue Windows 10. A differenza dei dispositivi generici, Surface dispone di firmware e componenti personalizzati per gestire queste opzioni di alimentazione.
 
 
-## Standby moderno
+## <a name="modern-standby"></a>Standby moderno
 
-Il profilo di alimentazione personalizzato algoritmicamente Embedded consente la connettività di standby moderna per Surface mantenendo uno stato di basso consumo per la funzionalità Instant on/Instant off tipica degli smartphone. S0ix, noto anche come lo stato della piattaforma di runtime inattivo più profondo (gocciola), è la modalità di alimentazione predefinita per i dispositivi Surface. La modalità standby moderna è composta da due modi:
+Il profilo di alimentazione personalizzato incorporato algoritmicamente consente la connettività di standby moderna per Surface mantenendo uno stato di alimentazione basso per le funzionalità di accensione/interruzione istantanea tipiche degli smartphone. S0ix, noto anche come stato DRIPS (Deepest Runtime Idle Platform State), è la modalità di alimentazione predefinita per i dispositivi Surface. Lo standby moderno ha due modalità:
 
-- **Standby connesso.** La modalità predefinita per il recapito continuo di messaggi di posta elettronica, messaggistica e dati sincronizzati con cloud, standby connesso mantiene Wi-Fi e mantiene la connettività di rete.
+- **Standby connesso.** La modalità predefinita per il recapito di messaggi di posta elettronica, messaggistica e dati sincronizzati sul cloud, lo standby connesso mantiene attiva la Wi-Fi e mantiene la connettività di rete.
 
-- **Standby disconnesso.** Una modalità facoltativa per la durata della batteria estesa, standby disconnessa offre la stessa esperienza immediata e consente di risparmiare energia disattivando Wi-Fi, Bluetooth e connettività di rete correlata.
+- **Standby disconnesso.** Una modalità facoltativa per una durata prolungata della batteria, lo standby disconnesso offre la stessa esperienza di attivazione istantanea e consente di risparmiare energia disattivando Wi-Fi, Bluetooth e connettività di rete correlata.
 
-Per altre informazioni sulla modalità standby moderna, vedere [Microsoft hardware Dev Center](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby-wake-sources).
+Per ulteriori informazioni sullo standby moderno, fare riferimento a [Microsoft Hardware Dev Center](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby-wake-sources).
 
-## Razionalizzazione della superficie dell'esperienza di gestione del risparmio energia 
+## <a name="how-surface-streamlines-the-power-management-experience"></a>Come Surface semplifica l'esperienza di gestione del risparmio energia 
 
-Surface integra le caratteristiche seguenti progettate per aiutare gli utenti a ottimizzare l'esperienza di gestione dell'alimentazione:
+Surface integra le funzionalità seguenti progettate per aiutare gli utenti a ottimizzare l'esperienza di gestione del risparmio energia:
 
-- [Power Plan singolare](#singular-power-plan)
+- [Combinazione per il risparmio di energia singolare](#singular-power-plan)
 
-- [Interfaccia utente di Power Settings semplificata](#simplified-power-settings-user-interface)
+- [Interfaccia utente per le impostazioni di risparmio energia semplificate](#simplified-power-settings-user-interface)
 
-- [Dispositivo di scorrimento Power performance di Windows](#windows-performance-power-slider)
+- [Windows dispositivo di scorrimento per l'alimentazione delle prestazioni](#windows-performance-power-slider)
 
-### Power Plan singolare
+### <a name="singular-power-plan"></a>Combinazione per il risparmio di energia singolare
 
-Surface è progettato per un'esperienza di gestione dell'alimentazione semplificata che elimina la necessità di creare piani di alimentazione personalizzati o configurare manualmente le impostazioni di Power. Microsoft ottimizza l'esperienza utente distribuendo un singolo Power Plan (bilanciato) che sostituisce i piani di alimentazione multipli dalle build standard di Windows.
+Surface è progettato per un'esperienza di gestione del risparmio energia semplificata che elimina la necessità di creare combinazioni per il risparmio di energia personalizzate o configurare manualmente le impostazioni di risparmio energia. Microsoft semplifica l'esperienza utente offrendo una singola combinazione per il risparmio di energia (bilanciata) che sostituisce le più combinazioni per il risparmio di energia dalle build Windows standard.
 
-###  <a name="user-interface"></a>Interfaccia utente di Power Settings semplificata
+### <a name="simplified-power-settings-user-interface"></a>Interfaccia utente per le impostazioni di risparmio energia semplificate
 
-Surface offre un'interfaccia utente semplificata in conformità con le raccomandazioni per l'impostazione dell'alimentazione ottimale. In generale, è consigliabile regolare solo le impostazioni visibili nell'interfaccia utente predefinita ed evitare di configurare impostazioni avanzate di Power Settings o criteri di gruppo. L'uso della schermata predefinita e dei timeout di sospensione per evitare i massimi livelli di luminosità è il modo più efficace per consentire agli utenti di mantenere la durata della batteria estesa.
+Surface offre un'interfaccia utente semplificata in base alle procedure consigliate per l'impostazione dell'alimentazione. In generale, è consigliabile modificare solo le impostazioni visibili nell'interfaccia utente predefinita ed evitare di configurare impostazioni avanzate per il risparmio di energia o impostazioni di Criteri di gruppo. L'uso dei timeout predefiniti dello schermo e della sospensione evitando i livelli di luminosità massimi sono i modi più efficaci per mantenere la durata prolungata della batteria.
 
-![Figura 1. Impostazioni di Power & Sleep semplificate](images/powerintrofig1.png)
+![Figura 1. Impostazioni di sospensione & risparmio energia semplificate.](images/powerintrofig1.png)
 
 Figura 1. Impostazioni di alimentazione e sospensione semplificate
 
-### Dispositivo di scorrimento Power performance di Windows
+### <a name="windows-performance-power-slider"></a>Windows dispositivo di scorrimento per l'alimentazione delle prestazioni
 
-I dispositivi Surface che utilizzano Windows 10 Build 1709 e versioni successive includono un dispositivo di scorrimento di Power che consente di assegnare priorità alla durata della batteria, se necessario o a favore delle prestazioni. È possibile accedere a Power Slider dalla barra delle applicazioni facendo clic sull'icona della batteria. Scorrere a sinistra per ottenere una durata maggiore della batteria (modalità risparmio batteria) o scorrere verso destra per ottenere prestazioni più rapide.
+I dispositivi Surface che Windows 10 build 1709 e versioni successive includono un dispositivo di scorrimento di alimentazione che consente di definire la priorità della durata della batteria quando necessario o di favorire le prestazioni se lo si desidera. Puoi accedere al dispositivo di scorrimento di alimentazione dalla barra delle applicazioni facendo clic sull'icona della batteria. Scorrere verso sinistra per una durata della batteria più lunga (modalità risparmio batteria) o scorrere verso destra per velocizzare le prestazioni.
 
-![Figura 2. Power Slider](images/powerintrofig2a.png)
+![Figura 2. Dispositivo di scorrimento alimentazione.](images/powerintrofig2a.png)
 
-Figura 2. Power Slider
+Figura 2. Dispositivo di scorrimento alimentazione
 
-Power Slider consente quattro Stati come descritto nella tabella seguente:
+Il dispositivo di scorrimento di alimentazione abilita quattro stati, come descritto nella tabella seguente:
 
 | Modalità dispositivo di scorrimento| Descrizione |
 |---|---|
-| Risparmia batteria| Consente di risparmiare energia e prolungare la durata della batteria quando il sistema è disconnesso da una fonte di energia. Quando il risparmio batteria è attivo, alcune funzionalità di Windows sono disabilitate, limitate o si comportano in modo diverso. La luminosità dello schermo è anche ridotta. Il risparmio batteria è disponibile solo quando si usa la potenza della batteria (DC). Per altre informazioni, vedere [risparmio batteria](https://docs.microsoft.com/windows-hardware/design/component-guidelines/battery-saver).|
+| Risparmia batteria| Consente di risparmiare energia e prolungare la durata della batteria quando il sistema è scollegato da una fonte di alimentazione. Quando il risparmio batteria è attivata, alcune funzionalità Windows sono disabilitate, limitate o comportano in modo diverso. Anche la luminosità dello schermo è ridotta. Il risparmio batteria è disponibile solo quando si utilizza l'alimentazione a batteria (DC). Per ulteriori informazioni, vedere [Risparmio batteria.](https://docs.microsoft.com/windows-hardware/design/component-guidelines/battery-saver)|
 | Consigliato | Garantisce una durata della batteria maggiore rispetto alle impostazioni predefinite nelle versioni precedenti di Windows. |
-| Prestazioni migliori | Favorisce leggermente le prestazioni rispetto alla durata della batteria, funzionando come la modalità predefinita del dispositivo di scorrimento. |
-| Prestazioni ottimali | Favorisce le prestazioni rispetto alla potenza per i carichi di lavoro che richiedono massime prestazioni e capacità di risposta, indipendentemente dal consumo di energia a batteria.|
+| Prestazioni migliori | Favorisce leggermente le prestazioni rispetto alla durata della batteria, funzionando come modalità dispositivo di scorrimento predefinita. |
+| Prestazioni ottimali | Favorisce le prestazioni rispetto all'alimentazione per i carichi di lavoro che richiedono prestazioni e velocità di risposta massime, indipendentemente dal consumo di energia della batteria.|
 
-Le modalità di Power Slider controllano direttamente componenti hardware specifici illustrati nella tabella seguente.
+Le modalità dispositivo di scorrimento di alimentazione controllano direttamente componenti hardware specifici illustrati nella tabella seguente.
 
-| Componente | Funzionalità del dispositivo di scorrimento |
+| Componente | Funzionalità dispositivo di scorrimento |
 |---|---|
-| Intel Speed Shift (CPU Energy registers) e hint per le preferenze di prestazioni energetiche. | Seleziona la migliore frequenza e tensione operativa per ottenere prestazioni e potenza ottimali. La preferenza per le prestazioni energetiche (PERFEPP) è un suggerimento per l'efficienza di alimentazione globale della CPU. |
-| Velocità ventola (RPM)| Se applicabile, consente di modificare le condizioni, ad esempio mantenere silenzioso il ventilatore in modalità dispositivo di scorrimento risparmio batteria.|
-| Pacchetto di Power limits per il processore (PL1/PL2).| Richiede alla CPU di gestire le proprie scelte di frequenza per supportare un limite medio corrente per i carichi di lavoro di stato costante (PL1) e Turbo (PL2).|
-| Limiti di frequenza Turbo del processore (limitazioni di IA Turbo). | Regola le prestazioni dei processori e della grafica per consentire ai core del processore di eseguire più rapidamente o più lentamente rispetto alla frequenza nominale.                                                |
+| Intel Speed Shift (registri di energia della CPU) e suggerimento di preferenza per le prestazioni energetiche. | Seleziona la migliore frequenza operativa e la migliore tensione per prestazioni e potenza ottimali. La preferenza prestazioni energetiche (PERFEPP) è un suggerimento di efficienza energetica globale per la CPU. |
+| Velocità ventola (RPM)| Se applicabile, regola le condizioni che cambiano, ad esempio per mantenere in silenzio la ventola in modalità dispositivo di scorrimento risparmio batteria.|
+| Limiti di alimentazione del pacchetto del processore (PL1/PL2).| Richiede alla CPU di gestire le scelte di frequenza per supportare un limite di alimentazione medio in esecuzione sia per i carichi di lavoro a stato FISSO (PL1) che per i carichi di lavoro turbo (PL2).|
+| Limiti di frequenza turbo del processore (limitazioni IA turbo). | Regola le prestazioni del processore e della grafica consentendo ai core del processore di essere eseguiti più velocemente o più lentamente rispetto alla frequenza operativa valutata.                                                |
 
 >[!NOTE]
->Il dispositivo di scorrimento di Power è completamente indipendente dalle impostazioni di alimentazione del sistema operativo, sia configurato da pannello di controllo/opzioni di alimentazione, criteri di gruppo o metodi correlati.
+>Il dispositivo di scorrimento dell'alimentazione è completamente indipendente dalle impostazioni di risparmio energia del sistema operativo configurate dal Pannello di controllo/ Opzioni risparmio energia, da Criteri di gruppo o da metodi correlati.
 
-Per altre informazioni, vedere:
+Per ulteriori informazioni, vedere:
 
--   [Personalizzare il dispositivo di scorrimento Power performance di Windows](https://docs.microsoft.com/windows-hardware/customize/desktop/customize-power-slider)
+-   [Personalizzare il dispositivo Windows di alimentazione delle prestazioni](https://docs.microsoft.com/windows-hardware/customize/desktop/customize-power-slider)
 
 -   [Risparmio batteria.](https://docs.microsoft.com/windows-hardware/design/component-guidelines/battery-saver)
 
-## Procedure consigliate per la durata della batteria estesa
+## <a name="best-practices-for-extended-battery-life"></a>Procedure consigliate per una durata prolungata della batteria
 
 
 | Procedura consigliata | Vai a | Passaggi successivi |
 |---|---|---|                                                                                                                                    
-| Verificare che il dispositivo Surface sia aggiornato| Windows Update | Nella casella di ricerca sulla barra delle applicazioni digitare **Windows Update** e selezionare **Controlla aggiornamenti**. |
-| Scegliere l'impostazione di potenza ottimale per le operazioni da eseguire | Power Slider | Nella barra delle applicazioni selezionare l'icona della batteria, quindi scegliere **prestazioni ottimali**, **durata ottimale della batteria**o da qualche parte in mezzo.|
-| Risparmiare batteria quando è bassa | Risparmia batteria | Nella barra delle applicazioni selezionare l'icona batteria e fare clic su **Impostazioni batteria**. Selezionare **attiva automaticamente il risparmio batteria se la batteria scende** al di sotto e quindi il dispositivo di scorrimento si sposta più a destra per una durata più lunga. |
-| Configurare la luminosità ottimale dello schermo | Risparmia batteria | Nella barra delle applicazioni selezionare l'icona batteria e fare clic su **Impostazioni batteria**, selezionare **luminosità inferiore dello schermo durante il risparmio batteria**. |
-| Risparmiare energia ogni volta che non si è connessi | Risparmia batteria| Selezionare **attiva lo stato di risparmio batteria fino a carica successiva**.|
-| Esaminare i problemi relativi alle impostazioni di alimentazione. | Strumento di risoluzione dei problemi di Power | Nella barra delle applicazioni cercare risoluzione dei problemi selezionare **risoluzione dei problemi**e quindi selezionare **alimentazione** e seguire le istruzioni.|
-| Controllare l'utilizzo dell'app | Le tue app | Chiudere le app.|
-| Controllare il cavo di alimentazione per eventuali danni.| Il cavo di alimentazione | Sostituire il cavo di alimentazione se usurato o danneggiato.|
+| Assicurati che il dispositivo Surface sia aggiornato| Windows Update | Nella casella di ricerca della barra delle applicazioni digita **Windows Aggiorna** e seleziona **Controlla aggiornamenti**. |
+| Scegliere l'impostazione di risparmio energia migliore per le prestazioni | Dispositivo di scorrimento alimentazione | Nella barra delle applicazioni seleziona l'icona della batteria, quindi scegli **Prestazioni migliori,** **Durata migliore della batteria**o altrove.|
+| Conservare la batteria quando è bassa | Risparmia batteria | Nella barra delle applicazioni seleziona l'icona della batteria e fai clic su **Impostazioni batteria.** Seleziona **Attiva automaticamente il risparmio batteria** se la batteria scende al di sotto e quindi sposta il dispositivo di scorrimento più a destra per una durata della batteria più lunga. |
+| Configurare la luminosità ottimale dello schermo | Risparmia batteria | Nella barra delle applicazioni seleziona l'icona della batteria e fai clic su **Impostazioni batteria,** seleziona Luminosità dello schermo inferiore **mentre si salva batteria.** |
+| Risparmiare energia ogni volta che non si è collegati | Risparmia batteria| Seleziona **Attiva stato risparmio batteria fino al successivo addebito.**|
+| Analizzare i problemi relativi alle impostazioni di risparmio energia. | Risoluzione dei problemi di alimentazione | Nella ricerca della barra delle applicazioni per la risoluzione dei problemi seleziona **Risoluzione dei**problemi e quindi seleziona **Alimentazione** e segui le istruzioni.|
+| Controllare l'utilizzo dell'app | Le tue app | Chiudi le app.|
+| Verificare la presenza di eventuali danni al cavo di alimentazione.| Cavo di alimentazione | Sostituire il cavo di alimentazione se usurato o danneggiato.|
 
-##  <a name="learn-more"></a>Scopri di più 
+## <a name="learn-more"></a>Scopri di più 
 
 - [Standby moderno](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby-wake-sources)
 
 <!-- -->
 
-- [Personalizzare il dispositivo di scorrimento Power performance di Windows](https://docs.microsoft.com/windows-hardware/customize/desktop/customize-power-slider)
+- [Personalizzare il dispositivo Windows di alimentazione delle prestazioni](https://docs.microsoft.com/windows-hardware/customize/desktop/customize-power-slider)
 
 - [Risparmio batteria](https://docs.microsoft.com/windows-hardware/design/component-guidelines/battery-saver)
-- [Gestire e installare gli aggiornamenti di driver e firmware per il Surface](manage-surface-driver-and-firmware-updates.md)
+- [Gestire e installare gli aggiornamenti di driver e firmware per Surface](manage-surface-driver-and-firmware-updates.md)

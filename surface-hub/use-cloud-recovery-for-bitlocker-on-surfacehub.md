@@ -1,6 +1,6 @@
 ---
-title: Come usare il recupero cloud per BitLocker in un Surface Hub
-description: Come usare il recupero cloud per BitLocker in un Surface Hub
+title: Come usare il ripristino cloud per BitLocker su un Surface Hub
+description: Come usare il ripristino cloud per BitLocker su un Surface Hub
 ms.assetid: c0bde23a-49de-40f3-a675-701e3576d44d
 keywords: Impostazioni di accessibilità, app Impostazioni, Accessibilità
 ms.prod: surface-hub
@@ -9,74 +9,74 @@ author: v-miegge
 ms.author: v-miegge
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 7912f9d1bab2ba625995c56d6d7da4e6b2d3df37
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: e220be7d4613fcb6a14180e482dc4f2c66a5ddc8
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10832672"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911031"
 ---
-# Riepilogo
+# <a name="summary"></a>Riepilogo
 
-Questo articolo descrive come usare la funzione di ripristino cloud se viene richiesto in modo imprevisto da BitLocker su un dispositivo Surface Hub.
+Questo articolo descrive come usare la funzione di ripristino cloud se viene richiesto in modo imprevisto da BitLocker in un Surface Hub dispositivo.
 
 > [!NOTE]
-> Seguire questa procedura solo se non è disponibile una chiave di ripristino di BitLocker.
+> È consigliabile eseguire questa procedura solo se non è disponibile una chiave di ripristino di BitLocker.
 
 > [!WARNING]
-> * Questo processo di ripristino Elimina il contenuto dell'unità interna. Se il processo non riesce, l'unità interna diventerà completamente inutilizzabile. In questo caso, sarà necessario registrare una richiesta di servizio con Microsoft per una risoluzione.
-> * Al termine del processo di ripristino, il dispositivo verrà reimpostato sulle impostazioni di fabbrica e restituito allo stato di esperienza della casella.
-> * Dopo il ripristino, il mozzo della superficie deve essere completamente riconfigurato.
+> * Questo processo di ripristino elimina il contenuto dell'unità interna. Se il processo non riesce, l'unità interna diventerà completamente inutilizzabile. In questo caso, sarà necessario registrare una richiesta di servizio con Microsoft per una risoluzione.
+> * Al termine del processo di ripristino, il dispositivo verrà reimpostato alle impostazioni di fabbrica e verrà ripristinato lo stato Out of Box Experience.
+> * Dopo il ripristino, il Surface Hub deve essere completamente riconfigurato.
 
 > [!IMPORTANT]
-> Questo processo richiede una connessione Internet aperta che non usa un proxy o un altro metodo di autenticazione.
+> Questo processo richiede una connessione Internet aperta che non utilizza un proxy o un altro metodo di autenticazione.
 
-##  <a name="cloud-recovery-process"></a>Processo di ripristino del cloud
+## <a name="cloud-recovery-process"></a>Processo di ripristino cloud
 
-Per eseguire un ripristino cloud, eseguire le operazioni seguenti:
+Per eseguire un ripristino cloud, attenersi alla seguente procedura:
 
-1. Selezionare **premi ESC per altre opzioni di ripristino**.
+1. Selezionare **Premi ESC per altre opzioni di ripristino.**
 
-   ![Schermata di escape](images/01-escape.png)
+   ![Screenshot di Escape.](images/01-escape.png)
 
-1. Selezionare **Ignora l'unità**.
+1. Selezionare **Ignora questa unità.**
 
-   ![Screenshot di skip this drive](images/02-skip-this-drive.png)
+   ![Screenshot of Skip this drive.](images/02-skip-this-drive.png)
 
 1. Selezionare **Recupera dal cloud**.
 
-   ![Screenshot del ripristino dal cloud](images/03-recover-from-cloud.png)
+   ![Screenshot of Recover from the cloud.](images/03-recover-from-cloud.png)
 
 1. Selezionare **Sì**.
 
-   ![Schermata di sì](images/04-yes.png)
+   ![Screenshot of Yes.](images/04-yes.png)
 
 1. Selezionare **Reinstalla**.
 
-   ![Screenshot della reinstallazione](images/05a-reinstall.png)
+   ![Screenshot of Reinstall.](images/05a-reinstall.png)
 
-   ![Screenshot del download](images/05b-downloading.png)
+   ![Screenshot of Downloading.](images/05b-downloading.png)
 
-1. Dopo il completamento del processo di ripristino della nuvola, avviare la riconfigurazione usando l' **esperienza fuori scatola**.
+1. Al termine del processo di ripristino cloud, avviare la riconfigurazione utilizzando **l'esperienza predefinita.**
 
-   ![Screenshot della casella fuori sede](images/06-out-of-box.png)
+   ![Screenshot of Out of the Box.](images/06-out-of-box.png)
 
-##  <a name="something-went-wrong-error-message"></a>Messaggio di errore "si è verificato un problema"
+## <a name="something-went-wrong-error-message"></a>Messaggio di errore "Si è verificato un problema"
 
-Questo errore è in genere causato da problemi di rete che si verificano durante il download del ripristino. Quando si verifica questo problema, non disattivare l'hub perché non sarà possibile riavviarlo. Se viene visualizzato questo messaggio di errore, tornare al passaggio "Recupera dal cloud" e quindi riavviare il processo di ripristino.
+Questo errore è in genere causato da problemi di rete che si verificano durante il download di ripristino. Quando si verifica questo problema, non disattivare l'hub perché non sarà possibile riavviarlo. Se viene visualizzato questo messaggio di errore, tornare al passaggio "Ripristino dal cloud" e quindi riavviare il processo di ripristino.
 
 1. Selezionare **Annulla**.
 
-   ![Screenshot di Cancel](images/07-cancel.png)
+   ![Screenshot di Cancel.](images/07-cancel.png)
 
-1. Selezionare **risoluzione dei problemi**.
+1. Selezionare **Risoluzione dei problemi**.
 
-   ![Screenshot della risoluzione dei problemi](images/08-troubleshoot.png)
+   ![Screenshot of Troubleshoot.](images/08-troubleshoot.png)
 
 1. Selezionare **Recupera dal cloud**.
 
-   ![Screenshot del ripristino dal cloud](images/09-recover-from-cloud2.png)
+   ![Screenshot of Recover from the cloud.](images/09-recover-from-cloud2.png)
 
-1. Se la **rete cablata non viene trovata** si verifica un errore, selezionare **Annulla**e quindi l'hub Surface riscoprirà la rete cablata.
+1. Se **l'errore di rete** cablata non viene trovato, selezionare **Annulla**e quindi lasciare che il Surface Hub riscoprire la rete cablata.
 
-   ![Screenshot della rete cablata non trovata](images/10-cancel.png)
+   ![Screenshot of Wired network isn't found.](images/10-cancel.png)

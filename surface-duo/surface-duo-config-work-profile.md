@@ -1,6 +1,6 @@
 ---
 title: Configurare il profilo di lavoro Android Enterprise per Surface Duo
-description: Questo articolo illustra come configurare il profilo di lavoro in Surface Duo.
+description: Questo articolo spiega come configurare il profilo di lavoro in Surface Duo.
 ms.technology: windows
 ms.prod: surface
 ms.mktglfcycl: manage
@@ -16,55 +16,55 @@ audience: ITPro
 ms.localizationpriority: medium
 appliesto:
 - Surface Duo
-ms.openlocfilehash: 393844a4e4f0f06f16d11d1313ec9aacfa109d57
-ms.sourcegitcommit: 37e0994e2b8ae62b0352b016b698edcc7ca500fb
+ms.openlocfilehash: 380c5fc625983119a516f5d0e2294af70e0dbd29
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "11326193"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911201"
 ---
-# Configurare il profilo di lavoro Android Enterprise per Surface Duo
+# <a name="configure-android-enterprise-work-profile-for-surface-duo"></a>Configurare il profilo di lavoro Android Enterprise per Surface Duo
 
-Mirate alle distribuzioni di BYOD, i profili di lavoro offrono uno spazio separato in duo per le app e i dati di lavoro, offrendo alle organizzazioni il controllo completo dei loro dati, delle app e i criteri di sicurezza senza impedire ai dipendenti di usare il loro dispositivo per le app e i dati personali.
+Destinati alle distribuzioni BYOD, i profili di lavoro offrono uno spazio separato in Duo per le app e i dati di lavoro, offrendo alle organizzazioni il controllo completo dei propri dati, app e criteri di sicurezza senza impedire ai dipendenti di usare il proprio dispositivo per le app e i dati personali.
 
-###  <a name="set-up-android-enterprise-work-profile"></a>Configurare il profilo di lavoro aziendale Android
+### <a name="set-up-android-enterprise-work-profile"></a>Configurare il profilo di Enterprise Android
 
-Usare i profili di lavoro per gestire i dati aziendali e le app nei dispositivi Android di proprietà dell'utente. Per impostazione predefinita, la registrazione dei dispositivi di profili di lavoro personali è abilitata e non richiede ulteriori configurazioni di amministratore.  
+Usa i profili di lavoro per gestire i dati aziendali e le app nei dispositivi Android di proprietà dell'utente. Per impostazione predefinita, la registrazione dei dispositivi del profilo di lavoro di proprietà personale è abilitata e non richiede ulteriori configurazioni dell'amministratore.  
 
-**Per abilitare il profilo di lavoro aziendale:**
+**Per abilitare Enterprise profilo di lavoro:**
 
-- In Endpoint Manager selezionare **Devices**  >  **Android per**  >  **la registrazione** e quindi selezionare **dispositivi personali con il profilo lavoro**.
+- In Endpoint Manager, seleziona **Dispositivi**  >  **registrazione Android**  >  **Android** e quindi seleziona Dispositivi **personali con profilo di lavoro.**
 <br><br>
- ![Abilitare il profilo di lavoro aziendale](images/enroll-start.png)
+ ![Abilita Enterprise profilo di lavoro.](images/enroll-start.png)
 
  
-**Accedere a Surface Duo con il profilo di lavoro Android Enterprise**
+**Accedi a Surface Duo con Il profilo di lavoro Enterprise Android**
 
-1. Installare l'app portale aziendale da Google Play Store ed eseguire l'accesso con l'account Microsoft Work o dell'Istituto di istruzione.<br><br>
-![Accedere a Surface Duo](images/duo-wp-1.png)
+1. Installa l Portale aziendale app da Google Play Store e accedi con il tuo account aziendale o dell'istituto di istruzione Microsoft.<br><br>
+![Accedi a Surface Duo.](images/duo-wp-1.png)
  
-2. Nella pagina Configurazione di Access selezionare **inizia**.<br><br>
-![Iniziare](images/duo-wp-2.png)
+2. Nella pagina Installazione di Access selezionare **Avvia**.<br><br>
+![Iniziare.](images/duo-wp-2.png)
 
-3. Esaminare le informazioni nella pagina privacy e selezionare **continue**.<br><br>
- ![Continua](images/duo-wp-3.png)
+3. Esaminare le informazioni nella pagina privacy e selezionare **Continua.**<br><br>
+ ![Continua.](images/duo-wp-3.png)
 <br><br>
- ![Selezionare continua](images/duo-wp-4.png)
+ ![Selezionare continua.](images/duo-wp-4.png)
  
-4. Al termine della configurazione del profilo di lavoro, selezionare **continua** per attivare e registrare il dispositivo.<br><br>
- ![Selezionare continua per attivare e registrare il dispositivo](images/duo-wp-5.png)
+4. Al termine della configurazione del profilo di lavoro, seleziona **Continua** per attivare e registrare il dispositivo.<br><br>
+ ![Seleziona continua per attivare e registrare il dispositivo.](images/duo-wp-5.png)
 
 5. Seleziona **Continua**.<br><br>
- ![Selezionare continua di nuovo](images/duo-wp-6.png)
+ ![Selezionare continua di nuovo.](images/duo-wp-6.png)
 
-6. Dopo aver attivato il profilo di lavoro, selezionare **continua** per aggiornare le impostazioni del dispositivo. In questo esempio, il profilo di lavoro applica un'impostazione MDM per richiedere una password alfanumerica a 6 cifre più forte. <br><br>
+6. Dopo aver attivato il profilo di lavoro, seleziona **Continua** per aggiornare le impostazioni del dispositivo. In questo esempio, il profilo di lavoro applica un'impostazione MDM per richiedere una password alfanumerica a 6 cifre più complessa. <br><br>
 
-     ![Esempio di password alfanumerica](images/duo-wp-7.png)<br><br>
-7. Selezionare **Risolvi** per immettere l'autenticazione necessaria e quindi selezionare **continua** per completare la configurazione del profilo di lavoro. <br><br>
-     ![Selezionare continua per completare la configurazione](images/duo-wp-8.png)<br><br>
-     ![configurazione completa](images/duo-wp-9.png)<br><br>
+     ![Password alfanumerica di esempio.](images/duo-wp-7.png)<br><br>
+7. Selezionare **Risolvi** per immettere l'autenticazione necessaria e quindi **selezionare Continua** per completare la configurazione del profilo di lavoro. <br><br>
+     ![Selezionare continua per completare l'installazione.](images/duo-wp-8.png)<br><br>
+     ![completare l'installazione.](images/duo-wp-9.png)<br><br>
 
-##  <a name="learn-more"></a>Altre informazioni
+## <a name="learn-more"></a>Scopri di più
 
-- [Configurare la registrazione dei dispositivi di profilo aziendale di Android](https://docs.microsoft.com/mem/intune/enrollment/android-work-profile-enroll)
+- [Configurare la registrazione dei dispositivi del profilo Enterprise Android](https://docs.microsoft.com/mem/intune/enrollment/android-work-profile-enroll)
 

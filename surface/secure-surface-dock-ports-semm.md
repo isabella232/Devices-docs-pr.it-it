@@ -1,5 +1,5 @@
 ---
-title: Secure Surface Dock 2 ports with Surface Enterprise Management Mode (SEMM)
+title: Proteggere le porte di Surface Dock 2 con surface Enterprise Management Mode (SEMM)
 description: Questo documento fornisce indicazioni per la configurazione delle impostazioni delle porte UEFI per Surface Dock 2 quando si è connessi a dispositivi Surface compatibili, tra cui Surface Book 3, Surface Laptop 3 e Surface Pro 7.
 ms.assetid: 2808a8be-e2d4-4cb6-bd53-9d10c0d3e1d6
 ms.reviewer: ''
@@ -15,14 +15,14 @@ ms.topic: article
 ms.date: 08/02/2021
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 9a98eb9bab9b0be7f225dedf00ee6cfe7944b05e
-ms.sourcegitcommit: 657d0d73a51f0dd35ad60740ed523164a55d2e04
+ms.openlocfilehash: a6b1dcdb3cf0ff8fe2f6485520c6b6301f5d2b2f
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "11720930"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11912001"
 ---
-# <a name="secure-surface-dock-2-ports-with-surface-enterprise-management-mode-semm"></a>Secure Surface Dock 2 ports with Surface Enterprise Management Mode (SEMM)
+# <a name="secure-surface-dock-2-ports-with-surface-enterprise-management-mode-semm"></a>Proteggere le porte di Surface Dock 2 con surface Enterprise Management Mode (SEMM)
 
 ## <a name="introduction"></a>Introduzione
 
@@ -33,7 +33,7 @@ La modalità di gestione di Surface Enterprise (SEMM) consente agli amministrato
 La gestione di Surface Dock 2 con SEMM è disponibile per i dock collegati a Surface Book 3, Surface Laptop 4, Surface Laptop 3, Surface Laptop Go, Surface Pro 7+, Surface Pro 7 e Surface Pro X. Questi dispositivi Surface compatibili sono comunemente denominati **dispositivi host.** Un pacchetto viene applicato ai dispositivi host in base al caso in cui un dispositivo host sia **autenticato** o **non autenticato.** Le impostazioni configurate risiedono nel livello UEFI nei dispositivi host che consentono all'amministratore IT di gestire Surface Dock 2 come qualsiasi altra periferica incorporata, ad esempio la fotocamera.
 
 >[!NOTE]
->Puoi gestire le porte di Surface Dock 2 solo quando il dock è connesso a uno dei seguenti dispositivi compatibili: Surface Book 3, Surface Laptop 4, Surface Laptop 3, Surface Pro 7+ e Surface Pro 7. Qualsiasi dispositivo che non riceve le impostazioni dei criteri UEFI Authenticated è intrinsecamente un dispositivo non autenticato.
+>È possibile gestire le porte di Surface Dock 2 solo quando il dock è connesso a uno dei dispositivi compatibili seguenti: Surface Book 3, Surface Laptop 4, Surface Laptop 3, Surface Pro 7+ e Surface Pro 7. Qualsiasi dispositivo che non riceve le impostazioni dei criteri UEFI Authenticated è intrinsecamente un dispositivo non autenticato.
 
 ### <a name="scenarios"></a>Scenari
 
@@ -52,7 +52,7 @@ In questa sezione vengono fornite istruzioni dettagliate per le attività seguen
 1. Crea e applica il pacchetto di configurazione ai dispositivi Surface di destinazione (Surface Book 3, Surface Laptop 3 o Surface Pro 7).
 
 >[!NOTE]
->Il **numero casuale (RN)** è un identificatore di codice esadecimale univoco a 16 cifre, di cui viene eseguito il provisioning in fabbrica e stampato in piccolo tipo nella parte inferiore del dock. L'RN è diverso dalla maggior parte dei numeri di serie in quanto non può essere letto elettronicamente. In questo modo si garantisce che la prova di proprietà sia stabilita principalmente solo leggendo l'RN quando si accede fisicamente al dispositivo. L'RN può essere ottenuto anche durante la transazione di acquisto ed è registrato nei sistemi di inventario Microsoft.
+>Il **numero casuale (RN)** è un identificatore di codice esadecimale univoco a 16 cifre, di cui viene eseguito il provisioning in fabbrica e stampato in piccolo tipo nella parte inferiore del dock. L'RN è diverso dalla maggior parte dei numeri di serie in quanto non può essere letto elettronicamente. In questo modo si garantisce che la prova di proprietà sia stabilita principalmente solo leggendo l'RN quando si accede fisicamente al dispositivo. L'RN può anche essere ottenuto durante la transazione di acquisto ed è registrato nei sistemi di inventario Microsoft.
 
 ### <a name="install-semm-and-surface-uefi-configurator"></a>Installare SEMM e Surface UEFI Configurator
 
@@ -66,7 +66,7 @@ Questa sezione fornisce le specifiche per la creazione dei certificati necessari
 
 ### <a name="prerequisites"></a>Prerequisiti
 
-In questo articolo si presuppone che si ottengono certificati da un provider di terze parti o si dispone già di competenze in servizi certificati PKI e si sa come crearne di propri.  Dovresti avere familiarità con e seguire i consigli generali per la creazione dei certificati, come descritto nella documentazione relativa alla modalità di gestione di [Surface Enterprise (SEMM),](surface-enterprise-management-mode.md) con un'eccezione. I certificati documentati in questa pagina richiedono termini di scadenza di 30 anni per l'Autorità di certificazione **dock**e di 20 anni per il certificato di **autenticazione host.**
+In questo articolo si presuppone che si ottengono certificati da un provider di terze parti o si dispone già di competenze in servizi certificati PKI e si sa come crearne di propri.  Devi avere familiarità con e seguire i consigli generali per la creazione di certificati, come descritto nella documentazione relativa alla modalità di gestione di [Surface Enterprise (SEMM),](surface-enterprise-management-mode.md) con un'eccezione. I certificati documentati in questa pagina richiedono termini di scadenza di 30 anni per l'Autorità di certificazione **dock**e di 20 anni per il certificato di **autenticazione host.**
 
 Per ulteriori informazioni, vedere la documentazione [relativa](/windows/win32/seccrypto/certificate-services-architecture) all'architettura di Servizi certificati ed esaminare i capitoli appropriati in [Windows Server 2019 Inside Out](https://www.microsoftpressstore.com/store/windows-server-2019-inside-out-9780135492277)o Windows Server [2008 PKI e Certificate Security](https://www.microsoftpressstore.com/store/windows-server-2008-pki-and-certificate-security-9780735640788) disponibili da Microsoft Press.
 
@@ -106,15 +106,15 @@ Dopo aver ottenuto o creato i certificati, sei pronto per creare il pacchetto di
 
 1. Eseguire Surface **UEFI Configurator**.
 
-   ![Eseguire Surface UEFI Configurator](images/secure-surface-dock-ports-semm-1.png)
+   ![Esegui Surface UEFI Configurator.](images/secure-surface-dock-ports-semm-1.png)
 
 1. Seleziona **Surface Dock.**
 
-   ![Seleziona Surface Dock](images/secure-surface-dock-ports-semm-2.png)
+   ![Seleziona Surface Dock.](images/secure-surface-dock-ports-semm-2.png)
 
-1. Immettere i certificati **appropriati**  nella pagina del certificato. I certificati demo sono disponibili da [Surface Tools per IT:](https://www.microsoft.com/download/details.aspx?id=46703) ** scarica **SEMM_PowerShell.zipe fai riferimento ** aCreateSurfaceDock2Certificates.ps1**. Assicurati di installare **SurfaceDock2_WmiInstanceProvider** prima di eseguire gli script demo.
+1. Immettere i certificati **appropriati**  nella pagina del certificato. I certificati demo sono disponibili da [Surface Tools for IT:](https://www.microsoft.com/download/details.aspx?id=46703) ** scarica **SEMM_PowerShell.zipe fai riferimento ** aCreateSurfaceDock2Certificates.ps1**. Assicurati di installare **SurfaceDock2_WmiInstanceProvider** prima di eseguire gli script demo.
 
-   ![immettere i certificati appropriati](images/secure-surface-dock-ports-semm-3.png)
+   ![immettere i certificati appropriati.](images/secure-surface-dock-ports-semm-3.png)
 
 1. Aggiungere gli RN dock appropriati all'elenco.
 
@@ -146,26 +146,26 @@ Obiettivo: configurare le impostazioni dei criteri per consentire l'accesso alla
 
 1. Attivare tutte le porte per gli utenti autenticati e disattivarle per gli utenti non autenticati.
 
-   ![Abilitazione delle porte per gli utenti autenticati](images/secure-surface-dock-ports-semm-4.png)
+   ![Abilitazione delle porte per gli utenti autenticati.](images/secure-surface-dock-ports-semm-4.png)
 
 1. Applica il pacchetto di configurazione al dispositivo di destinazione e quindi connetti Surface Dock 2.
 
 1. Apri **Surface App** e seleziona Surface **Dock** per visualizzare lo stato dei criteri risultante del Surface Dock. Se vengono applicate le impostazioni dei criteri, Surface App indicherà che le porte sono disponibili.
 
-   ![L'app Surface mostra che tutte le porte sono disponibili per gli utenti autenticati](images/secure-surface-dock-ports-semm-5.png)
+   ![L'app Surface mostra che tutte le porte sono disponibili per gli utenti autenticati.](images/secure-surface-dock-ports-semm-5.png)
 
 1. Ora è necessario verificare che le impostazioni dei criteri siano state disattivate correttamente tutte le porte per gli utenti non autenticati. Connessione Surface Dock 2 a un dispositivo non gestito, ad esempio qualsiasi dispositivo Surface esterno all'ambito di gestione per il pacchetto di configurazione creato.
 
 1. Apri **Surface App** e seleziona Surface **Dock.** Lo stato dei criteri risultante indicherà che le porte sono disattivate.
 
-   ![App Surface che mostra le porte disattivate per gli utenti non autenticati ](images/secure-surface-dock-ports-semm-6.png)
+   ![App Surface che mostra le porte disattivate per gli utenti non autenticati.](images/secure-surface-dock-ports-semm-6.png)
 
 >[!TIP]
 >Se vuoi mantenere la proprietà del dispositivo, ma consentire a tutti gli utenti l'accesso completo, puoi creare un nuovo pacchetto con tutto attivato. Se vuoi rimuovere completamente le restrizioni e la proprietà del dispositivo (renderlo non gestito), seleziona Reimposta **in** Configuratore UEFI di Surface per creare un pacchetto da applicare ai dispositivi di destinazione.
 
 Congratulazioni. Le porte Surface Dock 2 sono state gestite correttamente nei dispositivi host di destinazione.
 
-## <a name="learn-more"></a>Altre informazioni
+## <a name="learn-more"></a>Scopri di più
 
 - [Documentazione di Surface Enterprise Management Mode (SEMM)](surface-enterprise-management-mode.md)
 - [Architettura di Servizi certificati](/windows/win32/seccrypto/certificate-services-architecture)

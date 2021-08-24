@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 04/15/2021
 ms.localizationpriority: Medium
-ms.openlocfilehash: c94cb701fb1b7fcdc0168a795f57a4e497317902
-ms.sourcegitcommit: 77b2c51f8467ac3ac37399551b0cc20d9ce57d24
+ms.openlocfilehash: fb0948623ec9c12aa818e4829285ea77229bf71d
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "11585967"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911581"
 ---
 # <a name="update-pen-firmware-on-surface-hub-2s"></a>Aggiornare il firmware della penna in Surface Hub 2S
 
@@ -24,12 +24,12 @@ Puoi aggiornare il firmware Surface Hub 2 penna da Windows Update for Business o
 
 ## <a name="update-pen-firmware-using-windows-update-for-business"></a>Aggiornare il firmware della penna Windows Update for Business
 
-Questa sezione descrive come aggiornare il firmware della penna tramite i cicli di manutenzione automatizzati per Windows Update, configurato per impostazione predefinita per l'esecuzione notturna alle 3 del giorno. Dovrai pianificare il completamento di due cicli di manutenzione prima di applicare l'aggiornamento alla penna Surface Hub 2. In alternativa, come qualsiasi altro aggiornamento, puoi usare Windows Update for Business (WUfB) per applicare il firmware della penna. Per ulteriori informazioni, vedere [Managing Windows updates on Surface Hub](manage-windows-updates-for-surface-hub.md).
+In questa sezione viene descritto come aggiornare il firmware della penna tramite i cicli di manutenzione automatizzati per Windows Update, configurato per impostazione predefinita per l'esecuzione notturna alle 3 del giorno. Dovrai pianificare il completamento di due cicli di manutenzione prima di applicare l'aggiornamento alla penna Surface Hub 2. In alternativa, come qualsiasi altro aggiornamento, puoi usare Windows Update for Business (WUfB) per applicare il firmware della penna. Per ulteriori informazioni, vedere [Managing Windows updates on Surface Hub](manage-windows-updates-for-surface-hub.md).
 
 1. Assicurati che la Surface Hub 2 penna sia associata Surface Hub 2S: **** tieni premuto il pulsante superiore finché la luce LED dell'indicatore bianco non inizia a lampeggiare.
 
     > [!div class="mx-imgBorder"]
-    > ![Surface Hub 2 penna](images/sh2-pen-1.png)
+    > ![Surface Hub 2 penna.](images/sh2-pen-1.png)
 
 2. In Surface Hub, accedere come amministratore, **aprire**Impostazioni e quindi cercare nuovi Bluetooth dispositivi.
 
@@ -41,23 +41,23 @@ Questa sezione descrive come aggiornare il firmware della penna tramite i cicli 
 
 Puoi aggiornare il firmware su Surface Hub 2 penna da un PC separato che esegue Windows 10. Questo metodo consente inoltre di verificare che il firmware della penna sia stato aggiornato correttamente alla versione più recente.
 
-1. Associa la Surface Hub 2 penna al PC Bluetooth: tieni premuto **** il pulsante superiore finché la luce LED dell'indicatore bianco non inizia a lampeggiare.
+1. Associa la Surface Hub 2 penna al PC Bluetooth: tieni premuto il **** pulsante superiore finché la luce LED dell'indicatore bianco non inizia a lampeggiare.
 
     > [!div class="mx-imgBorder"]
-    > ![Surface Hub 2 penna](images/sh2-pen-1.png)
+    > ![Surface Hub 2 penna.](images/sh2-pen-1.png)
 
 2. Nel PC cerca nuovi dispositivi Bluetooth computer.
 
 3. Selezionare la penna per completare il processo di associazione.
 
-4. Disconnettere tutte le altre Surface Hub 2s prima di avviare un nuovo aggiornamento.
+4. Disconnettere tutte le Surface Hub penne 2s prima di avviare un nuovo aggiornamento.
 
 5. Scarica lo [Surface Hub 2 Pen Firmware Update Tool](https://download.microsoft.com/download/8/3/F/83FD5089-D14E-42E3-AF7C-6FC36F80D347/Pen_Firmware_Tool.zip) nel PC.
 
 6. Eseguire **PenCfu.exe.** Lo stato dell'installazione viene visualizzato nello strumento. L'aggiornamento potrebbe richiedere alcuni minuti. 
 
 
-## <a name="check-firmware-version-of-surface-hub-2-pen"></a>Controllare la versione del firmware Surface Hub 2 penna
+## <a name="check-firmware-version-of-surface-hub-2-pen"></a>Controllare la versione del firmware di Surface Hub 2 penna
 
 1. Esegui **get_version.bat** e premi il **pulsante** superiore sulla penna.
 

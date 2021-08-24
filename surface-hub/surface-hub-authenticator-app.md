@@ -10,12 +10,12 @@ ms.date: 08/28/2017
 ms.reviewer: ''
 manager: laurawi
 localizationpriority: medium
-ms.openlocfilehash: f8a2bf8ddb75ca6dd3ff89e16fe0d37e099be29d
-ms.sourcegitcommit: 85f5a2e67b34fe073ec588ed441ebee239ab0ac6
+ms.openlocfilehash: e07591a25958677fb6efd5411d75f8b8e1549fed
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "11400737"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11912021"
 ---
 # <a name="sign-in-to-surface-hub-with-microsoft-authenticator"></a>Accedere a Surface Hub con Microsoft Authenticator
 
@@ -31,9 +31,9 @@ Per consentire agli utenti dell'organizzazione di accedere a Surface Hub con i l
 
 - [Configura Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-mfasettings). Assicurati che **Notifica tramite app mobile** sia selezionato. 
 
-    ![opzioni di Multi-Factor Authentication](images/mfa-options.png)
+    ![opzioni di autenticazione a più fattori.](images/mfa-options.png)
 
-- Abilitare l'hosting di contenuto nei servizi di Azure AD, ad esempio Office, SharePoint e così via. 
+- Abilitare l'hosting del contenuto nei servizi di Azure AD, ad esempio Office, SharePoint e così via. 
 
 - In Surface Hub deve essere in esecuzione Windows 10, versione 1703 o successiva.
 
@@ -70,18 +70,18 @@ Per consentire agli utenti dell'organizzazione di accedere a Surface Hub con i l
     >[!NOTE]
     >Se non sei sicuro di come pianificare una riunione su un dispositivo Surface Hub, vedi [Pianificare un Surface hub](https://support.microsoft.com/help/17325/surfacehub-schedulemeeting).
 
-    ![screenshot dell'opzione Accesso in Surface Hub](images/sign-in.png)
+    ![Screenshot of Sign in option on Surface Hub.](images/sign-in.png)
 
 2. Vedrai un elenco degli utenti invitati alla riunione. Seleziona te stesso (o la persona che vuole accedere, assicurati che questa persona abbia eseguito la procedura per configurare il proprio dispositivo prima della riunione), quindi **Continua**.
 
-    ![screenshot dell'elenco dei partecipanti a una riunione](images/attendees.png)
+    ![Screenshot dell'elenco dei partecipanti a una riunione.](images/attendees.png)
 
     Vedrai un codice su Surface Hub.
 
-    ![screenshot del codice per l'approvazione dell'accesso](images/approve-signin.png)
+    ![Screenshot del codice per Approvare l'accesso.](images/approve-signin.png)
 
 3. Per approvare l'accesso, apri l'app Authenticator, immetti il codice a quattro cifre che viene visualizzato in Surface Hub e seleziona **Approva**. Ti verrà quindi chiesto di immettere il PIN o di usare l'impronta digitale per completare l'accesso. 
 
-    ![screenshot della schermata dell'approvazione dell'accesso in Microsoft Authenticator](images/approve-signin2.png)
+    ![Screenshot of the Approve sign-in screen in Microsoft Authenticator.](images/approve-signin2.png)
 
 Ora puoi accedere a tutti i file tramite l'app OneDrive.

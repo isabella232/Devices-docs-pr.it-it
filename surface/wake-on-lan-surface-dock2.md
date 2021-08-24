@@ -14,12 +14,12 @@ ms.reviewer: jesko
 manager: laurawi
 ms.audience: itpro
 ms.date: 7/30/2021
-ms.openlocfilehash: 935cec6eed15b7831bffafdc2078a9cadf2067e2
-ms.sourcegitcommit: 6a7f96a497c8749a5997972db139542563769101
+ms.openlocfilehash: 84a87342891dac2e4c0b0490458941c82fa0d018
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2021
-ms.locfileid: "11710580"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911611"
 ---
 # <a name="wake-on-lan-with-surface-dock-2"></a>Riattivazione LAN con Surface Dock 2
 
@@ -30,10 +30,10 @@ Per mantenere i dispositivi completamente aggiornati, gli amministratori IT devo
 I dispositivi devono avere una connessione cablata con Surface Dock 2 e rimanere connessi all'alimentazione CA.
 
 > [!div class="mx-imgBorder"]
-> ![Surface Dock 2](images/surface-dock2-angled.png)
+> ![Surface Dock 2.](images/surface-dock2-angled.png)
 
 > [!NOTE]
-> I dispositivi waking connessi a Surface Dock 2 non richiedono l'uso della modalità di gestione di Surface Enterprise (SEMM) o l'abilitazione di eventuali impostazioni dei criteri UEFI.
+> I dispositivi waking connessi a Surface Dock 2 non richiedono l'uso della modalità di gestione di Surface Enterprise (SEMM) o l'abilitazione di impostazioni dei criteri UEFI.
  
 ## <a name="supported-surface-devices"></a>Dispositivi Surface supportati
 
@@ -57,7 +57,7 @@ Per ulteriori informazioni sugli stati di alimentazione, vedere [Stati di alimen
 
 ## <a name="how-it-works"></a>Come funziona
 
-Quando non sono in uso, i dispositivi Surface entrano in uno stato inattivo e a basso consumo noto come Standby moderno o Standby connesso. Oppure i dispositivi potrebbero essere in stato di ibernazione (S4) o arresto (S5) in base alle impostazioni di alimentazione configurate nel dispositivo. Gli amministratori IT possono attivare in remoto i dispositivi usando una richiesta di riattivazione (pacchetto magico) che contiene l'indirizzo MAC (Media Access Control) del dispositivo Surface di destinazione. Molte soluzioni di gestione, ad esempio Microsoft Endpoint Configuration Manager e app Microsoft Store di terze parti, forniscono il supporto incorporato per WOL.
+Quando non sono in uso, i dispositivi Surface entrano in uno stato inattivo e a basso consumo noto come Standby moderno o Standby connesso. Oppure i dispositivi potrebbero essere in stato di ibernazione (S4) o arresto (S5) in base alle impostazioni di alimentazione configurate nel dispositivo. Gli amministratori IT possono attivare in remoto i dispositivi usando una richiesta di riattivazione (pacchetto magico) che contiene l'indirizzo MAC (Media Access Control) del dispositivo Surface di destinazione. Molte soluzioni di gestione, ad esempio Microsoft Endpoint Configuration Manager e app Microsoft Store di terze parti, offrono supporto incorporato per WOL.
 
 Per abilitare WOL nei dispositivi senza Surface Dock 2, vedi:
 

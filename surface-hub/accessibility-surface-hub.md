@@ -11,19 +11,19 @@ author: dansimp
 ms.author: dansimp
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 11dc83be7966e49d2ac8a5fb0d1e0642abf025d8
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: a2520897a0ada7dc0ba23472c2b0f809ccb232d1
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833380"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11910971"
 ---
-# Accessibilità (Surface Hub)
+# <a name="accessibility-surface-hub"></a>Accessibilità (Surface Hub)
 
 Il dispositivo Microsoft Surface Hub ha le stesse opzioni di accessibilità di Windows10.
 
 
-##  <a name="default-accessibility-settings"></a>Impostazioni di accessibilità predefinite
+## <a name="default-accessibility-settings"></a>Impostazioni di accessibilità predefinite
 
 L'elenco completo delle impostazioni di accessibilità è disponibile per gli amministratori IT nell'app **Impostazioni**. Le impostazioni di accessibilità predefinite per Surface Hub includono:
 
@@ -41,7 +41,7 @@ La funzionalità di accessibilità dell'Assistente vocale non è disponibile nel
 1. Chiudi la schermata iniziale.
 2. Aprire **Azioni rapide** > **Accessibilità** sulla barra di stato.
 
-    ![Screenshot del riquadro Accessibilità](images/ease-of-access.png)
+    ![Screenshot del riquadro Accessibilità.](images/ease-of-access.png)
     
 3. Attiva Assistente vocale.
 4. Fai clic su **Cambia attività**.
@@ -57,16 +57,16 @@ Inoltre, quando gli utenti selezionano l'opzione [Termina sessione](finishing-yo
 - Controllo puntatore
 
 
-##  <a name="change-accessibility-settings-during-a-meeting"></a>Modificare le impostazioni di accessibilità durante una riunione
+## <a name="change-accessibility-settings-during-a-meeting"></a>Modificare le impostazioni di accessibilità durante una riunione
 
 Durante una riunione, gli utenti possono attivare o disattivare le app e le funzionalità di accessibilità in due modi:
 - [Tasti di scelta rapida](https://support.microsoft.com/help/13813/windows-10-microsoft-surface-hub-keyboard-shortcuts)
 - **Azioni rapide** > **Accessibilità** dalla barra di stato
 
-> ![Immagine del centro Azioni rapide in Surface Hub](images/sh-quick-action.png)
+> ![Immagine che mostra il Centro notifiche rapide Surface Hub.](images/sh-quick-action.png)
 
 
-##  <a name="related-topics"></a>Argomenti correlati
+## <a name="related-topics"></a>Argomenti correlati
 
 [Gestire Microsoft Surface Hub](manage-surface-hub.md)
 

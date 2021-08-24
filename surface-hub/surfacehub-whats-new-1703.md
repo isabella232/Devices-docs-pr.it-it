@@ -10,14 +10,14 @@ ms.date: 01/18/2018
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: 722309a6b018c32bde329cb7b2cdd68b859fc1ca
-ms.sourcegitcommit: 8e809e8481023fe4421abcdaa1e055a6f2f74f5f
+ms.openlocfilehash: 8edc5bf1da384809e38451c9d164503bfcc10241
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "10924942"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911771"
 ---
-# Quali sono le novità di Windows 10, versione 1703 per Microsoft Surface Hub?
+# <a name="whats-new-in-windows-10-version-1703-for-microsoft-surface-hub"></a>Quali sono le novità di Windows 10, versione 1703 per Microsoft Surface Hub?
 
 Guarda Jordan Marchese, tecnico di Surface Hub, presentare gli aggiornamenti a Microsoft Surface Hub con Windows 10, versione 1703 (Creators Update). 
 
@@ -25,7 +25,7 @@ Guarda Jordan Marchese, tecnico di Surface Hub, presentare gli aggiornamenti a M
 
 Windows 10, versione 1703 (detta anche Creators Update), presenta le seguenti modifiche per Microsoft Surface Hub.
 
-##  <a name="new-settings"></a>Nuove impostazioni
+## <a name="new-settings"></a>Nuove impostazioni
 
 Sono state aggiunte nuove impostazioni alla gestione dei dispositivi mobili (MDM, Mobile Device Management) e ai provider dei servizi di configurazione (CSP) per espandere le funzionalità di gestione di Surface Hub. [Le nuove impostazioni includono](manage-settings-with-mdm-for-surface-hub.md):
 
@@ -44,30 +44,30 @@ Sono state aggiunte nuove impostazioni alla gestione dei dispositivi mobili (MDM
 Oltre a impostazioni basate sui nuovi [CSP NetworkQoSPolicy](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/networkqospolicy-csp) e [CSP NetworkProxy](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/networkproxy-csp).
 </br>
 
-##  <a name="provisioning-wizard"></a>Provisioning guidato
+## <a name="provisioning-wizard"></a>Provisioning guidato
 
 Una semplice procedura guidata consente di creare velocemente pacchetti di provisioning che possono essere applicati a più dispositivi Surface Hub e di includere l'aggiunta in blocco ad Azure Active Directory. [Scopri come creare un pacchetto di provisioning per Surface Hub.](provisioning-packages-for-certificates-surface-hub.md)
 
-![passaggi della procedura guidata per il provisioning dei dispositivi Surface Hub](images/wcd-wizard.png)
+![passaggi della procedura guidata di provisioning Surface Hub dispositivi.](images/wcd-wizard.png)
     
-##  <a name="miracast-on-your-existing-wireless-network-or-lan"></a>Miracast sulla tua rete wireless o LAN esistente 
+## <a name="miracast-on-your-existing-wireless-network-or-lan"></a>Miracast sulla tua rete wireless o LAN esistente 
 
 Microsoft ha esteso la possibilità di [inviare un flusso di Miracast tramite una rete locale](miracast-over-infrastructure.md), anziché tramite un link wireless diretto. 
     
-##  <a name="cloud-recovery"></a>Ripristino cloud
+## <a name="cloud-recovery"></a>Ripristino cloud
 
 Quando reimposti un dispositivo Surface Hub, hai ora la possibilità di scaricare e installare una build di fabbrica del sistema operativo dal cloud. [Altre informazioni sul ripristino cloud.](device-reset-surface-hub.md#cloud-recovery)
 
 >[!NOTE]
 >Il ripristino cloud non funziona se si usano server proxy.
     
-![Reinstalla](images/reinstall.png)
+![Reinstallare.](images/reinstall.png)
     
-##  <a name="end-session"></a>Termina sessione
+## <a name="end-session"></a>Termina sessione
 
 **Fatto** è ora **Termina sessione**. [Scopri come usare Termina sessione.](finishing-your-surface-hub-meeting.md) 
 
-![termina sessione](images/end-session.png)
+![terminare la sessione.](images/end-session.png)
 
 
 

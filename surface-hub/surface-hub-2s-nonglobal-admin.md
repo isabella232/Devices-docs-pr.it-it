@@ -1,6 +1,6 @@
 ---
 title: Configurare account di amministratore non globali in Surface Hub
-description: In questo articolo viene descritto come configurare gli account amministratore non globali per gestire Surface Hub e Surface Hub 2S.
+description: In questo articolo viene descritto come configurare gli account di amministratore non globale per gestire Surface Hub e Surface Hub 2S.
 keywords: Surface Hub, Surface Hub v1, Surface Hub 2S
 ms.prod: surface-hub
 ms.sitesec: library
@@ -14,16 +14,16 @@ ms.localizationpriority: Medium
 appliesto:
 - Surface Hub
 - Surface Hub 2S
-ms.openlocfilehash: 11170f6c202faef7aa3dddcb8aa8c6fa84bea80f
-ms.sourcegitcommit: d020d899e9c7e1eb0b85193ecb0a17a85bb39fe6
+ms.openlocfilehash: a941879d43909a44c18a492d6c4f607cbafbe707
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "11643862"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911371"
 ---
 # <a name="configure-non-global-admin-accounts-on-surface-hub"></a>Configurare account di amministratore non globali in Surface Hub
 
-L'Windows 10 Team 2020 aggiunge il supporto per la configurazione di account amministratore non globali che limitano le autorizzazioni per la gestione dell'app Impostazioni nei dispositivi Surface Hub aggiunti a un dominio di Azure AD. In questo modo è possibile impostare l'ambito delle autorizzazioni di amministratore solo Surface Hub e impedire l'accesso amministratore potenzialmente indesiderato in un intero dominio di Azure AD. Prima di iniziare, assicurati che il Surface Hub sia aggiunto ad Azure AD e Intune registrato automaticamente. In caso contrario, sarà necessario reimpostare Surface Hub e completare il programma di installazione della Configurazione guidata, scegliendo l'opzione per partecipare ad Azure AD.
+L'aggiornamento Windows 10 Team 2020 aggiunge il supporto per la configurazione di account amministratore non globali che limitano le autorizzazioni per la gestione dell'app Impostazioni nei dispositivi Surface Hub aggiunti a un dominio di Azure AD. In questo modo è possibile impostare l'ambito delle autorizzazioni di amministratore solo Surface Hub e impedire l'accesso amministratore potenzialmente indesiderato in un intero dominio di Azure AD. Prima di iniziare, assicurati che il Surface Hub sia aggiunto ad Azure AD e Intune registrato automaticamente. In caso contrario, sarà necessario reimpostare Surface Hub e completare il programma di installazione della configurazione guidata predefinito per la prima volta, scegliendo l'opzione per partecipare ad Azure AD.
 
 ## <a name="summary"></a>Riepilogo 
 
@@ -45,7 +45,7 @@ Creare innanzitutto un gruppo di sicurezza contenente gli account amministratore
 1. Accedi a Intune tramite [l'Microsoft Endpoint Manager di amministrazione,](https://go.microsoft.com/fwlink/?linkid=2109431) **seleziona**Gruppi Nuovo gruppo > e in Tipo di gruppo seleziona  >  **** **Sicurezza.** 
 2. Immettere un nome di gruppo, ad esempio Surface Hub **amministratori locali,** quindi selezionare **Crea.** 
 
-     ![Creare un gruppo di sicurezza per gli amministratori hub](images/sh-create-sec-group.png)
+     ![Creare un gruppo di sicurezza per gli amministratori hub.](images/sh-create-sec-group.png)
 
 3. Aprire il gruppo, selezionare **Membri**e quindi scegliere Aggiungi membri per immettere gli account amministratore che si desidera designare come amministratori non globali in Surface Hub. **** Per altre informazioni sulla creazione di gruppi in Intune, vedi [Aggiungere gruppi per organizzare utenti e dispositivi.](/mem/intune/fundamentals/groups-add)
 
@@ -53,7 +53,7 @@ Creare innanzitutto un gruppo di sicurezza contenente gli account amministratore
 
 1. Ripetere la procedura precedente per creare un gruppo di sicurezza separato per i dispositivi Hub. ad esempio, **Surface Hub dispositivi**. 
 
-     ![Creare un gruppo di sicurezza per i dispositivi Hub](images/sh-create-sec-group-devices.png) 
+     ![Creare un gruppo di sicurezza per i dispositivi Hub.](images/sh-create-sec-group-devices.png) 
 
 ## <a name="obtain-azure-ad-group-sid-using-powershell"></a>Ottenere il SID del gruppo di Azure AD tramite PowerShell
 
@@ -77,7 +77,7 @@ Creare innanzitutto un gruppo di sicurezza contenente gli account amministratore
 
 5. In Intune, selezionare il gruppo creato in precedenza e copiare l'ID oggetto, come illustrato nella figura seguente. 
 
-     ![Copia ID oggetto del gruppo di sicurezza](images/sh-objectid.png)
+     ![Copia ID oggetto del gruppo di sicurezza.](images/sh-objectid.png)
 
 6. Eseguire il seguente commandlet per ottenere il SID del gruppo di sicurezza:
 
@@ -111,7 +111,7 @@ Creare innanzitutto un gruppo di sicurezza contenente gli account amministratore
 
 ## <a name="create-custom-configuration-profile"></a>Creare un profilo di configurazione personalizzato
 
-1. In Endpoint Manager, selezionare **Profili di**configurazione  >  **dispositivi**Crea  >  **profilo.** 
+1. In Endpoint Manager, selezionare **Profili**  >  **di configurazione dispositivi**Crea  >  **profilo.** 
 2. In Piattaforma selezionare **Windows 10 e versioni successive.** In Profilo selezionare **Personalizzato**e quindi **Crea.**
 3. Aggiungere un nome e una descrizione e quindi selezionare **Avanti.**
 4. In **Impostazioni di configurazione**uri  >  **OMA Impostazioni**selezionare **Aggiungi**.
@@ -122,7 +122,7 @@ Creare innanzitutto un gruppo di sicurezza contenente gli account amministratore
     ```
 6. In Tipo di dati selezionare **Xml stringa** e cercare per aprire il file XML creato nel passaggio precedente. 
 
-     ![caricare il file xml di configurazione dell'amministratore locale](images/sh-local-admin-config.png)
+     ![caricare il file xml di configurazione dell'amministratore locale.](images/sh-local-admin-config.png)
 
 7. Fai clic su **Salva**.
 8. Fai **clic su Seleziona gruppi da includere** e scegli il gruppo di sicurezza creato in [precedenza](#create-security-group-for-surface-hub-devices) (**Surface Hub dispositivi**). Fai clic su **Avanti**.
@@ -133,7 +133,7 @@ Per altre informazioni sui profili di configurazione personalizzati che usano st
 
 ## <a name="non-global-admins-managing-surface-hub"></a>Amministratori non globali che gestiscono Surface Hub
 
-I membri del **Surface Hub Di sicurezza** degli amministratori locali possono ora accedere all'app Impostazioni in Surface Hub e gestire le impostazioni.
+I membri del **gruppo Surface Hub amministratori** locali possono ora accedere all'app Impostazioni in Surface Hub e gestire le impostazioni.
 
 > [!IMPORTANT]
 > L'accesso predefinito degli amministratori globali all'app Impostazioni viene rimosso (a meno che non siano anche membri di questo nuovo gruppo di sicurezza).

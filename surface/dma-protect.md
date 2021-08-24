@@ -17,17 +17,17 @@ appliesto:
 - Surface Pro 7
 - Surface Laptop 3
 - Surface Pro X
-ms.openlocfilehash: af5187a2b110804a2dff82291f1d5f912ac61a7b
-ms.sourcegitcommit: d4e2a29aa21a911ee55642cd66b4337b89eebdd8
+ms.openlocfilehash: d2656b141908ef203f748518ddf49a7fbcbab255
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "11270621"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911351"
 ---
-# Protezione DMA su dispositivi Surface
+# <a name="dma-protection-on-surface-devices"></a>Protezione DMA nei dispositivi Surface
 
-La protezione DMA (Direct Memory Access) è progettata per limitare potenziali vulnerabilità di sicurezza associate all'uso di SSD rimovibili o dispositivi di archiviazione esterni. I dispositivi Surface più recenti sono dotati di protezione DMA abilitata per impostazione predefinita. Questi includono Surface Pro 7 +. Surface Pro 7, Surface laptop 3 e Surface Pro X.  Per verificare la presenza della funzionalità di protezione DMA nel dispositivo, aprire informazioni di sistema (**Start**  >  **msinfo32.exe**), come illustrato nella figura seguente.
+La protezione DMA (Direct Memory Access) è progettata per ridurre le potenziali vulnerabilità di sicurezza associate all'utilizzo di SSD rimovibili o di dispositivi di archiviazione esterni. I dispositivi Surface più nuovi sono disponibili con la protezione DMA abilitata per impostazione predefinita. Questi includono Surface Pro 7+. Surface Pro 7, Surface Laptop 3 e Surface Pro X.  Per verificare la presenza della funzionalità di protezione DMA nel dispositivo, apri System Information (**Start**msinfo32.exe), come  >  ** **illustrato nella figura seguente.
 
-![Informazioni di sistema che mostrano la protezione DMA abilitata](images/systeminfodma.png)
+![Informazioni di sistema che mostrano la protezione DMA abilitata.](images/systeminfodma.png)
 
-Se una superficie SSD rimovibile viene manomessa, il dispositivo spegnerà l'alimentazione. Il riavvio risultante causa l'eliminazione della memoria da parte di UEFI, per cancellare i dati residui.
+Se un SSD rimovibile surface viene manomesso, il dispositivo arresterà l'alimentazione. Il riavvio risultante fa sì che UEFI cancelli la memoria, cancellando eventuali dati residui.

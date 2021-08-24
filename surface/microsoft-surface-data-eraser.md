@@ -15,12 +15,12 @@ ms.author: greglin
 ms.topic: article
 audience: itpro
 ms.date: 05/17/2021
-ms.openlocfilehash: d96581cd67e9cd4171fbb745aed4e9b34e2f0627
-ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
+ms.openlocfilehash: 292c20c9999d9f226f28daed87069c78b43fd4bf
+ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "11576626"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11911191"
 ---
 # <a name="microsoft-surface-data-eraser"></a>Microsoft Surface Data Eraser
 
@@ -77,12 +77,12 @@ Dopo l'installazione dello strumento di creazione, segui questa procedura per cr
 
 3. Fai clic su **Start** per confermare che è connessa una chiavetta USB con almeno 4 GB di spazio, come illustrato nella figura 1.
 
-   ![Avvio dello strumento Microsoft Surface Data Eraser](images/dataeraser-start-tool.png "Start the Microsoft Surface Data Eraser tool")
+   ![Avvia lo strumento Microsoft Surface Data Eraser.](images/dataeraser-start-tool.png "Start the Microsoft Surface Data Eraser tool")
 
    *Figura 1. Avvio dello strumento Microsoft Surface Data Eraser*
 4. Scegli **x64** per la maggior parte dei dispositivi Surface o **ARM64** per Surface Pro X dalla pagina **Selezione** architettura, come illustrato nella figura 2. Seleziona **Continua**.
 
-    ![Selezione architettura](images/dataeraser-arch.png "Architecture Selection")<br>
+    ![Selezione dell'architettura.](images/dataeraser-arch.png "Architecture Selection")<br>
        *Figura 2. Selezionare l'architettura dei dispositivi*
 
 5. Seleziona l'unità USB di tua scelta dalla pagina Selezione unità usb **thumb,** come illustrato nella figura 3, quindi fai clic su **Start** per avviare il processo di creazione usb. L'unità selezionata verrà formattata e tutti i dati presenti nell'unità andranno persi.
@@ -90,7 +90,7 @@ Dopo l'installazione dello strumento di creazione, segui questa procedura per cr
    >[!TIP]
    >Se il pulsante Start è disabilitato, controlla che l'unità rimovibile abbia una capacità totale di almeno 4 GB.
   
-   ![Selezione della chiavetta USB](images/dataeraser-usb-selection.png "USB thumb drive selection")
+   ![Selezione dell'unità pollice USB.](images/dataeraser-usb-selection.png "USB thumb drive selection")
 
    *Figura 3. Selezione della chiavetta USB*
 
@@ -98,7 +98,7 @@ Dopo l'installazione dello strumento di creazione, segui questa procedura per cr
 
 7. Quando viene visualizzata la schermata **Congratulations**, puoi espellere e rimuovere la chiavetta USB. Questa chiavetta USB è ora pronta per essere inserita in un dispositivo Surface e usata per l'avvio e la cancellazione di tutti i dati nel dispositivo. Fare **clic su** Completa per completare il processo di creazione usb, come illustrato nella figura 4.
 
-   ![Processo di creazione dell'unità USB di Surface Data Eraser](images/dataeraser-complete-process.png "Surface Data Eraser USB creation process")
+   ![Processo di creazione USB di Surface Data Eraser.](images/dataeraser-complete-process.png "Surface Data Eraser USB creation process")
 
    *Figura 4. Completamento del processo di creazione dell'unità USB di Microsoft Surface Data Eraser*
 
@@ -120,9 +120,9 @@ Dopo aver creato una chiavetta USB di Microsoft Surface Data Eraser, puoi avviar
    >[!TIP]
    >Se il dispositivo non si avvia dalla chiavetta USB con questa procedura, è necessario attivare l'opzione **Enable Alternate Boot Sequence** nell'interfaccia UEFI di Surface. Per altre informazioni sulla configurazione di avvio UEFI di Surface, vedi [Gestire le impostazioni UEFI di Surface](https://technet.microsoft.com/itpro/surface/manage-surface-uefi-settings).
 
-3. Quando il dispositivo Surface si avvia, viene visualizzato un file di testo **SoftwareLicenseTerms,** come illustrato nella figura 5.
+3. Quando il dispositivo Surface viene avviato, viene visualizzato un file di testo **SoftwareLicenseTerms,** come illustrato nella figura 5.
 
-   ![Avvio dalla chiavetta USB di Microsoft Surface Data Eraser](images/data-eraser-3.png "Booting the Microsoft Surface Data Eraser USB stick")
+   ![Avvio della chiavetta USB di Microsoft Surface Data Eraser.](images/data-eraser-3.png "Booting the Microsoft Surface Data Eraser USB stick")
 
    *Figura 5. Avvio dalla chiavetta USB di Microsoft Surface Data Eraser*
 
@@ -135,7 +135,7 @@ Dopo aver creato una chiavetta USB di Microsoft Surface Data Eraser, puoi avviar
    >[!CAUTION]
    >Lo strumento Microsoft Surface Data Eraser eliminerà tutti i dati, inclusi i file del sistema operativo Windows necessari per l'avvio del dispositivo, in modo sicuro e irreversibile. Per avviare un dispositivo Surface che è stato cancellato con Microsoft Surface Data Eraser, è necessario innanzitutto reinstallare il sistema operativo Windows. Per rimuovere i dati da un dispositivo Surface senza rimuovere il sistema operativo Windows, è possibile utilizzare la funzione **Reimposta il PC**. Tuttavia, ciò non impedisce il ripristino dei dati con l'uso di funzionalità di ripristino dati e forensi. Per altre informazioni, vedi [Opzioni di ripristino in Windows 10](https://support.microsoft.com/help/12415/windows-10-recovery-options).
 
-   ![Visualizzazione della partizione da cui cancellare i dati](images/sda-fig5-erase.png "Partition to be erased is displayed")
+   ![Viene visualizzata la partizione da cancellare.](images/sda-fig5-erase.png "Partition to be erased is displayed")
   
    *Figura 6. La partizione da cui cancellare i dati viene visualizzata in Microsoft Surface Data Eraser*
 
