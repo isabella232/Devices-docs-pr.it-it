@@ -10,12 +10,12 @@ ms.date: 08/15/2018
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: cf9649b8d1f747722064793fbbde70116bc7f424
-ms.sourcegitcommit: a4f8d271b1372321c3b45fc5a7a29703976964a4
+ms.openlocfilehash: ff08b8ab6e59af77761fb365980af261c47030a9
+ms.sourcegitcommit: 09a47921ec2e565a92ba2baa61e181d218706ad9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "11576846"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "11921825"
 ---
 # <a name="configure-surface-hub-start-menu"></a>Configurare il menu Start di Surface Hub
 
@@ -31,14 +31,14 @@ Il menu Start personalizzato viene definito in un file XML di layout di Start. S
 
     -oppure-
 
-- Configura il menu Start desiderato su un desktop (aggiungendo solo le app disponibili in Surface Hub) e quindi [esporta il layout](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout#export-the-start-layout).
+- Configura il menu Start desiderato su un desktop (aggiungendo solo le app disponibili in Surface Hub) e quindi [esporta il layout](/windows/configuration/customize-and-export-start-layout#export-the-start-layout).
 
 >[!TIP]
 >Per aggiungere un riquadro con un collegamento Web al menu Start del desktop, vai al collegamento in Microsoft Edge, seleziona `...` nell'angolo in alto a destra e seleziona **Aggiungi questa pagina a Start**. Vedere [un layout Start che include un collegamento di Microsoft Edge](#edge) per un esempio di come i collegamenti verranno visualizzati nel file XML.
 
-Per modificare il file XML predefinito o il layout esportato, acquisisci familiarità con il file [XML di layout di Start](https://docs.microsoft.com/windows/configuration/start-layout-xml-desktop). Esistono alcune [differenze tra il layout Start in un desktop e su Surface Hub.](#differences)
+Per modificare il file XML predefinito o il layout esportato, acquisisci familiarità con il file [XML di layout di Start](/windows/configuration/start-layout-xml-desktop). Esistono alcune [differenze tra il layout Start in un desktop e su Surface Hub.](#differences)
 
-Dopo aver definito il menu Start in un file XML di layout di Start, [crea un criterio MDM per applicare il layout.](https://docs.microsoft.com/windows/configuration/customize-windows-10-start-screens-by-using-mobile-device-management#a-href-idbkmk-domaingpodeploymentacreate-a-policy-for-your-customized-start-layout)
+Dopo aver definito il menu Start in un file XML di layout di Start, [crea un criterio MDM per applicare il layout.](/windows/configuration/customize-windows-10-start-screens-by-using-mobile-device-management#a-href-idbkmk-domaingpodeploymentacreate-a-policy-for-your-customized-start-layout)
 
 <span id="differences" />
 
@@ -46,7 +46,7 @@ Dopo aver definito il menu Start in un file XML di layout di Start, [crea un cri
 
 Esistono alcune differenze chiave tra la personalizzazione del menu Start per Surface Hub e un desktop di Windows 10:
 
-- Non è possibile **utilizzare DesktopApplicationTile** ( nel codice XML del layout della schermata Start perché Windows applicazioni desktop (Win32) non sono supportate in https://docs.microsoft.com/windows/configuration/start-layout-xml-desktop#startdesktopapplicationtile) Surface Hub.
+- Non è possibile **[usare DesktopApplicationTile](/windows/configuration/start-layout-xml-desktop#startdesktopapplicationtile)** nel codice XML del layout della schermata Start perché Windows applicazioni desktop (Win32) non sono supportate in Surface Hub.
 - Non è possibile utilizzare il file XML del layout di Start per configurare la barra delle applicazioni o la schermata iniziale per Surface Hub.  
 - Il criterio layout della schermata Start deve essere assegnato solo ai dispositivi e non agli utenti.
 - L'impostazione URI OMA da utilizzare nel criterio è `./Device/Vendor/MSFT/Policy/Config/Start/StartLayout`
@@ -66,8 +66,8 @@ Esistono alcune differenze chiave tra la personalizzazione del menu Start per Su
     <StartLayoutCollection>
       <defaultlayout:StartLayout GroupCellWidth="8" xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout">
         <start:Group Name="" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout">
-        <start:Tile
-            AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge"
+        <start:DesktopApplicationTile
+            DesktopApplicationID="MSEdge"
             Size="2x2"
             Row="0"
             Column="0"/>
@@ -117,7 +117,7 @@ Esistono alcune differenze chiave tra la personalizzazione del menu Start per Su
 
 ## <a name="example-start-layout-that-includes-a-microsoft-edge-link"></a>Esempio: layout di Start che include un collegamento di Microsoft Edge
 
-Questo esempio mostra un collegamento a un sito Web e un collegamento a un file .pdf. Il riquadro secondario Microsoft Edge un'icona di 150 x 150 pixel.
+Questo esempio mostra un collegamento a un sito Web e un collegamento a un file .pdf. Il riquadro secondario per Microsoft Edge un'icona di 150 x 150 pixel.
 
 ```xml
 <LayoutModificationTemplate Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
@@ -141,8 +141,8 @@ Questo esempio mostra un collegamento a un sito Web e un collegamento a un file 
               Size="2x2"
               Row="0"
               Column="4"/>
-    <start:Tile
-              AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge"
+          <start:DesktopApplicationTile
+              DesktopApplicationID="MSEdge"
               Size="2x2"
               Row="2"
               Column="0"/>
