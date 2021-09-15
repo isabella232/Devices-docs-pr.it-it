@@ -13,18 +13,18 @@ appliesto:
 - Surface
 ms.reviewer: irenewhite
 description: Informazioni e aree di copertura del servizio di sostituzione il giorno lavorativo successivo.
-ms.openlocfilehash: 4488d2f1cc8a3e6c240710d59f3465d05abae12b
-ms.sourcegitcommit: 267e12897efd9d11f8c7303eaf780632741cfe77
+ms.openlocfilehash: 9f66e16730b070ab75f4b5646cbcf2cf95ba77bf
+ms.sourcegitcommit: a5651e8c8f953fe3130dd476f4e06c16c172aaa4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "11613845"
+ms.lasthandoff: 09/04/2021
+ms.locfileid: "11939515"
 ---
 # <a name="next-business-day-replacement-information--coverage-areas"></a>Informazioni e aree di copertura del servizio di sostituzione il giorno lavorativo successivo
 
 La sostituzione il giorno lavorativo successivo è una servizio a pagamento che prevede la spedizione a domicilio di un dispositivo Surface entro il giorno lavorativo successivo. 
 
-La sostituzione entro Il giorno lavorativo successivo è disponibile con l'acquisto del piano di protezione Complete for Business Plus (disponibilità in alcuni paesi). Questi servizi si applicano dopo che un agente ha determinato che è necessario un dispositivo sostitutivo, ha confermato l'inventario disponibile e ha inviato un ordine per un dispositivo sostitutivo entro un  tempo limite standard, predeterminato da Microsoft. 
+La sostituzione entro Il giorno lavorativo successivo è disponibile con l'acquisto del piano di protezione Complete for Business Plus (disponibilità in determinati paesi). Questi servizi si applicano dopo che un agente ha determinato che è necessario un dispositivo sostitutivo, ha confermato l'inventario disponibile e ha inviato un ordine per un dispositivo sostitutivo entro un  tempo limite standard, predeterminato da Microsoft. 
 
 ## <a name="guidelines"></a>Linee guida
 
@@ -148,7 +148,7 @@ Per un elenco dei codici postali supportati, vedere "Ambito del servizio nel gio
 #### <a name="spain"></a>Spagna
 
 - Tempo limite: 12:00 CET (UTC + 1)
-- [Ambito del servizio nel giorno lavorativo successivo](https://download.microsoft.com/download/6/1/d/61da1e35-e17e-4a67-ab81-27cf7a21f91b/NBD%20Coverage-%20Spain%20Post%20Codes%20030321.xlsx)
+- [Ambito del servizio nel giorno lavorativo successivo](https://download.microsoft.com/download/6/1/d/61da1e35-e17e-4a67-ab81-27cf7a21f91b/NBD%20Coverage%20-%20Spain%20Post%20Codes%20030321.xlsx)
 
 #### <a name="sweden"></a>Svezia
 
