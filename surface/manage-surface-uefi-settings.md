@@ -13,12 +13,12 @@ ms.topic: article
 ms.reviewer: hachidan
 manager: laurawi
 ms.date: 04/13/2021
-ms.openlocfilehash: 60ace1e2b9344faeb9f130a56686ffac4643fc37
-ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
+ms.openlocfilehash: e21febfcbcbf139aea832c51e354759c0a49f896
+ms.sourcegitcommit: a5651e8c8f953fe3130dd476f4e06c16c172aaa4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "11911321"
+ms.lasthandoff: 09/04/2021
+ms.locfileid: "11939537"
 ---
 # <a name="manage-surface-uefi-settings"></a>Gestire le impostazioni UEFI di Surface
 
@@ -96,7 +96,7 @@ La password deve contenere almeno 6 caratteri e fa distinzione tra maiuscole e m
 
 *Figura 3. Aggiunta di una password per proteggere le impostazioni UEFI di Surface*
 
-Nella pagina Security puoi anche modificare la configurazione di Avvio protetto nel tuo dispositivo Surface. La tecnologia Avvio protetto impedisce l'avvio di un codice di avvio non autorizzato nel dispositivo Surface, per proteggere il sistema da infezioni malware di tipo bootkit e rootkit. Puoi disabilitare Avvio protetto per permettere al dispositivo Surface di avviare sistemi operativi o supporti di avvio di terze parti. È inoltre possibile configurare l'avvio protetto per l'utilizzo con certificati di terze parti, come illustrato nella figura 4. Per altre informazioni, vedi [Avvio protetto](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/secure-boot-overview) nella Libreria TechNet.
+Nella pagina Security puoi anche modificare la configurazione di Avvio protetto nel tuo dispositivo Surface. La tecnologia Avvio protetto impedisce l'avvio di un codice di avvio non autorizzato nel dispositivo Surface, per proteggere il sistema da infezioni malware di tipo bootkit e rootkit. Puoi disabilitare Avvio protetto per permettere al dispositivo Surface di avviare sistemi operativi o supporti di avvio di terze parti. È inoltre possibile configurare l'avvio protetto per l'utilizzo con certificati di terze parti, come illustrato nella figura 4. Per ulteriori informazioni, vedere [Avvio protetto](/windows-hardware/design/device-experiences/oem-secure-boot).
 
 ![Configurare l'avvio protetto.](images/manage-surface-uefi-fig3.png "Configure Secure Boot")
 
@@ -156,7 +156,7 @@ Poi anche attivare o disattivare il supporto IPv6 per PXE con l'opzione **Enable
 
 ## <a name="uefi-menu-management"></a>Menu UEFI: Gestione
 
-La pagina Gestione consente di gestire l'uso di Zero Touch UEFI Management e altre funzionalità nei dispositivi idonei, tra cui Surface Pro 7, Surface Pro X e Surface Laptop 3.  
+La pagina Gestione consente di gestire l'uso di Zero Touch UEFI Management e di altre funzionalità nei dispositivi idonei, tra cui Surface Pro 7, Surface Pro X e Surface Laptop 3.  
 
 :::image type="content" alt-text="Gestire l'accesso a Zero Touch UEFI Management e ad altre funzionalità." source="images/manage-surface-uefi-fig7a.png":::
 
