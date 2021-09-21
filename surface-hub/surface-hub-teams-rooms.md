@@ -1,5 +1,5 @@
 ---
-title: Microsoft Teams Rooms su Surface Hub
+title: Microsoft Teams Rooms in Surface Hub
 description: In questo articolo viene fornita una panoramica delle Microsoft Teams Rooms su Surface Hub.
 keywords: Teams Rooms, Surface Hub, Intune, QoS
 ms.prod: surface-hub
@@ -11,16 +11,16 @@ ms.date: 08/20/2021
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: 2d8bd08c150c1665365ae21bc87fd3485b8c69a8
-ms.sourcegitcommit: b5e7ea8118b848846cf1fb332ed7bf96c4583d20
+ms.openlocfilehash: 05160bc2c1b77843b8ad832452501d7b065a8bc6
+ms.sourcegitcommit: 38bde856b6091097d25745f6d080edebf72e3e17
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "11909976"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "12030821"
 ---
-# <a name="microsoft-teams-rooms-on-surface-hub"></a>Microsoft Teams Rooms su Surface Hub
+# <a name="microsoft-teams-rooms-on-surface-hub"></a>Microsoft Teams Rooms in Surface Hub
 
-Teams Rooms per Surface Hub sostituirà automaticamente [l'app](hub-teams-app.md) Surface Hub Teams corrente come parte di un'implementazione globale di 4 settimane a partire dal 23 settembre. Per una demo della nuova esperienza Teams, attualmente disponibile come anteprima tramite il programma Windows Insider, vedi Introduzione Teams Rooms su [Surface Hub](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/introducing-teams-rooms-on-surface-hub/ba-p/2118373).
+Teams Rooms per Surface Hub sostituirà automaticamente [l'app](hub-teams-app.md) Surface Hub Teams corrente come parte di un'implementazione globale di 4 settimane a partire dal 30 settembre. Per una demo della nuova esperienza Teams, attualmente disponibile come anteprima tramite il programma Windows Insider, vedi Introduzione Teams Rooms [in Surface Hub](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/introducing-teams-rooms-on-surface-hub/ba-p/2118373).
 
 ## <a name="whats-new"></a>Novità
 
@@ -29,15 +29,15 @@ Teams Rooms per Surface Hub sostituirà automaticamente [l'app](hub-teams-app.md
 - Teams Rooms in Surface Hub esecuzione affiancata ad altre applicazioni o ridotta a icona.
 - Gli amministratori possono configurare funzionalità come Riunione coordinata e Partecipazione di prossimità per Surface Hub. [I file XML](/microsoftteams/rooms/surface-hub-manage-config#teams-configuration-file-syntax) sono supportati e verranno migrati nel nuovo modello di impostazioni.
 - Nuove opzioni QoS e requisiti di rete. Per ulteriori informazioni, vedere [Configure networking and Quality of Service for Microsoft Teams Room on Surface Hub](surface-hub-teams-rooms-networking.md).
-- Modifiche alla Teams, sostituendo Skype for Business come app predefinita per la collaborazione e le riunioni. Per ulteriori informazioni, vedere [Deploy Microsoft Teams for Surface Hub](/MicrosoftTeams/teams-surface-hub).
+- Modifiche alla Teams, sostituendo Skype for Business come app di collaborazione e riunione predefinita. Per ulteriori informazioni, vedere [Deploy Microsoft Teams for Surface Hub](/MicrosoftTeams/teams-surface-hub).
 
 ## <a name="in-meeting-experience"></a>Nell'esperienza di riunione
 
-Teams Rooms'esperienza Surface Hub riunioni è allineata all'esperienza familiare che gli utenti conoscono dai propri dispositivi personali con le regolazioni apportate per ottimizzare un dispositivo con schermo di grandi dimensioni. L'Teams su Surface Hub consente agli utenti di accedere a funzionalità chiave, tra cui partecipazione a una riunione con un solo tocco, Riunione e Tastiera del telefono per chiamate PSTN o peer-to-peer.
+Teams Rooms'esperienza Surface Hub riunioni è allineata all'esperienza familiare che gli utenti conoscono dai propri dispositivi personali con le regolazioni apportate per ottimizzare un dispositivo con schermo di grandi dimensioni. L'apertura Teams su Surface Hub consente agli utenti di accedere a funzionalità chiave, tra cui partecipazione a una riunione con un solo tocco, Meet Now e Dial Pad per chiamate PSTN o peer-to-peer.
 
 :::image type="content" source="images/teamsroomsagendascreen.png" alt-text="Teams Rooms su Surface Hub Agenda.":::
 
-:::image type="content" source="images/teamsroomsmeeting.png" alt-text="Teams Rooms in Surface Hub riunione.":::
+:::image type="content" source="images/teamsroomsmeeting.png" alt-text="Teams Rooms riunione Surface Hub riunione.":::
 
 ## <a name="manage-teams-rooms-on-surface-hub"></a>Gestire Teams Rooms in Surface Hub
 
@@ -49,7 +49,7 @@ Teams Rooms'esperienza Surface Hub riunioni è allineata all'esperienza familiar
 
 :::image type="content" source="images/teamsroomssetttings.png" alt-text="Teams Rooms Impostazioni.":::
 
-Il nuovo Teams Rooms per Surface Hub client, applierà automaticamente le impostazioni esistenti configurate tramite file XML, pacchetti di provisioning o un provider MDM. Questi metodi, illustrati in [Manage Microsoft Teams configuration on Surface Hub](/microsoftteams/rooms/surface-hub-manage-config), verranno sostituiti da nuove soluzioni basate sul cloud, come descritto di seguito in Gestione semplificata di Teams in arrivo [Surface Hub](#simplified-management-of-teams-coming-to-surface-hub).
+Il nuovo Teams Rooms per Surface Hub client, applierà automaticamente le impostazioni esistenti configurate tramite file XML, pacchetti di provisioning o un provider MDM. Questi metodi, descritti in [Manage Microsoft Teams configuration on Surface Hub](/microsoftteams/rooms/surface-hub-manage-config), verranno sostituiti da nuove soluzioni basate su cloud, come descritto di seguito in Gestione semplificata di Teams in arrivo [Surface Hub](#simplified-management-of-teams-coming-to-surface-hub).
 
 ### <a name="prepare-networking-for-teams-rooms"></a>Preparare la rete per Teams Rooms
 
