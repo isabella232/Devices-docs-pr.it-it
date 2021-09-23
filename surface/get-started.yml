@@ -15,8 +15,8 @@ metadata:
   ms.sourcegitcommit: 389b24de1759d60339f4fe9257d1bdd68267bc39
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 09/22/2021
-  ms.locfileid: "12034335"
+  ms.lasthandoff: 09/23/2021
+  ms.locfileid: "12037140"
 landingContent:
 - title: Dispositivi Surface
   linkLists:
@@ -24,13 +24,13 @@ landingContent:
     links:
     - text: Scelta del sistema operativo Surface
       url: surface-os-choice.md
-    - text: Surface Pro 8 for Business
+    - text: Surface Pro 8 per le aziende
       url: https://www.microsoft.com/surface/business/surface-pro-8
     - text: Surface Pro X per le aziende
       url: https://www.microsoft.com/surface/business/surface-pro-x
-    - text: Surface Laptop Studio for Business
+    - text: Surface Laptop Studio per le aziende
       url: https://www.microsoft.com/surface/business/surface-laptop-studio
-    - text: Surface Go 3 for Business
+    - text: Surface Book 3 per le aziende
       url: https://www.microsoft.com/surface/business/surface-go-3
     - text: Surface Laptop Go for Business
       url: https://www.microsoft.com/surface/business/surface-laptop-go
@@ -56,7 +56,7 @@ landingContent:
       url: https://youtu.be/WQ-wg8fRzN0
     - text: Surface Pro X e Windows su ARM in un mondo remoto
       url: https://youtu.be/bDw77ZQNPPw
-    - text: 'Surface Security : da chip a cloud Endpoint Protection da Microsoft'
+    - text: 'Surface Security: da chip a cloud Endpoint Protection da Microsoft'
       url: https://youtu.be/uadAecDbqf4
 - title: Distribuisci i dispositivi Surface
   linkLists:
