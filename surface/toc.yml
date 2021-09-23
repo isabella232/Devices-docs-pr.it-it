@@ -22,18 +22,22 @@
               href: surface-headphones.md
         - name: Ordinare dispositivi Surface
           items:
-            - name: Surface Laptop 4 per le aziende
-              href: 'https://www.microsoft.com/surface/business/surface-laptop-4'
-            - name: Surface Pro 7+ per le aziende
-              href: 'https://www.microsoft.com/surface/business/surface-pro-7-plus'
-            - name: Surface Go 2 per le aziende
-              href: 'https://www.microsoft.com/surface/business/surface-go-2'
+            - name: Scelta del sistema operativo Surface
+              href: surface-os-choice.md
+            - name: Surface Pro 8 per le aziende
+              href: 'https://www.microsoft.com/surface/business/surface-pro-8'
             - name: Surface Pro X per le aziende
               href: 'https://www.microsoft.com/surface/business/surface-pro-x'
+            - name: Surface Laptop Studio per le aziende
+              href: 'https://www.microsoft.com/surface/business/surface-laptop-studio'
+            - name: Surface Book 3 per le aziende
+              href: 'https://www.microsoft.com/surface/business/surface-go-3'
+            - name: Surface Laptop 4 per le aziende
+              href: 'https://www.microsoft.com/surface/business/surface-laptop-4'
+            - name: Surface Laptop Go per le aziende
+              href: 'https://www.microsoft.com/surface/business/surface-laptop-go'
             - name: Surface Studio 2 per le aziende
               href: 'https://www.microsoft.com/surface/business/surface-studio-2'
-            - name: Surface Book 3 per le aziende
-              href: 'https://www.microsoft.com/surface/business/surface-book-3'
     - name: Piano
       items:
         - name: Compatibilità dei dispositivi Surface con Long-Term Servicing Branch di Windows 10
