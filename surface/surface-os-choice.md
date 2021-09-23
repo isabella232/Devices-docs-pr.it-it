@@ -16,8 +16,8 @@ ms.openlocfilehash: cc6a9cebf389885a3a21f594a30653dccbd22a8a
 ms.sourcegitcommit: 389b24de1759d60339f4fe9257d1bdd68267bc39
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2021
-ms.locfileid: "12034368"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "12036977"
 ---
 # <a name="os-choice-for-new-surface-devices"></a>Scelta del sistema operativo per i nuovi dispositivi Surface
  
