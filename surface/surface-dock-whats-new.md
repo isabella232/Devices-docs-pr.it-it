@@ -12,12 +12,12 @@ ms.date: 04/13/2021
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 14b4b5ee72ac92618a2906894840a51dd2229d42
-ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
+ms.openlocfilehash: e36e01ec9387779ba4b920e21bf51f1f210cbdde
+ms.sourcegitcommit: e330b89272eee8d4ef1836bacd2c91084ad3a36b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "11911161"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "12057673"
 ---
 # <a name="whats-new-in-surface-dock-2"></a>Novità di Surface Dock 2
 
@@ -121,7 +121,7 @@ Surface Dock 2 è progettato per semplificare la gestione IT, consentendo agli a
 
 
 
-1. *I dispositivi devono essere configurati per Wake on LAN tramite seMM (Surface Enterprise Management Mode) o DFCI (Device Firmware Control Interface) per la riattivazione da ibernazione o Power-Off stati. Wake from Hibernation or Power-Off is supported on Surface Pro 7+, Surface Pro 7, Surface Laptop 4, Surface Laptop 3, Surface Pro X, Surface Book 3, and Surface Go 2.  Licenza software necessaria per alcune funzionalità. Venduto separatamente.*
+1. *I dispositivi devono essere configurati per Wake on LAN tramite seMM (Surface Enterprise Management Mode) o DFCI (Device Firmware Control Interface) per la riattivazione da ibernazione o Power-Off stati. Wake from Hibernation or Power-Off è supportato in Surface Laptop Studio, Surface Pro 8, Surface Pro 7+, Surface Pro 7, Surface Laptop 4, Surface Laptop 3, Surface Pro X, Surface Book 3, Surface Go 3 e Surface Go 2.  Licenza software necessaria per alcune funzionalità. Venduto separatamente.*
 
 2. *Licenza software necessaria per alcune funzionalità. Venduto separatamente.*
 
@@ -129,7 +129,7 @@ Surface Dock 2 è progettato per semplificare la gestione IT, consentendo agli a
 
 Surface ha rilasciato funzionalità di gestione semplificate tramite Windows Update che consente agli amministratori IT di utilizzare le funzionalità di livello enterprise seguenti:
 
-- **Aggiornamenti senza attrito**. Aggiorna i dock automaticamente e automaticamente, con Windows Update o Microsoft Endpoint Configuration Manager, (in precedenza System Center Configuration Manager - SCCM) o altri strumenti di distribuzione MSI. 
+- **Aggiornamenti senza attrito**. Aggiorna i dock in modo automatico e automatico, con Windows Update o Microsoft Endpoint Configuration Manager, (in precedenza System Center Configuration Manager - SCCM) o altri strumenti di distribuzione MSI. 
 - **Riattiva dalla rete**. Gestire e accedere ai dispositivi aziendali senza che gli utenti mantenino i dispositivi acceso. Anche quando un dispositivo ancorato è in modalità sospensione, ibernazione o alimentazione disattivata, il team può riattivarsi dalla rete per il servizio e la gestione, usando Endpoint Configuration Manager o altri strumenti di gestione aziendale.
 - **Controllo IT centralizzato**. Controlla chi può connettersi a Surface Dock 2 attivando e disattivando le porte. Limitare i dispositivi host che possono essere usati con Surface Dock 2. Limitare l'accesso al dock a un singolo utente o configurare i dock in modo che siano accessibili solo a utenti specifici del team o all'intera società.
 
