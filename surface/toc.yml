@@ -14,12 +14,16 @@
               href: windows-virtual-desktop-surface.md
             - name: Panoramica tecnica dei processori di Surface Laptop 4
               href: surface-laptop-processors.md
-            - name: Panoramica tecnica di Surface Book 3 GPU
+            - name: Panoramica tecnica di Surface Headphones 2+
+              href: surface-headphones.md
+        - name: Grafica professionale surface
+          items:
+            - name: Panoramica sulla grafica di Surface Laptop Studio
+              href: surface-laptop-studio-graphics.md
+            - name: Panoramica tecnica su Surface Book 3
               href: surface-book-GPU-overview.md
             - name: Panoramica tecnica di Surface Book 3 Quadro RTX 3000
               href: surface-book-quadro.md
-            - name: Panoramica tecnica di Surface Headphones 2+
-              href: surface-headphones.md
         - name: Ordinare dispositivi Surface
           items:
             - name: Scelta del sistema operativo Surface
