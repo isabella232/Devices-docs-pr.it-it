@@ -1,5 +1,5 @@
 ---
-title: Surface Laptop Panoramica della grafica di Studio
+title: Panoramica sulla grafica di Surface Laptop Studio
 description: Questo articolo evidenzia le GPU in Surface Lapto Studio.
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -12,14 +12,14 @@ ms.date: 10/04/2021
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 80221d49f10f1a2fdc57723d1b6122333e1b192a
-ms.sourcegitcommit: 247e97d3ed856fa9814e95db7e04e5d4054f6bb5
+ms.openlocfilehash: d5c7690cd90427bb7a9a6b2b452e527aa1b608dd
+ms.sourcegitcommit: 7ffb1d2d86a713a3ed4a7faa8ac82cfc49dbd55e
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/05/2021
-ms.locfileid: "12067724"
+ms.locfileid: "12068447"
 ---
-# <a name="surface-laptop-studio-graphics-overview"></a>Surface Laptop Panoramica della grafica di Studio
+# <a name="surface-laptop-studio-graphics-overview"></a>Panoramica sulla grafica di Surface Laptop Studio
 
 Surface Laptop Studio integra funzionalità grafiche e di calcolo completamente modernizzate in un nuovo fattore di forma versatile. Guidato dall'11° generazione Intel® Core™ i7 e NVIDIA® RTX™ A2000 o NVIDIA® GeForce RTX™ 3050 Ti, Surface Laptop Studio offre ad architetti, ingegneri, esperti di dati e professionisti creativi la potenza di calcolo per lavorare al meglio.
  
@@ -51,10 +51,10 @@ GeForce RTX 3050 Ti abilita:
 
 - Accelerazioni di modifica video e livestreaming, grazie al codificatore hardware dedicato, alle funzionalità di IA avanzate e alle accelerazioni delle app in app come Adobe Premiere® Pro, DaVinci Resolve o OBS.
 - Progettazione grafica e fotografia, con funzionalità di intelligenza artificiale accelerate in app come Adobe Lightroom o Photoshop.
-- Rendering 3D estremamente veloce grazie alle accelerazioni RTX e DLSS in app come Blender o Autodesk® Maya. 
+- Rendering 3D ultra veloce grazie alle accelerazioni RTX e DLSS in app come Blender o Autodesk® Maya. 
 - Giochi di nuova generazione con grafica RTX e prestazioni elevate grazie a DLSS, oltre a una latenza estremamente bassa con NVIDIA Reflex.
 
-## <a name="nvidia-rtx-a2000-laptop-gpu"></a>NVIDIA RTX A2000 Laptop GPU
+### <a name="nvidia-rtx-a2000-laptop-gpu"></a>NVIDIA RTX A2000 Laptop GPU
 
 NVIDIA RTX A2000 offre funzionalità professionali di rendering grafico e IA per flussi di lavoro professionali impegnativi, tra cui progettazione di prodotti e produzione, modellazione multimediale e di intrattenimento, animazione e rendering, architettura, progettazione ingegneristica e di costruzione.
  

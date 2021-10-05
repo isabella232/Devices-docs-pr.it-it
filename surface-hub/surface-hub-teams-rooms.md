@@ -11,29 +11,29 @@ ms.date: 08/20/2021
 ms.reviewer: dpandre
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: 3cb72801f58424ed8c515e57cbd25799f3a9d709
-ms.sourcegitcommit: e330b89272eee8d4ef1836bacd2c91084ad3a36b
+ms.openlocfilehash: a2f382b1120ba071e7dc709f1464ddb1e5118d28
+ms.sourcegitcommit: 7ffb1d2d86a713a3ed4a7faa8ac82cfc49dbd55e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "12057683"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "12068460"
 ---
 # <a name="microsoft-teams-rooms-on-surface-hub"></a>Microsoft Teams Rooms in Surface Hub
 
-Teams Rooms per Surface Hub sostituirà automaticamente [l'app](hub-teams-app.md) Surface Hub Teams corrente come parte di un'implementazione globale di 4 settimane a partire dal 30 settembre. Per una demo della nuova esperienza Teams, attualmente disponibile come anteprima tramite il programma Windows Insider, vedi Introduzione Teams Rooms [su Surface Hub](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/introducing-teams-rooms-on-surface-hub/ba-p/2118373).
+Teams Rooms per Surface Hub sostituirà automaticamente [l'app](hub-teams-app.md) Surface Hub Teams corrente come parte di un'implementazione globale di 4 settimane a partire dal 30 settembre. Per una demo della nuova esperienza Teams, attualmente disponibile come anteprima tramite il programma Windows Insider, vedi Introduzione Teams Rooms in [Surface Hub](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/introducing-teams-rooms-on-surface-hub/ba-p/2118373).
 
 ## <a name="whats-new"></a>Novità
 
 - Le riunioni unite dalla Surface Hub iniziale o dalla nuova pagina Agenda si uniscono a "Edge to Edge" per mettere le persone in primo piano.
 - Caratteristiche familiari delle riunioni, tra cui bolle di chat, reazioni, condivisione desktop e applicazioni, dare e prendere il controllo e l'audio, supporto PowerPoint live completo, modalità insieme e raccolta di grandi dimensioni.
-- Teams Rooms in Surface Hub esecuzione affiancata ad altre applicazioni o ridotta a icona.
+- Teams Rooms in Surface Hub può essere eseguito affiancato ad altre applicazioni o ridotto a icona.
 - Gli amministratori possono configurare funzionalità come Riunione coordinata e Partecipazione di prossimità per Surface Hub. [I file XML](/microsoftteams/rooms/surface-hub-manage-config#teams-configuration-file-syntax) sono supportati e verranno migrati nel nuovo modello di impostazioni.
 - Nuove opzioni QoS e requisiti di rete. Per ulteriori informazioni, vedere [Configure networking and Quality of Service for Microsoft Teams Room on Surface Hub](surface-hub-teams-rooms-networking.md).
-- Se non è già l'impostazione predefinita, Teams può essere impostata come app predefinita per riunioni e chiamate **in**Impostazioni  >  **Surface Hub**  >  **Chiamata & audio**. Per altre informazioni sulle modalità riunione e sulla loro configurazione tramite i criteri MDM, vedi Gestire Surface Hub [con un provider MDM.](manage-settings-with-mdm-for-surface-hub.md#changing-default-business-communications-platform)
+- Se non è già l'impostazione predefinita, Teams può essere impostata come app predefinita per le riunioni e le chiamate **in**Impostazioni  >  **Surface Hub**  >  **chiamata & audio**. Per altre informazioni sulle modalità riunione e sulla loro configurazione tramite i criteri MDM, vedi Gestire Surface Hub [con un provider MDM.](manage-settings-with-mdm-for-surface-hub.md#changing-default-app-for-meetings--calls)
 
 ## <a name="in-meeting-experience"></a>Nell'esperienza di riunione
 
-Teams Rooms'esperienza Surface Hub riunioni è allineata all'esperienza familiare che gli utenti conoscono dai propri dispositivi personali con le regolazioni apportate per ottimizzare un dispositivo con schermo di grandi dimensioni. L'apertura Teams su Surface Hub consente agli utenti di accedere a funzionalità chiave, tra cui partecipazione a una riunione con un solo tocco, Riunione e Tastiera del telefono per chiamate PSTN o peer-to-peer.
+Teams Rooms'esperienza Surface Hub riunioni è allineata all'esperienza familiare che gli utenti conoscono dai propri dispositivi personali con le regolazioni apportate per ottimizzare un dispositivo con schermo di grandi dimensioni. L'apertura Teams su Surface Hub consente agli utenti di accedere a funzionalità chiave, tra cui partecipazione a una riunione con un solo tocco, Meet Now e Dial Pad per chiamate PSTN o peer-to-peer.
 
 :::image type="content" source="images/teamsroomsagendascreen.png" alt-text="Teams Rooms su Surface Hub Agenda.":::
 
@@ -59,13 +59,13 @@ Per ottimizzare Teams Rooms fare riferimento ai requisiti e ai suggerimenti desc
 
 Quando Teams Rooms per Surface Hub pubblicamente rilasciato entro la fine dell'anno, gli amministratori possono sfruttare le soluzioni seguenti:
 
-- **Teams Interfaccia di amministrazione.** Teams L'interfaccia di amministrazione offre una piattaforma di auto-gestione completa per monitorare e gestire l'esperienza Teams Rooms su Teams dispositivi. Teams L'interfaccia di amministrazione sarà disponibile Microsoft Teams Rooms utenti senza costi aggiuntivi.
+- **Teams Interfaccia di amministrazione.** Teams L'interfaccia di amministrazione offre una piattaforma di auto-gestione completa per monitorare e gestire l'esperienza Teams Rooms in Teams dispositivi. Teams L'interfaccia di amministrazione sarà disponibile Microsoft Teams Rooms utenti senza costi aggiuntivi.
 - **Microsoft Teams Rooms servizio gestito.** Il [servizio gestito Microsoft Teams Rooms](/microsoftteams/rooms/microsoft-teams-rooms-premium) è un servizio di gestione e monitoraggio IT basato su cloud che mantiene aggiornati e monitorati proattivamente i dispositivi Microsoft Teams Rooms e le relative periferiche, supportando un ambiente ottimizzato per un'esperienza utente ottimale.
 
 
 ## <a name="support-for-teams-rooms-in-government-community-cloud-high-gcc-h"></a>Supporto per Teams Rooms in Government Community Cloud High (GCC-H)
 
-Quando Teams Rooms per Surface Hub viene rilasciato pubblicamente entro la fine di quest'anno, è necessario un aggiornamento manuale una sola volta del client alla versione 1.4.00.25354 per potersi connettere a un tenant GCC-H e mantenersi automaticamente aggiornati:
+Quando Teams Rooms per Surface Hub viene rilasciato pubblicamente entro la fine dell'anno, è necessario un aggiornamento manuale una sola volta del client alla versione 1.4.00.25354 per potersi connettere a un tenant GCC-H e mantenersi automaticamente aggiornati:
 
  - Verificare che nell'hub sia installato l'aggiornamento cumulativo KB5005611 o Windows versione successiva
  - Utilizzare [Teams_Uninstall_win32.ppkg per](https://download.microsoft.com/download/8/3/F/83FD5089-D14E-42E3-AF7C-6FC36F80D347/Teams_Uninstall_Win32.ppkg) rimuovere le Teams Rooms correnti Surface Hub versione
