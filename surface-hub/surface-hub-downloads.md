@@ -1,5 +1,5 @@
 ---
-title: Download utili per Microsoft Surface Hub
+title: Risorse scaricabili per Surface Hub preparazione
 description: Download correlati a Microsoft Surface Hub.
 ms.prod: surface-hub
 ms.sitesec: library
@@ -10,16 +10,16 @@ ms.date: 08/22/2017
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: 3dc552f10b51d041de36d96f8124d812cb2ff1c4
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: e108714e5d0c2295c3db033437f130cbe5b3b66f
+ms.sourcegitcommit: 38e98402ab1380521029e792a83c00391997e1fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10832925"
+ms.lasthandoff: 10/12/2021
+ms.locfileid: "12089288"
 ---
-# Download utili per Microsoft Surface Hub
+# <a name="downloadable-resources-for-surface-hub-readiness"></a>Risorse scaricabili per Surface Hub preparazione
 
-Questo argomento fornisce collegamenti a documenti utili per gli hub di Surface, come i fogli dati del prodotto e la guida per l'utente.
+In questo argomento vengono forniti collegamenti a Surface Hub documenti utili, ad esempio schede dati di prodotto e manuale dell'utente.
 
 | Collegamento | Descrizione |
 | --- | --- |

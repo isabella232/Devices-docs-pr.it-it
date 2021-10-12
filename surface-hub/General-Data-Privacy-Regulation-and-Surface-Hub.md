@@ -1,30 +1,30 @@
 ---
 title: Regolamento sulla privacy dei dati generali e Surface Hub
-description: Informa gli utenti che sono soggetti alle leggi di protezione dei dati dell'Unione europea sulle opzioni relative a come eliminare o limitare i dati di diagnostica prodotti da Surface Hub.
+description: Informa gli utenti soggetti alle leggi ue sulla protezione dei dati delle opzioni relative a come eliminare o limitare i dati di diagnostica prodotti da Surface Hub.
 ms.assetid: 087713CF-631D-477B-9CC6-EFF939DE0186
-keywords: PILR
+keywords: GDPR
 ms.prod: surface-hub
 ms.sitesec: library
-author: Teresa-MOTIV
-ms.author: v-tea
+author: greg-lindsay
+ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 838562508c86093ebc95e3497dc07eafe56b5f96
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 0d0f8c78ff2704a43c8422315cf36ee3f33085bc
+ms.sourcegitcommit: 38e98402ab1380521029e792a83c00391997e1fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10832823"
+ms.lasthandoff: 10/12/2021
+ms.locfileid: "12089278"
 ---
-# Regolamento sulla privacy dei dati generali e Surface Hub
+# <a name="general-data-privacy-regulation-and-surface-hub"></a>Regolamento sulla privacy dei dati generali e Surface Hub
 
-Nel maggio 2018 è stata applicata una legge sulla privacy europea, il regolamento generale sulla protezione dei dati (PILR). Il PILR impone nuove regole alle società, agli enti pubblici, ai non profit e ad altre organizzazioni che offrono beni e servizi agli utenti dell'Unione europea (UE) o che raccolgono e analizzano i dati legati ai residenti dell'UE.
+A maggio 2018 è stata presa in vigore una legge europea sulla privacy, il Regolamento generale sulla protezione dei dati (GDPR). Il GDPR impone nuove regole alle società, alle agenzie governative, alle organizzazioni no profit e ad altre organizzazioni che offrono beni e servizi alle persone dell'Unione Europea (UE) o che raccolgono e analizzano i dati legati ai residenti dell'Unione Europea.
 
-I clienti di Surface Hub preoccupati per la privacy in base alle nuove normative PILR possono gestire la privacy del dispositivo con le opzioni seguenti fornite da Microsoft:
+Surface Hub i clienti interessati alla privacy ai sensi delle nuove normative GDPR possono gestire la privacy dei dispositivi con le opzioni seguenti fornite da Microsoft:
 
-* **Opzione 1:** I dispositivi di Surface hub nelle aree geografiche che applicano le normative PILR installeranno KB4284830 quando è pubblicamente disponibile per ridurre automaticamente l'emissione di dati diagnostici alla base. I clienti che scelgono di specificare un livello più elevato di dati diagnostici possono usare l'applicazione Impostazioni hub Surface o la gestione di dispositivi mobili per ignorare l'impostazione di base predefinita.
+* **Opzione 1: Surface Hub** dispositivi nelle aree geografiche che in vigore le normative GDPR riducono automaticamente l'emissione di dati di diagnostica in base. I clienti che scelgono di fornire un livello superiore di dati di diagnostica possono usare l'applicazione Surface Hub Impostazioni o Gestione dispositivi mobili per ignorare l'impostazione di base predefinita.
 
-* **Opzione 2:** I clienti di Surface Hub che vogliono rimuovere i dati di diagnostica esistenti possono scaricare l'applicazione di **eliminazione dei dati di diagnostica dell'hub di Surface** da Microsoft Store. Questa app consentirà ai clienti di richiedere l'eliminazione dei dati di diagnostica associati direttamente dal dispositivo Surface Hub.
+* **Opzione 2:** Surface Hub i clienti che desiderano rimuovere i dati di diagnostica esistenti possono scaricare l'applicazione [**Surface Hub Elimina**](https://www.microsoft.com/p/surface-hub-delete-diagnostic-data/9mtxh9zl7mxs) dati di diagnostica dal Microsoft Store. Questa app consentirà ai clienti di richiedere l'eliminazione dei dati di diagnostica associati direttamente dal Surface Hub dispositivo.
 
-Microsoft ha una vasta esperienza nella protezione dei dati, nella tutela della privacy e nell'ottemperanza a normative complesse ed è attualmente conforme sia alle clausole EU-US per la Privacy Shield che a quelle del modello EU. Crediamo che il PILR sia un importante passo avanti per chiarire e abilitare i diritti di privacy individuali. Vogliamo aiutarti a concentrarsi sul core business durante la preparazione in modo efficiente per il PILR.
+Microsoft ha una vasta esperienza nella protezione dei dati, nel difendere la privacy e nel rispetto di normative complesse e attualmente è conforme sia alla normativa UE-U.S. Privacy Shield che alle clausole del modello UE. Riteniamo che il GDPR sia un importante passo avanti per chiarire e abilitare i diritti di privacy individuali. Vogliamo aiutarti a concentrarti sulla tua attività principale, preparandoti in modo efficiente per il GDPR.
 

@@ -13,12 +13,12 @@ ms.topic: article
 ms.date: 07/16/2021
 ms.localizationpriority: medium
 audience: ITPro
-ms.openlocfilehash: a8c11406c7786e379999ff32f482815d6b180b24
-ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
+ms.openlocfilehash: 3c4869f8aadbd849a608b5a35bf0e76ff3e78508
+ms.sourcegitcommit: 38e98402ab1380521029e792a83c00391997e1fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "11676660"
+ms.lasthandoff: 10/12/2021
+ms.locfileid: "12089328"
 ---
 # <a name="install-apps-on-your-microsoft-surface-hub"></a>Installare app nel dispositivo Microsoft Surface Hub
 
@@ -28,9 +28,9 @@ Puoi installare altre app nel tuo dispositivo Surface Hub in base alle esigenze 
 
 - Surface Hub esegue solo le [app della piattaforma UWP (Universal Windows Platform)](/windows/uwp/get-started/universal-application-platform-guide). Le app create con lo strumento di creazione [di pacchetti MSIX](/windows/msix/packaging-tool/tool-overview) non verranno eseguite Surface Hub.
 - Le app devono essere destinate alla [famiglia di dispositivi universali](/windows/uwp/get-started/universal-application-platform-guide) o alla famiglia di dispositivi Windows Team.
-- Surface Hub supporta solo [le app con licenza offline](/microsoft-store/distribute-offline-apps) di [Microsoft Store per le aziende](https://businessstore.microsoft.com/store/private-store).
+- Surface Hub supporta solo [le app con licenza offline](/microsoft-store/distribute-offline-apps) da [Microsoft Store per le aziende](https://businessstore.microsoft.com/store/private-store).
 - Per impostazione predefinita, le app devono riportare la firma dello Store per essere installate. Durante lo sviluppo e il test, puoi anche scegliere di eseguire app UWP firmate dallo sviluppatore inserendo il dispositivo in modalità sviluppatore.
-- Quando invii un'app al Microsoft Store, gli sviluppatori devono impostare la disponibilità della famiglia di dispositivi e le opzioni di licenza dell'organizzazione per assicurarsi che un'app sia disponibile per l'esecuzione Surface Hub.
+- Quando invii un'app al Microsoft Store, gli sviluppatori devono impostare la disponibilità della famiglia di dispositivi e le opzioni di licenza dell'organizzazione per assicurarsi che un'app sia disponibile per l'esecuzione in Surface Hub.
 - Sono necessarie credenziali di amministratore per installare app in un dispositivo Surface Hub. Dato che il dispositivo è progettato per l'uso in spazi comuni come le sale riunioni, gli utenti non possono accedere a Microsoft Store per scaricare e installare app.
 
 ## <a name="deploy-released-apps"></a>Distribuire app rilasciate
@@ -73,11 +73,11 @@ Trova e acquista l'app che vuoi, quindi scarica:
 - Il file di licenza *codificato* (se usi MDM per distribuire l'app)
 - Eventuali file di dipendenza necessari
 
-Per altre informazioni, vedi [Scaricare un'app con licenza offline](https://technet.microsoft.com/itpro/windows/manage/distribute-offline-apps#download-an-offline-licensed-app).
+Per altre informazioni, vedi [Scaricare un'app con licenza offline](/microsoft-store/distribute-offline-apps#download-an-offline-licensed-app).
 
 ### <a name="install-offline-licensed-apps-via-provisioning-package"></a>Installare app con licenza offline tramite il pacchetto di provisioning
 
-Puoi installare manualmente le app con licenza offline scaricate da Windows Store per le aziende in alcuni dispositivi Surface Hub usando i pacchetti di provisioning. Usa Progettazione immagine e configurazione di Windows per creare un pacchetto di provisioning contenente il pacchetto dell'app e il file di licenza *non codificato* che hai scaricato dallo Store per le aziende. Per altre informazioni, vedi [Creare pacchetti di provisioning](provisioning-packages-for-certificates-surface-hub.md).
+Puoi installare manualmente le app con licenza offline scaricate da Windows Store per le aziende in alcuni dispositivi Surface Hub usando i pacchetti di provisioning. Usa Progettazione immagine e configurazione di Windows per creare un pacchetto di provisioning contenente il pacchetto dell'app e il file di licenza *non codificato* che hai scaricato dallo Store per le aziende. Per altre informazioni, vedi [Creare pacchetti di provisioning per Surface Hub](provisioning-packages-for-certificates-surface-hub.md).
 
 ### <a name="supported-mdm-provider"></a>Provider MDM supportato
 
@@ -90,7 +90,7 @@ Per distribuire le app in un vasto numero di dispositivi Surface Hub nella tua o
 | Provider MDM di terze parti    | Verifica che il provider MDM supporti la distribuzione di pacchetti dell'app con licenza offline. |
 
 > [!NOTE]
-> Per distribuire app offline in remoto Microsoft Intune, vedere [Gestire le app VPP da Microsoft Store per le aziende](/mem/intune/apps/windows-store-for-business). Surface Hub la distribuzione dell'app supporta solo le app offline assegnate a un gruppo di dispositivi e usa il tipo di licenza Dispositivo.
+> Per distribuire le app offline in remoto Microsoft Intune, vedere [Gestire le app VPP da Microsoft Store per le aziende](/mem/intune/apps/windows-store-for-business). Surface Hub la distribuzione dell'app supporta solo le app offline assegnate a un gruppo di dispositivi e usa il tipo di licenza Dispositivo.
 
 ## <a name="develop-and-test-apps"></a>Sviluppare e testare app
 
@@ -118,7 +118,7 @@ In fase di sviluppo, il modo più semplice per testare l'app in un dispositivo S
 
 #### <a name="create-provisioning-package"></a>Creare il pacchetto di provisioning
 
-Usa Visual Studio per creare un pacchetto dell'app per la tua app UWP, firmato usando un certificato di prova. Quindi usa Progettazione immagine e configurazione di Windows per creare un pacchetto di provisioning contenente il pacchetto dell'app. Per altre informazioni, vedi [Creare pacchetti di provisioning](provisioning-packages-for-certificates-surface-hub.md).
+Usa Visual Studio per creare un pacchetto dell'app per la tua app UWP, firmato usando un certificato di prova. Quindi usa Progettazione immagine e configurazione di Windows per creare un pacchetto di provisioning contenente il pacchetto dell'app. Per altre informazioni, vedi [Creare pacchetti di provisioning per Surface Hub](provisioning-packages-for-certificates-surface-hub.md).
 
 ## <a name="submit-apps-to-the-microsoft-store"></a>Inviare app a Microsoft Store
 
@@ -159,7 +159,7 @@ Durante l'invio dell'app, gli sviluppatori devono impostare le opzioni **Disponi
 
 ## <a name="summary"></a>Riepilogo
 
-Esistono diversi modi per installare le app nel Surface Hub a seconda che tu sviluppi app, valuta le app su un numero limitato di dispositivi o distribuisca app in modo generale nella tua organizzazione. Questa tabella riepiloga i metodi supportati:
+Esistono diversi modi per installare le app nel tuo Surface Hub a seconda che tu sviluppi app, valutando le app su un numero limitato di dispositivi o distribuendo app su larga parte nell'organizzazione. Questa tabella riepiloga i metodi supportati:
 
 | Metodo di installazione             | Sviluppo di app | Valutazione di app in <br> alcuni dispositivi | Distribuzione di app su larga scala <br> nell'organizzazione |
 | -------------------------- | --------------- | ------------------------------------- | ---------------------- |
