@@ -1,0 +1,278 @@
+- name: Microsoft Surface Hub
+  href: index.yml
+- name: Surface Hub 2S
+  expanded: true
+  items:
+    - name: Panoramica
+      items:
+        - name: Novità dell'aggiornamento 2020 di Windows 10 Team
+          href: surface-hub-2020-update-whats-new.md
+        - name: Surface Hub 2S 50" specifiche tecniche
+          href: surface-hub-2s-techspecs.md
+        - name: Surface Hub 2S 85" specifiche tecniche
+          href: surface-hub-2s-85.md
+        - name: Nozioni fondamentali del sistema operativo (Surface Hub)
+          href: differences-between-surface-hub-and-windows-10-enterprise.md
+        - name: 'Regolare la luminosità, il volume e l''input di Surface Hub 2S'
+          href: surface-hub-2s-onscreen-display.md
+        - name: Usare Microsoft Whiteboard su una Surface Hub
+          href: 'https://support.office.com/article/use-microsoft-whiteboard-on-a-surface-hub-5c594985-129d-43f9-ace5-7dee96f7621d'
+        - name: Regolamento sulla privacy dei dati generali e Surface Hub
+          href: general-data-privacy-regulation-and-surface-hub.md
+    - name: Pianificazione
+      items:
+        - name: Guida alla preparazione del sito di Surface Hub 2S
+          href: surface-hub-2s-site-readiness-guide.md
+          items:
+            - name: Pianificazione del sito per Surface Hub 2S
+              href: surface-hub-2s-site-planning.md
+            - name: Avvio rapido di Surface Hub 2S
+              href: surface-hub-2s-quick-start.md
+            - name: Installare e montare Surface Hub 2S 50"
+              href: surface-hub-2s-install-mount.md
+            - name: Spostamento e gestione di Surface Hub 2S 85"
+              href: hub-move.md
+            - name: Installare e montare Surface Hub 2S 85"
+              href: surface-hub-2s-85-install-mount.md
+            - name: Personalizzare il montaggio a parete Surface Hub 2S 50"
+              href: surface-hub-2s-custom-install.md
+            - name: Foglio di lavoro per la configurazione
+              href: setup-worksheet-surface-hub.md
+            - name: Panoramica delle porte e della tastiera di Surface Hub 2S
+              href: surface-hub-2s-port-keypad-overview.md
+        - name: Preparare l'ambiente per Microsoft Surface Hub
+          href: prepare-your-environment-for-surface-hub.md
+    - name: Distribuzione
+      items:
+        - name: Adozione di Surface Hub 2S e formazione
+          href: surface-hub-2s-adoption-kit.md
+        - name: Video di adozione di Surface Hub 2S
+          href: surface-hub-2s-adoption-videos.md
+        - name: Prima configurazione di Surface Hub 2S
+          href: first-run-program-surface-hub.md
+        - name: Gestione del gruppo amministratori
+          href: admin-group-management-for-surface-hub.md
+        - name: Creare e testare un account del dispositivo
+          href: create-and-test-a-device-account-surface-hub.md
+          items:
+            - name: Proprietà di Microsoft Exchange
+              href: exchange-properties-for-surface-hub-device-accounts.md
+            - name: Applicazione di criteri ActiveSync agli account del dispositivo
+              href: apply-activesync-policies-for-surface-hub-device-accounts.md
+        - name: Creare pacchetti di provisioning per Surface Hub
+          href: provisioning-packages-for-surface-hub.md
+        - name: Windows 10 Pro/Enterprise
+          items:
+            - name: Eseguire la migrazione a Windows 10 Pro o Enterprise in Surface Hub 2
+              href: surface-hub-2s-migrate-os.md
+            - name: Configurare Windows 10 Pro o Enterprise in Surface Hub 2
+              href: surface-hub-2-post-install.md
+            - name: Componenti aggiuntivi essenziali per Windows 10 Pro e Enterprise in Surface Hub 2
+              href: surface-hub-2-essential-add-ons.md
+        - name: Microsoft Teams
+          items:
+            - name: Microsoft Teams Rooms in Surface Hub
+              href: surface-hub-teams-rooms.md
+            - name: Configurare la rete e la qualità del servizio di Microsoft Teams Rooms in Surface Hub
+              href: surface-hub-teams-rooms-networking.md
+            - name: App di Teams su Surface Hub
+              href: hub-teams-app.md
+            - name: Accessori certificati Teams per Surface Hub 2S
+              href: surface-hub-2s-certifications.md
+    - name: Gestire
+      items:
+        - name: Connessione dei dispositivi a Surface Hub 2S
+          href: surface-hub-2s-connect.md
+        - name: Installare l'aggiornamento 2020 di Windows 10 Team
+          href: surface-hub-2020-update.md
+        - name: Problemi noti - Aggiornamento 2020 di Windows 10 Team
+          href: surface-hub-2020-team-update-known-issues.md
+        - name: Configurare account di amministratore non globali in Surface Hub
+          href: surface-hub-2s-nonglobal-admin.md
+        - name: Installare app nel dispositivo Microsoft Surface Hub
+          href: install-apps-on-surface-hub.md
+        - name: Installare e configurare il nuovo Microsoft Edge in Surface Hub
+          href: surface-hub-install-chromium-edge.md
+        - name: Gestire Surface Hub con un provider MDM
+          href: manage-settings-with-mdm-for-surface-hub.md
+        - name: Configurare il menu Start di Surface Hub
+          href: surface-hub-start-menu.md
+        - name: Gestione locale per le impostazioni di Surface Hub 2S
+          href: local-management-surface-hub-settings.md
+        - name: Gestione delle password
+          href: password-management-for-surface-hub-device-accounts.md
+        - name: Gestire gli aggiornamenti di Windows
+          href: manage-windows-updates-for-surface-hub.md
+        - name: Miracast su rete wireless o LAN esistente
+          href: miracast-over-infrastructure.md
+        - name: Salvare la chiave BitLocker
+          href: save-bitlocker-key-surface-hub.md
+        - name: Aggiornare il firmware della penna in Surface Hub 2S
+          href: surface-hub-2s-pen-firmware.md
+        - name: Modificare le impostazioni di accessibilità
+          href: accessibility-surface-hub.md
+    - name: Proteggere
+      items:
+        - name: Panoramica della sicurezza di Surface Hub
+          href: surface-hub-security.md
+        - name: Proteggere e gestire Surface Hub 2S con SEMM e UEFI
+          href: surface-hub-2s-secure-with-uefi-semm.md
+        - name: Autenticazione moderna di Surface Hub
+          href: surface-hub-modern-auth.md
+        - name: Configurare l'accesso senza password a Surface Hub
+          href: surface-hub-2s-phone-authenticate.md
+        - name: Risoluzione dei problemi relativi alla sicurezza di Wi-Fi Direct con Surface Hub
+          href: surface-hub-wifi-direct.md
+    - name: Risoluzione dei problemi
+      items:
+        - name: Cronologia degli aggiornamenti di Surface Hub
+          href: surface-hub-update-history.md
+        - name: Recuperare e reimpostare Surface Hub 2S
+          href: surface-hub-2s-recover-reset.md
+        - name: Risolvere i problemi relativi a Miracast su Surface Hub
+          href: miracast-troubleshooting.md
+        - name: 'Surface Hub Miracast Channels 149-165 non supportato in Europa, Giappone, Israele'
+          href: surfacehub-miracast-not-supported-europe-japan-israel.md
+        - name: Surface Hub può installare gli aggiornamenti e riavviare gli orari di manutenzione esterni
+          href: surface-hub-installs-updates-and-restarts-outside-maintenance-hours.md
+        - name: Come comprimere i dati e spedire il tuo Surface Hub 2S per il servizio
+          href: surface-hub-2s-pack-components.md
+- name: Microsoft Surface Hub (V1)
+  expanded: true
+  items:
+    - name: Panoramica
+      items:
+        - name: 'Novità di Windows 10, versione 1703 per Surface Hub'
+          href: surfacehub-whats-new-1703.md
+        - name: Nozioni fondamentali del sistema operativo (Surface Hub)
+          href: differences-between-surface-hub-and-windows-10-enterprise.md
+        - name: Informazioni tecniche per Microsoft Surface Hub (V1) da 55''
+          href: surface-hub-technical-55.md
+        - name: Informazioni tecniche per Microsoft Surface Hub (V1) da 84''
+          href: surface-hub-technical-84.md
+        - name: Usare Microsoft Whiteboard su una Surface Hub
+          href: 'https://support.office.com/article/use-microsoft-whiteboard-on-a-surface-hub-5c594985-129d-43f9-ace5-7dee96f7621d'
+        - name: Regolamento sulla privacy dei dati generali e Surface Hub
+          href: general-data-privacy-regulation-and-surface-hub.md
+    - name: Pianificazione
+      items:
+        - name: Preparare l'ambiente per Microsoft Surface Hub
+          href: prepare-your-environment-for-surface-hub.md
+        - name: Guida alla preparazione del sito Surface Hub
+          href: surface-hub-site-readiness-guide.md
+        - name: Installare fisicamente Microsoft Surface Hub
+          href: physically-install-your-surface-hub-device.md
+        - name: Risorse scaricabili per Surface Hub preparazione
+          href: surface-hub-downloads.md
+    - name: Distribuzione
+      items:
+        - name: Gestione del gruppo amministratori
+          href: admin-group-management-for-surface-hub.md
+        - name: Creare pacchetti di provisioning
+          href: provisioning-packages-for-surface-hub.md
+        - name: Creare e testare un account del dispositivo
+          href: create-and-test-a-device-account-surface-hub.md
+          items:
+            - name: Proprietà di Microsoft Exchange
+              href: exchange-properties-for-surface-hub-device-accounts.md
+            - name: Applicazione di criteri ActiveSync agli account del dispositivo
+              href: apply-activesync-policies-for-surface-hub-device-accounts.md
+        - name: Configurare Microsoft Surface Hub
+          href: set-up-your-surface-hub.md
+          items:
+            - name: Foglio di lavoro per la configurazione
+              href: setup-worksheet-surface-hub.md
+            - name: Programma di prima esecuzione
+              href: first-run-program-surface-hub.md
+    - name: Gestire
+      items:
+        - name: Gestire Microsoft Surface Hub
+          href: manage-surface-hub.md
+        - name: Installare e configurare il nuovo Microsoft Edge in Surface Hub
+          href: surface-hub-install-chromium-edge.md
+        - name: PowerShell per Surface Hub
+          href: appendix-a-powershell-scripts-for-surface-hub.md
+        - name: Gestione remota di Surface Hub
+          href: remote-surface-hub-management.md
+          items:
+            - name: Gestire le impostazioni con un provider MDM
+              href: manage-settings-with-mdm-for-surface-hub.md
+            - name: Configurare account di amministratore non globali in Surface Hub
+              href: surface-hub-2s-nonglobal-admin.md
+            - name: Monitorare il dispositivo Surface Hub
+              href: monitor-surface-hub.md
+            - name: Aggiornamenti di Windows
+              href: manage-windows-updates-for-surface-hub.md
+        - name: Gestire le impostazioni di Surface Hub
+          href: manage-surface-hub-settings.md
+          items:
+            - name: Gestione locale per le impostazioni di Surface Hub
+              href: local-management-surface-hub-settings.md
+            - name: Gestione delle password
+              href: password-management-for-surface-hub-device-accounts.md
+            - name: Modificare le impostazioni di accessibilità
+              href: accessibility-surface-hub.md
+            - name: Modificare l'account del dispositivo Surface Hub
+              href: change-surface-hub-device-account.md
+            - name: Usare il nome di dominio completo con Surface Hub
+              href: use-fully-qualified-domain-name-surface-hub.md
+            - name: Gestione della rete wireless
+              href: wireless-network-management-for-surface-hub.md
+        - name: Implementare la qualità del servizio in Surface Hub
+          href: surface-hub-qos.md
+        - name: Installare app in Surface Hub
+          href: install-apps-on-surface-hub.md
+        - name: Configurare il menu Start di Surface Hub
+          href: surface-hub-start-menu.md
+        - name: Configurare e usare Microsoft Whiteboard
+          href: whiteboard-collaboration.md
+        - name: Terminare una riunione di Surface Hub con l'opzione Termina sessione
+          href: finishing-your-surface-hub-meeting.md
+        - name: Connettere altri dispositivi e vederne i contenuti con Surface Hub
+          href: connect-and-display-with-surface-hub.md
+        - name: Miracast su rete wireless o LAN esistente
+          href: miracast-over-infrastructure.md
+        - name: Abilitare l'autenticazione cablata 802.1x
+          href: enable-8021x-wired-authentication.md
+        - name: Uso di un sistema di controllo della sala
+          href: use-room-control-system-with-surface-hub.md
+    - name: Proteggere
+      items:
+        - name: Accedere a Surface Hub con Microsoft Authenticator
+          href: surface-hub-authenticator-app.md
+        - name: Salva la chiave BitLocker
+          href: save-bitlocker-key-surface-hub.md
+        - name: Autenticazione moderna di Surface Hub
+          href: surface-hub-modern-auth.md
+        - name: Configurare l'accesso senza password a Surface Hub
+          href: surface-hub-2s-phone-authenticate.md
+        - name: Risoluzione dei problemi relativi alla sicurezza di Wi-Fi Direct con Surface Hub
+          href: surface-hub-wifi-direct.md
+    - name: Risoluzione dei problemi
+      items:
+        - name: Cronologia degli aggiornamenti di Surface Hub
+          href: surface-hub-update-history.md
+        - name: Reimpostare o ripristinare un Surface Hub
+          href: device-reset-surface-hub.md
+        - name: Uso dello strumento di ripristino di Surface Hub
+          href: surface-hub-recovery-tool.md
+        - name: Sostituzione di Surface Hub SSD
+          href: surface-hub-ssd-replacement.md
+        - name: Principali soluzioni di supporto per Surface Hub
+          href: support-solutions-surface-hub.md
+        - name: Risolvere i problemi relativi a Microsoft Surface Hub
+          href: troubleshoot-surface-hub.md
+        - name: 'Problemi noti: Sistema Operativo di Windows 10 Team'
+          href: surface-hub-2020-team-update-known-issues.md
+        - name: Come usare il ripristino cloud per BitLocker su un Surface Hub
+          href: use-cloud-recovery-for-bitlocker-on-surfacehub.md
+        - name: Uso dello strumento di diagnostica hardware Surface Hub per testare un account di dispositivo
+          href: use-surface-hub-diagnostic-test-device-account.md
+        - name: Risolvere i problemi relativi a Miracast su Surface Hub
+          href: miracast-troubleshooting.md
+        - name: 'Surface Hub Miracast Channels 149-165 non supportato in Europa, Giappone, Israele'
+          href: surfacehub-miracast-not-supported-europe-japan-israel.md
+        - name: Cosa fare se l'app Connect in Surface Hub esce in modo imprevisto
+          href: connect-app-in-surface-hub-unexpectedly-exits.md
+        - name: Surface Hub può installare gli aggiornamenti e riavviare gli orari di manutenzione esterni
+          href: surface-hub-installs-updates-and-restarts-outside-maintenance-hours.md
