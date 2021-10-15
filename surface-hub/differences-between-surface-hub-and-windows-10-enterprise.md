@@ -11,18 +11,18 @@ ms.date: 03/23/2021
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: 57fd7ea11e19902d2a94c1be998052739875afaf
-ms.sourcegitcommit: 38e98402ab1380521029e792a83c00391997e1fd
+ms.openlocfilehash: 3bc5d7e26d565ca26ec23eefaee406c47eac395e
+ms.sourcegitcommit: 2493c83b1b3cb28b0836926cd406d4b28cd6abfa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2021
-ms.locfileid: "12089298"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "12094459"
 ---
 # <a name="operating-system-essentials-surface-hub"></a>Nozioni fondamentali del sistema operativo (Surface Hub)
 
 Il sistema operativo di Surface Hub, Windows 10 Team, è basato su Windows 10 Enterprise e fornisce un supporto avanzato per la gestione aziendale, la sicurezza e altre funzionalità. Esistono tuttavia alcune importanti differenze tra le due versioni. Mentre l'edizione Enterprise è progettata per i PC, Windows 10 Team è completamente progettato per gli schermi di grandi dimensioni e le sale riunioni. Durante la valutazione dei requisiti di sicurezza e di gestione per Surface Hub, è consigliabile considerarlo come un nuovo sistema operativo. Questo articolo illustra le principali differenze tra Windows 10 Team in Surface Hub e Windows 10 Enterprise, descrivendo il significato di queste differenze per le organizzazioni.
 
-A partire da settembre 2020, i clienti hanno la possibilità di eseguire la migrazione a Windows 10 Pro o Enterprise su Surface Hub 2S. Per altre informazioni, vedi le risorse seguenti:
+A partire da settembre 2020, i clienti hanno la possibilità di eseguire la migrazione a Windows 10 Pro o Enterprise in Surface Hub 2S. Per altre informazioni, vedi le risorse seguenti:
 
 - [Annuncio della disponibilità di Windows 10 Pro e Enterprise in Surface Hub 2](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107).
 
@@ -111,7 +111,7 @@ Per preservare la funzione di appliance del dispositivo, Surface Hub supporta so
 
 ## <a name="security-and-lockdown"></a>Sicurezza e blocco
 
-Per consentire l'uso di Surface Hub negli spazi comuni, come le sale riunioni, il sistema operativo personalizzato del dispositivo implementa molte delle funzionalità di sicurezza e di blocco disponibili in Windows 10. Per altre informazioni, vedi panoramica [Surface Hub sicurezza](surface-hub-security.md)
+Per consentire l'uso di Surface Hub negli spazi comuni, come le sale riunioni, il sistema operativo personalizzato del dispositivo implementa molte delle funzionalità di sicurezza e di blocco disponibili in Windows 10. Per ulteriori informazioni, vedere panoramica [Surface Hub sicurezza](surface-hub-security.md)
 
 Surface Hub implementa queste funzionalità di sicurezza di Windows 10:
 
@@ -119,7 +119,7 @@ Surface Hub implementa queste funzionalità di sicurezza di Windows 10:
 - [Controllo di applicazioni di Windows Defender e protezione dell'integrità del codice basata sulla virtualizzazione](/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)
 - [Criteri di restrizione delle applicazioni con AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview)
 - [Crittografia unità BitLocker](/windows/security/information-protection/bitlocker/bitlocker-overview)
-- [Trusted Platform Module (TPM)] (/security/information-protection/tpm/trusted-platform-module-overview
+- [Trusted Platform Module (TPM)](/security/information-protection/tpm/trusted-platform-module-overview)
 - [Antivirus Microsoft Defender in Windows](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows)
 - [Controllo dell'account utente](/windows/security/identity-protection/user-account-control/user-account-control-overview) per l'accesso all'app Impostazioni
 
