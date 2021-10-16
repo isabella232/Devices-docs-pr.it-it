@@ -11,17 +11,19 @@ metadata:
   ms.author: greglin
   audience: itpro
   ms.localizationpriority: High
-  ms.openlocfilehash: 60a0956cf83b466587197ca401dc41b95952be03
-  ms.sourcegitcommit: 389b24de1759d60339f4fe9257d1bdd68267bc39
+  ms.openlocfilehash: 1d46bea76ffb0641aeee1c51f88dcbb1ff2d56bf
+  ms.sourcegitcommit: 74ab91db82ae611854c070ddb14daa28acf7051f
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 09/23/2021
-  ms.locfileid: "12037140"
+  ms.lasthandoff: 10/16/2021
+  ms.locfileid: "12096444"
 landingContent:
 - title: Dispositivi Surface
   linkLists:
   - linkListType: whats-new
     links:
+    - text: Quali dispositivi Surface possono essere aggiornati a Windows 11?
+      url: https://support.microsoft.com/surface/which-surface-devices-can-be-upgraded-to-windows-11-76c3c125-82e0-4d1e-9550-12ed09f9058e
     - text: Scelta del sistema operativo Surface
       url: surface-os-choice.md
     - text: Surface Pro 8 per le aziende
@@ -40,10 +42,10 @@ landingContent:
   linkLists:
   - linkListType: get-started
     links:
-    - text: Panoramica tecnica dei processori di Surface Laptop 4
+    - text: Panoramica sulla grafica di Surface Laptop Studio
+      url: surface-laptop-studio-graphics.md
+    - text: Surface Laptop panoramica di 4 processori
       url: surface-laptop-processors.md
-    - text: Panoramica tecnica di Surface Headphones 2+
-      url: surface-headphones.md
     - text: Desktop virtuale Azure in Surface
       url: windows-virtual-desktop-surface.md
     - text: Soluzioni di lavoro remote con Surface
@@ -56,7 +58,7 @@ landingContent:
       url: https://youtu.be/WQ-wg8fRzN0
     - text: Surface Pro X e Windows su ARM in un mondo remoto
       url: https://youtu.be/bDw77ZQNPPw
-    - text: 'Surface Security: da chip a cloud Endpoint Protection da Microsoft'
+    - text: 'Surface Security : da chip a cloud Endpoint Protection da Microsoft'
       url: https://youtu.be/uadAecDbqf4
 - title: Distribuisci i dispositivi Surface
   linkLists:
@@ -88,6 +90,8 @@ landingContent:
       url: support-solutions-surface.md
     - text: Ciclo di vita del driver e del firmware Surface per i dispositivi basati su Windows
       url: surface-driver-firmware-lifecycle-support.md
+    - text: Sistemi operativi supportati da Surface
+      url: https://support.microsoft.com/surface/surface-supported-operating-systems-9559cc3c-7a38-31b6-d9fb-571435e84cd1
 - title: Esplora le indicazioni di sicurezza
   linkLists:
   - linkListType: how-to-guide

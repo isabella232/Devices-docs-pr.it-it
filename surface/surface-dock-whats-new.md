@@ -12,24 +12,24 @@ ms.date: 04/13/2021
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: e36e01ec9387779ba4b920e21bf51f1f210cbdde
-ms.sourcegitcommit: e330b89272eee8d4ef1836bacd2c91084ad3a36b
+ms.openlocfilehash: 65bd923cdfceecf51e59a9cf66b5b4eff44a8374
+ms.sourcegitcommit: 74ab91db82ae611854c070ddb14daa28acf7051f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "12057673"
+ms.lasthandoff: 10/16/2021
+ms.locfileid: "12096464"
 ---
 # <a name="whats-new-in-surface-dock-2"></a>Novità di Surface Dock 2
 
-Surface Dock 2, il Surface Dock di nuova generazione, consente agli utenti di connettere monitor esterni e più periferiche per ottenere un'esperienza desktop completamente modernizzata da un dispositivo Surface. Progettato per ottimizzare l'efficienza in ufficio, in un'area di lavoro flessibile o a casa, Surface Dock 2 dispone di sette porte, tra cui due porte USB-C anteriori, con 15 potenza di ricarica rapida per telefono e accessori. 
+Surface Dock 2, il Surface Dock di nuova generazione, consente agli utenti di connettere monitor esterni e più periferiche per ottenere un'esperienza desktop completamente modernizzata da un dispositivo Surface. Progettato per ottimizzare l'efficienza in ufficio, in un'area di lavoro flessibile o a casa, Surface Dock 2 dispone di sette porte, tra cui due porte USB-C anteriori, con 15 potenza di ricarica rapida per telefono e accessori.
 
 ### <a name="full-device-management-support"></a>Supporto completo per la gestione dei dispositivi
 
-Surface Dock 2 è progettato per semplificare la gestione IT, consentendo agli amministratori di automatizzare gli aggiornamenti del firmware tramite Windows Update o centralizzare gli aggiornamenti con gli strumenti di distribuzione del software interni.
+Surface Dock 2 è progettato per semplificare la gestione IT, consentendo agli amministratori di automatizzare gli aggiornamenti del firmware usando Windows Update o centralizzare gli aggiornamenti con gli strumenti di distribuzione del software interni.
 
 - Surface Enterprise Management Mode (SEMM) consente agli amministratori IT di proteggere le porte su Surface Dock 2. Per altre informazioni, vedi [Secure Surface Dock 2 ports with Surface Enterprise Management Mode.](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/secure-surface-dock-2-ports-with-surface-enterprise-management/ba-p/1418999)
 -  Windows Il supporto di Strumentazione gestione (WMI) consente agli amministratori IT di monitorare e gestire in remoto il firmware, lo stato dei criteri e i dati correlati più recenti nei dispositivi Surface Dock 2. Per altre informazioni, vedi [Gestire Surface Dock 2 con WMI.](surface-dock2-wmi.md)
-- Centralizzare gli aggiornamenti nella rete locale utilizzando gli strumenti di distribuzione del software. [Scarica il firmware e i driver di Surface Dock 2.](https://www.microsoft.com/en-us/download/details.aspx?id=101317)
+- Centralizzare gli aggiornamenti nella rete locale utilizzando gli strumenti di distribuzione del software. [Scarica il firmware e i driver di Surface Dock 2.](https://www.microsoft.com/download/details.aspx?id=101317)
 
 ## <a name="general-system-requirements"></a>Requisiti di sistema generali
 
@@ -42,23 +42,26 @@ Surface Dock 2 è progettato per semplificare la gestione IT, consentendo agli a
   - Surface Laptop 2
   - Surface Go
   - Surface Pro 7
-  - Surface Pro X 
+  - Surface Pro X
   - Surface Laptop 3
   - Surface Book 3
   - Surface Go 2
   - Surface Laptop Go
   - Surface Pro 7+
   - Surface Laptop 4
+  - Surface Laptop Studio
+  - Surface Pro 8
+  - Surface Go 3
 
 ## <a name="surface-dock-2-components"></a>Componenti di Surface Dock 2
 
 ![Componenti di Surface Dock 2.](./images/surface-dock2.png)
- 
+
 ### <a name="usb"></a>USB
 
 - Due porte USB-C anteriori.
 - Due porte USB-C (generazione 2) posteriori.
-- Due porte USB-A posteriori. 
+- Due porte USB-A posteriori.
 
 ### <a name="video"></a>Video
     
@@ -83,14 +86,13 @@ Surface Dock 2 è progettato per semplificare la gestione IT, consentendo agli a
 
 ### <a name="ethernet"></a>Ethernet
 
-- 1 porta Ethernet gigabit. 
+- 1 porta Ethernet gigabit.
 
 ### <a name="external-power-supply"></a>Alimentatore esterno
 
 - 199 watt che supportano 100V-240V.
 
-
-## <a name="comparing-surface-dock"></a>Confronto tra Surface Dock 
+## <a name="comparing-surface-dock"></a>Confronto tra Surface Dock
 
 **Tabella 1. Surface Dock e hub di viaggio USB-C**
 
@@ -117,11 +119,7 @@ Surface Dock 2 è progettato per semplificare la gestione IT, consentendo agli a
 | Controllo di accesso alla porta SEMM <sup> 2</sup>          | No                                                          | Sì                                                                                                 | No               |
 | Supporto per la manutenzione                   | MSI                                                         | Windows Update o MSI                                                                               |                  |
 
- 
-
-
-
-1. *I dispositivi devono essere configurati per Wake on LAN tramite seMM (Surface Enterprise Management Mode) o DFCI (Device Firmware Control Interface) per la riattivazione da ibernazione o Power-Off stati. Wake from Hibernation or Power-Off è supportato in Surface Laptop Studio, Surface Pro 8, Surface Pro 7+, Surface Pro 7, Surface Laptop 4, Surface Laptop 3, Surface Pro X, Surface Book 3, Surface Go 3 e Surface Go 2.  Licenza software necessaria per alcune funzionalità. Venduto separatamente.*
+1. *I dispositivi devono essere configurati per Wake on LAN tramite seMM (Surface Enterprise Management Mode) o DFCI (Device Firmware Control Interface) per la riattivazione da ibernazione o Power-Off stati. Wake from Hibernation or Power-Off is supported on Surface Laptop Studio, Surface Pro 8, Surface Pro 7+, Surface Pro 7, Surface Laptop 4, Surface Laptop 3, Surface Pro X, Surface Book 3, Surface Go 3 e Surface Go 2.  Licenza software necessaria per alcune funzionalità. Venduto separatamente.*
 
 2. *Licenza software necessaria per alcune funzionalità. Venduto separatamente.*
 
@@ -129,7 +127,7 @@ Surface Dock 2 è progettato per semplificare la gestione IT, consentendo agli a
 
 Surface ha rilasciato funzionalità di gestione semplificate tramite Windows Update che consente agli amministratori IT di utilizzare le funzionalità di livello enterprise seguenti:
 
-- **Aggiornamenti senza attrito**. Aggiorna i dock in modo automatico e automatico, con Windows Update o Microsoft Endpoint Configuration Manager, (in precedenza System Center Configuration Manager - SCCM) o altri strumenti di distribuzione MSI. 
+- **Aggiornamenti senza attrito**. Aggiorna i dock in modo automatico e automatico, con Windows Update o Microsoft Endpoint Configuration Manager, (in precedenza System Center Configuration Manager - SCCM) o altri strumenti di distribuzione MSI.
 - **Riattiva dalla rete**. Gestire e accedere ai dispositivi aziendali senza che gli utenti mantenino i dispositivi acceso. Anche quando un dispositivo ancorato è in modalità sospensione, ibernazione o alimentazione disattivata, il team può riattivarsi dalla rete per il servizio e la gestione, usando Endpoint Configuration Manager o altri strumenti di gestione aziendale.
 - **Controllo IT centralizzato**. Controlla chi può connettersi a Surface Dock 2 attivando e disattivando le porte. Limitare i dispositivi host che possono essere usati con Surface Dock 2. Limitare l'accesso al dock a un singolo utente o configurare i dock in modo che siano accessibili solo a utenti specifici del team o all'intera società.
 

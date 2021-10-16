@@ -8,6 +8,8 @@
       items:
         - name: Panoramica tecnica
           items:
+            - name: Scelta del sistema operativo Surface
+              href: surface-os-choice.md
             - name: Panoramica della protezione di Surface
               href: surface-security.md
             - name: Desktop virtuale Azure in Surface
