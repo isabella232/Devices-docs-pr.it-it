@@ -1,6 +1,6 @@
 ---
 title: Novità di Surface Dock
-description: Questo articolo evidenzia le nuove funzionalità e le nuove funzionalità per il Surface Dock di nuova generazione.
+description: Questo articolo evidenzia le nuove funzionalità e funzionalità per il Surface Dock di nuova generazione.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.localizationpriority: medium
@@ -12,12 +12,12 @@ ms.date: 04/13/2021
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 65bd923cdfceecf51e59a9cf66b5b4eff44a8374
-ms.sourcegitcommit: 74ab91db82ae611854c070ddb14daa28acf7051f
+ms.openlocfilehash: 9c923b22d3921e71f1be127f2ba31c361b4ad1d7
+ms.sourcegitcommit: 4012a9499f658799197fedc7ea1a0c35d6127ed5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2021
-ms.locfileid: "12096464"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "12101213"
 ---
 # <a name="whats-new-in-surface-dock-2"></a>Novità di Surface Dock 2
 
@@ -67,7 +67,9 @@ Surface Dock 2 è progettato per semplificare la gestione IT, consentendo agli a
     
 - Doppia 4K@60hz. Supporta fino a due schermi nei dispositivi seguenti:
 
+  - Surface Laptop Studio
   - Surface Book 3
+  - Surface Pro 8
   - Surface Pro 7
   - Surface Pro 7+
   - Surface Pro X
@@ -82,6 +84,7 @@ Surface Dock 2 è progettato per semplificare la gestione IT, consentendo agli a
   - Surface Laptop (prima generazione)
   - Surface Go
   - Surface Go 2
+  - Surface Go 3
   - Surface Book 2
 
 ### <a name="ethernet"></a>Ethernet
@@ -119,7 +122,7 @@ Surface Dock 2 è progettato per semplificare la gestione IT, consentendo agli a
 | Controllo di accesso alla porta SEMM <sup> 2</sup>          | No                                                          | Sì                                                                                                 | No               |
 | Supporto per la manutenzione                   | MSI                                                         | Windows Update o MSI                                                                               |                  |
 
-1. *I dispositivi devono essere configurati per Wake on LAN tramite seMM (Surface Enterprise Management Mode) o DFCI (Device Firmware Control Interface) per la riattivazione da ibernazione o Power-Off stati. Wake from Hibernation or Power-Off is supported on Surface Laptop Studio, Surface Pro 8, Surface Pro 7+, Surface Pro 7, Surface Laptop 4, Surface Laptop 3, Surface Pro X, Surface Book 3, Surface Go 3 e Surface Go 2.  Licenza software necessaria per alcune funzionalità. Venduto separatamente.*
+1. *I dispositivi devono essere configurati per Wake on LAN tramite seMM (Surface Enterprise Management Mode) o DFCI (Device Firmware Control Interface) per la riattivazione da ibernazione o Power-Off stati. Wake from Hibernation or Power-Off è supportato in Surface Laptop Studio, Surface Pro 8, Surface Pro 7+, Surface Pro 7, Surface Laptop 4, Surface Laptop 3, Surface Pro X, Surface Book 3, Surface Go 3 e Surface Go 2.  Licenza software necessaria per alcune funzionalità. Venduto separatamente.*
 
 2. *Licenza software necessaria per alcune funzionalità. Venduto separatamente.*
 
