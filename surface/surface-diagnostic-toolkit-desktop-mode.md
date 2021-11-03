@@ -12,12 +12,12 @@ manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
 ms.date: 7/31/2020
-ms.openlocfilehash: 7ebdff37cb96589c765e9c9315b098a760976c80
-ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
+ms.openlocfilehash: 7d09bc70a2e0c882bde9106ee2c241568c1fc991
+ms.sourcegitcommit: 94e11386d7034c6bc5fe753f7bebf61a9c815509
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "11911241"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12154131"
 ---
 # <a name="use-surface-diagnostic-toolkit-for-business-in-desktop-mode"></a>Usare Toolkit di diagnostica per Surface per le aziende in modalità desktop
 
@@ -30,18 +30,18 @@ L'esecuzione corretta di SDT può determinare rapidamente se un problema segnala
 
 2. Iniziare dalla home page, che consente agli utenti di immettere una descrizione del problema e fare clic su **Continua**, come illustrato nella figura 1.
 
-    ![Avvia SDT in modalità desktop. ](images/sdt-desk-1.png)
- *Figura 1. SDT in modalità desktop*
+    ![Avvia SDT in modalità desktop.](images/sdt-desk-1.png)<br/>
+    *Figura 1. SDT in modalità desktop*
 
 3. Quando SDT indica che il dispositivo ha gli aggiornamenti più recenti, fai clic su **Continua** per passare al catalogo dei test disponibili, come illustrato nella figura 2.
 
-    ![Selezionare una delle opzioni SDT. ](images/sdt1.png)
- *Figura 2. Seleziona da opzioni SDT*
+    ![Selezionare una delle opzioni SDT.](images/sdt1.png)<br/>
+    *Figura 2. Seleziona da opzioni SDT*
 
 4. È possibile scegliere di eseguire tutti i test di diagnostica. In caso contrario, se si sospetta già un problema specifico, **** ad esempio uno schermo difettoso o un problema di alimentazione, fare clic su Seleziona per scegliere tra i test disponibili e fare clic su Esegui selezionato **,** come illustrato nella figura 3. Per informazioni dettagliate su ogni test, vedere la tabella seguente. 
 
-    ![Selezionare i test hardware. ](images/sdt2.png)
- *Figura 3. Selezionare i test hardware*
+    ![Selezionare i test hardware.](images/sdt2.png)<br/>
+    *Figura 3. Selezionare i test hardware*
 
     Test hardware | Descrizione
     --- | ---
@@ -57,19 +57,19 @@ L'esecuzione corretta di SDT può determinare rapidamente se un problema segnala
 
 5. Al termine di tutti i test, lo strumento chiede di confermare se il problema è stato risolto. 
 
- ![Il problema è stato risolto? ](images/sdt3.png)
- *Figura 3a. Il problema è stato risolto?*
+    ![Il problema è stato risolto?](images/sdt3.png)<br/>
+    *Figura 3a. Il problema è stato risolto?*
 
 6. Se il problema non viene risolto o non si sa, è possibile inviare un ticket di supporto selezionando **Contattaci** per **ottenere assistenza.**
  
- ![Inviare un ticket di supporto. ](images/sdt4.png)
- *Figura 3b. Inviare un ticket di supporto*
+    ![Inviare un ticket di supporto.](images/sdt4.png)<br/>
+    *Figura 3b. Inviare un ticket di supporto*
 
 <span id="multiple" />
 
 ## <a name="running-multiple-hardware-tests-to-troubleshoot-issues"></a>Esecuzione di più test hardware per risolvere i problemi
 
-SDT è progettato come uno strumento interattivo che esegue una serie di test. Per ogni test, SDT fornisce istruzioni che riepilogano la natura del test e cosa gli utenti devono aspettarsi o cercare perché il test sia completato correttamente. Ad esempio, per diagnosticare se la luminosità dello schermo funziona correttamente, SDT inizia da zero e **** aumenta la luminosità al 100%, chiedendo agli utenti di confermare , rispondendo sì o **no,** che la luminosità funzioni come previsto, come illustrato nella figura 4. 
+SDT è progettato come uno strumento interattivo che esegue una serie di test. Per ogni test, SDT fornisce istruzioni che riepilogano la natura del test e gli elementi che gli utenti devono aspettarsi o cercare per garantire la corretta esecuzione del test. Ad esempio, per diagnosticare se la luminosità dello schermo funziona correttamente, SDT inizia da zero e **** aumenta la luminosità al 100%, chiedendo agli utenti di confermare, rispondendo sì o **no,** che la luminosità funzioni come previsto, come illustrato nella figura 4. 
 
 Per ogni test, se la funzionalità non funziona come previsto e l'utente fa clic su **No,** SDT genera un report sulle possibili cause e sui modi per risolverlo. 
 
@@ -104,5 +104,4 @@ In base ai log, SDT genera un report per i problemi basati su software e firmwar
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Eseguire Toolkit di diagnostica per Surface per le aziende usando i comandi](surface-diagnostic-toolkit-command-line.md)
-
+- [Eseguire la console dell'app da riga di comando con Surface Diagnostic Toolkit for Business](surface-diagnostic-toolkit-command-line.md)

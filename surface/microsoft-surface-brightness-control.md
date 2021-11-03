@@ -1,6 +1,6 @@
 ---
 title: Controllo della luminosità Surface
-description: Questo argomento descrive come usare l'app controllo luminosità superficiale per gestire la luminosità dello schermo in scenari di punti vendita e chioschi.
+description: Questo argomento descrive come usare l'app Controllo luminosità di Surface per gestire la luminosità dello schermo negli scenari di vendita e chiosco multimediale.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices
@@ -12,66 +12,74 @@ ms.reviewer: hachidan
 manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 197ed9fe1abc880779ad6bb0f85d2970086395f6
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: 518db8ad0070e5e7355ef57b96057c6f4ae45137
+ms.sourcegitcommit: 94e11386d7034c6bc5fe753f7bebf61a9c815509
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833374"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12154071"
 ---
-# Controllo della luminosità Surface
+# <a name="surface-brightness-control"></a>Controllo della luminosità Surface
 
-Quando si distribuiscono i dispositivi Surface nel punto vendita o in altri scenari di Kiosk "always-on", è possibile ottimizzare la gestione dell'alimentazione usando la nuova app controllo luminosità superficiale.
+Quando distribuisci dispositivi Surface in punti vendita o in altri scenari di chiosco multimediale "always-on", puoi ottimizzare la gestione del risparmio energia usando la nuova app Surface Brightness Control. Surface Brightness Control è progettato per ridurre il carico termico e ridurre l'impronta di co2 complessiva per i dispositivi Surface distribuiti. Lo strumento ridimensiona automaticamente lo schermo quando non è in uso e include le opzioni di configurazione seguenti:
 
-Disponibile per il download con [gli strumenti di Surface](https://www.microsoft.com/download/details.aspx?id=46703).
-Il controllo della luminosità superficiale è progettato per ridurre il carico termico e abbassare l'impronta ambientale complessiva per i dispositivi Surface distribuiti.
-Se si prevede di recuperare solo questo strumento dalla pagina di download, selezionare il file **Surface_Brightness_Control_v1.16.137.0.msi** nell'elenco disponibile.
-Lo strumento oscura automaticamente la schermata quando non è in uso e include le opzioni di configurazione seguenti:
+- Periodo di inattività prima di attenuare lo schermo.
+- Livello di luminosità quando è in grigio.
+- Livello massimo di luminosità in uso.
 
-- Periodo di inattività prima di visualizzare la visualizzazione in grigio.
+Scaricalo da [Surface Tools for IT.](https://www.microsoft.com/download/details.aspx?id=46703) Selezionare il file **Surface_Brightness_Control_v1.16.137.0.msi** nell'elenco disponibile.
 
-- Livello di luminosità in grigio.
+## <a name="supported-devices"></a>Dispositivi supportati
 
-- Livello di luminosità massimo quando è in uso.
-
-**Per eseguire il controllo della luminosità superficiale:**
-
-- Installare surfacebrightnesscontrol.msi nel dispositivo di destinazione e il controllo della luminosità della superficie inizierà a funzionare immediatamente.
-
-##  <a name="configuring-surface-brightness-control"></a>Configurazione del controllo di luminosità superficiale
-
-Puoi modificare i valori predefiniti tramite il registro di sistema di Windows. Per altre informazioni sull'uso del registro di sistema di Windows, vedere la [documentazione del registro di sistema](https://docs.microsoft.com/windows/desktop/sysinfo/registry).
-
-1.  Eseguire regedit da un prompt dei comandi per aprire l'editor del registro di sistema di Windows.
-    
-      - Computer\HKEY\ _LOCAL \ _MACHINE controllo di luminosità \SOFTWARE\WOW6432Node\Microsoft\Surface\Surface \ 
-    
-    Se si sta eseguendo una versione precedente del controllo di luminosità superficiale, eseguire invece il comando seguente:
-    
-      - Computer\HKEY\ _LOCAL \ _MACHINE controllo di luminosità \SOFTWARE\Microsoft\Surface\Surface \
+- Surface Pro 3 e versioni successive
+- Surface Pro X (tutte le generazioni)
+- Surface 3
+- Surface Book (tutte le generazioni)
+- Surface Laptop Studio
+- Surface Studio (tutte le generazioni)
+- Surface Laptop (tutte le generazioni)
+- Surface Laptop Go
+- Surface Go (tutte le generazioni)
 
 
-| Impostazione del registro di sistema | Dati| Descrizione  
+## <a name="run-surface-brightness-control"></a>Esegui controllo luminosità superficie
+
+- Installa **Surface_Brightness_Control_v1.16.137.0.msi** nel dispositivo di destinazione e Surface Brightness Control inizierà a funzionare immediatamente.
+
+## <a name="configure-surface-brightness-control"></a>Configurare il controllo luminosità della superficie
+
+ è possibile modificare i valori predefiniti tramite il Windows Registro di sistema. Per ulteriori informazioni sull'utilizzo del Windows, vedere la documentazione [del Registro di sistema](/windows/desktop/sysinfo/registry).
+
+1. Eseguire regedit da un prompt dei comandi per aprire l Windows Editor del Registro di sistema.
+2. Passa a Computer\HKEY\_LOCAL\_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Surface\Surface Brightness Control.
+3. Modificare i valori della chiave del Registro di sistema, come descritto nella tabella seguente.
+
+> [!TIP]
+> Se stai eseguendo una versione precedente del controllo Surface Brightness, passa a: Computer\HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\Surface\Surface Brightness Control\
+
+| Impostazione del Registro di sistema | Dati| Descrizione  
 |-----------|------------|---------------
-| Controllo luminosità abilitato  |  Impostazione predefinita: 01  <br> Opzione: 01, 00 <br> Digitare: REG_BINARY |  Questa impostazione consente di attivare o disattivare il controllo di luminosità superficiale. Per disabilitare il controllo di luminosità superficiale, imposta il valore su 00. Se non si configura questa impostazione, il controllo luminosità superficie è attivato. |
-| Controllo luminosità in Power Enabled| Impostazione predefinita: 01 <br> Opzioni: 01, 00 <br> Digitare: REG_BINARY | Questa impostazione consente di disattivare il controllo di luminosità superficiale quando il dispositivo è collegato direttamente a Power. Per disabilitare il controllo di luminosità superficiale quando l'alimentazione è collegata, imposta il valore su 00. Se non si configura questa impostazione, il controllo luminosità superficie è attivato. |
-| Luminosità in grigio   | Impostazione predefinita: 20  <br>Opzione: intervallo di 0-100% della luminosità dello schermo <br> Tipo di dati: numero intero positivo <br> Digitare: REG_DWORD | Questa impostazione consente di gestire l'intervallo di luminosità durante i periodi di inattività. Se non si configura questa impostazione, il livello di luminosità scenderà al 20% della luminosità completa dopo 30 secondi di inattività. |
-Luminosità completa   | Impostazione predefinita: 100  <br>Opzione: intervallo di 0-100% della luminosità dello schermo <br> Tipo di dati: numero intero positivo <br> Digitare: REG_DWORD  | Questa impostazione consente di gestire l'intervallo di luminosità massimo per il dispositivo. Se non si configura questa impostazione, l'intervallo di luminosità massimo è 100%.|  
-| Timeout inattività| Impostazione predefinita: 30 secondi <br>Opzione: qualsiasi valore numerico  <br>Tipo di dati: intero  <br> Digitare: REG_DWORD | Questa impostazione consente di gestire il periodo di inattività prima di impostare l'oscuramento del dispositivo. Se non si configura questa impostazione, il timeout di inattività è di 30 secondi.|
-| Telemetria abilitata | Impostazione predefinita: 01 <br>Opzione: 01, 00 <br> Digitare: REG_BINARY  | Questa impostazione consente di gestire la condivisione delle informazioni sull'utilizzo dell'app per migliorare il software e consentire un'esperienza utente migliore. Per disabilitare la telemetria, imposta il valore su 00. Se non si configura questa impostazione, le informazioni di telemetria vengono condivise con Microsoft in conformità con l' [informativa sulla privacy Microsoft](https://privacy.microsoft.com/privacystatement). |
+| Controllo luminosità abilitato  |  Valore predefinito: 01  <br> Opzione: 01, 00 <br> Tipo: REG_BINARY |  Questa impostazione consente di attivare o disattivare Surface Brightness Control. Per disabilitare Surface Brightness Control, imposta il valore su 00. Se non si configura questa impostazione, Surface Brightness Control è attivata. |
+| Controllo luminosità all'alimentazione abilitata| Valore predefinito: 01 <br> Opzioni: 01, 00 <br> Tipo: REG_BINARY | Questa impostazione consente di disattivare Il controllo della luminosità di Surface quando il dispositivo è connesso direttamente all'alimentazione. Per disabilitare Surface Brightness Control quando l'alimentazione è collegata, imposta il valore su 00. Se non si configura questa impostazione, Surface Brightness Control è attivata. |
+| Luminosità in grigio   | Impostazione predefinita: 20  <br>Opzione: intervallo compreso tra 0 e 100% della luminosità dello schermo <br> Tipo di dati: numero intero positivo <br> Tipo: REG_DWORD | Questa impostazione consente di gestire l'intervallo di luminosità durante i periodi di inattività. Se non si configura questa impostazione, il livello di luminosità scenderà al 20% della luminosità completa dopo 30 secondi di inattività. |
+Luminosità completa   | Impostazione predefinita: 100  <br>Opzione: intervallo compreso tra 0 e 100% della luminosità dello schermo <br> Tipo di dati: numero intero positivo <br> Tipo: REG_DWORD  | Questa impostazione consente di gestire l'intervallo di luminosità massimo per il dispositivo. Se non si configura questa impostazione, l'intervallo di luminosità massimo è 100%.|  
+| Timeout inattività| Impostazione predefinita: 30 secondi <br>Opzione: qualsiasi valore numerico  <br>Tipo di dati: Integer  <br> Tipo: REG_DWORD | Questa impostazione consente di gestire il periodo di inattività prima di attenuare il dispositivo. Se non si configura questa impostazione, il timeout di inattività è 30 secondi.|
+| Telemetria abilitata | Valore predefinito: 01 <br>Opzione: 01, 00 <br> Tipo: REG_BINARY  | Questa impostazione consente di gestire la condivisione delle informazioni sull'utilizzo delle app per migliorare il software e offrire un'esperienza utente migliore. Per disabilitare la telemetria, impostare il valore su 00. Se non si configura questa impostazione, le informazioni di telemetria vengono condivise con Microsoft in conformità [all'Informativa sulla privacy di Microsoft.](https://privacy.microsoft.com/privacystatement) |
 
-##  <a name="changes-and-updates"></a>Modifiche e aggiornamenti
+## <a name="changes-and-updates"></a>Modifiche e aggiornamenti
 
-###  <a name="version-1.16.137"></a>Versione 1.16.137<br>
+### <a name="version-116137br"></a>Versione 1.16.137<br>
+
 *Data di rilascio: 22 ottobre 2019*<br>
-Questa versione del controllo della luminosità superficiale aggiunge il supporto per i seguenti:-ricompilato per x86, aggiungendo il supporto per Surface Pro 7, Surface Pro X e Surface laptop 3. 
+Questa versione di Surface Brightness Control aggiunge il supporto per gli elementi seguenti: -Recompiled per x86, aggiungendo il supporto per Surface Pro 7, Surface Pro X e Surface Laptop 3.
 
-###  <a name="version-1.12.239.0"></a>Versione 1.12.239.0
+### <a name="version-1122390"></a>Versione 1.12.239.0
+
 *Data di rilascio: 26 aprile 2019*<br>
-Questa versione del controllo di luminosità superficiale aggiunge il supporto per i seguenti:
+Questa versione di Surface Brightness Control aggiunge il supporto per gli elementi seguenti:
+
 - Correzioni di ritardo tocco.
 
+## <a name="related-topics"></a>Argomenti correlati
 
-##  <a name="related-topics"></a>Argomenti correlati
-
-- [Impostazione del limite di batteria](battery-limit.md)
+- [Impostazione limite batteria](battery-limit.md)

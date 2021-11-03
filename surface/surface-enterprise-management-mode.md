@@ -1,6 +1,6 @@
 ---
 title: Surface Enterprise Management Mode (Surface)
-description: Scopri in che modo questa funzionalità dei dispositivi Surface con Surface UEFI consente di proteggere e gestire le impostazioni del firmware all'interno dell'organizzazione.
+description: Scopri come questa funzionalità dei dispositivi Surface con Surface UEFI consente di proteggere e gestire le impostazioni del firmware all'interno dell'organizzazione.
 keywords: uefi, configurare, firmware, sicuro, semm
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -13,13 +13,13 @@ ms.reviewer: hachidan
 manager: laurawi
 ms.localizationpriority: medium
 audience: itpro
-ms.date: 04/16/2021
-ms.openlocfilehash: 8e30234e72b6533da3d36ca38188c7e199beeeac
-ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
+ms.date: 10/25/2021
+ms.openlocfilehash: 127f9303751417ad4c24442ba0a5e177fc338475
+ms.sourcegitcommit: 94e11386d7034c6bc5fe753f7bebf61a9c815509
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "11910991"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12154061"
 ---
 # <a name="microsoft-surface-enterprise-management-mode"></a>Modalità di gestione Enterprise Microsoft Surface
 
@@ -31,18 +31,15 @@ Microsoft Surface Enterprise Management Mode (SEMM) è una funzionalità dei dis
 SEMM usa anche un certificato per proteggere la configurazione da manomissioni o rimozioni non autorizzate. Per eseguire la migrazione Surface Hub 2S a Windows 10 Pro o Windows Enterprise, è necessario SEMM.
 
 >[!NOTE]
->SEMM è disponibile solo nei dispositivi con firmware UEFI di Surface. Ciò include la maggior parte degli altri dispositivi Surface, tra cui Surface Pro 7+, Surface Pro X, Surface Hub 2S, Surface Laptop 4 SKU commerciali con processore Intel, Surface Laptop 4 SKU commerciali con processore AMD, Surface Laptop 3 SKU commerciali con processore Intel e Surface Laptop Go. SEMM non è supportato nella SKU da 15" Surface Laptop 3 con processore AMD (disponibile solo come SKU per la vendita al dettaglio).
+>SEMM è disponibile solo nei dispositivi con firmware UEFI di Surface. Questo include la maggior parte degli altri dispositivi Surface, tra cui Surface Pro 8, Surface Pro X, Surface Laptop Studio, Surface Hub 2S, Surface Laptop 4 SKU commerciali con processore Intel, Surface Laptop 4 SKU commerciali con processore AMD, Surface Laptop 3 SKU commerciali con un processore Intel e Surface Laptop Go. SEMM non è supportato nella SKU da 15" Surface Laptop 3 con processore AMD (disponibile solo come SKU per la vendita al dettaglio).
 
 Quando i dispositivi Surface sono configurati da SEMM e protetti con il certificato SEMM, vengono considerati *registrati* in SEMM. Quando il certificato SEMM viene rimosso e il controllo delle impostazioni UEFI viene restituito all'utente del dispositivo, il dispositivo Surface viene considerato non *in* registrazione in SEMM.
 
 Esistono due opzioni amministrative che puoi usare per gestire SEMM e registrare i dispositivi Surface:
 
-- Lo strumento autonomo SEMM, Microsoft Surface UEFI Configurator, è descritto in questo articolo.
+- Lo strumento autonomo SEMM, Configuratore UEFI di Microsoft Surface, è descritto in questo articolo.
 
 - Integrazione con Microsoft Endpoint Configuration Manager. Per informazioni, vedi [Usare Microsoft Endpoint Configuration Manager per gestire i dispositivi con SEMM.](use-system-center-configuration-manager-to-manage-devices-with-semm.md)
-
-> [!NOTE]
-> SEMM è supportato su Surface Pro X solo tramite il gestore UEFI. Puoi scaricare UEFI Manager da [Surface Tools for IT.](https://www.microsoft.com/download/details.aspx?id=46703) Per ulteriori informazioni, vedere [Deploying, managing, and servicing Surface Pro X](surface-pro-arm-app-management.md).
 
 ## <a name="microsoft-surface-uefi-configurator"></a>Configuratore UEFI di Microsoft Surface
 
@@ -72,6 +69,9 @@ Puoi usare lo strumento configuratore UEFI di Microsoft Surface in tre modalità
 
 Puoi scaricare il configuratore UEFI di Microsoft Surface dalla pagina [Surface Tools for IT](https://www.microsoft.com/download/details.aspx?id=46703) nell'Area download Microsoft.
 
+- Per i dispositivi Intel/AMD, scarica: **SurfaceUEFI_Configurator_v2.94.139.0_x64.msi**
+- Per ARM dispositivi, scarica: **SurfaceUEFI_Configurator_v2.94.139.0_x86.msi.**
+
 ### <a name="configuration-package"></a>Pacchetto di configurazione
 
 I pacchetti di configurazione UEFI di Surface sono il meccanismo principale per implementare e gestire SEMM nei dispositivi Surface. Questi pacchetti contengono un file di configurazione e un file di certificato, come illustrato nella figura 2. Il file di configurazione contiene le impostazioni UEFI specificate al momento della creazione del pacchetto in Configuratore UEFI di Microsoft Surface. Quando un pacchetto di configurazione viene eseguito per la prima volta in un dispositivo Surface che non è già registrato in SEMM, esegue il provisioning del file di certificato nel firmware del dispositivo e registra il dispositivo in SEMM. Quando si registra un dispositivo in SEMM e prima che il certificato venga archiviato e la registrazione venga completata, viene richiesto di confermare l'operazione fornendo le ultime due cifre dell'identificazione personale del certificato SEMM. Questa conferma richiede che un utente sia fisicamente presente nel dispositivo durante la registrazione per eseguire la conferma.
@@ -83,7 +83,7 @@ I pacchetti di configurazione UEFI di Surface sono il meccanismo principale per 
 Per altre informazioni sui requisiti per il certificato SEMM, vedi la sezione Requisiti dei certificati per la modalità di gestione di [Surface Enterprise](#surface-enterprise-management-mode-certificate-requirements) più avanti in questo articolo.
 
 >[!TIP]
->È possibile richiedere una password UEFI con SEMM. In questo caso, la password è necessaria **** per visualizzare le pagine **Sicurezza,** **Dispositivi,** Configurazione di avvio **e gestione** Enterprise di Surface UEFI.
+>È possibile richiedere una password UEFI con SEMM. In questo caso, la password è necessaria **** per visualizzare **** le pagine **Sicurezza,** **Dispositivi,** Configurazione di avvio e gestione Enterprise di Surface UEFI.
 
 Dopo la registrazione di un dispositivo in SEMM, il file di configurazione viene letto e le impostazioni specificate nel file vengono applicate a UEFI. Quando esegui un pacchetto di configurazione in un dispositivo già registrato in SEMM, la firma del file di configurazione viene verificata rispetto al certificato archiviato nel firmware del dispositivo. Se la firma non corrisponde, non viene applicata alcuna modifica al dispositivo.
 
@@ -140,7 +140,7 @@ Questi caratteri sono gli ultimi due caratteri dell'identificazione personale de
 *Figura 4. Conferma di registrazione in SEMM con l'identificazione personale del certificato SEMM*
 
 >[!TIP]
->Gli amministratori con accesso al file del certificato (con estensione pfx) possono leggere l'identificazione personale in qualsiasi momento aprendo il file pfx in CertMgr. Per visualizzare l'identificazione personale con CertMgr:
+>Gli amministratori con accesso al file di certificato (con estensione pfx) possono leggere l'identificazione personale in qualsiasi momento aprendo il file pfx in CertMgr. Per visualizzare l'identificazione personale con CertMgr:
 >
 >1. Selezionare e tenere premuto (o fare clic con il pulsante destro del mouse) sul file pfx e quindi scegliere **Apri**.
 >2. Nel riquadro di spostamento espandere la cartella.
@@ -165,14 +165,14 @@ In alcuni scenari, potrebbe essere impossibile usare un pacchetto di reimpostazi
 > [!div class="mx-imgBorder"]
 > ![Avviare una richiesta di ripristino SEMM.](images/surface-ent-mgmt-fig7-semmrecovery.png "Initiate a SEMM recovery request")
 
-*Figura 5. Avviare una richiesta di ripristino SEMM nella pagina Enterprise gestione dei dati*
+*Figura 5. Avviare una richiesta di ripristino SEMM nella Enterprise gestione dei dati*
 
 Quando usi il processo nella pagina **gestione** Enterprise per reimpostare SEMM in un dispositivo Surface, ti viene inviata una richiesta di reimpostazione. Questa richiesta di reimpostazione può essere salvata come file in un'unità USB, copiata come testo o letta come codice QR con un dispositivo mobile per essere facilmente inviata tramite posta elettronica o tramite messaggio. Usa l'opzione Richiesta di reimpostazione configuratore UEFI di Microsoft Surface per caricare un file di richiesta di reimpostazione o per immettere il testo Della richiesta di reimpostazione o il codice QR. Configuratore UEFI di Microsoft Surface genera un codice di verifica che può essere immesso nel dispositivo Surface. Se immetti il codice nel dispositivo Surface e seleziona **Riavvia**, la registrazione del dispositivo viene annullata da SEMM.
 
 >[!NOTE]
 >Una richiesta di reimpostazione scade due ore dopo la sua creazione.
 
-Per una procedura dettagliata su come annullare la registrazione dei dispositivi Surface da SEMM, vedi Annullare la registrazione dei dispositivi [Surface da SEMM.](https://technet.microsoft.com/itpro/surface/unenroll-surface-devices-from-semm)
+Per una procedura dettagliata su come annullare la registrazione dei dispositivi Surface da SEMM, vedi Annullare la registrazione dei dispositivi [Surface da SEMM.](unenroll-surface-devices-from-semm.md)
 
 ## <a name="surface-enterprise-management-mode-certificate-requirements"></a>Requisiti dei certificati per la modalità di gestione di Surface Enterprise
 
@@ -192,7 +192,7 @@ Per il certificato SEMM sono consigliate le impostazioni seguenti:
 - **Algoritmo hash** - SHA-256
 - **Tipo** - Autenticazione server SSL
 - **Utilizzo chiave** - Firma digitale, Crittografia chiave
-- **Provider** : Microsoft Enhanced RSA and AES Cryptographic Provider
+- **Provider** - Microsoft Enhanced RSA and AES Cryptographic Provider
 - **Data di scadenza** - 15 mesi dalla creazione del certificato
 - **Criteri di esportazione chiave** - Esportabile
 
@@ -253,7 +253,7 @@ La lunghezza *minima consigliata* è 15 mesi. È possibile utilizzare un certifi
 >Quando un certificato scade, non viene rinnovato automaticamente.
 
 **Un certificato scaduto influirà sulla funzionalità dei dispositivi registrati con SEMM?**<br><br>
-No, un certificato influisce solo sulle attività di gestione dell'amministratore IT in SEMM e non ha alcun effetto sulla funzionalità del dispositivo alla scadenza.
+No, un certificato influisce solo sulle attività di gestione dell'amministratore IT in SEMM e non ha alcun effetto sulle funzionalità del dispositivo alla scadenza.
 
 **Il pacchetto e il certificato SEMM dovranno essere aggiornati in tutti i computer che lo dispongono?**<br><br>
 Se si desidera che la reimpostazione o il ripristino SEMM funzioni, il certificato deve essere valido e non scaduto.
@@ -262,6 +262,12 @@ Se si desidera che la reimpostazione o il ripristino SEMM funzioni, il certifica
 Gli esempi di PowerShell che creano un pacchetto di configurazione per un tipo di dispositivo specifico possono essere usati anche per creare un pacchetto di reimpostazione indipendente dal numero di serie. Se il certificato è ancora valido, puoi creare un pacchetto di reimpostazione usando PowerShell per reimpostare SEMM.
 
 ## <a name="version-history"></a>Cronologia versioni
+
+### <a name="version-2941390"></a>Versione 2.94.139.0
+
+Questa versione di SEMM include:
+
+- Supporto per Surface Laptop Studio, Surface Pro 8 e Surface Go 3
 
 ### <a name="version-2831390"></a>Versione 2.83.139.0
 
@@ -284,7 +290,7 @@ Questa versione di SEMM include:
 Questa versione di SEMM include:
 
 - Supporto per Surface Laptop Go e Surface Pro X.
-- Notifiche per i rilasci delle nuove versioni.
+- Notifiche per le versioni nuove.
 - Possibilità di creare pacchetti personalizzati per modificare la proprietà.
 - Correzioni di bug.
 

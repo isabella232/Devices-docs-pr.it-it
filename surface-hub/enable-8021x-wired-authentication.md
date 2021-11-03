@@ -1,5 +1,5 @@
 ---
-title: Abilitare l'autenticazione cablata 802.1x
+title: Abilita autenticazione cablata 802.1x
 description: I criteri MDM per l'autenticazione cablata 802.1x sono stati abilitati nei dispositivi Surface Hub.
 ms.prod: surface-hub
 ms.sitesec: library
@@ -10,22 +10,22 @@ ms.date: 11/15/2017
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: 119f879d74ccda5d53da27d842413346a50693f1
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: dcb2799accfcbccb41e44e09f0df3fd1ac6eb57e
+ms.sourcegitcommit: 94e11386d7034c6bc5fe753f7bebf61a9c815509
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833705"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "12154041"
 ---
-# Abilita autenticazione cablata 802.1x
+# <a name="enable-8021x-wired-authentication"></a>Abilita autenticazione cablata 802.1x
 
-Il [14 novembre 2017 l'aggiornamento a Windows 10](https://support.microsoft.com/help/4048954/windows-10-update-kb4048954) (build 15063.726) abilita i criteri MDM per l'autenticazione cablata 802.1x sui dispositivi Surface Hub. La funzionalità consente alle organizzazioni di applicare l'autenticazione di rete cablata standardizzata tramite il [protocollo di autenticazione IEEE 802.1x](http://www.ieee802.org/1/pages/802.1x-2010.html). Questo è già disponibile per l'autenticazione wireless con i profili WLAN tramite MDM. In questo argomento viene illustrato come configurare un dispositivo Surface Hub per l'utilizzo con l'autenticazione cablata. 
+L'aggiornamento [del 14 novembre 2017](https://support.microsoft.com/help/4048954/windows-10-update-kb4048954) a Windows 10 (build 15063.726) ha abilitato i criteri MDM di autenticazione cablata 802.1x nei dispositivi Surface Hub. La funzionalità consente alle organizzazioni di applicare l'autenticazione di rete cablata standardizzata tramite il [protocollo di autenticazione IEEE 802.1x](http://www.ieee802.org/1/pages/802.1x-2010.html). Questo era già disponibile per l'autenticazione wireless [tramite profili WLAN](/mem/intune/configuration/wi-fi-settings-import-windows-8-1) tramite MDM. In questo argomento viene illustrato come configurare un dispositivo Surface Hub per l'utilizzo con l'autenticazione cablata. 
 
-L'imposizione e l'abilitazione dell'autenticazione cablata 802.1x su dispositivi Surface Hub possono essere eseguite tramite MDM [definizione OMA-URI](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune#oma-uri-settings). 
+L'imposizione e l'abilitazione dell'autenticazione cablata 802.1x su dispositivi Surface Hub possono essere eseguite tramite MDM [definizione OMA-URI](/mem/intune/configuration/custom-settings-windows-10). 
 
-La configurazione primaria da impostare è il criterio **LanProfile**. A seconda del metodo di autenticazione selezionato, altri criteri potrebbero essere necessari, il criterio **EapUserData** o i criteri MDM per l'aggiunta di certificati utente o del computer (ad esempio [ClientCertificateInstall](https://docs.microsoft.com/windows/client-management/mdm/clientcertificateinstall-csp) per certificati utente/dispositivo o [RootCATrustedCertificates](https://docs.microsoft.com/windows/client-management/mdm/rootcacertificates-csp) per certificati dispositivo). 
+La configurazione primaria da impostare è il criterio **LanProfile**. A seconda del metodo di autenticazione selezionato, altri criteri potrebbero essere necessari, il criterio **EapUserData** o i criteri MDM per l'aggiunta di certificati utente o del computer (ad esempio [ClientCertificateInstall](/windows/client-management/mdm/clientcertificateinstall-csp) per certificati utente/dispositivo o [RootCATrustedCertificates](/windows/client-management/mdm/rootcacertificates-csp) per certificati dispositivo). 
 
-##  <a name="lanprofile-policy-element"></a>Elemento dei criteri LanProfile
+## <a name="lanprofile-policy-element"></a>Elemento dei criteri LanProfile
 
 Per configurare Surface Hub per l'utilizzo di uno dei metodi di autenticazione 802.1x supportati, utilizza il seguente OMA-URI. 
 
@@ -33,7 +33,7 @@ Per configurare Surface Hub per l'utilizzo di uno dei metodi di autenticazione 8
 ./Vendor/MSFT/SurfaceHub/Dot3/LanProfile
 ```
 
-Questo nodo OMA-URI accetta una stringa di testo XML come parametro. L'XML fornito come parametro deve essere conforme allo [schema del profilo rete LAN cablata](https://msdn.microsoft.com/library/cc233002.aspx) inclusi gli elementi dello [schema 802.1X](https://msdn.microsoft.com/library/cc233003.aspx). 
+Questo nodo OMA-URI accetta una stringa di testo XML come parametro. L'XML fornito come parametro deve essere conforme allo [schema del profilo rete LAN cablata](/openspecs/windows_protocols/ms-gpwl/c88a926a-087b-405f-9a76-effaf7277bf3) inclusi gli elementi dello [schema 802.1X](/openspecs/windows_protocols/ms-gpwl/71f2eda6-d018-4ba3-ad37-32c98b926ebb). 
 
 Nella maggior parte dei casi, un amministratore o un utente può esportare l'XML LanProfile da un PC esistente che è già configurato nella rete per 802.1X con il comando NETSH seguente. 
 
@@ -49,7 +49,7 @@ Profile File Name: .\Ethernet.xml
 1 profile(s) were exported successfully.
 ```
 
-##  <a name="eapuserdata-policy-element"></a>Elemento dei criteri EapUserData
+## <a name="eapuserdata-policy-element"></a>Elemento dei criteri EapUserData
 
 Se il metodo di autenticazione selezionato richiede un nome utente e una password anziché un certificato, puoi utilizzare l'elemento **EapUserData** per specificare le credenziali per il dispositivo da utilizzare per eseguire l'autenticazione in rete. 
 
@@ -57,11 +57,11 @@ Se il metodo di autenticazione selezionato richiede un nome utente e una passwor
 ./Vendor/MSFT/SurfaceHub/Dot3/EapUserData 
 ```
 
-Questo nodo OMA-URI accetta una stringa di testo XML come parametro. L'XML fornito come parametro deve essere conforme all'[esempio Proprietà dell'utente MS-CHAPv2 PEAP](https://msdn.microsoft.com/library/windows/desktop/bb891979). Nell'esempio dovrai sostituire tutte le istanze di *test* e *ias-domain* con i tuoi dati.
+Questo nodo OMA-URI accetta una stringa di testo XML come parametro. L'XML fornito come parametro deve essere conforme all'[esempio Proprietà dell'utente MS-CHAPv2 PEAP](/windows/win32/eaphost/peap-ms-chapv2-user-properties). Nell'esempio dovrai sostituire tutte le istanze di *test* e *ias-domain* con i tuoi dati.
 
 
 
-##  <a name="adding-certificates"></a>Aggiunta di certificati
+## <a name="adding-certificates"></a>Aggiunta di certificati
 
-Se il metodo di autenticazione selezionato è basato su certificati, sarà necessario [creare un pacchetto di provisioning](provisioning-packages-for-surface-hub.md), [utilizzare MDM](https://docs.microsoft.com/windows/client-management/mdm/clientcertificateinstall-csp)o importare un certificato dalle impostazioni (aggiornamento**delle impostazioni**  >  **e**  >  **certificati**di sicurezza) per distribuire tali certificati nel dispositivo Surface Hub nell'archivio certificati appropriato. Quando si aggiungono i certificati, ogni PFX deve contenere un solo certificato (un PFX non può includere più certificati).
+Se il metodo di autenticazione selezionato è basato su certificati, dovrai creare un pacchetto di [provisioning,](provisioning-packages-for-surface-hub.md)usare [MDM](/windows/client-management/mdm/clientcertificateinstall-csp)o importare un certificato dalle impostazioni (**Impostazioni**Update and Security Certificates ) per distribuire tali certificati nel dispositivo Surface Hub nell'archivio certificati  >  ****  >  **** appropriato. Quando si aggiungono i certificati, ogni PFX deve contenere un solo certificato (un PFX non può includere più certificati).
 
