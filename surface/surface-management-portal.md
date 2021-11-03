@@ -8,16 +8,16 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 10/28/2021
+ms.date: 11/02/2021
 ms.reviewer: hachinda
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: bba49151973423d269dfdcf8eb5039ed5e39787f
-ms.sourcegitcommit: 94e11386d7034c6bc5fe753f7bebf61a9c815509
+ms.openlocfilehash: f3fcc6ddcda0cf8016e1ba9383da2b5be511c0f1
+ms.sourcegitcommit: 714a56ede92eb6b16878aef8fdf94f9d2bda7204
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12154174"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "12154378"
 ---
 # <a name="surface-management-portal-overview"></a>Panoramica di Surface Management Portal
 
@@ -30,6 +30,8 @@ In quanto ambiente singolo per la visibilità end-to-end dei dispositivi Surface
 Ottieni informazioni dettagliate sulla conformità dei dispositivi, sulle attività di supporto e sulla copertura della garanzia. Visualizza rapidamente lo stato di ogni dispositivo, quelli ancora in garanzia o in scadenza a breve e lo stato delle richieste di supporto attive con i provider hardware.
 
 Quando i dispositivi Surface vengono registrati per la gestione del cloud e gli utenti a log in per la prima volta, le informazioni di questi dispositivi Surface fluivano automaticamente nel portale di gestione di Surface, offrendoti un singolo riquadro di vetro per le attività di amministrazione dei dispositivi specifiche di Surface.
+
+Vedi anche: [Problemi noti di](#known-issues) seguito. 
 
 ## <a name="get-started"></a>Informazioni di base
 
@@ -69,7 +71,11 @@ Surface Management Portal offre una visibilità completa sull'attività di suppo
 
 ## <a name="try-for-free"></a>Provalo gratuitamente
 
-Surface Management Portal è disponibile per i clienti che usano Microsoft Endpoint Manager e hanno registrato dispositivi Surface tramite Intune. Se non si ha una nuova versione di Intune, configurare il tenant di Intune oggi visitando Guida [introduttiva: provare a Microsoft Intune gratuitamente.](/mem/intune/fundamentals/free-trial-sign-up)
+Surface Management Portal è disponibile per i clienti che usano Microsoft Endpoint Manager e hanno registrato dispositivi Surface tramite Intune. Se non si ha una nuova versione di Intune, configurare il tenant di Intune oggi visitando guida [introduttiva: provare a Microsoft Intune gratuitamente.](/mem/intune/fundamentals/free-trial-sign-up)
+
+## <a name="known-issues"></a>Problemi noti
+
+- Il portale potrebbe non essere caricato correttamente per un numero limitato di tenant. La progettazione di Surface sta analizzando attivamente questo problema. *2 novembre 2021.*
 
 ## <a name="learn-more"></a>Scopri di più
 
