@@ -12,12 +12,12 @@ ms.date: 11/02/2021
 ms.reviewer: hachinda
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: f3fcc6ddcda0cf8016e1ba9383da2b5be511c0f1
-ms.sourcegitcommit: 714a56ede92eb6b16878aef8fdf94f9d2bda7204
+ms.openlocfilehash: a131e663aadbd10be039cff777001383178f7fc1
+ms.sourcegitcommit: 16889d72b0af81dfe79267c41574c3774e81f178
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "12154378"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "12155174"
 ---
 # <a name="surface-management-portal-overview"></a>Panoramica di Surface Management Portal
 
@@ -33,11 +33,11 @@ Quando i dispositivi Surface vengono registrati per la gestione del cloud e gli 
 
 Vedi anche: [Problemi noti di](#known-issues) seguito. 
 
-## <a name="get-started"></a>Informazioni di base
+## <a name="get-started"></a>Introduzione
 
 Accedi a Microsoft Endpoint Manager, fai clic **su Tutti i servizi**e quindi fai clic su Surface Management **Portal.**
 
-:::image type="content" source="/surface/images/surface-management-portal/surface-management-portal-start.png" alt-text="Avviare Surface Management Portal":::
+:::image type="content" source="/surface/images/surface-management-portal/surface-management-portal-start.png" lightbox="/surface/images/surface-management-portal/surface-management-portal-start.png" alt-text="Avviare Surface Management Portal":::
 
 ## <a name="monitor-surface-devices"></a>Monitorare i dispositivi Surface
 
@@ -52,7 +52,7 @@ Seleziona **Monitor** per visualizzare informazioni dettagliate per tutti i disp
 
 Seleziona **Visualizza report** per visualizzare i dettagli su ogni categoria di informazioni dettagliate, fornendo informazioni di diagnostica che puoi personalizzare ed esportare.
 
-:::image type="content" source="/surface/images/surface-management-portal/surface-management-portal-view-report.png" alt-text="Ottenere informazioni dettagliate sui dispositivi Surface e visualizzare il report":::
+:::image type="content" source="/surface/images/surface-management-portal/surface-management-portal-view-report.png" lightbox="/surface/images/surface-management-portal/surface-management-portal-view-report.png" alt-text="Ottenere informazioni dettagliate sui dispositivi Surface e visualizzare il report":::
 
 ## <a name="device-warranty-and-coverage"></a>Garanzia e copertura del dispositivo
 
@@ -67,7 +67,7 @@ se gestisci centinaia o migliaia di dispositivi, l'accesso diretto allo stato di
 
 Surface Management Portal offre una visibilità completa sull'attività di supporto insieme allo stato di ogni richiesta.
 
-:::image type="content" source="/surface/images/surface-management-portal/surface-management-portal-support.png" alt-text="Ottieni informazioni sull'attività di supporto insieme allo stato di ogni richiesta.":::
+:::image type="content" source="/surface/images/surface-management-portal/surface-management-portal-support.png" lightbox="/surface/images/surface-management-portal/surface-management-portal-support.png" alt-text="Ottieni informazioni sull'attività di supporto insieme allo stato di ogni richiesta.":::
 
 ## <a name="try-for-free"></a>Provalo gratuitamente
 
@@ -75,7 +75,7 @@ Surface Management Portal è disponibile per i clienti che usano Microsoft Endpo
 
 ## <a name="known-issues"></a>Problemi noti
 
-- Il portale potrebbe non essere caricato correttamente per un numero limitato di tenant. La progettazione di Surface sta analizzando attivamente questo problema. *2 novembre 2021.*
+- Risolto: è stato risolto un problema che impediva il caricamento corretto del portale per un numero limitato di tenant. (3 novembre 2021).
 
 ## <a name="learn-more"></a>Scopri di più
 
