@@ -12,31 +12,36 @@ ms.author: greglin
 ms.topic: article
 ms.reviewer: hachidan
 manager: laurawi
-ms.date: 04/13/2021
-ms.openlocfilehash: e21febfcbcbf139aea832c51e354759c0a49f896
-ms.sourcegitcommit: a5651e8c8f953fe3130dd476f4e06c16c172aaa4
+ms.date: 01/18/2022
+ms.openlocfilehash: 94e39a67ef80e4e95db3441778af915d2e535bab
+ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/04/2021
-ms.locfileid: "11939537"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "12338173"
 ---
 # <a name="manage-surface-uefi-settings"></a>Gestire le impostazioni UEFI di Surface
 
- I dispositivi Surface PC sono progettati per utilizzare un'interfaccia UEFI (Unified Extensible Firmware Interface) univoca progettata da Microsoft in modo specifico per questi dispositivi. Le impostazioni UEFI di Surface consentono di abilitare o disabilitare i dispositivi e i componenti incorporati, proteggere le impostazioni UEFI dalle modifiche e modificare le impostazioni di avvio dei dispositivi Surface.
+ I dispositivi Surface PC sono progettati per utilizzare un'interfaccia UEFI (Unified Extensible Firmware Interface) univoca progettata da Microsoft appositamente per questi dispositivi. Le impostazioni UEFI di Surface consentono di abilitare o disabilitare i dispositivi e i componenti incorporati, proteggere le impostazioni UEFI dalle modifiche e modificare le impostazioni di avvio dei dispositivi Surface.
 
 ## <a name="supported-products"></a>Prodotti supportati
 
 La gestione UEFI è supportata nei seguenti modi:
 
-- Surface Pro 4, Surface Pro (5° generazione), Surface Pro 6, Surface Pro 7, Surface Pro 7+, Surface Pro X
-- Surface Laptop (prima generazione), Surface Laptop 2, Surface Laptop 3, Surface Laptop Go, Surface Laptop 4
+- Surface Pro 4, Surface Pro (5° generazione), Surface Pro 6, Surface Pro 7, Surface Pro 7+ (solo SKU commerciali), Surface Pro 8 (solo SKU commerciali), Surface Pro X
+- Surface Laptop (prima generazione), Surface Laptop 2, Surface Laptop 3 (solo processori Intel), Surface Laptop Go, Surface Laptop 4 (solo SKU commerciali), Surface Laptop edizione Standard
 - Surface Studio (prima generazione), Surface Studio 2
-- Surface Book, Surface Book 2, Surface Book 3
-- Surface Go, Surface Go 2[ <sup> 1 </sup> ](#references)
+- Surface Book (tutte le generazioni)
+- Surface Laptop Studio (solo SKU commerciali)
+- Surface Go, Surface Go [21<sup></sup>](#references), Surface Go 3 (solo SKU commerciali)
+
+>[!TIP]
+> Le SKU commerciali (Surface per le aziende) vengono eseguite Windows 10 Pro/Enterprise o Windows 11 Pro/Enterprise; le SKU consumer vengono eseguite Windows 10/Windows 11 Home. Per altre informazioni, vedi [Visualizzare le informazioni di sistema](https://support.microsoft.com/windows/view-your-system-info-a965a8f2-0773-1d65-472a-1e747c9ebe00). 
+
 
 ## <a name="support-for-cloud-based-management"></a>Supporto per la gestione basata su cloud
 
-Con i profili DFCI (Device Firmware Configuration Interface) incorporati in Microsoft Intune (ora disponibile in anteprima pubblica), la gestione UEFI di Surface estende lo stack di gestione moderno fino al livello hardware UEFI. DFCI supporta il provisioning senza tocco, elimina le password del BIOS, fornisce il controllo delle impostazioni di sicurezza, tra cui le opzioni di avvio e le periferiche incorporate, e costituisce le basi per scenari di sicurezza avanzati in futuro. DFCI è attualmente disponibile per Surface Pro 7+, Surface Laptop Go, Surface Book 3, Surface Laptop 3, Surface Pro 7 e Surface Pro X.  Per altre informazioni, fai riferimento alla [gestione di Intune delle impostazioni UEFI di Surface.](surface-manage-dfci-guide.md)
+Con i profili DFCI (Device Firmware Configuration Interface) incorporati in Microsoft Intune (ora disponibile in anteprima pubblica), la gestione UEFI di Surface estende lo stack di gestione moderno fino al livello hardware UEFI. DFCI supporta il provisioning senza tocco, elimina le password del BIOS, fornisce il controllo delle impostazioni di sicurezza, tra cui le opzioni di avvio e le periferiche incorporate, e costituisce le basi per scenari di sicurezza avanzati in futuro. DFCI è attualmente disponibile per DFCI per Surface Laptop edizione Standard, Surface Laptop Studio, Surface Pro 8, Surface Go 3, Surface Laptop 4, Surface Laptop Go, Surface Book 3, Surface Laptop 3, Surface Pro 7+, Surface Pro 7 e Surface Pro X.   Per altre informazioni, fai riferimento alla [gestione di Intune delle impostazioni UEFI di Surface](surface-manage-dfci-guide.md).
 
 ## <a name="open-surface-uefi-menu"></a>Apri il menu UEFI di Surface
 
@@ -50,7 +55,7 @@ Per modificare le impostazioni UEFI durante l'avvio del sistema:
 
 La pagina delle informazioni sul PC include informazioni dettagliate sul dispositivo Surface:
 
-- **Modello:** il modello del dispositivo Surface verrà visualizzato qui, ad esempio Surface Book 2 o Surface Pro 7. L'esatta configurazione del dispositivo non viene visualizzata, ad esempio processore, dimensioni dei dischi o dimensioni della memoria.
+- **Modello**: il modello del dispositivo Surface verrà visualizzato qui, ad esempio Surface Book 2 o Surface Pro 7. L'esatta configurazione del dispositivo non viene visualizzata, ad esempio processore, dimensioni dei dischi o dimensioni della memoria.
 - **UUID**: codice Universally Unique Identification specifico del dispositivo e usato per identificare il dispositivo durante la distribuzione o la gestione.
 
 - **Serial Number**: numero usato per identificare questo dispositivo Surface specifico per gli scenari di tag asset e supporto.
@@ -88,9 +93,9 @@ La pagina Sicurezza consente di impostare una password per proteggere le imposta
 
 - Numeri: 1-0
 
-- Caratteri speciali: !@#$%^&*()?<>{} []-_=+|.,;:'""
+- Caratteri speciali: !@#$%^&*()?<>{}[]-_=+|.,;:'""
 
-La password deve contenere almeno 6 caratteri e fa distinzione tra maiuscole e minuscole.
+La password deve contenere almeno sei caratteri e fa distinzione tra maiuscole e minuscole.
 
 ![Aggiungi una password per proteggere le impostazioni UEFI di Surface.](images/manage-surface-uefi-fig2.png "Add a password to protect Surface UEFI settings")
 
@@ -102,7 +107,7 @@ Nella pagina Security puoi anche modificare la configurazione di Avvio protetto 
 
 *Figura 4. Configurazione di Avvio protetto*
 
-A seconda del dispositivo, potresti anche essere in grado di vedere se il TPM è abilitato o disabilitato. Se non viene visualizzata l'impostazione **Abilita TPM,** aprire tpm.msc in Windows per verificare lo stato, come illustrato nella figura 5. Il dispositivo TPM viene usato per autenticare la crittografia per i dati del dispositivo con BitLocker. Per altre informazioni, vedi [Panoramica di BitLocker.](/windows/security/information-protection/bitlocker/bitlocker-overview)
+A seconda del dispositivo, potresti anche essere in grado di vedere se il TPM è abilitato o disabilitato. Se non viene visualizzata l'impostazione **Abilita TPM**, aprire tpm.msc in Windows per verificare lo stato, come illustrato nella figura 5. Il dispositivo TPM viene usato per autenticare la crittografia per i dati del dispositivo con BitLocker. Per altre informazioni, vedi Panoramica [di BitLocker](/windows/security/information-protection/bitlocker/bitlocker-overview).
 
 ![Console TPM.](images/manage-surface-uefi-fig5-a.png "TPM console")
 
@@ -126,7 +131,7 @@ La pagina Dispositivi consente di abilitare o disabilitare dispositivi e compone
 
 - Audio integrato (altoparlanti e microfono)
 
-Ogni dispositivo è elencato con un pulsante del dispositivo di scorrimento che puoi spostare nella posizione **Attivato** (abilitato) o **Disattivato** (disabilitato), come illustrato nella figura 6.
+Ogni dispositivo è elencato con un pulsante del dispositivo di scorrimento che puoi spostare nella posizione **Attivato (abilitato** ) o **Disattivato** (disabilitato), come illustrato nella figura 6.
 
 :::image type="content" alt-text="Abilitare e disabilitare dispositivi specifici." source="images/manage-surface-uefi-fig5a.png":::
 
@@ -146,7 +151,7 @@ La pagina Configurazione di avvio consente di modificare l'ordine dei dispositiv
 
 Puoi eseguire l'avvio da un dispositivo specifico immediatamente oppure puoi scorrere rapidamente verso sinistra sulla voce del dispositivo nell'elenco usando il touchscreen. Puoi anche eseguire l'avvio immediatamente da un dispositivo USB o da una scheda Ethernet USB quando il dispositivo Surface è spento premendo il pulsante di **riduzione del volume** e quello di **accensione** simultaneamente.
 
-Per fare in modo che l'ordine di avvio specificato sia attivo, è necessario impostare l'opzione **Abilita sequenza di** avvio alternativa su **Attivato,** come illustrato nella figura 7.
+Per attivare l'ordine di avvio specificato, è necessario impostare l'opzione **Abilita sequenza di avvio alternativa** su **Attivato**, come illustrato nella figura 7.
 
 :::image type="content" alt-text="Configura l'ordine di avvio per il dispositivo Surface." source="images/manage-surface-uefi-fig6.png":::
 
@@ -156,16 +161,16 @@ Poi anche attivare o disattivare il supporto IPv6 per PXE con l'opzione **Enable
 
 ## <a name="uefi-menu-management"></a>Menu UEFI: Gestione
 
-La pagina Gestione consente di gestire l'uso di Zero Touch UEFI Management e di altre funzionalità nei dispositivi idonei, tra cui Surface Pro 7, Surface Pro X e Surface Laptop 3.  
+La pagina Gestione consente di gestire l'uso di Zero Touch UEFI Management e altre funzionalità nei dispositivi idonei, tra cui Surface Pro 8, Surface Go 3, Surface Laptop Studio, Surface Pro 7+, Surface Pro 7, Surface Pro X, Surface Laptop 4 , Surface Laptop 3, Surface Laptop edizione Standard e Surface Book 3. 
 
 :::image type="content" alt-text="Gestire l'accesso a Zero Touch UEFI Management e ad altre funzionalità." source="images/manage-surface-uefi-fig7a.png":::
 
 *Figura 8. Gestire l'accesso a Zero Touch UEFI Management e ad altre funzionalità*
 
-Zero Touch UEFI Management consente di gestire in remoto le impostazioni UEFI usando un profilo del dispositivo in Intune denominato DFCI (Device Firmware Configuration Interface). Se non si configura questa impostazione, la possibilità di gestire i dispositivi idonei con DFCI è impostata su **Pronto.** Per impedire la DFCI, selezionare **Rifiuta.**
+Zero Touch UEFI Management consente di gestire in remoto le impostazioni UEFI usando un profilo del dispositivo in Intune denominato Device Firmware Configuration Interface (DFCI). Se non si configura questa impostazione, la possibilità di gestire i dispositivi idonei con DFCI è impostata su **Pronto**. Per impedire la DFCI, seleziona **Rifiuta esplicitamente**.
 
 > [!NOTE]
-> La pagina delle impostazioni di gestione UEFI e l'uso di DFCI sono attualmente disponibili per Surface Pro 7+, Surface Laptop Go, Surface Book 3, Surface Laptop 4, Surface Laptop 3, Surface Pro 7 e Surface Pro X. Per altre informazioni, vedi [Gestione di Intune delle impostazioni UEFI di Surface.](surface-manage-dfci-guide.md)
+> La pagina delle impostazioni di gestione UEFI e l'uso di DFCI sono attualmente disponibili per Surface Laptop edizione Standard, Surface Laptop Studio, Surface Pro 8, Surface Go 3, Surface Laptop 4, Surface Laptop Go, Surface Book 3, Surface Laptop 3, Surface Pro 7+, Surface Pro 7 e Surface Pro X.  Per altre informazioni, vedi [Gestione di Intune delle impostazioni UEFI di Surface](surface-manage-dfci-guide.md).
 
 ## <a name="uefi-menu-exit"></a>Menu UEFI: Esci
 
@@ -177,7 +182,7 @@ Utilizzare il **pulsante Riavvia** ora nella **pagina Esci** per uscire da impos
 
 ## <a name="surface-uefi-boot-screens"></a>Schermate di avvio UEFI di Surface
 
-Quando aggiorni il firmware del dispositivo Surface, tramite Windows Update o un'installazione manuale, gli aggiornamenti non vengono applicati immediatamente al dispositivo, ma al successivo ciclo di riavvio. Per altre informazioni sul processo di aggiornamento del firmware di Surface, vedere Gestire e distribuire gli aggiornamenti di driver e [firmware di Surface.](manage-surface-driver-and-firmware-updates.md) Lo stato di avanzamento dell'aggiornamento del firmware viene visualizzato su uno schermo con barre di stato di colori diversi per indicare il firmware di ogni componente. L'indicatore di stato di ogni componente viene visualizzato nelle figure da 9 a 18.
+Quando aggiorni il firmware del dispositivo Surface, tramite Windows Update o un'installazione manuale, gli aggiornamenti non vengono applicati immediatamente al dispositivo, ma al successivo ciclo di riavvio. Per altre informazioni sul processo di aggiornamento del firmware di Surface, vedere [Gestire e distribuire gli aggiornamenti di driver e firmware di Surface](manage-surface-driver-and-firmware-updates.md). Lo stato di avanzamento dell'aggiornamento del firmware viene visualizzato su uno schermo con barre di stato di colori diversi per indicare il firmware di ogni componente. L'indicatore di stato di ogni componente viene visualizzato nelle figure da 9 a 18.
 
 ![Aggiornamento del firmware UEFI di Surface con barra di avanzamento blu.](images/manage-surface-uefi-fig8.png "Surface UEFI firmware update with blue progress bar")
 
@@ -228,7 +233,7 @@ Quando aggiorni il firmware del dispositivo Surface, tramite Windows Update o un
 
 ## <a name="references"></a>Riferimenti
 
-1. Surface Go e Surface Go 2 usano un UEFI di terze parti e non supportano DFCI.
+1. Surface Go e Surface Go 2 usano un UEFI di terze parti e non supportano DFCI. DFCI è attualmente disponibile per Surface Laptop edizione Standard, Surface Laptop Studio, Surface Pro 8, Surface Go 3, Surface Laptop 4, Surface Laptop Go, Surface Book 3, Surface Laptop 3, Surface Pro 7+, Surface Pro 7 e Surface Pro X.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
