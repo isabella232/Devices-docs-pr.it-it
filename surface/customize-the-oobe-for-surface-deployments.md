@@ -14,12 +14,12 @@ author: coveminer
 ms.author: greglin
 ms.topic: article
 ms.audience: itpro
-ms.openlocfilehash: f704541a2d862550250794308df6201c38b09e15
-ms.sourcegitcommit: 6d531906c36da51cb4032a220d70182e686114a8
+ms.openlocfilehash: f460577c6c0d87586d80e183dfeaf2796b8a3bbe
+ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "11721266"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "12338299"
 ---
 # <a name="customize-the-oobe-for-surface-deployments"></a>Personalizzare la Configurazione guidata per le distribuzioni di Surface
 
@@ -38,7 +38,7 @@ In alcuni scenari potresti voler fornire automazione completa per garantire che 
 Questo articolo contiene un riepilogo degli scenari in cui una distribuzione potrebbe richiedere passaggi aggiuntivi. Sono inoltre disponibili le informazioni necessarie per garantire la realizzazione dell'esperienza desiderata su qualsiasi nuovo dispositivo Surface distribuito. Questo articolo è destinato agli amministratori che hanno familiarità con il processo di distribuzione, nonché con concetti come i file di risposte e le [immagini di riferimento](https://technet.microsoft.com/itpro/windows/deploy/create-a-windows-10-reference-image).
 
 >[!NOTE]
->Sebbene la fase di installazione della Configurazione guidata sia ancora in esecuzione come parte di una soluzione di distribuzione automatizzata, ad esempio [Microsoft Deployment Toolkit (MDT)](/mem/configmgr/mdt) o [Microsoft Endpoint Configuration Manager Operating System Deployment (OSD),](/mem/configmgr/osd/)è automatizzata dalle impostazioni fornite nella procedura guidata di distribuzione e nella sequenza di attività.
+>Sebbene la fase di installazione della Configurazione guidata sia ancora in esecuzione come parte di una soluzione di distribuzione automatizzata, ad esempio [Microsoft Deployment Toolkit (MDT)](/mem/configmgr/mdt) o [Microsoft Endpoint Configuration Manager Operating System Deployment (OSD),](/mem/configmgr/osd/) viene automatizzata dalle impostazioni fornite nella procedura guidata di distribuzione e nella sequenza di attività.
 
 ## <a name="scenario-1-wireless-networking-in-oobe-with-mdt-2013"></a>Scenario 1: rete wireless nella Configurazione guidata con MDT 2013
 
@@ -48,7 +48,7 @@ Per evitare che una distribuzione automatica venga arrestata da questa pagina, l
 
 ## <a name="scenario-2-surface-pen-pairing-in-oobe"></a>Scenario 2: associazione della Penna per Surface nella Configurazione guidata
 
-Quando estrai un dispositivo Surface Pro 3, Surface Pro 4, Surface Book o Surface Studio dalla confezione per la prima volta e lo avvii, il completamento dell'installazione dell'immagine produttore computer include un prompt che ti chiede di associare al dispositivo la Penna per Surface inclusa. Questo prompt viene fornito solo dall'immagine produttore computer inclusa con il dispositivo e non è compreso in altre immagini usate per la distribuzione, come i supporti di installazione di Windows Enterprise scaricati dal Centro servizi per contratti multilicenza. Poiché l'associazione della Penna per Surface Bluetooth al di fuori di questa esperienza richiede l'uso del Pannello di controllo o della funzionalità Impostazioni PC e l'associazione manuale di un dispositivo Bluetooth, potresti voler fare in modo che gli utenti o un tecnico usino questo prompt per eseguire l'operazione di associazione.
+Quando prendi un dispositivo Surface per la prima volta e lo avvia, l'esperienza di prima esecuzione dell'immagine di fabbrica include un prompt che ti chiede di associare la penna surface inclusa al dispositivo. Questo prompt viene fornito solo dall'immagine produttore computer inclusa con il dispositivo e non è compreso in altre immagini usate per la distribuzione, come i supporti di installazione di Windows Enterprise scaricati dal Centro servizi per contratti multilicenza. Poiché l'associazione della Penna per Surface Bluetooth al di fuori di questa esperienza richiede l'uso del Pannello di controllo o della funzionalità Impostazioni PC e l'associazione manuale di un dispositivo Bluetooth, potresti voler fare in modo che gli utenti o un tecnico usino questo prompt per eseguire l'operazione di associazione.
 
 Per fornire l'esperienza di associazione della Penna per Surface del produttore computer nella Configurazione guidata, devi copiare quattro file dall'immagine produttore computer di Surface all'immagine di riferimento. Puoi copiare questi file nell'ambiente di riferimento prima di acquisire l'immagine di riferimento oppure puoi aggiungerli in un secondo momento usando Gestione e manutenzione immagini distribuzione per montare l'immagine. I quattro file necessari sono:
 
@@ -57,7 +57,7 @@ Per fornire l'esperienza di associazione della Penna per Surface del produttore 
 - %windir%\\system32\\oobe\\info\\default\\1033\\PenError\_en-US.png
 - %windir%\\system32\\oobe\\info\\default\\1033\\PenSuccess\_en-US.png
 
->[!NOTE]
->Devi copiare i file da un'immagine produttore computer per il dispositivo Surface dello stesso modello in cui intendi eseguire la distribuzione. Ad esempio, è consigliabile utilizzare i file di un Surface Pro 7 per la distribuzione in Surface Pro 7 e i file di Surface Book 2 per distribuire Surface Book 2, ma non è consigliabile utilizzare i file di Surface Pro 7 per distribuire Surface Book o Surface Pro 6.
+>[!TIP]
+>Devi copiare i file da un'immagine produttore computer per il dispositivo Surface dello stesso modello in cui intendi eseguire la distribuzione. Ad esempio, è consigliabile utilizzare i file di Surface Pro 8 per la distribuzione in Surface Pro 8 e i file di Surface Book 3 per distribuire Surface Book 3, ma non è consigliabile utilizzare i file di Surface Pro 8 per distribuire Surface Book 3 o Surface Pro 7.
 
 Il processo dettagliato per l'aggiunta di questi file necessari a un'immagine viene descritto nella pagina dei [suggerimenti per la distribuzione della Penna per Surface Pro 3 e OneNote](https://blogs.technet.microsoft.com/askcore/2014/07/15/deploying-surface-pro-3-pen-and-onenote-tips/). Questo post di blog contiene anche alcuni suggerimenti per garantire l'installazione degli aggiornamenti per l'esperienza di creazione rapida delle note con la Penna per Surface, che permette agli utenti di inviare note a OneNote con un solo clic.

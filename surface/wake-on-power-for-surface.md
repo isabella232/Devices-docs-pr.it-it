@@ -1,23 +1,16 @@
 ---
-title: Come abilitare la riattivazione dell'alimentazione per Surface
-ms.author: v-todmc
+title: Riattivazione alimentazione per i dispositivi Surface
+ms.author: greglin
 author: mccoybot
 audience: ITPro
 search.appverid:
 - SPO160
 - MET150
-appliesto:
-- Surface Book 3
-- Surface Pro 7+
-- Surface Pro 7
-- Surface Laptop 3
-- Surface Pro X
-- Surface Laptop Go
 ms.custom:
 - CI 121602
 ms.reviewer: hachidan
-description: Descrive come abilitare e disabilitare la riattivazione in Power per i dispositivi Surface.
-keywords: aggiornamento, distribuzione, driver, WOL, Wake-on-LAN
+description: Descrive come abilitare e disabilitare Wake on Power per i dispositivi Surface.
+keywords: aggiornare, distribuire, driver, wol, wake-on-lan
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.pagetype: surface, devices
@@ -26,81 +19,88 @@ ms.localizationpriority: medium
 ms.topic: article
 manager: laurawi
 ms.audience: itpro
-ms.date: 01/15/2021
-ms.openlocfilehash: 6ad359861f6af29c567bf0fbf26878ec15c7c642
-ms.sourcegitcommit: 1053479c191fd10651d31a466fad1769fb0cd28b
+ms.date: 12/08/2021
+ms.openlocfilehash: e8e4ddbd559fc6aea2d04e61208b911ebef3ec22
+ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "11271560"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "12338399"
 ---
-# Riattivazione alimentazione per i dispositivi Surface
+# <a name="wake-on-power-for-surface-devices"></a>Riattivazione alimentazione per i dispositivi Surface
 
-I dispositivi Surface possono essere spenti quando si è lontani dalla propria scrivania o impostati come modalità di sospensione per risparmiare la durata della batteria. Per migliorare la gestibilità di questi dispositivi, Wake on Power consente ai dispositivi Surface compatibili di iniziare automaticamente quando si riconnetteno a Power. Per configurare la riattivazione in Power, è possibile usare la modalità di gestione di Surface Enterprise (SEMM) tramite Surface UEFI Configurator o UEFI Manager.
+I dispositivi Surface possono essere spenti mentre sei lontano dalla scrivania o impostato sulla modalità ibernazione per risparmiare tempo a batteria. Per migliorare la gestibilità di questi dispositivi, Wake on Power consente ai dispositivi Surface compatibili di avviarsi automaticamente quando vengono riconnessi all'alimentazione. Per configurare Wake on Power, puoi usare surface Enterprise Management Mode (SEMM) tramite Surface UEFI Configurator o UEFI Manager.
 
-La funzionalità riattiva in Power è disponibile nei dispositivi seguenti:
+La funzionalità Riattivazione è disponibile nei dispositivi seguenti:
 
-- Surface Pro 7 +
-- Surface Book 3
-- Surface Pro 7
-- Laptop Surface 3
-- Portatile Surface go
-- Surface Pro X 
+- Surface Pro 8 (solo SKU commerciali)
+- Surface Pro 7+ (solo SKU commerciali)
+- Surface Pro X (tutti gli SKU)
+- Surface Pro 7 (tutti gli SKU)
+- Surface Go 3 (solo SKU commerciali)
+- Surface Laptop Studio (solo SKU commerciali)
+- Surface Book 3 (tutti gli SKU)
+- Surface Laptop 4 (solo SKU commerciali)
+- Surface Laptop 3 (tutti gli SKU)
+- Surface Laptop Go (tutti gli SKU)
 
 
-##  <a name="overview-and-prerequisites"></a>Panoramica e prerequisiti
+>[!TIP]
+> Le SKU commerciali (Surface per le aziende) vengono eseguite Windows 10 Pro/Enterprise o Windows 11 Pro/Enterprise; le SKU consumer vengono eseguite Windows 10/Windows 11 Home. Per altre informazioni, vedi [Visualizzare le informazioni di sistema](https://support.microsoft.com/windows/view-your-system-info-a965a8f2-0773-1d65-472a-1e747c9ebe00). 
 
-Surface UEFI Configurator consente di salvare singole impostazioni UEFI in un pacchetto di Windows Installer. msi per la distribuzione in dispositivi di destinazione. 
+## <a name="overview-and-prerequisites"></a>Panoramica e prerequisiti
+
+Surface UEFI Configurator ti consente di salvare singole impostazioni UEFI in un pacchetto Windows Installer .msi per la distribuzione nei dispositivi di destinazione. 
 
 > [!NOTE]
-> Questo articolo presuppone che tu sappia usare SEMM. Per altre informazioni, vedere la documentazione sulla [modalità di gestione di Surface Enterprise (SEMM)](surface-enterprise-management-mode.md) .
+> Questo articolo presuppone che tu sappia come usare SEMM. Per altre informazioni, vedi la [documentazione relativa alla modalità di gestione di Surface Enterprise (SEMM](surface-enterprise-management-mode.md)).
 
-##  <a name="to-enable-wake-on-power"></a>Per abilitare la riattivazione in Power
+## <a name="to-enable-wake-on-power"></a>Per abilitare l'attivazione dell'alimentazione
 
-1.  Scaricare l'ultima versione di [Surface UEFI Configurator](https://www.microsoft.com/download/confirmation.aspx?id=46703).
-2.  Accedere al dispositivo Surface come amministratore, aprire il **Configuratore di Surface UEFI**, selezionare **dispositivi Surface**e quindi fare clic su **Avanti**.
+1.  Scarica la versione più recente di [Surface UEFI Configurator](https://www.microsoft.com/download/confirmation.aspx?id=46703).
+2.  Accedi al dispositivo Surface come amministratore, apri **Configuratore UEFI di Surface**, seleziona **Dispositivi Surface** e quindi seleziona **Avanti**.
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-1.png" alt-text="Selezionare dispositivi Surface e selezionare Avanti.":::
-3.  Selezionare **Start**, quindi selezionare **Crea** in **pacchetto di configurazione**.
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-1.png" alt-text="Seleziona Dispositivi Surface e seleziona Avanti.":::
+3.  Seleziona **Start**, quindi seleziona **Crea in** **Pacchetto di configurazione**.
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-2.png" alt-text="Selezionare Crea pacchetto di configurazione.":::
-4.  Selezionare **protezione certificato**e aggiungere il file con estensione pfx certificato. 
-5. Immettere la password, scegliere **Avanti**, aggiungere la **protezione tramite password**, in base alle esigenze e quindi selezionare **Avanti**.
-6.  Nella pagina **scegliere il tipo di superficie da cui si vuole assegnare la destinazione** selezionare i dispositivi di destinazione in base alle esigenze. Ad esempio, selezionare **Surface Pro 7**.
-7.  Nella pagina **funzionalità avanzate** selezionare **riattiva in Power**, impostare la caratteristica **su**attivato e quindi selezionare **Avanti**.
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-2.png" alt-text="Seleziona Crea pacchetto di configurazione.":::
+4.  Selezionare **Protezione certificato** e aggiungere il file PFX del certificato. 
+5. Immettere la password, selezionare **Avanti**, aggiungere **Password di** protezione, se appropriato, quindi selezionare **Avanti**.
+6.  Nella pagina **Scegli il tipo di Surface** di destinazione seleziona i dispositivi di destinazione in base alle esigenze. Ad esempio, selezionare **Surface Pro 7**.
+7.  Nella pagina **Funzionalità avanzate** selezionare **Riattiva l'alimentazione**, impostare la funzionalità su **Attivata** e quindi selezionare **Avanti**.
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-3.png" alt-text="Selezionare Riattiva in Power e imposta su attivato."::: 
-8.  Nella pagina **completata** selezionare **fine**.
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-3.png" alt-text="Seleziona Wake on Power e imposta su On."::: 
+8.  Nella pagina **Operazione completata** selezionare **Fine**.
 
     > [!NOTE]
-    > Se è la prima volta che si forniscono impostazioni al dispositivo, verrà richiesto di specificare anche gli ultimi due caratteri dell'identificazione personale del certificato. 
-9.  Salvare il pacchetto MSI. 
+    > Se è la prima volta che fornisci impostazioni al dispositivo, ti verrà richiesto di fornire anche gli ultimi due caratteri dell'identificazione personale del certificato. 
+9.  Salvare il .msi pacchetto. 
 
-##  <a name="apply-the-msi-package"></a>Applicare il pacchetto MSI 
+## <a name="apply-the-msi-package"></a>Applicare il pacchetto MSI 
 
-Puoi applicare il pacchetto MSI ai dispositivi della rete usando strumenti di distribuzione del software come Microsoft endpoint Configuration Manager. Questa procedura include i passaggi per installare il pacchetto nel computer locale. 
+Puoi applicare il pacchetto MSI ai dispositivi della rete usando strumenti di distribuzione software come Microsoft Endpoint Configuration Manager. Questa procedura include i passaggi per installare il pacchetto nel computer locale. 
 
-1.  In un prompt dei comandi con privilegi elevati, immettere il percorso completo del file MSI per eseguire il pacchetto MSI. 
+1.  Al prompt dei comandi con privilegi elevati immettere il percorso completo del file .msi per eseguire il pacchetto .msi file. 
 
     ```
     C:\SEMM\wake-on-power.msi 
     ```
 
-2.  Nella finestra di dialogo **avviso** selezionare **OK** o disabilitare BitLocker, in base alle esigenze.
+2.  Nella finestra **di dialogo** Avviso selezionare **OK** o disabilitare BitLocker, in base alle esigenze.
 
     :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-4.png" alt-text="Selezionare OK o disabilitare BitLocker in base alle esigenze.":::
-3.  Nella pagina di benvenuto selezionare **Avanti** per eseguire il pacchetto e applicare l'impostazione UEFI appena configurata.
+3.  Nella pagina iniziale seleziona **Avanti** per eseguire il pacchetto e applicare l'impostazione UEFI appena configurata.
 
-    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-5.png" alt-text="Una pagina iniziale, selezionare Avanti.":::
+    :::image type="content" source="images/wake-on-power-for-surface/wake-on-power-for-surface-5.png" alt-text="Nella pagina iniziale selezionare Avanti.":::
 4.  Riavviare il dispositivo. 
 
-La riattivazione dell'alimentazione è ora configurata. Per verificare le impostazioni, disattivare il dispositivo, scollegare l'alimentazione e quindi riconnettere l'alimentazione. Il dispositivo dovrebbe iniziare automaticamente. 
+La riattivazione dell'alimentazione è ora configurata. Per testare le impostazioni, spegnere il dispositivo, scollegare l'alimentazione e quindi riconnettere l'alimentazione. Il dispositivo deve essere avviato automaticamente. 
 
-##  <a name="references"></a>Riferimenti
+## <a name="references"></a>Riferimenti
 
-Per altre informazioni, vedere gli articoli seguenti. 
+Per ulteriori informazioni, vedere gli articoli seguenti. 
 
 - [Surface Enterprise Management Mode](surface-enterprise-management-mode.md)
-- [Riattivare la LAN per i dispositivi Surface](wake-on-lan-for-surface-devices.md)
+- [Wake on LAN per dispositivi Surface](wake-on-lan-for-surface-devices.md)
 
-Hai ancora bisogno di assistenza? Accedere alla [community Microsoft](https://answers.microsoft.com/).
+Hai ancora bisogno di assistenza? Passare a [Microsoft Community](https://answers.microsoft.com/).

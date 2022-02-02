@@ -14,16 +14,16 @@ author: coveminer
 ms.author: greglin
 ms.topic: article
 ms.audience: itpro
-ms.openlocfilehash: 0eb0eb1e1d73852a2131c5aa5d6a7731ce78d54f
-ms.sourcegitcommit: 6d531906c36da51cb4032a220d70182e686114a8
+ms.openlocfilehash: 39c51b311a1c1329d0f1f54b787e975d42be0737
+ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "11721256"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "12338216"
 ---
 # <a name="ethernet-adapters-and-surface-deployment"></a>Schede Ethernet e distribuzione di Surface
 
-Questo articolo fornisce indicazioni per eseguire una distribuzione di rete dei dispositivi Surface più recenti Surface Pro 3 e versioni successive.
+Questo articolo fornisce indicazioni per eseguire una distribuzione di rete dei dispositivi Surface più recenti, tra cui Surface Pro 3 e versioni successive.
 
 La distribuzione di rete nei dispositivi Surface può porre alcune sfide complesse agli amministratori di sistema. A causa dell'assenza di una scheda di rete Ethernet cablata nativa, gli amministratori devono fornire la connettività tramite una scheda Ethernet rimovibile.
 
@@ -31,14 +31,15 @@ La distribuzione di rete nei dispositivi Surface può porre alcune sfide comples
 
 Prima di affrontare le problematiche correlate a come avviare l'ambiente di distribuzione o al modo in cui i dispositivi verranno riconosciuti dalla soluzione di distribuzione, devi usare una scheda di rete cablata.
 
-L'aspetto principale di cui tenere conto quando selezioni una scheda Ethernet è il modo in cui sarà in grado di avviare il dispositivo Surface dalla rete. Se stai pre-gestione temporanea dei client con servizi di distribuzione di Windows (WDS) o se stai usando Microsoft Endpoint Configuration Manager, puoi anche valutare se le schede Ethernet rimovibili saranno dedicate a un dispositivo Surface specifico o condivise tra più dispositivi. Per ulteriori informazioni sui potenziali conflitti con schede condivise, vedere Gestire indirizzi MAC con schede [Ethernet](#manage-mac-addresses) rimovibili più avanti in questo articolo.
+L'aspetto principale di cui tenere conto quando selezioni una scheda Ethernet è il modo in cui sarà in grado di avviare il dispositivo Surface dalla rete. Se stai pre-gestione temporanea dei client con servizi di distribuzione di Windows (WDS) o se stai usando Microsoft Endpoint Configuration Manager, puoi anche decidere se le schede Ethernet rimovibili saranno dedicate a un dispositivo Surface specifico o condivise tra più dispositivi. Per ulteriori informazioni sui potenziali conflitti con schede condivise, vedere [Gestire indirizzi MAC con schede Ethernet rimovibili](#manage-mac-addresses) più avanti in questo articolo.
 
 L'avvio dalla rete (avvio PXE) è supportato solo quando usi una scheda Ethernet o un alloggiamento di espansione Microsoft. Per eseguire l'avvio dalla rete, il chipset nella scheda Ethernet o nel dock deve essere rilevato e configurato come dispositivo di avvio nel firmware del dispositivo Surface. Le schede Ethernet Microsoft, come la scheda Ethernet Surface e il [dock Surface](https://www.microsoft.com/surface/accessories/surface-dock) usano un chipset compatibile con il firmware per Surface.
 
 I dispositivi Ethernet seguenti sono supportati per l'avvio di rete con i dispositivi Surface:
 
 - Surface USB-C to Ethernet and USB 3.0 Adapter
-- Scheda Ethernet da Surface USB 3.0 a Gigabit
+- Adattatore Ethernet da Surface USB 3.0 a Gigabit
+- Surface USB-C Travel Hub
 - Surface Dock
 - Surface Dock 2
 - Alloggiamento di espansione per Surface 3
@@ -82,4 +83,4 @@ Per accedere al firmware di un dispositivo Surface:
 
 Se esegui la distribuzione con Servizi di distribuzione Windows, l'indirizzo MAC viene usato solo per identificare un computer quando il server di distribuzione è configurato per rispondere solo a client pre-installazione noti. Durante la pre-installazione di un client, un amministratore crea un account computer in Active Directory e definisce il computer tramite l'indirizzo MAC o l'UUID di sistema. Per evitare conflitti di identità causati da schede Ethernet condivise, devi usare l'[UUID di sistema per definire client pre-installazione](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc742034(v=ws.11)). In alternativa, puoi configurare Servizi di distribuzione Windows per rispondere a client sconosciuti che non richiedono la definizione tramite indirizzo MAC o UUID di sistema selezionando l'opzione **Rispondi a tutti i computer client (conosciuti e sconosciuti)** nella scheda [**Risposta PXE** ](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732360(v=ws.11))nelle proprietà di **Server di distribuzione Windows**.
 
-Il rischio di conflitti con schede Ethernet condivise aumenta notevolmente con Configuration Manager. Mentre Servizi di distribuzione Windows usa gli indirizzi MAC per definire singoli sistemi solo quando è configurato a questo scopo, Configuration Manager usa l'indirizzo MAC per definire singoli sistemi ogni volta che esegue una distribuzione in computer nuovi o sconosciuti. Questo comportamento può produrre dispositivi configurati non correttamente o addirittura l'impossibilità di distribuire più di un sistema con una scheda Ethernet condivisa. Esistono diverse possibili soluzioni per questa situazione descritte in dettaglio in [How to Use The Same External Ethernet Adapter for Multiple SCCM OSD](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/how-to-use-the-same-external-ethernet-adapter-for-multiple-sccm/ba-p/257374), in un post di blog sul Blog sull'infrastruttura e la sicurezza di base.
+Il rischio di conflitti con schede Ethernet condivise aumenta notevolmente con Configuration Manager. Mentre Servizi di distribuzione Windows usa gli indirizzi MAC per definire singoli sistemi solo quando è configurato a questo scopo, Configuration Manager usa l'indirizzo MAC per definire singoli sistemi ogni volta che esegue una distribuzione in computer nuovi o sconosciuti. Questo comportamento può produrre dispositivi configurati non correttamente o addirittura l'impossibilità di distribuire più di un sistema con una scheda Ethernet condivisa. Esistono diverse possibili soluzioni per questa situazione descritte in dettaglio in [How to Use The Same External Ethernet Adapter for Multiple SCCM OSD](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/how-to-use-the-same-external-ethernet-adapter-for-multiple-sccm/ba-p/257374), un post di blog sul blog core infrastructure and security.

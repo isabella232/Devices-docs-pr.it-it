@@ -1,7 +1,7 @@
 ---
-title: Distribuire Windows 10 ai dispositivi Surface con Microsoft Deployment Toolkit (Surface)
-description: Esaminare il processo consigliato per distribuire Windows 10 ai dispositivi Surface con Microsoft Deployment Toolkit.
-keywords: superficie di Windows 10, automatizza, Personalizza, MDT
+title: Preparare la distribuzione di Surface con Microsoft Deployment Toolkit
+description: Illustra il processo consigliato per la distribuzione di Windows 10 nei dispositivi Surface con Microsoft Deployment Toolkit.
+keywords: windows 10 surface, automatizza, personalizza, mdt
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: surface
@@ -14,28 +14,28 @@ ms.audience: itpro
 ms.reviewer: ''
 manager: laurawi
 ms.date: 10/12/2020
-ms.openlocfilehash: 858b6726f1127e3c439864f8946274ed0ea1edd3
-ms.sourcegitcommit: c1efb75e8524193bdc0a5f7496dc23a92ac665c8
+ms.openlocfilehash: 9578893ad96d84380adfc038dd42c4791d29c7cd
+ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "11114564"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "12338279"
 ---
-# Distribuire Windows 10 ai dispositivi Surface con Microsoft Deployment Toolkit
+# <a name="prepare-surface-deployment-with-microsoft-deployment-toolkit"></a>Preparare la distribuzione di Surface con Microsoft Deployment Toolkit
 
-**Ambito di applicazione**
+**Si applica a**
 
-- Surface Studio e versioni successive
+- Surface Studio (tutte le generazioni)
 - Surface Pro 4 e versioni successive
-- Surface Book e versioni successive
-- Computer portatile Surface e versioni successive
-- Portatile Surface go
-- Surface Go
+- Surface Book (tutte le generazioni)
+- Surface Laptop (tutte le generazioni)
+- Surface Laptop Go 
+- Surface Go (tutte le generazioni)
 - Surface 3
-- Windows10
+- Windows 10
 
 > [!NOTE]
-> MDT non è supportato in Surface Pro X. Per altre informazioni, vedere [distribuzione, gestione e manutenzione di Surface Pro X](surface-pro-arm-app-management.md).
+> MDT non è supportato in Surface Pro X. Per ulteriori informazioni, vedere [Deploying, managing, and servicing Surface Pro X](surface-pro-arm-app-management.md).
 
-Per informazioni aggiornate sull'uso di MDT, vedere [distribuire un'immagine di Windows 10 con MDT](https://docs.microsoft.com/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt).
+Per le informazioni più recenti sull'uso di MDT, [fai riferimento a Distribuire un'immagine Windows 10 con MDT](/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt).
 

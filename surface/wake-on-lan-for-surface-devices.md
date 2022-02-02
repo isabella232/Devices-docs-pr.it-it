@@ -13,17 +13,17 @@ ms.topic: article
 ms.reviewer: jesko
 manager: laurawi
 ms.audience: itpro
-ms.date: 7/30/2021
-ms.openlocfilehash: 58ec7b7cdf0ad7b437619d7587db6084673de71a
-ms.sourcegitcommit: 6a7f96a497c8749a5997972db139542563769101
+ms.date: 11/30/2021
+ms.openlocfilehash: eed1cbedea2a39207846301fa6b4f6c2b2f6dd56
+ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2021
-ms.locfileid: "11710590"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "12337909"
 ---
 # <a name="wake-on-lan-for-surface-devices"></a>Riattivazione LAN per i dispositivi Surface 
 
-I dispositivi Surface che eseguono Windows 10 versione 1607 o successiva sono in grado di riattivazione LAN (WOL) da Modern Standby (noto anche come Standby connesso). Con WOL, gli amministratori IT possono riattivare in remoto i dispositivi ed eseguire automaticamente attività di gestione con Microsoft Endpoint Manager o soluzioni di terze parti.
+I dispositivi Surface che eseguono Windows 10 versione 1607 o successiva sono in grado di riattivazione LAN (WOL) da Modern Standby (noto anche come Standby connesso). Con WOL, gli amministratori IT possono riattivare in remoto i dispositivi ed eseguire automaticamente le attività di gestione con Microsoft Endpoint Manager o soluzioni di terze parti.
 
 >[!NOTE]
 >Per supportare WOL, i dispositivi Surface devono essere collegati all'alimentazione CA e usare una scheda Surface Ethernet connessa a una rete cablata.
@@ -46,23 +46,22 @@ Dispositivi Surface con supporto per WOL:
 - Surface Pro 4
 - Surface Pro (5° generazione)
 - Surface Pro (5° generazione) con LTE Advanced
-- Surface Book
-- Surface Laptop (prima generazione)
+- Surface Book (tutte le generazioni)
+- Surface Laptop (tutte le generazioni)
 - Surface Pro 6
 - Surface Book 2
-- Surface Laptop 2
-- Surface Go
-- Surface Go con LTE Advanced
+- Surface Go (tutte le generazioni)
 - Surface Studio 2 (vedere Surface Studio 2 istruzioni seguenti)
 - Surface Pro 7
 - Surface Pro 7+
-- Surface Laptop 3
+- Surface Pro 8
 - Surface Laptop Go
-- Surface Laptop 4
+- Surface Laptop Studio
+
 
 ## <a name="using-wol"></a>Utilizzo di WOL 
 
-Quando non sono in uso, i dispositivi Surface entrano in uno stato inattivo e a basso consumo noto come Standby moderno o Standby connesso. Gli amministratori IT possono attivare in remoto i dispositivi usando una richiesta di riattivazione (pacchetto magico) che contiene l'indirizzo MAC (Media Access Control) del dispositivo Surface di destinazione. La scheda di interfaccia di rete (NIC) di destinazione confronta l'indirizzo MAC con il proprio prima di svegliare il dispositivo. Se l'indirizzo MAC nella richiesta di riattivazione del pacchetto magico non corrisponde all'indirizzo MAC nella scheda NIC di destinazione, la scheda NIC non riattiva il dispositivo. Per ulteriori informazioni, consultare la [documentazione relativa alle origini di riattivazione](/windows-hardware/design/device-experiences/modern-standby-wake-sources)
+Quando non sono in uso, i dispositivi Surface entrano in uno stato inattivo e a basso consumo noto come Standby moderno o Standby connesso. Gli amministratori IT possono attivare in remoto i dispositivi usando una richiesta di riattivazione (pacchetto magico) che contiene l'indirizzo MAC (Media Access Control) del dispositivo Surface di destinazione. La scheda di interfaccia di rete di destinazione confronta l'indirizzo MAC con il proprio prima di svegliare il dispositivo. Se l'indirizzo MAC nella richiesta di riattivazione del pacchetto magico non corrisponde all'indirizzo MAC nella scheda NIC di destinazione, la nic non riattiva il dispositivo. Per ulteriori informazioni, consultare la [documentazione relativa alle origini di riattivazione](/windows-hardware/design/device-experiences/modern-standby-wake-sources)
 
 ## <a name="modern-standby"></a>Standby moderno
 
@@ -72,7 +71,7 @@ Lo standby moderno viene avviato quando l'utente fa entrare il sistema in stato 
 
 Per abilitare WOL in Surface Studio 2, è necessario eseguire la procedura seguente
 
-1. Aprire l'Editor del Registro di sistema (****  >  **Start Search**  >  **regedit.exe**) e creare le seguenti chiavi del Registro di sistema:
+1. Aprire l'editor del Registro di** sistema **(**StartSearch** > **** > regedit.exe) e creare le seguenti chiavi del Registro di sistema:
 
    ```console
    ; Set CONNECTIVITYINSTANDBY to 1:
