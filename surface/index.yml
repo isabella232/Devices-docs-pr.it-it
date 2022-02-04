@@ -29,12 +29,12 @@ conceptualContent:
   items:
     - title: Panoramica di Surface
       links:
+        - url: /surface/surface-laptop-se-overview
+          itemType: concept
+          text: Surface Laptop SE per l'istruzione
         - url: 'https://www.microsoft.com/surface/business/surface-pro-8'
           itemType: concept
           text: Surface Pro 8 per le aziende
-        - url: 'https://www.microsoft.com/surface/business/surface-laptop-studio'
-          itemType: concept
-          text: Surface Laptop Studio per le aziende
         - url: 'https://www.microsoft.com/surface/business'
           itemType: concept
           text: Esplorare tutta la famiglia di prodotti Surface
