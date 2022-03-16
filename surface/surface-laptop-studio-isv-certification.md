@@ -1,5 +1,5 @@
 ---
-title: Surface Laptop app testate/certificate isV di Studio
+title: Surface Laptop Studio App testate/certificate da ISV
 description: In questo articolo sono elencate le applicazioni testate/certificate dagli ISV per Surface Laptop Studio.
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -12,16 +12,19 @@ ms.date: 01/03/2022
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 7f1d7992bc60a43c973a91641008003fd9f0532d
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 57e63c34aaf41358c24224f7288fdc2cf5c86b09
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12338682"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449289"
 ---
-# <a name="surface-laptop-studio-isv-testedcertified-apps"></a>Surface Laptop app testate/certificate isV di Studio
+# <a name="surface-laptop-studio-isv-testedcertified-apps"></a>Surface Laptop Studio App testate/certificate da ISV
 
-Surface Laptop Studio con Nvidia RTX A2000 viene testato e verificato per le principali applicazioni ISV e offre un'accelerazione significativamente più veloce tra le applicazioni professionali.
+Surface Laptop Studio con Nvidia RTX A2000 viene testato e verificato per le principali applicazioni ISV e offre un'accelerazione notevolmente più veloce tra le applicazioni professionali.
 
 | App                                     | Descrizione                                                                                                                                                                                                                                                       |
 | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -31,6 +34,7 @@ Surface Laptop Studio con Nvidia RTX A2000 viene testato e verificato per le pri
 | **McNeel & Associates Rhino3D®** | Rhino 7 è supportato in Surface Laptop Studio con Nvidia RTX A2000 con GDDR6 da 4 GB, come testato da Microsoft:<br><br>- Riquadro di visualizzazione accelerato da GPU per una modellazione e un'esperienza di progettazione fluide e interattive.<br><br>- Supporta i cicli per il rendering 3D accelerato da GPU. |
 | **Siemens SolidEdge 2022**              | Surface Laptop Studio con Nvidia RTX A2000 con GDDR6 da 4 GB viene convalidato, certificato e consigliato da Siemens.                                                                                                                                                   |
 | **Esri ArcGIS Pro**                     | Surface Laptop Studio con Nvidia RTX A2000 con GDDR6 da 4 GB è certificato e consigliato da ESRI per ArcGIS Pro:<br><br> *"I'd absolutely see a GIS professional, even one that specializes in advanced 3D geospatial work, use this in place of a heavy workstation."* - Philip Mielke, product manager GIS 3D                                                                                                                                                     |
+| **Dassault Systemes Solidworks**                 | Surface Laptop Studio con Nvidia RTX A2000 con GDDR6 da 4 GB è certificato da Dassault Systemes for Solidworks. <br><br> - Solidworks Interactive Ray Tracer accelerato sia da RT Cores che da Tensor Cores; Denoiser accelerato ai.                                                                                                            |
 
 ## <a name="adobe-applications"></a>Applicazioni Adobe
 

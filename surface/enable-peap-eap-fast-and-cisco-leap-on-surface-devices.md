@@ -13,12 +13,15 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.openlocfilehash: 39cd721606a44fed21c2a8cf59baaf806db47959
-ms.sourcegitcommit: a5651e8c8f953fe3130dd476f4e06c16c172aaa4
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 368ab2bc1480c00ef27a9d35910a1db7a6856748
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/04/2021
-ms.locfileid: "11939505"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12448299"
 ---
 # <a name="enable-peap-eap-fast-and-cisco-leap-on-surface-devices"></a>Abilitare PEAP, EAP-FAST e Cisco LEAP in dispositivi Surface
 
@@ -84,5 +87,5 @@ Per specificare i protocolli in modo esplicito, segui questi passaggi:
 
 Per le organizzazioni che gestiscono i dispositivi Surface con Configuration Manager, la distribuzione del supporto PEAP, EAP-FAST o Cisco LEAP per tali dispositivi è ancora più semplice. È sufficiente importare ogni file MSI come applicazione dall'area Raccolta software e quindi configurare una distribuzione nella raccolta di dispositivi Surface.
 
-Per ulteriori informazioni su come distribuire le applicazioni con Configuration Manager, vedere [Creare e distribuire un'applicazione con Configuration Manager.](/mem/configmgr/apps/get-started/create-and-deploy-an-application)
+Per altre informazioni su come distribuire le applicazioni con Configuration Manager, vedi [Creare e distribuire un'applicazione con Configuration Manager](/mem/configmgr/apps/get-started/create-and-deploy-an-application).
 

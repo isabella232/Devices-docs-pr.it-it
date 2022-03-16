@@ -1,5 +1,5 @@
 ---
-title: Surface Management Portal
+title: Portale di gestione di Surface
 description: Questo articolo descrive come il nuovo portale di gestione di Surface offre una soluzione centralizzata per gestire, gestire e monitorare i dispositivi Surface su larga scala.
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -12,14 +12,17 @@ ms.date: 11/02/2021
 ms.reviewer: hachinda
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: a131e663aadbd10be039cff777001383178f7fc1
-ms.sourcegitcommit: 16889d72b0af81dfe79267c41574c3774e81f178
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 8c0f4f6c80ff7341b795839c3897dff6733414bc
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "12155174"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12448879"
 ---
-# <a name="surface-management-portal-overview"></a>Panoramica di Surface Management Portal
+# <a name="surface-management-portal-overview"></a>Panoramica del portale di gestione di Surface
 
 Integrato in Microsoft Endpoint Manager, il nuovo portale di gestione di Surface offre una soluzione centralizzata per gestire, gestire e monitorare i dispositivi Surface su larga scala.
 
@@ -33,9 +36,9 @@ Quando i dispositivi Surface vengono registrati per la gestione del cloud e gli 
 
 Vedi anche: [Problemi noti di](#known-issues) seguito. 
 
-## <a name="get-started"></a>Introduzione
+## <a name="get-started"></a>Informazioni di base
 
-Accedi a Microsoft Endpoint Manager, fai clic **su Tutti i servizi**e quindi fai clic su Surface Management **Portal.**
+Accedi a Microsoft Endpoint Manager, fai clic su **Tutti i servizi** e quindi fai clic su **Surface Management Portal**.
 
 :::image type="content" source="/surface/images/surface-management-portal/surface-management-portal-start.png" lightbox="/surface/images/surface-management-portal/surface-management-portal-start.png" alt-text="Avviare Surface Management Portal":::
 
@@ -71,7 +74,7 @@ Surface Management Portal offre una visibilità completa sull'attività di suppo
 
 ## <a name="try-for-free"></a>Provalo gratuitamente
 
-Surface Management Portal è disponibile per i clienti che usano Microsoft Endpoint Manager e hanno registrato dispositivi Surface tramite Intune. Se non si ha una nuova versione di Intune, configurare il tenant di Intune oggi visitando guida [introduttiva: provare a Microsoft Intune gratuitamente.](/mem/intune/fundamentals/free-trial-sign-up)
+Surface Management Portal è disponibile per i clienti che usano Microsoft Endpoint Manager e hanno registrato dispositivi Surface tramite Intune. Se non si ha una nuova versione di Intune, configurare il tenant di Intune oggi visitando guida [introduttiva: provare a Microsoft Intune gratuitamente](/mem/intune/fundamentals/free-trial-sign-up).
 
 ## <a name="known-issues"></a>Problemi noti
 

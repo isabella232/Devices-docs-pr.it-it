@@ -3,7 +3,7 @@ title: Windows Autopilot e dispositivi Surface
 ms.reviewer: ''
 manager: laurawi
 description: Informazioni sulle opzioni Windows distribuzione di Autopilot per i dispositivi Surface.
-keywords: autopilot, windows 10, surface, distribuzione
+keywords: autopilot, Windows 10, Windows 11, surface, distribuzione
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: surface, devices
@@ -14,18 +14,21 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.audience: itpro
 ms.date: 9/14/2020
-ms.openlocfilehash: bfcb8c09b3228730e3255c4f92948dc4acfea506
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: ca2dab5483ecb7ae11a102c56308742e348156bb
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12338539"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12448529"
 ---
 # <a name="windows-autopilot-and-surface-devices"></a>Windows Autopilot e dispositivi Surface
 
-Windows Autopilot è una tecnologia di distribuzione basata su cloud in Windows 10. Puoi usare Windows Autopilot per distribuire e configurare i dispositivi in remoto in un processo senza tocco.
+Windows Autopilot è una tecnologia di distribuzione basata su cloud in Windows 10 e Windows 11. Puoi usare Windows Autopilot per distribuire e configurare i dispositivi in remoto in un processo zero-touch direttamente fuori dalla casella.
 
-Tradizionalmente, i professionisti IT dedicano molto tempo alla creazione e alla personalizzazione di immagini che verranno successivamente distribuite nei dispositivi già disponibili con un sistema operativo perfettamente buono già installato su di essi. Windows Autopilot introduce un nuovo approccio di distribuzione zero-touch usando una raccolta di tecnologie per configurare e configurare i Windows dispositivi. In questo modo un reparto IT può configurare/personalizzare le immagini con poca o nessuna infrastruttura da gestire e un processo semplice e semplice. Dal punto di vista dell'utente, bastano pochi semplici passaggi per ottenere Surface in uno stato produttivo. Infatti, l'unica interazione richiesta dall'utente finale è la connessione a una rete e la verifica delle credenziali. Tutto ciò che si verifica dopo è completamente automatizzato.
+Tradizionalmente, i professionisti IT dedicano molto tempo alla creazione e alla personalizzazione di immagini che verranno successivamente distribuite nei dispositivi già disponibili con un sistema operativo perfettamente buono già installato su di essi. Windows Autopilot introduce un nuovo approccio alla distribuzione zero touch usando una raccolta di tecnologie per configurare e configurare Windows dispositivi. In questo modo un reparto IT può configurare/personalizzare le immagini con poca o nessuna infrastruttura da gestire e un processo semplice e semplice. Dal punto di vista dell'utente, bastano pochi semplici passaggi per ottenere Surface in uno stato produttivo. Infatti, l'unica interazione richiesta dall'utente finale è la connessione a una rete e la verifica delle credenziali. Tutto ciò che si verifica dopo è completamente automatizzato.
 
 Windows Autopilot consente di:
 
@@ -53,7 +56,7 @@ Autopilot è l'opzione di distribuzione consigliata per i dispositivi Surface, t
 
 L'ampia distribuzione di dispositivi Surface tramite Windows Autopilot, inclusa la registrazione da parte dei partner surface al momento dell'acquisto, richiede Windows 10 versione 1709 (Fall Creators Update) o versione successiva.
 
-Queste Windows supportano un valore hash di 4.000 byte (4k) che identifica in modo univoco i dispositivi per Windows Autopilot, necessaria per le distribuzioni su larga scala.
+Queste versioni Windows supportano un valore hash di 4.000 byte (4k) che identifica in modo univoco i dispositivi per Windows Autopilot, necessaria per le distribuzioni su larga scala.
 
 ## <a name="exchange-experience-on-surface-devices-in-need-of-repair-or-replacement"></a>Exchange nei dispositivi Surface che necessitano di riparazione o sostituzione
 
@@ -68,9 +71,9 @@ I clienti e i provider di soluzioni cloud Microsoft hanno la possibilità di reg
 
 ## <a name="surface-partners-enabled-for-windows-autopilot"></a>Partner surface abilitati per Windows Autopilot
 
-I partner di Surface selezionati possono registrare i dispositivi Surface Windows Autopilot al momento dell'acquisto. Possono anche spedire i dispositivi registrati direttamente agli utenti. I dispositivi possono essere configurati interamente tramite un processo zero-touch usando Windows autopilot, Azure AD e la gestione dei dispositivi mobili.
+Seleziona i partner Surface possono registrare i dispositivi Surface in Windows Autopilot al momento dell'acquisto. Possono anche spedire i dispositivi registrati direttamente agli utenti. I dispositivi possono essere configurati interamente tramite un processo zero-touch usando Windows autopilot, Azure AD e la gestione dei dispositivi mobili.
 
-I partner surface abilitati per Windows Autopilot includono:
+I partner Surface abilitati per Windows Autopilot includono:
 
 | Partner statunitensi | Partner globali | Distributori statunitensi |
 |--------------|---------------|-------------------|
@@ -84,7 +87,7 @@ I partner surface abilitati per Windows Autopilot includono:
 
 ## <a name="learn-more"></a>Scopri di più
 
-Per altre informazioni su Windows Autopilot, vedi:
+Per ulteriori informazioni su Windows Autopilot, vedere:
 
 - [Panoramica di Windows Autopilot](/windows/deployment/windows-autopilot/windows-10-autopilot)
 - [Requisiti di Windows Autopilot](/windows/deployment/windows-autopilot/windows-autopilot-requirements)

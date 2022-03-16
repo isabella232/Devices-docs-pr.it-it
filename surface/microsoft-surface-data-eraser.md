@@ -15,12 +15,15 @@ ms.author: greglin
 ms.topic: article
 audience: itpro
 ms.date: 10/06/2021
-ms.openlocfilehash: e97bc719fb93b0a0b74c7ca51b68cbc59efa9f4a
-ms.sourcegitcommit: fe54b2bab8b205302438426b86c0aa8269ff82ea
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: e40c967003fc6dd40725e5015c01497eb3fa141a
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "12081206"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449649"
 ---
 # <a name="microsoft-surface-data-eraser"></a>Microsoft Surface Data Eraser
 
@@ -55,7 +58,7 @@ Ecco alcuni scenari in cui Microsoft Surface Data Eraser può essere utile:
 
 Dopo l'installazione dello strumento di creazione, segui questa procedura per creare una chiavetta USB di Microsoft Surface Data Eraser. Prima di iniziare questa procedura, verifica che al computer sia connessa una chiavetta USB 3.0 con almeno 4 GB di spazio.
 
-1. Eseguire il DataEraserSetup.msi di installazione scaricato [dall'Area download Microsoft.](https://www.microsoft.com/download/details.aspx?id=46703)
+1. Eseguire il DataEraserSetup.msi di installazione scaricato [dall'Area download Microsoft](https://www.microsoft.com/download/details.aspx?id=46703).
 
 2. Seleziona **Compila** per avviare il processo di creazione usb di Microsoft Surface Data Eraser, come illustrato nella figura 1.
 
@@ -71,9 +74,9 @@ Dopo l'installazione dello strumento di creazione, segui questa procedura per cr
 
    :::image type="content" source="images/microsoft-surface-data-eraser/fig3-select.png" alt-text="Figura 3. Selezionare l'architettura dei dispositivi":::
 
-5. Seleziona l'unità USB di tua scelta nella pagina Selezione unità usb **thumb,** come illustrato nella figura 4, quindi seleziona **Avvia** per avviare il processo di creazione dell'UNITÀ USB. L'unità selezionata verrà formattata e tutti i dati presenti nell'unità andranno persi.
+5. Seleziona l'unità USB di tua scelta nella pagina Selezione unità usb thumb **,** come illustrato nella figura 4, quindi seleziona **Avvia** per avviare il processo di creazione dell'UNITÀ USB. L'unità selezionata verrà formattata e tutti i dati presenti nell'unità andranno persi.
 
-   :::image type="content" source="images/microsoft-surface-data-eraser/fig4-start.png" alt-text="Figura 4. Selezione dell'unità di scorrimento USB>":::<br>
+   :::image type="content" source="images/microsoft-surface-data-eraser/fig4-start.png" alt-text="Figura 4. Selezione dell'unità pollice USB>":::<br>
    *Figura 4. Selezione della chiavetta USB*
 
   >[!TIP]
@@ -107,7 +110,7 @@ Dopo aver creato una chiavetta USB di Microsoft Surface Data Eraser, puoi avviar
    >[!TIP]
    >Se il dispositivo non si avvia dalla chiavetta USB con questa procedura, è necessario attivare l'opzione **Enable Alternate Boot Sequence** nell'interfaccia UEFI di Surface. Per altre informazioni sulla configurazione di avvio UEFI di Surface, vedi [Gestire le impostazioni UEFI di Surface](https://technet.microsoft.com/itpro/surface/manage-surface-uefi-settings).
 
-3. Quando il dispositivo Surface viene avviato, viene visualizzato un file di testo **SoftwareLicenseTerms,** come illustrato nella figura 5.
+3. Quando il dispositivo Surface viene avviato, viene visualizzato un file di testo **SoftwareLicenseTerms** , come illustrato nella figura 5.
 
    ![Avvio della chiavetta USB di Microsoft Surface Data Eraser.](images/data-eraser-3.png "Booting the Microsoft Surface Data Eraser USB stick")
 
@@ -260,4 +263,4 @@ Questa versione di Microsoft Surface Data Eraser aggiunge il supporto per:
 - Surface Laptop
 
 >[!NOTE]
->Lo strumento di creazione dell'unità USB di Microsoft Surface Data Eraser non è in grado di funzionare su Windows 10 S. Per cancellare un Surface Laptop in cui è in esecuzione Windows 10 S, devi innanzitutto creare l'unità USB di Microsoft Surface Data Eraser in un altro computer con Windows 10 Pro o Windows 10 Enterprise.
+>Lo strumento di creazione dell'unità USB di Microsoft Surface Data Eraser non è in grado di essere eseguito Windows 10 S. Per cancellare un Surface Laptop che esegue Windows 10 S, devi prima creare l'unità USB di Microsoft Surface Data Eraser in un altro computer con Windows 10/11 Pro o Windows 10/11 Enterprise.

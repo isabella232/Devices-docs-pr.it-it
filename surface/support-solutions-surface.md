@@ -15,19 +15,22 @@ ms.topic: article
 ms.date: 09/26/2019
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 65cd0822f9419d2a2b678c598681891539855c9f
-ms.sourcegitcommit: a5651e8c8f953fe3130dd476f4e06c16c172aaa4
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 0308c2e721e441ebb354e6cfb8a22a5a5a26d268
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/04/2021
-ms.locfileid: "11939527"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449449"
 ---
 # <a name="top-support-solutions-for-surface-devices"></a>Principali soluzioni di supporto per i dispositivi Surface
 
 > [!Note]
-> **Utenti di casa:** questo articolo è destinato solo ai professionisti IT e agli agenti di supporto tecnico e si applica solo ai dispositivi Surface. Per informazioni su un problema con il dispositivo di casa, vedi Guida [di Surface Devices.](https://support.microsoft.com/products/surface-devices)
+> **Utenti di casa**: questo articolo è destinato solo a professionisti IT e agenti di supporto tecnico e si applica solo ai dispositivi Surface. Per informazioni su un problema con il dispositivo di casa, vedi Guida [di Surface Devices](https://support.microsoft.com/products/surface-devices).
 
-Queste sono le soluzioni di supporto Microsoft per i problemi comuni che possono verificarsi con i dispositivi Surface in un'azienda. Se il problema non è elencato qui, [contatta il supporto di Surface.](contact-surface-support.md?tabs=online)
+Queste sono le soluzioni di supporto Microsoft per i problemi comuni che possono verificarsi con i dispositivi Surface in un'azienda. Se il problema non è elencato qui, [contatta il supporto di Surface](contact-surface-support.md?tabs=online).
 
 ## <a name="surface-drivers-and-firmware"></a>Driver e firmware di Surface
 
@@ -68,7 +71,7 @@ Microsoft rilascia regolarmente gli aggiornamenti e le soluzioni per i dispositi
 
 ## <a name="deployment-issues"></a>Problemi di distribuzione
 
-- [DISK0 non trovato quando si distribuisce Windows in Surface Pro 1796 o Surface Laptop](https://support.microsoft.com/help/4046108)
-- [Surface Pro I modelli 1796 e Surface Laptop da 1 TB visualizzano due unità](https://support.microsoft.com/help/4046105)
+- [DISK0 non trovato quando si distribuisce Windows su Surface Pro 1796 o Surface Laptop](https://support.microsoft.com/help/4046108)
+- [Surface Pro model 1796 e Surface Laptop da 1 TB visualizzano due unità](https://support.microsoft.com/help/4046105)
 - [Informazioni di riferimento su SKU di sistema](surface-system-sku-reference.md)
 

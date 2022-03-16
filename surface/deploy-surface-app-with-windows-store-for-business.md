@@ -14,12 +14,15 @@ ms.audience: itpro
 ms.reviewer: ''
 manager: laurawi
 ms.date: 4/16/2021
-ms.openlocfilehash: b47838a7f0bd0df7bf71479f8217104332cfd0c3
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: cb101ece861b19bab43b0e3356a1109389eebb2f
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12338079"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12448359"
 ---
 # <a name="deploy-surface-app-with-microsoft-store-for-business-and-education"></a>Distribuire l'app Surface con Microsoft Store per le aziende e Education
 
@@ -39,7 +42,7 @@ ms.locfileid: "12338079"
 
 L'app Surface è un'app Microsoft Store leggera che fornisce il controllo di molte impostazioni e opzioni specifiche di Surface con accesso rapido alle informazioni sul dispositivo, tra cui il numero di serie, il nome del modello Surface, la versione UEFI e i driver correlati.  
 
-I clienti che Windows Update riceveranno normalmente l'app Surface come parte degli aggiornamenti automatici. Tuttavia, se l'organizzazione prepara le immagini per la distribuzione nei dispositivi Surface, potresti voler includere l'app Surface (in precedenza denominata Surface Hub) nel processo di creazione di immagini e distribuzione invece di richiedere agli utenti di ogni singolo dispositivo di scaricare e installare l'app dal Microsoft Store o dal tuo Microsoft Store per le aziende. 
+I clienti Windows update riceveranno in genere l'app Surface come parte degli aggiornamenti automatici. Tuttavia, se l'organizzazione prepara le immagini per la distribuzione nei dispositivi Surface, potresti voler includere l'app Surface (in precedenza denominata Surface Hub) nel processo di creazione di immagini e distribuzione invece di richiedere agli utenti di ogni singolo dispositivo di scaricare e installare l'app dal Microsoft Store o dal tuo Microsoft Store per le aziende. 
 
 > [!NOTE]
 > Questo articolo non si applica a Surface Pro X. Per ulteriori informazioni, vedere [Deploying, managing, and servicing Surface Pro X](surface-pro-arm-app-management.md)
@@ -56,7 +59,7 @@ Prima che gli utenti possano installare o distribuire un'app dall'account Micros
 
 2. Accedere al portale. 
 
-3. Abilita licenze offline: fai **** > **clic su Gestisci Impostazioni** quindi seleziona la casella di controllo Mostra app con licenza offline agli utenti che acquistino **nello Store**, come illustrato nella figura 1. Per altre informazioni sui modelli Microsoft Store per le aziende licenze delle app, vedi [App in Microsoft Store per le aziende e Education](/microsoft-store/).
+3. Abilita licenze offline: **** > **fai clic su Gestisci Impostazioni** quindi seleziona la casella di controllo Mostra app con licenza offline agli utenti che acquistino **nello Store**, come illustrato nella figura 1. Per altre informazioni sui modelli Microsoft Store per le aziende licenze delle app, [vedi App in Microsoft Store per le aziende e Education](/microsoft-store/).
 
    > [!div class="mx-imgBorder"]
    > ![Casella di controllo Mostra le app per le licenze offline.](images/deploysurfapp-figure1-enablingapps.png "Show offline licenses apps checkbox")<br/>
@@ -76,7 +79,7 @@ Prima che gli utenti possano installare o distribuire un'app dall'account Micros
     
     * Fare **clic su Offline** per selezionare la modalità di licenza offline.
     
-    * Fai **clic su Ottieni l'app** per aggiungere l'app al tuo Microsoft Store per le aziende inventario. Come illustrato nella figura 3, verrà visualizzata una finestra di dialogo in cui viene richiesto di confermare che le app offline possono essere distribuite tramite uno strumento di gestione o scaricate dalla pagina dell'inventario aziendale nel proprio archivio privato.
+    * Fai **clic su Scarica l'app** per aggiungere l'app al tuo Microsoft Store per le aziende inventario. Come illustrato nella figura 3, verrà visualizzata una finestra di dialogo in cui viene richiesto di confermare che le app offline possono essere distribuite tramite uno strumento di gestione o scaricate dalla pagina dell'inventario aziendale nel proprio archivio privato.
     
       > [!div class="mx-imgBorder"]
       > ![Finestra di conferma delle app con licenza offline.](images/deploysurfapp-fig3-acknowledge.png "Offline-licensed app acknowledgement window")
@@ -84,12 +87,12 @@ Prima che gli utenti possano installare o distribuire un'app dall'account Micros
       
     * Fai clic su **OK**.
 
-## <a name="download-surface-app-from-a-microsoft-store-for-business-account"></a>Scaricare l'app Surface da un Microsoft Store per le aziende account
+## <a name="download-surface-app-from-a-microsoft-store-for-business-account"></a>Scaricare l'app Surface da un account Microsoft Store per le aziende utente
 Dopo aver aggiunto un'app all'account Microsoft Store per le aziende in modalità offline, puoi scaricare e aggiungere l'app come AppxBundle a una condivisione di distribuzione.
 
 1. Accedere all'account Microsoft Store per le aziende all'indirizzo https://businessstore.microsoft.com.
 
-2. Fai **clic su Gestisci >app & software**. Viene visualizzato un elenco di tutte le app della tua azienda, inclusa l'app Surface che hai aggiunto nella sezione [Aggiungere l'app Surface a un account](#add-surface-app-to-a-microsoft-store-for-business-account) Microsoft Store per le aziende di questo articolo.
+2. Fai **clic su Gestisci >app & software**. Viene visualizzato un elenco di tutte le app della tua azienda, inclusa l'app Surface aggiunta nella sezione Aggiungere [l'app Surface a un account](#add-surface-app-to-a-microsoft-store-for-business-account) Microsoft Store per le aziende di questo articolo.
 
 3. In **Azioni** fai clic sui puntini di sospensione (**...**) e quindi fai clic su Scarica per **l'uso offline** per l'app Surface.
 
@@ -101,7 +104,7 @@ Dopo aver aggiunto un'app all'account Microsoft Store per le aziende in modalit�
     
 5. Fare clic **su Scarica**. Il pacchetto AppxBundle verrà scaricato. Assicurati di prendere nota del percorso del file scaricato perché sarà necessario più avanti in questo articolo.
 
-6. Fare clic **sull'opzione Licenza codificata** o **Licenza non codificata** . Usa l'opzione Licenza codificata con strumenti di gestione come Microsoft Endpoint Configuration Manager o quando usi Windows Configuration Designer per creare un pacchetto di provisioning. Seleziona l'opzione Licenza non codificata quando usi Gestione e manutenzione immagini distribuzione o soluzioni di distribuzione basate sulla creazione di immagini, incluso Microsoft Deployment Toolkit (MDT).
+6. Fare clic **sull'opzione Licenza codificata** o **Licenza non codificata** . Usa l'opzione Licenza codificata con strumenti di gestione come Microsoft Endpoint Configuration Manager o quando usi progettazione Windows per creare un pacchetto di provisioning. Seleziona l'opzione Licenza non codificata quando usi Gestione e manutenzione immagini distribuzione o soluzioni di distribuzione basate sulla creazione di immagini, incluso Microsoft Deployment Toolkit (MDT).
 
 7. Fai **clic su** Genera per generare e scaricare la licenza per l'app. Assicurati di prendere nota del percorso del file di licenza perché sarà necessario più avanti in questo articolo.
 
@@ -115,13 +118,13 @@ La figura 5 mostra i framework necessari per l'app Surface.
 *Figura 5. Framework necessari per l'app Surface*
 
 >[!NOTE]
->I numeri di versione dell'app Surface e i framework necessari cambieranno quando le app vengono aggiornate. Controlla la versione più recente dell'app Surface e ogni framework in Microsoft Store per le aziende. Usa sempre le versioni dell'app Surface e del framework consigliate come indicato da Microsoft Store per le aziende. L'uso di framework obsoleti o di versioni non corrette può causare errori o arresti anomali dell'applicazione.
+>I numeri di versione dell'app Surface e i framework necessari cambieranno quando le app vengono aggiornate. Controlla la versione più recente dell'app Surface e ogni framework in Microsoft Store per le aziende. Usa sempre l'app Surface e le versioni consigliate del framework come indicato da Microsoft Store per le aziende. L'uso di framework obsoleti o di versioni non corrette può causare errori o arresti anomali dell'applicazione.
 
 Per scaricare i framework necessari per l'app Surface, segui questi passaggi:
 
 1. Fare **clic sul** pulsante Download in **Microsoft.VCLibs.140.00_14.0.23816.0_x64__8wekyb3d8bbwe**. Verrà scaricato il Microsoft.VCLibs.140.00_14.0.23816.0_x64__8wekyb3d8bbwe. File Appx nella cartella specificata.
 
-2. Fare **clic sul** pulsante Download in **Microsoft.NET.Native.Runtime.1.1_1.1.23406.0_x64__8wekyb3d8bbwe**. In questo modo viene scaricato Microsoft.NET.Native.Runtime.1.1_1.1.23406.0_x64__8wekyb3d8bbwe. File Appx nella cartella specificata.
+2. Fare clic **sul** pulsante Download **in Microsoft.NET.Native.Runtime.1.1_1.1.23406.0_x64__8wekyb3d8bbwe**. In questo modo viene scaricato Microsoft.NET.Native.Runtime.1.1_1.1.23406.0_x64__8wekyb3d8bbwe. File Appx nella cartella specificata.
 
 >[!NOTE]
 >Solo la versione a 64 bit (x64) di ogni framework è necessaria per i dispositivi Surface. I dispositivi Surface sono dispositivi UEFI nativi a 64 bit e non sono compatibili con le versioni a 32 bit (x86) di Windows che richiedono framework a 32 bit. 
@@ -129,7 +132,7 @@ Per scaricare i framework necessari per l'app Surface, segui questi passaggi:
 ## <a name="install-surface-app-on-your-computer-with-powershell"></a>Installare l'app Surface nel computer con PowerShell
 La procedura seguente esegue il provisioning dell'app Surface nel computer e la rende disponibile per tutti gli account utente creati nel computer in seguito.
 
-1. Usando la procedura descritta nella sezione [Come scaricare l'app Surface](#download-surface-app-from-a-microsoft-store-for-business-account) da un account Microsoft Store per le aziende di questo articolo, scarica il file di licenza e AppxBundle dell'app Surface. 
+1. Usando la procedura descritta nella sezione [Come scaricare l'app Surface da un account Microsoft Store per le aziende](#download-surface-app-from-a-microsoft-store-for-business-account) di questo articolo, scarica il file app AppxBundle e la licenza di Surface. 
 
 2. Avvia una sessione di PowerShell con privilegi elevati.
 
@@ -167,7 +170,7 @@ La procedura seguente esegue il provisioning dell'app Surface nel computer e la 
    ```
 
 ## <a name="install-surface-app-with-mdt"></a>Installare l'app Surface con MDT
-La procedura seguente usa MDT per automatizzare l'installazione dell'app Surface al momento della distribuzione. Il provisioning dell'applicazione viene effettuato automaticamente da MDT durante la distribuzione e quindi puoi usare questo processo con le immagini esistenti. Questo è il processo consigliato per distribuire l'app Surface come parte di una distribuzione di Windows nei dispositivi Surface perché non riduce la compatibilità tra piattaforme dell'immagine Windows.
+La procedura seguente usa MDT per automatizzare l'installazione dell'app Surface al momento della distribuzione. Il provisioning dell'applicazione viene effettuato automaticamente da MDT durante la distribuzione e quindi puoi usare questo processo con le immagini esistenti. Questo è il processo consigliato per distribuire l'app Surface come parte di una distribuzione di Windows nei dispositivi Surface perché non riduce la compatibilità tra piattaforme dell'Windows immagine.
 
 1. Usando la procedura descritta [in precedenza in questo articolo](#download-surface-app-from-a-microsoft-store-for-business-account), scarica l'app Surface AppxBundle e il file di licenza. 
 
@@ -199,7 +202,7 @@ Per configurare i framework come dipendenze dell'app Surface, usa questo process
 
 3. Selezionare la casella di controllo per ogni framework utilizzando il nome specificato nella Creazione guidata nuova applicazione.
 
-Dopo l'importazione, l'app Surface sarà disponibile per la selezione nel passaggio **Applicazioni** della Windows guidata. Puoi anche installare l'applicazione automaticamente specificandola nella sequenza di attività di distribuzione seguendo questo processo:
+Dopo l'importazione, l'app Surface sarà disponibile per la **** selezione nel passaggio Applicazioni della Windows guidata. Puoi anche installare l'applicazione automaticamente specificandola nella sequenza di attività di distribuzione seguendo questo processo:
 
 1. Apri la sequenza di attività di distribuzione in MDT Deployment Workbench.
 

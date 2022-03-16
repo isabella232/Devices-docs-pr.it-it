@@ -11,12 +11,12 @@ ms.date: 07/08/2019
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: 92b60fb0f0ac83c2516ebb1ebde0748d9d933c4e
-ms.sourcegitcommit: 21fcd329a7b0c82c69e2a65c423d47c5b23b4e7f
+ms.openlocfilehash: ff70b7033e83804f178d35e22935011936ba2d14
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "11883003"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449119"
 ---
 # <a name="local-management-for-surface-hub-settings"></a>Gestione locale per le impostazioni di Surface Hub
 
@@ -55,7 +55,8 @@ Oltre ad avere molte impostazioni comuni ad altri dispositivi Windows, i disposi
 | Orario di manutenzione | Aggiornamento e sicurezza &gt; Windows Update &gt; Opzioni avanzate | Consente di configurare quando possono essere installati gli aggiornamenti. |
 | Ripristino dal cloud | Aggiornamento e sicurezza > Ripristino | Reinstallare il sistema operativo nel dispositivo Surface Hub su una build del produttore dal cloud. |
 | Salvataggio della chiave BitLocker | Aggiornamento e sicurezza > Ripristino | Consente di eseguire il backup della chiave BitLocker del dispositivo Surface Hub in un'unità USB. |
-| Raccogliere i log | Aggiornamento e sicurezza &gt; Ripristino | Consente di salvare i log in un'unità USB per inviarli a Microsoft in un secondo momento. | 
+| Raccogliere i log | Aggiornare i & di sicurezza > log | Consente di salvare i log in un'unità USB per inviarli a Microsoft in un secondo momento. | 
+| Visualizzatore eventi | Aggiornare i & di sicurezza > log | Avviare Windows visualizzatore eventi per visualizzare gli eventi che si sono verificati nel Surface Hub. | 
 
 ## <a name="related-topics"></a>Argomenti correlati
 

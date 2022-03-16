@@ -14,12 +14,15 @@ ms.reviewer: jesko
 manager: laurawi
 ms.audience: itpro
 ms.date: 11/30/2021
-ms.openlocfilehash: eed1cbedea2a39207846301fa6b4f6c2b2f6dd56
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: f0d2215fae1ce8aa5cdc6d55fb36158d6a95af4d
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12337909"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12448284"
 ---
 # <a name="wake-on-lan-for-surface-devices"></a>Riattivazione LAN per i dispositivi Surface 
 
@@ -32,12 +35,14 @@ I dispositivi Surface che eseguono Windows 10 versione 1607 o successiva sono in
 
 Schede Ethernet con supporto per WOL:
 
-- Scheda Ethernet Surface USB 3.0 Gigabit 
+- Microsoft USB-C Travel Hub
 - Scheda Surface Ethernet
-- Surface USB-C to Ethernet and USB Adapter
-- Surface Dock
+- Surface USB-C to Ethernet and USB 3.0 Adapter
+- Scheda Ethernet Surface USB 3.0 Gigabit 
+- Surface DockDocking Station per Surface Pro 3 
 - Surface Dock 2
-- Surface Docking Station per Surface Pro 3
+- Docking Station per Surface 3
+- Docking Station per Surface Pro 3 
 
 Dispositivi Surface con supporto per WOL:
 
@@ -46,17 +51,17 @@ Dispositivi Surface con supporto per WOL:
 - Surface Pro 4
 - Surface Pro (5° generazione)
 - Surface Pro (5° generazione) con LTE Advanced
-- Surface Book (tutte le generazioni)
-- Surface Laptop (tutte le generazioni)
 - Surface Pro 6
-- Surface Book 2
-- Surface Go (tutte le generazioni)
-- Surface Studio 2 (vedere Surface Studio 2 istruzioni seguenti)
 - Surface Pro 7
 - Surface Pro 7+
 - Surface Pro 8
+- Surface Book (tutte le generazioni)
+- Surface Go (tutte le generazioni)
+- Surface Laptop (tutte le generazioni)
 - Surface Laptop Go
+- Surface Laptop edizione Standard
 - Surface Laptop Studio
+- Surface Studio 2 (vedere Surface Studio 2 istruzioni seguenti)
 
 
 ## <a name="using-wol"></a>Utilizzo di WOL 
@@ -65,7 +70,7 @@ Quando non sono in uso, i dispositivi Surface entrano in uno stato inattivo e a 
 
 ## <a name="modern-standby"></a>Standby moderno
 
-Lo standby moderno viene avviato quando l'utente fa entrare il sistema in stato di sospensione o il dispositivo passa alla modalità di sospensione in base alle impostazioni Windows risparmio energia impostate dall'utente. Ad esempio, l'utente preme il pulsante di alimentazione, chiude il coperchio o seleziona Sospensione dal pulsante di alimentazione nella Windows menu Start. WOL funziona per impostazione predefinita per i dispositivi Surface in modalità standby moderno Windows 10 versione 1607 o successiva. Non è necessaria alcuna configurazione IT aggiuntiva, ad eccezione di Surface Studio 2.
+Lo standby moderno viene avviato quando l'utente fa entrare il sistema in stato di sospensione o il dispositivo passa alla modalità di sospensione in base alle impostazioni Windows di alimentazione impostate dall'utente. Ad esempio, l'utente preme il pulsante di alimentazione, chiude il coperchio o seleziona Sospensione dal pulsante di alimentazione nella Windows menu Start. WOL funziona per impostazione predefinita per i dispositivi Surface in modalità Standby moderno Windows 10 versione 1607 o successiva. Non è necessaria alcuna configurazione IT aggiuntiva, ad eccezione di Surface Studio 2.
 
 ## <a name="surface-studio-2-instructions"></a>Surface Studio 2 istruzioni
 

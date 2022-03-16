@@ -14,12 +14,15 @@ author: coveminer
 ms.author: greglin
 ms.topic: article
 ms.audience: itpro
-ms.openlocfilehash: f460577c6c0d87586d80e183dfeaf2796b8a3bbe
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: de84d4db52006991308bf19893a50594f6a1d1dc
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12338299"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449519"
 ---
 # <a name="customize-the-oobe-for-surface-deployments"></a>Personalizzare la Configurazione guidata per le distribuzioni di Surface
 
@@ -38,7 +41,7 @@ In alcuni scenari potresti voler fornire automazione completa per garantire che 
 Questo articolo contiene un riepilogo degli scenari in cui una distribuzione potrebbe richiedere passaggi aggiuntivi. Sono inoltre disponibili le informazioni necessarie per garantire la realizzazione dell'esperienza desiderata su qualsiasi nuovo dispositivo Surface distribuito. Questo articolo è destinato agli amministratori che hanno familiarità con il processo di distribuzione, nonché con concetti come i file di risposte e le [immagini di riferimento](https://technet.microsoft.com/itpro/windows/deploy/create-a-windows-10-reference-image).
 
 >[!NOTE]
->Sebbene la fase di installazione della Configurazione guidata sia ancora in esecuzione come parte di una soluzione di distribuzione automatizzata, ad esempio [Microsoft Deployment Toolkit (MDT)](/mem/configmgr/mdt) o [Microsoft Endpoint Configuration Manager Operating System Deployment (OSD),](/mem/configmgr/osd/) viene automatizzata dalle impostazioni fornite nella procedura guidata di distribuzione e nella sequenza di attività.
+>Sebbene la fase di installazione della Configurazione guidata sia ancora in esecuzione come parte di una soluzione di distribuzione automatizzata, ad esempio [Microsoft Deployment Toolkit (MDT)](/mem/configmgr/mdt) o [Microsoft Endpoint Configuration Manager Operating System Deployment (OSD),](/mem/configmgr/osd/) è automatizzata dalle impostazioni fornite nella procedura guidata di distribuzione e nella sequenza di attività.
 
 ## <a name="scenario-1-wireless-networking-in-oobe-with-mdt-2013"></a>Scenario 1: rete wireless nella Configurazione guidata con MDT 2013
 
@@ -58,6 +61,6 @@ Per fornire l'esperienza di associazione della Penna per Surface del produttore 
 - %windir%\\system32\\oobe\\info\\default\\1033\\PenSuccess\_en-US.png
 
 >[!TIP]
->Devi copiare i file da un'immagine produttore computer per il dispositivo Surface dello stesso modello in cui intendi eseguire la distribuzione. Ad esempio, è consigliabile utilizzare i file di Surface Pro 8 per la distribuzione in Surface Pro 8 e i file di Surface Book 3 per distribuire Surface Book 3, ma non è consigliabile utilizzare i file di Surface Pro 8 per distribuire Surface Book 3 o Surface Pro 7.
+>Devi copiare i file da un'immagine produttore computer per il dispositivo Surface dello stesso modello in cui intendi eseguire la distribuzione. Ad esempio, è consigliabile utilizzare i file di Surface Pro 8 per la distribuzione in Surface Pro 8 e i file di Surface Book 3 per distribuire Surface Book 3, ma non utilizzare i file di Surface Pro 8 per distribuire Surface Book 3 o Surface Pro 7.
 
 Il processo dettagliato per l'aggiunta di questi file necessari a un'immagine viene descritto nella pagina dei [suggerimenti per la distribuzione della Penna per Surface Pro 3 e OneNote](https://blogs.technet.microsoft.com/askcore/2014/07/15/deploying-surface-pro-3-pen-and-onenote-tips/). Questo post di blog contiene anche alcuni suggerimenti per garantire l'installazione degli aggiornamenti per l'esperienza di creazione rapida delle note con la Penna per Surface, che permette agli utenti di inviare note a OneNote con un solo clic.

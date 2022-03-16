@@ -15,12 +15,15 @@ ms.author: greglin
 ms.topic: article
 ms.audience: itpro
 ms.date: 12/14/2021
-ms.openlocfilehash: 6cfe5f44c156c8042172741739fffbfed3ceba07
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: f914678f2317ce4e08554d27b74bac4e33e3c641
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12338579"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449639"
 ---
 # <a name="manage-and-deploy-surface-driver-and-firmware-updates"></a>Gestire e installare gli aggiornamenti di driver e firmware per Surface
 
@@ -49,7 +52,7 @@ Windows file .msi installer contengono tutti gli aggiornamenti cumulativi di dri
 
 Questa sezione fornisce collegamenti diretti ai pacchetti scaricabili contenenti aggiornamenti di driver e firmware per i dispositivi Surface. 
 
-1. Selezionare Windows 10 o Windows 11 in base alle esigenze. 
+1. Selezionare Windows 10 o Windows 11 come appropriato. 
 2. Per i dispositivi con .msi file, seleziona il nome del file .msi corrispondente al modello Surface e alla versione di Windows distribuiti nell'organizzazione.  
 
 
@@ -69,7 +72,7 @@ Questa sezione fornisce collegamenti diretti ai pacchetti scaricabili contenenti
  
 
 > [!TIP]
-> Per i dispositivi precedenti che includono file separati per diverse versioni Windows, seleziona il nome del file .msi corrispondente al modello Surface e alla versione di Windows. Il .msi file include il numero minimo di build Windows necessario per installare i driver e il firmware. Ad esempio, per aggiornare un Surface Book 2 con build 18362 di Windows 10, scegliere **SurfaceBook2_Win10_18362_19.101.13994.msi.** Per un Surface Book 2 con build 16299 di Windows 10, scegliere **SurfaceBook2_Win10_16299_1803509_3.msi**.
+> Per i dispositivi precedenti che includono file separati per versioni Windows diverse, seleziona il nome del file .msi corrispondente al modello Surface e alla versione di Windows. Il .msi file include il numero minimo di build Windows necessario per installare i driver e il firmware. Ad esempio, per aggiornare un Surface Book 2 con build 18362 di Windows 10, scegliere **SurfaceBook2_Win10_18362_19.101.13994.msi.** Per un Surface Book 2 con build 16299 di Windows 10, scegliere **SurfaceBook2_Win10_16299_1803509_3.msi**.
 
 ## <a name="central-update-management-in-commercial-environments"></a>Gestione centrale degli aggiornamenti in ambienti commerciali
 
@@ -98,7 +101,7 @@ Per istruzioni su come distribuire gli aggiornamenti tramite Endpoint Configurat
 
 **Firmware e driver di WindowsPE e Surface**
 
-Endpoint Configuration Manager e MDT usano entrambi Windows Preinstallation Environment (WindowsPE) durante il processo di distribuzione.Endpoint Configuration Manager and MDT both use the Windows Preinstallation Environment (WindowsPE) during the deployment process. WindowsPE supporta solo un set limitato di driver di base, ad esempio schede di rete e controller di archiviazione. I driver Windows componenti che non fanno parte di WindowsPE potrebbero generare errori. Come procedura consigliata, è possibile evitare tali errori configurando il processo di distribuzione in modo che utilizzi solo i driver necessari durante la fase WindowsPE.
+Endpoint Configuration Manager e MDT usano entrambi il Windows Preinstallation Environment (WindowsPE) durante il processo di distribuzione. WindowsPE supporta solo un set limitato di driver di base, ad esempio schede di rete e controller di archiviazione. I driver Windows componenti che non fanno parte di WindowsPE potrebbero generare errori. Come procedura consigliata, è possibile evitare tali errori configurando il processo di distribuzione in modo che utilizzi solo i driver necessari durante la fase WindowsPE.
 
 ### <a name="endpoint-configuration-manager"></a>Endpoint Configuration Manager
 
@@ -106,7 +109,7 @@ A partire da Endpoint Configuration Manager, puoi sincronizzare e distribuire gl
 
 ## <a name="supported-devices"></a>Dispositivi supportati
 
-I file .msi scaricabili sono disponibili per i dispositivi Surface Pro 2 e versioni successive (ad eccezione di Surface Pro X che viene eseguito Windows 10 su ARM).
+I file .msi scaricabili sono disponibili per Surface Pro 2 e versioni successive (ad eccezione di Surface Pro X che viene eseguito Windows 10 su ARM).
 
 ## <a name="managing-firmware-with-dfci"></a>Gestione del firmware con DFCI
 
@@ -121,7 +124,7 @@ Per mantenere un ambiente stabile, è consigliabile mantenere la parità con la 
 
 ### <a name="surface-msi-naming-convention"></a>Convenzione di denominazione .msi Surface
 
-Da agosto 2019, .msi file utilizzano la convenzione di denominazione seguente:
+Da agosto 2019, i .msi utilizzano la convenzione di denominazione seguente:
 
 - *Product* _*Windows release*_ *Windows build numberVersion*_**_ *numberRevision del numero di versione (in genere zero)*.
 

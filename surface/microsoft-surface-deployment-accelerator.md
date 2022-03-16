@@ -15,12 +15,15 @@ ms.author: greglin
 ms.topic: article
 ms.audience: itpro
 ms.date: 5/08/2020
-ms.openlocfilehash: 48f89e8929bdb9d075bea988558fea234da5bbd2
-ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 0ececf7a21b4870c4fb6db2403d9a5e34a67fdba
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "11911421"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449469"
 ---
 # <a name="microsoft-surface-deployment-accelerator"></a>Microsoft Surface Deployment Accelerator
 
@@ -35,7 +38,7 @@ L'immagine risultante corrisponde strettamente alla configurazione delle immagin
 ## <a name="requirements"></a>Requisiti
 
 1. Unità usb con dimensioni di almeno 16 GB. L'unità USB verrà formattata.
-2. Un file iso con Windows 10 Pro o Windows 10 Enterprise. Lo strumento di creazione dei supporti può essere usato per scaricare Windows 10 e creare un file iso. Per ulteriori informazioni, vedere [Download Windows 10](https://www.microsoft.com/software-download/windows10).
+2. Un file iso con Windows 10/11 Pro o Windows 10/11 Enterprise. Lo strumento per la creazione di supporti può essere utilizzato per scaricare Windows 10 o Windows 11 e creare un file ISO. Per ulteriori informazioni, vedere [Download Windows 10](https://www.microsoft.com/software-download/windows10).
 3. Dispositivo che esegue Windows 10 versione 2004 o successiva con accesso a Internet.
 
 Per un [elenco dettagliato dei](https://github.com/microsoft/SurfaceDeploymentAccelerator/blob/master/README.md#prerequisites) requisiti, vedere la sezione Prerequisiti del documento README.
@@ -45,19 +48,19 @@ Per un [elenco dettagliato dei](https://github.com/microsoft/SurfaceDeploymentAc
 **Per eseguire SDA:**
 
 1. Vai a [SurfaceDeploymentAccelerator](https://github.com/microsoft/SurfaceDeploymentAccelerator) in GitHub. 
-2. Consultare la [documentazione README.](https://github.com/microsoft/SurfaceDeploymentAccelerator/blob/master/README.md)
+2. Consultare la [documentazione README](https://github.com/microsoft/SurfaceDeploymentAccelerator/blob/master/README.md) .
 3. Nella pagina [SurfaceDeploymentAccelerator](https://github.com/microsoft/SurfaceDeploymentAccelerator) fai clic sul pulsante **Codice** e quindi seleziona **Scarica ZIP** per salvare i file in locale nel computer.
 4. Fare clic con il pulsante destro del .zip file e quindi scegliere **Proprietà**.
-5. Nella scheda **Generale** selezionare la casella di controllo **Sblocca** e quindi fare clic su **OK.**
+5. Nella scheda **Generale** seleziona la casella **di controllo Sblocca** e quindi fai clic su **OK**.
 6. Estrarre il .zip file in un percorso sul disco rigido (ad esempio: C:\SDA).
 7. Apri un prompt dei Windows PowerShell con privilegi elevati e imposta ExecutionPolicy per la sessione corrente su Unrestricted.
 
     ```powershell
     Set-ExecutionPolicy -Scope Process -ExecutionPolicy Unrestricted -Force
     ```
-8. Eseguire lo script SDA specificando i parametri per l'ambiente. Lo script può essere usato per creare immagini da installare Windows 10 su un'ampia gamma di dispositivi Surface. Per un elenco completo dei dispositivi supportati, vedi la descrizione del parametro [Device](https://github.com/microsoft/SurfaceDeploymentAccelerator/blob/master/README.md#full-parameter-documentation) nell'articolo SDA README. 
+8. Eseguire lo script SDA specificando i parametri per l'ambiente. Lo script può essere usato per creare immagini per installare Windows 10 o Windows 11 in un'ampia gamma di dispositivi Surface. Per un elenco completo dei dispositivi supportati, vedi la descrizione [del parametro Device](https://github.com/microsoft/SurfaceDeploymentAccelerator/blob/master/README.md#full-parameter-documentation) nell'articolo SDA README. 
 
-    Ad esempio, il comando seguente creerà un'unità USB di avvio che può essere usata per installare Windows 10 [in Surface Hub 2](https://docs.microsoft.com/surface-hub/surface-hub-2s-migrate-os):
+    Ad esempio, il comando seguente creerà un'unità USB di avvio che può essere usata per installare Windows 10 [in Surface Hub 2](/surface-hub/surface-hub-2s-migrate-os):
 
     ```powershell
     .\CreateSurfaceWindowsImage.ps1 -ISO C:\SDA\enterprise_client.iso -OSSKU Enterprise -DestinationFolder C:\Output -Device SurfaceHub2 -CreateUSB $True
@@ -68,14 +71,14 @@ Per un [elenco dettagliato dei](https://github.com/microsoft/SurfaceDeploymentAc
 
     L'esecuzione dello script richiederà circa 45 minuti, ma potrebbe richiedere più tempo a seconda delle risorse di CPU e disco disponibili. 
 
-    Dopo aver creato Windows immagine, lo script chiederà di inserire e confermare la lettera di unità dell'unità USB. L'unità USB verrà quindi formattata, configurata come avviabile e i file copiati per abilitare l'installazione dell'immagine Windows 10 personalizzata per i dispositivi Surface.
+    Dopo aver creato Windows immagine, lo script chiederà di inserire e confermare la lettera di unità dell'unità USB. L'unità USB verrà quindi formattata, configurata come avviabile e i file copiati per abilitare l'installazione dell'immagine Windows 10 o Windows 11 personalizzata per i dispositivi Surface.
 
-9. Inserisci l'unità USB nel dispositivo in cui vuoi installare Windows 10 e riavvia per iniziare l'installazione Windows 10. L'avvio USB deve essere abilitato nel BIOS, che può richiedere la disabilitazione temporanea dell'avvio protetto.
+9. Inserisci l'unità USB nel dispositivo in cui vuoi installare Windows 10 o Windows 11 e riavvia per iniziare l'installazione. L'avvio USB deve essere abilitato nel BIOS, che può richiedere la disabilitazione temporanea dell'avvio protetto.
 
 > [!IMPORTANT]
-> L'avvio dall'unità USB inizierà immediatamente l'installazione Windows 10. Assicurati che il dispositivo sia pronto prima di inserire l'USB e riavviarlo. 
+> L'avvio dall'unità USB inizierà immediatamente l'installazione del sistema operativo. Assicurati che il dispositivo sia pronto prima di inserire l'USB e riavviarlo. 
 
 ## <a name="related-links"></a>Collegamenti correlati
 
  - [Strumento di distribuzione di immagini open source rilasciato in GitHub](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/open-source-image-deployment-tool-released-on-github/ba-p/1314115)
- - [Scaricare e installare il Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install)
+ - [Scaricare e installare il Windows ADK](/windows-hardware/get-started/adk-install)

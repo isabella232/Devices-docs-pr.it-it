@@ -13,21 +13,24 @@ ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 8584ae4ade7d7a043438206230cb24d146b586cb
-ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 4942dd5ab187b7350e5093d8d189ad52536ef5bd
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "11911671"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12448559"
 ---
 # <a name="unenroll-surface-devices-from-semm"></a>Annullare la registrazione dei dispositivi Surface da SEMM
 
-Quando un dispositivo Surface viene registrato in surface Enterprise Management Mode (SEMM), un certificato viene archiviato nel firmware del dispositivo. La presenza di tale certificato e la registrazione in SEMM impediscono modifiche non autorizzate alle impostazioni o alle opzioni UEFI di Surface mentre il dispositivo è registrato in SEMM. Per ripristinare il controllo delle impostazioni UEFI di Surface per l'utente, il dispositivo Surface deve essere rimosso da SEMM, un processo talvolta descritto come reimpostazione o ripristino. Esistono due metodi che puoi usare per annullare la registrazione di un dispositivo da SEMM, ovvero un pacchetto di reimpostazione UEFI di Surface e una richiesta di ripristino.
+Quando un dispositivo Surface viene registrato in surface Enterprise Management Mode (SEMM), un certificato viene archiviato nel firmware del dispositivo. La presenza di tale certificato e la registrazione in SEMM impediscono modifiche non autorizzate alle impostazioni o alle opzioni UEFI di Surface mentre il dispositivo è registrato in SEMM. Per ripristinare il controllo delle impostazioni UEFI di Surface per l'utente, è necessario annullare la registrazione del dispositivo Surface da SEMM, un processo talvolta descritto come reimpostazione o ripristino. Esistono due metodi che puoi usare per annullare la registrazione di un dispositivo da SEMM, ovvero un pacchetto di reimpostazione UEFI di Surface e una richiesta di ripristino.
 
 >[!WARNING]
 >Per annullare la registrazione di un dispositivo da SEMM e ripristinare il controllo utente delle impostazioni UEFI di Surface, devi disporre del certificato SEMM usato per registrare il dispositivo in SEMM. Se questo certificato viene perso o danneggiato, non è possibile annullare la registrazione da SEMM. Eseguire il backup e proteggere il certificato SEMM di conseguenza.
 
-Per altre informazioni su SEMM, vedi [Microsoft Surface Enterprise Management Mode.](https://technet.microsoft.com/itpro/surface/surface-enterprise-management-mode)
+Per altre informazioni su SEMM, vedi [Microsoft Surface Enterprise Management Mode](https://technet.microsoft.com/itpro/surface/surface-enterprise-management-mode).
 
 ## <a name="unenroll-a-surface-device-from-semm-with-a-surface-uefi-reset-package"></a>Annullare la registrazione di un dispositivo Surface da SEMM con un pacchetto di reimpostazione UEFI di Surface
 
@@ -46,29 +49,29 @@ Per creare un pacchetto di reimpostazione UEFI di Surface, segui questi passaggi
 
 1. Apri Configuratore UEFI di Microsoft Surface dalla menu Start.
 2. Fai clic su **Start**.
-3. Fare **clic su Reimposta pacchetto**, come illustrato nella figura 2.
+3. Fare **clic su Reimposta** pacchetto, come illustrato nella figura 2.
 
    ![Seleziona Reimposta pacchetto per creare un pacchetto per annullare la registrazione del dispositivo Surface da SEMM.](images/surface-semm-unenroll-fig2.png "Select Reset Package to create a package to unenroll Surface device from SEMM")
 
    *Figura 2. Fai clic su Reimposta pacchetto per creare un pacchetto per annullare la registrazione di un dispositivo Surface da SEMM*
 
-4. Fare **clic su Protezione** certificato per aggiungere il file di certificato SEMM con chiave privata (pfx), come illustrato nella figura 3. Passare al percorso del file del certificato, selezionarlo e quindi fare clic su **OK.**
+4. Fare **clic su Protezione** certificato per aggiungere il file di certificato SEMM con chiave privata (pfx), come illustrato nella figura 3. Passare al percorso del file del certificato, selezionarlo e quindi fare clic su **OK**.
 
    ![Aggiungi il certificato SEMM al pacchetto di reimpostazione UEFI di Surface.](images/surface-semm-unenroll-fig3.png "Add the SEMM certificate to Surface UEFI reset package")
 
    *Figura 3. Aggiungere il certificato SEMM a un pacchetto di reimpostazione UEFI di Surface*
 
 5. Fai clic su **Avanti**.
-6. Digita il numero di serie del dispositivo che vuoi annullare la registrazione da SEMM (come mostrato nella figura 4), quindi fai clic su **Compila** per generare il pacchetto di reimpostazione UEFI di Surface.
+6. Digita il numero di serie del dispositivo che vuoi annullare la registrazione da SEMM (come illustrato nella figura 4) e quindi fai clic su **Compila** per generare il pacchetto di reimpostazione UEFI di Surface.
 
    ![Crea un pacchetto di reimpostazione UEFI di Surface con numero di serie del dispositivo Surface.](images/surface-semm-unenroll-fig4.png "Create a Surface UEFI reset package with serial number of Surface device")
 
    *Figura 4. Usa il numero di serie del dispositivo Surface per creare un pacchetto di reimpostazione UEFI di Surface*
 
-7. Nella finestra **di dialogo Salva** con nome specificare un nome per il pacchetto di reimpostazione UEFI di Surface, passare al percorso in cui si desidera salvare il file e quindi fare clic su **Salva.**
-8. Al termine della generazione del pacchetto, **viene** visualizzata la pagina Operazione completata. Fai **clic su Fine** per completare la creazione del pacchetto e chiudi Il configuratore UEFI di Microsoft Surface.
+7. Nella finestra **di dialogo Salva** con nome specificare un nome per il pacchetto di reimpostazione UEFI di Surface, passare al percorso in cui si desidera salvare il file e quindi fare clic su **Salva**.
+8. Al termine della generazione del pacchetto **, viene visualizzata** la pagina Operazione completata. Fai **clic su Fine** per completare la creazione del pacchetto e chiudi Il configuratore UEFI di Microsoft Surface.
 
-Esegui il file del programma di Windows installer (.msi) del pacchetto di reimpostazione UEFI di Surface nel dispositivo Surface per annullare la registrazione del dispositivo da SEMM. Il pacchetto di reimpostazione richiederà un riavvio per eseguire l'operazione di annullamento della registrazione. Dopo l'annullamento della registrazione del dispositivo, puoi verificare la corretta rimozione verificando che l'elemento Pacchetto di configurazione **di Microsoft Surface** in Programmi e funzionalità (illustrato nella figura 5) non sia più presente. ****
+Esegui il file Windows Installer (.msi) del pacchetto di reimpostazione UEFI di Surface nel dispositivo Surface per annullare la registrazione del dispositivo da SEMM. Il pacchetto di reimpostazione richiederà un riavvio per eseguire l'operazione di annullamento della registrazione. Dopo l'annullamento della registrazione del dispositivo, puoi verificare la corretta rimozione verificando che l'elemento Pacchetto di configurazione **di Microsoft Surface** **in Programmi** e funzionalità (illustrato nella figura 5) non sia più presente.
 
 ![Schermata che mostra che il dispositivo è registrato in SEMM.](images/surface-semm-unenroll-fig5.png "Screen that shows device is enrolled in SEMM")
 
@@ -82,11 +85,11 @@ Il processo di richiesta di ripristino viene avviato da Surface UEFI nel disposi
 
 Per avviare una richiesta di ripristino, attenersi alla seguente procedura:
 
-1. Avvia il dispositivo Surface da annullare la registrazione da SEMM a Surface UEFI.
+1. Avvia il dispositivo Surface di cui annullare la registrazione da SEMM a Surface UEFI.
 2. Se richiesto, digita la password UEFI di Surface.
-3. Fare clic **sulla Enterprise di gestione** dei dati, come illustrato nella figura 6.
+3. Fare clic **sulla Enterprise di** gestione dei dati, come illustrato nella figura 6.
 
-   ![Enterprise Pagina Gestione.](images/surface-semm-unenroll-fig6.png "Enterprise Management page")
+   ![Enterprise Gestione utenti.](images/surface-semm-unenroll-fig6.png "Enterprise Management page")
 
    *Figura 6. La Enterprise di gestione dei dispositivi viene visualizzata in Surface UEFI nei dispositivi registrati in SEMM*
 
@@ -94,13 +97,13 @@ Per avviare una richiesta di ripristino, attenersi alla seguente procedura:
 5. Fare clic o premere **Avanti** per avviare il processo di richiesta di ripristino.
    >[!NOTE]
    >Una richiesta di ripristino scade due ore dopo la sua creazione. Se una richiesta di ripristino non viene completata in questo momento, sarà necessario riavviare il processo di richiesta di ripristino.
-6. Selezionare **Certificato SEMM** nell'elenco dei certificati visualizzato nella pagina Scegliere una chiave di reimpostazione **SEMM** (illustrata nella figura 7) e quindi fare clic o premere **Avanti.**
+6. Selezionare **SeMM Certificate** dall'elenco dei certificati visualizzato nella pagina **Choose a SEMM reset key** (shown in Figure 7), quindi fare clic o premere **Next**.
 
    ![Selezionare il certificato SEMM per la richiesta di ripristino.](images/surface-semm-unenroll-fig7.png "Select SEMM certificate for your Recovery Request")
 
    *Figura 7. Scegliere il certificato SEMM per la richiesta di ripristino (richiesta di reimpostazione)*
 
-7. Nella pagina Immetti codice di verifica reimpostazione **SEMM** è possibile fare clic sui pulsanti Codice **QR** o Testo per visualizzare la richiesta di ripristino (richiesta di reimpostazione) come illustrato nella figura 8 o il pulsante **** **USB** per salvare la richiesta di ripristino (richiesta di reimpostazione) come file in un'unità USB, come illustrato nella figura 9.
+7. Nella pagina Immetti codice di verifica reimpostazione **SEMM** è possibile fare clic sui pulsanti Codice **** **QR** o Testo per visualizzare la richiesta di ripristino (richiesta di reimpostazione) come illustrato nella figura 8 o il pulsante **USB** per salvare la richiesta di ripristino (richiesta di reimpostazione) come file in un'unità USB, come illustrato nella figura 9.
 
    ![Richiesta di ripristino visualizzata come codice QR.](images/surface-semm-unenroll-fig8.png "Recovery Request displayed as a QR Code")
 
@@ -110,7 +113,7 @@ Per avviare una richiesta di ripristino, attenersi alla seguente procedura:
 
    *Figura 9. Salvare una richiesta di ripristino (richiesta di reimpostazione) in un'unità USB*
 
-   * Per usare una richiesta di ripristino del codice QR (richiesta di reimpostazione), usa un'app di lettura QR su un dispositivo mobile per leggere il codice. L'app lettore QR tradurrà il codice QR in una stringa alfanumerica. Puoi quindi inviare tramite posta elettronica o messaggio tale stringa all'amministratore che produrrà il codice di verifica di reimpostazione con Microsoft Surface UEFI Configurator.
+   * Per usare una richiesta di ripristino del codice QR (richiesta di reimpostazione), usa un'app lettore QR su un dispositivo mobile per leggere il codice. L'app lettore QR tradurrà il codice QR in una stringa alfanumerica. Puoi quindi inviare tramite posta elettronica o messaggio tale stringa all'amministratore che produrrà il codice di verifica di reimpostazione con Microsoft Surface UEFI Configurator.
    * Per usare una richiesta di ripristino (richiesta di reimpostazione) salvata in un'unità USB come file, usa l'unità USB per trasferire il file nel computer in cui verrà usato il configuratore UEFI di Microsoft Surface per produrre il codice di verifica di reimpostazione. Il file può anche essere copiato dall'unità USB su un altro dispositivo per essere inviato tramite posta elettronica o trasferito in rete.
    * Per usare la richiesta di ripristino (richiesta di reimpostazione) come testo, digita semplicemente il testo direttamente nel Configuratore UEFI di Microsoft Surface.
 
@@ -118,15 +121,15 @@ Per avviare una richiesta di ripristino, attenersi alla seguente procedura:
     >[!NOTE]
     >Il configuratore UEFI di Microsoft Surface deve essere eseguito in un ambiente in grado di autenticare la catena di certificati per il certificato SEMM.
 9. Fai clic su **Start**.
-10. Fare **clic su Richiesta**di ripristino , come illustrato nella figura 10.
+10. Fare **clic su Richiesta** di ripristino, come illustrato nella figura 10.
 
     ![Avviare il processo per approvare una richiesta di ripristino.](images/surface-semm-unenroll-fig10.png "Start process to approve a Recovery Request")
 
     *Figura 10. Fare clic su Richiesta di ripristino per avviare il processo per approvare una richiesta di ripristino*
 
 11. Fare **clic su Protezione** certificato per autenticare la richiesta di ripristino con il certificato SEMM.
-12. Individuare e selezionare il file del certificato SEMM e quindi fare clic su **OK.**
-13. Quando viene richiesto di immettere la password del certificato come illustrato nella figura 11, digitare e confermare la password per il file del certificato e quindi fare clic su **OK.**
+12. Individuare e selezionare il file del certificato SEMM e quindi fare clic su **OK**.
+13. Quando viene richiesto di immettere la password del certificato come illustrato nella figura 11, digitare e confermare la password per il file del certificato e quindi fare clic su **OK**.
 
     ![Digitare la password per il certificato SEMM.](images/surface-semm-unenroll-fig11.png "Type password for SEMM certificate")
 
@@ -141,7 +144,7 @@ Per avviare una richiesta di ripristino, attenersi alla seguente procedura:
 
     * Se hai visualizzato la richiesta di ripristino (richiesta di reimpostazione) come testo nel dispositivo Surface da reimpostare, usa la tastiera per digitare la richiesta di ripristino (richiesta di reimpostazione) nel campo fornito.
     * Se hai visualizzato la richiesta di ripristino (richiesta di reimpostazione) come codice QR e quindi hai usato un'applicazione di messaggistica o di posta elettronica per inviare il codice al computer con il configuratore UEFI di Microsoft Surface, copia e incolla il codice nel campo fornito.
-    * Se la richiesta di ripristino (richiesta di reimpostazione) è **** stata salvata come file in un'unità USB, fare clic sul pulsante Importa, individuare e selezionare il file Richiesta di ripristino (richiesta di reimpostazione) e quindi fare clic su **OK.**
+    * Se la richiesta di ripristino (richiesta di reimpostazione) è stata salvata come file in un'unità **** USB, fare clic sul pulsante Importa, individuare e selezionare il file Richiesta di ripristino (richiesta di reimpostazione) e quindi fare clic su **OK**.
 
 16. Il codice di verifica della reimpostazione viene visualizzato nel configuratore UEFI di Microsoft Surface, come illustrato nella figura 13.
 
@@ -151,7 +154,7 @@ Per avviare una richiesta di ripristino, attenersi alla seguente procedura:
 
     * Fai clic **sul pulsante** Condividi per inviare il codice di verifica della reimpostazione tramite posta elettronica.
 
-17. Immetti il codice di verifica della reimpostazione nel campo fornito nel dispositivo **** Surface (mostrato nella figura 8), quindi fai clic o premi Verifica per reimpostare il dispositivo e annullare la registrazione del dispositivo da SEMM.
+17. Immetti il codice di verifica della reimpostazione nel campo fornito nel dispositivo Surface (mostrato nella figura 8), quindi fai clic o premi **** Verifica per reimpostare il dispositivo e annullare la registrazione del dispositivo da SEMM.
 18. Fare clic o premere **Riavvia** ora nella pagina **reimpostazione SEMM** completata per completare l'annullamento della registrazione da SEMM, come illustrato nella figura 14.
 
     ![Visualizzazione di esempio dell'annullamento della registrazione da SEMM.](images/surface-semm-unenroll-fig14.png "Example display of successful unenrollment from SEMM")

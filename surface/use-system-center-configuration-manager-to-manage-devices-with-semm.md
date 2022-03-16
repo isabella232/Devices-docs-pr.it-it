@@ -14,12 +14,15 @@ manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
 ms.date: 10/28/2020
-ms.openlocfilehash: 3a70f08ded5ad19b8bc2dc8a7e4fe6d85d972c43
-ms.sourcegitcommit: d6ac31a94b6630f04cf3469d5dcf8b66e46c7412
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 470fec76afded98127464d956d907e90758de9d6
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "11911621"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449249"
 ---
 # <a name="use-microsoft-endpoint-configuration-manager-to-manage-devices-with-semm"></a>Usare Microsoft Endpoint Configuration Manager per configurare dispositivi con SEMM
 
@@ -41,7 +44,7 @@ Prima di iniziare il processo descritto in questo articolo, acquisire familiarit
 
 
 > [!Note]
-> Sarà inoltre necessario accedere al certificato che si intende utilizzare per proteggere SEMM. Per informazioni dettagliate sui requisiti per questo certificato, vedi [Requisiti dei certificati per](surface-enterprise-management-mode.md#surface-enterprise-management-mode-certificate-requirements)la modalità di gestione di Surface Enterprise .
+> Sarà inoltre necessario accedere al certificato che si intende utilizzare per proteggere SEMM. Per informazioni dettagliate sui requisiti per questo certificato, [vedi Requisiti del certificato per la modalità di gestione di Surface Enterprise](surface-enterprise-management-mode.md#surface-enterprise-management-mode-certificate-requirements).
 > 
 > È molto importante che questo certificato venga conservato in un luogo sicuro ed eseguito correttamente il backup. Se questo certificato viene perso o inutilizzabile, non è possibile reimpostare Surface UEFI, modificare le impostazioni UEFI di Surface gestite o rimuovere SEMM da un dispositivo Surface registrato.
 
@@ -55,7 +58,7 @@ Dopo l'installazione di Microsoft Surface UEFI Manager nel dispositivo Surface c
 
 ## <a name="deploy-microsoft-surface-uefi-manager"></a>Distribuire Microsoft Surface UEFI Manager
 
-La distribuzione di Microsoft Surface UEFI Manager è una distribuzione tipica delle applicazioni. Il file del programma di installazione di Microsoft Surface UEFI Manager è un file Windows installer standard che puoi installare con [l'opzione standard non interattiva.](https://msdn.microsoft.com/library/windows/desktop/aa367988)
+La distribuzione di Microsoft Surface UEFI Manager è una distribuzione tipica delle applicazioni. Il file del programma di installazione di Microsoft Surface UEFI Manager è un file Windows installer standard che puoi installare con [l'opzione non interattiva standard](https://msdn.microsoft.com/library/windows/desktop/aa367988).
 
 Il comando per installare Microsoft Surface UEFI Manager è il seguente.
 
@@ -67,31 +70,31 @@ Il comando per disinstallare Microsoft Surface UEFI Manager è il seguente.
 
 Per creare una nuova applicazione e distribuirla in una raccolta contenente i dispositivi Surface, esegui la procedura seguente:
 
-1. Apri la console di Configuration Manager dalla **schermata Start** o dal menu **Start.**
+1. Apri la console di Configuration Manager dalla **schermata Start** o dal menu **Start** .
 2. Seleziona **Raccolta software** nell'angolo in basso a sinistra della finestra.
 3. Espandere il **nodo Gestione** applicazioni della raccolta software e quindi selezionare **Applicazioni**.
 4. Seleziona il **pulsante Crea** applicazione nella **scheda Home** nella parte superiore della finestra. Verrà avviata la Creazione guidata applicazione.
 5. La Creazione guidata applicazione presenta una serie di passaggi:
 
-   * **Generale:** **l'opzione Rileva automaticamente informazioni su questa applicazione dai file di** installazione è selezionata per impostazione predefinita. Nel campo **Tipo** viene selezionato **Windows installer (.msi file)** per impostazione predefinita. Selezionare **Sfoglia** per passare a e **selezionare **SurfaceUEFIManagerSetup.msie quindi selezionare **Avanti.**
+   * **Generale** : **l'opzione Rileva automaticamente informazioni su questa applicazione dai file di** installazione è selezionata per impostazione predefinita. Nel campo **Tipo** è selezionato **Windows Installer (.msi file)** per impostazione predefinita. Selezionare **Sfoglia** per passare a e selezionare **SurfaceUEFIManagerSetup.msi**e quindi selezionare **Avanti**.
    
       > [!Note]
       > Il percorso di SurfaceUEFIManagerSetup.msi deve trovarsi in una condivisione di rete e trovarsi in una cartella che non contiene altri file. Non è possibile utilizzare un percorso file locale.
 
-   * **Importa informazioni:** la Creazione guidata applicazione analerà il file .msi e leggerà il nome **dell'applicazione** e il **codice prodotto.** SurfaceUEFIManagerSetup.msi deve essere elencato come l'unico file sotto la riga File di **contenuto**, come illustrato nella figura 1. Selezionare **Avanti** per procedere.
+   * **Importa informazioni** : la Creazione guidata applicazione analerà il file .msi e leggerà il nome **dell'applicazione e** il **codice prodotto**. SurfaceUEFIManagerSetup.msi deve essere elencato come l'unico file sotto la riga **File di contenuto**, come illustrato nella figura 1. Selezionare **Avanti** per procedere.
 
       ![Le informazioni della configurazione di Surface UEFI Manager vengono analizzate automaticamente.](images/config-mgr-semm-fig1.png "Information from Surface UEFI Manager setup is automatically parsed")
 
       *Figura 1. Le informazioni della configurazione di Microsoft Surface UEFI Manager vengono analizzate automaticamente*
 
-   * **Informazioni generali:** è possibile modificare il nome dell'applicazione e le informazioni sull'autore e la versione oppure aggiungere commenti in questa pagina. Il comando di installazione per Microsoft Surface UEFI Manager viene visualizzato nel campo Programma di installazione. Il comportamento di installazione predefinito di Installa per il sistema consentirà a Microsoft Surface UEFI Manager di installare gli assembly necessari per SEMM anche se un utente non è connesso al dispositivo Surface. Selezionare **Avanti** per procedere.
-   * **Riepilogo:** le informazioni analizzate **** nel passaggio Importa informazioni e **** le selezioni del passaggio Informazioni generali vengono visualizzate in questa pagina. Selezionare **Avanti** per confermare le selezioni e creare l'applicazione.
-   * **Progress:** visualizza un indicatore di stato e uno stato quando l'applicazione viene importata e aggiunta alla Raccolta software.
-   * **Completamento:** al termine del processo di creazione dell'applicazione viene visualizzata la conferma della corretta creazione dell'applicazione. Selezionare **Chiudi per** completare la Creazione guidata applicazione.
+   * **Informazioni generali** : è possibile modificare il nome dell'applicazione e le informazioni sull'autore e la versione oppure aggiungere commenti in questa pagina. Il comando di installazione per Microsoft Surface UEFI Manager viene visualizzato nel campo Programma di installazione. Il comportamento di installazione predefinito di Installa per il sistema consentirà a Microsoft Surface UEFI Manager di installare gli assembly necessari per SEMM anche se un utente non è connesso al dispositivo Surface. Selezionare **Avanti** per procedere.
+   * **Riepilogo**: le informazioni analizzate nel passaggio Importa informazioni **** e le selezioni del passaggio Informazioni generali vengono visualizzate **** in questa pagina. Selezionare **Avanti** per confermare le selezioni e creare l'applicazione.
+   * **Progress** : visualizza un indicatore di stato e uno stato quando l'applicazione viene importata e aggiunta alla Raccolta software.
+   * **Completamento** : al termine del processo di creazione dell'applicazione viene visualizzata la conferma della corretta creazione dell'applicazione. Selezionare **Chiudi per** completare la Creazione guidata applicazione.
 
 Dopo aver creato l'applicazione in Configuration Manager, puoi distribuirla ai punti di distribuzione e distribuirla alle raccolte, inclusi i dispositivi Surface. Questa applicazione non installerà o abiliterà SEMM nel dispositivo Surface. Fornisce solo gli assembly necessari per l'attivazione di SEMM tramite lo script di PowerShell.
 
-Se non vuoi installare gli assembly di Microsoft Surface UEFI Manager nei dispositivi che non verranno gestiti con SEMM, puoi configurare Microsoft Surface UEFI Manager come dipendenza degli script di SEMM Configuration Manager. Questo scenario è descritto nella sezione [Distribuire script di Configuration Manager SEMM](#deploy-semm-configuration-manager-scripts) più avanti in questo articolo.
+Se non vuoi installare gli assembly di Microsoft Surface UEFI Manager nei dispositivi che non verranno gestiti con SEMM, puoi configurare Microsoft Surface UEFI Manager come dipendenza degli script di SEMM Configuration Manager. Questo scenario è descritto nella sezione [Distribuire gli script di Configuration Manager SEMM](#deploy-semm-configuration-manager-scripts) più avanti in questo articolo.
 
 ## <a name="create-or-modify-the-semm-configuration-manager-scripts"></a>Creare o modificare gli script di SEMM Configuration Manager
 
@@ -99,8 +102,8 @@ Dopo l'installazione degli assembly necessari nei dispositivi, il processo di re
 
 Esistono due script principali necessari per eseguire una distribuzione SEMM con Configuration Manager:
 
-* **ConfigureSEMM.ps1: ** usa questo script per creare pacchetti di configurazione per i dispositivi Surface con le impostazioni UEFI di Surface desiderate per applicare le impostazioni specificate a un dispositivo Surface, registrare il dispositivo in SEMM e impostare una chiave del Registro di sistema usata per identificare la registrazione del dispositivo in SEMM.
-* **ResetSEMM.ps1: ** usa questo script per reimpostare SEMM in un dispositivo Surface, che annulla la registrazione da SEMM e rimuove il controllo sulle impostazioni UEFI di Surface.
+* **ConfigureSEMM.ps1** : usa questo script per creare pacchetti di configurazione per i dispositivi Surface con le impostazioni UEFI di Surface desiderate per applicare le impostazioni specificate a un dispositivo Surface, registrare il dispositivo in SEMM e impostare una chiave del Registro di sistema usata per identificare la registrazione del dispositivo in SEMM.
+* **ResetSEMM.ps1** : usa questo script per reimpostare SEMM su un dispositivo Surface, che lo annulla da SEMM e rimuove il controllo sulle impostazioni UEFI di Surface.
 
 Gli script di esempio includono esempi di come impostare le impostazioni UEFI di Surface e come controllare le autorizzazioni per tali impostazioni. Queste impostazioni possono essere modificate per proteggere Surface UEFI e impostare le impostazioni UEFI di Surface in base alle esigenze del tuo ambiente. Nelle sezioni seguenti di questo articolo viene illustrato lo script ConfigureSEMM.ps1 ed esplorare le modifiche necessarie allo script per soddisfare le proprie esigenze.
 
@@ -132,11 +135,11 @@ La prima area dello script che devi modificare è la parte che specifica e caric
   73    $password = "1234" 
   ```
 
-Sostituire il **valore FabrikamSEMMSample.pfx** per la **variabile $certName** con il nome del file del certificato SEMM nella riga 58. Lo script creerà una directory di lavoro (denominata Config) nella cartella in cui si trovano gli script e quindi copierà il file del certificato in questa directory di lavoro.
+Sostituire il **valore FabrikamSEMMSample.pfx** per la **variabile $certName** con il nome del file di certificato SEMM nella riga 58. Lo script creerà una directory di lavoro (denominata Config) nella cartella in cui si trovano gli script e quindi copierà il file del certificato in questa directory di lavoro.
 
 Il pacchetto proprietario e il pacchetto di reimpostazione verranno creati anche nella directory Config e conteneranno la configurazione per le impostazioni UEFI di Surface e le autorizzazioni generate dallo script.
 
-Nella riga 73 sostituire il valore della variabile **$password,** **da 1234** alla password del file di certificato. Se non è necessaria una password, eliminare il **testo 1234.**
+Nella riga 73 sostituire il valore della variabile **$password** , **da 1234** alla password del file di certificato. Se non è necessaria una password, eliminare il **testo 1234** .
 
 > [!Note]
 > Gli ultimi due caratteri dell'identificazione personale del certificato sono necessari per registrare un dispositivo in SEMM. Questo script visualizza queste cifre all'utente, che consente all'utente o al tecnico di registrare queste cifre prima del riavvio del sistema per registrare il dispositivo in SEMM. Per ottenere questo risultato, lo script utilizza il codice seguente, disponibile nelle righe 150-155.
@@ -150,15 +153,15 @@ Nella riga 73 sostituire il valore della variabile **$password,** **da 1234** al
 155 Write-Host "Thumbprint =" $certPrint.Thumbprint
 ```
 
-Gli amministratori con accesso al file del certificato (con estensione pfx) possono leggere l'identificazione personale in qualsiasi momento aprendo il file pfx in CertMgr. Per visualizzare l'identificazione personale con CertMgr, eseguire la procedura seguente:
+Gli amministratori con accesso al file di certificato (con estensione pfx) possono leggere l'identificazione personale in qualsiasi momento aprendo il file pfx in CertMgr. Per visualizzare l'identificazione personale con CertMgr, eseguire la procedura seguente:
 
 1. Fare clic con il pulsante destro del mouse sul file pfx e quindi scegliere **Apri**.
 2. Espandere la cartella nel riquadro di spostamento.
 3. Selezionare **Certificati**.
 4. Fare clic con il pulsante destro del mouse sul certificato nel riquadro principale e quindi scegliere **Apri**.
 5. Selezionare la **scheda** Dettagli.
-6. **Nel** menu **a discesa** Mostra **** è necessario selezionare Solo proprietà o Solo proprietà.
-7. Selezionare il campo **Identificazione personale.**
+6. **Nel** menu **a discesa** Mostra è necessario selezionare Solo **** proprietà o Solo proprietà.
+7. Selezionare il campo **Identificazione personale**.
 
 > [!NOTE]
 > Il nome del certificato SEMM e la password devono essere immessi anche in questa sezione dello script ResetSEMM.ps1 per consentire a Configuration Manager di rimuovere SEMM dal dispositivo con l'azione di disinstallazione.
@@ -208,16 +211,16 @@ La prima area dello script in cui specificare la configurazione per Surface UEFI
 247 }
 ```
 
-Ogni **$uefiV 2** identifica un'impostazione UEFI di Surface impostando il nome o l'ID e quindi configura le autorizzazioni su uno dei valori seguenti:
+Ogni **$uefiV 2 identifica** un'impostazione UEFI di Surface impostando il nome o l'ID e quindi configura le autorizzazioni su uno dei valori seguenti:
 
-* **$ownerOnly:** l'autorizzazione per modificare questa impostazione viene concessa solo a SEMM.
-* **$ownerAndLocalUser:** l'autorizzazione per modificare questa impostazione viene concessa a un utente locale che avvia Surface UEFI, nonché a SEMM.
+* **$ownerOnly** : l'autorizzazione per modificare questa impostazione viene concessa solo a SEMM.
+* **$ownerAndLocalUser** : l'autorizzazione per modificare questa impostazione viene concessa a un utente locale che avvia Surface UEFI, nonché a SEMM.
 
-Puoi trovare informazioni sui nomi e gli ID delle impostazioni disponibili per Surface UEFI nella [sezione Impostazioni Nomi](#settings-names-and-ids) e ID di questo articolo.
+Puoi trovare informazioni sui nomi e gli ID delle impostazioni disponibili per Surface UEFI nella sezione [Impostazioni Nomi e ID](#settings-names-and-ids) di questo articolo.
 
 ### <a name="configure-settings"></a>Configurare le impostazioni
 
-La seconda area dello script in cui verrà specificata la configurazione per Surface UEFI è l'area **Configura Impostazioni** dello script di ConfigureSEMM.ps1, che configura se ogni impostazione è abilitata o disabilitata. Lo script di esempio include istruzioni per impostare tutte le impostazioni sui valori predefiniti. Lo script fornisce quindi istruzioni esplicite per disabilitare IPv6 per l'avvio PXE e lasciare invariata la password dell'amministratore UEFI di Surface. Questa area inizia con il commento **#Configure Impostazioni** alla riga 291 fino alla riga 335 nello script di esempio. L'area viene visualizzata come segue.
+La seconda area dello script in cui verrà specificata la configurazione per Surface UEFI è l'area **Configura Impostazioni** dello script di ConfigureSEMM.ps1, che configura se ogni impostazione è abilitata o disabilitata. Lo script di esempio include istruzioni per impostare tutte le impostazioni sui valori predefiniti. Lo script fornisce quindi istruzioni esplicite per disabilitare IPv6 per l'avvio PXE e lasciare invariata la password dell'amministratore UEFI di Surface. Questa area inizia con il commento **#Configure Impostazioni** alla riga 291-335 nello script di esempio. L'area viene visualizzata come segue.
 
 ```powershell
 291 # Configure Settings
@@ -267,15 +270,15 @@ La seconda area dello script in cui verrà specificata la configurazione per Sur
 335 }
 ```
 
-Come le autorizzazioni impostate nella sezione **Configura** autorizzazioni dello script, la configurazione di ogni impostazione UEFI di Surface viene eseguita definendo la **variabile $uefiV 2.** Per ogni riga che definisce la **variabile $uefiV 2,** un'impostazione UEFI di Surface viene identificata dal nome o dall'ID dell'impostazione e il valore configurato è impostato su **Abilitato** o **Disabilitato.**
+Come le autorizzazioni impostate nella sezione **Configura** autorizzazioni dello script, la configurazione di ogni impostazione UEFI di Surface viene eseguita definendo la **variabile $uefiV 2** . Per ogni riga che definisce la **variabile $uefiV 2** , un'impostazione UEFI di Surface viene identificata dal nome o dall'ID dell'impostazione e il valore configurato è impostato su **Abilitato** o **Disabilitato**.
 
 Se non vuoi modificare la configurazione di un'impostazione UEFI di Surface, ad esempio per assicurarti che la password di amministratore UEFI di Surface non sia cancellata dall'azione di reimpostare tutte le impostazioni UEFI di Surface sul valore predefinito, puoi usare **ClearConfiguredValue()** per imporre che questa impostazione non verrà modificata. Nello script di esempio viene usato nella riga 323 per impedire la cancellazione della password dell'amministratore UEFI di Surface, identificata nello script di esempio dal relativo ID di impostazione, **501**.
 
-Puoi trovare informazioni sui nomi e gli ID delle impostazioni disponibili per Surface UEFI nella sezione Nomi e ID di [Impostazioni](#settings-names-and-ids) più avanti in questo articolo.
+Puoi trovare informazioni sui nomi delle impostazioni disponibili e sugli ID per Surface UEFI nella sezione Nomi e ID [di Impostazioni](#settings-names-and-ids) più avanti in questo articolo.
 
 ### <a name="settings-registry-key"></a>Impostazioni del Registro di sistema
 
-Per identificare i sistemi registrati per Configuration Manager, lo script ConfigureSEMM.ps1 scrive le chiavi del Registro di sistema che possono essere utilizzate per identificare i sistemi registrati come installati con lo script di configurazione SEMM. Queste chiavi sono disponibili nel percorso seguente.
+Per identificare i sistemi registrati per Configuration Manager, lo script di ConfigureSEMM.ps1 scrive le chiavi del Registro di sistema che possono essere utilizzate per identificare i sistemi registrati come installati con lo script di configurazione SEMM. Queste chiavi sono disponibili nel percorso seguente.
 
 `HKLM\SOFTWARE\Microsoft\Surface\SEMM`
 
@@ -384,7 +387,7 @@ Il frammento di codice seguente, disponibile nelle righe 380-477, viene utilizza
 
 ### <a name="settings-names-and-ids"></a>Impostazioni nomi e ID
 
-Per configurare le impostazioni o le autorizzazioni UEFI di Surface per le impostazioni UEFI di Surface, devi fare riferimento a ogni impostazione tramite il nome o l'ID dell'impostazione. Con ogni nuovo aggiornamento per Surface UEFI, è possibile aggiungere nuove impostazioni. L'ShowSettingsOptions.ps1 script (da SEMM_Powershell.zip in [Surface Tools per IT)](https://www.microsoft.com/download/details.aspx?id=46703)fornisce informazioni dettagliate sulle impostazioni disponibili. Nel computer in ShowSettingsOptions.ps1 deve essere installato Microsoft Surface UEFI Manager, ma lo script non richiede un dispositivo Surface.
+Per configurare le impostazioni o le autorizzazioni UEFI di Surface per le impostazioni UEFI di Surface, devi fare riferimento a ogni impostazione tramite il nome o l'ID dell'impostazione. Con ogni nuovo aggiornamento per Surface UEFI, è possibile aggiungere nuove impostazioni. L'ShowSettingsOptions.ps1 script (da SEMM_Powershell.zip in [Surface Tools per IT](https://www.microsoft.com/download/details.aspx?id=46703)) fornisce informazioni dettagliate sulle impostazioni disponibili. Nel computer in ShowSettingsOptions.ps1 deve essere installato Microsoft Surface UEFI Manager, ma lo script non richiede un dispositivo Surface.
 
 
 ## <a name="deploy-semm-configuration-manager-scripts"></a>Distribuire gli script di SeMM Configuration Manager
@@ -395,7 +398,7 @@ Dopo aver preparato gli script per configurare e abilitare SEMM nel dispositivo 
 * ResetSEMM.ps1
 * Il certificato SEMM (ad esempio SEMMCertificate.pfx)
 
-Gli script di Configuration Manager SEMM verranno aggiunti a Configuration Manager come applicazione script. Il comando per installare SEMM con ConfigureSEMM.ps1 è il seguente.
+Gli script di SeMM Configuration Manager verranno aggiunti a Configuration Manager come applicazione script. Il comando per installare SEMM con ConfigureSEMM.ps1 è il seguente.
 
 `Powershell.exe -file ".\ConfigureSEMM.ps1"`
 
@@ -409,32 +412,32 @@ Per aggiungere gli script di SeMM Configuration Manager a Configuration Manager 
 
 2. Procedere con la Creazione guidata applicazione come segue:
 
-   - **Generale:** selezionare **Specificare manualmente le informazioni sull'applicazione**e quindi fare clic su **Avanti.**
+   - **Generale** : selezionare **Specificare manualmente le informazioni sull'applicazione** e quindi selezionare **Avanti**.
 
-   - **Informazioni generali:** immettere un nome per l'applicazione,ad esempio SEMM, e qualsiasi altra informazione desiderata, ad esempio autore, versione o commenti in questa pagina. Selezionare **Avanti** per procedere.
+   - **Informazioni generali** : immettere un nome per l'applicazione (ad esempio SEMM) e qualsiasi altra informazione desiderata, ad esempio autore, versione o commenti in questa pagina. Selezionare **Avanti** per procedere.
 
-   - **Catalogo applicazioni:** i campi di questa pagina possono essere lasciati con i relativi valori predefiniti. Seleziona **Avanti**.
+   - **Catalogo applicazioni** : i campi di questa pagina possono essere lasciati con i relativi valori predefiniti. Seleziona **Avanti**.
 
-   - **Tipi di distribuzione:** selezionare **Aggiungi** per avviare la Creazione guidata tipo di distribuzione.
+   - **Tipi di distribuzione** : selezionare **Aggiungi** per avviare la Creazione guidata tipo di distribuzione.
 
    - Procedere con i passaggi della Creazione guidata tipo di distribuzione, come indicato di seguito:
 
-     * **Generale:** selezionare **Programma di installazione script** dal menu a discesa Tipo. **** **L'opzione Specifica manualmente le informazioni sul tipo di** distribuzione verrà selezionata automaticamente. Selezionare **Avanti** per procedere.
-     * **Informazioni generali:** immettere un nome per il tipo di distribuzione ,ad esempio Script di configurazione SEMM, e quindi **selezionare Avanti** per continuare.
-     * **Contenuto:** selezionare **Sfoglia** accanto al **campo Percorso** contenuto e quindi selezionare la cartella in cui si trovano gli script di SEMM Configuration Manager. Nel campo **Programma di** installazione digitare il comando [di installazione](#deploy-semm-configuration-manager-scripts) riportato in precedenza in questo articolo. Nel campo **Disinstalla programma** immettere il comando [di disinstallazione](#deploy-semm-configuration-manager-scripts) riportato in precedenza in questo articolo (illustrato nella figura 2). Selezionare **Avanti** per passare alla pagina successiva.
+     * **Generale** : selezionare **Programma di installazione script** **dal menu** a discesa Tipo. **L'opzione Specifica manualmente le informazioni sul tipo di** distribuzione verrà selezionata automaticamente. Selezionare **Avanti** per procedere.
+     * **Informazioni generali** : immettere un nome per il tipo di distribuzione ,ad esempio Script di configurazione SEMM, e quindi **selezionare Avanti** per continuare.
+     * **Contenuto** : selezionare **Sfoglia** accanto al **campo Percorso** contenuto e quindi selezionare la cartella in cui si trovano gli script di SEMM Configuration Manager. Nel campo **Programma di** installazione digitare il comando [di installazione](#deploy-semm-configuration-manager-scripts) riportato in precedenza in questo articolo. Nel campo **Disinstalla programma** immettere il comando [di disinstallazione](#deploy-semm-configuration-manager-scripts) riportato in precedenza in questo articolo (illustrato nella figura 2). Selezionare **Avanti** per passare alla pagina successiva.
     
      ![Imposta gli script di SEMM Configuration Manager come comandi di installazione e disinstallazione.](images/config-mgr-semm-fig2.png "Set the SEMM Configuration Manager scripts as the install and uninstall commands")
 
      *Figura 2. Impostare gli script di SeMM Configuration Manager come comandi di installazione e disinstallazione*
 
-     * **Metodo di rilevamento:** selezionare **Aggiungi clausola** per aggiungere la regola di rilevamento delle chiavi del Registro di sistema dello script seMM Configuration Manager. Viene **visualizzata la** finestra Regola di rilevamento, come illustrato nella figura 3. Usa le impostazioni seguenti:
+     * **Metodo di rilevamento** : selezionare **Aggiungi clausola** per aggiungere la regola di rilevamento delle chiavi del Registro di sistema dello script seMM Configuration Manager. Viene **visualizzata la** finestra Regola di rilevamento, come illustrato nella figura 3. Usa le impostazioni seguenti:
 
        - Seleziona **Registro** di sistema dal menu a discesa **Tipo** di impostazione.
-       - Seleziona **HKEY_LOCAL_MACHINE** dal menu a discesa **Hive.**
+       - Seleziona **HKEY_LOCAL_MACHINE** dal menu a discesa **Hive** .
        - Immetti **SOFTWARE\Microsoft\Surface\SEMM** nel **campo** Chiave.
        - Immettere **CertName** nel **campo** Valore.
-       - Selezionare **String** dal menu a discesa **Tipo** di dati.
-       - Selezionare **l'impostazione Del Registro di sistema deve soddisfare la regola seguente per indicare la presenza di questo pulsante dell'applicazione.**
+       - Selezionare **String** dal menu **a discesa Tipo** di dati.
+       - Selezionare **l'impostazione Del Registro di sistema deve soddisfare la regola seguente per indicare la presenza di questo pulsante dell'applicazione** .
        - Immettere il nome del certificato immesso nella riga 58 dello script nel **campo** Valore.
        - Selezionare **OK** per chiudere la **finestra Regola di** rilevamento.
 
@@ -444,33 +447,33 @@ Per aggiungere gli script di SeMM Configuration Manager a Configuration Manager 
 
      * Selezionare **Avanti** per passare alla pagina successiva.
      
-     * **Esperienza utente:** selezionare **Installa per il** sistema dal menu a discesa Installation **Behavior.** Se si desidera che gli utenti registrano e immissione dell'identificazione personale del certificato, lasciare il requisito di accesso impostato su Solo quando un utente **è connesso.** Se si desidera che gli amministratori immissione dell'identificazione personale per gli utenti e gli utenti non devono visualizzare l'identificazione personale, selezionare Se un utente è connesso o meno dal menu **a** discesa **Requisito** di accesso.
+     * **Esperienza utente** : selezionare **Installa per il** sistema dal menu a discesa **Installation Behavior** . Se si desidera che gli utenti registrano e immissione dell'identificazione personale del certificato, lasciare il requisito di accesso impostato su **Solo quando un utente è connesso**. Se si desidera che gli amministratori immissione dell'identificazione personale per gli utenti e gli utenti non devono visualizzare l'identificazione personale, selezionare Se un utente è connesso o meno dal menu **a** discesa **Requisito** di accesso.
 
-     * **Requisiti:** lo script ConfigureSEMM.ps1 verifica automaticamente che il dispositivo sia un dispositivo Surface prima di tentare di abilitare SEMM. Tuttavia, se intendi distribuire questa applicazione script in una raccolta con dispositivi diversi da quelli da gestire con SEMM, puoi aggiungere qui i requisiti per assicurarti che l'applicazione sia eseguita solo su dispositivi Surface o dispositivi che intendi gestire con SEMM. Selezionare **Avanti** per continuare.
+     * **Requisiti** : lo script ConfigureSEMM.ps1 verifica automaticamente che il dispositivo sia un dispositivo Surface prima di tentare di abilitare SEMM. Tuttavia, se intendi distribuire questa applicazione script in una raccolta con dispositivi diversi da quelli da gestire con SEMM, puoi aggiungere qui i requisiti per assicurarti che questa applicazione sia eseguita solo nei dispositivi Surface o nei dispositivi che intendi gestire con SEMM. Selezionare **Avanti** per continuare.
      
-     * **Dipendenze:** selezionare **Aggiungi** per aprire la **finestra Aggiungi** dipendenza.
+     * **Dipendenze** : selezionare **Aggiungi** per aprire la **finestra Aggiungi** dipendenza.
 
        * Selezionare **Aggiungi** per aprire la **finestra Specifica applicazione** necessaria.
 
-          - Immettere un nome per le dipendenze SEMM nel campo **Nome** gruppo di dipendenze , ad esempio Assembly *SEMM*.
+          - Immettere un nome per le dipendenze SEMM nel campo **Nome** gruppo di dipendenze (ad esempio, *Assembly SEMM*).
 
-          - Seleziona **Microsoft Surface UEFI** Manager **** nell'elenco Applicazioni disponibili e il tipo di distribuzione MSI, quindi seleziona **OK** per chiudere la finestra Specifica **applicazione** necessaria.
+          - Seleziona **Microsoft Surface UEFI Manager** nell'elenco Applicazioni **** disponibili e il tipo di distribuzione MSI, quindi seleziona **OK** per chiudere la **finestra Specifica applicazione** necessaria.
           
          *   Tieni selezionata **la casella di** controllo Installazione automatica se vuoi che Microsoft Surface UEFI Manager sia installato automaticamente nei dispositivi quando tenti di abilitare SEMM con gli script di Configuration Manager. Selezionare **OK** per chiudere la **finestra Aggiungi** dipendenza.
 
      * Selezionare **Avanti** per procedere.
      
-     * **Riepilogo:** le informazioni immesse durante la procedura guidata Crea tipo di distribuzione vengono visualizzate in questa pagina. Selezionare **Avanti** per confermare le selezioni.
+     * **Riepilogo** : le informazioni immesse durante la procedura guidata Crea tipo di distribuzione vengono visualizzate in questa pagina. Selezionare **Avanti** per confermare le selezioni.
      
-     * **Progress:** in questa pagina vengono visualizzati l'indicatore di stato e lo stato del tipo di distribuzione per l'applicazione script SEMM.
+     * **Progress** : in questa pagina vengono visualizzati l'indicatore di stato e lo stato del tipo di distribuzione per l'applicazione script SEMM.
      
-     * **Completamento:** al termine del processo viene visualizzata la conferma della creazione del tipo di distribuzione. Selezionare **Chiudi per** completare la Creazione guidata tipo di distribuzione.
+     * **Completamento** : al termine del processo viene visualizzata la conferma della creazione del tipo di distribuzione. Selezionare **Chiudi per** completare la Creazione guidata tipo di distribuzione.
 
-   - **Riepilogo:** vengono visualizzate le informazioni immesse durante la Creazione guidata applicazione. Selezionare **Avanti** per creare l'applicazione.
+   - **Riepilogo** : vengono visualizzate le informazioni immesse durante la Creazione guidata applicazione. Selezionare **Avanti** per creare l'applicazione.
 
-   - **Progress:** in questa pagina vengono visualizzati un indicatore di stato e uno stato quando l'applicazione viene aggiunta alla Raccolta software.
+   - **Progress** : in questa pagina vengono visualizzati un indicatore di stato e uno stato quando l'applicazione viene aggiunta alla Raccolta software.
 
-   - **Completamento:** al termine del processo di creazione dell'applicazione viene visualizzata la conferma della corretta creazione dell'applicazione. Selezionare **Chiudi per** completare la Creazione guidata applicazione.
+   - **Completamento** : al termine del processo di creazione dell'applicazione viene visualizzata la conferma della corretta creazione dell'applicazione. Selezionare **Chiudi per** completare la Creazione guidata applicazione.
 
 Una volta che l'applicazione script è disponibile nella Raccolta software di Configuration Manager, puoi distribuire SEMM usando gli script preparati per dispositivi o raccolte. Se hai configurato gli assembly di Microsoft Surface UEFI Manager come dipendenza che verrà installata automaticamente, puoi distribuire SEMM in un unico passaggio. Se non hai configurato gli assembly come dipendenza, questi devono essere installati nei dispositivi che intendi gestire prima di abilitare SEMM.
 

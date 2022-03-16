@@ -20,12 +20,15 @@ ms.topic: article
 manager: laurawi
 ms.audience: itpro
 ms.date: 12/08/2021
-ms.openlocfilehash: e8e4ddbd559fc6aea2d04e61208b911ebef3ec22
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 44508875254d2e3d004afef710b43ada2911de08
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12338399"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12448659"
 ---
 # <a name="wake-on-power-for-surface-devices"></a>Riattivazione alimentazione per i dispositivi Surface
 
@@ -50,7 +53,7 @@ La funzionalità Riattivazione è disponibile nei dispositivi seguenti:
 
 ## <a name="overview-and-prerequisites"></a>Panoramica e prerequisiti
 
-Surface UEFI Configurator ti consente di salvare singole impostazioni UEFI in un pacchetto Windows Installer .msi per la distribuzione nei dispositivi di destinazione. 
+Surface UEFI Configurator consente di salvare singole impostazioni UEFI in un pacchetto Windows Installer .msi per la distribuzione nei dispositivi di destinazione. 
 
 > [!NOTE]
 > Questo articolo presuppone che tu sappia come usare SEMM. Per altre informazioni, vedi la [documentazione relativa alla modalità di gestione di Surface Enterprise (SEMM](surface-enterprise-management-mode.md)).

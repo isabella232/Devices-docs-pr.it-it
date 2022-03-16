@@ -1,6 +1,6 @@
 ---
 title: Preparare la distribuzione di Surface con Microsoft Deployment Toolkit
-description: Illustra il processo consigliato per la distribuzione di Windows 10 nei dispositivi Surface con Microsoft Deployment Toolkit.
+description: Illustra il processo consigliato di distribuzione di Windows 10 ai dispositivi Surface con Microsoft Deployment Toolkit.
 keywords: windows 10 surface, automatizza, personalizza, mdt
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,12 +14,15 @@ ms.audience: itpro
 ms.reviewer: ''
 manager: laurawi
 ms.date: 10/12/2020
-ms.openlocfilehash: 9578893ad96d84380adfc038dd42c4791d29c7cd
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: b12704e7e0709e1a6315d0d5e5eb7a68799acfe9
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12338279"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449509"
 ---
 # <a name="prepare-surface-deployment-with-microsoft-deployment-toolkit"></a>Preparare la distribuzione di Surface con Microsoft Deployment Toolkit
 
@@ -37,5 +40,5 @@ ms.locfileid: "12338279"
 > [!NOTE]
 > MDT non è supportato in Surface Pro X. Per ulteriori informazioni, vedere [Deploying, managing, and servicing Surface Pro X](surface-pro-arm-app-management.md).
 
-Per le informazioni più recenti sull'uso di MDT, [fai riferimento a Distribuire un'immagine Windows 10 con MDT](/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt).
+Per le informazioni più recenti sull'uso di MDT, fai riferimento [a Distribuire un'immagine Windows 10 con MDT](/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt).
 

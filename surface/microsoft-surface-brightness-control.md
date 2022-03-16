@@ -12,12 +12,15 @@ ms.reviewer: hachidan
 manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 660a96a8825002c6d52d067dac77894bb0c0b7a9
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 7c27bacde65ef8c0fab75b123283bf2e6699afed
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12337829"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449109"
 ---
 # <a name="surface-brightness-control"></a>Controllo della luminosità Surface
 
@@ -27,7 +30,7 @@ Quando distribuisci i dispositivi Surface in punti vendita o in altri scenari di
 - Livello di luminosità quando è in grigio.
 - Livello massimo di luminosità in uso.
 
-Scarica Surface Brightness Control da [Surface Tools for IT](https://www.microsoft.com/download/details.aspx?id=46703). Selezionare il file **Surface_Brightness_Control_v1.16.137.0.msi** nell'elenco disponibile.
+Scarica Surface Brightness Control da [Surface Tools for IT](https://www.microsoft.com/download/details.aspx?id=46703). Selezionare l' **Surface_Brightness_Control_v1.16.137.0.msi** file nell'elenco disponibile.
 
 ## <a name="supported-devices"></a>Dispositivi supportati
 
@@ -44,11 +47,11 @@ Scarica Surface Brightness Control da [Surface Tools for IT](https://www.microso
 
 ## <a name="run-surface-brightness-control"></a>Esegui controllo luminosità superficie
 
-- Installa **Surface_Brightness_Control_v1.16.137.0.msi** nel dispositivo di destinazione e Surface Brightness Control inizierà a funzionare immediatamente.
+- Installa **Surface_Brightness_Control_v1.16.137.0.msi** dispositivo di destinazione e Surface Brightness Control inizierà a funzionare immediatamente.
 
 ## <a name="configure-surface-brightness-control"></a>Configurare il controllo luminosità della superficie
 
-È possibile modificare i valori predefiniti tramite il Windows Registro di sistema. Per ulteriori informazioni sull'utilizzo del Registro di Windows, fare riferimento alla documentazione [del Registro di sistema](/windows/desktop/sysinfo/registry).
+È possibile modificare i valori predefiniti tramite il Windows Registro di sistema. Per ulteriori informazioni sull'utilizzo del Windows, vedere la documentazione [relativa al Registro di sistema](/windows/desktop/sysinfo/registry).
 
 1. Eseguire **regedit da** un prompt dei comandi per aprire l Windows Editor del Registro di sistema.
 2. Passa a Computer\HKEY\_LOCAL\_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Surface\Surface Brightness Control.

@@ -12,12 +12,15 @@ ms.date: 10/19/2021
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 63db862f917028c045ac2615f68ad1b196cdb622
-ms.sourcegitcommit: 94e11386d7034c6bc5fe753f7bebf61a9c815509
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 7f655a8f4012dbb2dc234b4734d684f932a53c6b
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "12154111"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449629"
 ---
 # <a name="whats-new-in-surface-dock-2"></a>Novità di Surface Dock 2
 
@@ -27,13 +30,13 @@ Surface Dock 2, il Surface Dock di nuova generazione, consente agli utenti di co
 
 Surface Dock 2 è progettato per semplificare la gestione IT, consentendo agli amministratori di automatizzare gli aggiornamenti del firmware tramite Windows Update o centralizzare gli aggiornamenti con gli strumenti di distribuzione del software interni.
 
-- Surface Enterprise Management Mode (SEMM) consente agli amministratori IT di proteggere le porte su Surface Dock 2. Per altre informazioni, vedi [Secure Surface Dock 2 ports with Surface Enterprise Management Mode.](secure-surface-dock-ports-semm.md)
-- Windows Il supporto di Strumentazione gestione (WMI) consente agli amministratori IT di monitorare e gestire in remoto il firmware, lo stato dei criteri e i dati correlati più recenti nei dispositivi Surface Dock 2. Per altre informazioni, vedi [Gestire Surface Dock 2 con WMI.](surface-dock2-wmi.md)
-- Centralizzare gli aggiornamenti nella rete locale utilizzando gli strumenti di distribuzione del software. [Scarica il firmware e i driver di Surface Dock 2.](https://www.microsoft.com/download/details.aspx?id=101317)
+- Surface Enterprise Management Mode (SEMM) consente agli amministratori IT di proteggere le porte su Surface Dock 2. Per altre informazioni, vedi [Secure Surface Dock 2 ports with Surface Enterprise Management Mode](secure-surface-dock-ports-semm.md).
+- Windows il supporto di Strumentazione gestione Windows (WMI) consente agli amministratori IT di monitorare e gestire in remoto il firmware, lo stato dei criteri e i dati correlati più recenti nei dispositivi Surface Dock 2. Per altre informazioni, vedi [Gestire Surface Dock 2 con WMI](surface-dock2-wmi.md).
+- Centralizzare gli aggiornamenti nella rete locale utilizzando gli strumenti di distribuzione del software. [Scarica il firmware e i driver di Surface Dock 2](https://www.microsoft.com/download/details.aspx?id=101317).
 
 ## <a name="general-system-requirements"></a>Requisiti di sistema generali
 
-- Windows 10 versione 1809. Non è disponibile alcun supporto per Windows 7, Windows 8 o dispositivi host non Surface. Surface Dock 2 funziona con i seguenti dispositivi Surface:
+- Windows 10 versione 1809 e successive. Non è disponibile alcun supporto per Windows 7, Windows 8 o dispositivi host non Surface. Surface Dock 2 funziona con i seguenti dispositivi Surface:
 
   - Surface Pro (5° generazione)
   - Surface Laptop (prima generazione)
@@ -114,14 +117,14 @@ Surface Dock 2 è progettato per semplificare la gestione IT, consentendo agli a
 | Alimentazione di carico USB                      | 30W                                                         | 60W                                                                                                 |                  |
 | Velocità in bit USB                        | 5 Gbps                                                      | 10 Gbps                                                                                             | 10 Gbps          |
 | Monitorare il supporto                     | 2 x 4K @30fps, o<br>1 x 4K @ 60fps                         | 2 x 4K @ 60fps<br> o 1 x 4K @120fps                                                                                     | 1 x 4K @ 60fps   |
-| Wake-on-LAN da Standby connesso <sup> 1</sup> | Sì                                                         | Sì                                                                                                 |    Sì              |
+| Wake-on-LAN da Standby connesso1<sup></sup> | Sì                                                         | Sì                                                                                                 |    Sì              |
 | Wake-on-LAN dalle modalità di sospensione S4/S5  | No                                                          | Sì                                                                                                 |          Sì        |
 | Avvio PXE di rete                    | Sì                                                         | Sì                                                                                                 |        Sì          |
 | Controllo di accesso host SEMM            | No                                                          | Sì                                                                                                 | No               |
-| Controllo di accesso alla porta SEMM <sup> 2</sup>          | No                                                          | Sì                                                                                                 | No               |
+| Controllo di accesso alla porta<sup> SEMM2</sup>          | No                                                          | Sì                                                                                                 | No               |
 | Supporto per la manutenzione                   | MSI                                                         | Windows Update o MSI                                                                               |                  |
 
-1. *I dispositivi devono essere configurati per Wake on LAN tramite seMM (Surface Enterprise Management Mode) o DFCI (Device Firmware Control Interface) per la riattivazione da stati di ibernazione o di accensione. Wake from ibernation or power-off is supported on Surface Laptop Studio, Surface Pro 8, Surface Pro 7+, Surface Pro 7, Surface Laptop 4, Surface Laptop 3, Surface Pro X, Surface Book 3, Surface Go 3 e Surface Go 2.  Licenza software necessaria per alcune funzionalità. Venduto separatamente.*
+1. *I dispositivi devono essere configurati per Wake on LAN tramite la modalità di gestione di Surface Enterprise (SEMM) o DFCI (Device Firmware Control Interface) per la riattivazione da stati di ibernazione o di accensione. Wake from ibernation or power-off is supported on Surface Laptop Studio, Surface Pro 8, Surface Pro 7+, Surface Pro 7, Surface Laptop 4, Surface Laptop 3, Surface Pro X, Surface Book 3, Surface Go 3 e Surface Go 2.  Licenza software necessaria per alcune funzionalità. Venduto separatamente.*
 
 2. *Licenza software necessaria per alcune funzionalità. Venduto separatamente.*
 
@@ -129,7 +132,7 @@ Surface Dock 2 è progettato per semplificare la gestione IT, consentendo agli a
 
 Surface ha rilasciato funzionalità di gestione semplificate tramite Windows Update che consente agli amministratori IT di utilizzare le funzionalità di livello enterprise seguenti:
 
-- **Aggiornamenti senza attrito**. Aggiorna i dock in modo automatico e automatico, con Windows Update o Microsoft Endpoint Configuration Manager (in precedenza System Center Configuration Manager - SCCM) o altri strumenti di distribuzione MSI.
+- **Aggiornamenti senza attriti**. Aggiorna i dock in modo automatico e automatico, con Windows Update o Microsoft Endpoint Configuration Manager (in precedenza System Center Configuration Manager - SCCM) o altri strumenti di distribuzione MSI.
 - **Riattiva dalla rete**. Gestire e accedere ai dispositivi aziendali senza che gli utenti mantenino i dispositivi acceso. Anche quando un dispositivo ancorato è in modalità sospensione, ibernazione o alimentazione disattivata, il team può riattivarsi dalla rete per il servizio e la gestione, usando Endpoint Configuration Manager o altri strumenti di gestione aziendale.
 - **Controllo IT centralizzato**. Controlla chi può connettersi a Surface Dock 2 attivando e disattivando le porte. Limitare i dispositivi host che possono essere usati con Surface Dock 2. Limitare l'accesso al dock a un singolo utente o configurare i dock per l'accesso solo da parte di utenti specifici del team o dell'intera società.
 

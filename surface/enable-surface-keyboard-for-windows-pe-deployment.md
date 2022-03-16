@@ -21,16 +21,18 @@ appliesto:
 - Surface Laptop 4
 - Surface Laptop Studio
 - Surface Pro 8
-ms.openlocfilehash: b65fbcb0221fe923e1e2240b8da163d868b46122
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 8707d022ae5e3d3f34c59fab88328b5720896898
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12338269"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449189"
 ---
 # <a name="how-to-enable-the-surface-laptop-keyboard-during-mdt-deployment"></a>Come abilitare la tastiera Surface Laptop durante la distribuzione di MDT
 
-In questo articolo viene illustrato un approccio di distribuzione che usa Microsoft Deployment Toolkit (MDT). È inoltre possibile applicare queste informazioni ad altre metodologie di distribuzione. Nella maggior parte dei tipi di dispositivi Surface, la tastiera dovrebbe funzionare durante l'installazione Lite Touch (LTI). Tuttavia, Surface Laptop alcuni driver aggiuntivi per abilitare la tastiera. Per i dispositivi Surface Laptop (1° generazione) e Surface Laptop 2, è necessario preparare la struttura delle cartelle e i profili di selezione che consentono di specificare i driver della tastiera da utilizzare durante la fase Windows Preinstallation Environment (Windows PE) di LTI. Per ulteriori informazioni su questa struttura di cartelle, vedere [Deploy a Windows 10 image using MDT: Step 5: Prepare the drivers repository](/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt?redirectedfrom=MSDN#step-5-prepare-the-drivers-repository).
+Questo articolo tratta un approccio di distribuzione che usa Microsoft Deployment Toolkit (MDT). È inoltre possibile applicare queste informazioni ad altre metodologie di distribuzione. Nella maggior parte dei tipi di dispositivi Surface, la tastiera dovrebbe funzionare durante l'installazione Lite Touch (LTI). Tuttavia, Surface Laptop alcuni driver aggiuntivi per abilitare la tastiera. Per i dispositivi Surface Laptop (prima generazione) e Surface Laptop 2, è necessario preparare la struttura delle cartelle e i profili di selezione che consentono di specificare i driver della tastiera da utilizzare durante la fase Windows Preinstallation Environment (Windows PE) di LTI. Per ulteriori informazioni su questa struttura di cartelle, vedere [Deploy a Windows 10 image using MDT: Step 5: Prepare the drivers repository](/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt?redirectedfrom=MSDN#step-5-prepare-the-drivers-repository).
 
 > [!TIP]
 > Quando si usano driver di tastiera per Surface Laptop 2 e Surface Laptop 3 nella stessa istanza di avvio pe di Windows, potrebbe essere necessario reimpostare manualmente il firmware se la tastiera o il touchpad non funzionano in Windows PE:
@@ -62,7 +64,7 @@ In questo articolo viene illustrato un approccio di distribuzione che usa Micros
 5. Seguire le istruzioni dell'Importazione guidata driver per importare le cartelle dei driver nella cartella WindowsPEX64.
 
  > [!NOTE]
- > Controlla il pacchetto .msi download per determinare il formato e la struttura della directory.  La struttura della directory inizierà con SurfacePlatformInstaller (file di .msi meno recenti) o SurfaceUpdate (file .msi più recenti) a seconda del momento in cui è stato rilasciato il file .msi.
+ > Controlla il pacchetto .msi download per determinare il formato e la struttura della directory.  La struttura della directory inizierà con SurfacePlatformInstaller (file .msi meno recenti) o SurfaceUpdate (file .msi più recenti) a seconda del momento in cui è stato rilasciato il file .msi.
 
 ## <a name="import-drivers-for-surface-devices"></a>Importare driver per dispositivi Surface
 
@@ -89,17 +91,17 @@ Importare le cartelle seguenti in base alle esigenze del Surface Laptop disposit
 1. Configurare un profilo di selezione che utilizza la cartella WindowsPEX64, come illustrato nella figura seguente:
 
    ![Immagine che mostra la cartella WindowsPEX64 selezionata come parte di un profilo di selezione.](./images/surface-laptop-keyboard-3.png)
-1. Configurare le Windows PE della condivisione di distribuzione MDT per l'utilizzo del nuovo profilo di selezione, come indicato di seguito:
+1. Configurare le Windows pe della condivisione di distribuzione MDT per usare il nuovo profilo di selezione, come indicato di seguito:
     - Per **Piattaforma**, selezionare **x64**.
     - In **Profilo di** selezione selezionare il nuovo profilo.
     - Selezionare **Includi tutti i driver dal profilo di selezione**.
 
     ![Immagine che mostra le Windows pe della condivisione di distribuzione MDT.](./images/surface-laptop-keyboard-4.png)
-4. Verificare di aver configurato i driver Surface Laptop driver utilizzando un profilo di selezione o una **variabile DriverGroup001**.
+4. Verificare di aver configurato i driver di Surface Laptop driver rimanenti utilizzando un profilo di selezione o una **variabile DriverGroup001**.
     - Per Surface Laptop (prima generazione), il modello è **Surface Laptop**. I driver di Surface Laptop rimanenti devono trovarsi nella cartella \MDT Deployment Share\Out-of-Box Drivers\Windows10\X64\Surface Laptop, come illustrato nella figura seguente.
     - Per Surface Laptop 2, il modello è **Surface Laptop 2**. I driver Surface Laptop devono trovarsi nella cartella \MDT Deployment Share\Out-of-Box Drivers\Windows10\X64\Surface Laptop 2.
-    - Per Surface Laptop 3 con processore Intel, il modello è Surface Laptop 3. I driver Surface Laptop aggiuntivi si trovano nella cartella \MDT Deployment Share\Out-of-Box Drivers\Windows10\X64\Surface Laptop 3.
+    - Per Surface Laptop 3 con processore Intel, il modello è Surface Laptop 3. I driver Surface Laptop sono disponibili nella cartella \MDT Deployment Share\Out-of-Box Drivers\Windows10\X64\Surface Laptop 3.
 
-    ![Immagine che mostra i normali Surface Laptop (prima generazione) nella cartella Surface Laptop di Deployment Workbench.](./images/surface-laptop-keyboard-5.png)
+    ![Immagine che mostra i driver Surface Laptop (prima generazione) nella cartella Surface Laptop di Deployment Workbench.](./images/surface-laptop-keyboard-5.png)
 
 Dopo aver configurato la condivisione di distribuzione MDT per usare il nuovo profilo di selezione e le impostazioni correlate, continuare il processo di distribuzione [come descritto in Deploy a Windows 10 image using MDT: Step 6: Create the deployment task sequence](/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt#step-6-create-the-deployment-task-sequence).

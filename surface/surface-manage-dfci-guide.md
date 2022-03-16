@@ -12,12 +12,15 @@ ms.date: 10/01/2021
 ms.reviewer: jesko
 manager: laurawi
 ms.audience: itpro
-ms.openlocfilehash: cedb4584952d5852efde3ea7644976e7bc6573e1
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: c4a39c094c0621ed491ab04148f0c8338771a6a6
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12337989"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12448599"
 ---
 # <a name="manage-dfci-on-surface-devices"></a>Gestire DFCI nei dispositivi Surface
 
@@ -27,15 +30,15 @@ La possibilità di gestire i dispositivi dal cloud ha notevolmente semplificato 
 
 ### <a name="background"></a>Background
 
-Come qualsiasi computer che esegue Windows 10, i dispositivi Surface si basano sul codice archiviato nel SoC che consente alla CPU di interfacciarsi con i dischi rigidi, i dispositivi di visualizzazione, le porte USB e altri dispositivi. I programmi archiviati in questa memoria di sola lettura (ROM) sono noti come firmware (mentre i programmi archiviati in supporti dinamici sono noti come software).
+Come qualsiasi computer che esegue Windows 10 o Windows 11, i dispositivi Surface si basano sul codice archiviato nel SoC che consente alla CPU di interfacciarsi con unità disco rigido, dispositivi di visualizzazione, porte USB e altri dispositivi. I programmi archiviati in questa memoria di sola lettura (ROM) sono noti come firmware (mentre i programmi archiviati in supporti dinamici sono noti come software).
 
-A differenza degli altri Windows 10 disponibili oggi sul mercato, Surface offre agli amministratori IT la possibilità di configurare e gestire il firmware tramite un set ricco di impostazioni di configurazione UEFI. Ciò fornisce un livello di controllo hardware sulla gestione dei criteri basata su software implementata tramite i criteri di gestione dei dispositivi mobili (MDM), Configuration Manager o Criteri di gruppo. Ad esempio, le organizzazioni che distribuiscono dispositivi in aree altamente sicure con informazioni riservate possono impedire l'uso della fotocamera rimuovendo la funzionalità a livello hardware. Dal punto di vista del dispositivo, spegnere la fotocamera tramite un'impostazione del firmware equivale a rimuovere fisicamente la fotocamera. Confronta la sicurezza aggiunta della gestione a livello di firmware con l'uso solo delle impostazioni del software del sistema operativo. Ad esempio, se disabiliti il servizio audio Windows tramite un'impostazione dei criteri in un ambiente di dominio, un amministratore locale potrebbe comunque riattivare il servizio.
+A differenza degli altri dispositivi Windows attualmente disponibili sul mercato, Surface offre agli amministratori IT la possibilità di configurare e gestire il firmware tramite un set ricco di impostazioni di configurazione UEFI. Ciò fornisce un livello di controllo hardware sulla gestione dei criteri basata su software implementata tramite i criteri di gestione dei dispositivi mobili (MDM), Configuration Manager o Criteri di gruppo. Ad esempio, le organizzazioni che distribuiscono dispositivi in aree altamente sicure con informazioni riservate possono impedire l'uso della fotocamera rimuovendo la funzionalità a livello hardware. Dal punto di vista del dispositivo, spegnere la fotocamera tramite un'impostazione del firmware equivale a rimuovere fisicamente la fotocamera. Confronta la sicurezza aggiunta della gestione a livello di firmware con l'uso solo delle impostazioni del software del sistema operativo. Ad esempio, se disabiliti il servizio audio Windows tramite un'impostazione dei criteri in un ambiente di dominio, un amministratore locale potrebbe comunque riattivare il servizio.
 
 ### <a name="dfci-versus-semm"></a>DFCI e SEMM
 
-In precedenza, la gestione del firmware richiedeva la registrazione dei dispositivi in Modalità di gestione di Surface Enterprise (SEMM) con l'overhead delle attività manuali che richiedono un utilizzo intensivo dell'IT. Ad esempio, SEMM richiede al personale IT di accedere fisicamente a ogni PC per immettere un pin a due cifre come parte del processo di gestione dei certificati. Anche se SEMM rimane una buona soluzione per le organizzazioni in un ambiente strettamente locale, la complessità e i requisiti di utilizzo intensivo dell'IT rendono molto dispendario l'utilizzo.
+In precedenza, la gestione del firmware richiedeva la registrazione dei dispositivi nella modalità di gestione di Surface Enterprise (SEMM) con l'overhead delle attività manuali che richiedono un utilizzo intensivo dell'IT. Ad esempio, SEMM richiede al personale IT di accedere fisicamente a ogni PC per immettere un pin a due cifre come parte del processo di gestione dei certificati. Anche se SEMM rimane una buona soluzione per le organizzazioni in un ambiente strettamente locale, la complessità e i requisiti di utilizzo intensivo dell'IT rendono molto dispendario l'utilizzo.
 
-Grazie alle funzionalità integrate di gestione del firmware UEFI in Microsoft Intune, la possibilità di bloccare l'hardware è semplificata e più facile da usare con nuove funzionalità per il provisioning, la sicurezza e l'aggiornamento semplificato in un'unica console, ora unificata come [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager). La figura seguente mostra le impostazioni UEFI visualizzate direttamente nel dispositivo (a sinistra) e visualizzate nella console Endpoint Manager (a destra).
+Con le funzionalità integrate di gestione del firmware UEFI in Microsoft Intune, la possibilità di bloccare l'hardware è semplificata e più facile da usare con le nuove funzionalità per il provisioning, la sicurezza e l'aggiornamento semplificato in un'unica console, ora unificata come [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager). La figura seguente mostra le impostazioni UEFI visualizzate direttamente nel dispositivo (a sinistra) e visualizzate nella console Endpoint Manager (a destra).
 
 :::image type="content" alt-text="Impostazioni UEFI visualizzate nel dispositivo (a sinistra) e nella console Endpoint Manager (a destra)." source="images/uefidfci.png" lightbox="images/uefidfci.png":::
 
@@ -84,7 +87,7 @@ Prima di configurare le impostazioni dei criteri DFCI, crea prima un profilo DFC
 
 1. Accedere al tenant all'devicemanagement.microsoft.com.
 
-2. Nell'Microsoft Endpoint Manager di amministrazione selezionare Dispositivi > Profili di **configurazione > Crea** profilo e immettere un nome, ad esempio Criteri di configurazione **DFCI.**
+2. Nell'Microsoft Endpoint Manager admin center seleziona Dispositivi > Profili di **configurazione > Crea** profilo e immetti un nome, ad esempio Criteri di configurazione **DFCI.**
 
 3. Seleziona **Windows 10 e versioni successive per** tipo di piattaforma.
 
@@ -100,7 +103,7 @@ Prima di configurare le impostazioni dei criteri DFCI, crea prima un profilo DFC
 
 ## <a name="create-autopilot-profile"></a>Creare un profilo Autopilot
 
-1. In Endpoint Manager in devicemanagement.microsoft.com selezionare i dispositivi > Windows **registrazione** e scorrere verso il basso fino a **Profili di distribuzione**.
+1. In Endpoint Manager in devicemanagement.microsoft.com selezionare i dispositivi > Windows **registrazione** e scorrere verso il basso fino **a Profili di distribuzione**.
 
 2. Selezionare **Crea profilo** e immettere un nome. ad esempio, **Il mio profilo Autopilot** e selezionare **Avanti**.
 
@@ -146,16 +149,16 @@ Il resto delle impostazioni DFCI consente di disattivare funzionalità altriment
 | Impedire agli utenti locali di modificare le impostazioni UEFI | In **Funzionalità di sicurezza > Consenti agli utenti locali di modificare le impostazioni UEFI**, selezionare **Nessuna**.              |
 | Disabilitare le fotocamere                               | In **Built in Hardware > Cameras** selezionare **Disabled**.                                       |
 | Disabilitare microfoni e altoparlanti              | In **Built in Hardware > Microphones and speakers** selezionare **Disabled**.                      |
-| Disabilitare le radio (Bluetooth, Wi-Fi)             | In **Built in Hardware > Radios (Bluetooth, Wi-Fi e così via)** seleziona **Disabilitato**.                   |
+| Disabilitare le radio (Bluetooth, Wi-Fi)             | In **Built in Hardware > Radio (Bluetooth, Wi-Fi e così via)** seleziona **Disabilitato**.                   |
 | Disabilitare l'avvio da supporti esterni (USB, SD)    | In **Built in Hardware > Boot Options > Boot from external media (USB, SD)** seleziona **Disabled**. |
 
 > [!CAUTION]
-> L'impostazione Disattiva radio **(Bluetooth, Wi-Fi)** deve essere usata solo nei dispositivi che dispongono di una connessione Ethernet cablata.
+> **L'impostazione Disattiva radio (Bluetooth, Wi-Fi)** deve essere usata solo nei dispositivi che dispongono di una connessione Ethernet cablata.
  
 > [!NOTE]
 >  DFCI in Intune include due impostazioni che attualmente non si applicano ai dispositivi Surface: (1) Virtualizzazione CPU e I/O e (2) Disabilita l'avvio dalle schede di rete.
  
-Intune fornisce tag di ambito per delegare i diritti amministrativi e le regole di applicabilità per gestire i tipi di dispositivi. Per ulteriori informazioni sul supporto per la gestione dei criteri e dettagli completi su tutte le impostazioni DFCI, fare Microsoft Intune [documentazione](/intune/configuration/device-firmware-configuration-interface-windows).
+Intune fornisce tag di ambito per delegare i diritti amministrativi e le regole di applicabilità per gestire i tipi di dispositivi. Per ulteriori informazioni sul supporto per la gestione dei criteri e dettagli completi su tutte le impostazioni DFCI, vedere Microsoft Intune [documentazione](/intune/configuration/device-firmware-configuration-interface-windows).
 
 ## <a name="register-devices-in-autopilot"></a>Registrare i dispositivi in Autopilot
 
@@ -165,12 +168,12 @@ Come indicato in precedenza, DFCI può essere applicato solo ai dispositivi regi
 
 Anche se le impostazioni dei criteri di Intune vengono in genere applicate quasi immediatamente, potrebbe verificarsi un ritardo di 10 minuti prima che le impostazioni siano effettive sui dispositivi di destinazione. In rari casi, sono possibili ritardi fino a 8 ore. Per assicurarti che le impostazioni siano applicate il prima possibile, ad esempio negli scenari di test, puoi sincronizzare manualmente i dispositivi di destinazione.
 
-- In Endpoint Manager in devicemanagement.microsoft.com, vai a Dispositivi **> Registrazione dispositivo > Windows registrazione > Windows Dispositivi Autopilot e** seleziona **Sincronizza**.
+- In Endpoint Manager su devicemanagement.microsoft.com, vai a Dispositivi > Registrazione dispositivo > Windows **registrazione > Windows Dispositivi Autopilot e** seleziona **Sincronizza**.
 
- Per altre informazioni, fai riferimento [a Sincronizzare manualmente Windows dispositivo](/intune-user-help/sync-your-device-manually-windows).
+ Per altre informazioni, fai riferimento a [Sincronizzare manualmente Windows dispositivo](/intune-user-help/sync-your-device-manually-windows).
 
 > [!NOTE]
-> Quando si modificano le impostazioni direttamente in UEFI, è necessario assicurarsi che il dispositivo venga riavviato completamente Windows accesso.
+> Quando si modificano le impostazioni direttamente in UEFI, devi assicurarti che il dispositivo si riavvii completamente al Windows accesso standard.
 
 ## <a name="verifying-uefi-settings-on-dfci-managed-devices"></a>Verifica delle impostazioni UEFI nei dispositivi gestiti da DFCI
 
@@ -211,4 +214,4 @@ Per continuare a gestire il dispositivo con Intune, ma senza la gestione DFCI, r
 - [Ignite 2019: Annuncio della gestione remota delle impostazioni UEFI di Surface da Intune](https://techcommunity.microsoft.com/t5/Surface-IT-Pro-Blog/Ignite-2019-Announcing-remote-management-of-Surface-UEFI/ba-p/978333)
  [Windows Autopilot](https://www.microsoft.com/microsoft-365/windows/windows-autopilot)
 - [Windows Autopilot e dispositivi Surface](windows-autopilot-and-surface-devices.md) 
-- [Usare profili DFCI Windows dispositivi in Microsoft Intune](/intune/configuration/device-firmware-configuration-interface-windows)
+- [Usare i profili DFCI Windows dispositivi in Microsoft Intune](/intune/configuration/device-firmware-configuration-interface-windows)

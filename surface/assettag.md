@@ -11,12 +11,15 @@ ms.topic: article
 ms.reviewer: carlol
 ms.date: 06/29/2021
 manager: laurawi
-ms.openlocfilehash: b130f6b0bf52dc1c3a28231a2330cae51a5ef44a
-ms.sourcegitcommit: d020d899e9c7e1eb0b85193ecb0a17a85bb39fe6
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 3b6525c979160d6f732e330086565c3de6f73cbd
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "11643832"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449149"
 ---
 # <a name="surface-asset-tag-tool"></a>Surface Asset Tag Tool
 
@@ -32,7 +35,7 @@ Surface Asset Tag è un'utilità CLI (Command Line Interface) che consente di vi
 
 Per eseguire Surface Asset Tag:
 
-1. Nel dispositivo Surface scarica **Surface Asset Tag.zip** dall'Area download [Microsoft,](https://www.microsoft.com/download/details.aspx?id=46703)estrai il file ZIP e salva AssetTag.exe nella cartella desiderata (in questo esempio, C:\\assets).
+1. Nel dispositivo Surface scarica **Surface Asset Tag.zip** dall'Area download [Microsoft](https://www.microsoft.com/download/details.aspx?id=46703), estrai il file ZIP e salva AssetTag.exe nella cartella desiderata (in questo esempio, C:\\assets).
 
     > [!NOTE]
     > Per Surface Pro X, usa l'applicazione denominata **AssetTag_x86** nel file ZIP.
@@ -60,7 +63,7 @@ Per cancellare il tag asset proposto, esegui **AssetTag -s**:
 C:\assets\AssetTag.exe -s
 ```
 
-Per impostare il tag asset proposto, eseguire **AssetTag -s testassettag12**:
+Per impostare il tag di asset proposto, eseguire **AssetTag -s testassettag12**:
 
 ```
 C:\assets\AssetTag.exe -s testassettag12
@@ -71,7 +74,7 @@ C:\assets\AssetTag.exe -s testassettag12
 
 ## <a name="managing-asset-tags"></a>Gestione dei tag degli asset
 
-Puoi visualizzare il tag asset esistente nelle impostazioni UEFI in Informazioni dispositivo ( Pannello di controllo > Ripristino > Avvio avanzato **> Riavvia ora**.)
+Puoi visualizzare il tag asset esistente nelle impostazioni UEFI in Informazioni dispositivo (Pannello di **controllo > Ripristino > avvio avanzato > Riavvia ora**).
 
 La figura seguente mostra i risultati dell'esecuzione di Asset Tag Tool in Surface Go.
 

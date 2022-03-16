@@ -9,17 +9,20 @@ ms.sitesec: library
 author: coveminer
 ms.author: greglin
 ms.topic: article
-ms.date: 01/07/2022
+ms.date: 02/03/2022
 ms.reviewer: carlol
 manager: laurawi
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.openlocfilehash: 4d9b845901734e23c5b83ee47f9d6608f7495b91
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 45fd61ff59273e5ae3fc269058b663f271e641d4
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12338509"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12448689"
 ---
 # <a name="surface-system-sku-reference"></a>Riferimento SKU del sistema Surface
 
@@ -48,7 +51,7 @@ In questo documento viene fornito un riferimento che può essere utilizzato per 
 | Surface Hub 2S 50"                                           | Surface Hub 2S   | Surface Hub 2S                   |
 | Surface Hub 2S 85"                                           | Surface Hub 2S   | Surface Hub 2S 85                |
 | Surface Laptop                                               | Surface Laptop   | Surface_Laptop                   |
-| Surface Laptop 2 Commercial                                  | Surface Laptop 2 | Surface_Laptop_2_1769_Commercial |
+| Surface Laptop 2 Commerciale                                  | Surface Laptop 2 | Surface_Laptop_2_1769_Commercial |
 | Surface Laptop 2 Consumer                                    | Surface Laptop 2 | Surface_Laptop_2_1769_Consumer   |
 | Surface Laptop Intel da 3 13"                                   | Surface Laptop 3 | Surface_Laptop_3_1867:1868 |
 | Surface Laptop AMD da 3 15"                                     | Surface Laptop 3 | Surface_Laptop_3_1873      |
@@ -68,6 +71,7 @@ In questo documento viene fornito un riferimento che può essere utilizzato per 
 | Surface Pro 7+                                               | Surface Pro 7+   | Surface_Pro_7+_1960|
 | Surface Pro 7+ LTE                                           | Surface Pro 7+   | Surface_Pro_7+_with_LTE_Advanced_1961|
 | Surface Pro 8                                                | Surface Pro 8    | Surface_Pro_8_for_Business_1983|
+| Surface Pro 8 Consumer                                       | Surface Pro 8    | Surface_Pro_8_1983|
 | Surface Pro 8 LTE                                            | Surface Pro 8    | Surface_Pro_8_for_Business_with_LTE_Advanced_1982|
 | Surface Pro X con processore SQ1                             | Surface Pro X    | Surface_Pro_X_1876         |
 | Surface Pro X con processore SQ2                             | Surface Pro X    | Surface_Pro_X_H_1876        |

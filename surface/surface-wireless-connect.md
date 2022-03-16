@@ -12,14 +12,17 @@ ms.topic: article
 ms.reviewer: tokatz
 manager: laurawi
 ms.date: 11/30/2021
-ms.openlocfilehash: e031b485979b20d6206398840466d553772b6f1d
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 2f0aaaff212475887c3cf446709947d4e960c353
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12338249"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449309"
 ---
-# <a name="optimize-wi-fi-connectivity-on-surface-devices"></a>Ottimizzare Wi-Fi connettività nei dispositivi Surface
+# <a name="optimize-wi-fi-connectivity-on-surface-devices"></a>Ottimizzare la connettività Wi-Fi sui dispositivi Surface
 
 Per rimanere connessi con la durata della batteria per tutto il giorno, i dispositivi Surface implementano impostazioni di connettività wireless che bilanciano le prestazioni e la conservazione dell'alimentazione. Al di fuori dei carichi di lavoro per dispositivi mobili più impegnativi, gli utenti possono mantenere una connettività wireless sufficiente senza modificare la scheda di rete predefinita o le impostazioni correlate. Questa pagina evidenzia le considerazioni chiave sulla connettività wireless negli scenari per dispositivi mobili che usano dispositivi Surface.
 
@@ -65,7 +68,7 @@ Tieni presente che 2,4 GHz offre alcuni vantaggi rispetto ai 5 GHz: si estende u
 > [!NOTE]
 > Per impostazione predefinita, i dispositivi Surface preferiscono connettersi a 5 GHz, se disponibili. Tuttavia, Surface cerca innanzitutto una connessione a 2,4 GHz per mantenere l'alimentazione in uno stato di batteria bassa.
 
-Puoi anche attivare o disattivare l'impostazione della banda in base alle esigenze per il tuo ambiente. Ad esempio, gli utenti che vivono in edifici ad alta densità con più hotspot Wi-Fi , in presenza di dispositivi consumer tutti trasmessi tramite 2,4 GHz, probabilmente trarranno vantaggio impostando il dispositivo Surface in modo che si connetta solo a 5 GHz e quindi ritornino su Auto quando necessario.
+Puoi anche attivare o disattivare l'impostazione della banda in base alle esigenze per il tuo ambiente. Ad esempio, gli utenti che vivono in edifici ad alta densità con più hotspot Wi-Fi ( in presenza di dispositivi consumer tutti trasmessi tramite 2,4 GHz ) probabilmente trarranno vantaggio impostando il dispositivo Surface per connettersi solo a 5 GHz e quindi ripristinando Auto quando necessario.
 
 ### <a name="roaming-aggressiveness-settings-on-surface-devices-with-intel-adapters"></a>Impostazioni di aggressività roaming nei dispositivi Surface con schede Intel
 

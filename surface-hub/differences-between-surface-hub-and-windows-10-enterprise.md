@@ -7,16 +7,16 @@ ms.sitesec: library
 author: dansimp
 ms.author: dansimp
 ms.topic: article
-ms.date: 03/23/2021
+ms.date: 02/15/2022
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: 3bc5d7e26d565ca26ec23eefaee406c47eac395e
-ms.sourcegitcommit: 2493c83b1b3cb28b0836926cd406d4b28cd6abfa
+ms.openlocfilehash: 6963a51b492bfbdc09da5ec667d091d62eed4569
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "12094459"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449239"
 ---
 # <a name="operating-system-essentials-surface-hub"></a>Nozioni fondamentali del sistema operativo (Surface Hub)
 
@@ -111,7 +111,7 @@ Per preservare la funzione di appliance del dispositivo, Surface Hub supporta so
 
 ## <a name="security-and-lockdown"></a>Sicurezza e blocco
 
-Per consentire l'uso di Surface Hub negli spazi comuni, come le sale riunioni, il sistema operativo personalizzato del dispositivo implementa molte delle funzionalità di sicurezza e di blocco disponibili in Windows 10. Per ulteriori informazioni, vedere panoramica [Surface Hub sicurezza](surface-hub-security.md)
+Per consentire l'uso di Surface Hub negli spazi comuni, come le sale riunioni, il sistema operativo personalizzato del dispositivo implementa molte delle funzionalità di sicurezza e di blocco disponibili in Windows 10. Per altre informazioni, vedi panoramica [Surface Hub sicurezza](surface-hub-security.md)
 
 Surface Hub implementa queste funzionalità di sicurezza di Windows 10:
 
@@ -147,11 +147,22 @@ Le impostazioni del dispositivo possono essere configurate tramite l'app Imposta
 
 ### <a name="administrative-features"></a>Funzionalità di amministrazione
 
-Le funzionalità amministrative di Windows 10 Enterprise, ad esempio Microsoft Management Console, Esegui, il prompt dei comandi, PowerShell, l'editor del Registro di sistema, il Visualizzatore eventi e Gestione attività, non sono supportate in Surface Hub. L'app Impostazioni contiene tutte le funzionalità amministrative disponibili in locale in Surface Hub.
+Le funzionalità amministrative di Windows 10 Enterprise, ad esempio Microsoft Management Console, Esegui, Prompt dei comandi, PowerShell, Editor del Registro di sistema e Gestione attività non sono supportate in Surface Hub. L'app Impostazioni contiene tutte le funzionalità amministrative disponibili in locale in Surface Hub.
+
+#### <a name="event-viewer"></a>Visualizzatore eventi
+
+Windows 10 Team 2020 Update 2 aggiunge il supporto per il Visualizzatore eventi di Windows, che è identico al Visualizzatore eventi installato in [](/host-integration-server/core/windows-event-viewer1) Windows 10 Pro o Windows 10 Enterprise. 
+
+**Per aprire visualizzatore eventi:**
+
+1. Accedi **all'Impostazioni** app con credenziali di amministratore.
+2. Selezionare **Aggiorna &** **SecurityLogs** >  e in Visualizzatore eventi selezionare **Apri**. 
+
+Per ulteriori informazioni, vedere [visualizzatore Windows eventi](/host-integration-server/core/windows-event-viewer1).
 
 ### <a name="remote-management-and-monitoring"></a>Gestione e monitoraggio remoti
 
-Surface Hub supporta la gestione remota tramite soluzioni di gestione dei dispositivi mobili (MDM), ad esempio Microsoft Intune [e](/mem/intune/) il monitoraggio tramite Monitoraggio [di Azure.](/azure/azure-monitor/) 
+Surface Hub supporta la gestione remota tramite soluzioni di gestione dei dispositivi mobili (MDM), ad esempio [Microsoft Intune e il](/mem/intune/) monitoraggio tramite [Azure Monitor](/azure/azure-monitor/). 
 
 *Criteri dell'organizzazione su cui può influire questo aspetto:* 
 
@@ -159,7 +170,7 @@ Surface Hub supporta la gestione remota tramite soluzioni di gestione dei dispos
 
 ### <a name="group-policy"></a>Criteri di gruppo
 
-Surface Hub non supporta i criteri Windows, incluso il controllo. Usa invece MDM per applicare i criteri per il dispositivo Surface Hub. Per altre informazioni su MDM, vedi [Gestire le impostazioni con un provider MDM](manage-settings-with-mdm-for-surface-hub.md).
+Surface Hub non supporta i criteri Windows di gruppo, incluso il controllo. Usa invece MDM per applicare i criteri per il dispositivo Surface Hub. Per altre informazioni su MDM, vedi [Gestire le impostazioni con un provider MDM](manage-settings-with-mdm-for-surface-hub.md).
 
 *Criteri dell'organizzazione su cui può influire questo aspetto:* 
 

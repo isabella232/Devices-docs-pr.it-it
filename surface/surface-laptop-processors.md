@@ -1,6 +1,6 @@
 ---
-title: panoramica tecnica Surface Laptop 4 processori
-description: Questo articolo evidenzia i processori AMD e Intel in Surface Laptop 4.
+title: Surface Laptop 4 processori panoramica tecnica
+description: In questo articolo vengono evidenziati i processori AMD e Intel in Surface Laptop 4.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.localizationpriority: medium
@@ -12,19 +12,22 @@ ms.date: 04/13/2021
 ms.reviewer: brrecord
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 52b988315951132284c7016752a6817dadbf74c6
-ms.sourcegitcommit: 62b85dfb85abbe0d880b04e1bcee5bacc9fc045f
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 43619159ff8e429735116c61de23172c63cd900b
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "11676620"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449369"
 ---
 # <a name="surface-laptop-4-processors-tech-overview"></a>Panoramica tecnica dei processori di Surface Laptop 4
 
-Surface Laptop 4 è progettato per fornire ai clienti commerciali un set ricco di opzioni per i dispositivi per aiutare i decision maker a allineare meglio gli obiettivi di approvvigionamento dei dispositivi a requisiti di ruolo sempre più specifici. Rispetto a Surface Laptop 3:
+Surface Laptop 4 è progettato per fornire ai clienti commerciali un ricco set di opzioni per i dispositivi per aiutare i decisori a allineare meglio gli obiettivi di approvvigionamento dei dispositivi a requisiti di ruolo sempre più specifici. Rispetto a Surface Laptop 3:
 
 - Surface Laptop 4 dotato di processori AMD Ryzen™ Microsoft Surface Edition offre prestazioni di multithreading superiori che lo rende un'ottima scelta per gli information worker che necessitano di funzionalità multitasking migliori.
-- Surface Laptop 4 dotato di processori Intel® Core™ di 11° generazione offre una GPU più forte e prestazioni a thread singolo più veloci, rendendola una scelta ideale per sviluppatori, ricercatori, data researcher e simili, soprattutto se abbinata alla maggiore memoria e spazio di archiviazione offerto nella SKU Intel di fascia superiore.
+- Surface Laptop 4 dotato di processori Intel® Core™ di un'undicesimo generazione offre una GPU più forte e prestazioni a thread singolo più veloci, rendendola una scelta ideale per sviluppatori, ricercatori, esperti di dati e simili, soprattutto se abbinata alla maggiore memoria e allo spazio di archiviazione offerto nell'Intel SKU di fascia superiore.
 
 La scelta dello SKU dipende dalle priorità dei clienti:
 
@@ -37,15 +40,15 @@ Per ulteriori informazioni, vedere [Surface Laptop 4 per le aziende](https://www
 
 **Surface Laptop 4 13,5"**
 
-- Processore Intel Core i5-1145G7 di generazione quad core
+- Processore Quad Core 11 di generazione Intel Core i5-1145G7
 - Processore Quad Core 11 di generazione Intel Core i7-1185G7
-- Processore mobile AMD Ryzen 5 4680U con Radeon™ Graphics Microsoft Surface Edition (6 core)
+- Processore mobile AMD Ryzen 5 4680U con grafica Radeon™ Microsoft Surface Edition (6 core)
 - Processore mobile AMD Ryzen 7 4980U con grafica Radeon Microsoft Surface Edition (8 core)
 
 **Surface Laptop 4 15"**
 
-- Processore Intel Core di 11° generazione quad core™ processore i7-1185G7
-- Processore mobile AMD Ryzen 7 4980U con Radeon™ Graphics Microsoft Surface Edition (8 core)
+- Processore Quad Core 11 di generazione Intel Core™ i7-1185G7
+- Processore mobile AMD Ryzen 7 4980U con grafica Radeon™ Microsoft Surface Edition (8 core)
 
  
 
@@ -96,12 +99,12 @@ Per informazioni generali sui processori AMD in Surface Laptop 4, vedere [Micros
 | R5/16/256GB   | Processore mobile AMD Ryzen 5 4680U con Microsoft Surface Edition | Radeon Graphics        |
 | i5/8/512GB    | Processore Intel Core i5 1145G7 di 11° generazione                           | Intel Iris Xe Graphics |
 | i5/16/512GB   | Processore Intel Core i5 1145G7 di 11° generazione                           | Intel Iris Xe Graphics |
-| i7/16/256GB   | Processore Intel Core i7 1185G7 di generazione                           | Intel Iris Xe Graphics |
+| i7/16/256GB   | Processore Intel Core i7 1185G7 di 11° generazione                           | Intel Iris Xe Graphics |
 | R7/16/512GB   | Processore mobile AMD Ryzen 7 4980U con Microsoft Surface Edition | Radeon Graphics        |
-| i7/16/512GB   | Processore Intel Core i7 1185G7 di generazione                           | Intel Iris Xe Graphics |
-| i7/32/1TB     | Processore Intel Core i7 1185G7 di generazione                           | Intel Iris Xe Graphics |
+| i7/16/512GB   | Processore Intel Core i7 1185G7 di 11° generazione                           | Intel Iris Xe Graphics |
+| i7/32/1TB     | Processore Intel Core i7 1185G7 di 11° generazione                           | Intel Iris Xe Graphics |
 
 
-## <a name="learn-more"></a>Altre informazioni
+## <a name="learn-more"></a>Scopri di più
 
 - [Surface Laptop 4 per le aziende](https://www.microsoft.com/surface/business/surface-laptop-4)

@@ -1,5 +1,5 @@
 ---
-title: Note per sviluppatori di Surface Slim Pen 2 aptiche
+title: Note di sviluppo di Surface Slim Pen 2 haptics
 description: Questa pagina fornisce note sull'implementazione per gli sviluppatori di app che desiderano estendere Windows 11 funzionalità di input penna di Surface Slim Pen 2 per le aziende.
 ms.prod: w11
 ms.mktglfcycl: manage
@@ -12,14 +12,16 @@ ms.date: 12/07/2021
 ms.reviewer: gusing
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 8a3dbbdde85cfdceaf5674750a68fc21d3fcd877
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 11
+ms.openlocfilehash: 881ac52cb7a27b82fa9b7e6b5afd86040581ea86
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12338705"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12448539"
 ---
-# <a name="surface-slim-pen-2-haptics-dev-notes"></a>Note per sviluppatori di Surface Slim Pen 2 aptiche
+# <a name="surface-slim-pen-2-haptics-dev-notes"></a>Note di sviluppo di Surface Slim Pen 2 haptics
 
 Questa pagina fornisce note sull'implementazione per gli sviluppatori di app che desiderano estendere Windows 11 funzionalità di input penna di [Surface Slim Pen 2 per le aziende](https://www.microsoft.com/d/surface-slim-pen-2-for-business/8mjc4rmvltj0?). Le funzionalità aptiche personalizzabili includono:
 

@@ -1,5 +1,5 @@
 ---
-title: Ottimizzare le videoconferenze nei dispositivi Surface
+title: Ottimizzare le videoconferenze sui dispositivi Surface
 description: Questa pagina fornisce le procedure consigliate per l'uso di Microsoft Teams e altre soluzioni di videoconferenza nei dispositivi Surface
 ms.prod: w11
 ms.mktglfcycl: manage
@@ -12,14 +12,17 @@ ms.date: 12/10/2021
 ms.reviewer: gusing
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: dd72bf940309fe9f3d7b4bf334a94a557cffe016
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 28ad64b41dedb7d66092cf98388920a732fee737
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12338626"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12449679"
 ---
-# <a name="optimize-video-conferencing-on-surface-devices"></a>Ottimizzare le videoconferenze nei dispositivi Surface
+# <a name="optimize-video-conferencing-on-surface-devices"></a>Ottimizzare le videoconferenze sui dispositivi Surface
 
 I dispositivi Surface sfruttano i più recenti progressi nel consumo di energia dei dispositivi mobili per offrire un'esperienza semplificata ottimizzata tra i carichi di lavoro. Per la maggior parte dei carichi di lavoro, questo offre un'esperienza ottimale. Per alcuni carichi di lavoro che Microsoft Teams o altre applicazioni di videoconferenza, è consigliabile seguire questi consigli per garantire l'esperienza migliore.
 

@@ -14,16 +14,19 @@ ms.reviewer: jesko
 manager: laurawi
 ms.audience: itpro
 ms.date: 11/30/2021
-ms.openlocfilehash: 09982dff2e44ffc2ebe9b890588e5a62a3259cf5
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 10
+- Windows 11
+ms.openlocfilehash: 8f09941b555ba1b0870bd1e27fa1b85d0d72a19c
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12338489"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12448439"
 ---
 # <a name="wake-on-lan-with-surface-dock-2"></a>Riattivazione LAN con Surface Dock 2
 
-Per mantenere i dispositivi completamente aggiornati, gli amministratori IT devono essere in grado di gestire i dispositivi quando non sono in uso, in genere durante le finestre di manutenzione notturne. Surface Dock 2 offre il supporto migliore per Wake on LAN (WOL) che consente agli amministratori di riattivare in remoto i dispositivi Surface ed eseguire automaticamente attività di gestione con Microsoft Endpoint Manager o altre soluzioni di terze parti.
+Per mantenere i dispositivi completamente aggiornati, gli amministratori IT devono essere in grado di gestire i dispositivi quando non sono in uso, in genere durante le finestre di manutenzione notturne. Surface Dock 2 offre il supporto migliore per Wake on LAN (WOL) consentendo agli amministratori di riattivare in remoto i dispositivi Surface ed eseguire automaticamente le attività di gestione con Microsoft Endpoint Manager o altre soluzioni di terze parti.
 
 ## <a name="requirements"></a>Requisiti
 

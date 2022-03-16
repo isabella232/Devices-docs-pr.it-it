@@ -1,6 +1,6 @@
 ---
-title: Surface Laptop edizione Standard panoramica
-description: In questo articolo viene fornita una panoramica della Surface Laptop edizione Standard per l'istruzione.
+title: Panoramica di Surface Laptop SE
+description: In questo articolo viene fornita una panoramica dei Surface Laptop edizione Standard per l'istruzione.
 ms.prod: w11
 ms.mktglfcycl: manage
 ms.localizationpriority: medium
@@ -12,21 +12,23 @@ ms.date: 01/11/2022
 ms.reviewer: hachidan
 manager: laurawi
 audience: itpro
-ms.openlocfilehash: 2496c50db10454674f80aec03734849bacf63f38
-ms.sourcegitcommit: e7d95d583429169eb65aae9034eab2347b1f04a0
+appliesto:
+- Windows 11
+ms.openlocfilehash: a99c3241eea0099b90de9c64ff840306aa98e58d
+ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "12338672"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "12448320"
 ---
-# <a name="surface-laptop-se-overview"></a>Surface Laptop edizione Standard panoramica
+# <a name="surface-laptop-se-overview"></a>Panoramica di Surface Laptop SE
 
-Surface Laptop edizione Standard offre un'esperienza gestita per i dispositivi che semplifica l'apprendimento per gli studenti a costi accessibili. Viene eseguito Windows 11 edizione Standard, un sistema operativo basato sul cloud e viene [precaricato](#pre-installed-apps) con app ampiamente usate come Microsoft Teams, Word, PowerPoint, Excel, OneNote, Edge, Minecraft: Education Edition, Flipgrid e altro ancora. 
+Surface Laptop edizione Standard offre un'esperienza con dispositivi gestiti che semplifica l'apprendimento per gli studenti a costi accessibili. Viene eseguito Windows 11 edizione Standard, un sistema operativo basato sul cloud e viene [precaricato](#pre-installed-apps) con app ampiamente usate come Microsoft Teams, Word, PowerPoint, Excel, OneNote, Edge, Minecraft: Education Edition, Flipgrid e altro ancora. 
 
 :::image type="content" source="images/surface-laptop-se.png" alt-text="Surface Laptop edizione Standard mostra Windows 11 edizione Standard menu Start":::<br>
 *Figura 1. Surface Laptop edizione Standard mostra Windows 11 edizione Standard menu Start*
 
-Surface Laptop edizione Standard supporta la maggior parte delle applicazioni necessarie per studenti e docenti, tra cui app Web progressive (PWA), app UWP (Universal Windows Platform) e un set curato di app & Microsoft Store [Win32](#install-optional-apps). A differenza di altri dispositivi Surface, Surface Laptop edizione Standard gli utenti non possono installare le proprie app. Al contrario, gli amministratori IT o i lead tecnici gestiscono i dispositivi Surface Laptop edizione Standard tramite Microsoft Endpoint Manager, che include [Microsoft Intune,](/mem/intune/fundamentals/what-is-intune) [Microsoft Intune per l'istruzione](https://www.microsoft.com/education/intune) e il nuovo [ Surface Management Portal](surface-management-portal.md). 
+Surface Laptop edizione Standard supporta la maggior parte delle applicazioni necessarie per studenti e docenti, tra cui app Web progressive (PWA), app UWP (Universal Windows Platform) e un set curato di app & Microsoft Store [Win32](#install-optional-apps). A differenza di altri dispositivi Surface, Surface Laptop edizione Standard gli utenti non possono installare le proprie app. Gli amministratori IT o i lead tecnici gestiscono invece Surface Laptop edizione Standard dispositivi con Microsoft Endpoint Manager, che include [Microsoft Intune,](/mem/intune/fundamentals/what-is-intune) [Microsoft Intune per l'istruzione](https://www.microsoft.com/education/intune) e il nuovo [ Surface Management Portal](surface-management-portal.md). 
 
 > [!NOTE]
 > Questo articolo è destinato agli amministratori IT e al personale dell'istruzione che distribuiscono e gestiscono i dispositivi per gli utenti dell'istituto di istruzione. Per informazioni generali o per ordinare, vedere [Surface Laptop edizione Standard Laptop Slim per studenti](https://www.microsoft.com/surface/business/surface-laptop-se).
@@ -41,7 +43,7 @@ Surface Laptop edizione Standard supporta la maggior parte delle applicazioni ne
 
 ### <a name="surface-management-portal"></a>Portale di gestione di Surface
 
-Quando registri Surface Laptop edizione Standard per la gestione del cloud e gli utenti a log in per la prima volta, le informazioni di questi dispositivi Surface fluire automaticamente nel [portale di gestione di Surface](surface-management-portal.md), offrendoti un singolo riquadro di vetro per le attività di amministrazione dei dispositivi specifiche di Surface. Puoi ottenere informazioni dettagliate sulla conformità dei dispositivi, sulle attività di supporto e sulla copertura della garanzia. Visualizza rapidamente lo stato di ogni dispositivo, quelli ancora in garanzia o in scadenza a breve e lo stato delle richieste di supporto attive.
+Quando registri Surface Laptop edizione Standard per la gestione del cloud e gli utenti a questo punto e accedi per la prima volta, le informazioni di questi dispositivi Surface fluire automaticamente nel [Portale di](surface-management-portal.md) gestione di Surface, offrendoti un singolo riquadro di vetro per le attività di amministrazione dei dispositivi specifiche di Surface. Puoi ottenere informazioni dettagliate sulla conformità dei dispositivi, sulle attività di supporto e sulla copertura della garanzia. Visualizza rapidamente lo stato di ogni dispositivo, quelli ancora in garanzia o in scadenza a breve e lo stato delle richieste di supporto attive.
 
 :::image type="content" source="images/surface-management-portal-laptop-se.png" alt-text="Surface Management Portal che mostra la copertura di garanzia per Surface Laptop edizione Standard":::
 *Figura 2. Surface Management Portal che mostra la copertura di garanzia per Surface Laptop edizione Standard*
@@ -51,7 +53,7 @@ Quando registri Surface Laptop edizione Standard per la gestione del cloud e gli
 | Scenario                                                            | Descrizione                                                                                                                                                                                                                                                                                                                          | Scopri di più                                                                                                                                                                                                                                                                                                                                                                                                       |
 | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Configurare in remoto Surface Laptop edizione Standard dispositivi con Windows Autopilot | Windows Autopilot offre la distribuzione a basso tocco e la creazione di immagini predefinite, con molte app e criteri preinstallati e preconfigurati. L'IT può modificare facilmente le impostazioni del dispositivo, incluse le impostazioni del firmware, e installare le app necessarie agli studenti in modo che tutto sia pronto per l'uso al primo accensione del dispositivo.                 |[Configurare Intune per i dispositivi Education con Windows Autopilot](/intune-education/windows-autopilot-setup)<br><br>[Come devo registrare i miei dispositivi?](/intune-education/how-should-i-enroll-devices)                                                                                                                                                  |
-| Distribuire gli aggiornamenti tramite Intune per Education                             | Gli amministratori IT possono usare Microsoft Intune per inviare aggiornamenti del sistema operativo e delle app ai dispositivi Surface Laptop edizione Standard nell'istituto di istruzione durante tutto l'anno. Se necessario, possono disabilitare elementi hardware come la fotocamera o Bluetooth in un singolo dispositivo o reimpostare un dispositivo specifico se uno studente riscontra problemi tecnici. |[Gestire i dispositivi che eseguono Windows 11 edizione Standard](/intune-education/windows-11-se-overview)<br><br>[Documentazione e risorse di Microsoft Education](/microsoft-365/education/)<br><br>[Introduzione a Intune per Education](/microsoft-365/education/deploy/intune-for-education)<br><br>[Usare Intune per Education per gestire gruppi, app e impostazioni](/microsoft-365/education/deploy/use-intune-for-education) |
+| Distribuire gli aggiornamenti tramite Intune per Education                             | Gli amministratori IT possono usare Microsoft Intune per inviare aggiornamenti del sistema operativo e delle app ai dispositivi Surface Laptop edizione Standard nell'istituto di istruzione durante tutto l'anno. Se necessario, possono disabilitare elementi hardware come la fotocamera o Bluetooth su un singolo dispositivo o reimpostare un dispositivo specifico se uno studente riscontra problemi tecnici. |[Gestire i dispositivi che eseguono Windows 11 edizione Standard](/intune-education/windows-11-se-overview)<br><br>[Documentazione e risorse di Microsoft Education](/microsoft-365/education/)<br><br>[Introduzione a Intune per Education](/microsoft-365/education/deploy/intune-for-education)<br><br>[Usare Intune per Education per gestire gruppi, app e impostazioni](/microsoft-365/education/deploy/use-intune-for-education) |
 | Sostituire i dispositivi in base alle esigenze                                           | Se gli studenti incrinano lo schermo o danneggiano in altro modo il dispositivo, gli amministratori IT possono distribuire rapidamente i dispositivi di ricambio, trasferendo le identità cloud degli studenti nei nuovi dispositivi.                                                                                                  |[Azioni dei dispositivi remoti in Intune per Education](/intune-education/edu-device-remote-actions)                                                                                                                                                                                                                                                                                   |
 | Distribuire nuove app tramite Intune                                          | Se gli insegnanti richiedono una nuova app, gli amministratori IT possono installarla in remoto in tutti i dispositivi degli studenti con Intune.                                                                                                                                                                                                                            |[Installare le app per tutti gli utenti](/microsoft-365/education/deploy/use-intune-for-education#install-apps-for-all-users)                                                                                                                                                                                                                                                              |
 | Reimpostare i dispositivi tramite Intune                                            | Quando gli studenti attivano i dispositivi Surface Laptop edizione Standard alla fine dell'anno scolastico, gli amministratori IT possono usare Intune per reimpostare i dispositivi per la classe successiva che ne avranno bisogno all'inizio dell'anno scolastico successivo.                                                                                                           |[Usare Reimpostazione automatica per riconfigurare i dispositivi con Intune per Education](/intune-education/autopilot-reset)                                                                                                                                                                                                                                                                      |
@@ -89,14 +91,14 @@ Surface Laptopedizione Standard viene fornito con le app preinstallato seguenti:
 
 ## <a name="install-optional-apps"></a>Installare app facoltative
 
-Gli amministratori IT possono installare [app aggiuntive](/education/windows/windows-11-se-overview#available-apps) come Chrome o Zoom tramite Intune. Nota che non esiste alcun archivio app per Surface Laptop edizione Standard. Fai riferimento alle istruzioni seguenti per completare la distribuzione dell'app: 
+Gli amministratori IT possono installare [app aggiuntive](/education/windows/windows-11-se-overview#available-apps) come Chrome o Zoom tramite Intune. Nota che non è disponibile alcun archivio app per Surface Laptop edizione Standard. Fai riferimento alle istruzioni seguenti per completare la distribuzione dell'app: 
 
 - [Distribuzione di app](/intune-education/windows-11-se-overview#app-deployment)
 
 
 ## <a name="repairability"></a>Riparabilità
 
-Surface Laptop edizione Standard Surface Laptop edizione Standard è progettato per consentire a tecnici esperti di eseguire il servizio dei dispositivi in locale sostituendo rapidamente i componenti di base:
+Surface Laptop edizione Standard Surface Laptop edizione Standard è progettato per consentire a tecnici esperti di utilizzare i dispositivi in locale sostituendo rapidamente i componenti di base:
 
 - Display Module  
 - Bucket & tastiera
