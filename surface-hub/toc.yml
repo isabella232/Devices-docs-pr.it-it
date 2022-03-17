@@ -109,9 +109,9 @@
           href: save-bitlocker-key-surface-hub.md
         - name: Aggiornare il firmware della penna in Surface Hub 2S
           href: surface-hub-2s-pen-firmware.md
-        - name: Modificare le impostazioni di accessibilità
+        - name: Correggi le impostazioni Accessibilità
           href: accessibility-surface-hub.md
-    - name: Proteggere
+    - name: Protezione
       items:
         - name: Panoramica della sicurezza di Surface Hub
           href: surface-hub-security.md
@@ -212,7 +212,7 @@
               href: local-management-surface-hub-settings.md
             - name: Gestione delle password
               href: password-management-for-surface-hub-device-accounts.md
-            - name: Modificare le impostazioni di accessibilità
+            - name: Correggi le impostazioni Accessibilità
               href: accessibility-surface-hub.md
             - name: Modificare l'account del dispositivo Surface Hub
               href: change-surface-hub-device-account.md
