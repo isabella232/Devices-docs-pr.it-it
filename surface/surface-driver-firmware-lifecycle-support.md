@@ -15,12 +15,12 @@ audience: itpro
 appliesto:
 - Windows 10
 - Windows 11
-ms.openlocfilehash: 54a6fd560b16d29e8a155bcf24efd814a6d5bf77
-ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
+ms.openlocfilehash: 37cea81c7d23b2b00e5d7d1136963fae55d9c193
+ms.sourcegitcommit: b922aaf7287bdfb99f848aad455b2b4001b8f5be
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "12449619"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "12472435"
 ---
 # <a name="surface-driver-and-firmware-lifecycle-for-windows-based-devices"></a>Ciclo di vita del driver e del firmware Surface per i dispositivi basati su Windows
  
@@ -77,6 +77,7 @@ La tabella seguente elenca la data di rilascio e la data di fine della manutenzi
 | Surface Pro 8                      | 5 ottobre 2021   |5 ottobre 2025|
 | Surface Laptop Studio              | 5 ottobre 2021   |5 ottobre 2025|
 | Surface Go 3                       | 5 ottobre 2021   |5 ottobre 2025|
+| Surface Laptop SE                  | 11 gennaio 2022  |11 gennaio 2026|
 
  **1.** *Indica i dispositivi con una data di supporto per la manutenzione del firmware/driver dichiarata in precedenza.*
 
