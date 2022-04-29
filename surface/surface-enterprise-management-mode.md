@@ -17,12 +17,12 @@ ms.date: 12/08/2021
 appliesto:
 - Windows 10
 - Windows 11
-ms.openlocfilehash: 9e08b3dd804b8b4ac6e2ee4dd4041ed2e684d5d7
-ms.sourcegitcommit: b922aaf7287bdfb99f848aad455b2b4001b8f5be
+ms.openlocfilehash: 5e54a56a49e16ce23d760337f5ae8a1d76ab7728
+ms.sourcegitcommit: e1d7782c2d205da9d1eb6b7aad0333350f2cb5a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "12472645"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "12497749"
 ---
 # <a name="microsoft-surface-enterprise-management-mode-semm"></a>Microsoft Surface Enterprise Management Mode (SEMM)
 
@@ -264,7 +264,7 @@ Per creare un certificato autofirma:
 4. Assicurarsi che le autorizzazioni siano impostate per consentire l'esecuzione degli script. Per impostazione predefinita, agli script viene impedito l'esecuzione a meno che non si modifichino i criteri di esecuzione. Per altre informazioni, vedere [Informazioni sui criteri di esecuzione](/powershell/module/microsoft.powershell.core/about/about_execution_policies).
 5. Al prompt dei comandi immettere il percorso completo dello script e quindi premere **INVIO**. Lo script crea un certificato demo denominato TempOwner.pfx.
 
-In alternativa, è possibile creare un certificato autofirmabile usando PowerShell. Per altre informazioni, vedere [New-SelfSignedCertificate](/powershell/module/pkiclient/new-selfsignedcertificate).
+In alternativa, è possibile creare un certificato autofirmabile usando PowerShell. Per altre informazioni, vedere [New-SelfSignedCertificate](/powershell/module/pki/new-selfsignedcertificate?view=windowsserver2022-ps&preserve-view=true).
 
 >[!NOTE]
 >Per le organizzazioni che usano una radice offline nell'infrastruttura PKI, Microsoft Surface UEFI Configurator deve essere eseguito in un ambiente connesso alla CA radice per autenticare il certificato SEMM. I pacchetti generati da Microsoft Surface UEFI Configurator possono essere trasferiti come file, in modo che possano essere trasferiti all'esterno dell'ambiente di rete offline con archiviazione rimovibile, ad esempio una chiavetta USB.

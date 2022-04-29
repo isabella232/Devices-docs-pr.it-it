@@ -11,16 +11,16 @@ audience: Admin
 ms.topic: article
 ms.date: 02/15/2022
 ms.localizationpriority: Medium
-ms.openlocfilehash: 6a35783c08fdc4da3b3c7aabcd99da385c292d24
-ms.sourcegitcommit: b922aaf7287bdfb99f848aad455b2b4001b8f5be
+ms.openlocfilehash: 995766eb216051de270a387c15c96ee42dd008a3
+ms.sourcegitcommit: e1d7782c2d205da9d1eb6b7aad0333350f2cb5a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "12472535"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "12497959"
 ---
 # <a name="whats-new-in-windows-10-team-2020-updates"></a>Novità degli aggiornamenti di Windows 10 Team 2020
 
-Surface Hub vantaggi degli aggiornamenti periodici che offrono nuove funzionalità e funzionalità. L'aggiornamento 2020 (20H2) per Windows 10 Team e successivamente l'aggiornamento 1 & Update 2 offre miglioramenti significativi alla distribuzione e alla gestibilità dei dispositivi insieme alle funzionalità di Windows 10 più recenti.
+Surface Hub vantaggi degli aggiornamenti periodici che offrono nuove funzionalità e funzionalità. L'aggiornamento 2020 (20H2) per Windows 10 Team e successivamente l'aggiornamento 1 & Update 2, offre miglioramenti significativi alla distribuzione e alla gestibilità dei dispositivi insieme alle funzionalità di Windows più recenti.
 
 ## <a name="windows-10-team-2020-update-2"></a>Windows 10 Team 2020 Update 2 
 
@@ -38,7 +38,7 @@ Gli amministratori possono installare i PWA in remoto in Surface Hub usando un p
 
 ### <a name="ease-of-access-updates"></a>Aggiornamenti di Facilità di accesso
 
-Gli utenti possono modificare le impostazioni di Accessibilità durante una sessione di Surface Hub e chiudere le app esattamente come in altre versioni di Windows 10. 
+Gli utenti possono modificare le impostazioni di Accessibilità durante una sessione di Surface Hub e chiudere le app proprio come in altre versioni di Windows 10 o Windows 11. 
 
 - **Facilità di accesso**. Gli utenti possono modificare le impostazioni seguenti senza accedere: Display, Text cursor, Magnifier, High Contrast, Narrator, Closed captions e Keyboard. 
 - **Interfaccia utente familiare per le app**. Gli utenti possono chiudere le app in Surface Hub selezionando il pulsante Chiudi nell'angolo in alto a destra dell'app. In questo modo viene rimossa la necessità di chiudere le app trascinandole nella parte inferiore della visualizzazione Surface Hub. Nota: questa funzionalità sarà disponibile nel browser Edge come parte del prossimo aggiornamento edge, pianificato per marzo 2022. 

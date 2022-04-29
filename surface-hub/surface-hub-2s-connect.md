@@ -1,6 +1,6 @@
 ---
 title: Connessione dei dispositivi a Surface Hub 2S
-description: Questa pagina spiega come connettere dispositivi esterni a Surface Hub 2S.
+description: Questa pagina illustra come connettere i dispositivi esterni a Surface Hub 2S.
 keywords: separare i valori con virgole
 ms.prod: surface-hub
 ms.sitesec: library
@@ -11,47 +11,48 @@ audience: Admin
 ms.topic: article
 ms.date: 02/24/2020
 ms.localizationpriority: Medium
-ms.openlocfilehash: 1c4f9b4a74b50edb5587185f28a18163a02d62f9
-ms.sourcegitcommit: 109d1d7608ac4667564fa5369e8722e569b8ea36
+ms.openlocfilehash: e3d1aa79ad056e790d5dc6a46f299cbaa9b5f9b0
+ms.sourcegitcommit: e1d7782c2d205da9d1eb6b7aad0333350f2cb5a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10833326"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "12497476"
 ---
-# Connessione dei dispositivi a Surface Hub 2S
-Surface Hub 2S consente di connettere dispositivi esterni, rispecchiare la visualizzazione su Surface Hub 2S in un altro dispositivo e connettere più periferiche di terze parti, tra cui videocamere videoconferenze, telefoni per conferenze e dispositivi per sistemi room.
+# <a name="connect-devices-to-surface-hub-2s"></a>Connessione dei dispositivi a Surface Hub 2S
 
-È possibile visualizzare il contenuto dei dispositivi in Surface Hub 2S. Se il dispositivo di origine è basato su Windows, il dispositivo può anche specificare TouchBack e InkBack, che consente di ottenere video e audio dal dispositivo connesso e li presenta in Surface Hub 2S. Se Surface Hub 2S incontra un segnale HDCP (High-bandwidth Digital Content Protection), ad esempio un lettore Blu-ray DVD, la sorgente viene visualizzata come immagine nera.
+Surface Hub 2S consente di connettere dispositivi esterni, eseguire il mirroring dello schermo su Surface Hub 2S a un altro dispositivo e connettere più periferiche di terze parti, tra cui videocamere per conferenze, telefoni per conferenze e dispositivi di sistema della sala.
+
+È possibile visualizzare il contenuto dai dispositivi a Surface Hub 2S. Se il dispositivo di origine è basato su Windows, tale dispositivo può anche fornire TouchBack e InkBack, che acquisisce video e audio dal dispositivo connesso e li presenta su Surface Hub 2S. Se Surface Hub 2S rileva un segnale HDCP (Digital Content Protection) High-Bandwidth, ad esempio un lettore DVD Blu-ray, l'origine viene visualizzata come immagine nera.
 
 > [!NOTE]
-> Surface Hub 2S usa l'input video selezionato fino a quando non viene effettuata una nuova connessione, la connessione esistente viene interrotta oppure l'app Connect viene chiusa.
+> Surface Hub 2S usa l'input video selezionato fino a quando non viene stabilita una nuova connessione, la connessione esistente viene interrotta o l'app Connessione viene chiusa.
 
-##  <a name="recommended-wired-configurations"></a>Configurazioni cablate consigliate 
+## <a name="recommended-wired-configurations"></a>Configurazioni cablate consigliate 
 
-In generale, è consigliabile usare connessioni via cavo native quando possibile, ad esempio da USB-C a USB-C o da HDMI a HDMI. Altre combinazioni come MiniDP a HDMI o MiniDP a USB-C funzioneranno anche. Potrebbe essere necessaria una configurazione aggiuntiva per ottimizzare l'esperienza di uscita video, come descritto in questa pagina.
+In generale, è consigliabile usare connessioni via cavo native quando possibile, ad esempio da USB-C a USB-C o da HDMI a HDMI. Funzioneranno anche altre combinazioni come Da MiniDP a HDMI o Da MiniDP a USB-C. Potrebbe essere necessaria una configurazione aggiuntiva per ottimizzare l'esperienza di uscita video, come descritto in questa pagina.
 
 | **Connessione** | **Funzionalità** | **Descrizione**|
 | --- | --- | ---|
-| HDMI + USB-C | HDMI-in per audio e video<br><br>USB-C per TouchBack e InkBack | USB-C supporta TouchBack e InkBack con la connessione HDMI A/V.<br><br>Usare USB-C per USB-a per connettersi a computer legacy.<br><br>**Nota:** Per ottenere risultati ottimali, connettere HDMI prima di connettere un cavo USB-C. Se il computer usato per HDMI non è compatibile con TouchBack e InkBack, non è necessario un cavo USB-C. |
-| USB-C <br> (tramite il modulo Compute) | Video in <br>Audio-in | Cavo singolo necessario per un/V<br><br>TouchBack e InkBack è supportato<br><br>HDCP abilitato |
-| HDMI (in porta) | Video, audio in Surface Hub 2S | Cavo singolo necessario per un/V<br><br>TouchBack e InkBack non sono supportati<br><br>HDCP abilitato |
-| Output di MiniDP 1,2 | Video-out, ad esempio il mirroring di un proiettore più grande. | Cavo singolo necessario per un/V |
+| HDMI + USB-C | HDMI-in per audio e video<br><br>USB-C per TouchBack e InkBack | USB-C supporta TouchBack e InkBack con la connessione HDMI A/V.<br><br>Usare da USB-C a USB-A per connettersi ai computer legacy.<br><br>**NOTA:** Per ottenere risultati ottimali, connettere HDMI prima di collegare un cavo USB-C. Se il computer in uso per HDMI non è compatibile con TouchBack e InkBack, non sarà necessario un cavo USB-C. |
+| USB-C <br> (tramite modulo di calcolo) | Video-in <br>Audio-in | Cavo singolo necessario per A/V<br><br>TouchBack e InkBack sono supportati<br><br>HDCP abilitato |
+| HDMI (in porta) | Video, Audio in Surface Hub 2S | Cavo singolo necessario per A/V<br><br>TouchBack e InkBack non supportati<br><br>HDCP abilitato |
+| Output MiniDP 1.2 | Video-out come il mirroring in un proiettore più grande. | Cavo singolo necessario per A/V |
 
-Quando si connette un computer guest a Surface Hub 2S tramite la porta USB-C, vengono individuati e configurati diversi dispositivi USB. Questi dispositivi periferici vengono creati per TouchBack e InkBack. Come illustrato nella tabella seguente, i dispositivi periferici possono essere visualizzati in gestione dispositivi, in cui verranno visualizzati i nomi duplicati per alcuni dispositivi, come illustrato nella tabella seguente.
+Quando si connette un computer guest a Surface Hub 2S tramite la porta USB-C, vengono individuati e configurati diversi dispositivi USB. Questi dispositivi periferici vengono creati per TouchBack e InkBack. Come illustrato nella tabella seguente, i dispositivi periferici possono essere visualizzati in Gestione dispositivi, che mostrerà nomi duplicati per alcuni dispositivi, come illustrato nella tabella seguente.
 
  
-|**Periferica**| **Elenco in gestione dispositivi** |
+|**Periferica**| **Elenco in Gestione dispositivi** |
 | ---------------------------- |------------- | ------------------------------|
 | Dispositivi HID (Human Interface Device) | Dispositivo controllo consumi compatibile HID<br>Penna compatibile HID<br>Penna compatibile HID (elemento duplicato)<br>Penna compatibile HID (elemento duplicato)<br>Touch screen compatibile HID<br>Dispositivo di input USB<br>Dispositivo di input USB (elemento duplicato) |
 | Tastiere | Tastiera standard PS/2 |
 | Mouse e altri dispositivi di puntamento | Mouse compatibile HID |
 | Controller USB | Hub USB generico<br>Dispositivo USB composito |
 
-##  <a name="connecting-video-in-to-surface-hub-2s"></a>Connessione di video-in a Surface Hub 2S
+## <a name="connecting-video-in-to-surface-hub-2s"></a>Connessione del video-in a Surface Hub 2S
 
-È possibile inserire il video in Surface Hub 2S usando USB-C o HDMI, come indicato nella tabella seguente.  
+È possibile inserire video in Surface Hub 2S usando USB-C o HDMI, come indicato nella tabella seguente.  
 
-###  <a name="surface-hub-2s-video-in-settings"></a>Impostazioni di Surface Hub 2S video-in
+### <a name="surface-hub-2s-video-in-settings"></a>Surface Hub impostazioni di video-in 2S
 
 | **Tipo di segnale** | **Risoluzione** | **Frequenza dei fotogrammi** | **HDMI** | **USB-C** |
 | --------------- | -------------- | -------------- | -------- | --------- |
@@ -65,16 +66,16 @@ Quando si connette un computer guest a Surface Hub 2S tramite la porta USB-C, ve
 | 4K UHD          | 3840x2560      | 30             | X        | X         |
 
 > [!NOTE]
-> La risoluzione 4K UHD (3840 × 2560) è supportata solo quando si esegue la connessione alle porte nel modulo COMPUTE. Non è supportata nelle porte USB "Guest" situate sul lato sinistro, superiore e destro del dispositivo.
+> La risoluzione UHD 4K (3840×2560) è supportata solo quando ci si connette alle porte nel modulo di calcolo. Non è supportato sulle porte USB "guest" che si trovano sui lati sinistro, superiore e destro del dispositivo.
 
 > [!NOTE]
-> Il video da un PC esterno connesso può sembrare più piccolo quando viene visualizzato in Surface Hub 2S.
+> Il video da un PC esterno connesso può apparire più piccolo se visualizzato in Surface Hub 2S.
 
-##  <a name="mirroring-surface-hub-2s-display-on-another-device"></a>Hub superficie speculare 2S visualizzato in un altro dispositivo
+## <a name="mirroring-surface-hub-2s-display-on-another-device"></a>Mirroring Surface Hub visualizzazione 2S in un altro dispositivo
 
-È possibile eseguire il video di output in un altro schermo usando MiniDP, come indicato nella tabella seguente.
+È possibile inviare video a un altro display usando MiniDP, come indicato nella tabella seguente.
 
-###  <a name="surface-hub-2s-video-out-settings"></a>Impostazioni di Surface Hub 2S video-out
+### <a name="surface-hub-2s-video-out-settings"></a>Surface Hub impostazioni di videoout 2S
 
 | **Tipo di segnale** | **Risoluzione** | **Frequenza dei fotogrammi** | **MiniDP** |
 | --------------- | -------------- | -------------- | ---------- |
@@ -89,52 +90,52 @@ Quando si connette un computer guest a Surface Hub 2S tramite la porta USB-C, ve
 
 
  
-Surface Hub 2S include una porta di uscita video MiniDP per proiettare il contenuto visivo da Surface Hub 2S a un altro schermo. Se si prevede di usare Surface Hub 2S per proiettarlo in un'altra visualizzazione, tenere presente quanto segue:
+Surface Hub 2S include una porta di uscita video MiniDP per la proiezione di contenuto visivo da Surface Hub 2S a un altro schermo. Se si prevede di usare Surface Hub 2S per proiettare in un'altra visualizzazione, prendere nota delle raccomandazioni seguenti:
 
-- **Tastiera necessaria.** Prima di iniziare, è necessario connettere una tastiera esterna con cavo o Bluetooth per Surface Hub 2S. Tieni presente che, diversamente dall'originale Hub Surface, una tastiera per Surface Hub 2S viene venduta separatamente e non è inclusa nel pacchetto di spedizione.<br><br>
-- **Impostare la modalità duplicata.** Surface Hub 2S supporta l'uscita video solo in modalità duplicata. Tuttavia, sarà comunque necessario configurare manualmente la modalità di visualizzazione quando ci si connette per la prima volta:
-    1. Immettere il **tasto Windows**  +  **P**, che apre il riquadro del progetto sul lato destro di Surface Hub 2S e quindi selezionare modalità **Duplica** .
-    2. Al termine della sessione di Surface Hub 2S, selezionare **Termina sessione**. In questo modo si garantisce che l'impostazione duplicata venga salvata per la sessione successiva.<br><br>
-- **Pianificare per proporzioni diverse.** Come altri dispositivi Surface, Surface Hub 2S usa una proporzioni di visualizzazione di 3:2 (la relazione tra la larghezza e l'altezza dello schermo). È supportata la proiezione del mozzo della superficie 2S su schermi con proporzioni diverse. Si noti tuttavia che, dato che il valore di Surface Hub 2S duplica lo schermo, l'output di MiniDP viene visualizzato solo in un rapporto di 3:2, che può causare la letterbox o il sipario a seconda delle proporzioni dello schermo di ricezione. 
+- **Tastiera necessaria.** Prima di iniziare, è necessario connettere una tastiera esterna cablata o abilitata per Bluetooth a Surface Hub 2S. Si noti che, a differenza del Surface Hub originale, una tastiera per Surface Hub 2S viene venduta separatamente e non è inclusa nel pacchetto di spedizione.<br><br>
+- **Impostare la modalità duplicata.** Surface Hub 2S supporta il video out solo in modalità duplicata. Tuttavia, sarà comunque necessario configurare manualmente la modalità di visualizzazione quando ci si connette per la prima volta:
+    1. Immettere il **Windows tasto logoP** + , che apre il riquadro Project sul lato destro di Surface Hub 2S, quindi selezionare **Modalità duplica**.****
+    2. Al termine della sessione Surface Hub 2S, selezionare **Fine sessione**. In questo modo si garantisce che l'impostazione duplicata venga salvata per la sessione successiva.<br><br>
+- **Pianificare proporzioni diverse.** Come altri dispositivi Surface, Surface Hub 2S usa proporzioni di visualizzazione 3:2 (la relazione tra la larghezza e l'altezza dello schermo). È supportata la proiezione Surface Hub 2S su schermi con proporzioni diverse. Si noti tuttavia che, poiché Surface Hub 2S duplica la visualizzazione, anche l'output MiniDP verrà visualizzato solo in proporzioni 3:2, il che può comportare la creazione di lettere o tende a seconda delle proporzioni del display ricevente. 
 
 > [!NOTE]
-> Se il secondo monitor usa un rapporto di proporzioni 16:9 (il rapporto predominante per la maggior parte dei monitor TV), le barre nere potrebbero essere visualizzate sul lato sinistro e destro dello schermo con mirroring. In questo caso, potresti voler informare gli utenti che non è necessario modificare la seconda visualizzazione.
+> se il secondo monitor usa proporzioni 16:9 (il rapporto predominante per la maggior parte dei monitor TV), è possibile che vengano visualizzate barre nere sui lati sinistro e destro dello schermo con mirroring. In questo caso, è possibile informare gli utenti che non è necessario modificare il secondo display.
 
-##  <a name="selecting-cables"></a>Selezione di cavi
+## <a name="selecting-cables"></a>Selezione dei cavi
 
-Tenere presente i suggerimenti seguenti:
+Si noti quanto segue:
 
-- **USB.** Cavi USB 3,1 gen 2.
-- **MiniDP.** Cavi DisplayPort certificati per un massimo di 3 metri di lunghezza.
-- **HDMI.** Se è necessario un cavo lungo, è consigliabile usare HDMI per l'ampia disponibilità di cavi a lunga distanza e convenienti, con la possibilità di installare i ripetitori, se necessario.
+- **USB.** Cavi USB 3.1 Gen 2.
+- **MiniDP.** Cavi DisplayPort certificati per una lunghezza massima di 3 metri.
+- **HDMI.** Se è necessario un cavo lungo, è consigliato HDMI a causa dell'ampia disponibilità di cavi a lungo raggio convenienti con la possibilità di installare ripetitori, se necessario.
 
 > [!NOTE]
 > La maggior parte delle origini DisplayPort passa automaticamente alla segnalazione HDMI se viene rilevato HDMI.
 
-##  <a name="wirelessly-connect-to-surface-hub-2s"></a>Connettersi in modalità wireless a Surface Hub 2S
+## <a name="wirelessly-connect-to-surface-hub-2s"></a>Connessione wireless a Surface Hub 2S
 
-Windows 10 supporta nativamente Miracast, che consente di connettersi senza fili a Surface Hub 2S.<br><br>
+Windows 10/11 supporta in modo nativo Miracast, che consente la connessione wireless a Surface Hub 2S.<br><br>
 
-###  <a name="to-connect-using-miracast"></a>Per connettersi tramite Miracast:
+### <a name="to-connect-using-miracast"></a>Per connettersi usando Miracast:
 
-1. Nel dispositivo Windows 10 immettere il **tasto logo Windows**  +  **K**. 
-2. Nella finestra Connetti cercare il nome del mozzo della superficie 2S nell'elenco dei dispositivi vicini. Puoi trovare il nome dell'hub di Surface 2S nell'angolo in basso a sinistra dello schermo.
-3. Immettere un PIN se l'amministratore di sistema ha abilitato l'impostazione PIN per le connessioni Miracast. Questo richiede l'immissione di un numero PIN quando ci si connette a Surface Hub 2S per la prima volta.
+1. Nel dispositivo Windows 10/11 immettere **Windows tasto logoK** + .**** 
+2. Nella finestra Connessione cercare il nome del Surface Hub 2S nell'elenco dei dispositivi vicini. È possibile trovare il nome del Surface Hub 2S nell'angolo inferiore sinistro dello schermo.
+3. Immettere un PIN se l'amministratore di sistema ha abilitato l'impostazione PIN per le connessioni Miracast. È quindi necessario immettere un numero PIN quando ci si connette per la prima volta a Surface Hub 2S.
 
 > [!NOTE]
->Se il nome del dispositivo Surface Hub 2S non viene visualizzato come previsto, è possibile che la sessione precedente sia stata chiusa prematuramente. In questo caso, accedere direttamente a Surface Hub 2S per terminare la sessione precedente e quindi connettersi dal dispositivo esterno.
+>Se non viene visualizzato il nome del dispositivo Surface Hub 2S come previsto, è possibile che la sessione precedente sia stata chiusa prematuramente. In tal caso, accedere direttamente a Surface Hub 2S per terminare la sessione precedente e quindi connettersi dal dispositivo esterno.
 
-##  <a name="connecting-peripherals-to-surface-hub-2s"></a>Connettere le periferiche a Surface Hub 2S
+## <a name="connecting-peripherals-to-surface-hub-2s"></a>Connessione di periferiche a Surface Hub 2S
 
-###  <a name="bluetooth-accessories"></a>Accessori Bluetooth
+### <a name="bluetooth-accessories"></a>Accessori Bluetooth
 
-È possibile connettere gli accessori seguenti a Surface Hub-2S tramite Bluetooth:
+È possibile connettere gli accessori seguenti a Surface Hub-2S usando Bluetooth:
 
 - Mouse
 - Tastiere
 - Auricolari
 - Altoparlanti
-- Penne Surface Hub 2
+- Surface Hub 2 penne
 
 > [!NOTE]
-> Dopo aver connesso un auricolare o un altoparlante Bluetooth, potrebbe essere necessario modificare le impostazioni predefinite del microfono e dell'altoparlante. Per altre informazioni, vedere [**gestione locale per le impostazioni di Surface Hub**](https://docs.microsoft.com/surface-hub/local-management-surface-hub-settings).
+> Dopo aver connesso un auricolare o un altoparlante Bluetooth, potrebbe essere necessario modificare le impostazioni predefinite del microfono e dell'altoparlante. Per altre informazioni, vedi [Gestione locale per le impostazioni di Surface Hub](local-management-surface-hub-settings.md).

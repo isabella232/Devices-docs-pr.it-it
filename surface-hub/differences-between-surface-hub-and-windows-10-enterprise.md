@@ -1,6 +1,6 @@
 ---
 title: Nozioni fondamentali del sistema operativo (Surface Hub)
-description: In questo argomento vengono illustrati aspetti univoci del Windows 10 Team sistema operativo e le differenze rispetto a Windows 10 Enterprise.
+description: Questo argomento illustra gli aspetti univoci del sistema operativo Windows Team in Surface Hub e come differisce da Windows 10 o Windows 11 Enterprise.
 keywords: cronologia delle modifiche
 ms.prod: surface-hub
 ms.sitesec: library
@@ -11,32 +11,34 @@ ms.date: 02/15/2022
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: 6963a51b492bfbdc09da5ec667d091d62eed4569
-ms.sourcegitcommit: beb2f9db90b19b74da6cdee8717cc0888f3b1d70
+ms.openlocfilehash: 5be9c0ba3f23832d2e3d9b66a746e9f1f0772e63
+ms.sourcegitcommit: e1d7782c2d205da9d1eb6b7aad0333350f2cb5a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "12449239"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "12497339"
 ---
 # <a name="operating-system-essentials-surface-hub"></a>Nozioni fondamentali del sistema operativo (Surface Hub)
 
-Il sistema operativo di Surface Hub, Windows 10 Team, è basato su Windows 10 Enterprise e fornisce un supporto avanzato per la gestione aziendale, la sicurezza e altre funzionalità. Esistono tuttavia alcune importanti differenze tra le due versioni. Mentre l'edizione Enterprise è progettata per i PC, Windows 10 Team è completamente progettato per gli schermi di grandi dimensioni e le sale riunioni. Durante la valutazione dei requisiti di sicurezza e di gestione per Surface Hub, è consigliabile considerarlo come un nuovo sistema operativo. Questo articolo illustra le principali differenze tra Windows 10 Team in Surface Hub e Windows 10 Enterprise, descrivendo il significato di queste differenze per le organizzazioni.
+Il sistema operativo Surface Hub, Windows 10 Team, ha avuto origine da Windows 10 Enterprise, offrendo un supporto completo per la gestione aziendale, la sicurezza e altre funzionalità. Esistono tuttavia alcune importanti differenze tra le due versioni. Mentre l'edizione Enterprise è progettata per i PC, Windows 10 Team è completamente progettato per gli schermi di grandi dimensioni e le sale riunioni. Quando si valutano i requisiti di sicurezza e gestione per Surface Hub, è consigliabile considerarlo come un nuovo sistema operativo. Questo articolo evidenzia le differenze principali tra Windows 10 Team nelle versioni Surface Hub ed enterprise di Windows 10 o Windows 11.
 
-A partire da settembre 2020, i clienti hanno la possibilità di eseguire la migrazione a Windows 10 Pro o Enterprise in Surface Hub 2S. Per altre informazioni, vedi le risorse seguenti:
+## <a name="convert-surface-hub-to-run-pro-or-enterprise-desktop"></a>Convertire Surface Hub per eseguire desktop Pro o Enterprise
 
-- [Annuncio della disponibilità di Windows 10 Pro e Enterprise in Surface Hub 2](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107).
+È possibile modificare il sistema operativo in Surface Hub 2S eseguendo la migrazione a Windows 10 o Windows 11 Pro/Enterprise. Per altre informazioni, vedi le risorse seguenti:
 
-- [Eseguire la migrazione a Windows 10 Pro o Enterprise in Surface Hub 2](surface-hub-2s-migrate-os.md)
+- [Annuncio della disponibilità di Windows 10 Pro e Enterprise il Surface Hub 2](https://techcommunity.microsoft.com/t5/surface-it-pro-blog/announcing-the-availability-of-windows-10-pro-and-enterprise-on/ba-p/1624107).
+
+- [Eseguire la migrazione a Windows 10, Windows 11 Pro o Enterprise in Surface Hub 2](surface-hub-2s-migrate-os.md)
 
 ## <a name="user-interface"></a>Interfaccia utente
 
 ### <a name="shell-os-user-interface"></a>Shell (interfaccia utente del sistema operativo)
 
-La shell di Surface Hub è completamente progettata per l'ottimizzazione per il tocco e gli schermi di grandi dimensioni. Non viene usata la stessa shell di Windows 10 Enterprise.
+La shell di Surface Hub è completamente progettata per l'ottimizzazione per il tocco e gli schermi di grandi dimensioni. Non usa la stessa shell di Windows 10 o Windows 11 Enterprise.
 
 *Criteri dell'organizzazione su cui può influire questo aspetto:* 
 
-- Le impostazioni relative ai controlli nella shell di Windows 10 Enterprise non vengono applicate per Surface Hub.
+- Impostazioni correlati ai controlli nella shell Windows 10 o Windows 11 Enterprise non vengono applicati per Surface Hub.
 
 ### <a name="lock-screen-and-screensaver"></a>Schermata di blocco e screen saver
 
@@ -48,7 +50,7 @@ Surface Hub non dispone di una schermata di blocco o di uno screen saver, ma inc
 
 ### <a name="user-sign-in"></a>Accesso dell'utente
 
-Surface Hub è progettato per essere usato in spazi comuni, ad esempio sale riunioni. A differenza dei PC Windows, tutti gli utenti possono utilizzare un dispositivo Surface Hub senza effettuare l'accesso. Per abilitare questa funzionalità in comune, Surface Hub non supporta l'accesso Windows allo stesso modo di Windows 10 Enterprise (ad esempio, l'accesso di un utente al sistema operativo e l'utilizzo delle stesse credenziali in tutto il sistema operativo). Al contrario, c'è sempre un utente con privilegi limitati, autenticato automaticamente, locale che è connesso a Surface Hub. Non supporta la registrazione di utenti aggiuntivi, inclusi gli utenti amministratori (ad esempio, quando un amministratore accede, non viene connesso al sistema operativo).
+Surface Hub è progettato per essere usato in spazi comuni, ad esempio sale riunioni. A differenza dei PC Windows, tutti gli utenti possono utilizzare un dispositivo Surface Hub senza effettuare l'accesso. Per abilitare questa funzionalità comune, Surface Hub non supporta l'accesso Windows come Windows 10 o Windows 11 Enterprise, ad esempio l'accesso di un utente al sistema operativo e l'uso di tali credenziali in tutto il sistema operativo. Al contrario, c'è sempre un utente con privilegi limitati, autenticato automaticamente, locale che è connesso a Surface Hub. Non supporta la registrazione di utenti aggiuntivi, inclusi gli utenti amministratori (ad esempio, quando un amministratore accede, non viene connesso al sistema operativo).
 
 Gli utenti possono accedere a un dispositivo Surface Hub, ma non verranno registrati nel sistema operativo. Quando, ad esempio, un utente accede a App o a Riunioni e file, l'utente viene registrato solo nelle app o nei servizi, non nel sistema operativo. Di conseguenza, l'utente connesso è in grado di recuperare i file cloud e le riunioni personali archiviati nel cloud e queste credenziali vengono eliminate quando viene attivata **Fine sessione**.
 
@@ -67,13 +69,13 @@ Gli utenti possono accedere a un set limitato di directory in Surface Hub:
 
 I file salvati in queste directory vengono eliminati quando l'utente preme **Termina sessione**. Per salvare il contenuto creato durante una riunione, gli utenti devono salvare i file in un'unità USB o in OneDrive.
 
-*Criteri dell'organizzazione che possono influire:* - I criteri relativi alle autorizzazioni di accesso e alla proprietà di file e cartelle non si applicano Surface Hub. Gli utenti non possono esplorare directory di sistema e cartelle di rete o salvare file in tali posizioni.
+*Criteri dell'organizzazione che possono interessare:* - I criteri relativi alle autorizzazioni di accesso e alla proprietà di file e cartelle non si applicano per Surface Hub. Gli utenti non possono esplorare directory di sistema e cartelle di rete o salvare file in tali posizioni.
 
 ## <a name="applications"></a>Applicazioni
 
 ### <a name="default-applications"></a>Applicazioni predefinite
 
-Con alcune eccezioni, le app UWP (Universal Windows Platform) predefinite in Surface Hub sono disponibili anche nei PC Windows 10.
+Con poche eccezioni, le app piattaforma UWP (Universal Windows Platform) predefinite (UWP) in Surface Hub sono disponibili anche nei PC Windows 10 o Windows 11.
 
 App UWP preinstallate in Surface Hub:
 
@@ -99,7 +101,7 @@ App UWP preinstallate in Surface Hub:
 
 *Criteri dell'organizzazione su cui può influire questo aspetto:* 
 
-- Usa le linee guida per Windows 10 Enterprise per determinare le funzionalità e i requisiti di rete per le app predefinite di Surface Hub.
+- Usare le linee guida per Windows 10 o Windows 11 Enterprise per determinare le funzionalità e i requisiti di rete per le app predefinite nel Surface Hub.
 
 ### <a name="installing-apps-drivers-and-services"></a>Installazione di app, driver e servizi
 
@@ -111,15 +113,15 @@ Per preservare la funzione di appliance del dispositivo, Surface Hub supporta so
 
 ## <a name="security-and-lockdown"></a>Sicurezza e blocco
 
-Per consentire l'uso di Surface Hub negli spazi comuni, come le sale riunioni, il sistema operativo personalizzato del dispositivo implementa molte delle funzionalità di sicurezza e di blocco disponibili in Windows 10. Per altre informazioni, vedi panoramica [Surface Hub sicurezza](surface-hub-security.md)
+Per Surface Hub da usare in spazi comuni, come le sale riunioni, il sistema operativo personalizzato implementa molte delle funzionalità di sicurezza e blocco disponibili in Windows 10 o Windows 11. Per altre informazioni, vedere [Surface Hub Security Overview](surface-hub-security.md)
 
-Surface Hub implementa queste funzionalità di sicurezza di Windows 10:
+Surface Hub implementa queste funzionalità di sicurezza Windows:
 
 - [Avvio protetto](/windows-hardware/design/device-experiences/oem-secure-boot)
 - [Controllo di applicazioni di Windows Defender e protezione dell'integrità del codice basata sulla virtualizzazione](/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)
 - [Criteri di restrizione delle applicazioni con AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview)
 - [Crittografia unità BitLocker](/windows/security/information-protection/bitlocker/bitlocker-overview)
-- [Trusted Platform Module (TPM)](/security/information-protection/tpm/trusted-platform-module-overview)
+- [Trusted Platform Module (TPM)](/windows/security/information-protection/tpm/trusted-platform-module-top-node)
 - [Antivirus Microsoft Defender in Windows](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows)
 - [Controllo dell'account utente](/windows/security/identity-protection/user-account-control/user-account-control-overview) per l'accesso all'app Impostazioni
 
@@ -139,7 +141,7 @@ Queste funzionalità di Surface Hub offrono maggiore sicurezza:
 
 ### <a name="device-settings"></a>Impostazioni del dispositivo
 
-Le impostazioni del dispositivo possono essere configurate tramite l'app Impostazioni. L'app Impostazioni è personalizzata per Surface Hub, ma contiene anche numerose impostazioni familiari di Windows 10 Desktop. Quando si apre l'app Impostazioni, viene visualizzata una richiesta di Controllo dell'account utente per verificare le credenziali dell'amministratore, ma in questo modo non viene eseguito l'accesso come amministratore.
+Le impostazioni del dispositivo possono essere configurate tramite l'app Impostazioni. L'app Impostazioni è personalizzata per Surface Hub, ma contiene anche molte impostazioni familiari da Windows 10 o Windows 11 Desktop. Quando si apre l'app Impostazioni, viene visualizzata una richiesta di Controllo dell'account utente per verificare le credenziali dell'amministratore, ma in questo modo non viene eseguito l'accesso come amministratore.
 
 *Criteri dell'organizzazione su cui può influire questo aspetto:* 
 
@@ -147,22 +149,22 @@ Le impostazioni del dispositivo possono essere configurate tramite l'app Imposta
 
 ### <a name="administrative-features"></a>Funzionalità di amministrazione
 
-Le funzionalità amministrative di Windows 10 Enterprise, ad esempio Microsoft Management Console, Esegui, Prompt dei comandi, PowerShell, Editor del Registro di sistema e Gestione attività non sono supportate in Surface Hub. L'app Impostazioni contiene tutte le funzionalità amministrative disponibili in locale in Surface Hub.
+Le funzionalità amministrative in Windows 10 o Windows 11 Enterprise, ad esempio Microsoft Management Console, Run, Command Prompt, PowerShell, Editor del Registro di sistema e Gestione attività, non sono supportate in Surface Hub. L'app Impostazioni contiene tutte le funzionalità amministrative disponibili in locale in Surface Hub.
 
 #### <a name="event-viewer"></a>Visualizzatore eventi
 
-Windows 10 Team 2020 Update 2 aggiunge il supporto per il Visualizzatore eventi di Windows, che è identico al Visualizzatore eventi installato in [](/host-integration-server/core/windows-event-viewer1) Windows 10 Pro o Windows 10 Enterprise. 
+Windows 10 Team 2020 Update 2 aggiunge il supporto per il Windows Visualizzatore eventi, che è identico al [Visualizzatore eventi](/host-integration-server/core/windows-event-viewer1) installato in Windows 10 Pro o Windows 10 Enterprise. 
 
 **Per aprire visualizzatore eventi:**
 
-1. Accedi **all'Impostazioni** app con credenziali di amministratore.
-2. Selezionare **Aggiorna &** **SecurityLogs** >  e in Visualizzatore eventi selezionare **Apri**. 
+1. Accedere a **Impostazioni'app** con credenziali di amministratore.
+2. Selezionare **Aggiorna & SicurezzaLog** >  **e** in Visualizzatore eventi selezionare **Apri**. 
 
-Per ulteriori informazioni, vedere [visualizzatore Windows eventi](/host-integration-server/core/windows-event-viewer1).
+Per altre informazioni, vedere [Windows Visualizzatore eventi](/host-integration-server/core/windows-event-viewer1).
 
 ### <a name="remote-management-and-monitoring"></a>Gestione e monitoraggio remoti
 
-Surface Hub supporta la gestione remota tramite soluzioni di gestione dei dispositivi mobili (MDM), ad esempio [Microsoft Intune e il](/mem/intune/) monitoraggio tramite [Azure Monitor](/azure/azure-monitor/). 
+Surface Hub supporta la gestione remota tramite soluzioni di gestione dei dispositivi mobili (MDM), ad esempio [Microsoft Intune](/mem/intune/) e monitoraggio tramite [Monitoraggio di Azure](/azure/azure-monitor/). 
 
 *Criteri dell'organizzazione su cui può influire questo aspetto:* 
 
@@ -170,7 +172,7 @@ Surface Hub supporta la gestione remota tramite soluzioni di gestione dei dispos
 
 ### <a name="group-policy"></a>Criteri di gruppo
 
-Surface Hub non supporta i criteri Windows di gruppo, incluso il controllo. Usa invece MDM per applicare i criteri per il dispositivo Surface Hub. Per altre informazioni su MDM, vedi [Gestire le impostazioni con un provider MDM](manage-settings-with-mdm-for-surface-hub.md).
+Surface Hub non supporta Windows Criteri di gruppo, incluso il controllo. Usa invece MDM per applicare i criteri per il dispositivo Surface Hub. Per altre informazioni su MDM, vedi [Gestire le impostazioni con un provider MDM](manage-settings-with-mdm-for-surface-hub.md).
 
 *Criteri dell'organizzazione su cui può influire questo aspetto:* 
 
@@ -192,7 +194,7 @@ Surface Hub usa l'aggiunta a un dominio e l'aggiunta ad Azure AD principalmente 
 
 *Criteri dell'organizzazione su cui può influire questo aspetto:* 
 
-- Le impostazioni di Criteri di gruppo non vengono applicate quando un Surface Hub viene aggiunto al dominio. Le impostazioni dei criteri relative all'appartenenza al dominio non si applicano Surface Hub.
+- Le impostazioni di Criteri di gruppo non vengono applicate quando un Surface Hub è aggiunto al dominio. Le impostazioni dei criteri correlate all'appartenenza al dominio non si applicano a Surface Hub.
 
 ### <a name="accessing-domain-resources"></a>Accesso a risorse di dominio
 
@@ -204,8 +206,8 @@ Gli utenti possono eseguire l'accesso a Microsoft Edge per accedere a siti Intra
 
 ### <a name="diagnostic-data"></a>Dati di diagnostica
 
-Il sistema operativo di Surface Hub usa il componente Esperienze utente connesse e telemetria di Windows 10 e per raccogliere e trasmettere i dati di diagnostica. Per altre informazioni, vedi [Configurare i dati di diagnostica di Windows nell'organizzazione](/windows/privacy/configure-windows-diagnostic-data-in-your-organization).
+Il sistema operativo Surface Hub usa il componente Windows Esperienze utente connesse e telemetria per raccogliere e trasmettere i dati di diagnostica. Per altre informazioni, vedi [Configurare i dati di diagnostica di Windows nell'organizzazione](/windows/privacy/configure-windows-diagnostic-data-in-your-organization).
 
 *Criteri dell'organizzazione su cui può influire questo aspetto:* 
 
-- Configura i livelli di dati di diagnostica per Surface Hub nello stesso modo in cui sono configurati per Windows 10 Enterprise.
+- Configurare i livelli di dati di diagnostica per Surface Hub come per Windows 10 o Windows 11 Enterprise.

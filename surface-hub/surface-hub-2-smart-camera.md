@@ -11,12 +11,12 @@ audience: Admin
 ms.topic: article
 ms.date: 03/16/2022
 ms.localizationpriority: Medium
-ms.openlocfilehash: 9cdf7d2d5b6f1f6a99d2f3caa1168804c2110159
-ms.sourcegitcommit: b922aaf7287bdfb99f848aad455b2b4001b8f5be
+ms.openlocfilehash: 1b510d98cf65b5b1594d300a3bcf6c928e1f27e2
+ms.sourcegitcommit: e1d7782c2d205da9d1eb6b7aad0333350f2cb5a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "12472731"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "12497519"
 ---
 # <a name="install-and-manage-surface-hub-2-smart-camera"></a>Installare e gestire Surface Hub 2 smart camera
 
@@ -35,7 +35,7 @@ Per surface hub che eseguono il sistema operativo del team, Surface Hub 2 Smart 
 Per altre informazioni, vedere [Surface Hub cronologia degli aggiornamenti](surface-hub-update-history.md).
 
 > [!NOTE]
-> Non sono necessari aggiornamenti aggiuntivi per surface hub migrati per eseguire Windows 10 o Windows 11 Pro/Enterprise.
+> Non sono necessari aggiornamenti aggiuntivi per surface hub migrati per eseguire Windows 10/11 Pro o Enterprise.
 
 ## <a name="install-smart-camera"></a>Installare la fotocamera intelligente
 

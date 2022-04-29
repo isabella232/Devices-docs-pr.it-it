@@ -10,16 +10,16 @@ ms.date: 04/24/2020
 ms.reviewer: ''
 manager: laurawi
 ms.localizationpriority: medium
-ms.openlocfilehash: 26cfffe74c64c786e11dd573b01ad0c025bfc4b0
-ms.sourcegitcommit: 21fcd329a7b0c82c69e2a65c423d47c5b23b4e7f
+ms.openlocfilehash: b99c1010e6caedabeb72cc7b99df88aaa7c9cdcb
+ms.sourcegitcommit: e1d7782c2d205da9d1eb6b7aad0333350f2cb5a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "11883013"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "12497506"
 ---
-# <a name="miracast-over-infrastructure"></a>Miracast dell'infrastruttura
+# <a name="miracast-over-infrastructure"></a>Miracast sull'infrastruttura
 
-In Windows 10, versione 1703 Microsoft ha esteso la possibilità di inviare un flusso di Miracast tramite una rete locale, anziché tramite un link diretto wireless. Questa funzionalità si basa sul [protocollo di attivazione della connessione Miracast su infrastruttura (MS-MICE)](https://msdn.microsoft.com/library/mt796768.aspx).
+A partire da Windows 10 versione 1703, Microsoft ha esteso la possibilità di inviare un flusso Miracast tramite una rete locale anziché tramite un collegamento wireless diretto. Questa funzionalità si basa sul [protocollo di attivazione della connessione Miracast su infrastruttura (MS-MICE)](https://msdn.microsoft.com/library/mt796768.aspx).
 
 Miracast su infrastruttura offre numerosi vantaggi:
 
@@ -33,10 +33,10 @@ Miracast su infrastruttura offre numerosi vantaggi:
 
 ## <a name="how-it-works"></a>Come funziona
 
-Gli utenti tentano di connettersi a un Miracast tramite la Wi-Fi di rete come in precedenza. Quando l'elenco di ricevitori Miracast è popolato, Windows 10 indicherà che il destinatario è in grado di supportare una connessione tramite l'infrastruttura. Quando l'utente seleziona un ricevitore Miracast, Windows 10 tenterà di risolvere il nome host del dispositivo tramite DNS standard, nonché tramite DNS multicast (mDNS). Se il nome non è risolvibile tramite uno dei metodi DNS, Windows 10 tornerà a stabilire la sessione Miracast con la connessione Wi-Fi Direct standard.
+Gli utenti tentano di connettersi a un ricevitore Miracast tramite l'adattatore Wi-Fi come in precedenza. Quando l'elenco di ricevitori Miracast è popolato, Windows 10 indicherà che il destinatario è in grado di supportare una connessione tramite l'infrastruttura. Quando l'utente seleziona un ricevitore Miracast, Windows 10 tenterà di risolvere il nome host del dispositivo tramite DNS standard, nonché tramite DNS multicast (mDNS). Se il nome non è risolvibile tramite uno dei metodi DNS, Windows 10 tornerà a stabilire la sessione Miracast con la connessione Wi-Fi Direct standard.
 
 > [!NOTE]
-> Per ulteriori informazioni sulla sequenza di negoziazione della connessione, vedere [Miracast over Infrastructure Connection Establishment Protocol (MS-MICE)](https://msdn.microsoft.com/library/mt796768.aspx)
+> Per altre informazioni sulla sequenza di negoziazione della connessione, vedere [Miracast sul protocollo MS-MICE (Infrastructure Connection Establishment Protocol)](https://msdn.microsoft.com/library/mt796768.aspx)
 
 
 
@@ -48,9 +48,9 @@ Se hai un dispositivo Surface Hub o un altro dispositivo Windows 10 che è stato
 - Nel dispositivo Surface Hub o nel dispositivo (PC o telefono Windows) deve essere in esecuzione Windows 10, versione 1703.
 - Aprire la porta TCP: **7250**.
 - Un dispositivo Surface Hub o un PC Windows può fungere da *ricevitore* Miracast su infrastruttura. Un dispositivo PC o un telefono Windows può fungere da *origine* Miracast su infrastruttura.
-    - Come ricevitore Miracast, il dispositivo Surface Hub o il dispositivo deve essere connesso alla rete aziendale tramite Ethernet o una connessione Wi-Fi protetta (ad esempio utilizzando la protezione WPA2-PSK o WPA2-Enterprise). Se il Surface Hub o il dispositivo è connesso a una connessione Wi-Fi aperta, Miracast l'infrastruttura si disabiliterà.
+    - Come ricevitore Miracast, il dispositivo Surface Hub o il dispositivo deve essere connesso alla rete aziendale tramite Ethernet o una connessione Wi-Fi protetta (ad esempio utilizzando la protezione WPA2-PSK o WPA2-Enterprise). Se il Surface Hub o il dispositivo è connesso a una connessione Wi-Fi aperta, Miracast su Infrastruttura si disabiliterà automaticamente.
     - Come origine Miracast, il PC o il telefono Windows deve essere connesso alla stessa rete aziendale tramite Ethernet o una connessione Wi-Fi protetta.
-- Il nome host DNS (nome del dispositivo) del Surface Hub o del dispositivo deve essere risolvibile tramite i server DNS. Puoi ottenere questo consentendo al dispositivo Surface Hub di registrarsi automaticamente tramite DNS dinamico o creando manualmente un record A o AAAA per il nome host di Surface Hub. 
+- Il nome host DNS (nome del dispositivo) della Surface Hub o del dispositivo deve essere risolvibile tramite i server DNS. Puoi ottenere questo consentendo al dispositivo Surface Hub di registrarsi automaticamente tramite DNS dinamico o creando manualmente un record A o AAAA per il nome host di Surface Hub. 
 - I PC Windows 10 devono essere connessi alla stessa rete aziendale tramite Ethernet o una connessione Wi-Fi protetta. 
 
 
@@ -59,5 +59,5 @@ Se hai un dispositivo Surface Hub o un altro dispositivo Windows 10 che è stato
 L'impostazione **InBoxApps/WirelessProjection/PinRequired** nel [provider di servizi di configurazione SurfaceHub (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/surfacehub-csp) non è necessario per Miracast su infrastruttura. Questo avviene perché Miracast su infrastruttura funziona solo quando entrambi i dispositivi sono connessi alla stessa rete aziendale. In questo modo viene rimossa la restrizione di sicurezza che in precedenza mancava da Miracast. Ti consigliamo di continuare con questa impostazione, se la utilizzavi già in precedenza, poiché Miracast eseguirà il fallback a un Miracast regolare se la connessione all'infrastruttura non funzionerà. 
 
 ## <a name="faq"></a>Domande frequenti
-**Perché è ancora necessario utilizzare Wi-Fi'Miracast'infrastruttura?**<br>
-Le richieste di individuazione per identificare Miracast ricevitori possono verificarsi solo tramite lWi-Fi adattatore. Dopo aver identificato i ricevitori, Windows 10 possibile tentare la connessione alla rete.
+**Perché è ancora necessario Wi-Fi usare Miracast sull'infrastruttura?**<br>
+Le richieste di individuazione per identificare Miracast ricevitori possono verificarsi solo tramite l'adattatore Wi-Fi. Dopo aver identificato i ricevitori, Windows 10 può quindi tentare la connessione alla rete.
