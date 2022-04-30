@@ -9,26 +9,34 @@ author: v-miegge
 ms.author: dpandre
 ms.topic: article
 ms.localizationpriority: high
-ms.openlocfilehash: 70b052ec9bc87c0062f72e884c17e6be9cdfdbc0
-ms.sourcegitcommit: b922aaf7287bdfb99f848aad455b2b4001b8f5be
+ms.openlocfilehash: 9d48779195702952314baf07636749b70ce000ab
+ms.sourcegitcommit: e1d7782c2d205da9d1eb6b7aad0333350f2cb5a8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "12472335"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "12497949"
 ---
 # <a name="surface-hub-update-history"></a>Cronologia degli aggiornamenti di Surface Hub
 
-Windows 10 è stato progettato come un servizio che viene migliorato mediante aggiornamenti periodici del software. La grande notizia è che di norma non devi fare nulla per ottenere gli ultimi aggiornamenti di Windows 10, che verranno scaricati e installati ogni volta che sono disponibili.
+Windows è stato progettato come un servizio che viene migliorato automaticamente mediante aggiornamenti periodici del software. Solitamente non è necessario fare nulla per ottenere gli ultimi aggiornamenti di Windows 10, che verranno scaricati e installati ogni volta in cui sono disponibili.
 
-La maggior parte degli aggiornamenti di Windows è incentrata sul miglioramento delle prestazioni e della sicurezza per rendere gli utenti operativi 24 ore al giorno per 7 giorni la settimana.
+La maggior parte degli aggiornamenti di Windows è incentrata sul miglioramento delle prestazioni e della sicurezza. Nell'elenco seguente, l'aggiornamento Windows più recente con Surface Hub miglioramenti specifici è elencato per primo. Gli aggiornamenti sono cumulativi, quindi l'installazione dell'aggiornamento Windows più recente disponibile (anche se non è presente nell'elenco seguente) garantisce di trarre vantaggio anche dai miglioramenti apportati agli aggiornamenti precedenti. Le app di Microsoft Store vengono aggiornate mediante Microsoft Store (gestito dall'amministratore di sistema di Surface Hub). I dettagli relativi agli aggiornamenti delle app vengono forniti per singola app.
 
-Sappiamo che gli utenti vogliono sapere di più sulle caratteristiche degli aggiornamenti di Windows 10; pertanto abbiamo fornito ulteriori dettagli in questa pagina. Nell'elenco seguente, l'aggiornamento Windows più recente con Surface Hub miglioramenti specifici è elencato per primo. Gli aggiornamenti sono cumulativi, quindi l'installazione dell'aggiornamento Windows più recente disponibile (anche se non è presente nell'elenco seguente) garantisce di trarre vantaggio anche dai miglioramenti apportati agli aggiornamenti precedenti. Le app di Microsoft Store vengono aggiornate mediante Microsoft Store (gestito dall'amministratore di sistema di Surface Hub). I dettagli relativi agli aggiornamenti delle app vengono forniti per singola app.
-
-Questa pagina verrà aggiornata non appena verranno rilasciati nuovi aggiornamenti; visitare la pagina per le novità. Grazie per averci dato suggerimenti per fornire un prodotto migliore con ciascun aggiornamento.
-
-Fai riferimento alla pagina "[Informazioni importanti di Surface Hub](https://support.microsoft.com/products/surface-devices/surface-hub)" per gli argomenti correlati sulle versioni correnti e precedenti che possono richiedere attenzione.
+> [!TIP]
+> Questa pagina viene aggiornata quando vengono rilasciati nuovi aggiornamenti. Fai riferimento alla pagina [Informazioni importanti di Surface Hub](https://support.microsoft.com/products/surface-devices/surface-hub) per gli argomenti correlati sulle versioni correnti e precedenti che possono richiedere attenzione.
 
 ## <a name="windows-10-team-2020-update-20h2"></a>Windows 10 Team 2020 Update (20H2)
+
+<details>
+<summary>21 aprile 2022: aggiornamento per Team basato su KB5011831* (build del sistema operativo 19042.1679)</summary>
+
+Questo aggiornamento per Surface Hub include miglioramenti alla qualità e correzioni per la sicurezza. Gli aggiornamenti principali per Surface Hub, non ancora indicati nella [Cronologia degli aggiornamenti di Windows 10](https://support.microsoft.com/help/4581839/windows-10-update-history), includono quanto segue:
+
+* Correzione che impedisce a "Fine sessione" di attivare il messaggio "Il dispositivo richiede un aggiornamento. Riavvio per completarlo..." e successivo riavvio in alcuni scenari.
+* Correzione che garantisce che il provider di servizi di configurazione [di SurfaceHub](/windows/client-management/mdm/surfacehub-csp#deviceaccount) possa essere usato con i criteri SyncML che configurano gli account del dispositivo in formato `DOMAIN\username`.
+ 
+Fai riferimento al [Manuale dell'amministratore di Microsoft Surface Hub](/surface-hub/) per l'abilitazione e la disabilitazione delle funzionalità e dei servizi del dispositivo. *[KB5011831](https://support.microsoft.com/help/5011831)
+</details>
 
 <details>
 <summary>22 marzo 2022 — aggiornamento per Team basato su KB5011543* (Build sistema operativo 19042.1620)</summary>
